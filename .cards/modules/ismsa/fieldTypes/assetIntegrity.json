@@ -1,0 +1,24 @@
+{
+    "name": "ismsa/fieldTypes/assetIntegrity",
+    "displayName": "Integrity",
+    "fieldDescription": "The importance of the integrity of this asset",
+    "dataType": "enum",
+    "enumValues": [
+        {
+            "enumValue": "high",
+            "enumDisplayValue": "High"
+        },
+        {
+            "enumValue": "medium",
+            "enumDisplayValue": "Medium"
+        },
+        {
+            "enumValue": "low",
+            "enumDisplayValue": "Low"
+        },
+        {
+            "enumValue": "N/A",
+            "enumDisplayValue": "Not Applicable"
+        }
+    ]
+}

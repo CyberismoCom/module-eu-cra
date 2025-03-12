@@ -1,0 +1,10 @@
+{
+    "title": "Untitled security requirement",
+    "cardType": "secdeva/cardTypes/requirement",
+    "workflowState": "",
+    "rank": "0|b",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/identifier": "secdeva_security_requirement"
+
+}

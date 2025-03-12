@@ -1,0 +1,43 @@
+== Introduction
+
+Attack surface analysis is done against an up-to-date attack surface specification to verify that the attack surface has been reduced as planned. In other words, attack surface analysis verifies that the product hardening works as intended.
+
+If the attack surface specification is based on the output of a tool, then the output of the current test run is validated against the results of the previous approved test run.
+
+Things to consider
+
+* context
+* versions of tools, assets, and the target of evaluation
+* traceability of the results to the changes between test executions
+
+The attack surface analysis should include at minimum:
+
+* Analysis of all avenues of ingress and egress to and from the system.
+* Analysis of common vulnerabilities such as week ACLs, exposed ports and services running with elevated privileges.
+
+== Attack surface analysis results
+
+#TODO: add the results or a link to the results of the attack surface analysis. If test plans are created and test executions are managed in a test management tool, then add link to the test management tool.#
+
+== Version history
+
+[cols="1,1,3"]
+|===============
+|Version | Date | Changes/Author
+
+| 0.1
+| 2024-01-01
+| XYZ changed by N.N.
+
+|===============
+
+=== Identified security issues
+
+{{#createCards}}
+  "template": "eucra/templates/securityIssue",
+  "buttonLabel": "Create a new security issue"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssueList"
+{{/report}}

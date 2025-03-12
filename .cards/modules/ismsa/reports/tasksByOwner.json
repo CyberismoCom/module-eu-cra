@@ -1,0 +1,6 @@
+{
+    "displayName": "Tasks by owner",
+    "description": "A table showing tasks and security targets by owner",
+    "category": "ISMS report",
+    "name": "ismsa/reports/tasksByOwner"
+}

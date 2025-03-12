@@ -1,0 +1,6 @@
+{
+    "displayName": "Data store",
+    "description": "Stores information. For example, a database or a file.",
+    "category": "Dataflow model",
+    "name": "secdeva/templates/dataStore"
+}

@@ -1,0 +1,76 @@
+{
+    "name": "secdeva/workflows/requirement",
+    "states": [
+        {
+            "name": "Draft",
+            "category": "initial"
+        },
+        {
+            "name": "Content ready",
+            "category": "active"
+        },
+        {
+            "name": "To be verified",
+            "category": "active"
+        },
+        {
+            "name": "Closed as verified",
+            "category": "closed"
+        },
+        {
+            "name": "Closed as rejected",
+            "category": "closed"
+        }
+    ],
+    "transitions": [
+        {
+            "name": "Create",
+            "fromState": [
+                ""
+            ],
+            "toState": "Draft"
+        },
+        {
+            "name": "Approve requirement",
+            "fromState": [
+                "Draft"
+            ],
+            "toState": "Content ready"
+        },
+        {
+            "name": "Implementation done",
+            "fromState": [
+                "Content ready"
+            ],
+            "toState": "To be verified"
+        },
+        {
+            "name": "Verification passed",
+            "fromState": [
+                "To be verified"
+            ],
+            "toState": "Closed as verified"
+        },
+        {
+            "name": "Verification failed",
+            "fromState": [
+                "To be verified"
+            ],
+            "toState": "Content ready"
+        },
+        {
+            "name": "Reject requirement",
+            "fromState": [
+                "*"
+            ],
+            "toState": "Closed as rejected"
+        },
+        {
+            "name": "Reopen",
+            "fromState": [
+                "*"
+            ],
+            "toState": "Draft"
+        }
+    ]
+}

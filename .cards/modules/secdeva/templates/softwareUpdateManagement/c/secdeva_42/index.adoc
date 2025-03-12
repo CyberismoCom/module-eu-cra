@@ -1,0 +1,61 @@
+== Introduction
+
+This document is a review of the management of security updates for #TODO: describe scope#.
+
+== 3^rd^ party software update management
+
+The goal of the 3rd party software update management of a technology is to identify, qualify and document security-related software updates to 3^rd^ party components that the product depends on.
+
+#TODO: document here, how the 3^rd^ party software update management for the scope is done:#
+
+* #Which update channels are followed.#
+* #Which tools (if any) are used to track the available security-related software updates#
+* #By whom and how often the newly available 3^rd^ party software updates are processed#
+* #By whom and how the information about software updated that may be published by the 3^rd^ party suppliers is processed#
+
+== Review checklist
+
+Check that the 3rd party software update management covers all such technologies where 3rd party software update management is required.
+
+* [ ] OK
+* [ ] Not OK
+
+Check that 3rd party software update management has been executed.
+
+* [ ] OK
+* [ ] Not OK
+
+Check that all 3rd party software updates and the information provided by the 3rd party suppliers have been processed.
+
+* [ ] OK
+* [ ] Not OK
+
+== Review notes
+
+#TODO: if applicable, add a link or an attachment to external systems for more information or evidence.#
+
+#TODO: Describe any notes and remarks about the review here#
+
+== Version history
+
+[cols="1,1,3"]
+|===============
+|Version | Date | Changes/Author
+
+| 0.1
+| 2024-01-01
+| XYZ changed by N.N.
+
+|===============
+
+== Reviews
+
+{{#createCards}}
+    "template": "base/templates/reviewTask",
+    "buttonLabel": "Add new review task"
+{{/createCards}}
+
+{{#report}}
+  "name": "base/reports/childrenTable",
+  "cardType": "base/cardTypes/reviewTask"
+{{/report}}

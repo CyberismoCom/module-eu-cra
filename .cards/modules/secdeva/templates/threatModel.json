@@ -1,0 +1,6 @@
+{
+    "displayName": "Threat model",
+    "description": "A document for systematic security threat management",
+    "category": "Secure development specifications",
+    "name": "secdeva/templates/threatModel"
+}

@@ -1,0 +1,12 @@
+== Source
+
+EU CRA Annex I (1) (2) (g) :: On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable, products with digital elements shall: (g) process only data, personal or other, that are adequate, relevant and limited to what is necessary in relation to the intended purpose of the product with digital elements (data minimisation);
+
+== Requirement description
+
+#TODO: Edit this as applicable and add any product-specific considerations#
+
+This requirement is implemented by the linked secure development tasks: 
+
+* Data minimisation is reviewed as part of the security design review. 
+* Privacy by design best practices also support data minimisation: users should not be asked to provide such data that is not strictly necessary to the execution of the task or service that the user is requesting to perform, and any data that is no longer needed should be deleted without delay

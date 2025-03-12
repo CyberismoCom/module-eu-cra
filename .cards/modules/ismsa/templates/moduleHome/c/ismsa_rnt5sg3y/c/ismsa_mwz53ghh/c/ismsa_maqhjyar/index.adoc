@@ -1,0 +1,16 @@
+## Risks related to supporting assets
+
+Risks related to supporting assets are recorded under subregisters using the risk template.
+
+Currently, the following subregisters have been defined:
+
+{{#report}}
+  "name": "base/reports/childrenList"
+{{/report}}
+
+Add new register, if needed.
+
+{{#createCards}}
+  "template": "ismsa/templates/register",
+  "buttonLabel": "Add new register"
+{{/createCards}}

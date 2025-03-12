@@ -1,0 +1,9 @@
+== Source
+
+EU CRA Annex I (1) (2) (e) :: On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable, products with digital elements shall: (e) protect the confidentiality of stored, transmitted or otherwise processed data, personal or other, such as by encrypting relevant data at rest or in transit by state of the art mechanisms, and by using other technical means;
+
+== Requirement description
+
+#TODO: Edit this as applicable and add any product-specific considerations#
+
+In accordance with the nature of the product and to the relevant risks identified in the risk analysis, an appropriate protection mechanism shall be implemented. This may include encryption, which requires appropriate management of cryptographic keys.

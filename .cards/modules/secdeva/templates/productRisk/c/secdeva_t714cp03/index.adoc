@@ -1,0 +1,69 @@
+{{#graph}}
+  "model": "ismsa/graphModels/assetsRisksControls",
+  "view": "ismsa/graphViews/risk"
+{{/graph}}
+
+== Risk description
+
+=== Related assets
+
+This risk is related to the development project or its results.
+
+#TODO: If necessary, add links to related more detailed assets in external asset registers or add a link to a related asset, such as a data store or a process of the data flow model, using the 'affects asset' link type.#
+
+=== Threat
+
+#TODO: Describe the threat#
+
+=== Potential vulnerabilities
+
+#TODO:# Link to the Security issues that may increase this risk with an 'is increased by' link.
+
+=== Consequences
+
+#TODO# Describe potential consequences.
+
+* #Consequence 1#
+* #Consequence 2#
+* #Consequence 3#
+
+== Risk analysis
+
+=== Existing risk mitigations
+
+#TODO:# Describe possible existing security requirements, tasks, and controls. Add 'is mitigated by' links, if applicable.
+
+=== Justification for initial risk level
+
+#TODO:# Add justifications for the initial likelihood and the initial impact.
+
+== Risk treatment
+
+=== Risk treatment plan
+
+#TODO:# Add new security requirements or one-time tasks to treatment plan, as needed.
+
+You can create security requirements either as children of this risk, or you can create security requirements under *Design* / *Write security requirements specifications* and link them to this risk with the 'mitigates' link type.
+
+{{#createCards}}
+  "template": "secdeva/templates/securityRequirement",
+  "buttonLabel": "Add a new security requirement to treatment plan"
+{{/createCards}}
+
+{{#createCards}}
+  "template": "base/templates/oneTimeTask",
+  "buttonLabel": "Add a new one-time task to treatment plan"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/productRiskTreatmentPlan"
+{{/report}}
+
+=== Justification for the residual risk
+
+#TODO:# Add justifications for the residual likelihood and the residual impact.
+
+== Risk monitoring
+
+When reviewing a risk that needs monitoring, evaluate the effectiveness of current controls.
+Consider the impacts of any significant incidents or other significant changes, and update this section accordingly.

@@ -1,0 +1,67 @@
+== Introduction
+
+This document records a review of the protection of environments of the development project.
+
+== Review checklist
+
+Check that separate environments are available as required based on risk:
+
+* Development environment
+* Testing environment
+* Staging environment
+* Demonstration environment
+* Production environment
+
+// this is a break between lists
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not applicable
+
+Check that basic cybersecurity controls that protect these environments, including for example access control, software updates, hardening and secure configuration, monitoring, network security, and backups, have been implemented.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not applicable
+
+Check that production data or customer data is not used inappropriately in development, testing, or demonstration environments.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not applicable
+
+Check that any integrations to other systems are not used inappropriately in development, testing, or demonstration environments. Examples of potentially dangerous integrations include email services and integrations to important enterprise systems such as enterprise resource planning (ERP).
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not applicable
+
+== Review notes
+
+#TODO: if applicable, add a link or an attachment to external systems for more information or evidence.#
+
+#TODO: Describe any notes and remarks about the review here#
+
+== Version history
+
+[cols="1,1,3"]
+|===============
+|Version | Date | Changes/Author
+
+| 0.1
+| 2024-01-01
+| XYZ changed by N.N.
+
+|===============
+
+== Identified security issues from this review
+
+{{#createCards}}
+  "template": "secdeva/templates/securityIssue",
+  "buttonLabel": "Create a new security issue"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssueList"
+{{/report}}
+

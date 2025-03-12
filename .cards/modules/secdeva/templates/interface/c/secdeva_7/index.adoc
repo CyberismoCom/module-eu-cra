@@ -1,0 +1,233 @@
+== Introduction
+
+This page documents the design of an interface.
+
+== Interface review
+
+Review instructions
+
+* Review this document according to the review instructions of each chapter.
+* Document the results of the review in the review subtask
+
+== Classification of the interface
+
+[NOTE]
+.Review instructions
+====
+Interfaces are classified automatically based on the dataflow model. To review this section:
+
+. Check that the interface has been correctly classified as an external interface or internal interface. If not, then improve the dataflows of dataflow model. External interfaces have dataflows from external entities or persons.
+. Check that the relationship of this interface to the trust boundaries have been correctly classified. If not, then improve the dataflows and trust boundaries of the dataflow model.
+====
+
+{{#report}}
+  "name": "secdeva/reports/interfaceClassification"
+{{/report}}
+
+== Security context considerations
+
+[NOTE]
+.Review instructions
+====
+The _security context_ refers to the security that is provided by the deployment environment.
+
+To review this section:
+
+. Check what has been documented about the security context of the product. The security context is documented in a security context document: {{#report}}
+  "name": "secdeva/reports/linkByIdentifier",
+  "identifier": "secdeva_document_security-context",
+  "messageIfNoResults": "#TODO# There are no security context documents yet. Create a security context document under *Design* → *Document security context*."
+{{/report}}
+. Check that this section describes how the security context has been taken into account for the security of this interface:
+* How the protections offered by the security context have been used
+* How the vulnerabilities resulting from the security context have been addressed
+. Check that this section includes security considerations, assumptions and/or constraints associated with the use of the interface within the security context
+. Any considerations or constraints that must be taken into account when using this interface
+====
+
+== Assets and privileges
+
+[NOTE]
+.Review instructions
+====
+Consider the following aspects:
+
+. Identify the assets that can be accessed through this interface. Include also assets that are indirectly accessible.
+. Ensure that only the necessary assets are accessible. Do not expose any other assets.
+. Design the required privileges. Apply the principle of least privilege.
+. Aim at a simple design
+
+To review this section:
+
+. Check that the table below includes the data assets that can be accessed through this interface. +
+For example
+* Databases
+* Configuration files
+* Cryptographic key stores
+* Access Control Lists (ACLs)
+* Web pages
+* Audit logs
+* Network sockets
+* Inter-Process Communications (IPC) resources
+* Remote Procedure Calls (RPC)
+* Other files or directories
+* Memory resources
+. Check that the required privileges, rights or access control permissions have been defined in the second column of the table below
+====
+
+#TODO: document the reachable assets (both directly and indirectly), and the required privileges. For example, you may use the format of the table below.#
+
+[width="100%",cols="16%,38%,46%",options="header",]
+|===
+|*Asset* |*Required privilege to read* |*Required privilege to modify*
+|Example asset 1
+|Required privilege to read asset 1 through this interface
+|Required privilege to make changes to asset 1 through this interface
+|Example asset 2
+|Required privilege to read asset 2 through this interface
+|Required privilege to make changes to asset 2 through this interface
+|===
+
+== Actors of the interface
+
+[NOTE]
+.Review instructions
+====
+. Identify the potential users of the interface and check that they are represented in the dataflow model. See a summary above in *Classification of the interface*
+. Group the users into user categories based on similar needs of accessing the assets
+. Aim at a simple design
+
+To review this section:
+
+. Check that this section describes the potential user categories of the interface correctly
+. Check that the granted privileges have been documented correctly
+====
+
+#TODO: Document the actors who may use the interface, and their required privileges, rights or permissions. For example, you may use the format of the table below.#
+
+[width="100%",cols="36%,64%",options="header",]
+|===
+|*User category* |*Granted privileges, rights or permissions*
+|Example internal user category
+|The privileges that need to be granted for the example internal user category
+|Example external user category
+|The privileges that need to be granted for the example external user category
+|===
+
+== Protocol description
+
+[NOTE]
+.Review instructions
+====
+
+This section is optional.
+
+If applicable, the protocol description may include
+
+* References to external protocol specifications
+* Use cases
+* Message encoding
+* Extensibility, versioning and version compatibility
+* Exceptions and error messages
+====
+
+== Security capabilities
+
+[NOTE]
+.Review instructions
+====
+
+Consider whether the following aspects are relevant:
+
+. Design appropriate security capabilities to protect the assets that can be accessed through this interface. This may include
+* Authentication
+* Encryption
+* Hardening
+* Logging
+* Compensating safeguards
+* Capabilities provided by 3rd party products that are used to implement this interface
+. Take into account the security context considerations (see above)
+. Take into account the relevant threats in the threat model
+. Take into account the relevant security requirements that have been allocated to the component
+. Include input validation, output handling and error handling
+. Aim at a simple design
+
+To review this section
+
+. Check that the described security capabilities are sufficient and proportional to the security context, identified threats and relevant security requirements
+====
+
+== 3rd party technologies
+
+[NOTE]
+.Review instructions
+====
+
+To review this section:
+
+. Check that a technology selection document has been created for all 3rd party products that are used to implement this interface
+. Check that the used 3rd party technologies are listed in this section
+====
+
+The implementation of this interface: (Select one of the following options)
+
+* [ ] Does not use 3rd party technologies
+* [ ] Uses the following 3rd party technologies:
+
+- List the used 3rd party technologies here, or refer to another document
+
+== Design insights
+
+Review instructions: Documenting design insights
+
+In this optional section, you can specify additional information about the design of this interface:
+
+* Why was the implementation done the way it was done?
+* Known strengths and weaknesses of the design
+* Future development needs
+* Configuration model
+* Dependability considerations
+* Redundancy considerations
+* Diagnostics, logging and auditing considerations
+
+== Security testing
+
+[NOTE]
+.Review instructions
+====
+
+Security testing activities may be applicable to interface. Document the scoping decisions (which of the testing activities are applicable) and the justification of the decisions in the metadata of this card.
+
+Security testing for interface tests fall into the following categories.
+
+* Basic input validation tests
+* Basic stress tests
+* Fuzz tests
+* Capacity tests
+* Network traffic load tests
+* Performance and scalability tests
+====
+
+== Version history
+
+[cols="1,1,3"]
+|===============
+|Version | Date | Changes/Author
+
+| 0.1
+| 2024-01-01
+| XYZ changed by N.N.
+
+|===============
+
+== Reviews
+
+{{#createCards}}
+    "template": "base/templates/reviewTask",
+    "buttonLabel": "Add new review task"
+{{/createCards}}
+
+{{#report}}
+  "name": "base/reports/childrenTable",
+  "cardType": "base/cardTypes/reviewTask"
+{{/report}}

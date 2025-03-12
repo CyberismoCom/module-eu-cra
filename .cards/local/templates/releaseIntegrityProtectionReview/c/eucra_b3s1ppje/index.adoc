@@ -1,0 +1,48 @@
+== Introduction
+
+This document is a review of the integrity protection of releases.
+
+#TODO: describe exact scope, if necessary#
+
+== Review checklist
+
+If common install package and/or code signing mechanisms are available in the organisation, then they are be used for all applicable files of product releases.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not applicable
+
+If a project-specific file integrity protection mechanism is needed, then the mechanism has been properly documented in a design specification, the specification is up to date and that the mechanisms cover all applicable files of product releases.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not applicable
+
+If any form of cryptography is used, then the use case has been included in the cryptography review - see the task *Use cryptography properly and efficiently*.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not applicable
+
+If public-key cryptography is used, then appropriate technical and procedural controls are in place for protecting the private keys.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not applicable
+
+== Review notes
+
+#TODO: if applicable, add a link or an attachment to external systems for more information or evidence.#
+
+#TODO: Describe any notes and remarks about the review here#
+
+== Identified security issues
+
+{{#createCards}}
+  "template": "eucra/templates/securityIssue",
+  "buttonLabel": "Create a new security issue"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssueList"
+{{/report}}

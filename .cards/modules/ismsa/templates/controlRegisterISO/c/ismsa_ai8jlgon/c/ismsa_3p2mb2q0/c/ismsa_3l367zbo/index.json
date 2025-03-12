@@ -1,0 +1,14 @@
+{
+    "title": "5.25 Assessment and decision on information security events",
+    "cardType": "ismsa/cardTypes/control",
+    "workflowState": "Open",
+    "rank": "0|aaz",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "ismsa/fieldTypes/controlStatus": null,
+    "ismsa/fieldTypes/controlJustification": null,
+    "ismsa/fieldTypes/controlSummary": null,
+    "ismsa/fieldTypes/controlOrigin": "iso27001y2022Control",
+    "links": [],
+    "lastUpdated": "2024-12-27T07:14:59.305Z"
+}

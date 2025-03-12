@@ -1,0 +1,17 @@
+{
+    "title": "Untitled device",
+    "cardType": "ismsa/cardTypes/assetDevice",
+    "workflowState": "",
+    "rank": "0|b",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "ismsa/fieldTypes/assetCriticalityForOperations": null,
+    "ismsa/fieldTypes/assetRiskEvaluationNeeded": null,
+    "ismsa/fieldTypes/assetAccessControl": null,
+    "ismsa/fieldTypes/assetUpdates": null,
+    "ismsa/fieldTypes/assetLocation": null,
+    "ismsa/fieldTypes/assetBackups": null,
+    "ismsa/fieldTypes/assetPersonalInformation": null,
+    "ismsa/fieldTypes/assetIntegrity": null,
+    "ismsa/fieldTypes/assetAvailability": null
+}

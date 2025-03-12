@@ -1,0 +1,6 @@
+{
+    "displayName": "Yearly reviews",
+    "description": "A register that contains a button for adding security reviews",
+    "category": "Register management",
+    "name": "ismsa/templates/yearlyReviews"
+}

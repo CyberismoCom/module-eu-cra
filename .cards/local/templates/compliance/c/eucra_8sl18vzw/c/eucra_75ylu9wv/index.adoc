@@ -1,0 +1,12 @@
+.View process diagram
+[%collapsible]
+====
+{{#graph}}
+  "model": "secdeva/graphModels/processDiagram",
+  "view": "secdeva/graphViews/complianceRequirement"
+{{/graph}}
+====
+
+== Requirement content
+
+2.{empty}  The technical documentation shall be drawn up before the product with digital elements is placed on the market and shall be continuously updated, where appropriate, at least during the support period.

@@ -1,0 +1,80 @@
+selectAll.
+
+result(result).
+
+childResult(result, Issue, "issuesNeedingAttention") :-
+    field(Issue, "cardType", "secdeva/cardTypes/securityIssue"),
+    secdeva_closestProject(Issue, Project),
+    secdeva_closestProject({{cardKey}}, Project),
+    not hiddenInTreeView(Issue),
+    not field(Issue, "workflowStateCategory", "closed"),
+    not field(Issue, "workflowState", "Fix deferred").
+
+childResult(result, Issue, "deferredIssues") :-
+    field(Issue, "cardType", "secdeva/cardTypes/securityIssue"),
+    secdeva_closestProject(Issue, Project),
+    secdeva_closestProject({{cardKey}}, Project),
+    not hiddenInTreeView(Issue),
+    field(Issue, "workflowState", "Fix deferred").
+
+field(result, "deferredIssueCount", Count) :-
+    Count = #count { card(Issue) : childResult(result, Issue, "deferredIssues") }.
+
+childResult(result, Card, "failures") :-
+    policyCheckFailure(Card, _, _, _),
+    secdeva_closestProject(Card, Project),
+    secdeva_closestProject({{cardKey}}, Project),
+    field(Project, "cardType", "secdeva/cardTypes/project").
+
+field(result, "policyCheckFailureCount", Count) :-
+    Count = #count { card(Issue) : childResult(result, Issue, "failures") }.
+
+childResult(result, Card, "successes") :-
+    policyCheckSuccess(Card, _, _),
+    secdeva_closestProject(Card, Project),
+    secdeva_closestProject({{cardKey}}, Project),
+    field(Project, "cardType", "secdeva/cardTypes/project").
+
+field(result, "policyCheckSuccessCount", Count) :-
+    Count = #count { card(Issue) : childResult(result, Issue, "successes") }.
+
+childResult(result, Control, "tasksNeedingAttention") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(Control, Project),
+    base_recurringTask(Control),
+    not hiddenInTreeView(Control).
+
+field(Control, "secdeva/fieldTypes/needsAttention", @concatenate("❗ The review of this task has expired ", DaysSinceReview - ReviewPeriod  ," day(s) ago.")) :-
+    childResult(_, Control, "tasksNeedingAttention"),
+    field(Control, "workflowStateCategory", "closed"),
+    field(Control, "base/fieldTypes/lastReviewed", LastReviewed),
+    field(Control, "base/fieldTypes/reviewPeriod", ReviewPeriod),
+    @daysSince(LastReviewed) = DaysSinceReview,
+    DaysSinceReview > ReviewPeriod.
+
+field(Control, "secdeva/fieldTypes/needsAttention", "❗ The date of latest review has not been set.") :-
+    childResult(_, Control, "tasksNeedingAttention"),
+    field(Control, "workflowStateCategory", "closed"),
+    not field(Control, "base/fieldTypes/lastReviewed", _),
+    field(Control, "base/fieldTypes/reviewPeriod", _).
+
+field(Control, "secdeva/fieldTypes/needsAttention", "❗This task must be scoped.") :-
+    childResult(_, Control, "tasksNeedingAttention"),
+    field(Control, "workflowState", "Open").
+
+field(Control, "secdeva/fieldTypes/needsAttention", "❗This task must be done.") :-
+    childResult(_, Control, "tasksNeedingAttention"),
+    field(Control, "workflowState", "To do").
+
+field(Control, "secdeva/fieldTypes/needsAttention", "❗This task must be completed.") :-
+    childResult(_, Control, "tasksNeedingAttention"),
+    field(Control, "workflowState", "In progress").
+
+
+field(result, "readyForRelease", "void") :-
+    not childResult(result, _, "tasksNeedingAttention"),
+    not childResult(result, _, "failures"),
+    not childResult(result, _, "issuesNeedingAttention").
+
+
+orderBy("rank", "ASC").

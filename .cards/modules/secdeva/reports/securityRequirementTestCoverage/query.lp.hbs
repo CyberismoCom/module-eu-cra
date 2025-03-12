@@ -1,0 +1,74 @@
+selectAll.
+
+result(result).
+
+field(result, "scopingNotDone", "void") :-
+    field({{cardKey}}, "workflowState", State),
+    secdeva_scopingStatus(State, "Scoping not done").
+
+field(result, "outOfScope", "void") :-
+    field({{cardKey}}, "workflowState", State),
+    secdeva_scopingStatus(State, "Out of scope").
+
+field(result, "inScope", "void") :-
+    field({{cardKey}}, "workflowState", State),
+    secdeva_scopingStatus(State, "In scope").
+
+childResult(result, Requirement, "requirements") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(Requirement, Project),
+    field(Requirement, "cardType", "secdeva/cardTypes/requirement").
+
+childResult(Requirement, Test, "tests") :-
+    childResult(_, Requirement, "requirements"),
+    field(Test, "cardType", "base/cardTypes/review"),
+    link(Test, Requirement, "secdeva/linkTypes/tests").
+
+field(Test, "reviewOK", "Yes") :-
+    childResult(_, Test, "tests"),
+    field(Test, "workflowState", "Passed"),
+    field(Test, "base/fieldTypes/lastReviewed", LastReviewed),
+    field(Test, "base/fieldTypes/reviewPeriod", ReviewPeriod),
+    @daysSince(LastReviewed) = DaysSinceReview,
+    DaysSinceReview <= ReviewPeriod.
+
+field(Requirement, "testingOK", "Yes") :-
+    childResult(_, Requirement, "requirements"),
+    childResult(Requirement, _, "tests"),
+    field(Test, "reviewOK", "Yes") :
+    childResult(Requirement, Test, "tests").
+
+field(
+    Test,
+    "reviewExpiration",
+    @concatenate("❗Expired ", DaysSinceReview - ReviewPeriod, " day(s) ago")
+    ) :-
+        childResult(_, Test, "tests"),
+        field(Test, "workflowState", "Passed"),
+        field(Test, "base/fieldTypes/lastReviewed", LastReviewed),
+        field(Test, "base/fieldTypes/reviewPeriod", ReviewPeriod),
+        @daysSince(LastReviewed) = DaysSinceReview,
+        DaysSinceReview > ReviewPeriod.
+
+field(Test, "reviewExpiration", "❗Last reviewed date not set") :-
+    childResult(_, Test, "tests"),
+    field(Test, "workflowState", "Passed"),
+    not field(Test, "base/fieldTypes/lastReviewed", _).
+
+field(
+    Test,
+    "reviewExpiration",
+    @concatenate("✅ Still valid, will expire in ", ReviewPeriod - DaysSinceReview, " day(s)" )
+    ) :-
+        childResult(_, Test, "tests"),
+        field(Test, "workflowState", "Passed"),
+        field(Test, "base/fieldTypes/lastReviewed", LastReviewed),
+        field(Test, "base/fieldTypes/reviewPeriod", ReviewPeriod),
+        @daysSince(LastReviewed) = DaysSinceReview,
+        DaysSinceReview <= ReviewPeriod.
+
+field(result, "allRequirementsTested", "void") :-
+    field(Requirement, "testingOK", "Yes") :
+    childResult(result, Requirement, "requirements").
+
+orderBy("title", "ASC").

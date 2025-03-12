@@ -1,0 +1,14 @@
+{
+    "name": "secdeva/linkTypes/precedes",
+    "outboundDisplayName": "precedes",
+    "inboundDisplayName": "is preceded by",
+    "sourceCardTypes": [
+        "base/cardTypes/annualTask",
+        "base/cardTypes/quarterlyTask"
+    ],
+    "destinationCardTypes": [
+        "base/cardTypes/annualTask",
+        "base/cardTypes/quarterlyTask"
+    ],
+    "enableLinkDescription": false
+}

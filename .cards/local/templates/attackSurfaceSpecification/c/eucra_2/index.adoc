@@ -1,0 +1,45 @@
+== Introduction
+
+Attack surface specification contains a list of all concrete ingress and egress avenues of information. It documents an actual deployed system, such as a recommended reference deployment or an actual production environment. The attack surface information can be collected using an attack surface analysis tool such as a network scanner and a node scanner, or it can be determined manually based on the design and architecture documentation. Microsoft AttackSurfaceAnalyzer is an example of an attack surface analysis tool.
+
+Using the same tools for documenting the attack surface as you will be using for attack surface analysis is recommended whenever feasible.
+
+The attack surface specification should include all avenues of ingress and egress to and from the product, such as:
+
+* Network Ports
+* Services
+* File system
+* Different types or categories of user accounts
+* Physical access
+
+NOTE: Because the purpose of the attack surface specification is to enable technical attack surface analysis, the specification focuses on concrete, technically discoverable attack vectors.
+
+== Attack surface specification
+
+#TODO: Document the scope of this analysis#
+
+#TODO: add here the specification of the attack surface, or a link/an attachment to the attack surface specification.#
+
+== Version history
+
+[cols="1,1,3"]
+|===============
+|Version | Date | Changes/Author
+
+| 0.1
+| 2024-01-01
+| XYZ changed by N.N.
+
+|===============
+
+== Reviews
+
+{{#createCards}}
+    "template": "base/templates/reviewTask",
+    "buttonLabel": "Add new review task"
+{{/createCards}}
+
+{{#report}}
+  "name": "base/reports/childrenTable",
+  "cardType": "base/cardTypes/reviewTask"
+{{/report}}

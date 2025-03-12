@@ -1,0 +1,43 @@
+This card sums up the status of secure development for reviews.
+
+== Periodic reviews
+
+Create a periodic review and follow the instructions in the template. Perform the review in the light of the summaries given below.
+
+{{#createCards}}
+  "template": "secdeva/templates/periodicReview",
+  "buttonLabel": "Create a periodic review"
+{{/createCards}}
+
+{{#report}}
+  "name": "base/reports/childrenTable",
+  "tableCaption": "Periodic reviews"
+{{/report}}
+
+== Annual plan
+
+The following annual plan shows the status of recurring secure development tasks.
+
+{{#report}}
+  "name": "secdeva/reports/annualPlan"
+{{/report}}
+
+== Security issues
+
+All reported security issues must be analysed and either tracked to closure or justifiably deferred to future resolution.
+
+{{#report}}
+  "name": "secdeva/reports/securityIssuesNeedingAttention"
+{{/report}}
+
+{{#report}}
+  "name": "secdeva/reports/phase"
+{{/report}}
+
+== Policy checks
+
+Automatic policy checks must be processed and resolved.
+
+{{#report}}
+  "name": "secdeva/reports/projectPolicyChecks"
+{{/report}}

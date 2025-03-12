@@ -1,0 +1,68 @@
+{
+    "name": "secdeva/cardTypes/project",
+    "workflow": "ismsa/workflows/asset",
+    "customFields": [
+        {
+            "name": "base/fieldTypes/adoptionStep",
+            "displayName": "Target adoption step"
+        },
+        {
+            "name": "secdeva/fieldTypes/adoptionStepJustification"
+        },
+        {
+            "name": "base/fieldTypes/owner"
+        },
+        {
+            "name": "base/fieldTypes/informationClassification"
+        },
+        {
+            "name": "ismsa/fieldTypes/assetAvailability"
+        },
+        {
+            "name": "ismsa/fieldTypes/assetBackups"
+        },
+        {
+            "name": "ismsa/fieldTypes/assetCriticalityForOperations"
+        },
+        {
+            "name": "ismsa/fieldTypes/assetIntegrity"
+        },
+        {
+            "name": "ismsa/fieldTypes/assetLocation"
+        },
+        {
+            "name": "ismsa/fieldTypes/assetPersonalInformation"
+        },
+        {
+            "name": "ismsa/fieldTypes/assetRiskEvaluationNeeded",
+            "isCalculated": true
+        },
+        {
+            "name": "ismsa/fieldTypes/assetType"
+        },
+        {
+            "name": "secdeva/fieldTypes/acceptableSeverity"
+        },
+        {
+            "name": "secdeva/fieldTypes/deferrableSeverity"
+        }
+    ],
+    "alwaysVisibleFields": [
+        "base/fieldTypes/owner",
+        "base/fieldTypes/informationClassification",
+        "ismsa/fieldTypes/assetCriticalityForOperations",
+        "ismsa/fieldTypes/assetRiskEvaluationNeeded",
+        "base/fieldTypes/adoptionStep",
+        "secdeva/fieldTypes/adoptionStepJustification"
+    ],
+    "optionallyVisibleFields": [
+        "ismsa/fieldTypes/assetType",
+        "ismsa/fieldTypes/assetPersonalInformation",
+        "ismsa/fieldTypes/assetIntegrity",
+        "ismsa/fieldTypes/assetAvailability",
+        "ismsa/fieldTypes/assetLocation",
+        "ismsa/fieldTypes/assetBackups",
+        "secdeva/fieldTypes/acceptableSeverity",
+        "secdeva/fieldTypes/deferrableSeverity"
+    ]
+}

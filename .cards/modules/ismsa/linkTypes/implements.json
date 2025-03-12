@@ -1,0 +1,19 @@
+{
+    "name": "ismsa/linkTypes/implements",
+    "outboundDisplayName": "implements",
+    "inboundDisplayName": "is implemented by",
+    "sourceCardTypes": [
+        "base/cardTypes/task",
+        "base/cardTypes/annualTask",
+        "base/cardTypes/quarterlyTask",
+        "base/cardTypes/monthlyTask",
+        "base/cardTypes/controlledDocument",
+        "ismsa/cardTypes/register",
+        "ismsa/cardTypes/riskRegister"
+    ],
+    "destinationCardTypes": [
+        "ismsa/cardTypes/control",
+        "ismsa/cardTypes/complianceRequirement"
+    ],
+    "enableLinkDescription": false
+}

@@ -1,0 +1,15 @@
+== Source
+
+EU CRA Annex I (1) (2) (f) :: On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable, products with digital elements shall: (f) protect the integrity of stored, transmitted or otherwise processed data, personal or other, commands, programs and configuration against any manipulation or modification not authorised by the user, and report on corruptions;
+
+== Requirement description
+
+#TODO: Edit this as applicable and add any product-specific considerations#
+
+In accordance with the nature of the product and to the relevant risks identified in the risk analysis, an appropriate protection mechanism shall be implemented. This may include the use of cryptography, such as hashing, Message Authentication Codes (MAC) and digital signatures, some of which requires appropriate management of cryptographic keys.
+
+Notice that this requirement concerns both information at rest and in transit.
+
+Notice that the data that must be integrity-protected includes software updates. See linked secure development task about protecting the integrity of releases.
+
+For devices, the integrity requirement concerns the boot process.

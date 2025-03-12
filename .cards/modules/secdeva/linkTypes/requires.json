@@ -1,0 +1,14 @@
+{
+    "name": "secdeva/linkTypes/requires",
+    "outboundDisplayName": "requires",
+    "inboundDisplayName": "is required by",
+    "sourceCardTypes": [
+        "base/cardTypes/annualTask",
+        "base/cardTypes/quarterlyTask"
+    ],
+    "destinationCardTypes": [
+        "base/cardTypes/annualTask",
+        "base/cardTypes/quarterlyTask"
+    ],
+    "enableLinkDescription": false
+}

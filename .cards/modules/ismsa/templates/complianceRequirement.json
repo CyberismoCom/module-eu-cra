@@ -1,0 +1,6 @@
+{
+    "displayName": "Compliance requirement",
+    "description": "An external compliance requirement from regulations, standards, or stakeholders",
+    "category": "Cybersecurity management",
+    "name": "ismsa/templates/complianceRequirement"
+}

@@ -1,0 +1,17 @@
+{
+    "cardType": "base/cardTypes/annualTask",
+    "title": "Test input validation",
+    "workflowState": "",
+    "rank": "0|ad",
+    "lastUpdated": "2025-01-23T20:35:26.772Z",
+    "links": [],
+    "eucra/fieldTypes/controlImplementer": "Independent test team",
+    "base/fieldTypes/adoptionStep": "step1",
+    "base/fieldTypes/justification": null,
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/reviewPeriod": 365,
+    "base/fieldTypes/reviewMonth": null,
+    "base/fieldTypes/lastReviewed": null,
+    "base/fieldTypes/identifier": "eucra_control_basic-input-validation-testing"
+}

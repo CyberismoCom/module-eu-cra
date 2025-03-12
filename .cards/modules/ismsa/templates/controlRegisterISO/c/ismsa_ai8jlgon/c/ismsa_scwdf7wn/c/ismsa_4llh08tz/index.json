@@ -1,0 +1,14 @@
+{
+    "title": "8.34 Protection of information systems during audit testing",
+    "cardType": "ismsa/cardTypes/control",
+    "workflowState": "Open",
+    "rank": "0|adzv",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "ismsa/fieldTypes/controlStatus": null,
+    "ismsa/fieldTypes/controlJustification": null,
+    "ismsa/fieldTypes/controlSummary": null,
+    "ismsa/fieldTypes/controlOrigin": "iso27001y2022Control",
+    "links": [],
+    "lastUpdated": "2024-12-27T07:35:53.480Z"
+}

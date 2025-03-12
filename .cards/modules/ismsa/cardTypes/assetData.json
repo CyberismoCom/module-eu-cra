@@ -1,0 +1,45 @@
+{
+    "name": "ismsa/cardTypes/assetData",
+    "workflow": "ismsa/workflows/asset",
+    "customFields": [
+        {
+            "name": "base/fieldTypes/owner"
+        },
+        {
+            "name": "base/fieldTypes/informationClassification"
+        },
+        {
+            "name": "ismsa/fieldTypes/assetAvailability"
+        },
+        {
+            "name": "ismsa/fieldTypes/assetBackups"
+        },
+        {
+            "name": "ismsa/fieldTypes/assetCriticalityForOperations"
+        },
+        {
+            "name": "ismsa/fieldTypes/assetIntegrity"
+        },
+        {
+            "name": "ismsa/fieldTypes/assetLocation"
+        },
+        {
+            "name": "ismsa/fieldTypes/assetPersonalInformation"
+        },
+        {
+            "name": "ismsa/fieldTypes/assetRiskEvaluationNeeded"
+        }
+    ],
+    "alwaysVisibleFields": [
+        "base/fieldTypes/owner",
+        "base/fieldTypes/informationClassification",
+        "ismsa/fieldTypes/assetIntegrity",
+        "ismsa/fieldTypes/assetAvailability",
+        "ismsa/fieldTypes/assetPersonalInformation",
+        "ismsa/fieldTypes/assetCriticalityForOperations",
+        "ismsa/fieldTypes/assetLocation",
+        "ismsa/fieldTypes/assetBackups",
+        "ismsa/fieldTypes/assetRiskEvaluationNeeded"
+    ],
+    "optionallyVisibleFields": []
+}

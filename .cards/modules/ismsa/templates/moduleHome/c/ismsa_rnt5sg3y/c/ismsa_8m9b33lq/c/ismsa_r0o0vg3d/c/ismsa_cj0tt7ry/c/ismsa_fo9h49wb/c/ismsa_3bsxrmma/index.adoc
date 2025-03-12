@@ -1,0 +1,70 @@
+{{#graph}}
+  "model": "ismsa/graphModels/assetsRisksControls",
+  "view": "ismsa/graphViews/risk"
+{{/graph}}
+
+== Risk description
+
+=== Related assets
+
+Company laptops and mobile phones
+
+=== Threat
+
+Leaking confidential information from a phone or laptop
+
+=== Potential vulnerabilities
+
+. Device is stolen or lost
+. Malicious code installed on the device
+. Tiktok or another questionable application leaks business information
+. Malicious web site exploits device vulnerabilities
+. Malious email or message attachment
+. Device is misplaced for a while, and confidential information is shown on the home screen, or device is not locked, or a weak passcode is in use
+. Reading over the shoulder in a public place
+. #TODO: Add more vulnerabilities#
+
+=== Consequences
+
+* Information disclosure
+* Brand damage
+* Breach of customer NDAs/contracts
+* #TODO: Add more consequences#
+
+== Risk analysis
+
+=== Existing controls
+
+#TODO# Describe possible existing controls. Add links if applicable.
+
+=== Justification for initial risk level
+
+#TODO# Add justifications for the initial likelihood and the initial impact.
+
+== Risk treatment
+
+=== Risk treatment plan
+
+{{#report}}
+  "name": "base/reports/childrenTable"
+{{/report}}
+
+{{#createCards}}
+  "template": "base/templates/oneTimeTask",
+  "buttonLabel": "Add new tasks to treatment plan"
+{{/createCards}}
+
+{{#createCards}}
+  "template": "ismsa/templates/control",
+  "buttonLabel": "Add new controls to treatment plan"
+{{/createCards}}
+
+
+=== Justification for the residual risk
+
+#TODO# Add justifications for the residual likelihood and the residual impact.
+
+== Risk monitoring
+
+When reviewing a risk that needs monitoring, evaluate the effectiveness of current controls.
+Consider the impacts of any significant incidents or other significant changes, and update this section accordingly.

@@ -1,0 +1,14 @@
+{
+    "name": "secdeva/linkTypes/tests",
+    "outboundDisplayName": "tests",
+    "inboundDisplayName": "is tested by",
+    "sourceCardTypes": [
+        "base/cardTypes/review"
+    ],
+    "destinationCardTypes": [
+        "secdeva/cardTypes/securityIssue",
+        "secdeva/cardTypes/requirement",
+        "secdeva/cardTypes/interface"
+    ],
+    "enableLinkDescription": false
+}

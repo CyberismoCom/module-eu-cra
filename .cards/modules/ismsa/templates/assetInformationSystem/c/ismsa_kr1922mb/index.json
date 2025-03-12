@@ -1,0 +1,20 @@
+{
+    "title": "Untitled information system",
+    "cardType": "ismsa/cardTypes/assetInformationSystem",
+    "workflowState": "",
+    "rank": "0|b",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "ismsa/fieldTypes/assetAccessControl": null,
+    "ismsa/fieldTypes/assetAdmins": null,
+    "ismsa/fieldTypes/assetAvailability": null,
+    "ismsa/fieldTypes/assetBackups": null,
+    "ismsa/fieldTypes/assetCriticalityForOperations": null,
+    "ismsa/fieldTypes/assetIntegrity": null,
+    "ismsa/fieldTypes/assetLocation": null,
+    "ismsa/fieldTypes/assetLoggingAndMonitoring": null,
+    "ismsa/fieldTypes/assetPersonalInformation": null,
+    "ismsa/fieldTypes/assetPublisher": null,
+    "ismsa/fieldTypes/assetRiskEvaluationNeeded": null,
+    "ismsa/fieldTypes/assetUpdates": null
+}

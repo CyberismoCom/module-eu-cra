@@ -1,0 +1,65 @@
+== Introduction
+
+This document records a review of static code analysis in the development project.
+
+== Review checklist
+
+Check that the static code analysis tools have been documented either as an organization development tool or a project-specific development tool.
+
+* [ ] OK
+* [ ] Not OK
+
+Check that static code analysis tools have been used for the programming languages where tools exist.
+
+* [ ] OK
+* [ ] Not OK
+
+Check that static code analysis has been set up as part of the build pipeline.
+
+* [ ] OK
+* [ ] Not OK
+
+Check that static code analysis has been configured to detect at least most of the potentially exploitable code constructs that are covered in the applicable secure coding standard.
+
+* [ ] OK
+* [ ] Not OK
+
+Check that static code analysis tool has been run on all source code changes including new source code.
+
+* [ ] OK
+* [ ] Not OK
+
+Check that the identified security-related findings have been analysed and addressed, or reported as security issues in the backlog for future resolution.
+
+* [ ] OK
+* [ ] Not OK
+
+== Review notes
+
+#TODO: if applicable, add a link or an attachment to external systems for more information or evidence.#
+
+#TODO: Describe any notes and remarks about the review here#
+
+== Version history
+
+[cols="1,1,3"]
+|===============
+|Version | Date | Changes/Author
+
+| 0.1
+| 2024-01-01
+| XYZ changed by N.N.
+
+|===============
+
+== Identified security issues
+
+{{#createCards}}
+  "template": "secdeva/templates/securityIssue",
+  "buttonLabel": "Create a new security issue"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssueList"
+{{/report}}
+

@@ -1,0 +1,27 @@
+{
+    "name": "secdeva/fieldTypes/reporting",
+    "displayName": "Reporting",
+    "dataType": "enum",
+    "enumValues": [
+        {
+            "enumValue": "notReportable",
+            "enumDisplayValue": "Not Reportable",
+            "enumDescription": "The issue is not reportable outside the development team"
+        },
+        {
+            "enumValue": "releaseNotesOnceResolved",
+            "enumDisplayValue": "Release notes once resolved",
+            "enumDescription": "The issue will be reported in the release notes once it has been resolved"
+        },
+        {
+            "enumValue": "securityAdvisoryOnceResolved",
+            "enumDisplayValue": "Security advisory once resolved",
+            "enumDescription": "A security advisory will be published once the issue has been resolved"
+        },
+        {
+            "enumValue": "securityAdvisoryAsUnresolved",
+            "enumDisplayValue": "Security advisory as unresolved",
+            "enumDescription": "A security advisory will be published even before the issue has been resolved"
+        }
+    ]
+}

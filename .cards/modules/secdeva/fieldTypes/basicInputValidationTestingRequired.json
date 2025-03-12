@@ -1,0 +1,5 @@
+{
+    "name": "secdeva/fieldTypes/basicInputValidationTestingRequired",
+    "displayName": "Input validation testing required?",
+    "dataType": "boolean"
+}

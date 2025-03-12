@@ -1,0 +1,6 @@
+{
+    "displayName": "Process",
+    "description": "An activity that the system carries out.",
+    "category": "Dataflow model",
+    "name": "secdeva/templates/process"
+}

@@ -1,0 +1,12 @@
+{
+    "title": "Operations",
+    "cardType": "secdeva/cardTypes/page",
+    "workflowState": "",
+    "rank": "0|h",
+    "base/fieldTypes/adoptionStep": "step1",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "links": [],
+    "lastUpdated": "2025-02-14T07:49:43.981Z",
+    "base/fieldTypes/identifier": "secdeva_phase_operations"
+}

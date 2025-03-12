@@ -1,0 +1,12 @@
+{
+    "name": "ismsa/linkTypes/realises",
+    "outboundDisplayName": "realises as",
+    "inboundDisplayName": "realises from",
+    "sourceCardTypes": [
+        "ismsa/cardTypes/risk"
+    ],
+    "destinationCardTypes": [
+        "ismsa/cardTypes/incident"
+    ],
+    "enableLinkDescription": false
+}

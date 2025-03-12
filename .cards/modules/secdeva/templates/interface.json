@@ -1,0 +1,6 @@
+{
+    "displayName": "Interface specification",
+    "description": "Security documentation of an exposed interface",
+    "category": "Secure development specifications",
+    "name": "secdeva/templates/interface"
+}

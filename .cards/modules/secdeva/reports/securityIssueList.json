@@ -1,0 +1,6 @@
+{
+    "displayName": "List of threats",
+    "description": "A list of descendant threat cards",
+    "category": "Secure development",
+    "name": "secdeva/reports/securityIssueList"
+}

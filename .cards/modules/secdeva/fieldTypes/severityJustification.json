@@ -1,0 +1,5 @@
+{
+    "name": "secdeva/fieldTypes/severityJustification",
+    "displayName": "Severity justification",
+    "dataType": "longText"
+}

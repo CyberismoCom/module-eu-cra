@@ -1,0 +1,62 @@
+.View process diagram
+[%collapsible]
+====
+{{#graph}}
+  "model": "secdeva/graphModels/processDiagram",
+  "view": "secdeva/graphViews/processTask"
+{{/graph}}
+====
+
+A threat model identifies cyber security issues of the project based on the architecture and it is created in a systematic process. The purpose of threat modeling is to identify weaknesses, which can be addressed to minimize cybersecurity risks, prevent security incidents and minimize the impacts of security incidents.
+
+== How to decide if this secure development task is required
+
+A top-level threat model is required on the topmost project level, if the project includes custom software development and the project is responsible for the security of the architecture.
+
+== How to implement
+
+=== 1. Document the security context
+
+{{#report}}
+  "name": "secdeva/reports/linkByIdentifier",
+  "identifier": "secdeva_document_security-context",
+  "messageIfNoResults": "#TODO# There are no security context documents yet. Create a security context document under *Design* → *Document security context*."
+{{/report}}
+
+=== 2. Create a threat model document
+
+{{#report}}
+  "name": "secdeva/reports/createChildDocument",
+  "template": "secdeva/templates/threatModel",
+  "buttonLabel": "Create a threat model"
+{{/report}}
+
+=== 3. Document the target of the threat model
+
+Follow the instructions in the template.
+
+The  diagram is the most important part of this documentation.
+
+=== 4. Identify weaknesses
+
+Identify weaknesses in the design and create security issues.
+
+=== 5. Review and approve
+
+Review and approve the threat model document.
+
+=== 6. Corrective actions
+
+Include the corrective actions in the backlog of the development work.
+
+=== 7. Maintenance
+
+Update the threat model, if the design changes.
+
+Review the threat model at least annually and record the review in a review subtask of the threat model document.
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildDocumentStatus"
+{{/report}}

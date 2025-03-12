@@ -1,0 +1,19 @@
+## Information systems
+
+Information systems support primary assets. In addition to fields that are mandatory for all assets (such as owner or criticality), the following characteristics need to be defined for
+information systems:
+
+* Access controls attributes (AD/local accounts, accessibility from public networks, MFA)
+
+* Responsibility for security updates
+
+* Backups
+
+* Level of logging and monitoring
+
+{{#createCards}}
+  "template": "ismsa/templates/assetInformationSystem",
+  "buttonLabel": "Add new information system"
+{{/createCards}}
+
+**Note**: If information systems are already listed in some other asset register, just add a link here and ensure that the original asset register contains the needed information.

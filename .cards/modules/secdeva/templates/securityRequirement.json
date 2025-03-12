@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/templates/securityRequirement",
+    "displayName": "Security requirement",
+    "description": "A technical security requirement",
+    "category": "Security issues"
+}

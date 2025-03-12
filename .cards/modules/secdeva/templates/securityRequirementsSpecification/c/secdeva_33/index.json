@@ -1,0 +1,13 @@
+{
+    "cardType": "base/cardTypes/controlledDocument",
+    "title": "Security requirement specification for (Scope)",
+    "workflowState": "",
+    "rank": "0|a",
+    "lastUpdated": "2025-01-20T08:48:53.639Z",
+    "links": [],
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/approver": null,
+    "base/fieldTypes/approvalDate": null,
+    "base/fieldTypes/identifier": "secdeva_document_security-requirement-specification"
+}

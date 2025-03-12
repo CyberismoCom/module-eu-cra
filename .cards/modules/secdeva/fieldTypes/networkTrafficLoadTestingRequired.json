@@ -1,0 +1,5 @@
+{
+    "name": "secdeva/fieldTypes/networkTrafficLoadTestingRequired",
+    "displayName": "Network traffic load testing required?",
+    "dataType": "boolean"
+}

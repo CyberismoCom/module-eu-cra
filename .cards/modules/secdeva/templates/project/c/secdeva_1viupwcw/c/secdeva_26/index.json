@@ -1,0 +1,10 @@
+{
+    "cardType": "secdeva/cardTypes/page",
+    "title": "Meetings",
+    "workflowState": "",
+    "rank": "0|z",
+    "lastUpdated": "2025-01-20T08:48:53.616Z",
+    "links": [],
+    "base/fieldTypes/identifier": "secdeva_phase_meetings",
+    "base/fieldTypes/adoptionStep": null
+}

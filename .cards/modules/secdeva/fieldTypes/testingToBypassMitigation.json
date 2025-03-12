@@ -1,0 +1,19 @@
+{
+    "name": "secdeva/fieldTypes/testingToBypassMitigation",
+    "displayName": "Testing to bypass the mitigation",
+    "dataType": "enum",
+    "enumValues": [
+        {
+            "enumValue": "required",
+            "enumDisplayValue": "Required"
+        },
+        {
+            "enumValue": "notApplicable",
+            "enumDisplayValue": "Not applicable"
+        },
+        {
+            "enumValue": "done",
+            "enumDisplayValue": "Done"
+        }
+    ]
+}

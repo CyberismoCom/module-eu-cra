@@ -1,0 +1,100 @@
+== Introduction
+
+This is a periodic review for secure development. It is conducted to find out the current state of security work and to plan the security work for the next periods.
+
+Notice that you do not need to get a perfect score to close the review as passed, but it is sufficient if you understand the current status and have a plan to address any gaps during the next periods.
+
+== Review checklist
+
+=== Secure development tasks
+
+Check the annual plan of secure development tasks in the parent card of this card.
+
+All Secure development tasks should have be *Closed as done* or *Closed as not applicable* and their review must not be expired.
+
+* If there are tasks in the *Open* state, then plan how they will be scoped, or in other words decided whether they are required
+* If there are secure development tasks that are required but not yet *Closed as OK*, then plan the work to perform these controls
+* If there are controls that are *Closed as OK* or that are *Closed as not applicable*, but their review has expired, then plan when these secure development tasks can be reviewed and updated.
+
+This can be marked as OK if the missing actions are planned.
+
+* [ ] OK
+* [ ] Not OK
+
+Comments, links:
+
+=== Security issue status
+
+Check the table of security issues that need attention in the parent of this card.
+
+* [ ] OK
+* [ ] Not OK
+
+Comments, links:
+
+=== Security tool status
+
+Check that the security issues in all the security testing tools such as static code analyzers and vulnerability tracking tools have been managed.
+
+The issues from these tools should be reported as security issues and managed according to the secure development process.
+
+* [ ] OK
+* [ ] Not OK
+
+Comments, links:
+
+=== Security issue communication
+
+For each known security issue that has not yet been tracked to closure but that affects a released product version or a product version that is currently in use, check that the issue and possible user mitigation strategies and associated risks have been documented to users, or that there is a justified reason not to communicate the issue to product users.
+
+Check that all such security issues that identify a vulnerability in a component, including in an open source component, which is integrated in the product, have been reported to the person or entity maintaining the component.
+
+* [ ] OK
+* [ ] Not OK
+
+Comments, links:
+
+=== Automated policy checks
+
+Check the status of automated policy checks in the parent card of this card.
+
+This can be marked as OK if the missing actions are planned.
+
+* [ ] OK
+* [ ] Not OK
+
+=== Subprojects
+
+Check that a similar periodic review has been successfully conducted for any subproject recently enough.
+
+* [ ] OK or Not Applicable
+* [ ] Not OK
+
+Comments, links:
+
+== Conclusion
+
+#TODO: add here a conclusion. The review can be accepted, if the current state of cybersecurity management is known and the required actions have been planned.#
+
+== Version history
+
+[cols="1,1,3"]
+|===============
+|Version | Date | Changes/Author
+
+| 0.1
+| 2024-01-01
+| XYZ changed by N.N.
+
+|===============
+
+== Security issues identified from this review
+
+{{#createCards}}
+  "template": "secdeva/templates/securityIssue",
+  "buttonLabel": "Create a new security issue"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssueList"
+{{/report}}

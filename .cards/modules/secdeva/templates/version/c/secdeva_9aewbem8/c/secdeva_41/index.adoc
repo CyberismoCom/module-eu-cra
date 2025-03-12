@@ -1,0 +1,53 @@
+== Introduction
+
+This is the internal release notes for the release version 0.0 of (_Add product name_).The purpose of this document is to track in detail what has been changed and which configuration items and configuration item versions are included in this product version. Software update instructions for users and stakeholders are documented in a separate Security update document.
+
+== What is new
+
+=== Major improvements
+
+Include here a list of major improvements in this release.
+
+=== Fixed quality issues
+
+#TODO: Include here a list of all fixed bugs. For example, you can use a link to a filter in the issue tracker, a list of links to the issue tracker, or a Cyberismo macro, if you have deployed integration of the issue tracker to Cyberismo.#
+
+=== Addressed security issues
+
+#TODO: Include here a list of all addressed security issues. For example, you can use an issue tracker a filter or a list of issue IDs.#
+
+== Links to artifacts for this version
+
+The configuration management process requires that all artifacts of the included configuration items are archived, so that they can be later found and accessed when needed. You should prepare to archive the artifacts of external releases for a long time, at least 10 years. This section lists the included artifacts.
+
+=== Secure development documentation
+
+#TODO: Add here a link or an attachment that includes the secure development related documentation for this product version.#
+
+=== Software Bill of Materials (SBOM)
+
+#TODO: Add here links to the archived SBOM or instructions where to find the archived SBOM.#
+
+=== Install packages
+
+#TODO: Add here links to the Install package versions included in this product version.#
+
+=== Product documentation
+
+#TODO: Add here links to the product documentation versions included in this product version.#
+
+=== Product content
+
+#TODO: Add here links to any content that is included in this product version, such as source code#
+
+=== Manually tracked technology selections
+
+#TODO: Add here the versions of such included 3rd party technologies, whose version information is not managed automatically, for example in a source code repository.#
+
+[width="100%",cols="34%,33%,33%",options="header",]
+|===
+|*Technology Vendor* |*Technology Name* |*Technology Version*
+| (vendor)
+| (technology)
+| (version)
+|===

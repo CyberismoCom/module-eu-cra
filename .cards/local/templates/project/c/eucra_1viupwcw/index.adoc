@@ -1,0 +1,22 @@
+== Basic security information
+
+Document the following basic information about the development project in the fields of this card:
+
+* *Owner:* The owner and the main contact for this development project
+* *Criticality for operations:* The overall criticality of this development project for business operations
+* *Risk evaluation needed:* Whether a cybersecurity risk assessment is needed. If risk evaluation is needed, then identify at least one high-level cybersecurity risk under *Manage high-level risks*
+* *Backups:* How the source code and other important files are backed up
+
+== Adoption step
+
+The secure development process has been divided into three adoption steps. You can set the target adoption step on this page. By default, the target target adoption step is *Step 1*, which includes only the most fundamental tasks in the scope of the secure development lifecycle.
+
+If the secure development process is not applicable for this development project, you can set the target adoption step as *None*.
+
+{{#report}}
+  "name": "secdeva/reports/projectSummary"
+{{/report}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssuesNeedingAttention"
+{{/report}}

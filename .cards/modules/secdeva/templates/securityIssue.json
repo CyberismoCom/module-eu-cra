@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/templates/securityIssue",
+    "displayName": "Security issue",
+    "description": "A security-related issue",
+    "category": "Security issues"
+}

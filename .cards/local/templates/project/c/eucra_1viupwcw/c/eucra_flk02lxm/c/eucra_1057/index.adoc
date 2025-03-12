@@ -1,0 +1,23 @@
+Network traffic load testing is used to ensure that the component behaves correctly under stress from network traffic.
+
+== How to decide if this secure development task is required
+
+Network traffic load testing is required for all external interfaces. It may also be applied to internal interfaces based on risk.
+
+This control is common to all interfaces and parsers of the product. Please document the interface specific scoping decisions in each interface specification.
+
+== How to implement
+
+Create a review of network traffic load testing and follow the instructions in the template.
+
+{{#report}}
+  "name": "secdeva/reports/createChildReview",
+  "template": "eucra/templates/networkTrafficLoadTest",
+  "buttonLabel": "Create a review of network traffic load testing"
+{{/report}}
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildReviewStatus"
+{{/report}}

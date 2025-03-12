@@ -1,0 +1,74 @@
+selectAll.
+
+field(Card, "compoundRank", Rank) :-
+    card(Card),
+    not parent(Card, _),
+    field(Card, "rank", Rank).
+
+field(Card, "compoundRank", @concatenate(ParentRank, " - ", Rank)) :-
+    card(Card),
+    parent(Card, Parent),
+    field(Card, "rank", Rank),
+    field(Parent, "compoundRank", ParentRank).
+
+result(Element) :-
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(Interface, Project),
+    field(Interface, "cardType", "secdeva/cardTypes/interface"),
+    parent(Interface, Element).
+
+childResult(Element, Interface) :-
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(Interface, Project),
+    field(Interface, "cardType", "secdeva/cardTypes/interface"),
+    parent(Interface, Element).
+
+field(Interface, "basicInputValidationTestingRequired", "❗ Not scoped yet") :-
+    childResult(_, Interface),
+    not field(Interface, "secdeva/fieldTypes/basicInputValidationTestingRequired", _).
+
+field(Interface, "basicStressTestingRequired", "❗ Not scoped yet") :-
+    childResult(_, Interface),
+    not field(Interface, "secdeva/fieldTypes/basicStressTestingRequired", _).
+
+field(Interface, "fuzzTestingRequired", "❗ Not scoped yet") :-
+    childResult(_, Interface),
+    not field(Interface, "secdeva/fieldTypes/fuzzTestingRequired", _).
+
+field(Interface, "networkTrafficLoadTestingRequired", "❗ Not scoped yet") :-
+    childResult(_, Interface),
+    not field(Interface, "secdeva/fieldTypes/networkTrafficLoadTestingRequired", _).
+
+field(Interface, "capacityTestingRequired", "❗ Not scoped yet") :-
+    childResult(_, Interface),
+    not field(Interface, "secdeva/fieldTypes/capacityTestingRequired", _).
+
+secdeva_booleanDisplayValue("true", "Required").
+secdeva_booleanDisplayValue("false", "Not required").
+
+field(Interface, "basicInputValidationTestingRequired", DisplayValue) :-
+    childResult(_, Interface),
+    field(Interface, "secdeva/fieldTypes/basicInputValidationTestingRequired", Value),
+    secdeva_booleanDisplayValue(Value, DisplayValue).
+
+field(Interface, "basicStressTestingRequired", DisplayValue) :-
+    childResult(_, Interface),
+    field(Interface, "secdeva/fieldTypes/basicStressTestingRequired", Value),
+    secdeva_booleanDisplayValue(Value, DisplayValue).
+
+field(Interface, "fuzzTestingRequired", DisplayValue) :-
+    childResult(_, Interface),
+    field(Interface, "secdeva/fieldTypes/fuzzTestingRequired", Value),
+    secdeva_booleanDisplayValue(Value, DisplayValue).
+
+field(Interface, "networkTrafficLoadTestingRequired", DisplayValue) :-
+    childResult(_, Interface),
+    field(Interface, "secdeva/fieldTypes/networkTrafficLoadTestingRequired", Value),
+    secdeva_booleanDisplayValue(Value, DisplayValue).
+
+field(Interface, "capacityTestingRequired", DisplayValue) :-
+    childResult(_, Interface),
+    field(Interface, "secdeva/fieldTypes/capacityTestingRequired", Value),
+    secdeva_booleanDisplayValue(Value, DisplayValue).
+
+orderBy("compoundRank", "ASC").

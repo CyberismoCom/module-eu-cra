@@ -1,0 +1,4 @@
+{{#createCards}}
+  "template": "eucra/templates/version",
+  "buttonLabel": "Create a new version"
+{{/createCards}}

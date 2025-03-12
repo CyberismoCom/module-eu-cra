@@ -1,0 +1,7 @@
+{
+    "name": "secdeva/cardTypes/version",
+    "workflow": "secdeva/workflows/version",
+    "customFields": [],
+    "alwaysVisibleFields": [],
+    "optionallyVisibleFields": []
+}

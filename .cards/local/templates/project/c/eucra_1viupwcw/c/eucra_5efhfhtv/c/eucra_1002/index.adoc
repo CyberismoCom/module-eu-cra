@@ -1,0 +1,25 @@
+Managing development tools includes documenting the tool versions in use, testing new tool versions for validity before upgrading and ensuring that the right approved tool version is being used.
+
+== How to decide if this secure development task is required
+
+Managing the development tools is mandatory in the secure development process.
+
+This secure development task is required if there are development tools that are used in this project or by multiple subprojects and the tools are not documented elsewhere commonly for all projects.
+
+== How to implement
+
+Create and fill in a development tool selection document. Follow the instructions in the template.
+
+{{#report}}
+  "name": "secdeva/reports/createChildDocument",
+  "template": "eucra/templates/toolSelection",
+  "buttonLabel": "Create a development tool document"
+{{/report}}
+
+Also ensure that tool validation test executions have been documented.
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildDocumentStatus"
+{{/report}}

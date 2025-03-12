@@ -1,0 +1,13 @@
+For compliance reasons, it is important that security requirement tests and threat mitigation tests are linked to the corresponding securty requirements and threats, so that the testing approach can be easily reviewed.
+
+== How to decide if this secure development task is required
+
+This secure development task is required if security threats or security requirements have been identified.
+
+== How to implement
+
+Whenever you create tests for security requirements or threats, add a 'tests' link from the security requirement or security issue to the test.
+
+== How to review this task
+
+If you manage tests with this tool, you can see the test coverage reports in the threat mitigation testing and security requirement testing tasks.

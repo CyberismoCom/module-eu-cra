@@ -1,0 +1,70 @@
+selectAll.
+
+result(result).
+
+field(result, "scopingNotDone", "void") :-
+    field({{cardKey}}, "workflowState", State),
+    secdeva_scopingStatus(State, "Scoping not done").
+
+field(result, "outOfScope", "void") :-
+    field({{cardKey}}, "workflowState", State),
+    secdeva_scopingStatus(State, "Out of scope").
+
+field(result, "inScope", "void") :-
+    field({{cardKey}}, "workflowState", State),
+    secdeva_scopingStatus(State, "In scope").
+
+field(result, "documentOk", "void") :-
+    childResult(_, Document, _),
+    field(Document, "workflowState", "Approved"),
+    secdeva_reviewSubtask(Document, Subtask),
+    field(Subtask, "base/fieldTypes/lastReviewed", _),
+    not secdeva_reviewTaskExpired(Subtask).
+
+childResult(result, Document, "documents") :-
+    parent(Document, {{cardKey}}),
+    field(Document, "cardType", "base/cardTypes/controlledDocument").
+
+secdeva_reviewSubtask(Document, Subtask) :-
+    field(Document, "cardType", "base/cardTypes/controlledDocument"),
+    parent(Subtask, Document),
+    field(Subtask, "cardType", "base/cardTypes/reviewTask").
+
+secdeva_reviewTaskExpired(Subtask) :-
+    field(Subtask, "cardType", "base/cardTypes/reviewTask"),
+    field(Subtask, "base/fieldTypes/lastReviewed", LastReviewed),
+    field(Subtask, "base/fieldTypes/reviewPeriod", ReviewPeriod),
+    @daysSince(LastReviewed) > ReviewPeriod.
+
+secdeva_reviewTaskExpiredOrNoDate(Subtask) :- secdeva_reviewTaskExpired(Subtask).
+
+secdeva_reviewTaskExpiredOrNoDate(Subtask) :-
+    field(Subtask, "cardType", "base/cardTypes/reviewTask"),
+    not field(Subtask, "base/fieldTypes/lastReviewed", _).
+
+field(Document, "reviewExpiration", "❗There are no review subtasks") :-
+    childResult(_, Document, _),
+    field(Document, "workflowState", "Approved"),
+    not secdeva_reviewSubtask(Document, _).
+
+field(Document, "reviewExpiration", "❗Last reviewed date not set in any review subtask") :-
+    childResult(_, Document, _),
+    field(Document, "workflowState", "Approved"),
+    secdeva_reviewSubtask(Document, Subtask),
+    not field(Subtask, "base/fieldTypes/lastReviewed", _) :
+    secdeva_reviewSubtask(Document, Subtask).
+
+field(Document, "reviewExpiration", "❗None of the review tasks has a non-expired last reviewed date") :-
+    childResult(_, Document, _),
+    field(Document, "workflowState", "Approved"),
+    secdeva_reviewSubtask(Document, Subtask),
+    secdeva_reviewTaskExpiredOrNoDate(Subtask).
+
+field(Document, "reviewExpiration", "✅ There is at least one non-expired review subtask") :-
+        childResult(_, Document, _),
+        field(Document, "workflowState", "Approved"),
+        secdeva_reviewSubtask(Document, Subtask),
+        field(Subtask, "base/fieldTypes/lastReviewed", _),
+        not secdeva_reviewTaskExpired(Subtask).
+
+order(2, "documents", 1, "rank", "ASC").

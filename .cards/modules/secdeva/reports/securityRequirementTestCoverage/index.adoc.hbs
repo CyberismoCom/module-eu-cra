@@ -1,0 +1,88 @@
+{{#each results}}
+
+=== Automated checks
+
+{{#if this.scopingNotDone}}
+
+❗ Scoping: The workflow state of this task is *Open* (scoping not done).
+
+Other automated checks will be done, once the task has been scoped.
+
+{{#if this.requirements}}
+
+❗ Because security requirements have been identified in this development project, this task should be in scope. Select the *Review as applicable* workflow transition.
+
+{{else}}
+
+So far, security requirements have not been identified in this project, so this task may be out of scope.
+
+{{/if}}
+
+{{else}}
+
+{{#if this.outOfScope}}
+
+* [x] Scoping has been done. This task is out of scope.
+
+{{#if this.requirements}}
+
+❗ Because security requirements have been identified in this project, this task should be in scope. Select the *Review as applicable* workflow transition.
+
+{{else}}
+
+So far, security requirements have not been identified in this project, so the scoping decision seems valid.
+
+{{/if}}
+
+{{else}}
+
+* [x] Scoping has been done. This task is in scope.
+
+{{#if this.requirements}}
+
+* [x] Security requirements have been identified in this project
+
+[caption=]
+[cols="5,2,5"]
+.Security requirements
+|===
+| Security issue | Workflow State | Tested by
+
+{{#each requirements}}
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.workflowState}}
+{{#if this.tests}}
+| {{#each tests}}xref:{{this.key}}.adoc[{{this.title}}] [{{this.workflowState}}] - {{this.reviewExpiration}} {{#unless @last}},
+
+{{/unless}}{{/each}}
+{{else}}
+| ❗ Tests have not been linked
+{{/if}}
+
+{{/each}}
+
+|===
+
+{{#if allRequirementsTested}}
+
+* [x] All requirements have been tested and the test reviews have not expired.
+
+{{else}}
+
+❗ Security requirement testing is not complete. All requirements must be linked to at least one test, and all tests must be passed and not expired.
+
+{{/if}}
+
+=== Manual checks
+
+* Check, if there has been recent changes and whether security requirement testing should be executed again.
+
+{{else}}
+
+Security requirements have not been identified in this development project.
+
+{{/if}}
+
+{{/if}}
+{{/if}}
+{{/each}}

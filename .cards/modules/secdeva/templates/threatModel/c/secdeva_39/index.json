@@ -1,0 +1,13 @@
+{
+    "cardType": "base/cardTypes/controlledDocument",
+    "title": "Threat model for (Scope)",
+    "workflowState": "",
+    "rank": "0|a",
+    "lastUpdated": "2025-01-20T08:48:53.652Z",
+    "links": [],
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/approver": null,
+    "base/fieldTypes/approvalDate": null,
+    "base/fieldTypes/identifier": "secdeva_document_threat-model"
+}

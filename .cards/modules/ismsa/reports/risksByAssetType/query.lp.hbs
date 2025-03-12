@@ -1,0 +1,10 @@
+selectAll.
+
+result(Risk) :-
+    ismsa_closestHome(Risk, Home),
+    ismsa_closestHome({{cardKey}}, Home),
+    field(Risk, "cardType", "ismsa/cardTypes/risk"),
+    link(Asset, Risk, "ismsa/linkTypes/presentsRisk"),
+    field(Asset, "cardType", "{{assetType}}").
+
+orderBy("title", "ASC").

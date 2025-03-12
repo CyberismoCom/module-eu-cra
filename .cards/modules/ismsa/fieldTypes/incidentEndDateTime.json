@@ -1,0 +1,5 @@
+{
+    "name": "ismsa/fieldTypes/incidentEndDateTime",
+    "displayName": "End date and time",
+    "dataType": "dateTime"
+}

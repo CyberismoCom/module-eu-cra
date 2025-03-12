@@ -1,0 +1,5 @@
+{
+    "name": "ismsa/fieldTypes/assetPublisher",
+    "displayName": "Publisher",
+    "dataType": "shortText"
+}

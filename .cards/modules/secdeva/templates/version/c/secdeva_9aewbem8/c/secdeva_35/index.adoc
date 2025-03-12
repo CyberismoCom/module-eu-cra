@@ -1,0 +1,51 @@
+== Introduction
+
+This is the external release notes for Example version 0.0 for users and stakeholders.
+
+#TODO: document above all product versions for which this software update may be applied. The product and product versions must be identified exactly so that end users will be able to understand the identification.#
+
+#TODO: identify the software update package uniquely. Document whether the software update concerns the product itself or a dependent component such as the operating system.#
+
+== What is new
+
+=== Major improvements
+
+#TODO: Include here a list of major improvements in this release. Include only “reportable” improvements and use customer language. Remove this section if it is not applicable.#
+
+=== Fixed quality issues
+
+#TODO: Include here a list of fixed bugs. Include only reportable fixes and use customer language. Remove this section if it is not applicable.#
+
+== Addressed security issues
+
+#TODO: Include here a list of addressed reportable security issues. Use customer language. Remove this section if it is not applicable. Include a ranking of the secverity of these issues according to Common Vulnerability Scoring System (CVSS) or a similar well-known scheme.#
+
+== Compatibility and software update considerations
+
+=== Compatibility with previous versions
+
+#TODO: Describe the compatibility promises and compatibility restrictions with regard to previous versions. You may remove this section, if the security update concerns a dependent component such as the operating system.#
+
+=== Hardware compatibility
+
+#TODO: Describe the compatibility promises and compatibility restrictions with regard to hardware products that may be used with this software update.#
+
+=== Dependent component compatibility
+
+#TODO: If this software update concerns the product itself, then describe the compatibility promises and compatibility restrictions with regard to 3rd party products and components, operating systems and other products. If this software update concerns the operating system or another dependent component, then include a statement of which versions of the product are compatible with the dependent component or operating system security update.#
+
+=== Instructions for software update
+
+#TODO: Add instructions on how to verify that the security update is authentic, for example by checking the digital signature.#
+
+#TODO: Add here instructions on how to apply or install this software update, and related additional instructions.#
+
+#TODO: Add a description of any impacts that applying the software update to the product can have, including reboot.#
+
+#TODO: Add Instructions on how to verify that the software update has been applied#
+
+#TODO: Describe the risks of not applying this software update#
+
+#TODO: If there are dependent component patches or operating system patches that must not be installed, then include workarounds that can be used to mitigate the risk.#
+
+#TODO: Add any applicable hardening guidelines, in addition to the product's standard hardening guidelines#

@@ -1,0 +1,28 @@
+selectAll.
+
+result(result).
+
+childResult(result, Card, "failures") :-
+    policyCheckFailure(Card, _, _, _),
+    secdeva_closestProject(Card, Project),
+    secdeva_closestProject({{cardKey}}, Project),
+    field(Project, "cardType", "secdeva/cardTypes/project").
+
+childResult(result, Card, "successes") :-
+    policyCheckSuccess(Card, _, _),
+    secdeva_closestProject(Card, Project),
+    secdeva_closestProject({{cardKey}}, Project),
+    field(Project, "cardType", "secdeva/cardTypes/project").
+
+field(Card, "compoundRank", Rank) :-
+    card(Card),
+    not parent(Card, _),
+    field(Card, "rank", Rank).
+
+field(Card, "compoundRank", @concatenate(ParentRank, " - ", Rank)) :-
+    card(Card),
+    parent(Card, Parent),
+    field(Card, "rank", Rank),
+    field(Parent, "compoundRank", ParentRank).
+
+orderBy("compoundRank", "ASC").

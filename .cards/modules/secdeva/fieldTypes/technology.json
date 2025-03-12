@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/fieldTypes/technology",
+    "displayName": "Technology",
+    "dataType": "shortText",
+    "fieldDescription": "Technology or framework"
+}

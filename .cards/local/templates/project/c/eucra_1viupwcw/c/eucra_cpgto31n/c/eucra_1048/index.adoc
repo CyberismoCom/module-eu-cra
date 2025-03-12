@@ -1,0 +1,26 @@
+3rd party librararies  are a major source of security issues, which include security rule violations. The security rule violations refer to common vulnerabilities that can be detected by static code analysis or static binary analysis. For example, the security rule violations include calling a dangerous and banned library function, buffer overflows, or dangerous usage of pointers.
+
+The goal of this control is to ensure that the binaries of the product do not include security rule violations.
+
+== How to decide if this secure development task is required
+
+This review task is required if the project manages compiled binaries.
+
+Required for all binary executable files.
+
+== How to implement
+
+This analysis must be performed on all binary executable files.
+
+* For executable files compiled by the development team, the analysis can be done by using static code analysis to ensure that the source code does not violate the security rules. In this case, review that the used static code analysis tool and its configuration support identifying security rule violations.
+* For executable files that are compiled by a 3rd party organization, the analysis shall be done by analysing the binary with a software composition analysis tool that supports identifying security rule violations.
+
+== How to review this task
+
+Identify for each binary whether it includes code compiled by the development team or by a 3rd party organization.
+
+Check that the analysis of binaries to detect security rule violations has been planned, according to the how to implement section above.
+
+Check that the plan has been executed.
+
+Check that the identified security-related findings have been reported as security issues.

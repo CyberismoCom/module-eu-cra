@@ -1,0 +1,51 @@
+{{#each results}}
+
+{{#if failures}}
+
+.Policy check failures
+[cols="3,3,4,5"]
+|===
+| Category | Policy check  | Card | Error
+
+{{#each failures}}
+
+{{#each this.policyChecks.failures}}
+| {{this.category}}
+| {{this.title}}
+| xref:{{../key}}.adoc[{{../title}}]
+| {{this.errorMessage}}
+{{/each}}
+{{/each}}
+|===
+{{else}}
+
+No policy check failures in this project.
+
+{{/if}}
+
+{{#if successes}}
+
+.Successful policy checks
+[%collapsible]
+====
+[cols="3,3,4,5"]
+|===
+| Category | Policy check  | Card | Error
+
+{{#each failures}}
+
+{{#each this.policyChecks.failures}}
+| {{this.category}}
+| {{this.title}}
+| xref:{{../key}}.adoc[{{../title}}]
+| {{this.errorMessage}}
+{{/each}}
+{{/each}}
+|===
+====
+
+{{else}}
+
+{{/if}}
+
+{{/each}}

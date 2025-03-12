@@ -1,0 +1,19 @@
+{
+    "title": "Untitled development project",
+    "cardType": "eucra/cardTypes/project",
+    "workflowState": "",
+    "rank": "0|b",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/adoptionStep": "step1",
+    "base/fieldTypes/informationClassification": "internal",
+    "ismsa/fieldTypes/assetCriticalityForOperations": null,
+    "ismsa/fieldTypes/assetRiskEvaluationNeeded": null,
+    "ismsa/fieldTypes/assetType": null,
+    "ismsa/fieldTypes/assetPersonalInformation": null,
+    "ismsa/fieldTypes/assetIntegrity": null,
+    "ismsa/fieldTypes/assetAvailability": null,
+    "ismsa/fieldTypes/assetLocation": null,
+    "ismsa/fieldTypes/assetBackups": null,
+    "links": [],
+    "lastUpdated": "2025-02-28T10:03:34.068Z"
+}

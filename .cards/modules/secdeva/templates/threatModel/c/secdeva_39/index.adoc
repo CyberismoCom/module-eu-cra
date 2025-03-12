@@ -1,0 +1,188 @@
+== Introduction
+
+Threat modelling is a process to identify security threats based on the projected product architecture.
+
+== Scope
+
+This model consideres the following scope:
+
+* {blank}
+
+== Assets
+
+The most relevant assets that need protection are:
+
+* {blank}
+
+== Security context
+
+Security context must be documented before a threat model can be approved.
+
+{{#report}}
+  "name": "secdeva/reports/linkByIdentifier",
+  "identifier": "secdeva_document_security-context",
+  "messageIfNoResults": "#TODO# There are no security context documents yet. Create a security context document under *Design* → *Document security context*."
+{{/report}}
+
+== Dataflow diagram
+
+[NOTE]
+.Review instructions
+====
+When reviewing this section, check that the following aspects have been documented in the data flow diagram:
+
+* Processes
+* Data stores
+* Trust boundaries
+* Dataflows, including all interfaces
+* Interacting external entities
+
+You can evaluate whether the DFD describes the system with sufficient detail by trying to tell stories of a component's behavior. If the stories contain entities that are not in the model, then the DFD needs updating.
+
+====
+
+=== Context diagram
+
+{{#graph}}
+  "model": "secdeva/graphModels/dataflow",
+  "view": "secdeva/graphViews/context"
+{{/graph}}
+
+=== Detailed diagram
+
+{{#graph}}
+  "model": "secdeva/graphModels/dataflow",
+  "view": "secdeva/graphViews/allEntities"
+{{/graph}}
+
+== List of external dependencies
+
+[NOTE]
+.Review instructions
+====
+When reviewing this section, check that all code that is developed by a 3rd party and linked into the product is listed. That may include
+
+* Applications
+* Command line tools
+* Libraries
+* Drivers
+====
+
+{{#report}}
+  "name": "secdeva/reports/projectTechnologies"
+{{/report}}
+
+In addition to the documented 3rd party technologies, the following external dependencies have been identified:
+
+* {blank}
+* {blank}
+
+== Internal and external interfaces
+
+[NOTE]
+.Review instructions
+====
+When reviewing this section, check that all internal and external interfaces, such as communication protocols are listed. Create dataflows and interface descriptions in the underlying dataflow model.
+====
+
+{{#report}}
+  "name": "secdeva/reports/modelInterfaces"
+{{/report}}
+
+== Physical ports and connections
+
+[NOTE]
+.Review instructions
+====
+When reviewing this section, check that all physical ports and connections are listed.
+
+* Externally accessible physical ports, including debug ports
+* Circuit board connections such as as Joint Test Action Group (JTAG) connections or debug headers which might be used to attack the hardware
+====
+
+Identified physical ports and connections are:
+
+* {blank}
+* {blank}
+
+== Potential attack vectors and attack surface
+
+[NOTE]
+.Review instructions
+====
+An attack vector is a _route_ or _means_ by which an attacker can attack the system. Examples of attack vectors include
+
+* Accessing the hardware
+* Network interface or open protocol port
+* User interface
+* Query and search function
+* Admin interface
+* Email or email attachment
+* Instant message
+* Technology that may be vulnerable to malicious code such as viruses
+* Software update
+* Weak access control lists
+* Login authentication entry points
+* Services running with elevated privileges
+* Application Programming Interfaces (APIs)
+
+When reviewing this section, ensure that the known potential attack vectors are listed.
+
+Attack surface: The attack surface of a system or a component is the sum of the different points (the "attack vectors") where an unauthorized user (the "attacker") can try to enter data to or extract data from the system or component.
+
+You can use this list of attack vectors to understand the attack surface of the product
+====
+
+Identified attack vectors are:
+
+* {blank}
+* ...
+
+== List of identified security issues
+
+[NOTE]
+.Review instructions
+====
+When reviewing the list of security issues identified in threat modelling, check that
+
+* Threat modelling was performed in an acceptable level of detail
+* According to your best current understanding, all the threats that were identified are included in the list of threats
+* The security issues have been processed and the mitigation and/or dispositions have been documented
+* The planned mitigations minimize cybersecurity risks, prevent cybersecurity incidents and minimize the impacts of such incidents.
+* Threat modeling has taken into account possible impacts of cybersecurity risks to the health and safety of users.
+
+Note that handling of security issues is not part of threat model review.
+====
+
+{{#createCards}}
+  "template": "secdeva/templates/threat",
+  "buttonLabel": "Create a new security issue"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssueList"
+{{/report}}
+
+== Version history
+
+[cols="1,1,3"]
+|===============
+|Version | Date | Changes/Author
+
+| 0.1
+| 2024-01-01
+| XYZ changed by N.N.
+
+|===============
+
+== Reviews
+
+{{#createCards}}
+    "template": "base/templates/reviewTask",
+    "buttonLabel": "Add new review task"
+{{/createCards}}
+
+{{#report}}
+  "name": "base/reports/childrenTable",
+  "cardType": "base/cardTypes/reviewTask"
+{{/report}}

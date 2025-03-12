@@ -1,0 +1,5 @@
+{
+    "name": "ismsa/fieldTypes/assetProvidedServices",
+    "displayName": "Provided services",
+    "dataType": "longText"
+}

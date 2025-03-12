@@ -1,0 +1,11 @@
+== Task description
+
+Review the secure development management plan.
+
+[NOTE]
+.Review instructions
+====
+It is important that the management plan refers to any applicable to general development process descriptions that are used in the project, and that it includes a plan as to how periodic security checkpoints are scheduled.
+====
+
+**Note**: The reviewer cannot be the same person as the owner or the approver of the document.

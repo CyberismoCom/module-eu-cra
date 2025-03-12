@@ -1,0 +1,67 @@
+selectAll.
+
+result(welcome).
+
+field(Project, "secdeva/fieldTypes/issueCount", Count) :-
+    secdeva_closestProject({{cardKey}}, Project),
+    Count = #count {
+        card(Issue):
+        field(Issue, "cardType", "secdeva/cardTypes/securityIssue"),
+        secdeva_closestProject(Issue, Project),
+        not hiddenInTreeView(Issue),
+        not field(Issue, "workflowStateCategory", "closed")
+    }.
+
+childResult(welcome, Project, "project") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    field(Project, "base/fieldTypes/adoptionStep", _).
+
+childResult(welcome, Issue, "issuesNeedingAttention") :-
+    field(Issue, "cardType", "secdeva/cardTypes/securityIssue"),
+    secdeva_closestProject(Issue, Project),
+    secdeva_closestProject({{cardKey}}, Project),
+    not hiddenInTreeView(Issue),
+    not field(Issue, "workflowStateCategory", "closed"),
+    not field(Issue, "workflowState", "Fix deferred").
+
+childResult(welcome, Issue, "deferredIssues") :-
+    field(Issue, "cardType", "secdeva/cardTypes/securityIssue"),
+    secdeva_closestProject(Issue, Project),
+    secdeva_closestProject({{cardKey}}, Project),
+    not hiddenInTreeView(Issue),
+    field(Issue, "workflowState", "Fix deferred").
+
+field(welcome, "deferredIssueCount", Count) :-
+    Count = #count { card(Issue) : childResult(result, Issue, "deferredIssues") }.
+
+field(welcome, "closedIssueCount", Count) :-
+    Count =  #count { card(Issue) : childResult(result, Issue, "closedIssues") }.
+
+childResult(welcome, Issue, "closedIssues") :-
+    field(Issue, "cardType", "secdeva/cardTypes/securityIssue"),
+    secdeva_closestProject(Issue, Project),
+    secdeva_closestProject({{cardKey}}, Project),
+    not hiddenInTreeView(Issue),
+    field(Issue, "workflowStateCategory", "closed").
+
+childResult(welcome, Issue , "riskManagementTask")  :-
+    field(Issue, "base/fieldTypes/identifier", "secdeva_control_high-level-risks"),
+    secdeva_closestProject(Issue, Project),
+    secdeva_closestProject({{cardKey}}, Project).
+
+childResult(welcome, Issue , "securityContextTask")  :-
+    field(Issue, "base/fieldTypes/identifier", "secdeva_control_security-context"),
+    secdeva_closestProject(Issue, Project),
+    secdeva_closestProject({{cardKey}}, Project).
+
+childResult(welcome, Issue , "foundationPhase")  :-
+    field(Issue, "base/fieldTypes/identifier", "secdeva_phase_foundation"),
+    secdeva_closestProject(Issue, Project),
+    secdeva_closestProject({{cardKey}}, Project).
+
+childResult(welcome, Issue , "threatModelTask")  :-
+    field(Issue, "base/fieldTypes/identifier", "secdeva_control_threat-models"),
+    secdeva_closestProject(Issue, Project),
+    secdeva_closestProject({{cardKey}}, Project).
+
+orderBy("title", "ASC").

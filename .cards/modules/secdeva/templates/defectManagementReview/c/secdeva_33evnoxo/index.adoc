@@ -1,0 +1,64 @@
+== Introduction
+
+This document records a review of defect management in the development project.
+
+== Review checklist
+
+Check that security issues in this tool that affect this product have been 1) analysed and 2) addressed, either tracked to closure or justifiably deferred to a future resolution. Examine at least the recent security-related issues (since the last review). Please refer to a list of security issues in the parent card.
+
+* [ ] OK
+* [ ] Not OK
+
+Check that security issues in the issue tracker (backlog tool) that affect this product have been 1) analysed and 2) addressed, either tracked to closure or justifiably deferred to a future resolution. Examine at least the recent security-related issues (since the last review).
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not applicable
+
+Check that findings from vulnerability tracking tools have not been 1) analysed and 2) tracked to closure, or justifiably deferred to a future release. Notice that there must be no known exploitable vulnerabilities. Examine at least the recent security-related issues (since the last review).
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not applicable
+
+Check that security isseus from any source have been disclosed to stakeholders, if applicable. Examine at least the recent security-related issues (since the last review).
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not applicable
+
+Review the security-related issue management process in general. Examine the recent security-related issues (since the last review) to determine if the defect management process was efficient. If the process was not complete or did not lead to the resolution of each issue, consider how the practices need to be improved.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not applicable
+
+== Review notes
+
+#TODO: if applicable, add a link or an attachment to external systems for more information or evidence.#
+
+#TODO: Describe any notes and remarks about the review here#
+
+== Version history
+
+[cols="1,1,3"]
+|===============
+|Version | Date | Changes/Author
+
+| 0.1
+| 2024-01-01
+| XYZ changed by N.N.
+
+|===============
+
+== Identified security issues from this review
+
+{{#createCards}}
+  "template": "secdeva/templates/securityIssue",
+  "buttonLabel": "Create a new security issue"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssueList"
+{{/report}}
+

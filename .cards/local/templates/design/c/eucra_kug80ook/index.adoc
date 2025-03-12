@@ -1,0 +1,21 @@
+The support period means the period during which a manufacturer is required to ensure that vulnerabilities of a product with digital elements are handled effectively.
+
+== How to decide if this secure development task is required
+
+This task is required if the project is creating a product with digital elements for the EU market.
+
+== How to implement
+
+Create a support period document and follow the instructions in the template.
+
+{{#report}}
+  "name": "secdeva/reports/createChildDocument",
+  "template": "eucra/templates/supportPeriod",
+  "buttonLabel": "Create a support period document"
+{{/report}}
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildDocumentStatus"
+{{/report}}

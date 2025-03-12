@@ -1,0 +1,15 @@
+{
+    "title": "Manage high-level risks",
+    "cardType": "base/cardTypes/quarterlyTask",
+    "workflowState": "",
+    "rank": "0|aa",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/adoptionStep": null,
+    "base/fieldTypes/identifier": "secdeva_control_high-level-risks",
+    "base/fieldTypes/reviewPeriod": 90,
+    "base/fieldTypes/lastReviewed": null,
+    "base/fieldTypes/justification": null,
+    "base/fieldTypes/quarterlyReviewMonth": "month1",
+    "base/fieldTypes/adoptionStep": null
+}

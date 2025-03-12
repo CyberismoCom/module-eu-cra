@@ -1,0 +1,14 @@
+## Risks related to information systems
+
+Add new risks related to information systems using risk-template.
+
+{{#createCards}}
+  "template": "ismsa/templates/risk",
+  "buttonLabel": "Add new risk"
+{{/createCards}}
+
+{{#report}}
+    "name": "ismsa/reports/risksByAssetType",
+    "assetType": "ismsa/cardTypes/assetInformationSystem"
+{{/report}}
+

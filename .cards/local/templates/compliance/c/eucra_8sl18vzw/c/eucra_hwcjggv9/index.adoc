@@ -1,0 +1,14 @@
+.View process diagram
+[%collapsible]
+====
+{{#graph}}
+  "model": "secdeva/graphModels/processDiagram",
+  "view": "secdeva/graphViews/complianceRequirement"
+{{/graph}}
+====
+
+== Requirement content
+
+Manufacturers of the products with digital elements shall:
+
+(3)  apply effective and regular tests and reviews of the security of the product with digital elements;

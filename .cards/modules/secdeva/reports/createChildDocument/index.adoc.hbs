@@ -1,0 +1,32 @@
+{{#if results}}
+
+[caption=]
+.Existing documents
+[cols="5,2"]
+|===
+| Document | Workflow State
+
+{{#each results}}
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.workflowState}}
+{{/each}}
+
+|===
+
+Create another document, if needed:
+
+{{#createCards}}
+    "template": "{{template}}",
+    "buttonLabel": "{{buttonLabel}}"
+{{/createCards}}
+
+{{else}}
+
+You have not yet created any documents.
+
+{{#createCards}}
+    "template": "{{template}}",
+    "buttonLabel": "{{buttonLabel}}"
+{{/createCards}}
+
+{{/if}}

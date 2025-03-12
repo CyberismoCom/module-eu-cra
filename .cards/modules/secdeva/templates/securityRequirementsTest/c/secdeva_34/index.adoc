@@ -1,0 +1,49 @@
+== Introduction
+
+This document is a review of security requirement testing.
+
+=== Scope of testing
+
+The scope of security requirement testing includes the security security requirements that have been linked to this card with 'tests' links.
+
+#TODO: Link the security requirements that are in scope to this card with 'tests' links#
+
+=== Goal of testing
+
+The goal of security requirement testing is to test that security requirements have been correctly implemented and that error handling works correctly.
+
+=== Testing error handling
+
+The purpose of the error handling testing is to find issues in the exception management. The test plan may include the following aspects:
+
+* Examine the ways the application could fail and verify that the error is handled correctly.
+* Examine that the application fails securely (e.g. authorization error does not result in granting the access)
+* Examine that the application fails safe (functional safety)
+* Examine errors logs to see if they contain exploitable information
+
+=== Documentation and reporting
+
+#TODO: Add a link or an attachment to the detailed test plan and test results, for example to a test management system or to automated tests. If you're tracking manual testing in this tool, then describe the test plan and the test results here.#
+
+== Version history
+
+[cols="1,1,3"]
+|===============
+|Version | Date | Changes/Author
+
+| 0.1
+| 2024-01-01
+| XYZ changed by N.N.
+
+|===============
+
+== Identified security issues
+
+{{#createCards}}
+  "template": "secdeva/templates/securityIssue",
+  "buttonLabel": "Create a new security issue"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssueList"
+{{/report}}

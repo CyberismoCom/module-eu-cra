@@ -1,0 +1,11 @@
+{
+    "title": "Integrity of data",
+    "cardType": "secdeva/cardTypes/requirement",
+    "workflowState": "",
+    "rank": "0|g",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/identifier": "eucra_security-requirement_integrity-of-data",
+    "links": [],
+    "lastUpdated": "2025-03-10T10:32:27.670Z"
+}

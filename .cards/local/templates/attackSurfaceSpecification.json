@@ -1,0 +1,6 @@
+{
+    "displayName": "Attack surface specification",
+    "description": "Specification of the intended exposed attack surface",
+    "category": "Secure development specifications",
+    "name": "eucra/templates/attackSurfaceSpecification"
+}

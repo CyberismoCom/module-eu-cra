@@ -1,0 +1,58 @@
+== Introduction
+
+This document is a review of basic input validation testing.
+
+=== Scope of testing
+
+The interface that is being tested:
+
+* #TODO: add a link to the interface#
+
+This input validation test plan concerns the parser that processes the following input
+
+* #TODO: Add description of the input#
+
+#TODO: Add definitions of valid input, boundary values and equivalence classes, if applicable#
+
+The input validation testing is scoped to include:
+
+#TODO: describe how and which parts of the input format must be tested. For instance:#
+
+Normally expected inputs exercised using valid equivalence classes: #Required/Not Required#
+
+Boundary values from both sides of all boundaries of invalid input: #Required/Not Required #
+
+Anticipated occurrences: #Required/Not Required#
+
+Unexpected inputs exercised using equivalence class selection of invalid values: #Required/Not Required#
+
+=== Documentation and reporting
+
+#TODO: Add a link or an attachment to the detailed test plan and test results, for example to a test management system or to automated tests. If you're tracking manual testing in this tool, then describe the test plan and the test results here.#
+
+== Version history
+
+[cols="1,1,3"]
+|===============
+|Version | Date | Changes/Author
+
+| 0.1
+| 2024-01-01
+| XYZ changed by N.N.
+
+|===============
+
+=== Identified security issues
+
+{{#createCards}}
+  "template": "secdeva/templates/securityIssue",
+  "buttonLabel": "Create a new security issue"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssueList"
+{{/report}}
+
+=== Notes
+
+#TODO Add any notes about this review#

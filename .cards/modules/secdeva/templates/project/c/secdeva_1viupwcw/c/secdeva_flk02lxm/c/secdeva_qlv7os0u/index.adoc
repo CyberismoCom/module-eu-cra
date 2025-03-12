@@ -1,0 +1,21 @@
+Error handling testing verifies that the product or the solution is able to handle various exceptional cases that require special handling as well as fatal errors that prevent the program from proceeding further.
+
+== How to decide if this secure development task is required
+
+This secure development task is always applicable.
+
+== How to implement
+
+Create a review of error handling testing and follow the instructions in the template.
+
+{{#report}}
+  "name": "secdeva/reports/createChildReview",
+  "template": "secdeva/templates/errorHandlingTest",
+  "buttonLabel": "Create a review of error handling testing"
+{{/report}}
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildReviewStatus"
+{{/report}}

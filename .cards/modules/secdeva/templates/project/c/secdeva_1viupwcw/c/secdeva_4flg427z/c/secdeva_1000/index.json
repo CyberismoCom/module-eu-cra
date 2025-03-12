@@ -1,0 +1,17 @@
+{
+    "cardType": "base/cardTypes/annualTask",
+    "title": "Assign people to security-related project roles",
+    "workflowState": "",
+    "rank": "0|e",
+    "lastUpdated": "2025-01-25T18:24:41.650Z",
+    "links": [],
+    "secdeva/fieldTypes/controlImplementer": "Development team",
+    "base/fieldTypes/adoptionStep": "step1",
+    "base/fieldTypes/justification": null,
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/reviewPeriod": 365,
+    "base/fieldTypes/reviewMonth": "january",
+    "base/fieldTypes/lastReviewed": null,
+    "base/fieldTypes/identifier": "secdeva_control_assign-people-to-project-roles"
+}

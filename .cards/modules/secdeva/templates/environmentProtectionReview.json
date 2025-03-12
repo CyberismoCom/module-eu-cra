@@ -1,0 +1,6 @@
+{
+    "displayName": "Environment protection review",
+    "description": "A review of the protection of dev, test, demo, staging and production environments",
+    "category": "Secure development reviews",
+    "name": "secdeva/templates/environmentProtectionReview"
+}

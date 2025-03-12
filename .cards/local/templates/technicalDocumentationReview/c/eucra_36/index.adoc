@@ -1,0 +1,148 @@
+== Scope of review 
+
+This document is a technical documentation review for (Scope). This review concerns the following product and version:
+
+#TODO: describe the product and version#
+
+The purpose of the technical documentation is to ensure that evidence of managing cybersecurity has been documented and archived, as required in the EU Cyber Resilience Act. In the event that the product must comply with other EU regulations, there must still be only a single set of technical documentation.
+
+== Checklist
+
+Check that the following items are included in the technical documentation, and that there is a mechanism to archive and store these items for this product and product version for at least 10 years. The items may later have to be provided to an EU market surveillance authority.
+
+=== Intended purpose of the product
+
+See the security context document.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Software versions
+
+Which versions of the software affect compliance to the essential requirements of the EU Cyber Resilience Act. See the Security requirement specification for the details of these requirements.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Photographs or illustrations
+
+For hardware products: photographs or illustrations that show external features, marking and internal layout.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Product documentation
+
+Product documentation that meets the requirements of the product documentation review template. This check should be OK if you have completed the Review product documentation task. Product documentation refers to instructions and information for users.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Design and development documentation
+
+Complete design and development documentation, including software architecture drawings and descriptions. The architecture documentation must explain how software components build on each other, feed into each other, and integrate into the overall processing. In many cases, the threat model will include such drawings and descriptions.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Vulnerability handling process
+
+Complete description of the vulnerability handling process and evidence of its application. This must include the software bill of materials, coordinated vulnerability disclosure policy, evidence of providing a contact address for reporting vulnerabilities, and a description of how software updates are distributed securely.
+
+If the EU Commission has specified requirements on the format or the elements of the SBOM, then these requirements shall be followed.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Production and monitoring process
+
+Complete description of the production and monitoring processes, including validation of these processes.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Cybersecurity risk assessment
+
+Cybersecurity risk assessment of the product. The risk assessment shall cover design, development, production, delivery, and maintenance phases. This information shall include at least the threat model and a description of how the secure development tasks have been applied.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== EU Standards
+
+A list of the fully or partly applied harmonised EU standards, common specifications adopted by the EU Commission, or EU cybersecurity certification schemes that have been set up to implement or demonstrate compliance to the EU Cyber Resilience Act.
+
+If those harmonised standards, common specifications, or cybersecurity certification schemes have not been applied, then include descriptions of the solutions and technical specifications that were adopted to meet the essential requirements of the EU Cyber Resilience Act.
+
+If the product has applied those harmonised standards, common specifications or cybersecurity certifications in part, then the technical documentation shall specify the parts which have been applied.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Security testing
+
+All security test plans and test reports. These must include at least threat mitigation testing, security requirement testing that covers the essential requirements of the EU Cyber Resilience Act, and vulnerability testing plans and reports.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== EU declaration of conformity
+
+A copy of the EU declaration of conformity
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+== Version history
+
+[cols="1,1,3"]
+|===============
+|Version | Date | Changes/Author
+
+| 0.1
+| 2024-01-01
+| XYZ changed by N.N.
+
+|===============
+
+{{#createCards}}
+  "template": "eucra/templates/securityIssue",
+  "buttonLabel": "Create a new security issue"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssueList"
+{{/report}}

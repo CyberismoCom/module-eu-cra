@@ -1,0 +1,47 @@
+{
+    "name": "ismsa/cardTypes/risk",
+    "workflow": "ismsa/workflows/risk",
+    "customFields": [
+        {
+            "name": "base/fieldTypes/owner"
+        },
+        {
+            "name": "base/fieldTypes/informationClassification"
+        },
+        {
+            "name": "ismsa/fieldTypes/riskInitialLikelihood"
+        },
+        {
+            "name": "ismsa/fieldTypes/riskInitialImpact"
+        },
+        {
+            "name": "ismsa/fieldTypes/riskInitialRisk",
+            "isCalculated": true
+        },
+        {
+            "name": "ismsa/fieldTypes/riskMitigationStrategy"
+        },
+        {
+            "name": "ismsa/fieldTypes/riskResidualLikelihood"
+        },
+        {
+            "name": "ismsa/fieldTypes/riskResidualImpact"
+        },
+        {
+            "name": "ismsa/fieldTypes/riskResidualRisk",
+            "isCalculated": true
+        }
+    ],
+    "alwaysVisibleFields": [
+        "base/fieldTypes/owner",
+        "base/fieldTypes/informationClassification",
+        "ismsa/fieldTypes/riskInitialLikelihood",
+        "ismsa/fieldTypes/riskInitialImpact",
+        "ismsa/fieldTypes/riskInitialRisk",
+        "ismsa/fieldTypes/riskMitigationStrategy",
+        "ismsa/fieldTypes/riskResidualLikelihood",
+        "ismsa/fieldTypes/riskResidualImpact",
+        "ismsa/fieldTypes/riskResidualRisk"
+    ],
+    "optionallyVisibleFields": []
+}

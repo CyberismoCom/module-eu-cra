@@ -1,0 +1,254 @@
+This document describes how incidents are managed at #Company#.
+
+== Introduction
+
+A well-practised incident management process is essential in ensuring
+that a regular security event does not turn into a disaster that could endanger business continuity.
+
+== Roles and responsibilities
+
+[cols="1,1,3"]
+|===============
+| Role | Person | Responsibilities
+
+| Cybersecurity Incident Response Team (CSIRT) Lead
+|  #TODO <add responsible>#
+a|
+* Analyses reported cybersecurity events
+
+* Records incidents to Incident Register
+
+* Organises incident response
+
+* Escalates Cybersecurity Incident to #TODO <add escalation>#, if needed
+
+| Backup person for CSIRT Lead
+|  #TODO <add responsible>#
+| See above
+
+| External communications responsible
+| #TODO <add responsible>#
+a|
+
+* Gives a public statement about the incident, if needed
+
+* Communicates towards the customers about the incident, if needed
+
+* Reports Cybersecurity Incidents to relevant authorities, if needed
+
+* Reports incidents involving personal data to link:https://tietosuoja.fi/ilmoitus-tietoturvaloukkauksesta[The office of Data Ombudsman], if needed
+
+
+|===============
+
+== Definitions
+
+NIS2 definitions from article 6:
+
+* (5) ‘near miss’ means an event that could have compromised the availability, authenticity, integrity or confidentiality of stored, transmitted or processed data or of the services offered by, or accessible via, network and information systems, but that was successfully prevented from materialising or that did not materialise;
+
+* (6) ‘incident’ means an event compromising the availability, authenticity, integrity or confidentiality of stored, transmitted or processed data or of the services offered by, or accessible via, network and information systems;
+
+* (7) ‘large-scale cybersecurity incident’ means an incident which causes a level of disruption that exceeds a Member State’s capacity to respond to it or which has a significant impact on at least two Member States;
+
+* (8) ‘incident handling’ means any actions and procedures aiming to prevent, detect, analyse, and contain or to respond to and recover from an incident;
+
+By NIS2 directive, Article 23 paragraph 3, an incident shall be considered to be significant if:
+
+* (a) it has caused or is capable of causing severe operational disruption of the services or financial loss for the entity concerned;
+
+* (b) it has affected or is capable of affecting other natural or legal persons by causing considerable material or non-material damage.
+
+
+== Process description
+
+The following steps describe how incidents are detected, analysed, addressed, communicated and closed.
+
+=== STEP 1: Detect security events
+
+Security events are detected based on internal user reporting, external party reporting and automatic monitoring.
+
+Security events are reported to Cybersecurity Incident Response Team (CSIRT) Lead by email, Teams, Signal or in urgent cases by a phone call.
+
+Incident are recorded to Company Incident Register using incident-template.
+
+=== STEP 2: Analyse potential incidents
+
+Security events are classified as incidents, if they are compromising the availability, authenticity, integrity or confidentiality of stored, transmitted or processed data or of the services offered by, or accessible via, network and information systems. Security events that are not incidents, are handled as part of normal operations in accordance with the relevant processes (e.g. vulnerability management process).
+
+In order to determine the significance of the impact of an incident, the following parameters shall be taken into account [4]:
+
+(a) the number of users affected by the disruption of the essential service;
+
+(b) the duration of the incident;
+
+(c) the geographical spread with regard to the area affected by the incident;
+
+Cybersecurity Incident Response Team Lead prioritises incidents using the following categories:
+
+* Information Impact: Confidentiality loss, Integrity loss, Availability loss, Privacy Breach
+
+* Each of these are evaluated using: High, Medium, Low, None
+
+* Functional impact: High, Medium, Low, None
+
+* Expected financial impact: High, Medium, Low
+
+* Impact on other natural or legal persons: High, Medium, Low, None
+
+* Recoverability effort: Regular, Supplemented, Extended, Not Recoverable
+
+The analysis is documented at Company ISMS. In tool the above analysis is summarised into Incident Severity, which determines the needed approach:
+
+[cols="1,2,3"]
+|===
+| Severity  | Criteria | Needed actions
+
+| High
+
+| At least ome of the impacts is high or recoverability effort is at least extended
+
+a|
+
+* Cybersecurity Incident Response Team Lead establishes a Cybersecurity Incident Management Team with relevant members
+
+* Incident is escalated to Board of directors
+
+| Medium
+
+| Any of the impacts is medium or recoverability effort is supplemented
+
+a|
+
+* Cybersecurity Incident Response Team Lead establishes a Cybersecurity Incident Management Team with relevant members
+
+| Low
+
+| All impacts are Low or None and recoverability effort is Regular
+
+a|
+
+* Incident is handled as part of normal operations, Cybersecurity Incident Response Team Lead tracks the incident to closure
+
+|===
+
+Actual analysis is summarised into Incident Severity Justification.
+
+Board of directors or Cybersecurity Incident Response Team Lead initiates relevant notifications and information sharing in accordance STEP 3.2.
+
+=== STEP 3.1: Address incidents
+
+Addressing security incidents is coordinated by the Cybersecurity Incident Management team and it should include the following aspects, if applicable:
+
+* **Containment**: try to limit potential damages
+
+* **Eradication**: eliminating the root cause of the incident
+
+* **Recovery**: restore to normal operations
+
+If there are multiple simultaneous incidents, eradication and recovery actions are prioritised based on the incident severity. Containment actions should be completed as soon as possible in order to avoid additional damages.
+
+Completed steps are documented in the "Incident Response" task that is created under the incident ticket in the #Company# Incident Register. If there is reason to suspect a crime, contact relevant authorities and remember to ensure chain-of-custody for the collected evidence.
+
+=== STEP 3.2: Communicate incidents
+
+Significant incidents are reported by #Board of Directors# without undue delay to relevant authorities as follows:
+
+* Early warning: within 24 hours of becoming aware of significant incident
+
+* Incident notification:  within 72 hours of becoming aware of significant incident
+
+* Final or progress report: not later than one month after the submission of the incident notification.
+
+Privacy breaches are reported by Board of Directors without undue delay to relevant authorities.
+
+Needed internal and external communication is planned by #Board of Directors#. Security (confidentiality, integrity and availability) of communication channels, including back-up communication systems, is ensured by following best practises.  Only nominated person(s) are allowed to give public statements to media.
+
+Completed steps are documented in the "Incident Communication" task under the incident ticket in Company Incident Register.
+
+=== STEP 4: Complete post-incident actions
+
+After incident has been resolved, evidence is stored in Company ISMS (if possible) and retention period is defined by Cybersecurity Incident Management Team Lead. If additional storage for evidence is needed, it is linked to the incident ticket.
+
+A lessons learned session and other information sharing is organised at least in case of bigger incidents.
+
+Completed steps are documented in "Post-incident Actions"-task under the incident ticket in Company Incident Register.
+
+== Process Maintenance and enforcement
+
+Incident rehearsals are organised at least yearly and Incident management process is reviewed during the rehearsals.
+
+== Related documents/processes
+
+== Relevant requirements/controls
+
+DIRECTIVE (EU) 2022/2555 [1] on measures for a high common level of cybersecurity across the Union
+(NIS 2 Directive) – Article 21: Cybersecurity risk-management measures and related
+local transposition laws in #TODO <add locations># require incident handling minimise the impact of incident on recipients of
+their services and on other services. #Company is not currently in scope of NIS2, but is committed to following the same principles.#
+
+NIS2 Directive Article 23 requires that significant incidents are reported without undue delay to relevant authorities as follows:
+
+* Early warning: within 24 hours of becoming aware of significant incident
+
+* Incident notification:  within 72 hours of becoming aware of significant incident
+
+* Final or progress report: not later than one month after the submission of the incident notification.
+
+
+Most relevant ISO27001 requirements and controls [2] are:  
+
+* ISO/IEC 27001:2022 – 7.4: Communication 
+
+* ISO/IEC 27001:2022 – Annex A: 5.24: Information security incident management planning and preparation
+
+* ISO/IEC 27001:2022 – Annex A: 5.25: Assessment and decision on information security events
+
+* ISO/IEC 27001:2022 – Annex A: 5.26: Response to information security incidents
+
+* ISO/IEC 27001:2022 – Annex A: 5.27: Learning from information security incidents
+
+* ISO/IEC 27001:2022 – Annex A: 5.28: Collection of evidence
+
+* ISO/IEC 27001:2022 – Annex A: 6.8: Information security event reporting
+
+* ISO/IEC 27001:2022 – Annex A: 8.15: Logging
+
+* ISO/IEC 27001:2022 – Annex A: 8.16: Monitoring activities
+
+* ISO/IEC 27001:2022 – Annex A: 8.17: Clock synchronization
+
+
+== References
+
+[1] DIRECTIVE (EU) 2022/2555 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 14 December 2022 on measures for a high common level of cybersecurity across the Union
+
+[2] SFS-EN ISO/IEC 27001:2022 Information security, cybersecurity and privacy protection. Information security management systems. Requirements.
+
+[3] Special Publication 800-61, Revision 2, Computer Security Incident Handling Guide, August 2012, link: https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf
+
+[4]: Reference document on Incident Notification for Operators of Essential Services, NIS Cooperation Group, February 2018, link: https://ec.europa.eu/information_society/newsroom/image/document/2018-30/reference_document_incident_reporting_00A3C6D5-9BDB-23AA-240AF504DA77F0A6_53644.pdf
+
+== Version history
+
+[cols="1,1,3"]
+|===============
+|Version | Date | Changes/Author
+
+
+| 1.0
+| #TODO <add date>#
+| First version created by #N.N#
+
+|===============
+
+== Reviews
+
+{{#createCards}}
+    "template": "base/templates/reviewTask",
+    "buttonLabel": "Add new review task"
+{{/createCards}}
+
+{{#report}}
+  "name": "base/reports/childrenTable"
+{{/report}}

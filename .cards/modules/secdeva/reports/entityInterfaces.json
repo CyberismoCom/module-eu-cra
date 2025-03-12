@@ -1,0 +1,6 @@
+{
+    "displayName": "Interfaces of an entity",
+    "description": "External interfaces of a dataflow model entity",
+    "category": "Secure development",
+    "name": "secdeva/reports/entityInterfaces"
+}

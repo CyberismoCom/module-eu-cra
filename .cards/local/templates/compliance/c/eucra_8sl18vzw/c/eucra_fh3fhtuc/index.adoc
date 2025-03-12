@@ -1,0 +1,32 @@
+.View process diagram
+[%collapsible]
+====
+{{#graph}}
+  "model": "secdeva/graphModels/processDiagram",
+  "view": "secdeva/graphViews/complianceRequirement"
+{{/graph}}
+====
+
+== Requirement content
+
+Article 29
+
+General principles of the CE marking
+
+The CE marking shall be subject to the general principles set out in Article 30 of Regulation (EC) No 765/2008.
+
+Article 30
+
+Rules and conditions for affixing the CE marking
+
+1.{empty}  The CE marking shall be affixed visibly, legibly and indelibly to the product with digital elements. Where that is not possible or not warranted on account of the nature of the product with digital elements, it shall be affixed to the packaging and to the EU declaration of conformity referred to in Article 28 accompanying the product with digital elements. For products with digital elements which are in the form of software, the CE marking shall be affixed either to the EU declaration of conformity referred to in Article 28 or on the website accompanying the software product. In the latter case, the relevant section of the website shall be easily and directly accessible to consumers.
+
+2.{empty}   On account of the nature of the product with digital elements, the height of the CE marking affixed to the product with digital elements may be lower than 5 mm, provided that it remains visible and legible.
+
+3.{empty}   The CE marking shall be affixed before the product with digital elements is placed on the market. It may be followed by a pictogram or any other mark indicating a special cybersecurity risk or use set out in the implementing acts referred to in paragraph 6.
+
+4.{empty}   The CE marking shall be followed by the identification number of the notified body, where that body is involved in the conformity assessment procedure based on full quality assurance (based on module H) referred to in Article 32.
+
+The identification number of the notified body shall be affixed by the body itself or, under its instructions, by the manufacturer or the manufacturer’s authorised representative.
+
+The identification number of the notified body shall be affixed by the body itself or, under its instructions, by the manufacturer or the manufacturer’s authorised representative.

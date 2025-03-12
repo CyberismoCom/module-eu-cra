@@ -1,0 +1,29 @@
+{
+    "name": "ismsa/cardTypes/incident",
+    "workflow": "ismsa/workflows/incident",
+    "customFields": [
+        {
+            "name": "base/fieldTypes/owner"
+        },
+        {
+            "name": "base/fieldTypes/informationClassification"
+        },
+        {
+            "name": "ismsa/fieldTypes/incidentStartDateTime"
+        },
+        {
+            "name": "ismsa/fieldTypes/incidentEndDateTime"
+        },
+        {
+            "name": "ismsa/fieldTypes/incidentSeverity"
+        }
+    ],
+    "alwaysVisibleFields": [
+        "base/fieldTypes/owner",
+        "base/fieldTypes/informationClassification",
+        "ismsa/fieldTypes/incidentStartDateTime",
+        "ismsa/fieldTypes/incidentEndDateTime",
+        "ismsa/fieldTypes/incidentSeverity"
+    ],
+    "optionallyVisibleFields": []
+}

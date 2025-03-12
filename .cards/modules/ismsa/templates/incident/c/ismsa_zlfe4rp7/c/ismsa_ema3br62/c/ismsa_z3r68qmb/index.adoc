@@ -1,0 +1,8 @@
+== Task description
+
+Consider the need of information other parties such as media suppliers, 
+partners or subcontractors about the incidents. Open communication supports 
+building trust and might help in avoiding rumours. 
+If there is a danger that incident might spread to suppliers, 
+it is fair to give them a warning in advance. Also remember that 
+only nominated persons are allowed to give public statements about the incident.

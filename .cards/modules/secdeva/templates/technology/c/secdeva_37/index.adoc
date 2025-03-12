@@ -1,0 +1,230 @@
+== Introduction
+
+The risks and justifications for selecting a 3rd party technology must be documented when adopting 3rd party solutions such as
+
+* commercial off-the-shelf (COTS) with support
+* free/libre open source software (FLOSS, FOSS, OSS) with or without paid support https://www.gnu.org/philosophy/floss-and-foss.en.html[FLOSS and FOSS - GNU Project - Free Software Foundation]
+* software of unknown provenance (SOUP), any software of the previous categories or any binary solution with pedigree unproven on this field of industry
+
+It is important to consider business compliance, intellectual property rights, user acceptance and risks throughout the projected life cycle: acquisition, integration, testing, maintenance and end-of-life. Not all the assets have to meet all the criteria. With a proper justification for accepting the related risk or deploying compensating security controls it is possible to adopt assets lacking according to these criteria.
+
+The decision must involve the responsible architect and if there are business implications, then also involve a business responsible person in the decision. If you, as the technology selection responsible, business responsible or responsible architect, consider that you are not entitled to accept the risks, then the decision is escalated to architect team or management of the product according to the technology selection process.
+
+The technology can be adopted for use once the following conditions are met:
+
+* Technology selection checklist is filled, and the possible required escalations is concluded.
+* Identified risks can be accepted
+* Maintenance responsible is nominated
+* Vulnerability management and software update management for the technology is planned and documented
+
+Remember to inform all impacted stakeholders of the product about the decision!
+
+== Technology selection checklist
+
+=== Business goals
+
+The technology is compliant with business goals:
+
+* Are the costs of the technology selection acceptable? +
+You should compare the costs of using 3rd party technology to the costs of implementing and maintaining an in-house implementation.
+* Does the technology selection support meeting the target schedule of the product?
+* Is the technology selection aligned with major business demands (performance, availability, product life cycle)
+* Business responsible accepts the identified major risks
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== License
+
+License agreement for the technology is acceptable and compliant with the organization’s license policy.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Patent risks
+
+Patent risks for the technology are acceptable.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Users
+
+The technology is acceptable from the point of view of users. This is relevant also for interfaces and data format selections.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Capabilities
+
+The required features and capabilities of the technology are understood, and the proposed technology selection meets at least the most important technical requirements.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Architect approval
+
+Selecting this technology is approved by the architect who is responsible for the product.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Existing usage
+
+The technology is widely used, or already in use within the product.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Overlapping technologies
+
+The technology is not redundant or overlapping with another technology that the product is already using for the same purpose. For example, if the product already includes a crypto library, ensure that this technology is not another, overlapping crypto library.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== No lock-in
+
+No lock-in: It is possible to replace the selected technology with another technology, if needed.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Competencies
+
+The team that is adopting the technology will have competencies to apply the technology in the long term.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Security context
+
+The technology is suitable for the planned security context. The security context refers to the security provided by the environment where the asset owner is expected to deploy and use the product.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Secure implementation
+
+The component has been implemented using sufficient rigor, and the security risks related to the vulnerabilities of Technology/component are acceptable.
+
+* The component should have no open vulnerabilities.
+* The vulnerability history of the technology/component is acceptable.
+* You can check the known vulnerabilities by using the vulnerability disclosure channels of the technology/component and the https://web.nvd.nist.gov/view/vuln/search[National Vulnerabilities Database].
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Security documentation
+
+There is sufficient security documentation for the technology/component.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Security updates
+
+Security updates for technology/component are published regularly.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Security-related notifications
+
+There is a channel for receiving and monitoring notifications about security related issues from the supplier of the component.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Quality track record
+
+The technology has an acceptable quality track record and it has been sufficiently tested.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+#TODO: Please describe justifications for an acceptable quality track record and sufficient testing arrangement.#
+
+=== Long term viability
+
+The organization that develops the technology is trustworthy and viable in the long term.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Support and maintenance
+
+The support and maintenance responsibilities for the technology have been defined and are acceptable.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+== Conclusion on the technology selection
+
+How to decide about the technology selection
+
+The technology can be adopted for use once the following conditions are met:
+
+* The owner of this document has filled in the technology selection checklist and conducted the possibly required escalations, so that the identified risks can be accepted
+
+The proposed technology
+
+* [ ] is approved for use
+* [ ] is rejected for use
+
+for the planned purpose of #TODO: document the purpose#.
+

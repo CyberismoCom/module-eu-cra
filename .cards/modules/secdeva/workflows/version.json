@@ -1,0 +1,40 @@
+{
+    "name": "secdeva/workflows/version",
+    "states": [
+        {
+            "name": "Draft",
+            "category": "initial"
+        },
+        {
+            "name": "Released",
+            "category": "closed"
+        },
+        {
+            "name": "Archived",
+            "category": "closed"
+        }
+    ],
+    "transitions": [
+        {
+            "name": "Create",
+            "fromState": [
+                ""
+            ],
+            "toState": "Draft"
+        },
+        {
+            "name": "Release",
+            "fromState": [
+                "Draft"
+            ],
+            "toState": "Released"
+        },
+        {
+            "name": "Archive",
+            "fromState": [
+                "*"
+            ],
+            "toState": "Archived"
+        }
+    ]
+}

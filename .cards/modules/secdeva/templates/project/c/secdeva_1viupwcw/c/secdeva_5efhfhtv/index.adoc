@@ -1,0 +1,5 @@
+*Design* includes tasks for managing requirements, threat models, and various specifications.
+
+{{#report}}
+  "name": "secdeva/reports/phase"
+{{/report}}

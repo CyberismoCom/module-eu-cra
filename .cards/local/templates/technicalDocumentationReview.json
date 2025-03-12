@@ -1,0 +1,6 @@
+{
+    "displayName": "Technical documentation review",
+    "description": "A review of the security considerations in internal technical documentation",
+    "category": "Secure development reviews",
+    "name": "eucra/templates/technicalDocumentationReview"
+}

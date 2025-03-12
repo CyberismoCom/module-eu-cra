@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/productRiskTreatmentPlan",
+    "displayName": "Product risk treatment plan",
+    "description": "Shows requirements, tasks and controls that mitigate a product security risk",
+    "category": "Cybersecurity management"
+}

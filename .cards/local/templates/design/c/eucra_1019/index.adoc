@@ -1,0 +1,31 @@
+A privacy by design review ensures that the product processes personal information securely and meets privacy-related requirements such as the European Union General Data Protection Regulations (GDPR).
+
+== How to decide if this secure development task is required
+
+This review is required for the project in the following cases:
+
+ * Security specialist decides that a review is needed based on risk.
+
+ * The project introduces new processing of personal information
+
+ * Usually, this review should be conducted, if the project includes custom software development, and the product interacts with humans or processes data that is in any way related to humans.
+
+If it makes sense to perform separate reviews on subproject level, then the review on the topmost level can be skipped.
+
+== How to implement
+
+Create a privacy by design review document and follow the instructions in the template.
+
+{{#report}}
+  "name": "secdeva/reports/createChildReview",
+  "template": "eucra/templates/privacyByDesignReview",
+  "buttonLabel": "Create a privacy by design review"
+{{/report}}
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildReviewStatus"
+{{/report}}
+
+Check that any identified security-related findings have been reported as security issues.

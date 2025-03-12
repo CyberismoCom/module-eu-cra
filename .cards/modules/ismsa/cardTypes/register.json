@@ -1,0 +1,26 @@
+{
+    "name": "ismsa/cardTypes/register",
+    "workflow": "base/workflows/page",
+    "customFields": [
+        {
+            "name": "base/fieldTypes/owner"
+        },
+        {
+            "name": "base/fieldTypes/informationClassification"
+        },
+        {
+            "name": "ismsa/fieldTypes/adoptionStep",
+            "isCalculated": false
+        },
+        {
+            "name": "ismsa/fieldTypes/progress"
+        },
+        {
+            "name": "base/fieldTypes/identifier"
+        }
+    ],
+    "alwaysVisibleFields": [
+        "base/fieldTypes/owner",
+        "base/fieldTypes/informationClassification"
+    ]
+}

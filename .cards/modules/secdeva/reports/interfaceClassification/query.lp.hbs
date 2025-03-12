@@ -1,0 +1,71 @@
+selectAll.
+
+result(result).
+
+field(result, "parentName", ParentName) :-
+    parent({{cardKey}}, Parent),
+    field(Parent, "title", ParentName).
+
+childResult(result, (Source, Parent, Description), "parentDataflows") :-
+    link(Source, Parent, "secdeva/linkTypes/dataflow", Description),
+    parent({{cardKey}}, Parent).
+
+childResult(result, (Source, {{cardKey}}, Description), "dataflows") :-
+    link(Source, {{cardKey}}, "secdeva/linkTypes/dataflow", Description).
+
+field((Source, Destination, Description), "sourceCardKey", Source) :-
+    childResult(result, (Source, Destination, Description), _ ),
+    field(Source, "title", SourceName).
+
+field((Source, Destination, Description), "sourceTitle", SourceTitle) :-
+    childResult(result, (Source, Destination, Description), _ ),
+    field(Source, "title", SourceTitle).
+
+field((Source, Destination, Description), "sourceType", "Data store") :-
+    childResult(result, (Source, Destination, Description), _ ),
+    field(Source, "cardType", "secdeva/cardTypes/dataStore").
+
+field((Source, Destination, Description), "sourceType", "External entity") :-
+    childResult(result, (Source, Destination, Description), _ ),
+    field(Source, "cardType", "secdeva/cardTypes/external").
+
+field((Source, Destination, Description), "sourceType", "Person") :-
+    childResult(result, (Source, Destination, Description), _ ),
+    field(Source, "cardType", "secdeva/cardTypes/person").
+
+field((Source, Destination, Description), "external", "Yes, used by a user") :-
+    childResult(result, (Source, Destination, Description), _ ),
+    field(Source, "cardType", "secdeva/cardTypes/person").
+
+field((Source, Destination, Description), "external", "Yes, used by an external entity") :-
+    childResult(result, (Source, Destination, Description), _ ),
+    field(Source, "cardType", "secdeva/cardTypes/external").
+
+field((Source, Destination, Description), "external", "No") :-
+    childResult(result, (Source, Destination, Description), _ ),
+    not field(Source, "cardType", "secdeva/cardTypes/external"),
+    not field(Source, "cardType", "secdeva/cardTypes/person").
+
+field((Source, Destination, Description), "sourceType", "Process") :-
+    childResult(result, (Source, Destination, Description), _ ),
+    field(Source, "cardType", "secdeva/cardTypes/process").
+
+field((Source, Destination, Description), "sourceType", "Trust boundary") :-
+    childResult(result, (Source, Destination, Description), _ ),
+    field(Source, "cardType", "secdeva/cardTypes/trustBoundary").
+
+field((Source, Destination, Description), "description", Description) :-
+    childResult(result, (Source, Destination, Description), _ ).
+
+childResult((Source, {{cardKey}}, Description), TrustBoundary, "trustBoundaries") :-
+    childResult(result, (Source, {{cardKey}}, Description), "dataflows"),
+    field(TrustBoundary, "cardType", "secdeva/cardTypes/trustBoundary"),
+    ancestor({{cardKey}}, TrustBoundary),
+    not ancestor(Source, TrustBoundary).
+
+field(result, "crossesTrustBoundary", "void") :-
+    field({{cardKey}}, "secdeva/fieldTypes/crossesTrustBoundary", "yes").
+
+field(result, "external", "void") :-
+    field({{cardKey}}, "secdeva/fieldTypes/isExternal", "yes").
+

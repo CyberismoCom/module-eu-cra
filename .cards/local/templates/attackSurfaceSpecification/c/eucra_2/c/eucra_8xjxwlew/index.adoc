@@ -1,0 +1,18 @@
+== Task description
+
+Review the attack surface specification.
+
+[NOTE]
+.Review instructions
+====
+
+Review that the attack surface specification includes at least:
+
+* all avenues of ingress and egress to and from the system
+* file shares
+* access control lists
+* open ports
+* running services with elevated privileges
+====
+
+**Note**: The reviewer cannot be the same person as the owner or the approver of the document.

@@ -1,0 +1,27 @@
+The goal of penetration testing is to identify security related issues via tests by discovering and exploiting vulnerabilities in the system. Penetration testing tries to breach the confidentiality, integrity or availability of the system by exploiting the vulnerabilities of the system.
+
+Penetration testing complements other types of security testing as it aims to find vulnerabilities that other testing types cannot discover. Because penetration testing is performed on the system level, it can uncover errors that are caused by logical errors or by errors done in the integration of the system.
+
+== How to decide if this secure development task is required
+
+Penetration testing is required, but the frequency and the scope of testing shall be decided based on risk.
+
+== How to implement
+
+Create a review of penetration testing and follow the instructions in the template.
+
+{{#report}}
+  "name": "secdeva/reports/createChildReview",
+  "template": "eucra/templates/penetrationTest",
+  "buttonLabel": "Create a penetration test"
+{{/report}}
+
+A recommended practice is to perform the penetration testing as a part of system testing, where the system has been configured according to the documented practices.
+
+If vulnerability scanning of infrastructure has been performed to the same system version recently, penetration testing can use results from that testing to avoid overlapping security testing.
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildReviewStatus"
+{{/report}}

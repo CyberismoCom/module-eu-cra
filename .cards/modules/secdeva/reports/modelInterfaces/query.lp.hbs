@@ -1,0 +1,151 @@
+selectAll.
+
+secdeva_entityOutsideTrustBoundaries(Entity, Model) :-
+    ancestor(Entity, Model),
+    not field(Ancestor, "cardType", "secdeva/cardTypes/trustBoundary") :
+    ancestor(Entity, Ancestor).
+
+secdeva_entityWithinTrustBoundary(Entity, Model) :-
+     ancestor(Entity, Model),
+     ancestor(TrustBoundary, Model),
+     ancestor(Entity, TrustBoundary),
+     field(TrustBoundary, "cardType", "secdeva/cardTypes/trustBoundary").
+
+result(result).
+
+% external dataflows
+
+% outbound external dataflow
+childResult(result, @concatenate(A, B, Title), "externalDataflows") :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
+     secdeva_entityOutsideTrustBoundaries(B, {{cardKey}}).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/direction", "Outbound") :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
+     secdeva_entityOutsideTrustBoundaries(B, {{cardKey}}).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/title", Title) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
+     secdeva_entityOutsideTrustBoundaries(B, {{cardKey}}).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/externalTitle", External) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
+     secdeva_entityOutsideTrustBoundaries(B, {{cardKey}}),
+     field(B, "title", External).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/externalCardKey", B) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
+     secdeva_entityOutsideTrustBoundaries(B, {{cardKey}}).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/internalTitle", Internal) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
+     secdeva_entityOutsideTrustBoundaries(B, {{cardKey}}),
+     field(A, "title", Internal).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/internalCardKey", A) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
+     secdeva_entityOutsideTrustBoundaries(B, {{cardKey}}).
+
+% inbound external dataflow
+childResult(result, @concatenate(A, B, Title), "externalDataflows") :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityOutsideTrustBoundaries(A, {{cardKey}}),
+     secdeva_entityWithinTrustBoundary(B, {{cardKey}}).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/direction", "Inbound") :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityOutsideTrustBoundaries(A, {{cardKey}}),
+     secdeva_entityWithinTrustBoundary(B, {{cardKey}}).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/title", Title) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityOutsideTrustBoundaries(A, {{cardKey}}),
+     secdeva_entityWithinTrustBoundary(B, {{cardKey}}).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/externalTitle", External) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityOutsideTrustBoundaries(A, {{cardKey}}),
+     secdeva_entityWithinTrustBoundary(B, {{cardKey}}),
+     field(A, "title", External).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/externalCardKey", A) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityOutsideTrustBoundaries(A, {{cardKey}}),
+     secdeva_entityWithinTrustBoundary(B, {{cardKey}}),
+     field(B, "title", External).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/internalTitle", Internal) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityOutsideTrustBoundaries(A, {{cardKey}}),
+     secdeva_entityWithinTrustBoundary(B, {{cardKey}}),
+     field(B, "title", Internal).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/internalCardKey", B) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityOutsideTrustBoundaries(A, {{cardKey}}),
+     secdeva_entityWithinTrustBoundary(B, {{cardKey}}).
+
+% Internal dataflows
+
+childResult(result, @concatenate(A, B, Title), "internalDataflows") :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
+     secdeva_entityWithinTrustBoundary(B, {{cardKey}}).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/title", Title) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
+     secdeva_entityWithinTrustBoundary(B, {{cardKey}}).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/source", Source) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
+     secdeva_entityWithinTrustBoundary(B, {{cardKey}}),
+     field(A, "title", Source).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/destination", Destination) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
+     secdeva_entityWithinTrustBoundary(B, {{cardKey}}),
+     field(B, "title", Destination).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/destinationCardKey", B) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
+     secdeva_entityWithinTrustBoundary(B, {{cardKey}}).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/sourceCardKey", A) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
+     secdeva_entityWithinTrustBoundary(B, {{cardKey}}).
+
+% Interfaces
+
+childResult(result, Interface, "interfaces") :-
+    field(Interface, "cardType", "secdeva/cardTypes/interface"),
+    ancestor(Interface, {{cardKey}}).
+
+field(Interface, "secdeva/fieldTypes/interfaceElementCardKey", Element) :-
+    childResult(result, Interface, "interfaces"),
+    parent(Interface, Element).
+
+field(Interface, "secdeva/fieldTypes/interfaceElementTitle", Title) :-
+    childResult(result, Interface, "interfaces"),
+    parent(Interface, Element),
+    field(Element, "title", Title).
+
+order(2, "externalDataflows", 1, "secdeva/fieldTypes/direction", "ASC").
+order(2, "externalDataflows", 2, "secdeva/fieldTypes/internalTitle", "ASC").
+
+order(2, "internalDataflows", 1, "secdeva/fieldTypes/destination", "ASC").
+order(2, "internalDataflows", 2, "secdeva/fieldTypes/source", "ASC").
+
+order(2, "interfaces", 1, "secdeva/fieldTypes/interfaceElementTitle", "ASC").
+order(2, "interfaces", 2, "title", "ASC").

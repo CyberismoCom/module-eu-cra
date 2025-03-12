@@ -1,0 +1,33 @@
+Standards, regulations, customers and internal policies may set technical security compliance requirements that affect products and information systems.
+
+== How to decide if this secure development task is required
+
+This secure development task is required if there are applicable technical security compliance requirements for the product.
+
+For products that include digital elements and are placed on the EU market, the EU Cyber Resilience Act will define such external technical security capability requirements.
+
+For devices and systems that are used as a part of an industrial control system, the IEC 62443-4-2 and IEC 62443-3-3 standards define such external technical security capability requirements. Each SL-C level includes a set of security capabilities that needs to be composed to security requirements of the product.
+
+The organization's security team may also set technical security compliance requirements that must be managed for products or services.
+
+== How to implement
+
+Typically, this requirement is implemented by a member of the organization's security team.
+
+Create a security capability requirement allocation document:
+
+{{#report}}
+  "name": "secdeva/reports/createChildDocument",
+  "template": "eucra/templates/securityCapabilityRequirementAllocation",
+  "buttonLabel": "Create a security capability requirement allocation document"
+{{/report}}
+
+For industrial automation products, document the the targeted SL-C level in the security capability requirement allocation document.
+
+Create a security requirement specification from the security requirement specification template and follow the instructions in the template to document the Security Requirements. Link the Security Requirements to the compliance requirements with an "is caused by" link.
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildDocumentStatus"
+{{/report}}

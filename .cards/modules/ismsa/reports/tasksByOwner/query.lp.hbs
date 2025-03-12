@@ -1,0 +1,15 @@
+selectAll.
+result(Card) :-
+   ancestor(Card, {{cardKey}}),
+   ismsTask(Card).
+
+orderBy("base/fieldTypes/owner", "ASC").
+
+ismsTask(Card) :-
+    field(Card, "cardType","base/cardTypes/task").
+
+ismsTask(Card) :-
+    field(Card, "cardType","base/cardTypes/recurringTask").
+
+ismsTask(Card) :-
+    field(Card, "cardType","ismsa/cardTypes/securityTarget").

@@ -1,0 +1,12 @@
+{
+    "title": "Requirement review by product owner",
+    "cardType": "base/cardTypes/task",
+    "workflowState": "",
+    "rank": "0|b",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/dueDate": null,
+    "base/fieldTypes/justification": null,
+    "base/fieldTypes/adoptionStep": "step1",
+    "base/fieldTypes/identifier": null
+}

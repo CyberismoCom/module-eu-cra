@@ -1,0 +1,6 @@
+{
+    "name": "eucra/templates/essentialRequirements",
+    "displayName": "Essential security requirements",
+    "description": "Template of security requirements from EU CRA Annex I",
+    "category": "EU Cyber Resilience Act"
+}

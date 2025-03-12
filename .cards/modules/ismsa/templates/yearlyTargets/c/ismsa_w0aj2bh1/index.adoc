@@ -1,0 +1,13 @@
+## Subregister for security targets in #<add year>#
+
+
+{{#createCards}}
+  "template": "ismsa/templates/securityTarget",
+  "buttonLabel": "Create new security target"
+{{/createCards}}
+
+== Security targets
+
+{{#report}}
+  "name": "base/reports/childrenTable"
+{{/report}}

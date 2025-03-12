@@ -1,0 +1,27 @@
+Fuzz testing is used to uncover security issues caused by input validation flaws. It is an automated testing technique to create malformed or unexpected input. For example, Radamsa is a recommended open-source fuzzer tool that can generate malicious input based on examples of valid input, and American Fuzzy Lop (AFL) is an open-source fuzzer based on instrumenting the application that is being tested.
+
+== How to decide if this secure development task is required
+
+This review item is applicable, if the project includes or implements interfaces.
+
+Fuzz testing is required for all external interfaces and protocols. Fuzztesting may also be done on high-risk internal interfaces.
+
+Fuzz testing efforts should focus especially on such externally exposed interfaces, whose parsers and decoders the product development project implements itself. If robust and well-known implementations of common protocols such as TCP, HTTP or HTTPS are used, then it may be possible to refer to the fuzz testing performed by the suppliers of these known implementations.
+
+This control is common to all interfaces and parsers of the product. Please document the interface specific scoping decisions in each interface specification.
+
+== How to implement
+
+Create a review of fuzz testing and follow the instructions in the template.
+
+{{#report}}
+  "name": "secdeva/reports/createChildReview",
+  "template": "eucra/templates/fuzzTest",
+  "buttonLabel": "Create a review of fuzz testing"
+{{/report}}
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildReviewStatus"
+{{/report}}

@@ -1,0 +1,5 @@
+{{#if layout}}
+attr(graph, toplevelGraph, rankdir, "{{layout}}").
+{{/if}}
+
+view(TopLevelEntity) :- ancestor(TopLevelEntity, {{cardKey}}).

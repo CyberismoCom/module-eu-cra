@@ -1,0 +1,25 @@
+Input validation testing verifies that input validation works as specified. This refers to basic checks such as edge and boundary value testing, equivalence class testing or testing of object schema validation functionality that are not specifically targeted at security.
+
+== How to decide if this secure development task is required
+
+This control is applicable, if the project includes or implements interfaces.
+
+Input validation testing is required for all external interfaces and protocols. Input validation testing may also be done on high-risk internal interfaces.
+
+This control is common to all interfaces and parsers of the product. Please document the interface specific scoping decisions in each interface document.
+
+== How to implement
+
+Create a review of basic input validation testing and follow the instructions in the template.
+
+{{#report}}
+  "name": "secdeva/reports/createChildReview",
+  "template": "eucra/templates/basicInputValidationTest",
+  "buttonLabel": "Create a review of basic input validation testing"
+{{/report}}
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildReviewStatus"
+{{/report}}

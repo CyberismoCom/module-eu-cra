@@ -1,0 +1,14 @@
+{
+    "title": "EU CRA Article 13 (5): Obligations to manufacturers: 3rd party components",
+    "cardType": "ismsa/cardTypes/complianceRequirement",
+    "workflowState": "",
+    "rank": "0|g",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "public",
+    "base/fieldTypes/adoptionStep": null,
+    "base/fieldTypes/identifier": "eucra_compliance-requirement_article-13-5",
+    "ismsa/fieldTypes/requirementImplementationStrategy": null,
+    "ismsa/fieldTypes/requirementOrigin": "Regulation (EU) 2024/2847 Cyber Resilience Act",
+    "links": [],
+    "lastUpdated": "2025-03-02T15:10:10.652Z"
+}

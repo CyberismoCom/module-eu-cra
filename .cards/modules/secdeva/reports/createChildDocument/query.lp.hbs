@@ -1,0 +1,7 @@
+selectAll.
+
+result(Document) :-
+    parent(Document, {{cardKey}}),
+    field(Document, "cardType", "base/cardTypes/controlledDocument").
+
+orderBy("rank", "ASC").

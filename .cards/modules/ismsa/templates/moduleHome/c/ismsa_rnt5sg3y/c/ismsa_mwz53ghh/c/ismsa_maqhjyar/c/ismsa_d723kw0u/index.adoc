@@ -1,0 +1,14 @@
+## Risks related to data assets
+
+Add new risks related to data assets using risk-template.
+
+{{#createCards}}
+  "template": "ismsa/templates/risk",
+  "buttonLabel": "Add new risk"
+{{/createCards}}
+
+{{#report}}
+    "name": "ismsa/reports/risksByAssetType",
+    "assetType": "ismsa/cardTypes/assetData"
+{{/report}}
+

@@ -1,0 +1,27 @@
+{
+    "name": "ismsa/fieldTypes/acceptableRiskLevel",
+    "displayName": "Acceptable risk level",
+    "dataType": "enum",
+    "enumValues": [
+        {
+            "enumValue": "veryLow",
+            "enumDisplayValue": "Very Low"
+        },
+        {
+            "enumValue": "low",
+            "enumDisplayValue": "Low"
+        },
+        {
+            "enumValue": "moderate",
+            "enumDisplayValue": "Moderate"
+        },
+        {
+            "enumValue": "high",
+            "enumDisplayValue": "High"
+        },
+        {
+            "enumValue": "veryHigh",
+            "enumDisplayValue": "Very High"
+        }
+    ]
+}

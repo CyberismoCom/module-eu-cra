@@ -1,0 +1,11 @@
+{
+    "title": "Untitled Incident",
+    "cardType": "ismsa/cardTypes/incident",
+    "workflowState": "",
+    "rank": "0|b",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": null,
+    "ismsa/fieldTypes/incidentEndDateTime": null,
+    "ismsa/fieldTypes/incidentSeverity": null,
+    "ismsa/fieldTypes/incidentStartDateTime": null
+}

@@ -1,0 +1,25 @@
+Performance testing is used to ensure that the product meets its performance requirements, or to measure the performance of the product. For example, there may be performance requirements about  the maximum allowed time for specific operations. Notice that there is a separate control for capacity testing.
+
+Scalability testing is used to ensure that auto-scaling works correctly.
+
+== How to decide if this secure development task is required
+
+The need for performance and scalability testing is decided based on risk. In particular, external interfaces and protocols that implement auto-scaling imply a higher risk.
+
+This control is common to all interfaces and parsers of the product. Please document the interface specific scoping decisions in each interface specification.
+
+== How to implement
+
+Create a review of performance and scalability testing and follow the instructions in the template.
+
+{{#report}}
+  "name": "secdeva/reports/createChildReview",
+  "template": "eucra/templates/performanceAndScalabilityTest",
+  "buttonLabel": "Create a review of performance and scalability testing"
+{{/report}}
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildReviewStatus"
+{{/report}}

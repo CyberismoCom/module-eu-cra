@@ -1,0 +1,16 @@
+visible({{cardKey}}).
+
+visible(Asset) :-
+    link(Asset, {{cardKey}}, "ismsa/linkTypes/presentsRisk").
+
+visible(Control) :-
+    field(Control, "cardType", "ismsa/cardTypes/control"),
+    link(Control, {{cardKey}}, "ismsa/linkTypes/mitigates").
+
+visible(Requirement) :-
+    field(Requirement, "cardType", "secdeva/cardTypes/requirement"),
+    link(Requirement, {{cardKey}}, "ismsa/linkTypes/mitigates").
+
+visible(Task) :-
+    base_recurringTask(Task),
+    link(Task, {{cardKey}}, "ismsa/linkTypes/mitigates").

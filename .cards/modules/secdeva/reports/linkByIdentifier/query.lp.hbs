@@ -1,0 +1,8 @@
+select("title"; "workflowState").
+
+result(Card) :-
+    secdeva_closestProject(Card, Project),
+    secdeva_closestProject({{cardKey}}, Project),
+    field(Card, "base/fieldTypes/identifier", "{{identifier}}").
+
+orderBy("title", "ASC").

@@ -1,0 +1,20 @@
+{
+    "name": "secdeva/cardTypes/page",
+    "workflow": "secdeva/workflows/void",
+    "customFields": [
+        {
+            "name": "base/fieldTypes/adoptionStep",
+            "isCalculated": false,
+            "displayName": "Adoption step"
+        },
+        {
+            "name": "base/fieldTypes/identifier",
+            "isCalculated": false,
+            "displayName": "Identifier"
+        }
+    ],
+    "alwaysVisibleFields": [],
+    "optionallyVisibleFields": [
+        "base/fieldTypes/adoptionStep"
+    ]
+}

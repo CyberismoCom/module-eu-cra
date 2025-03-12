@@ -1,0 +1,6 @@
+{
+    "displayName": "Threat mitigation test",
+    "description": "Testing of the mitigations of security threats",
+    "category": "Security testing",
+    "name": "secdeva/templates/threatMitigationTest"
+}

@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/modelInterfaces",
+    "displayName": "External and internal interfaces",
+    "description": "Interfaces and dataflows of a dataflow model",
+    "category": "Secure"
+}

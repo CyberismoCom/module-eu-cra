@@ -1,0 +1,7 @@
+== Task description
+
+GDPR requires that data subjects must be notified of personal data breaches 
+if they are likely to cause a high risk to their rights and freedoms. 
+The controller shall then communicate the personal data breach 
+to the data subject without undue delay, so that the data subject 
+can take measures such as blocking their credit cards.

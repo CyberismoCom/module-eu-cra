@@ -1,0 +1,19 @@
+{{#graph}}
+  "model": "ismsa/graphModels/assetsRisksControls",
+  "view": "ismsa/graphViews/asset"
+{{/graph}}
+
+== Asset description
+
+#TODO Add link to asset registry that contains all employee devices#
+
+== Related risks
+
+{{#createCards}}
+  "template": "ismsa/templates/risk",
+  "buttonLabel": "Add new risk"
+{{/createCards}}
+
+{{#report}}
+  "name": "ismsa/reports/relatedRisks"
+{{/report}}

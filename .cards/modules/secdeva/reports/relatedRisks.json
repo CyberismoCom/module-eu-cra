@@ -1,0 +1,6 @@
+{
+    "displayName": "Related risks by owner",
+    "description": "A table showing related risks by owner",
+    "category": "Secure development",
+    "name": "secdeva/reports/relatedRisks"
+}

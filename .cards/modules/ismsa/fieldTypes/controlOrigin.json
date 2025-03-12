@@ -1,0 +1,19 @@
+{
+    "name": "ismsa/fieldTypes/controlOrigin",
+    "displayName": "Control origin",
+    "dataType": "enum",
+    "enumValues": [
+        {
+            "enumValue": "riskAssessment",
+            "enumDisplayValue": "Risk assessment"
+        },
+        {
+            "enumValue": "iso27001y2022Control",
+            "enumDisplayValue": "ISO27001:2022"
+        },
+        {
+            "enumValue": "otherControl",
+            "enumDisplayValue": "Other"
+        }
+    ]
+}

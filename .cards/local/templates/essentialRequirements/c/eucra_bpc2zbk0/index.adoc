@@ -1,0 +1,17 @@
+== Source
+
+EU CRA Annex I (1) (2) (d) :: On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable, products with digital elements shall: (d) ensure protection from unauthorised access by appropriate control mechanisms, including but not limited to authentication, identity or access management systems, and report on possible unauthorised access;
+
+== Requirement description
+
+#TODO: Edit this as applicable and add any product-specific considerations#
+
+In accordance with the nature of the product and to the relevant risks identified in the risk analysis, an appropriate mechanism to provide authentication and authorisation should be implemented. 
+
+Notice that access control shall cover all accessible interfaces, including user interfaces and protocol interfaces.
+
+The access to personal data, protected data and to administration and configuration functions should be granted only to authenticated and authorised users.
+
+In accordance with the nature of the product and to the relevant risks identified in the risk analysis, physical unauthorized access should be forbidden and appropriate physical access control mechanism should be recommended in product manuals.
+
+There should also be state-of-the-art guidelines for managing possbile manufacturer service user accounts and passwords. Notice that secure by default requirement prevents using fixed shared passwords.

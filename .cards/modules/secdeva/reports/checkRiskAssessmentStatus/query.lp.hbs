@@ -1,0 +1,21 @@
+selectAll.
+
+result(result).
+
+field(result, "scopingNotDone", "void") :-
+    field({{cardKey}}, "workflowState", State),
+    secdeva_scopingStatus(State, "Scoping not done").
+
+field(result, "outOfScope", "void") :-
+    field({{cardKey}}, "workflowState", State),
+    secdeva_scopingStatus(State, "Out of scope").
+
+field(result, "inScope", "void") :-
+    field({{cardKey}}, "workflowState", State),
+    secdeva_scopingStatus(State, "In scope").
+
+childResult(result, Review, "risks") :-
+    parent(Review, {{cardKey}}),
+    field(Review, "cardType", "ismsa/cardTypes/risk").
+
+order(2, "risks", 1, "rank", "ASC").

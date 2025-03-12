@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/installableExtensions",
+    "displayName": "Installable extensions",
+    "description": "Provide a way to instantiate available extensions from other modules",
+    "category": "General"
+}

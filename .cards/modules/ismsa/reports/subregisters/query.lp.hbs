@@ -1,0 +1,7 @@
+selectAll.
+result(Card) :-
+   ancestor(Card, {{cardKey}}),
+   field(Card, "cardType", "ismsa/cardTypes/register"),
+   not hiddenInTreeView(Card).
+
+orderBy("rank", "ASC").

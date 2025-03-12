@@ -1,0 +1,41 @@
+{
+    "name": "secdeva/cardTypes/interface",
+    "workflow": "base/workflows/controlledDocument",
+    "customFields": [
+        {
+            "name": "base/fieldTypes/owner"
+        },
+        {
+            "name": "base/fieldTypes/informationClassification"
+        },
+        {
+            "name": "secdeva/fieldTypes/basicInputValidationTestingRequired"
+        },
+        {
+            "name": "secdeva/fieldTypes/basicStressTestingRequired"
+        },
+        {
+            "name": "secdeva/fieldTypes/fuzzTestingRequired"
+        },
+        {
+            "name": "secdeva/fieldTypes/capacityTestingRequired"
+        },
+        {
+            "name": "secdeva/fieldTypes/networkTrafficLoadTestingRequired"
+        },
+        {
+            "name": "secdeva/fieldTypes/interfaceTestingScopingJustification"
+        }
+    ],
+    "alwaysVisibleFields": [
+        "base/fieldTypes/owner",
+        "base/fieldTypes/informationClassification",
+        "secdeva/fieldTypes/basicInputValidationTestingRequired",
+        "secdeva/fieldTypes/basicStressTestingRequired",
+        "secdeva/fieldTypes/fuzzTestingRequired",
+        "secdeva/fieldTypes/capacityTestingRequired",
+        "secdeva/fieldTypes/networkTrafficLoadTestingRequired",
+        "secdeva/fieldTypes/interfaceTestingScopingJustification"
+    ],
+    "optionallyVisibleFields": []
+}

@@ -1,0 +1,5 @@
+{
+    "name": "ismsa/fieldTypes/requirementOrigin",
+    "displayName": "Requirement origin",
+    "dataType": "shortText"
+}

@@ -1,0 +1,54 @@
+{
+    "name": "ismsa/cardTypes/assetDevice",
+    "workflow": "ismsa/workflows/asset",
+    "customFields": [
+        {
+            "name": "base/fieldTypes/owner"
+        },
+        {
+            "name": "base/fieldTypes/informationClassification"
+        },
+        {
+            "name": "ismsa/fieldTypes/assetAccessControl"
+        },
+        {
+            "name": "ismsa/fieldTypes/assetAvailability"
+        },
+        {
+            "name": "ismsa/fieldTypes/assetBackups"
+        },
+        {
+            "name": "ismsa/fieldTypes/assetCriticalityForOperations"
+        },
+        {
+            "name": "ismsa/fieldTypes/assetIntegrity"
+        },
+        {
+            "name": "ismsa/fieldTypes/assetLocation"
+        },
+        {
+            "name": "ismsa/fieldTypes/assetPersonalInformation"
+        },
+        {
+            "name": "ismsa/fieldTypes/assetRiskEvaluationNeeded"
+        },
+        {
+            "name": "ismsa/fieldTypes/assetUpdates"
+        }
+    ],
+    "alwaysVisibleFields": [
+        "base/fieldTypes/owner",
+        "base/fieldTypes/informationClassification",
+        "ismsa/fieldTypes/assetCriticalityForOperations",
+        "ismsa/fieldTypes/assetRiskEvaluationNeeded",
+        "ismsa/fieldTypes/assetAccessControl",
+        "ismsa/fieldTypes/assetUpdates",
+        "ismsa/fieldTypes/assetBackups"
+    ],
+    "optionallyVisibleFields": [
+        "ismsa/fieldTypes/assetLocation",
+        "ismsa/fieldTypes/assetPersonalInformation",
+        "ismsa/fieldTypes/assetIntegrity",
+        "ismsa/fieldTypes/assetAvailability"
+    ]
+}

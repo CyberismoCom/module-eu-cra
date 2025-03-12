@@ -1,0 +1,90 @@
+{{#each results}}
+
+=== Automated checks
+
+{{#if this.scopingNotDone}}
+
+❗ Scoping: The workflow state of this task is *Open* (scoping not done).
+
+Other automated checks will be done, once the task has been scoped.
+
+{{#if this.threats}}
+
+❗ Because security issues have been identified in threat modelling, this task should be in scope. Select the *Review as applicable* workflow transition.
+
+{{else}}
+
+So far, security issues have not been identified in threat modelling, so this task may be out of scope.
+
+{{/if}}
+
+{{else}}
+
+{{#if this.outOfScope}}
+
+* [x] Scoping has been done. This task is out of scope.
+
+{{#if this.threats}}
+
+❗ Because security issues have been identified in threat modelling, this task should be in scope. Select the *Review as applicable* workflow transition.
+
+{{else}}
+
+So far, security issues have not been identified in threat modelling, so the scoping decision seems valid.
+
+{{/if}}
+
+{{else}}
+
+* [x] Scoping has been done. This task is in scope.
+
+{{#if this.threats}}
+
+* [x] Security issues have been reported from threat modelling
+
+[caption=]
+[cols="5,2,2,2,5"]
+.Security issues from threat modelling
+|===
+| Security issue | Workflow State | Severity | Testing to bypass mitigation | Tested by
+
+{{#each threats}}
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.workflowState}}
+|{{this.[secdeva/fieldTypes/severity].displayValue}}
+|{{this.[secdeva/fieldTypes/testingToBypassMitigation].displayValue}}
+{{#if this.tests}}
+| {{#each tests}}xref:{{this.key}}.adoc[{{this.title}}] [{{this.workflowState}}] - {{this.reviewExpiration}} {{#unless @last}},
+
+{{/unless}}{{/each}}
+{{else}}
+| ❗ Tests have not been linked
+{{/if}}
+
+{{/each}}
+
+|===
+
+{{#if allThreatsTested}}
+
+* [x] All threats have been tested and the test reviews have not expired.
+
+{{else}}
+
+❗ Threat mitigation testing is not complete. All threats must be linked to at least one test, and all tests must be passed and not expired.
+
+{{/if}}
+
+=== Manual checks
+
+* Check, if there has been recent changes and whether threat mitigation testing should be executed again.
+
+{{else}}
+
+Security issues have not been reported from threat modelling.
+
+{{/if}}
+
+{{/if}}
+{{/if}}
+{{/each}}

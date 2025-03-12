@@ -1,0 +1,17 @@
+{
+    "cardType": "base/cardTypes/annualTask",
+    "title": "Review security design",
+    "workflowState": "",
+    "rank": "0|q",
+    "lastUpdated": "2025-02-23T12:22:37.019Z",
+    "links": [],
+    "eucra/fieldTypes/controlImplementer": "Development team",
+    "base/fieldTypes/adoptionStep": "step2",
+    "base/fieldTypes/justification": null,
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/reviewPeriod": 365,
+    "base/fieldTypes/reviewMonth": null,
+    "base/fieldTypes/lastReviewed": null,
+    "base/fieldTypes/identifier": "eucra_control_security-design-review"
+}

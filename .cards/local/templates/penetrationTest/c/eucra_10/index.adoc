@@ -1,0 +1,40 @@
+== Introduction
+
+This document is a review of penetration testing.
+
+Penetration testing is a combination of ad-hoc, exploratory and vulnerability testing. It is a form of black-box testing where the goal is to exploit vulnerabilities in the system without any prior knowledge of the composition or layout of the system. It is analogous to a malicious entity attempting to breach the security capabilities of the system. Penetration tests are traditionally run manually by an external expert in order to ensure the independence and sufficient prior knowledge.
+
+Test runs shall be documented and any findings shall be reported as security issues.
+
+=== Scope of testing
+
+The scope of penetration testing is:
+
+#TODO: describe scope#
+
+=== Goal of testing
+
+The goal of penetration testing is to identify security related issues via tests by discovering and exploiting vulnerabilities in a product; system testing that tries to breach the confidentiality, integrity or availability of the product by exploiting the vulnerabilities of the system.
+
+More specifically this penetration testing has the following goals:
+
+#TODO: add text to describe the goals#
+
+=== Documentation and reporting
+
+#TODO: Add a link or an attachment to the detailed test plan and test results, for example to a test management system or to automated tests. If you're tracking manual testing in this tool, then describe the test plan and the test results here.#
+
+=== Identified security issues
+
+{{#createCards}}
+  "template": "eucra/templates/securityIssue",
+  "buttonLabel": "Create a new security issue"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssueList"
+{{/report}}
+
+=== Notes
+
+#TODO Add any notes about this review#

@@ -1,0 +1,14 @@
+{
+    "title": "Determine and document the support period",
+    "cardType": "base/cardTypes/annualTask",
+    "workflowState": "",
+    "rank": "0|t",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/reviewPeriod": 360,
+    "base/fieldTypes/justification": null,
+    "base/fieldTypes/reviewMonth": null,
+    "base/fieldTypes/lastReviewed": null,
+    "base/fieldTypes/adoptionStep": "step1",
+    "base/fieldTypes/identifier": "eucra_control_support-period"
+}

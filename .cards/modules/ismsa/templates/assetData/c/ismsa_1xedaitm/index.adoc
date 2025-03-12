@@ -1,0 +1,19 @@
+{{#graph}}
+  "model": "ismsa/graphModels/assetsRisksControls",
+  "view": "ismsa/graphViews/asset"
+{{/graph}}
+
+== Asset description
+
+#TODO add asset description and/or link#
+
+== Related risks
+
+{{#createCards}}
+  "template": "ismsa/templates/risk",
+  "buttonLabel": "Add new risk"
+{{/createCards}}
+
+{{#report}}
+  "name": "ismsa/reports/relatedRisks"
+{{/report}}

@@ -1,0 +1,15 @@
+For compliance reasons, it is important to be able to associate security issues and security requirements to their implementation, so that it is possible to review how the requirement or issue was implemented.
+
+== How to decide if this secure development task is required
+
+This secure development task is applicable if relevant security requirements or security issues have been identified.
+
+== How to implement
+
+Track the implementation of security work with an issue tracker, and link the code change to the issue in the issue tracker using the mechanisms of the issue tracker and the source code management tool, so that a link to the code commit or pull request is visible when viewing the issue in the issue tracker.
+
+== How to review this task
+
+Check that the team's development practices include linking security issues and security requirements to the implementation.
+
+Review that the security requirements and security issues created within the previous 6 months can be linked to the implementation.

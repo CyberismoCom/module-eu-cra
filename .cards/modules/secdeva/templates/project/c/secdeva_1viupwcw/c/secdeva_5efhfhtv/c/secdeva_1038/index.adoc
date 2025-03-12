@@ -1,0 +1,40 @@
+.View process diagram
+[%collapsible]
+====
+{{#graph}}
+  "model": "secdeva/graphModels/processDiagram",
+  "view": "secdeva/graphViews/processTask"
+{{/graph}}
+====
+
+Interfaces are typically a significant attack vector. Documenting the interfaces according to the interface specification template ensures that secure design principles have been applied when designing the interface.
+
+Examples of interfaces include
+
+* Service interfaces
+* Application Programmer's Interfaces (API)
+* Communication protocols and links implemented by the development project
+* Physical interfaces and ports
+* Media ports such as SD card slots
+* Wireless connections
+
+== How to decide if this secure development task is required
+
+This review item is applicable, if the system includes or implements interfaces.
+
+An interface document is required for all exposed interfaces, for which the development project is responsible. This includes
+
+* External interfaces, where the interface may be used by external entities that are not part of the system
+* Internal interfaces, which are exposed to other components or devices
+
+== How to implement
+
+Interfaces are documented as part of the dataflow models that are included in threat models.
+
+{{#report}}
+  "name": "secdeva/reports/projectInterfaces"
+{{/report}}
+
+== How to review this task
+
+Check that all exposed interfaces have been documented and included in the threat model and that the documents have been approved.

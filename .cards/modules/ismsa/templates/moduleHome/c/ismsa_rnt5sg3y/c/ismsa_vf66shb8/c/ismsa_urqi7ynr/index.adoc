@@ -1,0 +1,8 @@
+## Other ISMS tasks
+
+Other tasks are divided to
+
+* One-time tasks
+* Repeating tasks
+
+Add new tasks under suitable sub page.

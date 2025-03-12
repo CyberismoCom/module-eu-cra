@@ -1,0 +1,178 @@
+== Introduction
+
+This page documents the results of a security design review.
+
+== Product overview
+
+This security design review concerns the following scope:
+
+#TODO: describe the scope of the review#
+
+== Design related to security requirements and threats
+
+=== Design of security requirements
+
+If security requirements have been identified, then check that the _design_ addresses the security requirements adequately.
+
+Check that each significant design change is reviewed to determine that there are no security requirements that are not addressed by the defense in depth strategy.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Design of threat mitigations
+
+If security issues have been identified in threat modeling, then check that the _design_ mitigates the identified issues.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Threat model status
+
+If issues were found regarding how either design or the implementation addresses security threats, then check that the threat model is up to date.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+== Secure design best practices
+
+The component or system design process incorporates secure design best practices. This applies to all features, not just security features.
+
+=== Keep It Simple, Stupid (KISS)
+
+The design is as simple and small as possible.
+
+Identify signs of overly complex design or design that is hard to understand.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Principle of least privilege
+
+Every program and every user of the system should operate using the least set of privileges necessary to complete the job.
+
+Check whether the specification documents the required operating system permissions or application specific permissions. Check whether different use cases or user categories are handled separately with the least set of privileges necessary.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Defense in depth
+
+The design includes multiple redundant layers of defense.
+
+Ensure that the design specification explains the planned layers of defense, and the responsibilities of each layer.
+
+Are there any attack vectors that bypass the defense in depth strategy or that are otherwise capable of breaching the defense in depth strategy?
+
+(When maintaining this template, do not remove this principle, as it is required by SDLA-SD-2)
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Attack surface reduction
+
+The design disables all unnecessary functionality, ports, services etc. and reduces the services, running code and entry point.
+
+Ensure that the design specification explains how attack surface reduction is done on each layer of defense.
+
+(When maintaining this template, do not remove this principle, as it is required by SDLA-SD-4E and EU CRA Annex I (1) (2) (j))
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Minimisation of data
+
+The product or system processes only data, personal or other, that are adequate, relevant and limited to what is necessary in relation to its intended purpose.
+
+(When maintaining this template, do not remove this principle, as it is required by EU CRA Annex I (1) (2) (g))
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Proven design
+
+The design (re-)uses proven components and designs.
+
+Check that the design uses available operating system or application platform services for security features. Check that there are no redundant copies of open source cryptography, and that there are no "roll-your-own" security implementations.
+
+Check whether the design includes problems that occur time after time in system architecture design and software design and whether there are any security design pattern to provide reusable solution to a commonly occurring problem or if a new security design patterns could be created.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== No single points of failure
+
+The failure of any single aspect does not result in system failure |If redundancy is applicable, identify cases where the failure of any of the software processes, execution threads, computers, communication endpoints, 3rd party components or technologies, network elements or hardware components may result in system failure.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Sufficient capacity
+
+The design provides sufficient capacity for dependable operation and includes enough reserve capacity. |Check whether sufficient capacity estimation has been included in the design specification. Identify risks in excessive CPU, memory, disk or network usage.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Removing debug features
+
+Check that any debug features have been removed from the production hardware/software, or the presence of debug features and the needed protection from unauthorized access to the debug features has been documented. Such debug features include ports, headers and traces in circuit boards used during development.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+== Version history
+
+[cols="1,1,3"]
+|===============
+|Version | Date | Changes/Author
+
+| 0.1
+| 2024-01-01
+| XYZ changed by N.N.
+
+|===============
+
+{{#createCards}}
+  "template": "eucra/templates/securityIssue",
+  "buttonLabel": "Create a new security issue"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssueList"
+{{/report}}

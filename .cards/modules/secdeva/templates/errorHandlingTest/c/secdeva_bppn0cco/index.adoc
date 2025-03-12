@@ -1,0 +1,55 @@
+== Introduction
+
+This document is a review of error handling testing.
+
+Testing should ensure that applicable error cases in the following categories are handled correctly.
+
+Recoverable errors, such as:
+
+* Input validation errors
+* Recoverable system call errors
+* Failed events that can be retried
+
+Fatal errors that result in stopping the execution, such as:
+
+* Mandatory prerequisites or dependencies are not available
+* Essential misconfiguration
+
+Error handling testing should check that error cases are appropriately logged. Error messages must not reveal information that could be exploited by advesaries.
+
+=== Scope of testing
+
+The scope of the testing that is reviewed:
+
+* #TODO: describe the scope of this review#
+
+=== Documentation and reporting
+
+#TODO: Add a link or an attachment to the detailed test plan and test results, for example to a test management system or to automated tests. If you're tracking manual testing in this tool, then describe the test plan and the test results here.#
+
+== Version history
+
+[cols="1,1,3"]
+|===============
+|Version | Date | Changes/Author
+
+| 0.1
+| 2024-01-01
+| XYZ changed by N.N.
+
+|===============
+
+=== Identified security issues
+
+{{#createCards}}
+  "template": "secdeva/templates/securityIssue",
+  "buttonLabel": "Create a new security issue"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssueList"
+{{/report}}
+
+=== Notes
+
+#TODO Add any notes about this review#

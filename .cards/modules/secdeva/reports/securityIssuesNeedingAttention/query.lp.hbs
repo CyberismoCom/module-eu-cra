@@ -1,0 +1,33 @@
+selectAll.
+
+result(result).
+
+childResult(result, Issue, "issuesNeedingAttention") :-
+    field(Issue, "cardType", "secdeva/cardTypes/securityIssue"),
+    secdeva_closestProject(Issue, Project),
+    secdeva_closestProject({{cardKey}}, Project),
+    not hiddenInTreeView(Issue),
+    not field(Issue, "workflowStateCategory", "closed"),
+    not field(Issue, "workflowState", "Fix deferred").
+
+childResult(result, Issue, "deferredIssues") :-
+    field(Issue, "cardType", "secdeva/cardTypes/securityIssue"),
+    secdeva_closestProject(Issue, Project),
+    secdeva_closestProject({{cardKey}}, Project),
+    not hiddenInTreeView(Issue),
+    field(Issue, "workflowState", "Fix deferred").
+
+field(result, "deferredIssueCount", Count) :-
+    Count = #count { card(Issue) : childResult(result, Issue, "deferredIssues") }.
+
+field(result, "closedIssueCount", Count) :-
+    Count =  #count { card(Issue) : childResult(result, Issue, "closedIssues") }.
+
+childResult(result, Issue, "closedIssues") :-
+    field(Issue, "cardType", "secdeva/cardTypes/securityIssue"),
+    secdeva_closestProject(Issue, Project),
+    secdeva_closestProject({{cardKey}}, Project),
+    not hiddenInTreeView(Issue),
+    field(Issue, "workflowStateCategory", "closed").
+
+orderBy("rank", "ASC").

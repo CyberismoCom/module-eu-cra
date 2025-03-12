@@ -1,0 +1,6 @@
+== Task description
+
+Consider the need of information the employees about the incidents. 
+Open communication supports building trust and might help in avoiding rumours. 
+Remember to give contact points for further questions and remind employees 
+that only nominated persons are allowed to give public statements about the incident.

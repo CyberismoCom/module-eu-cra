@@ -1,0 +1,6 @@
+{
+    "displayName": "Penetration test",
+    "description": "Black-box exploratory testing to exploit vulnerabilities",
+    "category": "Security testing",
+    "name": "eucra/templates/penetrationTest"
+}

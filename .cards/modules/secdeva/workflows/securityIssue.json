@@ -1,0 +1,142 @@
+{
+    "name": "secdeva/workflows/securityIssue",
+    "states": [
+        {
+            "name": "Open",
+            "category": "initial"
+        },
+        {
+            "name": "Analysed",
+            "category": "active"
+        },
+        {
+            "name": "Fix required",
+            "category": "active"
+        },
+        {
+            "name": "Fix deferred",
+            "category": "active"
+        },
+        {
+            "name": "In progress",
+            "category": "active"
+        },
+        {
+            "name": "Closed as verified",
+            "category": "closed"
+        },
+        {
+            "name": "Closed as risk accepted",
+            "category": "closed"
+        },
+        {
+            "name": "Closed as duplicate",
+            "category": "closed"
+        },
+        {
+            "name": "Closed as not applicable",
+            "category": "closed"
+        },
+        {
+            "name": "Closed as transferred",
+            "category": "closed"
+        },
+        {
+            "name": "To be verified",
+            "category": "active"
+        }
+    ],
+    "transitions": [
+        {
+            "name": "Create",
+            "fromState": [
+                ""
+            ],
+            "toState": "Open"
+        },
+        {
+            "name": "Not applicable",
+            "fromState": [
+                "Open"
+            ],
+            "toState": "Closed as not applicable"
+        },
+        {
+            "name": "Duplicate",
+            "fromState": [
+                "Open"
+            ],
+            "toState": "Closed as duplicate"
+        },
+        {
+            "name": "Transfer",
+            "fromState": [
+                "Open"
+            ],
+            "toState": "Closed as transferred"
+        },
+        {
+            "name": "Analyse",
+            "fromState": [
+                "Open"
+            ],
+            "toState": "Analysed"
+        },
+        {
+            "name": "Fix required",
+            "fromState": [
+                "Analysed", "Fix deferred"
+            ],
+            "toState": "Fix required"
+        },
+        {
+            "name": "Start progress",
+            "fromState": [
+                "Fix required", "Fix deferred"
+            ],
+            "toState": "In progress"
+        },
+        {
+            "name": "Defer fix",
+            "fromState": [
+                "Analysed", "Fix required", "In progress"
+            ],
+            "toState": "Fix deferred"
+        },
+        {
+            "name": "Accept risk",
+            "fromState": [
+                "Analysed"
+            ],
+            "toState": "Closed as risk accepted"
+        },
+        {
+            "name": "Implementation complete",
+            "fromState": [
+                "In progress"
+            ],
+            "toState": "To be verified"
+        },
+        {
+            "name": "Verification passed",
+            "fromState": [
+                "To be verified"
+            ],
+            "toState": "Closed as verified"
+        },
+        {
+            "name": "Verification failed",
+            "fromState": [
+                "To be verified"
+            ],
+            "toState": "In progress"
+        },
+        {
+            "name": "Reopen",
+            "fromState": [
+                "*"
+            ],
+            "toState": "Open"
+        }
+    ]
+}

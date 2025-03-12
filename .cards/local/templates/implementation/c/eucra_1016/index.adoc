@@ -1,0 +1,23 @@
+Product documentation refers to the information and instructions that are provided to the users or the product. A product documentation review ensures that the product documentation supports the secure deployment, operation and disposal of the product.
+
+== How to decide if this secure development task is required
+
+This secure development task is required if product documentation is created and reviewed in this project. Typically, product documentation is managed on the topmost project level.
+
+== How to implement
+
+Write product documentation that includes security guidelines. The security manual template may optionally be used to ensure that the security manual will include all the required sections.
+
+Create a product documentation review document and follow the instructions in the template.
+
+{{#report}}
+  "name": "secdeva/reports/createChildReview",
+  "template": "eucra/templates/productDocumentationReview",
+  "buttonLabel": "Create a product documentation review"
+{{/report}}
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildReviewStatus"
+{{/report}}

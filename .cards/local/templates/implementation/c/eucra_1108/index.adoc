@@ -1,0 +1,29 @@
+Technical documentation refers to the product manufacturer's internal design, development, testing and manufacturing documentation. The product manufacturer draws up, maintains and archives a single set of technical documentation to be able to prove compliance to the EU Cyber Resilience Act and other possible regulations.
+
+== How to decide if this secure development task is required
+
+This secure development task is required for all products that include digital elements and are placed on the EU market, and if technical documentation is created and reviewed in this project. Typically, technical documentation is managed on the topmost project level.
+
+Notice that the conformity to EU regulations and the technical documentation shall be continuously updated, where appropriate, during the expected product lifetime or during a period of five years after the placing the product on the market, whichever is shorter.
+
+== How to implement
+
+Write technical documentation that includes the sections that are listed in the technical documentation review template.
+
+Create a technical documentation review document and follow the instructions in the template.
+
+{{#report}}
+  "name": "secdeva/reports/createChildReview",
+  "template": "eucra/templates/technicalDocumentationReview",
+  "buttonLabel": "Create a technical documentation review"
+{{/report}}
+
+When you revisit the review, record the result of the new review in the technical documentation review document.
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildReviewStatus"
+{{/report}}
+
+Check that any identified security-related findings have been reported as security issues.

@@ -1,0 +1,8 @@
+{
+    "title": "One time tasks",
+    "cardType": "base/cardTypes/page",
+    "workflowState": "",
+    "rank": "0|a",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal"
+}

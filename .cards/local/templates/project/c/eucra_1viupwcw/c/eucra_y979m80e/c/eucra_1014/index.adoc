@@ -1,0 +1,37 @@
+3rd party software update tracking refers to keeping track of and characterizing the security updates from suppliers of dependent 3rd party components and operating systems.
+
+== How to decide if this secure development task is required
+
+For libraries and packages, security updates can often be tracked as a part vulnerability tracking. In these cases there is no need for a separate 3rd party software update tracking plan.
+
+However, in some cases such as with some commercial-off-the-shelf technology, it can be necessary to track security updates separately. In these cases, a separate security update tracking plan shall be made.
+
+== How to implement
+
+Identify the communications channels of the 3rd party product supplier and ensure that you will be notified when the supplier makes new security updates available.
+
+When a new security update is published, then qualify the update for applicability, suitability and compatibility.
+
+Notice that 3rd party software update tracking shall continue even after active development has ended. 3rd party software update tracking shall continue also for previously released product versions during their support period.
+
+If the supplier of a 3rd party component has published information about their security updates, then ensure that this information is taken into account. Update the threat model, other possible technical documentation and product documentation when applicable.
+
+{{#report}}
+  "name": "secdeva/reports/createChildDocument",
+  "template": "eucra/templates/softwareUpdateTrackingPlan",
+  "buttonLabel": "Create a software update tracking plan"
+{{/report}}
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildDocumentStatus"
+{{/report}}
+
+=== Manual checks
+
+Check that the 3rd party software update tracking plans cover all such technologies where 3rd party software update tracking is required.
+
+Check that 3rd party software update tracking plans have been executed.
+
+Check that all 3rd party software updates and the information provided by the 3rd party suppliers have been processed.

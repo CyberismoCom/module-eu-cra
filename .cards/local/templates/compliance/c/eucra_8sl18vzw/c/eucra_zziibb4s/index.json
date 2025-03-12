@@ -1,0 +1,14 @@
+{
+    "title": "EU CRA Article 31 (3): Techical documetation: One single technical documentation",
+    "cardType": "ismsa/cardTypes/complianceRequirement",
+    "workflowState": "",
+    "rank": "0|zzzp",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "public",
+    "base/fieldTypes/adoptionStep": null,
+    "base/fieldTypes/identifier": "eucra_compliance-requirement_article-31-3",
+    "ismsa/fieldTypes/requirementImplementationStrategy": null,
+    "ismsa/fieldTypes/requirementOrigin": "Regulation (EU) 2024/2847 Cyber Resilience Act",
+    "links": [],
+    "lastUpdated": "2025-03-02T15:15:45.828Z"
+}

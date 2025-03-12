@@ -1,0 +1,6 @@
+{
+    "displayName": "Cryptography review",
+    "description": "A review of the use of cryptography",
+    "category": "Secure development reviews",
+    "name": "secdeva/templates/cryptographyReview"
+}

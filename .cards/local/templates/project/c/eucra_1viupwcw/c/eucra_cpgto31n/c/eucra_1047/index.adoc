@@ -1,0 +1,25 @@
+== How to decide if this secure development task is required
+
+Required for all binary executable files.
+
+== How to implement
+
+Libraries can be linked to a binary executable file either statically or dynamically.
+
+* For static linking of libraries to executable files compiled by the R&D team, the analysis can be done by ensuring that the statically linked libraries are included in the vulnerability scanning with a dependency tracker tool.
+
+* For executable files that are compiled by a 3rd party organization and that may statically link to libraries, the analysis shall be done by analysing the binary with a software composition analysis tool that supports detecting linking to vulnerable libraries.
+
+* For dynamic linking of libraries that are a part of the product, the analysis can be done by analysing the library separately. If such a library is compiled by the R&D team, then it can be included in the vulnerability scanning with a dependency tracker tool. If such a library is compiled by a 3rd party organization, then the analysis shall be done by analysing the binary with a software composition analysis tool that supports detecting linking to vulnerable libraries.
+
+* For dynamic linking of libraries that are not provided as a part of the product, but instead they are provided by the underlying environment, the analysis is on the responsibility of the project that provides the environment.
+
+== How to review this task
+
+Identify for each binary whether it includes code compiled by the R&D team or by a 3rd party organization.
+
+Check that the analysis of binaries to detect linking to vulnerable libraries has been planned according to the How to implement section above.
+
+Check that the plan has been executed.
+
+Check that the identified security-related findings have been reported as security issues.

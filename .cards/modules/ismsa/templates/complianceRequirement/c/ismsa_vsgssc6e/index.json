@@ -1,0 +1,12 @@
+{
+    "title": "Untitled compliance requirement",
+    "cardType": "ismsa/cardTypes/complianceRequirement",
+    "workflowState": "",
+    "rank": "0|b",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/adoptionStep": null,
+    "base/fieldTypes/identifier": null,
+    "ismsa/fieldTypes/requirementImplementationStrategy": null,
+    "ismsa/fieldTypes/requirementOrigin": null
+}

@@ -1,0 +1,73 @@
+== Introduction
+
+The purpose of a security requirements specification is to document the requirements of the security functions of the component or system. The requirements can arise from threat model, different standards, customer need or regulatory guidance. This document describes the security requirements for Example product.
+
+This specification must cover the requirements allocated to the product based on the security capability requirement allocation as defined in the Security requirement management process.
+
+== Scope and boundaries
+
+The security requirements must be defined in the light of the scope and the boundaries of the product or system. The scope and the boundaries must be documented in both a physical and a logical way.
+
+The following components and systems are in scope:
+
+* #TODO: Add here hardware components, software components, architectural entities, and other relevant assets that are in scope#
+
+The following components and systems are out of scope:
+
+* #TODO: If necessary, clarify here the hardware components, software components, architectural entities, and other relevant assets that are out of scope#
+
+== List of security requirements
+
+Requirement content
+
+Ensure that you have documented all product security requirements that apply to the life cycle of the product, including:
+
+* Security privileges required to install, operate, and maintain the product
+* Security options, including removal of default passwords, used to install, configure, operate and maintain the product
+* Security considerations/actions associated with removing the product from use. For example, removing sensitive data.
+
+Review instructions
+
+When reviewing the list of security requirements, check that
+
+* Security requirement identification was performed in an acceptable level of detail
+* According to your best current understanding, all the security requirements that were identified are included in the list of requirements
+
+Note that individual security requirements do not need to be ready and reviewed in order to approve the security requirement specification.
+
+{{#createCards}}
+  "template": "secdeva/templates/securityRequirement",
+  "buttonLabel": "Create a requirement"
+{{/createCards}}
+
+{{#report}}
+    "name": "secdeva/reports/installableExtensions"
+{{/report}}
+
+{{#report}}
+  "name": "secdeva/reports/requirementList"
+{{/report}}
+
+== Version history
+
+[cols="1,1,3"]
+|===============
+|Version | Date | Changes/Author
+
+| 0.1
+| 2024-01-01
+| XYZ changed by N.N.
+
+|===============
+
+== Reviews
+
+{{#createCards}}
+    "template": "base/templates/reviewTask",
+    "buttonLabel": "Add new review task"
+{{/createCards}}
+
+{{#report}}
+  "name": "base/reports/childrenTable",
+  "cardType": "base/cardTypes/reviewTask"
+{{/report}}

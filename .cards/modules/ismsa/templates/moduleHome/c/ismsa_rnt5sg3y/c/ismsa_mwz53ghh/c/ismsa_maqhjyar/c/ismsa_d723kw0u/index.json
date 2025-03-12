@@ -1,0 +1,11 @@
+{
+    "title": "Risks related to data assets",
+    "cardType": "ismsa/cardTypes/register",
+    "workflowState": "",
+    "rank": "0|cbb",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/identifier": null,
+    "ismsa/fieldTypes/adoptionStep": "step1",
+    "ismsa/fieldTypes/progress": null
+}

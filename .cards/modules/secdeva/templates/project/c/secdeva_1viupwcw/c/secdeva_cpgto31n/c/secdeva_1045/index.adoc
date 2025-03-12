@@ -1,0 +1,25 @@
+Manual code review is an effective way to avoid programming and design errors that may lead to security vulnerabilities. Code review also helps with avoiding bugs, sharing information and in the induction of new persons.
+
+== How to decide if this secure development task is required
+
+This secure development task is applicable if the project contains custom developed code. This control applies to full variability programming languages only, such as C, C++, Java or JavaScript. The control  is not applicable to limited variability languages such as function blocks, ladder logic or other application-specific languages that only combine a predefined set of library functionality.
+
+== How to implement
+
+Adopt a practice whereby all code changes are peer reviewed. Use the pull request functionality of the source code management tool.
+
+Ensure that code reviewers are aware of the applicable coding guidelines and secure coding practices.
+
+Create a review document to record the review.
+
+{{#report}}
+  "name": "secdeva/reports/createChildReview",
+  "template": "secdeva/templates/reviewOfManualCodeReview",
+  "buttonLabel": "Create a review of manual code review practices"
+{{/report}}
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildReviewStatus"
+{{/report}}

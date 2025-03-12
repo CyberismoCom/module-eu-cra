@@ -1,0 +1,14 @@
+{
+    "title": "EU CRA Annex I (2) (8): Essential requirements: Timely and free of charge dissemination of documented security updates",
+    "cardType": "ismsa/cardTypes/complianceRequirement",
+    "workflowState": "",
+    "rank": "0|zzzzzn",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "public",
+    "base/fieldTypes/adoptionStep": null,
+    "base/fieldTypes/identifier": "eucra_compliance-requirement_annex-I-2-8",
+    "ismsa/fieldTypes/requirementImplementationStrategy": null,
+    "ismsa/fieldTypes/requirementOrigin": "Regulation (EU) 2024/2847 Cyber Resilience Act",
+    "links": [],
+    "lastUpdated": "2025-03-02T15:19:30.950Z"
+}

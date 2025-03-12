@@ -1,0 +1,21 @@
+{
+    "name": "ismsa/cardTypes/moduleHome",
+    "workflow": "base/workflows/page",
+    "customFields": [
+        {
+            "name": "ismsa/fieldTypes/adoptionStep",
+            "displayName": "Target adoption step",
+            "isCalculated": false
+        },
+        {
+            "name": "base/fieldTypes/owner"
+        },
+        {
+            "name": "base/fieldTypes/informationClassification"
+        }
+    ],
+    "alwaysVisibleFields": [
+        "base/fieldTypes/owner",
+        "base/fieldTypes/informationClassification"
+    ]
+}

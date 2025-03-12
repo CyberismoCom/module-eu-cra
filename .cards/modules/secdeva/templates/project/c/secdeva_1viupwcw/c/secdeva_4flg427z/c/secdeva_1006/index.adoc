@@ -1,0 +1,32 @@
+.View process diagram
+[%collapsible]
+====
+{{#graph}}
+  "model": "secdeva/graphModels/processDiagram",
+  "view": "secdeva/graphViews/processTask"
+{{/graph}}
+====
+
+In a competitive commercial environment, it is never possible to have "perfect security". Resources are always limited, and we want to allocate them wisely. Therefore, it makes sense to start cybersecurity scoping from the business context. Taking a business view helps in prioritization and in choosing the controls that are proportional to the assets that we are protecting and to the risks that we have identified.
+
+A business context analysis is the starting point for the security work during product development. It is a high-level description of the business context, business motivation for security work, requirements and security context, assets that need protection, and damage scenarios.
+
+== How to decide if this secure development task is required
+
+Decide together with a security specialist whether a high-level business context analysis is useful for the product.
+
+== How to implement
+
+Create a business context analysis document and follow the instructions in the template.
+
+{{#report}}
+  "name": "secdeva/reports/createChildDocument",
+  "template": "secdeva/templates/businessContextAnalysis",
+  "buttonLabel": "Create a business context analysis"
+{{/report}}
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildDocumentStatus"
+{{/report}}

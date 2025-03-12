@@ -1,0 +1,5 @@
+*Implementation* includes tasks for ensuring that the implementation of the design and the requirements is secure.
+
+{{#report}}
+  "name": "secdeva/reports/phase"
+{{/report}}

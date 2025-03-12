@@ -1,0 +1,9 @@
+selectAll.
+
+result(Technology) :-
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(Technology, Project),
+    field(Technology, "cardType", "secdeva/cardTypes/technology").
+
+orderBy("title", "ASC").
+

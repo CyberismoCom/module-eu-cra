@@ -1,0 +1,13 @@
+== Containment actions
+
+#TODO# Add containment actions
+
+== Eradication actions
+
+#TODO# Add root cause analysis
+
+#TODO# Add actions to eliminate the root cause of the incidents
+
+== Recovery actions
+
+#TODO# Add recovery actions

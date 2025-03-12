@@ -1,0 +1,11 @@
+{
+    "title": "Confidentiality of data",
+    "cardType": "secdeva/cardTypes/requirement",
+    "workflowState": "",
+    "rank": "0|f",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/identifier": "eucra_security-requirement_confidentiality-of-data",
+    "links": [],
+    "lastUpdated": "2025-03-10T10:29:52.010Z"
+}

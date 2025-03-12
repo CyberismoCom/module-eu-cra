@@ -1,0 +1,11 @@
+{
+    "title": "ISMS home for <add scope>",
+    "cardType": "ismsa/cardTypes/moduleHome",
+    "workflowState": "",
+    "rank": "0|b",
+    "links": [],
+    "lastUpdated": "2024-11-29T11:39:25.008Z",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "ismsa/fieldTypes/adoptionStep": "step1"
+}

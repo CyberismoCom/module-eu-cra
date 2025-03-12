@@ -1,0 +1,6 @@
+{
+    "name": "ismsa/fieldTypes/controlJustification",
+    "displayName": "Justification",
+    "fieldDescription": "Justification why this control is or is not applicable",
+    "dataType": "longText"
+}

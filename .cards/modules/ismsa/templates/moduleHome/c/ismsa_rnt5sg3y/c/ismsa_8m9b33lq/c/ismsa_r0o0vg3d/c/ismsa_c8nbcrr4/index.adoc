@@ -1,0 +1,23 @@
+## Data assets
+
+Data assets that are supporting primary assets.
+In additions to fields (such as owner or criticality)
+that are mandatory for all assets, following characteristics need to be defined for
+data asset:
+
+* Integrity classification
+
+* Availability classification
+
+* Personal data classification
+
+* Location
+
+* Backups
+
+{{#createCards}}
+  "template": "ismsa/templates/assetData",
+  "buttonLabel": "Add new data asset"
+{{/createCards}}
+
+**Note**: If data assets are already listed in some other asset register, just add a link here and ensure that the original asset register contains the needed information.

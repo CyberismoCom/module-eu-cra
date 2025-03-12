@@ -1,0 +1,10 @@
+selectAll.
+
+result(Card) :-
+    link(Card, {{cardKey}}, "ismsa/linkTypes/mitigates").
+
+result(Card) :-
+    parent(Card, {{cardKey}}),
+    field(Card, "cardType", "base/cardTypes/task").
+
+orderBy("title", "ASC").

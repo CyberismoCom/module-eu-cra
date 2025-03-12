@@ -1,0 +1,11 @@
+selectAll.
+result(Card) :-
+    ancestor(Card, {{cardKey}}),
+    field(Card, "cardType", "secdeva/cardTypes/requirement").
+
+result(Card) :-
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(Card, Project),
+    field(Card, "cardType", "secdeva/cardTypes/requirement").
+
+orderBy("rank", "ASC").

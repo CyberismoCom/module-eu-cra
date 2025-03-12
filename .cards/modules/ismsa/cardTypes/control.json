@@ -1,0 +1,34 @@
+{
+    "name": "ismsa/cardTypes/control",
+    "workflow": "ismsa/workflows/control",
+    "customFields": [
+        {
+            "name": "base/fieldTypes/owner"
+        },
+        {
+            "name": "base/fieldTypes/informationClassification"
+        },
+        {
+            "name": "ismsa/fieldTypes/controlStatus"
+        },
+        {
+            "name": "ismsa/fieldTypes/controlJustification"
+        },
+        {
+            "name": "ismsa/fieldTypes/controlSummary"
+        },
+        {
+            "name": "ismsa/fieldTypes/controlOrigin"
+        }
+    ],
+    "alwaysVisibleFields": [
+        "base/fieldTypes/owner",
+        "base/fieldTypes/informationClassification",
+        "ismsa/fieldTypes/controlStatus",
+        "ismsa/fieldTypes/controlJustification",
+        "ismsa/fieldTypes/controlSummary"
+    ],
+    "optionallyVisibleFields": [
+        "ismsa/fieldTypes/controlOrigin"
+    ]
+}

@@ -1,0 +1,17 @@
+== Task description
+
+Companies within NIS2 scope need to notify authorities of any incident that has a significant impact on the provision of their services (significant incident)
+
+Incident is considered significant if
+
+* it has caused or is capable of causing severe operational disruption of the services or financial loss for the entity concerned; 
+* It has affected or is capable of affecting other natural or legal persons by causing considerable material or non-material damage.
+
+Communication consists of the following steps
+
+* Early warning within 24 hours of becoming aware
+* Incident notification without undue delay (within 72 hours)
+* Intermediate reports upon request
+* Final report (or progress report) not later than one month after incident notification (handling of the incident)
+
+#TODO add link for reporting#

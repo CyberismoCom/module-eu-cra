@@ -1,0 +1,70 @@
+{{#graph}}
+  "model": "ismsa/graphModels/assetsRisksControls",
+  "view": "ismsa/graphViews/asset"
+{{/graph}}
+
+Cybersecurity risk management evaluates potential risks and their impact on the development organisation or customer organisations as a whole.
+
+The scope of this high-level risk management is broad, as it considers the organisation's overall risks that are related to this development project or the results of this development project.
+
+{{#createCards}}
+    "template": "ismsa/templates/risk",
+    "buttonLabel": "Add a new high-level risk"
+{{/createCards}}
+
+{{#report}}
+    "name": "secdeva/reports/relatedRisks"
+{{/report}}
+
+== How to identify high-level cybersecurity risks
+
+=== Risks related to information systems or products
+
+If the development project is developing an information system, then consider the following types of risks:
+
+[%collapsible]
+====
+* Leaks from/corruption of/destruction of important databases or data storage
+* Loss of IPR
+* Loss or major changes at key suppliers, supply chain attack
+* Risks that may realise if the system or product is not available
+* Insecure development/testing/production environments
+* Lack of proper (internal/customer) documentation
+* Defects in software maintenance/updating
+* Insufficient protection of cryptographic assets (e.g., signing keys)
+====
+
+=== Risks related to products
+
+If the development project is developing a product, the cybersecurity risk assessment should comprise:
+
+[%collapsible]
+====
+* Risks that may impact the health or safety of users
+* Risks based on the intended purpose and reasonably foreseeable use of the product
+* Risks related to the conditions of use or the operational environment
+* Risks that affect any valuable assets that should be protected
+* The length of time the product is expected to be in use
+
+Risks that may happen because of weaknesses in basic cybersecurity functionality:
+
+* Insufficient software update support, such as lack of automation risking that updates are not done
+* Deficiencies in product hardening, leading to unnecessarily exposed attack surface
+* Default settings are not secure, which may lead to insecure configurations being used in the field
+* The essential functions of the product are not clearly identified, properly protected, or protections are not verified by test
+* Identification and authentication failures / Broken or missing access control
+* Deficiencies in protecting the integrity or confidentiality of data in transit or at rest
+* Collecting and thereby risking unnecessary data
+* Logging and monitoring failures
+* Insufficient backup capabilities
+* Unplanned disposal process or deficiencies in the procedures for removing data
+
+====
+
+=== Risks identified from security issues
+
+When applying the secure development process, you will identify security-related issues in design, implementation, 3rd party technology, documentation, and testing. Consider, whether there are following kinds of high-level cybersecurity risks:
+
+* Risks that may happen due to high-severity security issues
+* Risks that may happen due toa chain or a combination of multiple security issues
+* Risks that may happen due to a large number of open security issues

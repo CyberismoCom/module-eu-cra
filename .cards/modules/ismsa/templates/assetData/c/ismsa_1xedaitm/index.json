@@ -1,0 +1,15 @@
+{
+    "title": "Untitled data asset",
+    "cardType": "ismsa/cardTypes/assetData",
+    "workflowState": "",
+    "rank": "0|b",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": null,
+    "ismsa/fieldTypes/assetIntegrity": null,
+    "ismsa/fieldTypes/assetAvailability": null,
+    "ismsa/fieldTypes/assetPersonalInformation": null,
+    "ismsa/fieldTypes/assetCriticalityForOperations": null,
+    "ismsa/fieldTypes/assetLocation": null,
+    "ismsa/fieldTypes/assetBackups": null,
+    "ismsa/fieldTypes/assetRiskEvaluationNeeded": null
+}

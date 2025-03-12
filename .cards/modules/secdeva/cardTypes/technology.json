@@ -1,0 +1,38 @@
+{
+    "name": "secdeva/cardTypes/technology",
+    "workflow": "base/workflows/controlledDocument",
+    "customFields": [
+        {
+            "name": "base/fieldTypes/owner"
+        },
+        {
+            "name": "base/fieldTypes/informationClassification"
+        },
+        {
+            "name": "secdeva/fieldTypes/sbomComponentType"
+        },
+        {
+            "name": "secdeva/fieldTypes/sbomComponentGroup"
+        },
+        {
+            "name": "secdeva/fieldTypes/sbomComponentName"
+        },
+        {
+            "name": "secdeva/fieldTypes/sbomComponentCpe"
+        },
+        {
+            "name": "secdeva/fieldTypes/sbomComponentPurl"
+        }
+    ],
+    "optionallyVisibleFields": [
+        "secdeva/fieldTypes/sbomComponentType",
+        "secdeva/fieldTypes/sbomComponentGroup",
+        "secdeva/fieldTypes/sbomComponentName",
+        "secdeva/fieldTypes/sbomComponentCpe",
+        "secdeva/fieldTypes/sbomComponentPurl"
+    ],
+    "alwaysVisibleFields": [
+        "base/fieldTypes/owner",
+        "base/fieldTypes/informationClassification"
+    ]
+}

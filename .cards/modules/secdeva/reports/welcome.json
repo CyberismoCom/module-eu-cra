@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/welcome",
+    "displayName": "Project main page",
+    "description": "A report for showing dynamic instructions on the project main page",
+    "category": "Secure development"
+}

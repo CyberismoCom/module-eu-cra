@@ -1,0 +1,15 @@
+{
+    "name": "secdeva/fieldTypes/securityIssueCategory",
+    "displayName": "Security issue category",
+    "dataType": "enum",
+    "enumValues": [
+        {
+            "enumValue": "threat",
+            "enumDisplayValue": "Security issue from threat modelling"
+        },
+        {
+            "enumValue": "flaw",
+            "enumDisplayValue": "Security flaw"
+        }
+    ]
+}

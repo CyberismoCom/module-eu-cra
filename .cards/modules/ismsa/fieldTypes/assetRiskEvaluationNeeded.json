@@ -1,0 +1,15 @@
+{
+    "name": "ismsa/fieldTypes/assetRiskEvaluationNeeded",
+    "displayName": "Risk evaluation needed",
+    "dataType": "enum",
+    "enumValues": [
+        {
+            "enumValue": "yes",
+            "enumDisplayValue": "Yes"
+        },
+        {
+            "enumValue": "no",
+            "enumDisplayValue": "No"
+        }
+    ]
+}

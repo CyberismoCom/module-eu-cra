@@ -1,0 +1,8 @@
+{
+    "name": "secdeva/linkTypes/affects",
+    "outboundDisplayName": "Affects version",
+    "inboundDisplayName": "Affected by",
+    "sourceCardTypes": ["secdeva/cardTypes/securityIssue"],
+    "destinationCardTypes": ["secdeva/cardTypes/version"],
+    "enableLinkDescription": false
+}

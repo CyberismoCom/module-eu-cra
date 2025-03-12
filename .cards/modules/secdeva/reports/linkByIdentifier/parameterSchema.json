@@ -1,0 +1,26 @@
+{
+  "title": "Report",
+  "$id": "reportMacroDefaultSchema",
+  "description": "A report object provides supplemental information about a report",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "The name of the report",
+      "type": "string"
+    },
+    "cardKey": {
+      "description": "Used to override the default cardKey, which is the cardKey of the card, in which the report macro is used",
+      "type": "string"
+    },
+    "identifier": {
+      "description": "The identifier of the cards that should be linked",
+      "type": "string"
+    },
+    "messageIfNoResults": {
+      "description": "A message that will be shown if no cards are found",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["name", "identifier"]
+}

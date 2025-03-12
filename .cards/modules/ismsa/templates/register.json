@@ -1,0 +1,6 @@
+{
+    "displayName": "Generic register",
+    "description": "A basic register",
+    "category": "Register management",
+    "name": "ismsa/templates/register"
+}

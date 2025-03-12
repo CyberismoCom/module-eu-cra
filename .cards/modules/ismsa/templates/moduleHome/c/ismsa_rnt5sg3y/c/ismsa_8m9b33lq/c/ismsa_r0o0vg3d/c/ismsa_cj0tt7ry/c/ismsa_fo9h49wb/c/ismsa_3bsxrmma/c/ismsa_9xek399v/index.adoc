@@ -1,0 +1,76 @@
+{{#graph}}
+  "model": "ismsa/graphModels/assetsRisksControls",
+  "view": "ismsa/graphViews/control"
+{{/graph}}
+
+== Control implementation plan
+
+=== Implementation strategy
+
+Implementing a Mobile Device Management (MDM) solution to protect laptops and mobile phones involves several key steps. 
+
+1. Assess Your Needs
+
+* *Identify Devices*: Determine which devices (laptops, smartphones, tablets) need to be managed.
+
+* *Define Requirements*: Understand the specific needs of your organization, such as security policies, compliance requirements, and user roles.
+
+2. Select an MDM Solution
+
+* *Research Vendors*: Evaluate potential MDM vendors based on their features, reputation, and compatibility with your existing infrastructure.
+
+* *Trial and Test*: Conduct trials to test the MDM solution's functionality and ease of use.
+
+3. Plan the Implementation
+
+* *Develop a Roadmap*: Create a detailed implementation plan, including timelines, milestones, and responsibilities.
+
+* *Prepare Infrastructure*: Ensure your network and IT infrastructure can support the MDM solution.
+
+4. Device Enrollment
+
+* *Enroll Devices*: Register all devices into the MDM system. This step often involves installing an MDM agent on each device.
+
+* *Provision Devices*: Configure devices with necessary applications, settings, and security policies based on user roles.
+
+5. Security Configuration
+
+* *Set Security Policies*: Implement security measures such as strong passwords, multi-factor authentication (MFA), encryption, and automatic updates.
+
+* *Compliance Enforcement*: Ensure devices comply with organizational policies and regulatory requirements.
+
+6. Training and Communication
+
+* *Educate Employees*: Provide training sessions to help employees understand the new system and its benefits.
+
+* *Communicate Policies*: Clearly communicate the security policies and procedures to all users.
+
+7. Monitoring and Maintenance
+
+* *Regular Updates*: Keep the MDM software and all enrolled devices updated with the latest security patches.
+
+* *Monitor Devices*: Continuously monitor device health, compliance, and security status.
+
+8. Support and Troubleshooting
+
+* *Provide Support*: Establish a support system to assist users with any issues related to the MDM solution.
+
+* *Troubleshoot Problems*: Quickly address any technical problems or security breaches that arise.
+
+9. Review and Improve
+
+* *Regular Audits*: Conduct regular audits to assess the effectiveness of the MDM solution and identify areas for improvement.
+
+* *Feedback Loop*: Gather feedback from users to make necessary adjustments and enhancements.
+
+=== Responsible(s)
+
+#TODO#: Add implementation responsible(s)
+
+=== Target date
+
+#TODO#: Add implementation target date
+
+== Relevant evidence
+
+#TODO#: Add relevant evidence

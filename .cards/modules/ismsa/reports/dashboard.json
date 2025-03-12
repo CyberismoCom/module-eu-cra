@@ -1,0 +1,6 @@
+{
+    "displayName": "Dashboard",
+    "description": "Report for progress and policy check failures in registers",
+    "category": "ISMS report",
+    "name": "ismsa/reports/dashboard"
+}

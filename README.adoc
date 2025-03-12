@@ -1,0 +1,27 @@
+= Cyberismo EU Cyber Resilience Act module
+
+== Copyright
+
+Copyright © Cyberismo Ltd and contributors 2025
+
+== License and trademark policy
+
+This is free content: you can redistribute it and/or modify it under the terms of the Creative Commons Attribution-ShareAlike 4.0 International Public License.
+
+The use of Cyberismo trademark is governed by the Cyberismo open source trademark policy. See separate file TRADEMARK.adoc.
+
+This content is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+See the Creative Commons Attribution-ShareAlike 4.0 International Public License in the separate LICENSE file for more details.
+
+== Contributing
+
+See separate file CONTRIBUTING.
+
+== About the Cyberismo EU Cyber Resilience Act module
+
+This module defines additional content on top of the Cyberismo secure development essentials module for help product manufacturers with compliance to the EU Cyber Resilience Act.
+
+== Using the Cyberismo EU Cyber Resilience Act module
+
+See https://docs.cyberismo.com[Cyberismo documentation].

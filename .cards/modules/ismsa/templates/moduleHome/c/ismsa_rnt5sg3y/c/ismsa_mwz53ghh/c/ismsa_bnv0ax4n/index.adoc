@@ -1,0 +1,8 @@
+## Risks related to primary assets
+
+Add new risks related to primary assets using risk-template.
+
+{{#createCards}}
+  "template": "ismsa/templates/risk",
+  "buttonLabel": "Add new risk"
+{{/createCards}}

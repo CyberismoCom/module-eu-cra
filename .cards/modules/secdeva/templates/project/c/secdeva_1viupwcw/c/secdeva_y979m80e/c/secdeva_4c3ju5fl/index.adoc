@@ -1,0 +1,36 @@
+Development projects require different environments for implementation, testing/staging, customer demonstrations, and production. Protecting these environments is important for ensuring the confidentiality, integrity, and availability of the results of the development project and of the information that is processed.
+
+== How to decide if this secure development task is required
+
+This task is required for all applicable environments.
+
+== How to implement
+
+Ensure that separate environments are available as required based on risk:
+
+* Development environment
+* Testing environment
+* Staging environment
+* Demonstration environment
+* Production environment
+
+Implement basic cybersecurity controls that protect these environments, including for example access control, hardening and secure configuration, software updates, monitoring, network security, and backups.
+
+Make sure that production data or customer data is not used inappropriately in development, testing, or demonstration environments.
+
+Ensure that any integrations to other systems are not used inappropriately in development, testing, or demonstration environments. Examples of potentially dangerous integrations include email services and integrations to important enterprise systems such as enterprise resource planning (ERP).
+
+Create a review of protecting environments and follow the instructions in the template.
+
+{{#report}}
+  "name": "secdeva/reports/createChildReview",
+  "template": "secdeva/templates/environmentProtectionReview",
+  "buttonLabel": "Create a review of protecting environments"
+{{/report}}
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildReviewStatus"
+{{/report}}
+

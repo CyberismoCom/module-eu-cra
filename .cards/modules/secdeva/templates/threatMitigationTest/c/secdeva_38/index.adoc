@@ -1,0 +1,43 @@
+== Introduction
+
+This document is a review of threat mitigation testing.
+
+=== Scope of testing
+
+The scope of threat mitigation testing includes the security issues that have been linked to this card with 'tests' links.
+
+#TODO: Link the threats that are in scope to this card with 'tests' links#
+
+=== Goal of testing
+
+The goal of threat mitigation testing is to test the effectiveness of the mitigation for a threat. In practice this means that each implemented mitigation will be tested as to
+
+* Whether it works as designed
+* Whether it is possible to bypass it
+
+=== Documentation and reporting
+
+#TODO: Add a link or an attachment to the detailed test plan and test results, for example to a test management system or to automated tests. If you're tracking manual testing in this tool, then describe the test plan and the test results here.#
+
+== Version history
+
+[cols="1,1,3"]
+|===============
+|Version | Date | Changes/Author
+
+| 0.1
+| 2024-01-01
+| XYZ changed by N.N.
+
+|===============
+
+== Identified security issues
+
+{{#createCards}}
+  "template": "secdeva/templates/securityIssue",
+  "buttonLabel": "Create a new security issue"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssueList"
+{{/report}}

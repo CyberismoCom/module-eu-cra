@@ -1,0 +1,17 @@
+{
+    "cardType": "base/cardTypes/annualTask",
+    "title": "Manage 3rd party technologies",
+    "workflowState": "",
+    "rank": "0|p",
+    "lastUpdated": "2025-01-20T08:48:53.611Z",
+    "links": [],
+    "secdeva/fieldTypes/controlImplementer": "Development team",
+    "base/fieldTypes/adoptionStep": "step1",
+    "base/fieldTypes/justification": null,
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/reviewPeriod": 365,
+    "base/fieldTypes/reviewMonth": "april",
+    "base/fieldTypes/lastReviewed": null,
+    "base/fieldTypes/identifier": "secdeva_control_3rd-party-technologies"
+}

@@ -1,0 +1,27 @@
+selectAll.
+
+result(result).
+
+childResult(result, Template, "uninstalledExtensions") :-
+    secdeva_installableExtension(ExtensibleCardIdentifier, _, Template, _, ExampleIdentifier),
+    field({{cardKey}}, "base/fieldTypes/identifier", ExtensibleCardIdentifier),
+    not field(Descendant, "base/fieldTypes/identifier", ExampleIdentifier) :
+    ancestor(Descendant, {{cardKey}}).
+
+field(Template, "moduleDescription", ModuleDescription) :-
+    secdeva_installableExtension(ExtensibleCardIdentifier, ModuleDescription, Template, _, _),
+    field({{cardKey}}, "base/fieldTypes/identifier", ExtensibleCardIdentifier).
+
+field(Template, "template", Template) :-
+    secdeva_installableExtension(ExtensibleCardIdentifier, _, Template, _, _),
+    field({{cardKey}}, "base/fieldTypes/identifier", ExtensibleCardIdentifier).
+
+field(Template, "buttonLabel", ButtonLabel) :-
+    secdeva_installableExtension(ExtensibleCardIdentifier, _, Template, ButtonLabel, _),
+    field({{cardKey}}, "base/fieldTypes/identifier", ExtensibleCardIdentifier).
+
+childResult(result, Template, "installedExtensions") :-
+    secdeva_installableExtension(ExtensibleCardIdentifier, _, Template, _, ExampleIdentifier),
+    field({{cardKey}}, "base/fieldTypes/identifier", ExtensibleCardIdentifier),
+    field(Descendant, "base/fieldTypes/identifier", ExampleIdentifier),
+    ancestor(Descendant, {{cardKey}}).

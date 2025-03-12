@@ -1,0 +1,7 @@
+selectAll.
+
+result(Review) :-
+    parent(Review, {{cardKey}}),
+    field(Review, "cardType", "base/cardTypes/review").
+
+orderBy("rank", "ASC").

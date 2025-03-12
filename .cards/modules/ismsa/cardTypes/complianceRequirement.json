@@ -1,0 +1,32 @@
+{
+    "name": "ismsa/cardTypes/complianceRequirement",
+    "workflow": "ismsa/workflows/complianceRequirement",
+    "customFields": [
+        {
+            "name": "base/fieldTypes/owner"
+        },
+        {
+            "name": "base/fieldTypes/informationClassification"
+        },
+        {
+            "name": "base/fieldTypes/adoptionStep"
+        },
+        {
+            "name": "base/fieldTypes/identifier"
+        },
+        {
+            "name": "ismsa/fieldTypes/requirementImplementationStrategy"
+        },
+        {
+            "name": "ismsa/fieldTypes/requirementOrigin"
+        }
+    ],
+    "alwaysVisibleFields": [
+        "base/fieldTypes/owner",
+        "base/fieldTypes/informationClassification"
+    ],
+    "optionallyVisibleFields": [
+        "ismsa/fieldTypes/requirementImplementationStrategy",
+        "ismsa/fieldTypes/requirementOrigin"
+    ]
+}

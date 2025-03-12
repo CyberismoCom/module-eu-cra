@@ -1,0 +1,9 @@
+== Source
+
+EU CRA Annex I (1) (2) (a) :: On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable, products with digital elements shall: (a) be made available on the market without known exploitable vulnerabilities;
+
+== Requirement description
+
+#TODO: Edit this as applicable and add any product-specific considerations#
+
+This requirement is implemented by the linked secure development tasks *Manage 3rd party vulnerabilities* and *Manage defects*.

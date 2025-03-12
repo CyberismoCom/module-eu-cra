@@ -1,0 +1,6 @@
+{
+    "displayName": "Related risks by owner",
+    "description": "A table showing related risks by owner",
+    "category": "ISMS report",
+    "name": "ismsa/reports/relatedRisks"
+}

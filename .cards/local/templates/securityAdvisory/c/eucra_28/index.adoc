@@ -1,0 +1,51 @@
+== Introduction
+
+This page is a security advisory for Example version 0.0 for users and stakeholders.
+
+#TODO: Include an identification of the vulnerability or vulnerabilities, such as a Common Vulnerability Enumeration (CVE) number.#
+
+== Affected products and versions
+
+#TODO: document above all product versions for which this advisory is applicable. The product and product versions must be identified exactly so that end users will be able to understand the identification.#
+
+== Description
+
+#TODO: Describe the security issue and its impact.#
+
+== Severity ranking
+
+#TODO: Include a ranking of the secverity of these issues according to Common Vulnerability Scoring System (CVSS) or a similar well-known scheme.#
+
+== Mitigation advice
+
+#TODO: Describe how the issue can be mitigated by the user, including possible compensating mechanisms.#
+
+#TODO: Describe how the issue can be mitigated by a software update, if applicable.#
+
+== Acknowledgements
+
+#TODO: Acknowledge possible external or internal security researchers, who have contributed to this advisory#
+
+== Version history
+
+[cols="1,1,3"]
+|===============
+|Version | Date | Changes/Author
+
+| 0.1
+| 2024-01-01
+| XYZ changed by N.N.
+
+|===============
+
+== Reviews
+
+{{#createCards}}
+    "template": "base/templates/reviewTask",
+    "buttonLabel": "Add new review task"
+{{/createCards}}
+
+{{#report}}
+  "name": "base/reports/childrenTable",
+  "cardType": "base/cardTypes/reviewTask"
+{{/report}}

@@ -1,0 +1,6 @@
+{
+    "displayName": "ISMS home",
+    "description": "Start page for a new ISMS project",
+    "category": "Start",
+    "name": "ismsa/templates/moduleHome"
+}

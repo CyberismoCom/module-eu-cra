@@ -1,0 +1,6 @@
+{
+    "displayName": "Create a document",
+    "description": "Create a new controlled document, if needed",
+    "category": "Secure development",
+    "name": "secdeva/reports/createChildDocument"
+}

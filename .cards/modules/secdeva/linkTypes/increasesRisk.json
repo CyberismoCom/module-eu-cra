@@ -1,0 +1,12 @@
+{
+    "name": "secdeva/linkTypes/increasesRisk",
+    "outboundDisplayName": "increases risk",
+    "inboundDisplayName": "is increased by",
+    "sourceCardTypes": [
+        "secdeva/cardTypes/securityIssue"
+    ],
+    "destinationCardTypes": [
+        "ismsa/cardTypes/risk"
+    ],
+    "enableLinkDescription": false
+}

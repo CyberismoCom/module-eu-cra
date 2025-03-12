@@ -1,0 +1,8 @@
+== Task description
+
+Companies within NIS2 scope need to, without undue delay, 
+communicate to the recipients of their services that are 
+potentially affected by a significant cyber threat any measures 
+or remedies that those recipients are able to take in response to that threat. 
+Where appropriate, the entities shall also inform those recipients of 
+the significant cyber threat itself.

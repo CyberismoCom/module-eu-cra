@@ -1,0 +1,18 @@
+.View process diagram
+[%collapsible]
+====
+{{#graph}}
+  "model": "secdeva/graphModels/processDiagram",
+  "view": "secdeva/graphViews/complianceRequirement"
+{{/graph}}
+====
+
+== Requirement content
+
+Requirements for products with digital elements
+
+Products with digital elements shall be made available on the market only where:
+
+(1)  they meet the essential cybersecurity requirements set out in Part I of Annex I, provided that they are properly installed, maintained, used for their intended purpose or under conditions which can reasonably be foreseen, and, where applicable, the necessary security updates have been installed; and
+
+(2)  the processes put in place by the manufacturer comply with the essential cybersecurity requirements set out in Part II of Annex I.

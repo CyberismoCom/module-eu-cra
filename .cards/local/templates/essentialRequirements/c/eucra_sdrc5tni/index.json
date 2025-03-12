@@ -1,0 +1,11 @@
+{
+    "title": "Data minimisation",
+    "cardType": "secdeva/cardTypes/requirement",
+    "workflowState": "",
+    "rank": "0|h",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/identifier": "eucra_security-requirement_data-minimisation",
+    "links": [],
+    "lastUpdated": "2025-03-10T10:20:31.569Z"
+}

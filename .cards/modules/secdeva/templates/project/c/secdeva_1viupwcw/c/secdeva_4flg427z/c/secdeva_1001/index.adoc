@@ -1,0 +1,33 @@
+.View process diagram
+[%collapsible]
+====
+{{#graph}}
+  "model": "secdeva/graphModels/processDiagram",
+  "view": "secdeva/graphViews/processTask"
+{{/graph}}
+====
+
+People involved in the development projects are required to have sufficient security knowledge. Ensuring that the staff has a good cybersecurity competence is one of the most cost-effective ways to improve security.
+
+== How to decide if this secure development task is required
+
+This task is required, if the project is responsible for ensuring the competence of the team. The task is not required, if competence is ensured on some other level, such as top level project or centrally.
+
+== How to implement
+
+Participating to security training is the recommended way to ensure competence.
+
+Encourage team members to take e-learning courses or to participate in instructor-led trainings according to their secure development role.
+
+Keep track of participation to mandatory trainings.
+
+== How to review this task
+
+Check that all nominated persons have completed the security training that is required in the organisation. Alternatively, check that the nominated persons have sufficient competence from previous experience.
+
+Different trainings are often provided for different roles. You can see the role assignments here: {{#report}}
+  "name": "secdeva/reports/linkByIdentifier",
+  "identifier": "secdeva_control_assign-people-to-project-roles"
+{{/report}}
+
+Check that the trainings have not expired according to the requirements of the secure development training plan of the organisation.

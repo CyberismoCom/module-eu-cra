@@ -1,0 +1,67 @@
+{
+    "name": "ismsa/workflows/incident",
+    "states": [
+        {
+            "name": "Open",
+            "category": "initial"
+        },
+        {
+            "name": "Analysed",
+            "category": "active"
+        },
+        {
+            "name": "Response in progress",
+            "category": "active"
+        },
+        {
+            "name": "Response completed",
+            "category": "active"
+        },
+        {
+            "name": "Closed",
+            "category": "closed"
+        }
+    ],
+    "transitions": [
+        {
+            "name": "Create",
+            "fromState": [],
+            "toState": "Open"
+        },
+        {
+            "name": "Complete analysis",
+            "fromState": [
+                "Open"
+            ],
+            "toState": "Analysed"
+        },
+        {
+            "name": "Complete response planning",
+            "fromState": [
+                "Analysed"
+            ],
+            "toState": "Response in progress"
+        },
+        {
+            "name": "Complete response",
+            "fromState": [
+                "Response in progress"
+            ],
+            "toState": "Response completed"
+        },
+        {
+            "name": "Complete post-incident activities",
+            "fromState": [
+                "Response completed"
+            ],
+            "toState": "Closed"
+        },
+        {
+            "name": "Reopen",
+            "fromState": [
+                "*"
+            ],
+            "toState": "Open"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+visible({{cardKey}}).
+
+visible(Task) :-
+    link({{cardKey}}, Task, "secdeva/linkTypes/precedes").
+
+visible(Task) :-
+    link(Task, {{cardKey}}, "secdeva/linkTypes/precedes").
+
+visible(Task) :-
+    link({{cardKey}}, Task, "secdeva/linkTypes/requires").
+
+visible(Task) :-
+    link(Task, {{cardKey}}, "secdeva/linkTypes/requires").
+
+visible(Task) :-
+    link(Task, {{cardKey}}, "ismsa/linkTypes/implements").
+
+visible(Task) :-
+    link({{cardKey}}, Task, "ismsa/linkTypes/implements").

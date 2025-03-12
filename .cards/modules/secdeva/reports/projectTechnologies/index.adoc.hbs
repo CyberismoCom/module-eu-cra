@@ -1,0 +1,19 @@
+{{#if results}}
+
+[cols="4,2"]
+.3rd party technologies
+|===
+|Technology | Workflow state
+
+{{#each results}}
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.workflowState}}
+{{/each}}
+
+|===
+
+{{else}}
+
+There are no 3rd party technology documents.
+
+{{/if}}

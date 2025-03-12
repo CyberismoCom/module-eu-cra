@@ -1,0 +1,15 @@
+selectAll.
+
+result(result).
+
+childResult(result, Decision, "decisions") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(Decision, Project),
+    field(Decision, "cardType", "base/cardTypes/decision").
+
+childResult(result, Specification, "specifications") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(Specification, Project),
+    field(Specification, "base/fieldTypes/identifier", "secdeva_document_design-specification").
+
+orderBy("title", "ASC").

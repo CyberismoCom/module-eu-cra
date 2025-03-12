@@ -1,0 +1,54 @@
+== Meeting details
+
+* *Date and time*:
+
+* *Participants*:
+
+== Agenda for regular review
+
+* Status of action points from previous meeting 
+
+* Status of ISMS registers
+
+* What have we achieved during the past period 
+
+* What do we want to achieve during next period 
+
+* Date and time for next review 
+
+== Meeting minutes
+
+* #TODO# Add meeting minutes
+
+=== Status of action points from previous meeting 
+
+* #TODO# Add meeting minutes
+
+=== Status of ISMS registers 
+
+* #TODO# Add meeting minutes
+
+=== What have we achieved during the past period 
+
+* #TODO# Add meeting minutes
+
+=== What do we want to achieve during next period 
+
+* #TODO# Add meeting minutes
+
+=== Date and time for next review 
+
+* #TODO# Add meeting minutes
+
+== Action points
+
+* #TODO# Add actions points
+
+{{#createCards}}
+  "template": "base/templates/oneTimeTask",
+  "buttonLabel": "Add new task"
+{{/createCards}}
+
+{{#report}}
+  "name": "base/reports/childrenTable"
+{{/report}}

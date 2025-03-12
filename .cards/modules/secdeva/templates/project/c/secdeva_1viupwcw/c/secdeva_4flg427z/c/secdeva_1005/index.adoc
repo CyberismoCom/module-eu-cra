@@ -1,0 +1,22 @@
+The secure development processes assume that a rather mature general product development life-cycle exists. A secure development management plan describes how the secure development processes will be integrated to the existing development processes and how secure development will be managed in general. This includes the usage of general configuration management.
+
+== How to decide if this secure development task is required
+
+A secure development management plan is required for each project unless the secure development management plan is documented elsewhere, such as in general or global security documentation.
+
+== How to implement
+
+Create a secure development management plan and follow the instructions in the template.
+
+{{#report}}
+  "name": "secdeva/reports/createChildDocument",
+  "template": "secdeva/templates/managementPlan",
+  "buttonLabel": "Create a management plan"
+{{/report}}
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildDocumentStatus"
+{{/report}}
+

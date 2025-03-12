@@ -1,0 +1,17 @@
+{
+    "cardType": "base/cardTypes/annualTask",
+    "title": "Test security requirements",
+    "workflowState": "",
+    "rank": "0|ab",
+    "lastUpdated": "2025-01-23T20:35:50.593Z",
+    "links": [],
+    "secdeva/fieldTypes/controlImplementer": "Development team",
+    "base/fieldTypes/adoptionStep": "step1",
+    "base/fieldTypes/justification": null,
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/reviewPeriod": 365,
+    "base/fieldTypes/reviewMonth": "october",
+    "base/fieldTypes/lastReviewed": null,
+    "base/fieldTypes/identifier": "secdeva_control_security-requirement-testing"
+}

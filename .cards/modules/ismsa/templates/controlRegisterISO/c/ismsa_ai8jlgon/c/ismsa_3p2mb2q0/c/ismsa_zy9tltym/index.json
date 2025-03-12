@@ -1,0 +1,14 @@
+{
+    "title": "5.9 Inventory of information and other associated assets",
+    "cardType": "ismsa/cardTypes/control",
+    "workflowState": "Open",
+    "rank": "0|aaj",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "ismsa/fieldTypes/controlStatus": null,
+    "ismsa/fieldTypes/controlJustification": null,
+    "ismsa/fieldTypes/controlSummary": null,
+    "ismsa/fieldTypes/controlOrigin": "iso27001y2022Control",
+    "links": [],
+    "lastUpdated": "2024-12-27T07:14:58.618Z"
+}

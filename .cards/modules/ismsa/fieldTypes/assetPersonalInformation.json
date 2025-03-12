@@ -1,0 +1,23 @@
+{
+    "name": "ismsa/fieldTypes/assetPersonalInformation",
+    "displayName": "Contains personal information",
+    "dataType": "enum",
+    "enumValues": [
+        {
+            "enumValue": "sensitive",
+            "enumDisplayValue": "Sensitive"
+        },
+        {
+            "enumValue": "regular",
+            "enumDisplayValue": "Regular"
+        },
+        {
+            "enumValue": "N/A",
+            "enumDisplayValue": "Not Applicable"
+        },
+        {
+            "enumValue": "none",
+            "enumDisplayValue": "None"
+        }
+    ]
+}

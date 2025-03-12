@@ -1,0 +1,336 @@
+This document describes how risks and opportunities are managed at #Company#.
+
+== Introduction
+
+Risk management is the core of an information security management system.
+Its purpose is to prevent or minimise the effect of incidents on operations,
+business continuity, recipients of services, and other services.
+It supports business continuity by identifying the key risks and prioritising
+the mitigation efforts by starting with the controls the matter the most.
+
+== Roles and responsibilities
+
+[width="100%",cols="5,7,15",options="header"]
+|=========================================================
+|Role |Person(s) |Responsibilities
+
+|Top management
+| Board of directors + CEO
+a|
+* Approves risk management approach and risk management measures
+
+* Oversees implementation of risk management approach and risk management measures
+
+|Security program lead  |Defined in #Roles and Responsibilities document#
+a|
+* Participates to security reviews
+* Creates summary of organisations risk status for top management
+* Creates and update Statement of Applicability
+
+|Business Process Owner  |Defined in #Roles and Responsibilities document#
+a|
+* Ensures risks and opportunities related to their processes are identified and recorded in Risk Register
+* Ensures security reviews are organised at least quarterly
+
+|Asset Owner  |Defined per asset in Asset Register
+a|
+* Ensures risks related their assets are identified
+
+|Risk Owner  |Documented per risk in Risk Register
+a|
+* Approves risk treatment plans and accepts the residual risks
+
+|Control Owner |Documented per risk in Control Register
+a|
+* Ensures controls are implemented according to treatment plan
+
+* Monitors relevant controls to ensure they function as expected
+
+|=========================================================
+
+== Process description
+
+Risks and treatment plans are recorded to Risk Register in accordance to following steps.
+
+=== STEP 1: Identify risks
+
+A basic risk identification method is to organise a workshop or a series of workshops, where asset owners (together with security specialists) consider risks related to their assets. These workshops shall be based on an all-hazards approach that aims to protect assets, networks, information systems and their physical environment from the loss of confidentiality, authenticity, integrity, and availability.
+
+Usage of existing threat taxonomies, checklists and/or formal threat modelling can support risk identification, if needed.
+
+Each risk has a designated risk owner.
+
+=== STEP 2: Assess risks
+
+Risks are analysed using the following scales adopted from Interoperable EU Risk Management Toolbox:
+
+[width="100%",cols="5,20",options="header"]
+|=========================================================
+|Impact level |Description
+
+
+|Very High |
+- A threat event leads to disastrous business impacts.
+
+- A threat event leads to financial loss that is bigger than the 5% of the organization's annual turnover/budget.
+
+- Information leaks threaten the organization's survival.
+
+- Corruption that is irrecoverable or causes permanent downtime.
+
+- Unavailability that takes extreme efforts to regain, or that is permanent.
+
+- Negative impact on the reputation of the organization or its employees. Global media coverage.
+
+- Discontinuation of all organizational services.
+
+- The firm receives a harsh penalty.
+
+- Brings some lethal costs close to insurmountability.
+
+- Significant repercussions that are almost irreversible and cannot be surpassed (e.g., death, working impossibility).
+
+|High |
+- A threat event leads to critical business impacts.
+
+- A threar event leads to financial loss that ranges  from 2% to 5% of the organization's annual turnover/budget.
+
+- Information leaks severely undermine the interests of an organization.
+
+- Corruption that imposes a substantial burden on the stakeholders.
+
+- Intense unavailability that causes stakeholders significant inconvenience.
+
+- Significant decline in the organization's reputation. Repeated media criticts.
+
+- Complete departmental disruption.
+
+- Indictment against the business.
+
+- Costs the business a considerable amount of money in fees.
+
+- Significant outcomes that might be surpassed, but with considerable challenges (e.g., bank ban).
+
+|Moderate |
+- A threat event leads to average business impacts.
+
+- A threar event leads to financial loss that ranges from 0.05% to 2% of the organization's annual turnover/budget.
+
+- Information leaks undermine the interests of an organization.
+
+- Corruption that causes difficulty for the affected parties. Recovery is simple.
+
+- Limited availability causes difficulty for the concerned stakeholders.
+
+- Temporary damage to the reputation of the organization. Occasional media critics
+
+- Isolated events with minimal consumer effect.
+
+- Possible penalties for the organization.
+
+- Introduces non-marginal charges.
+
+- Significant difficulty that might be compounded by a few complications (e.g., denial of access to commercial delivery).
+
+|Low |
+- A threat event leads to marginal business impacts.
+
+- A threar event leads to financial loss that ranges from 0.01% to 0.05% of the organization's annual turnover/budget.
+
+- Leaks of information are detrimental to the overall interests of the organization.
+
+- Eradicating the corruption would not have any negative repercussions.
+
+- Lack of availability that causes inconvenience but does not seriously compromise the interests of the stakeholders.
+
+- Infrequent media criticism
+
+- Minor occurrences that had no effect on their service users.
+
+- A very low chance of any sentences, or perhaps a very minor possibility of one.
+
+- Introduces some supplemental charges.
+
+- A little setback that can be easily overcome (e.g., time waste).
+
+|Very Low |
+- A threat event leads to negligible business impacts.
+
+- A threar event leads to financial loss that less than or equal to 0.01% of the organization's annual turnover/budget.
+
+|=========================================================
+
+[width="100%",cols="5,20",options="header"]
+|=========================================================
+|Likelihood |Description
+
+|Very High |
+- A threat event is highly likely to be materialised in the short term and associated with vulnerabilities because there are no adequate security measures to defend them.
+
+|High |
+- A threat event is highly likely to be materialised and associated with vulnerabilities because there are ineffective or obsolete security measures to defend them.
+
+|Moderate |
+- A threat event is likely to be materialised and associated with vulnerabilities because there are security measures to defend them, but, better security measures could have been implemented.
+
+|Low |
+- A threat event is possible, but not likely to be materialised and associated with vulnerabilities because there are good security measures to defend them.
+
+|Very Low |
+- A threat event is highly unlikely to be materialised and associated with vulnerabilities because there are effective security measures to defend them.
+
+|=========================================================
+
+
+where likelihood represent the assessment of the likelihood that a particular threat may exploit a specific vulnerability (or collection of vulnerabilites) to cause harm to an asset.
+
+*Risk* =  *Impact* x *Likelihood*
+
+[cols="3,21,3,3,3,3,5"]
+|=========================================================
+2.2+| {set:cellbgcolor:white}
+5+^| Impact {set:cellbgcolor:lightblue}
+| Very Low:
+
+Negligible {set:cellbgcolor:lightgray}
+| Low:
+
+Minor
+| Moderate:
+
+Moderate
+| High:
+
+Significant
+| Very High:
+
+Severe
+.5+.^| Likelihood {set:cellbgcolor:lightblue}
+| Very High: A threat event is highly likely to occur {set:cellbgcolor:lightgray}
+| Moderate {set:cellbgcolor:yellow}
+| Moderate {set:cellbgcolor:yellow}
+| High {set:cellbgcolor:red}
+| Very High {set:cellbgcolor:darkred}
+| Very High {set:cellbgcolor:darkred}
+| High: A threat event is likely to occur {set:cellbgcolor:lightgray}
+| Low {set:cellbgcolor:orange}
+| Moderate {set:cellbgcolor:yellow}
+| High {set:cellbgcolor:red}
+| High {set:cellbgcolor:red}
+| Very High {set:cellbgcolor:darkred}
+| Moderate: A threat event is possible to occur {set:cellbgcolor:lightgray}
+| Low {set:cellbgcolor:orange}
+| Moderate {set:cellbgcolor:yellow}
+| Moderate {set:cellbgcolor:yellow}
+| High {set:cellbgcolor:red}
+| High {set:cellbgcolor:red}
+| Low: A threat event is unlikely to occur {set:cellbgcolor:lightgray}
+| Very Low {set:cellbgcolor:green}
+| Low {set:cellbgcolor:orange}
+| Moderate {set:cellbgcolor:yellow}
+| Moderate {set:cellbgcolor:yellow}
+| Moderate {set:cellbgcolor:yellow}
+| Very Low: A threat event is highly unlikely to {set:cellbgcolor:lightgray}
+| Very Low {set:cellbgcolor:green}
+| Very Low {set:cellbgcolor:green}
+| Low {set:cellbgcolor:orange}
+| Low {set:cellbgcolor:orange}
+| Moderate {set:cellbgcolor:yellow}
+|=========================================================
+
+Currently risk is on acceptable level if it is Low or Very Low. Risks above this criterion can be accepted only in exceptional cases with documented management decisions.
+
+
+=== STEP 3: Plan risk treatment
+
+Risk owner ensures a treatment plan is created and includes at minimum the following:
+
+* Mitigation strategy: mitigate, transfer/share, avoid or accept
+
+* Needed actions (controls, can be mapped to risk management measures presented in NIS2 or ISO27001 reference controls, if applicable)
+
+* Responsible person(s) (control owner(s))
+
+* Due date
+
+More detailed plans can be created as needed.
+
+Risk owner approves treatment plans and residual risks.
+
+=== STEP 4: Create statement of applicability
+
+Security program lead produces a Statement of Applicability that contains:
+
+* needed controls (both own controls and relevant ISO27001 reference controls),
+
+* justifications for their inclusion,
+
+* their implementation status, and
+
+* justification for excluding any of the ISO27001 reference controls, if applicable.
+
+The first version of Statement of Applicability shall be created within one year of approving this process. After that, the Statement of Applicability is reviewed at least once a year and updated as needed.
+
+=== STEP 5: Monitor risks and controls
+
+The risk register and treatment plans are reviewed at least quarterly by risk owners during quartal security reviews. Top management participates to these reviews. Effectiveness of risk-management measures/controls is evaluated as part of these reviews. Additional reviews shall be arranged, if there are significant incidents or other significant changes that might affect information security.
+
+The effectiveness of controls to mitigate risks should also be evaluated independently as part of internal and external audits. Additional security testing can be arranged as needed and when applicable.
+
+== Process Maintenance
+
+The risk management process is reviewed at least yearly and updated as needed by the document owner. If there are major changes, the document owner communicates them to the affected parties.
+
+== Related documents/processes
+
+* Asset management process
+
+* Incident management process
+
+== Relevant requirements
+
+DIRECTIVE (EU) 2022/2555 on measures for a high common level of cybersecurity across
+the Union (NIS 2 Directive) – Article 21: Cybersecurity risk-management measures and related
+local transposition laws in #TODO <add locations>#
+
+Most relevant ISO27001 requirements are:
+
+* ISO27001:2022 – 6.1: Actions to address risks and opportunities
+
+* ISO27001:2022 – 8.2: Information security risk assessment
+
+* ISO27001:2022 – 8.3: Information security risk treatment
+
+== References
+
+* link:https://www.enisa.europa.eu/publications/interoperable-eu-risk-management-framework[https://www.enisa.europa.eu/publications/interoperable-eu-risk-management-framework]
+
+* link:https://www.enisa.europa.eu/publications/interoperable-eu-risk-management-toolbox[https://www.enisa.europa.eu/publications/interoperable-eu-risk-management-toolbox]
+
+* link:https://www.enisa.europa.eu/publications/2023-interoperable-eu-rm-toolbox/eu-rm-toolbox-library-03-threats-mappings.xlsx[https://www.enisa.europa.eu/publications/2023-interoperable-eu-rm-toolbox/eu-rm-toolbox-library-03-threats-mappings.xlsx]
+
+* link:https://www.enisa.europa.eu/publications/2023-interoperable-eu-rm-toolbox/eu-rm-toolbox-library-04-risk-impact-levels-mappings.xlsx[https://www.enisa.europa.eu/publications/2023-interoperable-eu-rm-toolbox/eu-rm-toolbox-library-04-risk-impact-levels-mappings.xlsx]
+
+
+== Version history
+
+[cols="1,1,3"]
+|===============
+|Version {set:cellbgcolor:F4F4F4} | Date | Changes/Author
+
+| 1.0 {set:cellbgcolor:white}
+| #TODO <add date>#
+| First version created by #N.N#
+
+|===============
+
+== Reviews
+
+{{#createCards}}
+    "template": "base/templates/reviewTask",
+    "buttonLabel": "Add new review task"
+{{/createCards}}
+
+{{#report}}
+  "name": "base/reports/childrenTable"
+{{/report}}

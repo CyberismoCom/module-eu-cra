@@ -1,0 +1,32 @@
+The goal of threat mitigation testing is to ensure that the threat cannot be exploited and that the implemented mitigations work as planned.
+
+== How to decide if this secure development task is required
+
+Threat mitigation testing is required if security threats have been identified.
+
+== How to implement
+
+Threat mitigation testing includes two kinds of tests:
+
+1.  A test that tries to exploit the threat by attempting to bypass the mitigation.
+2.  A test that ensures that the mitigation works as planned.
+
+If the mitigation has been described as a security requirement, then part 2 of the testing will be handled as part of the security requirement test plan.
+
+For some mitigations, it may not be practical to test the bypassing the mitigation. In these cases, record this fact in the threat.
+
+Also ensure that test executions are documented.
+
+The test plan and the test results must be documented. Typically, test plans are created and test executions are managed in a test management tool. Link the test plan and test results to a threat mitigation test review.
+
+{{#report}}
+  "name": "secdeva/reports/createChildReview",
+  "template": "eucra/templates/threatMitigationTest",
+  "buttonLabel": "Create a review of threat mitigation testing"
+{{/report}}
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/threatMitigationTestCoverage"
+{{/report}}

@@ -1,0 +1,17 @@
+{
+    "cardType": "base/cardTypes/annualTask",
+    "title": "Analyse binaries to detect linking to vulnerable libraries",
+    "workflowState": "",
+    "rank": "0|nm",
+    "lastUpdated": "2025-01-20T08:48:53.614Z",
+    "links": [],
+    "eucra/fieldTypes/controlImplementer": "Development team",
+    "base/fieldTypes/adoptionStep": "step3",
+    "base/fieldTypes/justification": null,
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/reviewPeriod": 365,
+    "base/fieldTypes/reviewMonth": null,
+    "base/fieldTypes/lastReviewed": null,
+    "base/fieldTypes/identifier": "eucra_control_linking-to-vulnerable-libraries"
+}

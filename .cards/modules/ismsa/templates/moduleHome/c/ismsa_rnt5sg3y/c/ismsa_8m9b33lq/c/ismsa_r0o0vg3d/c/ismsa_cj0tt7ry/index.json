@@ -1,0 +1,11 @@
+{
+    "title": "Devices",
+    "cardType": "ismsa/cardTypes/register",
+    "workflowState": "",
+    "rank": "0|bc",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/identifier": null,
+    "ismsa/fieldTypes/adoptionStep": "step1",
+    "ismsa/fieldTypes/progress": null
+}

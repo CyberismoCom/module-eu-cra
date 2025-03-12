@@ -1,0 +1,99 @@
+{{#each results}}
+
+{{#if readyForRelease}}
+
+NOTE: There are no security issues, secure development tasks or policy check failures.
+
+{{/if}}
+
+{{#if tasksNeedingAttention}}
+
+IMPORTANT: The project is not ready for release, because there are secure development tasks that need attention.
+
+{{/if}}
+
+{{#if issuesNeedingAttention}}
+
+IMPORTANT: The project is not ready for release, because there are security issues that need attention.
+
+{{/if}}
+{{#if failures}}
+
+IMPORTANT: The project is not ready for release, because there are policy check failures.
+
+{{/if}}
+
+{{#if tasksNeedingAttention}}
+
+.Secure development tasks that need attention
+[cols="5,2,5"]
+|===
+| Task | Status | Why this task needs
+
+{{#each tasksNeedingAttention}}
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.workflowState}}
+|{{this.[secdeva/fieldTypes/needsAttention]}}
+{{/each}}
+|===
+{{/if}}
+
+{{#if issuesNeedingAttention}}
+
+.Security issues that need attention
+[cols="5,2,2"]
+|===
+| Security issue | Workflow State | Severity
+
+{{#each issuesNeedingAttention}}
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.workflowState}}
+|{{this.[secdeva/fieldTypes/severity].displayValue}}
+{{/each}}
+|===
+
+{{/if}}
+
+{{#if deferredIssues}}
+
+Some security issues have been deferred to future resolution.
+
+.Security issues that have been deferred to future resolution ({{deferredIssueCount}})
+[%collapsible]
+====
+
+[cols="5,2,2"]
+|===
+| Security issue | Workflow State | Severity
+
+{{#each deferredIssues}}
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.workflowState}}
+|{{this.[secdeva/fieldTypes/severity].displayValue}}
+{{/each}}
+|===
+====
+{{/if}}
+
+{{#if failures}}
+
+
+.Policy check failures
+[cols="3,3,4,5"]
+|===
+| Category | Policy check  | Card | Error
+
+{{#each failures}}
+
+{{#each this.policyChecks.failures}}
+| {{this.category}}
+| {{this.title}}
+| xref:{{../key}}.adoc[{{../title}}]
+| {{this.errorMessage}}
+{{/each}}
+{{/each}}
+|===
+
+{{/if}}
+
+{{/each}}

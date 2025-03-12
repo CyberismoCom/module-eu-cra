@@ -1,0 +1,21 @@
+Before products can be placed on the EU market, an EU confirmity assessment procedure must be successfully carried out. This assessment includes confirming conformity with the EU Cyber Resilience Act and other possible regulations.
+
+== How to decide if this task is required
+
+This secure development task is required for all products that include digital elements and are placed on the EU market, and if EU conformity is assessed in this project. Typically, EU conformity assessment is managed on the topmost project level.
+
+Notice that the conformity to EU regulations shall be continuously maintained and updated, where appropriate, during the expected product lifetime or during a period of five years after the placing the product on the market, whichever is shorter.
+
+== How to implement
+
+Perform one of the applicable EU conformity assessment procedures and document it according to the requirments of the procedure.
+
+Notice that the product shall remain in conformity during the expected product lifetime or during a period of five years after the placing of the product on the market, whichever is shorter. Therefore, this secure development task shall be periodically revisited. The manufacturer shall adequately take into account changes in the development and production process or in the design or characteristics of the product and changes in the EU harmonised standards, European cybersecurity certification schemes or EU's common specifications, which have been referred to in the conformity assessment.
+
+== How to review this task
+
+Check that the conformity assessment procedure has been successfully carried out.
+
+Check that the conformity has been revisited recently enough.
+
+Check that the identified security-related findings have been reported as security issues.

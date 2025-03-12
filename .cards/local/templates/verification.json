@@ -1,0 +1,6 @@
+{
+    "name": "eucra/templates/verification",
+    "displayName": "EU CRA - Verification",
+    "description": "Additional tasks for the verification of a development project",
+    "category": "EU Cyber Resilience Act"
+}

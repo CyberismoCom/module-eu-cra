@@ -1,0 +1,32 @@
+.View process diagram
+[%collapsible]
+====
+{{#graph}}
+  "model": "secdeva/graphModels/processDiagram",
+  "view": "secdeva/graphViews/processTask"
+{{/graph}}
+====
+
+Security context refers to a set of assumptions about the product or solution and about the security protections that are expected from the deployment environment. Security context includes descriptions of the intended purpose, foreseeable use, foreseeable misuse, and the essential functionalities. It is important that the development team and the users of the product have the same understanding about the security context.
+
+== How to decide if this secure development task is required
+
+Security context must be documented at least on the topmost project level.
+
+== How to implement
+
+The security context documentation defines, where the product is intended to be used.
+
+{{#report}}
+  "name": "secdeva/reports/createChildDocument",
+  "template": "secdeva/templates/securityContext",
+  "buttonLabel": "Create a security context document"
+{{/report}}
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildDocumentStatus"
+{{/report}}
+
+If the security context has been defined in several places, such as separately on the topmost project and for subprojects, or in several different documents, then check that the definitions are aligned and not conflicting.

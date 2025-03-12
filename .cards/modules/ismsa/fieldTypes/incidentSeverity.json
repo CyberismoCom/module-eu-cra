@@ -1,0 +1,19 @@
+{
+    "name": "ismsa/fieldTypes/incidentSeverity",
+    "displayName": "Incident severity",
+    "dataType": "enum",
+    "enumValues": [
+        {
+            "enumValue": "low",
+            "enumDisplayValue": "Low"
+        },
+        {
+            "enumValue": "medium",
+            "enumDisplayValue": "Medium"
+        },
+        {
+            "enumValue": "high",
+            "enumDisplayValue": "High"
+        }
+    ]
+}

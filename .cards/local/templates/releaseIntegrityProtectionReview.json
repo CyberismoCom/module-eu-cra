@@ -1,0 +1,6 @@
+{
+    "displayName": "Release integrity protection review",
+    "description": "Review of the integrity protection of releases",
+    "category": "Secure development reviews",
+    "name": "eucra/templates/releaseIntegrityProtectionReview"
+}

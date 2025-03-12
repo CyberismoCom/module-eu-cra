@@ -1,0 +1,256 @@
+== Introduction
+
+This secure development management plan documents, how a development project manages secure development in general, and how the secure development processes and tools are integrated to the existing development processes and tools. The processes include configuration management, requirements management, design, implementation, testing,  and various checkpoints and milestones. This plan also describes the metrics and key performance indicators for setting targets and measuring the continuous improvement of secure development.
+
+== Managing configuration items
+
+Configuration management covers how different configuration items are managed.
+
+You can add any missing types of configuration items as new rows in the table below. For each type of configuration item, document the following details:
+
+* Tool: which tool is used for managing these configuration items
+* Versioning and unique identification: document how configuration items are versioned, and how each configuration item is uniquely identified. For example, versioning may be based on the version numbering support from the tool, and unique identification may be based on the URLs provided by the tool.
+* Change history: how change history between component or system versions is recorded and how to generate automatically a list of changes between two component versions. This is especially important for code changes. How to ensure that for each change, the system records the originator, the time and the date of the change.
+* Authorization of changes: Describe the mechanisms to only allow authorized changes to be made. For example, authorization of changes may be based on role-based access control to the tool.
+* Acceptance: Describe how new or newly modified configuration items are accepted. For example, acceptance for code changes may be based on pull requests and code review, acceptance for documents may be based on recording reviews and approvals in the document header, and acceptance for issue tracker issues may be based on Definition of Ready (DoR) guidelines and sprint planning. Notice that the documented process must include steps to review and approve development process artifacts such as requirements specifications, design specifications, and test plans.
+
+For detailed advice about compliance to configuration management requirements, please refer to Appendix A of ISASecure SDLA-312, “ISA Security Compliance Institute — Security Development Lifecycle Assurance - Security Development Lifecycle Assessment “, Version 6.3, December 2022, available at https://isasecure.org/certification/iec-62443-sdla-certification.
+
+=== Configuration item: Source code
+
+Tools:
+
+Versioning and unique identification:
+
+Change history:
+
+Authorisation of changes:
+
+Acceptance:
+
+=== Configuration item: Build system
+
+Tools:
+
+Versioning and unique identification:
+
+Change history:
+
+Authorisation of changes:
+
+Acceptance:
+
+=== Configuration item: Development tools
+
+Tools:
+
+Versioning and unique identification:
+
+Change history:
+
+Authorisation of changes:
+
+Acceptance:
+
+=== Configuration item: Issue tracker
+
+TheEpics, user stories, bugs, as well as Security Issues that result from the secure development process
+
+Tools:
+
+Versioning and unique identification:
+
+Change history:
+
+Authorisation of changes:
+
+Acceptance:
+
+=== Configuration item: Configuration for development, test and production environments
+
+Tools:
+
+Versioning and unique identification:
+
+Change history:
+
+Authorisation of changes:
+
+Acceptance:
+
+=== Configuration item: Design documentation
+
+Tools:
+
+Versioning and unique identification:
+
+Change history:
+
+Authorisation of changes:
+
+Acceptance:
+
+=== Configuration item: Product documentation (end-user documentation)
+
+Tools:
+
+Versioning and unique identification:
+
+Change history:
+
+Authorisation of changes:
+
+Acceptance:
+
+=== Configuration item: Security-related documentation
+
+Tools:
+
+Versioning and unique identification:
+
+Change history:
+
+Authorisation of changes:
+
+Acceptance:
+
+=== Configuration item: Internal secure development tasks
+
+Tools:
+
+Versioning and unique identification:
+
+Change history:
+
+Authorisation of changes:
+
+Acceptance:
+
+=== Configuration item: Security Requirements
+
+Tools:
+
+Versioning and unique identification:
+
+Change history:
+
+Authorisation of changes:
+
+Acceptance:
+
+=== Configuration item: Test plans
+
+Tools:
+
+Versioning and unique identification:
+
+Change history:
+
+Authorisation of changes:
+
+Acceptance:
+
+=== Configuration item: Test reports
+
+Tools:
+
+Versioning and unique identification:
+
+Change history:
+
+Authorisation of changes:
+
+Acceptance:
+
+== Configuration management lifecycle and configuration list
+
+Configuration management is commonly based on the concept of a baseline, which determines a stable starting point, after which strict configuration management controls will be applied. When configuration management controls are applied, the configuration management system shall include a list of all configuration items that comprise the product. The list will be controlled by the CM process.
+
+#TODO: document the lifecycle stage at which formal configuration control is implemented. For example, the configuration management stage may be linked to the release process.#
+
+#TODO: explain how the list of configuration items will be arranged. For example, it can be based on the release notes (version report) template.#
+
+#TODO: explain how and for how long configuration items will be archived. Notice that the EU cyber resilience act requires the product supplier to keep the technical documentation available for authorities for 10 years.#
+
+== Managing security-related issues
+
+Security issues are managed in this tool using the Security issue card type.
+
+#TODO: add here any project-specific considerations and pointers to project-specific guidance.#
+
+== Requirement management process
+
+All product requirements, including but not limited to security requirements, must be documented and there must be a process to review and approve changes to the requirements.
+
+Security requirements are managed in this tool using the requirement card type.
+
+#TODO: add here a pointer to the general requirement management process.#
+
+#TODO: add here any project-specific considerations and pointers to project-specific guidance on managing security requirements.#
+
+== Traceability
+
+The development process shall include tracking the traceability of requirements and tests as follows:
+
+* Forward traceability from requirements to validation tests
+* Backward traceability from validation tests to requirements
+* Backward traceability from threat mitigation tests to security threats
+* Forward traceability from requirements to architectural design
+
+#TODO: Document here how traceabilty is implemented. For example, it may be based on specific usage of issue tracker links, and links between cards in this tool. #
+
+== Software and hardware design process
+
+#TODO: add here a pointer to the general software and hardware design process. Notice that the guidance must include items that promote modular design.#
+
+#TODO: add here any project-specific considerations and pointers to project-specific guidance.#
+
+== Implementation practices
+
+#TODO: add here a pointer to the general software and hardware implementation practices.#
+
+#TODO: add here any project-specific considerations and pointers to project-specific guidance.#
+
+== Testing
+
+#TODO: add here a pointer to the general testing practices. Notice that the testing process must include both verification and validation tests. The validation tests should provide coverage on all of the product requirements. The verification tests should include some level of module testing and integration testing.#
+
+#TODO: add here any project-specific considerations and pointers to project-specific guidance.#
+
+== Milestones and checkpoints
+
+In general, it is recommended to organize 2..6 checkpoints per year to ensure that secure development work stays on track. Existing practices such as program increment reviews or quarterly reviews can be used as the framework.
+
+If milestone reviews or gate reviews are used, then secure development checkpoints can be integrated to the milestone reviews.
+
+#TODO: add here a pointer to the general milestone or checkpoint practices.#
+
+#TODO: add here any project-specific considerations and pointers to project-specific guidance.#
+
+== Key performance indicators
+
+#TODO: describe the metrics and key performance indicators for measuring secure development#
+
+== Version history
+
+[cols="1,1,3"]
+|===============
+|Version | Date | Changes/Author
+
+| 0.1
+| 2024-01-01
+| XYZ changed by N.N.
+
+|===============
+
+== Reviews
+
+{{#createCards}}
+    "template": "base/templates/reviewTask",
+    "buttonLabel": "Add new review task"
+{{/createCards}}
+
+{{#report}}
+  "name": "base/reports/childrenTable",
+  "cardType": "base/cardTypes/reviewTask"
+{{/report}}

@@ -1,0 +1,17 @@
+== Source
+
+EU CRA Annex I (1) (2) (c) :: On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable, products with digital elements shall: (c) ensure that vulnerabilities can be addressed through security updates, including, where applicable, through automatic security updates that are installed within an appropriate timeframe enabled as a default setting, with a clear and easy-to-use opt-out mechanism, through the notification of available updates to users, and the option to temporarily postpone them;
+
+== Requirement description
+
+#TODO: Edit this as applicable and add any product-specific considerations#
+
+See the linked secure development task about documenting the support period. There must be a capability to provide timely security updates for the software components of the product/service during the support period.
+
+Develop or use an existing a software update distribution mechanism. The mechanism should include a function to automatically check the presence of updates and install them, or notify the user of their presence, and where applicable this should be enabled in the default initial configuration. Even if installing updates automatically were not applicable in the product security context, automatic delivery of updates may still be applicable.
+
+For secure delivery of software updates, see the linked secure development task about the integrity protection of releases.
+
+Notice that in order to support this requirement, the product must support data compatibility between versions, so that user data is not lost when software is updated. This requires planning and testing.
+
+

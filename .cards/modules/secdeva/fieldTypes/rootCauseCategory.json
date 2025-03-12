@@ -1,0 +1,31 @@
+{
+    "name": "secdeva/fieldTypes/rootCauseCategory",
+    "displayName": "Root cause category",
+    "dataType": "enum",
+    "enumValues": [
+        {
+            "enumValue": "trainingOrAwareness",
+            "enumDisplayValue": "Gaps in training or awareness"
+        },
+        {
+            "enumValue": "thirdParty",
+            "enumDisplayValue": "3rd party vulnerability"
+        },
+        {
+            "enumValue": "documentation",
+            "enumDisplayValue": "Gaps in documentation"
+        },
+        {
+            "enumValue": "requirements",
+            "enumDisplayValue": "Improper requirements"
+        },
+        {
+            "enumValue": "bestPractice",
+            "enumDisplayValue": "Misapplication of best practices"
+        },
+        {
+            "enumValue": "notApplicable",
+            "enumDisplayValue": "Not applicable"
+        }
+    ]
+}

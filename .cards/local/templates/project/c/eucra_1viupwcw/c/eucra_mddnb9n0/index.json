@@ -1,0 +1,11 @@
+{
+    "title": "Releases",
+    "cardType": "eucra/cardTypes/phase",
+    "workflowState": "",
+    "rank": "0|g",
+    "base/fieldTypes/adoptionStep": "step1",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "links": [],
+    "lastUpdated": "2025-02-28T10:03:34.068Z"
+}

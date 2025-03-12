@@ -1,0 +1,27 @@
+{
+    "name": "ismsa/fieldTypes/riskMitigationStrategy",
+    "displayName": "Mitigation strategy",
+    "dataType": "enum",
+    "enumValues": [
+        {
+            "enumValue": "mitigate",
+            "enumDisplayValue": "Mitigate",
+            "enumDescription": "Risk needs to be mitigated"
+        },
+        {
+            "enumValue": "transfer",
+            "enumDisplayValue": "Transfer/Share",
+            "enumDescription": "Risk can be shared or transferred"
+        },
+        {
+            "enumValue": "avoid",
+            "enumDisplayValue": "Avoid",
+            "enumDescription": "Risk can be avoided"
+        },
+        {
+            "enumValue": "accept",
+            "enumDisplayValue": "Accept",
+            "enumDescription": "Risk can be accepted"
+        }
+    ]
+}

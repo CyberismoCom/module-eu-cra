@@ -1,0 +1,21 @@
+{{#if results}}
+
+== Cards with failed policy checks
+
+[cols="3,3,2"]
+|===
+| Card | Owner | Count
+
+{{#each results}}
+| xref:{{this.key}}.adoc[{{this.title}}]
+| {{this.[base/fieldTypes/owner]}}
+| {{this.[ismsa/fieldTypes/failureCount]}}
+{{/each}}
+
+|===
+
+{{/if}}
+
+{{#unless results}}
+NOTE: The status of risks looks good! There are no policy check failures.
+{{/unless}}

@@ -1,0 +1,27 @@
+{
+    "name": "secdeva/fieldTypes/severity",
+    "displayName": "Severity",
+    "dataType": "enum",
+    "enumValues": [
+        {
+            "enumValue": "critical",
+            "enumDisplayValue": "Critical"
+        },
+        {
+            "enumValue": "high",
+            "enumDisplayValue": "High"
+        },
+        {
+            "enumValue": "medium",
+            "enumDisplayValue": "Medium"
+        },
+        {
+            "enumValue": "low",
+            "enumDisplayValue": "Low"
+        },
+        {
+            "enumValue": "none",
+            "enumDisplayValue": "None"
+        }
+    ]
+}

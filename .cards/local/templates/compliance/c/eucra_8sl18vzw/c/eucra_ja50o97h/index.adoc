@@ -1,0 +1,14 @@
+.View process diagram
+[%collapsible]
+====
+{{#graph}}
+  "model": "secdeva/graphModels/processDiagram",
+  "view": "secdeva/graphViews/complianceRequirement"
+{{/graph}}
+====
+
+== Requirement content
+
+On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable, products with digital elements shall:
+
+(h): protect the availability of essential and basic functions, also after an incident, including through resilience and mitigation measures against denial-of-service attacks;

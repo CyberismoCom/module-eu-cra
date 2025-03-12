@@ -1,0 +1,14 @@
+{
+    "title": "6.8 Information security event reporting",
+    "cardType": "ismsa/cardTypes/control",
+    "workflowState": "Open",
+    "rank": "0|abi",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "ismsa/fieldTypes/controlStatus": null,
+    "ismsa/fieldTypes/controlJustification": null,
+    "ismsa/fieldTypes/controlSummary": null,
+    "ismsa/fieldTypes/controlOrigin": "iso27001y2022Control",
+    "links": [],
+    "lastUpdated": "2024-12-27T06:52:55.949Z"
+}

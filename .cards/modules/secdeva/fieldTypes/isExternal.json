@@ -1,0 +1,19 @@
+{
+    "name": "secdeva/fieldTypes/isExternal",
+    "displayName": "Is the interface or dataflow external?",
+    "dataType": "enum",
+    "enumValues": [
+        {
+            "enumValue": "yes",
+            "enumDisplayValue": "Yes"
+        },
+        {
+            "enumValue": "no",
+            "enumDisplayValue": "No"
+        },
+        {
+            "enumValue": "noInfo",
+            "enumDisplayValue": "Dataflows not defined"
+        }
+    ]
+}

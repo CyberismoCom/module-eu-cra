@@ -1,0 +1,8 @@
+One time tasks needed for establishment and operations of #Company# Information Security Management System (CISMS).
+
+New tasks can be created by pressing
+
+{{#createCards}}
+  "template": "base/templates/oneTimeTask",
+  "buttonLabel": "Add new task"
+{{/createCards}}

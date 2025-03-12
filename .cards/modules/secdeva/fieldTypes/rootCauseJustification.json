@@ -1,0 +1,5 @@
+{
+    "name": "secdeva/fieldTypes/rootCauseJustification",
+    "displayName": "Root cause justification",
+    "dataType": "longText"
+}

@@ -1,0 +1,13 @@
+{
+    "title": "Untitled product security risk",
+    "cardType": "ismsa/cardTypes/risk",
+    "workflowState": "",
+    "rank": "0|b",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "ismsa/fieldTypes/riskInitialLikelihood": null,
+    "ismsa/fieldTypes/riskInitialImpact": null,
+    "ismsa/fieldTypes/riskMitigationStrategy": null,
+    "ismsa/fieldTypes/riskResidualLikelihood": null,
+    "ismsa/fieldTypes/riskResidualImpact": null
+}

@@ -1,0 +1,38 @@
+{{#each results}}
+
+{{#if decisions}}
+
+.Decisions
+[cols="4,3,2"]
+|===
+| Decision | Owner  | Status
+
+{{#each decisions}}
+| xref:{{this.key}}.adoc[{{this.title}}]
+| {{this.[base/fieldTypes/owner]}}
+| {{this.workflowState}}
+{{/each}}
+|===
+{{else}}
+
+There are no decisions in this project.
+
+{{/if}}
+{{#if specifications}}
+.Specifications
+[cols="4,3,2"]
+|===
+| Document | Owner  | Status
+
+{{#each specifications}}
+| xref:{{this.key}}.adoc[{{this.title}}]
+| {{this.[base/fieldTypes/owner]}}
+| {{this.workflowState}}
+{{/each}}
+|===
+{{else}}
+
+There are no design specifications in this project.
+
+{{/if}}
+{{/each}}

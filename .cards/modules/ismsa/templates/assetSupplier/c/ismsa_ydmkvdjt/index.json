@@ -1,0 +1,15 @@
+{
+    "title": "Untitled supplier",
+    "cardType": "ismsa/cardTypes/assetSupplier",
+    "workflowState": "",
+    "rank": "0|b",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": null,
+    "ismsa/fieldTypes/assetProvidedServices": null,
+    "ismsa/fieldTypes/assetContactDetails": null,
+    "ismsa/fieldTypes/assetCriticalityForOperations": null,
+    "ismsa/fieldTypes/assetRiskEvaluationNeeded": null,
+    "ismsa/fieldTypes/assetPersonalInformation": null,
+    "ismsa/fieldTypes/assetLocation": null,
+    "ismsa/fieldTypes/assetBackups": null
+}

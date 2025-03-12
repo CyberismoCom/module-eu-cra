@@ -1,0 +1,17 @@
+== Source
+
+EU CRA Annex I (1) (2) (l) :: On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable, products with digital elements shall: (l) provide security related information by recording and monitoring relevant internal activity, including the access to or modification of data, services or functions, with an opt-out mechanism for the user;
+
+== Requirement description
+
+#TODO: Edit this as applicable and add any product-specific considerations#
+
+Develop or use existing logging guidelines for what should be logged and what information log events should include. The events that should be logged include, for example:
+
+* Access control events
+* Configuration changes
+* Events from security-related tools and monitoring
+
+Access to the logs shall be protected. Read-only access is provided for privileged users only. Logs should be protected from modification and corruption.
+
+The product should support time synchronisation (e.g. using NTP), if applicable.

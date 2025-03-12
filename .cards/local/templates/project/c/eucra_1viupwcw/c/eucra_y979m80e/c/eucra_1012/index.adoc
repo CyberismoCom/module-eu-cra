@@ -1,0 +1,43 @@
+The goal of the vulnerability tracking of a technology is to identify and characterize potential security vulnerabilities in the 3rd party technology.
+
+== How to decide if this secure development task is required
+
+Vulnerability tracking is required for all 3rd party technology.
+
+This analysis must be performed on all executable files.
+
+== How to implement
+
+For products, the development team shall draw up and maintain an SBOM in a commonly used and machine-readable format. The SBOM shall cover at the very least the top-level dependencies.
+
+Notice that vulnerability tracking shall continue even after active development has ended. Vulnerability tracking shall continue also for previously released product versions during their support period.
+
+For interpreted code and binary executable files compiled by the development team, the analysis can be done by creating an SBOM and analysing vulnerabilities based on the SBOM with a dependency tracking tool.
+
+For binary executable files that are compiled by a 3rd party organization, the analysis shall be done by analysing the binary with a software composition analysis tool.
+
+The source for the known vulnerabilities should be the recent contents of an established, industry-recognized public vulnerability database.
+
+If the supplier of a 3rd party component has published information about their vulnerabilities, then ensure that this information is taken into account. Update the threat model, other possible technical documentation and product documentation when applicable.
+
+{{#report}}
+  "name": "secdeva/reports/createChildDocument",
+  "template": "eucra/templates/vulnerabilityTrackingPlan",
+  "buttonLabel": "Create a vulnerability tracking plan"
+{{/report}}
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildDocumentStatus"
+{{/report}}
+
+=== Manual checks
+
+Check the vulnerability tracking plans cover all technologies.
+
+Check that vulnerability tracking plans have been executed.
+
+Check that the identified security-related findings have been reported as security issues.
+
+Check that the information provided by the 3rd party suppliers regarding their vulnerabilities have been processed.

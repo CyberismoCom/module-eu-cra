@@ -1,0 +1,18 @@
+{
+    "cardType": "base/cardTypes/annualTask",
+    "title": "Protect the integrity of releases",
+    "workflowState": "",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/identifier": "eucra_control_integrity-protection-of-release",
+    "base/fieldTypes/adoptionStep": "step2",
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/justification": null,
+    "eucra/fieldTypes/controlImplementer": "Development team",
+    "base/fieldTypes/reviewPeriod": 365,
+    "base/fieldTypes/reviewMonth": null,
+    "base/fieldTypes/lastReviewed": null,
+    "rank": "0|zzo",
+    "lastUpdated": "2025-02-16T18:32:03.055Z",
+    "links": []
+}
+

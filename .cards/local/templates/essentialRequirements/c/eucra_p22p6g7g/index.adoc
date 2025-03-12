@@ -1,0 +1,13 @@
+== Source
+
+EU CRA Annex I (1) (2) (i) :: On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable, products with digital elements shall: (i) minimise the negative impact by the products themselves or connected devices on the availability of services provided by other devices or networks;
+
+== Requirement description
+
+#TODO: Edit this as applicable and add any product-specific considerations#
+
+Ensure that threat modeling aims at minimising outbount external connections, and that the threat model considers threats to other components due to outbound connections.
+
+Security testing may include tests to verify that the product implements mechanisms such as timeouts and exception handling to avoid generating too much requests to a busy or not responsive services.
+
+The hardening of the product components should restrict outbound communications to the minimum.

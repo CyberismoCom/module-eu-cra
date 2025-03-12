@@ -1,0 +1,17 @@
+{
+    "cardType": "base/cardTypes/annualTask",
+    "title": "Manage development tools",
+    "workflowState": "",
+    "rank": "0|d",
+    "lastUpdated": "2025-01-23T13:53:11.185Z",
+    "links": [],
+    "eucra/fieldTypes/controlImplementer": "Development team",
+    "base/fieldTypes/adoptionStep": "step2",
+    "base/fieldTypes/justification": null,
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/reviewPeriod": 365,
+    "base/fieldTypes/reviewMonth": null,
+    "base/fieldTypes/lastReviewed": null,
+    "base/fieldTypes/identifier": "eucra_control_manage-development-tools"
+}

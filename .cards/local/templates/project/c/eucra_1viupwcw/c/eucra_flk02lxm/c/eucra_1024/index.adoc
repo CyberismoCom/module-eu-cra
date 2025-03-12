@@ -1,0 +1,35 @@
+The goal of dynamic testing is to find security issues such as denial-of-service (DoS) due to failing to release runtime handles, memory leaks, and access made to shared memory without authentication.
+
+== How to decide if this secure development task is required
+
+Dynamic runtime resource management testings required in the secure development process. This task is applicable, unless the testing is already managed on another level, such as a higher-level project or subprojects.
+
+A recommended practice is to perform dynamic runtime resource management testing as a part of long-period system testing. If these tests indicate flaws in dynamic runtime resource management then separate investigation is required.
+
+== How to implement
+
+Create a dynamic runtime management test plan and ollow the instructions in the template.
+
+{{#report}}
+  "name": "secdeva/reports/createChildDocument",
+  "template": "eucra/templates/dynamicRuntimeResourceManagementTestPlan",
+  "buttonLabel": "Create a dynamic runtime resource management test plan"
+{{/report}}
+
+Also, ensure that test executions are documented.
+
+Typically, test plans are created and test executions are managed using a test management tool. Link the test plan from the issue tracker to the dynamic runtime management test plan document.
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildDocumentStatus"
+{{/report}}
+
+#TODO: these checks should be automated#
+
+Check that
+
+* Test plans have been reviewed and approved.
+* Test plan has been executed, and
+* Security issues have been reported.

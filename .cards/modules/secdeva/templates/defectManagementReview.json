@@ -1,0 +1,6 @@
+{
+    "displayName": "Defect management review",
+    "description": "A review of defect management in a development project",
+    "category": "Secure development reviews",
+    "name": "secdeva/templates/defectManagementReview"
+}

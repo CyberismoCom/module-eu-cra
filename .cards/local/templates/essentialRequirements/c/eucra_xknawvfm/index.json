@@ -1,0 +1,11 @@
+{
+    "title": "Reduce the impact of an incident",
+    "cardType": "secdeva/cardTypes/requirement",
+    "workflowState": "",
+    "rank": "0|l",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/identifier": "eucra_security-requirement_reduce-the-impact-of-incidents",
+    "links": [],
+    "lastUpdated": "2025-03-10T10:54:17.312Z"
+}

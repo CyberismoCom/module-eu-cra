@@ -1,0 +1,6 @@
+{
+    "displayName": "Cybersecurity target",
+    "description": "A cybersecurity target that needs to be stored in target register.",
+    "category": "Cybersecurity management",
+    "name": "ismsa/templates/securityTarget"
+}

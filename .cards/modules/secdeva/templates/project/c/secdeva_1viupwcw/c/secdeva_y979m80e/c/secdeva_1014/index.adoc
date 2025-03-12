@@ -1,0 +1,43 @@
+.View process diagram
+[%collapsible]
+====
+{{#graph}}
+  "model": "secdeva/graphModels/processDiagram",
+  "view": "secdeva/graphViews/processTask"
+{{/graph}}
+====
+
+Managing 3rd party software updates refers to keeping track of and characterizing the security updates from suppliers of dependent 3rd party components and operating systems. When applicable, 3rd party software updates are applied to the product or distributed to product users.
+
+== How to decide if this secure development task is required
+
+For libraries and packages, security updates can often be managed as a part vulnerability management. In these cases there is no need for managing 3rd party software updates separately.
+
+However, in some cases such as with some commercial-off-the-shelf technology, it can be necessary to manage security updates separately.
+
+== How to implement
+
+Identify the communications channels of the 3rd party product supplier and ensure that you will be notified when the supplier makes new security updates available.
+
+When a new security update is published, then qualify the update for applicability, suitability and compatibility.
+
+Notice that 3rd party software update management shall continue even after active development has ended. 3rd party software update management shall continue also for previously released product versions during their support period.
+
+If the supplier of a 3rd party component has published information about their security updates, then ensure that this information is taken into account. Update the threat model, other possible technical documentation and product documentation when applicable.
+
+{{#report}}
+  "name": "secdeva/reports/createChildReview",
+  "template": "secdeva/templates/softwareUpdateManagement",
+  "buttonLabel": "Create a review of software update management"
+{{/report}}
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildReviewStatus"
+{{/report}}
+
+=== Manual checks
+
+A checklist for manual checks is provided in the template for the review of software update vulnerability management.
+

@@ -1,0 +1,14 @@
+{
+    "name": "secdeva/cardTypes/person",
+    "workflow": "secdeva/workflows/entity",
+    "customFields": [
+        {
+            "name": "secdeva/fieldTypes/description",
+            "isCalculated": false
+        }
+    ],
+    "alwaysVisibleFields": [
+        "secdeva/fieldTypes/description"
+    ],
+    "optionallyVisibleFields": []
+}

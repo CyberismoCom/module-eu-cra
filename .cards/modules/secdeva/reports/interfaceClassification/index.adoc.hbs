@@ -1,0 +1,62 @@
+{{#each results}}
+
+{{#if parentDataflows}}
+
+IMPORTANT: There are dataflows to the parent card *{{parentName}}*. Automatic classification of interfaces does not work, unless dataflows are rerouted to interfaces. Change the destination of these dataflows to be one of the interfaces of *{{parentName}}*.
+
+.Dataflows to {{parentName}} that should be rerouted to one of its interfaces
+[cols="2,3"]
+|===
+| Source | Description
+
+{{#each parentDataflows}}
+|{{this.sourceType}} xref:{{this.sourceCardKey}}.adoc[{{this.sourceTitle}}]
+|{{this.description}}
+{{/each}}
+|===
+{{/if}}
+
+This interface is:
+
+{{#if external}}
+* [x] External interface that may be used by external entities or users that are not part of the system (see the table below for details)
+* [ ] Internal interface
+{{else}}
+* [ ] External interface that may be used by external entities that are not part of the system
+* [x] Internal interface (no dataflows from external entities or users found)
+
+{{/if}}
+
+This interface:
+
+{{#if crossesTrustBoundary}}
+* [x] Crosses a trust boundary (see details in the table below)
+* [ ] Does not cross a trust boundary
+{{else}}
+* [ ] Crosses a trust boundary
+* [x] Does not cross a trust boundary (no dataflows crossing trust boundaries found)
+
+{{/if}}
+
+{{#if dataflows}}
+
+.Dataflows to this inteface
+[cols="2,3,1,2"]
+|===
+| Source | Description | External? | Crosses trust boundary?
+
+{{#each dataflows}}
+|{{this.sourceType}} xref:{{this.sourceCardKey}}.adoc[{{this.sourceTitle}}]
+|{{this.description}}
+|{{this.external}}
+|{{#if this.trustBoundaries}}Yes: {{#each this.trustBoundaries}}xref:{{this.key}}.adoc[{{this.title}}]{{#unless @last}}, {{/unless}}{{/each}}{{else}} No {{/if}}
+{{/each}}
+|===
+
+{{else}}
+
+IMPORTANT: The dataflow model does not include any dataflows to this interface. Create dataflows as links in the dataflow model.
+
+{{/if}}
+
+{{/each}}

@@ -1,0 +1,5 @@
+{
+    "name": "secdeva/fieldTypes/sbomComponentName",
+    "displayName": "SBOM component name",
+    "dataType": "shortText"
+}

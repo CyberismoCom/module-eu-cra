@@ -1,0 +1,5 @@
+== Task description
+
+Review the security advisory.
+
+**Note**: The reviewer cannot be the same person as the owner or the approver of the document.

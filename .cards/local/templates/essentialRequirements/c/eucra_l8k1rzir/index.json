@@ -1,0 +1,11 @@
+{
+    "title": "Secure by default",
+    "cardType": "secdeva/cardTypes/requirement",
+    "workflowState": "",
+    "rank": "0|c",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/identifier": "eucra_security-requirement_secure-by-default",
+    "links": [],
+    "lastUpdated": "2025-03-10T10:19:54.323Z"
+}

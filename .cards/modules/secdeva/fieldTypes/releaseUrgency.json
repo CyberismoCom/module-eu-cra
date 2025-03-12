@@ -1,0 +1,18 @@
+{
+    "name": "secdeva/fieldTypes/releaseUrgency",
+    "displayName": "Release urgency",
+    "dataType": "enum",
+    "enumValues": [
+        {
+            "enumValue": "normal",
+            "enumDisplayValue": "Normal",
+            "enumDescription": "The issue can be adressed in a next regular release"
+        },
+        {
+            "enumValue": "urgent",
+            "enumDisplayValue": "Urgent",
+            "enumDescription": "The issue must be released urgently"
+        }
+
+    ]
+}

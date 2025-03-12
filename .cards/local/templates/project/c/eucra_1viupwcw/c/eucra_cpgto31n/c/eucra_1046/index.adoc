@@ -1,0 +1,18 @@
+Compilers typically support many security features and other settings that may impact the security of the product. Therefore, it is important to check that the used compiler settings are secure.
+
+== How to decide if this secure development task is required
+
+This review task is required if the project manages compiled binaries.
+
+This review task must be performed on all binary executable files.
+
+== How to implement
+
+* For executable files compiled by the development team, the analysis can be done by reviewing that secure compiler settings are used in the build chain.
+* For executable files that are compiled by a 3rd party organization, the analysis shall be done by analysing the binary with a software composition analysis tool that supports detecting insecure compiler settings.
+
+== How to review this task
+
+Check that the security testing of compiler settings has been planned and executed.
+
+Check that any identified security-related findings have been reported as security issues.

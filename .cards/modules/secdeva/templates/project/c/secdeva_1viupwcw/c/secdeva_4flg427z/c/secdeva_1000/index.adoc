@@ -1,0 +1,33 @@
+.View process diagram
+[%collapsible]
+====
+{{#graph}}
+  "model": "secdeva/graphModels/processDiagram",
+  "view": "secdeva/graphViews/processTask"
+{{/graph}}
+====
+
+Assigning persons to their security-related roles is done to ensure that the responsibilities get done and that people are aware of their responsibilities. Documenting the roles is also useful when planning the security trainings.
+
+== How to decide if this secure development task is required
+
+This control is always required, because persons need to be assigned to roles to execute the secure development processes.
+
+== How to implement this task
+
+Assign people to the security-related roles by editing the child cards. Add new role assignments, as needed.
+
+{{#createCards}}
+  "template": "base/templates/roleAssignment",
+  "buttonLabel": "Add a role assignment"
+{{/createCards}}
+
+{{#report}}
+  "name": "base/reports/roleAssignments"
+{{/report}}
+
+== How to review this task
+
+* Check that all the required roles have been assigned
+* Ensure that the nominations are up to date.
+* If needed, confirm with the assignee that they are aware of this role assignment.

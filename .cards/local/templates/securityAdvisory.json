@@ -1,0 +1,6 @@
+{
+    "displayName": "Security advisory",
+    "description": "A public advisory about a vulnerability or an incident",
+    "category": "Secure development specifications",
+    "name": "eucra/templates/securityAdvisory"
+}

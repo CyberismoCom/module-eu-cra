@@ -1,0 +1,58 @@
+selectAll.
+
+result(result).
+
+field(result, "scopingNotDone", "void") :-
+    field({{cardKey}}, "workflowState", State),
+    secdeva_scopingStatus(State, "Scoping not done").
+
+field(result, "outOfScope", "void") :-
+    field({{cardKey}}, "workflowState", State),
+    secdeva_scopingStatus(State, "Out of scope").
+
+field(result, "inScope", "void") :-
+    field({{cardKey}}, "workflowState", State),
+    secdeva_scopingStatus(State, "In scope").
+
+field(result, "reviewDocumentOk", "void") :-
+    childResult(_, Review, _),
+    field(Review, "workflowState", "Passed"),
+    field(Review, "base/fieldTypes/lastReviewed", LastReviewed),
+    field(Review, "base/fieldTypes/reviewPeriod", ReviewPeriod),
+    @daysSince(LastReviewed) = DaysSinceReview,
+    DaysSinceReview <= ReviewPeriod.
+
+childResult(result, Review, "reviews") :-
+    parent(Review, {{cardKey}}),
+    field(Review, "cardType", "base/cardTypes/review").
+
+field(
+    Review,
+    "reviewExpiration",
+    @concatenate("❗Expired ", DaysSinceReview - ReviewPeriod, " day(s) ago")
+    ) :-
+        childResult(_, Review, _),
+        field(Review, "workflowState", "Passed"),
+        field(Review, "base/fieldTypes/lastReviewed", LastReviewed),
+        field(Review, "base/fieldTypes/reviewPeriod", ReviewPeriod),
+        @daysSince(LastReviewed) = DaysSinceReview,
+        DaysSinceReview > ReviewPeriod.
+
+field(Review, "reviewExpiration", "❗Last reviewed date not set") :-
+    childResult(_, Review, _),
+    field(Review, "workflowState", "Passed"),
+    not field(Review, "base/fieldTypes/lastReviewed", _).
+
+field(
+    Review,
+    "reviewExpiration",
+    @concatenate("✅ Still valid, will expire in ", ReviewPeriod - DaysSinceReview, " day(s)" )
+    ) :-
+        childResult(_, Review, _),
+        field(Review, "workflowState", "Passed"),
+        field(Review, "base/fieldTypes/lastReviewed", LastReviewed),
+        field(Review, "base/fieldTypes/reviewPeriod", ReviewPeriod),
+        @daysSince(LastReviewed) = DaysSinceReview,
+        DaysSinceReview <= ReviewPeriod.
+
+order(2, "reviews", 1, "rank", "ASC").

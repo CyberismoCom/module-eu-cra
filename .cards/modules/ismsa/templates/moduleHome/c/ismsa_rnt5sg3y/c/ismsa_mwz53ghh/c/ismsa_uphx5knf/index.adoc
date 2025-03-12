@@ -1,0 +1,14 @@
+## Risks related to suppliers
+
+Add new risks related to suppliers using risk-template.
+
+{{#createCards}}
+  "template": "ismsa/templates/risk",
+  "buttonLabel": "Add new risk"
+{{/createCards}}
+
+{{#report}}
+    "name": "ismsa/reports/risksByAssetType",
+    "assetType": "ismsa/cardTypes/assetSupplier"
+{{/report}}
+

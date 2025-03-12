@@ -1,0 +1,7 @@
+{{#if results}}
+{{#each results}}
+xref:{{this.key}}.adoc[{{this.title}}]{{#unless @last}}, {{/unless}}
+{{/each}}
+{{else}}
+{{messageIfNoResults}}
+{{/if}}

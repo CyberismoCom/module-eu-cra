@@ -1,0 +1,18 @@
+Repeating tasks needed for establishment and operations of Company Information Security Management System (CISMS).
+
+New tasks can be created by pressing
+
+{{#createCards}}
+  "template": "base/templates/monthlyTask",
+  "buttonLabel": "Add new monthly task"
+{{/createCards}}
+
+{{#createCards}}
+  "template": "base/templates/quarterlyTask",
+  "buttonLabel": "Add new quarterly task"
+{{/createCards}}
+
+{{#createCards}}
+  "template": "base/templates/annualTask",
+  "buttonLabel": "Add new yearly task"
+{{/createCards}}

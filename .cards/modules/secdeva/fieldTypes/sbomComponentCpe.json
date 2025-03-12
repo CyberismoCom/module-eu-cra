@@ -1,0 +1,5 @@
+{
+    "name": "secdeva/fieldTypes/sbomComponentCpe",
+    "displayName": "SBOM Common Product Enumeration (CPE)",
+    "dataType": "shortText"
+}

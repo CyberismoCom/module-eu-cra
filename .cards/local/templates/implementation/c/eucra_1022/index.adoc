@@ -1,0 +1,25 @@
+The attack surface of a system is the sum of the system's attack vectors. Attack vectors are routes or avenues by which attacks or other security issues may enter the system. The attack surface needs to be documented, in a detailed technical level,  so that it can be used later in the attack surface analysis phase to verify that the attack surface of the system has been minimized.
+
+== How to decide if this secure development task is required
+
+Documenting the attack surface as an attack surface specification is required in the secure development process. This task is applicable, unless attack surface is already managed on another level, such as a higher-level project or subprojects.
+
+== How to implement
+
+Create an attack surface specification and follow the instructions in the template.
+
+{{#report}}
+  "name": "secdeva/reports/createChildDocument",
+  "template": "eucra/templates/attackSurfaceSpecification",
+  "buttonLabel": "Create an attack surface specification"
+{{/report}}
+
+Attack surface specification can be documented either manually, or by creating an approved baseline with an attack surface analysis tool. If you use an attack surface analysis tool to create a baseline, you should store the baseline along with the attack surface specification that explains your practices of documenting the attack surface.
+
+A recommended practice is to keep the attack surface specification constantly up-to-date and perform attack surface analysis at least annually.
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildDocumentStatus"
+{{/report}}

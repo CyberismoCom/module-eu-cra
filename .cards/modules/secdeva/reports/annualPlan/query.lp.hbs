@@ -1,0 +1,140 @@
+selectAll.
+
+result(result).
+
+childResult(result, Control, ReviewMonth) :-
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(Control, Project),
+    field(Control, "cardType", "base/cardTypes/annualTask"),
+    field(Control, "base/fieldTypes/reviewMonth", ReviewMonth),
+    not hiddenInTreeView(Control).
+
+childResult(result, Control, "january") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(Control, Project),
+    field(Control, "cardType", "base/cardTypes/quarterlyTask"),
+    field(Control, "base/fieldTypes/quarterlyReviewMonth", "month1"),
+    not hiddenInTreeView(Control).
+
+childResult(result, Control, "february") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(Control, Project),
+    field(Control, "cardType", "base/cardTypes/quarterlyTask"),
+    field(Control, "base/fieldTypes/quarterlyReviewMonth", "month2"),
+    not hiddenInTreeView(Control).
+
+childResult(result, Control, "march") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(Control, Project),
+    field(Control, "cardType", "base/cardTypes/quarterlyTask"),
+    field(Control, "base/fieldTypes/quarterlyReviewMonth", "month3"),
+    not hiddenInTreeView(Control).
+
+childResult(result, Control, "april") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(Control, Project),
+    field(Control, "cardType", "base/cardTypes/quarterlyTask"),
+    field(Control, "base/fieldTypes/quarterlyReviewMonth", "month1"),
+    not hiddenInTreeView(Control).
+
+childResult(result, Control, "may") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(Control, Project),
+    field(Control, "cardType", "base/cardTypes/quarterlyTask"),
+    field(Control, "base/fieldTypes/quarterlyReviewMonth", "month2"),
+    not hiddenInTreeView(Control).
+
+childResult(result, Control, "june") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(Control, Project),
+    field(Control, "cardType", "base/cardTypes/quarterlyTask"),
+    field(Control, "base/fieldTypes/quarterlyReviewMonth", "month3"),
+    not hiddenInTreeView(Control).
+
+childResult(result, Control, "july") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(Control, Project),
+    field(Control, "cardType", "base/cardTypes/quarterlyTask"),
+    field(Control, "base/fieldTypes/quarterlyReviewMonth", "month1"),
+    not hiddenInTreeView(Control).
+
+childResult(result, Control, "august") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(Control, Project),
+    field(Control, "cardType", "base/cardTypes/quarterlyTask"),
+    field(Control, "base/fieldTypes/quarterlyReviewMonth", "month2"),
+    not hiddenInTreeView(Control).
+
+childResult(result, Control, "september") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(Control, Project),
+    field(Control, "cardType", "base/cardTypes/quarterlyTask"),
+    field(Control, "base/fieldTypes/quarterlyReviewMonth", "month3"),
+    not hiddenInTreeView(Control).
+
+childResult(result, Control, "october") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(Control, Project),
+    field(Control, "cardType", "base/cardTypes/quarterlyTask"),
+    field(Control, "base/fieldTypes/quarterlyReviewMonth", "month1"),
+    not hiddenInTreeView(Control).
+
+childResult(result, Control, "november") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(Control, Project),
+    field(Control, "cardType", "base/cardTypes/quarterlyTask"),
+    field(Control, "base/fieldTypes/quarterlyReviewMonth", "month2"),
+    not hiddenInTreeView(Control).
+
+childResult(result, Control, "december") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(Control, Project),
+    field(Control, "cardType", "base/cardTypes/quarterlyTask"),
+    field(Control, "base/fieldTypes/quarterlyReviewMonth", "month3"),
+    not hiddenInTreeView(Control).
+
+field(Control, "secdeva/fieldTypes/needsAttention", @concatenate("No. Task is out of scope, review will expire in ", ReviewPeriod - DaysSinceReview  ," day(s).")) :-
+    childResult(_, Control, _),
+    field(Control, "workflowState", "Closed as not applicable"),
+    field(Control, "base/fieldTypes/lastReviewed", LastReviewed),
+    field(Control, "base/fieldTypes/reviewPeriod", ReviewPeriod),
+    @daysSince(LastReviewed) = DaysSinceReview,
+    DaysSinceReview <= ReviewPeriod.
+
+field(Control, "secdeva/fieldTypes/needsAttention", @concatenate("❗*Yes*: must be reviewed. The review has expired ", DaysSinceReview - ReviewPeriod  ," day(s) ago.")) :-
+    childResult(_, Control, _),
+    field(Control, "workflowStateCategory", "closed"),
+    field(Control, "base/fieldTypes/lastReviewed", LastReviewed),
+    field(Control, "base/fieldTypes/reviewPeriod", ReviewPeriod),
+    @daysSince(LastReviewed) = DaysSinceReview,
+    DaysSinceReview > ReviewPeriod.
+
+field(Control, "secdeva/fieldTypes/needsAttention", "❗*Yes*: the date of latest review must be set.") :-
+    childResult(_, Control, _),
+    field(Control, "workflowStateCategory", "closed"),
+    not field(Control, "base/fieldTypes/lastReviewed", _),
+    field(Control, "base/fieldTypes/reviewPeriod", _).
+
+field(Control, "secdeva/fieldTypes/needsAttention", @concatenate("No. Done, review will expire in ", ReviewPeriod - DaysSinceReview  ," day(s).")) :-
+    childResult(_, Control, _),
+    field(Control, "workflowState", "Closed as done"),
+    field(Control, "base/fieldTypes/lastReviewed", LastReviewed),
+    field(Control, "base/fieldTypes/reviewPeriod", ReviewPeriod),
+    @daysSince(LastReviewed) = DaysSinceReview,
+    DaysSinceReview <= ReviewPeriod.
+
+field(Control, "secdeva/fieldTypes/needsAttention", "❗*Yes*: task must be scoped.") :-
+    childResult(_, Control, _),
+    field(Control, "workflowState", "Open").
+
+field(Control, "secdeva/fieldTypes/needsAttention", "❗*Yes*: task must be done.") :-
+    childResult(_, Control, _),
+    field(Control, "workflowState", "To do").
+
+field(Control, "secdeva/fieldTypes/needsAttention", "❗*Yes*: task must be completed.") :-
+    childResult(_, Control, _),
+    field(Control, "workflowState", "In progress").
+
+
+orderBy("title", "ASC").
+

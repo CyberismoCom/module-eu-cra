@@ -1,0 +1,8 @@
+{
+    "title": "Solution trust boundary",
+    "cardType": "secdeva/cardTypes/trustBoundary",
+    "workflowState": "",
+    "rank": "0|b",
+    "secdeva/fieldTypes/description": null,
+    "secdeva/fieldTypes/technology": null
+}

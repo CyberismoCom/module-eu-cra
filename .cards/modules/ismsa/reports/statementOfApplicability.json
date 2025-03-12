@@ -1,0 +1,6 @@
+{
+    "displayName": "Statement of Applicability (SoA)",
+    "description": "A table of ISO27001 controls and other relevant controls",
+    "category": "ISMS report",
+    "name": "ismsa/reports/statementOfApplicability"
+}

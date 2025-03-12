@@ -1,0 +1,6 @@
+{
+    "displayName": "Data asset",
+    "description": "Valuable information collection that needs to be protected",
+    "category": "Asset management",
+    "name": "ismsa/templates/assetData"
+}

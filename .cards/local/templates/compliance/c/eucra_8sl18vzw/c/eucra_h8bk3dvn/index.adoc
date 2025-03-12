@@ -1,0 +1,13 @@
+.View process diagram
+[%collapsible]
+====
+{{#graph}}
+  "model": "secdeva/graphModels/processDiagram",
+  "view": "secdeva/graphViews/complianceRequirement"
+{{/graph}}
+====
+
+== Requirement content
+
+On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable, products with digital elements shall:
+(a) be made available on the market without known exploitable vulnerabilities;

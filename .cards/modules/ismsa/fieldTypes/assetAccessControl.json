@@ -1,0 +1,6 @@
+{
+    "name": "ismsa/fieldTypes/assetAccessControl",
+    "displayName": "Access control",
+    "fieldDescription": "How access to this asset is controlled",
+    "dataType": "longText"
+}

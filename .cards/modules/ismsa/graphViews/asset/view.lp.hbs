@@ -1,0 +1,33 @@
+ismsa_firstAssetAncestor(Card, Card) :- ismsa_asset(Card).
+
+ismsa_firstAssetAncestor(Card, Asset) :-
+    not ismsa_asset(Card),
+    ancestor(Card, Asset),
+    ismsa_asset(Asset),
+    not ismsa_asset(MiddleAncestor) :
+    ancestor(Card, MiddleAncestor),
+    ancestor(MiddleAncestor, Asset).
+
+visible(Asset) :- ismsa_firstAssetAncestor({{cardKey}}, Asset).
+
+visible(Risk) :-
+    field(Risk, "cardType", "ismsa/cardTypes/risk"),
+    link({{cardKey}}, Risk, "ismsa/linkTypes/presentsRisk").
+
+visible(Control) :-
+    field(Control, "cardType", "ismsa/cardTypes/control"),
+    field(Risk, "cardType", "ismsa/cardTypes/risk"),
+    visible(Risk),
+    link(Control, Risk, "ismsa/linkTypes/mitigates").
+
+visible(Requirement) :-
+    field(Requirement, "cardType", "secdeva/cardTypes/requirement"),
+    field(Risk, "cardType", "ismsa/cardTypes/risk"),
+    visible(Risk),
+    link(Requirement, Risk, "ismsa/linkTypes/mitigates").
+
+visible(Task) :-
+    base_recurringTask(Task),
+    field(Risk, "cardType", "ismsa/cardTypes/risk"),
+    visible(Risk),
+    link(Task, Risk, "ismsa/linkTypes/mitigates").

@@ -1,0 +1,12 @@
+{
+    "title": "ISO27001 controls",
+    "cardType": "ismsa/cardTypes/register",
+    "workflowState": "",
+    "rank": "0|a",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/identifier": "ISO27001-2022_controls_all",
+    "ismsa/fieldTypes/adoptionStep": "step1",
+    "ismsa/fieldTypes/progress": "control-progress",
+    "labels": []
+}

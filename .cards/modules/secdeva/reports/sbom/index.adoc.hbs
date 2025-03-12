@@ -1,0 +1,25 @@
+
+----
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.6",
+  "version" : 1,
+  "components" : [
+{{#each results}}
+    {
+        "type": "{{this.[secdeva/fieldTypes/sbomComponentType].value}}",
+{{#if this.[secdeva/fieldTypes/sbomComponentGroup]}}
+        "group": "{{this.[secdeva/fieldTypes/sbomComponentGroup]}}",
+{{/if}}
+{{#if this.[secdeva/fieldTypes/sbomComponentPurl]}}
+        "purl": "{{this.[secdeva/fieldTypes/sbomComponentPurl]}}",
+{{/if}}
+{{#if this.[secdeva/fieldTypes/sbomComponentCpe]}}
+        "cpe": "{{this.[secdeva/fieldTypes/sbomComponentCpe]}}",
+{{/if}}
+        "name": "{{this.[secdeva/fieldTypes/sbomComponentName]}}"
+    } {{#unless @last}},{{/unless}}
+{{/each}}
+  ]
+}
+----

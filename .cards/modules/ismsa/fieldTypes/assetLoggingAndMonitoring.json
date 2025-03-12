@@ -1,0 +1,6 @@
+{
+    "name": "ismsa/fieldTypes/assetLoggingAndMonitoring",
+    "displayName": "Logging and monitoring",
+    "fieldDescription": "How logging and monitoring is implemented for this asset",
+    "dataType": "longText"
+}

@@ -1,0 +1,13 @@
+{
+    "name": "ismsa/linkTypes/records",
+    "outboundDisplayName": "records evidence of",
+    "inboundDisplayName": "evidence recorded by",
+    "sourceCardTypes": [
+        "ismsa/cardTypes/register",
+        "ismsa/cardTypes/riskRegister"
+    ],
+    "destinationCardTypes": [
+        "base/cardTypes/controlledDocument"
+    ],
+    "enableLinkDescription": false
+}

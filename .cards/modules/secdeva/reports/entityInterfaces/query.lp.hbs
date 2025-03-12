@@ -1,0 +1,108 @@
+selectAll.
+
+secdeva_ancestorOrSelf(Ancestor, Card) :-
+     ancestor(Ancestor, Card).
+
+secdeva_ancestorOrSelf(Card, Card) :-
+     card(Card).
+
+result(result).
+
+% outbound external dataflow
+childResult(result, @concatenate(A, B, Title), "externalDataflows") :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_ancestorOrSelf(A, {{cardKey}}),
+     not secdeva_ancestorOrSelf(B, {{cardKey}}).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/direction", "Outbound") :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_ancestorOrSelf(A, {{cardKey}}),
+     not secdeva_ancestorOrSelf(B, {{cardKey}}).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/title", Title) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_ancestorOrSelf(A, {{cardKey}}),
+     not secdeva_ancestorOrSelf(B, {{cardKey}}).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/externalTitle", External) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_ancestorOrSelf(A, {{cardKey}}),
+     not secdeva_ancestorOrSelf(B, {{cardKey}}),
+     field(B, "title", External).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/externalCardKey", B) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_ancestorOrSelf(A, {{cardKey}}),
+     not secdeva_ancestorOrSelf(B, {{cardKey}}).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/internalTitle", Internal) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_ancestorOrSelf(A, {{cardKey}}),
+     not secdeva_ancestorOrSelf(B, {{cardKey}}),
+     field(A, "title", Internal).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/internalCardKey", A) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_ancestorOrSelf(A, {{cardKey}}),
+     not secdeva_ancestorOrSelf(B, {{cardKey}}).
+
+% inbound external dataflow
+
+childResult(result, @concatenate(A, B, Title), "externalDataflows") :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     not secdeva_ancestorOrSelf(A, {{cardKey}}),
+     secdeva_ancestorOrSelf(B, {{cardKey}}).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/direction", "Inbound") :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     not secdeva_ancestorOrSelf(A, {{cardKey}}),
+     secdeva_ancestorOrSelf(B, {{cardKey}}).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/title", Title) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     not secdeva_ancestorOrSelf(A, {{cardKey}}),
+     secdeva_ancestorOrSelf(B, {{cardKey}}).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/externalTitle", External) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     not secdeva_ancestorOrSelf(A, {{cardKey}}),
+     secdeva_ancestorOrSelf(B, {{cardKey}}),
+     field(A, "title", External).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/externalCardKey", A) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     not secdeva_ancestorOrSelf(A, {{cardKey}}),
+     secdeva_ancestorOrSelf(B, {{cardKey}}),
+     field(B, "title", External).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/internalTitle", Internal) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     not secdeva_ancestorOrSelf(A, {{cardKey}}),
+     secdeva_ancestorOrSelf(B, {{cardKey}}),
+     field(B, "title", Internal).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/internalCardKey", B) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     not secdeva_ancestorOrSelf(A, {{cardKey}}),
+     secdeva_ancestorOrSelf(B, {{cardKey}}).
+
+% Interfaces
+
+childResult(result, Interface, "interfaces") :-
+    field(Interface, "cardType", "secdeva/cardTypes/interface"),
+    ancestor(Interface, {{cardKey}}).
+
+field(Interface, "secdeva/fieldTypes/interfaceElementCardKey", Element) :-
+    childResult(result, Interface, "interfaces"),
+    parent(Interface, Element).
+
+field(Interface, "secdeva/fieldTypes/interfaceElementTitle", Title) :-
+    childResult(result, Interface, "interfaces"),
+    parent(Interface, Element),
+    field(Element, "title", Title).
+
+order(2, "externalDataflows", 1, "secdeva/fieldTypes/direction", "ASC").
+order(2, "externalDataflows", 2, "secdeva/fieldTypes/internalTitle", "ASC").
+
+order(2, "interfaces", 1, "secdeva/fieldTypes/interfaceElementTitle", "ASC").
+order(2, "interfaces", 2, "title", "ASC").

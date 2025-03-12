@@ -1,0 +1,6 @@
+{
+    "displayName": "Product documentation review",
+    "description": "Review of the security considerations in product manuals",
+    "category": "Secure development reviews",
+    "name": "eucra/templates/productDocumentationReview"
+}

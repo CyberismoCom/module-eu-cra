@@ -1,0 +1,16 @@
+## Company risk register
+
+Cybersecurity risk management is the core of an information security management system.
+It supports business continuity by identifying the key risks and prioritising the mitigation efforts by starting with the controls the matter the most.
+
+This register contains an up-to-date registry of #Company Oy# cybersecurity risks.
+
+Currently, the following subregisters have been defined for risks:
+
+{{#report}}
+  "name": "ismsa/reports/subregisters"
+{{/report}}
+
+{{#report}}
+  "name": "ismsa/reports/risksByOwner"
+{{/report}}

@@ -1,0 +1,6 @@
+{
+    "displayName": "Controlled document child cards",
+    "description": "The status of controlled documents",
+    "category": "Secure development",
+    "name": "secdeva/reports/checkChildDocumentStatus"
+}

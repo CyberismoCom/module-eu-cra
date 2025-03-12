@@ -1,0 +1,17 @@
+## ISO27001 controls
+
+The information security controls from Annex A of ISO27001:2022 are divided into four categories:
+
+* Organizational controls
+
+* People controls
+
+* Physical controls
+
+* Technological controls
+
+Controls for each subcategory have been added using control-template.
+
+**Note**: Control descriptions are not included due to copy-right reasons. 
+For full control descriptions, please check ISO27001:2022 standard. 
+For implementation guidelines, please check also ISO27002:2022.

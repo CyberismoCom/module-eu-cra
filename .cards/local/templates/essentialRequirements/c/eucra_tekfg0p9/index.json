@@ -1,0 +1,11 @@
+{
+    "title": "Possibility to remove all data",
+    "cardType": "secdeva/cardTypes/requirement",
+    "workflowState": "",
+    "rank": "0|n",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/identifier": "eucra_security-requirement_possibility-to-remove-all-data",
+    "links": [],
+    "lastUpdated": "2025-03-10T10:57:46.432Z"
+}

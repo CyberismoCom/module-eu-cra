@@ -1,0 +1,13 @@
+[cols="1,2,2",frame=none]
+|===
+| ^.^| Progress ^.^| Number of policy check failures
+
+{{#each results}}
+
+.^| xref:{{this.key}}.adoc[{{this.title}}]
+^| pass:[<span style="font-size:4vw;">{{this.[base/fieldTypes/progress]}}%</span>]
+^| pass:[<span style="font-size:4vw;">{{this.[ismsa/fieldTypes/failureCount]}}</span>]
+
+{{/each}}
+
+|===

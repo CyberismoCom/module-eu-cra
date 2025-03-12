@@ -1,0 +1,14 @@
+{
+    "title": "8.27 Secure system architecture and engineering principles",
+    "cardType": "ismsa/cardTypes/control",
+    "workflowState": "Open",
+    "rank": "0|adzo",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "ismsa/fieldTypes/controlStatus": null,
+    "ismsa/fieldTypes/controlJustification": null,
+    "ismsa/fieldTypes/controlSummary": null,
+    "ismsa/fieldTypes/controlOrigin": "iso27001y2022Control",
+    "links": [],
+    "lastUpdated": "2024-12-27T07:35:53.132Z"
+}

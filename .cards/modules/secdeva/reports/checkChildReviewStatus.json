@@ -1,0 +1,6 @@
+{
+    "displayName": "Review child cards",
+    "description": "The status of review reports",
+    "category": "Secure development",
+    "name": "secdeva/reports/checkChildReviewStatus"
+}

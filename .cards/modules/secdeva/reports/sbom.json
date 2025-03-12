@@ -1,0 +1,6 @@
+{
+    "displayName": "SBOM",
+    "description": "Generate an SBOM from technology selection documents",
+    "category": "Secure development",
+    "name": "secdeva/reports/sbom"
+}

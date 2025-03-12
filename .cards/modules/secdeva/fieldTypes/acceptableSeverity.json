@@ -1,0 +1,28 @@
+{
+    "name": "secdeva/fieldTypes/acceptableSeverity",
+    "displayName": "Acceptable severity",
+    "fieldDescription": "If the severity of a security issue is higher than acceptable severity, then risk cannot be accepted.",
+    "dataType": "enum",
+    "enumValues": [
+        {
+            "enumValue": "critical",
+            "enumDisplayValue": "Critical"
+        },
+        {
+            "enumValue": "high",
+            "enumDisplayValue": "High"
+        },
+        {
+            "enumValue": "medium",
+            "enumDisplayValue": "Medium"
+        },
+        {
+            "enumValue": "low",
+            "enumDisplayValue": "Low"
+        },
+        {
+            "enumValue": "none",
+            "enumDisplayValue": "None"
+        }
+    ]
+}

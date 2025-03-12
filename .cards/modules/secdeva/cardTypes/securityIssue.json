@@ -1,0 +1,41 @@
+{
+    "name": "secdeva/cardTypes/securityIssue",
+    "workflow": "secdeva/workflows/securityIssue",
+    "customFields": [
+        {
+            "name": "secdeva/fieldTypes/securityIssueCategory"
+        },
+        {
+            "name": "secdeva/fieldTypes/severity"
+        },
+        {
+            "name": "secdeva/fieldTypes/severityJustification"
+        },
+        {
+            "name": "secdeva/fieldTypes/rootCauseCategory"
+        },
+        {
+            "name": "secdeva/fieldTypes/rootCauseJustification"
+        },
+        {
+            "name": "secdeva/fieldTypes/strategy"
+        },
+        {
+            "name": "secdeva/fieldTypes/reporting"
+        },
+        {
+            "name": "secdeva/fieldTypes/testingToBypassMitigation"
+        }
+    ],
+    "alwaysVisibleFields": [
+        "secdeva/fieldTypes/securityIssueCategory",
+        "secdeva/fieldTypes/severity",
+        "secdeva/fieldTypes/severityJustification",
+        "secdeva/fieldTypes/rootCauseCategory",
+        "secdeva/fieldTypes/rootCauseJustification",
+        "secdeva/fieldTypes/strategy",
+        "secdeva/fieldTypes/reporting",
+        "secdeva/fieldTypes/testingToBypassMitigation"
+    ],
+    "optionallyVisibleFields": []
+}

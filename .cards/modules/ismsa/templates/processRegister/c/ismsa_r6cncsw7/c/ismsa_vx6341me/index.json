@@ -1,0 +1,11 @@
+{
+    "title": "Risk management process",
+    "cardType": "base/cardTypes/controlledDocument",
+    "workflowState": "",
+    "rank": "0|b",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/approver": null,
+    "base/fieldTypes/approvalDate": null,
+    "base/fieldTypes/reviewPeriod": 365
+}

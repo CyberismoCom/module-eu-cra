@@ -1,0 +1,17 @@
+{
+    "cardType": "base/cardTypes/annualTask",
+    "title": "Review technical documentation",
+    "workflowState": "",
+    "rank": "0|zz",
+    "lastUpdated": "2025-01-20T08:48:53.615Z",
+    "links": [],
+    "eucra/fieldTypes/controlImplementer": "Development team",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/reviewMonth": null,
+    "base/fieldTypes/reviewPeriod": 365,
+    "base/fieldTypes/lastReviewed": null,
+    "base/fieldTypes/adoptionStep": "step2",
+    "base/fieldTypes/identifier": "eucra_control_technical-documentation-review",
+    "base/fieldTypes/justification": null
+}

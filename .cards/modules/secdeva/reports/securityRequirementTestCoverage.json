@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/securityRequirementTestCoverage",
+    "displayName": "Security requirement test coverage",
+    "description": "The status of security requirement testing of a project",
+    "category": "Security testing"
+}

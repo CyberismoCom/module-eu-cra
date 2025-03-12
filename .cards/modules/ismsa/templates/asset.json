@@ -1,0 +1,6 @@
+{
+    "displayName": "Generic asset",
+    "description": "Valuable information or system that needs to be protected",
+    "category": "Asset management",
+    "name": "ismsa/templates/asset"
+}

@@ -1,0 +1,18 @@
+{{#if results}}
+
+== Key performance indicators
+
+[cols="1,1",frame=none,grid=none]
+|===
+
+{{#each results}}
+^| pass:[<span style="font-size:6vw;">{{this.[base/fieldTypes/progress]}} %</span>]
+^| pass:[<span style="font-size:6vw;">{{this.[secdeva/fieldTypes/issueCount]}}</span>]
+{{/each}}
+
+^| Secure development task adoption
+^| Security issues that require attention
+
+|===
+
+{{/if}}

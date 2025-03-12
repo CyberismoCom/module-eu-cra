@@ -1,0 +1,46 @@
+Static code analysis or static application security testing (SAST) refers to automated testing techniques that identify potential security issues from the source code.
+
+== How to decide if this secure development task is required
+
+Static code analysis is required for all programming languages where tools are available.
+
+This control applies to full variability programming languages only, such as C, C++, Java or JavaScript. The control is not applicable to limited variability languages such as function blocks, ladder logic or other application-specific languages that only combine a predefined set of library functionality.
+
+== How to implement
+
+Set up static code analysis tools as part of the build pipeline of the product.
+
+Configure the static code analysis tool so that at least most of the potentially exploitable code constructs that are covered in the applicable secure coding standard or guidelines are covered by the tool.
+
+Run the static code analysis tool for at least the following code:
+
+* Code listening on or connecting to a network that may be connected outside the Security Zone of the device, system or application under consideration
+* Code with prior vulnerabilities identified
+* Code executing with high privileges
+* Security related code (for example, authentication, authorization, cryptographic and firewall code)
+* Parsers or decoders that parse data structures from potentially untrusted sources
+* Setup code that set access controls or handles encryption keys or passwords
+* All new code written after this procedure was put into place
+
+Note:  Third party included source code may be excluded from the static analysis requirements.
+
+Analyse and address the findings from the tool.
+
+Static code analysis tools must be documented using the development tools template. The documentation can be created for a certain project, or globally for common tools.
+
+Depending on their settings, static code analysis tools may generate a large number of findings, and in some cases there may be false positive findings. It is recommended to use such settings that provide a good balance between the number of false positive findings and legit findings.
+
+Create a review of static code analysis to record your notes.
+
+{{#report}}
+  "name": "secdeva/reports/createChildReview",
+  "template": "secdeva/templates/reviewOfStaticCodeAnalysis",
+  "buttonLabel": "Create a review of static code analysis"
+{{/report}}
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildReviewStatus"
+{{/report}}
+

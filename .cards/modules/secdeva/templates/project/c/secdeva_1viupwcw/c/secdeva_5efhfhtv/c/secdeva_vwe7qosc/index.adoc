@@ -1,0 +1,27 @@
+Cryptography is commonly used for protecting the confidentiality or the integrity of information. When cryptography is used, it must be used properly and effectively, using appropriate algorithms and standards.
+
+Cryptographic keys must be managed properly. This includes creation, exchange, storage, access control and other protection, renewal, revokation, and deletion of keys.
+
+The use of specific algorithms, key lengths, and key management arrangements must be justified by referring to applicable standards or industry best practices.
+
+Whenever human actions are required, the roles and responsibilities for implementing cryptographic controls must be defined.
+
+== How to decide if this secure development task is required
+
+This secure development task is applicable if the project uses cryptography.
+
+== How to implement
+
+Create a review of the use of cryptography and follow the instructions in the template.
+
+{{#report}}
+  "name": "secdeva/reports/createChildReview",
+  "template": "secdeva/templates/cryptographyReview",
+  "buttonLabel": "Create a review of the use of cryptography"
+{{/report}}
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildReviewStatus"
+{{/report}}

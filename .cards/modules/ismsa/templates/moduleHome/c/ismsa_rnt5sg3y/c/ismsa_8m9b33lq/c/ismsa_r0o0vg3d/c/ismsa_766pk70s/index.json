@@ -1,0 +1,11 @@
+{
+    "title": "Information Systems",
+    "cardType": "ismsa/cardTypes/register",
+    "workflowState": "",
+    "rank": "0|ba",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "ismsa/fieldTypes/adoptionStep": "step1",
+    "ismsa/fieldTypes/progress": null,
+    "base/fieldTypes/identifier": null
+}

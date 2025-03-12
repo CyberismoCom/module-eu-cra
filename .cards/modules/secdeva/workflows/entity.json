@@ -1,0 +1,36 @@
+{
+    "name": "secdeva/workflows/entity",
+    "states": [
+        {
+            "name": "Draft",
+            "category": "initial"
+        },
+        {
+            "name": "Ready",
+            "category": "closed"
+        }
+    ],
+    "transitions": [
+        {
+            "name": "Create",
+            "fromState": [
+                ""
+            ],
+            "toState": "Draft"
+        },
+        {
+            "name": "Ready",
+            "fromState": [
+                "Draft"
+            ],
+            "toState": "Ready"
+        },
+        {
+            "name": "Reopen",
+            "fromState": [
+                "Ready"
+            ],
+            "toState": "Draft"
+        }
+    ]
+}

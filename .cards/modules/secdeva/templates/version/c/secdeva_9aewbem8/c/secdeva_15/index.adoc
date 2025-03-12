@@ -1,0 +1,133 @@
+== Review checklist
+
+The purpose of the release review is to ensure that we have complete visibility on the state of cybersecurity management for the release, so that we can accept the release from the point of view of security. The release review can be accepted either by noting that all security work has been done and tracked to closure, or that you accept the risk related to some unfinished security work.
+
+=== Secure development tasks
+
+All secure development tasks should be *Closed as done* or *Closed as not applicable* and the review of the task should not be expired.
+
+See the status of secure development tasks in the parent card.
+
+* [ ] OK
+* [ ] Not OK
+
+Comments, links:
+
+=== Security issue status
+
+Check that Security issues affecting this version have been tracked to closure or deferred to a future release with a justified reason.
+
+See the status in the parent card.
+
+Notice that products must not be released if there are any known exploitable vulnerabilities.
+
+* [ ] OK
+* [ ] Not OK
+
+Comments, links:
+
+=== Security tool status
+
+Check that the security issues affecting this release have been managed in all the security testing tools such as static code analyzers and vulnerability tracking tools.
+
+The issues from these tools should be reported as security issues and managed according to the secure development process.
+
+* [ ] OK
+* [ ] Not OK
+
+Comments, links:
+
+=== Security issue communication
+
+For each known security issue that cannot be tracked to closure in this release, check that the issue and possible user mitigation strategies and associated risks have been documented to users, or that there is a justified reason not to communicate the issue to product users.
+
+Check that all such Security Issues that identify a vulnerability in a component, including in an open source component, which is integrated in the product, have been reported to the person or entity maintaining the component.
+
+* [ ] OK
+* [ ] Not OK
+
+Comments, links:
+
+=== Automated policy checks
+
+Check the status of automated policy checks in the parent card of this card.
+
+* [ ] OK
+* [ ] Not OK
+
+=== Qualifying the release
+
+Check that the release has been verified not to introduce regressions. Note that this check needs to be done also for software updates of 3rd party components and platforms that the release depends on.
+
+If this release is made to address specific security vulnerabilities, then check that the the release addresses the intended vulnerabilities.
+
+* [ ] OK
+* [ ] Not OK
+
+Comments, links:
+
+=== 3rd party component attribution
+
+Check that required license information about used 3rd party components are included in the release.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Configuration management
+
+Check that the configuration management process for this release has been completed
+
+* The included configuration items and their versions have been documented. You can use the internal release notes template to document this information
+* Software Bill of Materials (SBOM) has been drawn up and archived
+* Technical documentation, product documentation and other configuration items have been drawn up and archived so that they will be available later when needed
+* The version information is updated to the dependency tracking tools, if manual version management is applicable
+
+// break
+
+* [ ] OK
+* [ ] Not OK
+
+Comments, links:
+
+=== Software update documentation and communication
+
+Check that
+
+* The software update has been documented to users. The security update documentation template can be used for this.
+* All applicable, including also rejected, security updates and patches have been communicated to the Security operations team
+
+// break
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Subprojects
+
+Check that a similar release review has been successfully conducted for any subprojects.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Release approval and sign-off
+
+#TODO: add here a conclusion, whether the release can be done and risks from the remaining open issues can be accepted, or whether the release cannot be made before specific items have been tracked to closure.#
+
+== Action items
+
+{{#createCards}}
+  "template": "base/templates/oneTimeTask",
+  "buttonLabel": "Add a new task"
+{{/createCards}}
+
+{{#report}}
+  "name": "base/reports/childrenTable"
+{{/report}}

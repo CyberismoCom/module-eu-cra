@@ -1,0 +1,6 @@
+{
+    "displayName": "Business context analysis",
+    "description": "Documents the business environment and other cybersecurity basics",
+    "category": "Secure development specifications",
+    "name": "secdeva/templates/businessContextAnalysis"
+}

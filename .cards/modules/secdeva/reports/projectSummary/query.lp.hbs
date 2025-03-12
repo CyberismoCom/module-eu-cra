@@ -1,0 +1,15 @@
+selectAll.
+
+field(Project, "secdeva/fieldTypes/issueCount", Count) :-
+    secdeva_closestProject({{cardKey}}, Project),
+    Count = #count {
+        card(Issue):
+        field(Issue, "cardType", "secdeva/cardTypes/securityIssue"),
+        secdeva_closestProject(Issue, Project),
+        not hiddenInTreeView(Issue),
+        not field(Issue, "workflowStateCategory", "closed")
+    }.
+
+result(Project) :-
+    secdeva_closestProject({{cardKey}}, Project),
+    field(Project, "base/fieldTypes/adoptionStep", _).

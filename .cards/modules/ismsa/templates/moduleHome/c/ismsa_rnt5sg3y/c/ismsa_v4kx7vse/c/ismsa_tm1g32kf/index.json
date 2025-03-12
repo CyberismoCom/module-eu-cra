@@ -1,0 +1,11 @@
+{
+    "title": "Own controls",
+    "cardType": "ismsa/cardTypes/register",
+    "workflowState": "",
+    "rank": "0|c",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/identifier": null,
+    "ismsa/fieldTypes/adoptionStep": "step1",
+    "ismsa/fieldTypes/progress": null
+}

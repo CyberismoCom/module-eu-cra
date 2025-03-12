@@ -1,0 +1,8 @@
+selectAll.
+
+result(Risk) :-
+    card(Risk),
+    parent({{cardKey}}, Project),
+    link(Project, Risk, "ismsa/linkTypes/presentsRisk").
+
+orderBy("base/fieldTypes/owner", "ASC").

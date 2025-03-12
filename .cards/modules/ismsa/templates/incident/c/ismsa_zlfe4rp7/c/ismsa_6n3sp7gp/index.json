@@ -1,0 +1,13 @@
+{
+    "title": "Incident response",
+    "cardType": "base/cardTypes/task",
+    "workflowState": "",
+    "rank": "0|a",
+    "base/fieldTypes/dueDate": null,
+    "base/fieldTypes/informationClassification": null,
+    "base/fieldTypes/justification": null,
+    "base/fieldTypes/identifier": null,
+    "base/fieldTypes/adoptionStep": null,
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/reviewPeriod": null
+}

@@ -1,0 +1,44 @@
+{{#each results}}
+
+{{#each this.project}}
+If there are secure development tasks on a higher adoption step than the current target adoption step, then they will not be visible in the navigation.
+{{#if this.[base/fieldTypes/adoptionStep]}}
+The current target adoptioption step of the project is *{{this.[base/fieldTypes/adoptionStep].displayValue}}*.
+{{else}}
+The current target adoptioption step of the project is *None*.
+{{/if}}
+{{/each}}
+
+{{#if tasks}}
+.Secure development tasks
+
+[cols="5,2,1"]
+|===
+| Task | Adoption step | Visible
+
+{{#each tasks}}
+|xref:{{this.key}}.adoc[{{this.title}}]
+{{#if this.[base/fieldTypes/adoptionStep]}}
+|{{this.[base/fieldTypes/adoptionStep].displayValue}}
+{{else}}
+| None
+{{/if}}
+|{{this.visible}}
+{{/each}}
+|===
+{{/if}}
+
+{{#each this.uninstalledExtensions}}
+There is some additional content available from {{this.moduleDescription}}.
+
+{{#createCards}}
+  "template": "{{this.template}}",
+  "buttonLabel": "{{this.buttonLabel}}"
+{{/createCards}}
+{{/each}}
+
+{{#each this.installedExtensions}}
+Content from {{this.moduleDescription}} has been added.
+
+{{/each}}
+{{/each}}

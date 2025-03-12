@@ -1,0 +1,7 @@
+== Task description
+
+Consider following communication tasks
+
+{{#report}}
+  "name": "base/reports/childrenTable"
+{{/report}}

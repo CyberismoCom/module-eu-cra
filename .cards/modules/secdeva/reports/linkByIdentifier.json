@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/linkByIdentifier",
+    "displayName": "Link by identifier",
+    "description": "Link to a card by its identifier",
+    "category": "Secure development"
+}

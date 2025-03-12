@@ -1,0 +1,14 @@
+{{#if results }}
+
+[cols="5,2"]
+|===
+| Requirement | Workflow State
+
+{{#each results}}
+|xref:{{this.key}}.adoc[{{this.title}}] 
+|{{this.workflowState}}
+{{/each}}
+
+|===
+
+{{/if}}

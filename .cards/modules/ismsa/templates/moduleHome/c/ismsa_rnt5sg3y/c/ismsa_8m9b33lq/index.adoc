@@ -1,0 +1,27 @@
+## Company asset register
+
+An asset in anything that has value to the organisation and therefore requires protection.
+
+This register contains an up-to-date registry of #Company Oy# assets.
+
+Asset registry is divided into four subregisters:
+
+* *Primary Assets*: Core business processes, functions and services; Information and Data servicing business processes and/or activities of the organisation
+
+* *Supporting Assets*: Hardware, devices and equipment, software and applications, roles, locations and utilities, organisational infrastructure (e.g. policies, procedures and supporting ICT services)
+
+* *Suppliers*: External providers of products, processes or services.
+
+* *Development projects*: Projects that develop custom software and/or hardware
+
+These can contain additional subregisters, if needed.
+
+Currently, the following subregisters have been defined for assets:
+
+{{#report}}
+  "name": "ismsa/reports/subregisters"
+{{/report}}
+
+{{#report}}
+  "name": "ismsa/reports/assetsByOwner"
+{{/report}}

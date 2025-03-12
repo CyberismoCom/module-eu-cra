@@ -1,0 +1,23 @@
+A security design review checks that the scope of the review is aligned with the best practices and other security design checks that are included in the secure design review template. Secure design best practices are are rules of thumb that help with secure software or system design.
+
+== How to decide if this secure development task is required
+
+This task is always required. The component or system design process incorporates secure design best practices. This applies to all features, not just security features.
+
+== How to implement
+
+Create a security design review document and follow the instructions in the template.
+
+{{#report}}
+  "name": "secdeva/reports/createChildReview",
+  "template": "eucra/templates/securityDesignReview",
+  "buttonLabel": "Create a security design review"
+{{/report}}
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildReviewStatus"
+{{/report}}
+
+Check that any identified security-related findings have been reported as security issues.

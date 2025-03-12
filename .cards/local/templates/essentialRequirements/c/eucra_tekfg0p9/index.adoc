@@ -1,0 +1,9 @@
+== Source
+
+EU CRA Annex I (1) (2) (m) :: On the basis of the cybersecurity risk assessment referred to in Article 13(2) and where applicable, products with digital elements shall: (m) provide the possibility for users to securely and easily remove on a permanent basis all data and settings and, where such data can be transferred to other products or systems, ensure that this is done in a secure manner.
+
+== Requirement description
+
+#TODO: Edit this as applicable and add any product-specific considerations#
+
+The linked secure development task Product documentation review  checks that disposal instructions are included in product manuals.

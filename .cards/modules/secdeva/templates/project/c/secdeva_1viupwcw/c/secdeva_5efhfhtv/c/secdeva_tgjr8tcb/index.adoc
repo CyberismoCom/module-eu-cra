@@ -1,0 +1,114 @@
+.View process diagram
+[%collapsible]
+====
+{{#graph}}
+  "model": "secdeva/graphModels/processDiagram",
+  "view": "secdeva/graphViews/processTask"
+{{/graph}}
+====
+
+Cybersecurity risk management evaluates potential risks and their impact on the development organisation or customer organisations as a whole.
+
+The scope of this high-level risk management is broad, as it considers the organisation's overall risks that are related to this development project or the results of this development project.
+
+{{#createCards}}
+    "template": "secdeva/templates/productRisk",
+    "buttonLabel": "Add a new high-level risk"
+{{/createCards}}
+
+{{#report}}
+    "name": "secdeva/reports/installableExtensions"
+{{/report}}
+
+{{#report}}
+    "name": "secdeva/reports/relatedRisks"
+{{/report}}
+
+== How to decide if this secure development task is required
+
+This task is required, if the development project is developing a product for the EU market.
+
+Otherwise, you should decide whether high-level risk management is applicable based on the overall criticality of the development project or of its results.
+
+== How to identify high-level cybersecurity risks
+
+=== Risks related to information systems or products
+
+If the development project is developing an information system, then consider the following types of risks:
+
+[%collapsible]
+====
+* Leaks from/corruption of/destruction of important databases or data storage
+* Loss of IPR
+* Loss or major changes at key suppliers, supply chain attack
+* Risks that may realise if the system or product is not available
+* Insecure development/testing/production environments
+* Lack of proper (internal/customer) documentation
+* Defects in software maintenance/updating
+* Insufficient protection of cryptographic assets (e.g., signing keys)
+====
+
+=== Risks related to products
+
+If the development project is developing a product, the cybersecurity risk assessment should comprise:
+
+[%collapsible]
+====
+
+General:
+
+* Risks that may impact the health or safety of users. Interference of safety functions.
+* Risks based on the intended purpose and reasonably foreseeable use of the product
+* Risks related to the conditions of use or the operational environment
+* Risks that affect any valuable assets that should be protected
+* The length of time the product is expected to be in use
+
+Confidentiality:
+
+* Leaking customer information such as configuration or production data. Consired both information at rest and in transit.
+* Leaking personal information. Consired both information at rest and in transit.
+* Unplanned disposal process or deficiencies in the procedures for removing data
+
+Integrity:
+
+* Insecure default settings, which may lead to insecure configurations being used in the field
+* Unauthorised modification of configuration or parameters. Consired both information at rest and in transit.
+* Malformed or tampered production data. Consired both information at rest and in transit.
+* Ransomware or malicious code infection
+* Supply chain attacks on software or hardware components
+* Unauthorised physical access to the product
+* Insufficient software update support, such as lack of automation risking that updates are not done
+* Deficiencies in product hardening, leading to unnecessarily exposed attack surface
+
+Availability:
+
+* Unavailability of the product functionality, especially the essential functions
+* Unavailability of customer systems due to a product security issue
+* Unavailability of mechanisms to detect security incidents
+* Destruction or corruption of key databases or data
+
+IPR:
+
+* Theft of intellectual property
+* Counterfeit products
+
+====
+
+=== Risks identified from security issues
+
+When applying the secure development process, you will identify security-related issues in design, implementation, 3rd party technology, documentation, and testing. Consider, whether there are following kinds of high-level cybersecurity risks:
+
+* Risks that may happen due to high-severity security issues
+* Risks that may happen due toa chain or a combination of multiple security issues
+* Risks that may happen due to a large number of open security issues
+
+{{#report}}
+  "name": "secdeva/reports/securityIssuesNeedingAttention"
+{{/report}}
+
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkRiskAssessmentStatus"
+{{/report}}

@@ -1,0 +1,17 @@
+{
+    "cardType": "base/cardTypes/annualTask",
+    "title": "Perform penetration testing",
+    "workflowState": "",
+    "rank": "0|m",
+    "lastUpdated": "2025-01-23T20:37:00.384Z",
+    "links": [],
+    "secdeva/fieldTypes/controlImplementer": "Independent test team",
+    "base/fieldTypes/adoptionStep": "step2",
+    "base/fieldTypes/justification": null,
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/reviewPeriod": 365,
+    "base/fieldTypes/reviewMonth": null,
+    "base/fieldTypes/lastReviewed": null,
+    "base/fieldTypes/identifier": "eucra_control_penetration-testing"
+}

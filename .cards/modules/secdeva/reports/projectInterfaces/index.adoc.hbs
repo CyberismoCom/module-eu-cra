@@ -1,0 +1,34 @@
+{{#if results}}
+
+The following interface documents exist:
+
+{{#each results}}
+=== Element: {{this.title}}
+
+xref:{{this.key}}.adoc[{{this.title}}] has the following interfaces:
+
+{{#each results}}
+
+==== Interface: {{this.title}} [{{this.workflowState}}]
+
+The scoping of security testing for xref:{{this.key}}.adoc[{{this.title}}]:
+
+* Basic input validation testing:  {{this.basicInputValidationTestingRequired}}
+* Basic stress testing: {{this.basicStressTestingRequired}}
+* Fuzz testing: {{this.fuzzTestingRequired}}
+* Network traffic load testing: {{this.networkTrafficLoadTestingRequired}}
+* Capacity testing: {{this.capacityTestingRequired}}
+
+*Justification for security testing:*
+
+{{this.[secdeva/fieldTypes/interfaceTestingScopingJustification]}}
+
+{{/each}}
+
+{{/each}}
+
+{{else}}
+
+There are no interface specifications. You can create them in the dataflow models of threat models.
+
+{{/if}}

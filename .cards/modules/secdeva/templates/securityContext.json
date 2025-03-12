@@ -1,0 +1,6 @@
+{
+    "displayName": "Security context",
+    "description": "Specification of the security provided by the deployment environment",
+    "category": "Secure development specifications",
+    "name": "secdeva/templates/securityContext"
+}

@@ -1,0 +1,5 @@
+{
+    "name": "secdeva/fieldTypes/capacityTestingRequired",
+    "displayName": "Capacity testing required?",
+    "dataType": "boolean"
+}

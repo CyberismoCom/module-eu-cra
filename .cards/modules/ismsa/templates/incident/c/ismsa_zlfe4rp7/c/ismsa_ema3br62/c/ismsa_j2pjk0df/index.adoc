@@ -1,0 +1,6 @@
+== Task description
+
+GDPR requires that if a personal data breach can cause a risk to the rights and freedoms of natural persons, the supervisory authority must be notified without undue delay and, where feasible, not later than 72 hours after the controller has become aware of the personal data breach.
+
+In Finland, the Office of the Data Protection Ombudsman functions as the supervisory authority and the notification can be reported with
+link:https://tietosuoja.fi/data-breach-notification[an electronic form].

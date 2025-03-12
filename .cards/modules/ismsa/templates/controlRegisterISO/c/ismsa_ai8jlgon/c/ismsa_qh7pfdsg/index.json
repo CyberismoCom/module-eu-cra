@@ -1,0 +1,14 @@
+{
+    "title": "Physical controls",
+    "cardType": "ismsa/cardTypes/register",
+    "workflowState": "",
+    "rank": "0|c",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/identifier": null,
+    "ismsa/fieldTypes/adoptionStep": "step1",
+    "ismsa/fieldTypes/progress": "control-progress",
+    "labels": [],
+    "links": [],
+    "lastUpdated": "2025-01-27T10:25:13.727Z"
+}

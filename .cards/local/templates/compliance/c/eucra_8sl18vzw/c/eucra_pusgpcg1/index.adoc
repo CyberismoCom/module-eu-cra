@@ -1,0 +1,22 @@
+.View process diagram
+[%collapsible]
+====
+{{#graph}}
+  "model": "secdeva/graphModels/processDiagram",
+  "view": "secdeva/graphViews/complianceRequirement"
+{{/graph}}
+====
+
+== Requirement content
+
+2.{empty} Before placing a product with digital elements on the market, importers shall ensure that:
+
+(a) the appropriate conformity assessment procedures as referred to in Article 32 have been carried out by the manufacturer;
+
+(b) the manufacturer has drawn up the technical documentation;
+
+(c) the product with digital elements bears the CE marking referred to in Article 30 and is accompanied by the EU declaration of conformity referred to in Article 13(20) and the information and instructions to the user as set out in Annex II in a language which can be easily understood by users and market surveillance authorities;
+
+(d) the manufacturer has complied with the requirements set out in Article 13(15), (16) and (19).
+
+For the purposes of this paragraph, importers shall be able to provide the necessary documents proving the fulfilment of the requirements set out in this Article.

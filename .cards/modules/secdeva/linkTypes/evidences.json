@@ -1,0 +1,8 @@
+{
+    "name": "secdeva/linkTypes/evidences",
+    "outboundDisplayName": "evidences",
+    "inboundDisplayName": "is evidenced by",
+    "sourceCardTypes": [],
+    "destinationCardTypes": [],
+    "enableLinkDescription": false
+}

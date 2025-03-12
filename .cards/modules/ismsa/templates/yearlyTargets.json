@@ -1,0 +1,6 @@
+{
+    "displayName": "Yearly targets",
+    "description": "A register that contains a button for adding security targets",
+    "category": "Register management",
+    "name": "ismsa/templates/yearlyTargets"
+}

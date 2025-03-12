@@ -1,0 +1,29 @@
+A file integrity verification mechanism ensures that product users can verify that executables, scripts, and other important files that they have received as part of the product have not been altered. Common methods include cryptographic hashes and digital signatures.
+
+== How to decide if this task is required
+
+A file integrity verification mechanism is required, if the product includes executable files, scripts or other important files such as security patches that are delivered to the product users.
+
+== How to implement
+
+Use common install package and/or code signing mechanisms, if they are available in the organization.
+
+If you need to specify the file integrity protection mechanism for the project, then create a design specification to document the file integrity protection mechanism.
+
+Whenever public-key cryptography is used, it is recommended to have technical and procedural controls for protecting the private keys.
+
+== How to implement this task
+
+Create a review of the release integrity protection and follow the instructions in the template.
+
+{{#report}}
+  "name": "secdeva/reports/createChildReview",
+  "template": "eucra/templates/releaseIntegrityProtectionReview",
+  "buttonLabel": "Create a review of release integrity protection"
+{{/report}}
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildReviewStatus"
+{{/report}}

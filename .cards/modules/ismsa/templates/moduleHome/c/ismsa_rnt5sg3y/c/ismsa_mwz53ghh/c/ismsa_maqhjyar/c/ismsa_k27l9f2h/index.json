@@ -1,0 +1,11 @@
+{
+    "title": "Risks related to devices",
+    "cardType": "ismsa/cardTypes/register",
+    "workflowState": "",
+    "rank": "0|cbc",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/identifier": null,
+    "ismsa/fieldTypes/adoptionStep": "step1",
+    "ismsa/fieldTypes/progress": null
+}

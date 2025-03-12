@@ -1,0 +1,46 @@
+.View process diagram
+[%collapsible]
+====
+{{#graph}}
+  "model": "secdeva/graphModels/processDiagram",
+  "view": "secdeva/graphViews/processTask"
+{{/graph}}
+====
+
+Security requirements define required security capabilities, required security-related features or other required security-related characteristics of the product.
+
+== How to decide if this secure development task is required
+
+Security requirements specification is required, if security requirements have been identified in the project.
+
+Typical areas for security requirements include:
+
+- General security capabilities
+- Access control, permissions, permission delegation
+- Anti-tampering and integrity mechanisms
+- Usage of cryptography
+- Secure storage of secrets
+
+You should create security requirements, when the requirement is non-trivial and needs to be widely reviewed.
+
+== How to implement
+
+Create a security requirement specification and follow the instructions in the template.
+
+{{#report}}
+  "name": "secdeva/reports/createChildDocument",
+  "template": "secdeva/templates/securityRequirementsSpecification",
+  "buttonLabel": "Create a security requirements specification"
+{{/report}}
+
+Create individual security requirements as child cards of the security requirements specification. There is a button at the end of the document. Each security requirement includes review subtasks for 4 different roles. Write the description of the requirements and complete the reviews.
+
+Review and approve the security requirement specification to ensure that all relevant requirements have been identified.
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildDocumentStatus"
+{{/report}}
+
+#TODO: add an automated check for ensuring that the requirement reviews have been completed#

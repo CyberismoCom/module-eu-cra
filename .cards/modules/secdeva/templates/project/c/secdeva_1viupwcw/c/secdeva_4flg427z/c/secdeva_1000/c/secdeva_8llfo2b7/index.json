@@ -1,0 +1,8 @@
+{
+    "title": "Developer",
+    "cardType": "base/cardTypes/roleAssignment",
+    "workflowState": "",
+    "rank": "0|c",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal"
+}

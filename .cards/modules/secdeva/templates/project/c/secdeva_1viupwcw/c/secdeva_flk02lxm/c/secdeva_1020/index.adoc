@@ -1,0 +1,37 @@
+
+The goal of the known vulnerability scanning is to detect known security issues from the hardware devices, host and application software.
+
+== How to decide if this secure development task is required
+
+Vulnerability scanning is required, but the frequency of it shall be estimated based on risk.
+
+A recommended practice is to run the vulnerability scanner as a part of system testing where the system has been configured according to the documented practices. It is also recommended to run the scanner with credentials to provide more in-depth results.
+
+When preparing for a product release, known vulnerability scanning should be performed just prior to the release.
+
+== How to implement
+
+Create a review of known vulnerability scanning and follow the instructions in the template.
+
+{{#report}}
+  "name": "secdeva/reports/createChildReview",
+  "template": "secdeva/templates/knownVulnerabilityScan",
+  "buttonLabel": "Create a review of known vulnerability scanning"
+{{/report}}
+
+Known vulnerability scanning should take into account the different layers:
+
+* Vulnerability scanning of application software
+* Vulnerability scanning of hosts
+* Vulnerability scanning of hardware devices
+
+Also ensure that test executions are documented.
+
+If test plans are created and test executions are managed a test management tool, then link the test plan from the issue tracker to the known vulnerability scanning test plan document.
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildReviewStatus"
+{{/report}}
+

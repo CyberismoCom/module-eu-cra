@@ -1,0 +1,19 @@
+{
+    "name": "secdeva/cardTypes/process",
+    "workflow": "secdeva/workflows/entity",
+    "customFields": [
+        {
+            "name": "secdeva/fieldTypes/description",
+            "isCalculated": false
+        },
+        {
+            "name": "secdeva/fieldTypes/technology",
+            "isCalculated": false
+        }
+    ],
+    "alwaysVisibleFields": [
+        "secdeva/fieldTypes/description",
+        "secdeva/fieldTypes/technology"
+    ],
+    "optionallyVisibleFields": []
+}

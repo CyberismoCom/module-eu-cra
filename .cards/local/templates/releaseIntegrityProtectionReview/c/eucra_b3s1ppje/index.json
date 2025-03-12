@@ -1,0 +1,11 @@
+{
+    "title": "Review of release integrity protection",
+    "cardType": "base/cardTypes/review",
+    "workflowState": "",
+    "rank": "0|b",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/lastReviewed": null,
+    "base/fieldTypes/reviewPeriod": 365,
+    "base/fieldTypes/identifier": "eucra_review_integrity-protection-of-release"
+}

@@ -1,0 +1,27 @@
+The secure development process covers all phases of the lifecycle, including requirements, design, threat modeling, and implementation. This review ensures that the requirements, design, identified threats and implementation are aligned.
+
+== How to decide if this secure development task is required
+
+This review item is always applicable.
+
+== How to implement this review
+
+Create a security implementation review and follow the instructions in the template.
+
+{{#report}}
+  "name": "secdeva/reports/createChildReview",
+  "template": "eucra/templates/securityImplementationReview",
+  "buttonLabel": "Create a security implementation review"
+{{/report}}
+
+Report any security-related findings to the issue tracker as security issues.
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildReviewStatus"
+{{/report}}
+
+#TODO: how to automate this for reviews?#
+
+Check that all findings have been reported as security issues.

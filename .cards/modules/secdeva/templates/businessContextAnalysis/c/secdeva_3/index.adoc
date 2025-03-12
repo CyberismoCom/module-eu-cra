@@ -1,0 +1,240 @@
+== Introduction
+
+In a competitive commercial environment, it is never possible to have "perfect security". Resources are always limited, and we want to allocate them wisely. Therefore, it makes sense to start cybersecurity scoping from the business context. Taking a business view helps in prioritization and in choosing the controls that are proportional to the assets that we are protecting and to the risks that we have identified.
+
+It is useful to analyse and document the business context for the following aspects
+
+* A high-level description of the product or system, including users and main use cases
+* Motivation: business goals, reasons for investing in cybersecurity and security objectives
+* Environment: security requirements, delivery chain and the lifecycle of the solution, competition and security context
+* Assets that need protection
+* Damage scenarios and optionally, an analysis of threat agents
+* Conclusions about the scoping of cybersecurity work and recommended next steps
+
+== Target of evaluation
+
+[NOTE]
+.Review instructions
+====
+Target of evaluation(ToE) is the component or product subject to the business context analysis. Definition of the ToE should cover at least the following:
+
+* the purpose of the system or product
+* high level system architecture
+* users, stake holders and collaborators
+* main use cases
+====
+
+== Motivation
+
+=== Business environment
+
+[NOTE]
+.Review instructions
+====
+Business environment contains the landscape where the ToE is deployed and supported. 
+
+* Scale of the business and the potential customer base
+* Business objectives
+* Main challenges the product is to face during its life cycle.
+====
+
+=== Motivation to invest in cybersecurity 
+
+[NOTE]
+.Review instructions
+====
+This section should contain a description of the motivation for investing in cybersecurity.
+====
+
+=== Security objectives
+
+[NOTE]
+.Review instructions
+====
+Security objectives can be created to ensure:
+
+* Confidentiality
+* Integrity
+* Availability
+* Accountability
+* Authenticity / Trustworthiness
+* Non-repudiation
+* Privacy
+* Dependability
+====
+
+== Environment
+
+=== High-level requirements
+
+[NOTE]
+.Review instructions
+====
+
+This section should describe the most important requirements from customers, internal stakeholders, authorities and standards.
+====
+
+=== Delivery chain and lifecycle
+
+[NOTE]
+.Review instructions
+====
+This section should describe the role of this product or solution in the Operational Technology (OT) delivery chain.
+
+* Is this a repeatable product that can be used in multiple environments?
+* Is this a customer specific solution?
+* Is this a service that supports multiple customer specific solutions?
+
+This section should also describe the lifecycle phases of this product or solution:
+
+* Design and implementation
+* Delivery to the customer or end user environment
+* Operations and maintenance during the operations phase
+* End of life
+====
+
+=== Security context
+
+[NOTE]
+.Review instructions
+====
+Security context defines the security provided by the environment, where the target of evaluation is intended to be used.
+
+Check that the assumptions about the security context have been documented.
+
+The security context could include:
+
+* Expected location in the network
+* Physical or cyber security that is required to be provided by the deployment environment
+* Whether isolation from network perspective is expected to be provided by the deployment environment
+
+You can describe the security context here, or link to a separate document.
+====
+
+=== Competition
+
+[NOTE]
+.Review instructions
+====
+This section should describe the competitors and security related trends among the competition. 
+====
+
+=== Cybersecurity management context
+
+[NOTE]
+.Review instructions
+====
+This section should describe or link to separate documentation about
+
+* Security related roles and responsibilities related to the system
+* Incident management process for the system
+====
+
+== Assets
+
+=== Assets that need protection
+
+[NOTE]
+.Review instructions
+====
+This section should lists the most important assets that need protection. Assets may include
+
+* information assets
+* connected systems
+* the process that is being controlled or monitored
+* physical assets
+* hardware
+* 3rd party technologies, especially if there are export restrictions, 3rd party IPR or DRM considerations
+* sensitive data
+* training material and simulators
+* other copyrighted material such as images, icons and logos.
+
+Preferably, assets should be prioritized or the most critical assets should be identified.
+====
+
+=== Roadmap
+
+[NOTE]
+.Review instructions
+====
+Cybersecurity work should be planned in the light of the overall product or solution roadmap. This section should document
+
+* Ongoing development efforts
+* Planned development efforts
+====
+
+== Damage scenarios
+
+=== Damage scenarios in the order of decreasing priority
+
+[NOTE]
+.Review instructions
+====
+
+NIST SP800-82 based possible damage scenarios
+
+* Impact on national security — resist an act of terrorism
+* Injury or death of employees or persons in the community
+* Release, diversion, or theft of hazardous materials
+* Environmental damage, Product contamination
+* Own or customer’s monetary loss
+* Loss of own or customer brand image
+* Loss of confidence of customers or customer’s customers
+* Violation of regulatory requirements, legal issues
+* Reduction or loss of production
+* Damage to equipment
+* Loss of proprietary or confidential information
+====
+
+=== Threat agents
+
+[NOTE]
+.Review instructions
+====
+Identifying possible threat agents is an OPTIONAL step in business context analysis.
+
+You may identify potential attacker to understand their motivations and capabilities. Consider the following aspects
+
+* Targeted - Untargeted
+* Authenticated - Unauthenticated
+* Potential unfriendly threat agents
+* Attacker location
+* Internal - external
+* Amount of resources
+====
+
+== Conclusions
+
+[NOTE]
+.Review instructions
+====
+This section should document
+
+* high-level conclusions about the cybersecurity priorities or
+* the recommended next steps.
+* any identified cybersecurity related opportunities
+====
+
+== Version history
+
+[cols="1,1,3"]
+|===============
+|Version | Date | Changes/Author
+
+| 0.1
+| 2024-01-01
+| XYZ changed by N.N.
+
+|===============
+
+== Reviews
+
+{{#createCards}}
+    "template": "base/templates/reviewTask",
+    "buttonLabel": "Add new review task"
+{{/createCards}}
+
+{{#report}}
+  "name": "base/reports/childrenTable",
+  "cardType": "base/cardTypes/reviewTask"
+{{/report}}

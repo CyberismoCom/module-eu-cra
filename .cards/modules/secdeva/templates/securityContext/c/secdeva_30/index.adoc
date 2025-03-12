@@ -1,0 +1,97 @@
+== Introduction
+
+The security context refers to a set of assumptions about the product or solution and the environment in which the product or solution is intended to be used. The security context is a key factor in determining the security requirements of a product.
+
+== Intended purpose
+
+The _intended purpose_ means the use for which the product or solution is intended by the manufacturer. The intended purpose includes the specific context and conditions of use.
+
+The intended purpose is #TODO: document the intended purpose#.
+
+== Foreseeable use
+
+The _reasonably foreseeable use_ means such use that is not necessarily the intended purpose supplied by the manufacturer, but which is likely to result from reasonably foreseeable human behaviour or technical operations or interactions.
+
+The foreseeable use includes:
+
+* #TODO: document the foreseeable use#
+
+== Forseeable misuse
+
+The _reasonably foreseeable misuse_ means the use of a product or a solution in a way that is not in accordance with its intended purpose, but which may result from reasonably foreseeable human behaviour or interaction with other systems,
+
+The foreseeable misuse includes:
+
+* #TODO: document the foreseeable misuse#
+
+== Essential functionalities
+
+Essential functionalities are such functionalities that are essential for the product or solution to meet its intended purpose. Essential functions include such functions or capabilities that are required to protect the health and the safety of users, and the environment (HSE).
+
+The essential functionalities are:
+
+* #TODO: document the essential functionalities of the product or solution.#
+
+== Expected protection by the deployment environment
+
+The security context includes the expected protection that the deployment environment is assumed to provide. This is closely related to the Defense in Depth structure and layers for the product. It is defined by the following factors:
+
+=== Physical security
+
+#TODO: Document the environment in which the product is installed:#
+
+- In a public open-access environment, e.g. within a shopping centre or a bus station
+- In a semi-public environment, e.g. a hotel lobby or a university campus
+- In a semi-private environment, e.g. generic office space or factory floor
+- In a strongly controlled environment, e.g. a secure facility such as a military base or a data center
+
+Ensure that the requirements for the installation environment are clearly documented, also in the customer documentation, if applicable.
+
+=== Network security
+
+#TODO: Document the network environment in which the product is installed. Consider the perimeter security (e.g. firewalls) and network segmentation when documenting the network security.#
+
+The product can be installed in:
+
+- In a public network, e.g. the Internet
+- In a semi-public network, e.g. a university network or a corporate network
+- In a semi-private network, e.g. a factory network or a building automation network
+- In a strongly controlled network, e.g. a military network or a data center network
+- Non-TCP/IP network, e.g. a CAN bus or a serial network
+- Not connected to any network
+
+Ensure that the requirements for the network environment are clearly documented, also in the customer documentation, if applicable.
+
+=== Operating system and middleware responsibilities
+
+#TODO: Document the responsibilities of the operating system and middleware update and maintenance in the security context. Consider the following factors:#
+
+- The operating system and middleware are maintained by the product vendor
+- The operating system and middleware are maintained by the customer
+- The operating system and middleware are maintained by a third party
+
+Consider also the responsibilities regarding OS and middleware vulnerability management. Ensure that the the assumptions and responsibilities are clearly documented, also in the customer documentation, if applicable.
+
+== Version history
+
+[cols="1,1,3"]
+|===============
+|Version | Date | Changes/Author
+
+| 0.1
+| 2024-01-01
+| XYZ changed by N.N.
+
+|===============
+
+== Reviews
+
+{{#createCards}}
+    "template": "base/templates/reviewTask",
+    "buttonLabel": "Add new review task"
+{{/createCards}}
+
+{{#report}}
+  "name": "base/reports/childrenTable",
+  "cardType": "base/cardTypes/reviewTask"
+{{/report}}

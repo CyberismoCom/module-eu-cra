@@ -1,0 +1,4 @@
+{{#createCards}}
+  "template": "base/templates/meetingMemo",
+  "buttonLabel": "Create a meeting memo"
+{{/createCards}}

@@ -1,0 +1,7 @@
+## Subregister for people controls
+
+People controls of ISO27001:2022 are listed under this subregister.
+
+**Note**: Control descriptions are not included due to copy-right reasons.
+For full control descriptions, please check ISO27001:2022 standard.
+For implementation guidelines, please check also ISO27002:2022.

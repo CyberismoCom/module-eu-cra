@@ -1,0 +1,63 @@
+{{#each results}}
+
+=== Automated checks
+
+{{#if this.scopingNotDone}}
+
+❗ Scoping: The workflow state of this task is *Open* (scoping not done).
+
+Other automated checks will be done, once the task has been scoped.
+
+Determine, whether the task is in scope and select an appropriate workflow transition.
+
+{{else}}
+
+{{#if this.outOfScope}}
+
+* [x] Scoping has been done. This task is out of scope.
+
+There is no need to check whether the review documents exist and  whether the review passed.
+
+{{else}}
+
+* [x] Scoping has been done. This task is in scope.
+
+{{#if this.reviews}}
+
+* [x]  At least one review document exists.
+
+[caption=]
+.Documents
+[cols="5,2,3"]
+|===
+| Document | Workflow State | Review expiration
+
+{{#each this.reviews}}
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.workflowState}}
+|{{this.reviewExpiration}}
+{{/each}}
+
+|===
+
+{{#if this.reviewDocumentOk}}
+
+* [x]  At least one review passed and the review has not expired
+
+{{else}}
+
+❗ The documents are not ready. There must at least one passed and non-expired review.
+
+{{/if}}
+
+=== Manual checks
+
+* Check, if there has been recent changes. If the scope or the design has changed, then check whether the review should be conducted again.
+{{else}}
+
+❗This task is in scope, but you have not yet created any documents. Click the button above to create a document.
+
+{{/if}}
+{{/if}}
+{{/if}}
+{{/each}}

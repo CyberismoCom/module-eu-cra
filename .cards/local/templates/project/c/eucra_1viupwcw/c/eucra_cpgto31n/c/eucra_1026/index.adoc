@@ -1,0 +1,17 @@
+3rd party components can only be used according to the terms and conditions of their licenses, and only when the license is compliant with the organization's license policies.
+
+== How to decide if this secure development task is required
+
+This review item is applicable, if 3rd party components are used in the project.
+
+== How to implement
+
+Set up a dependency tracking tool as part of the build chain. Ensure that the tool tracks the licenses of the dependencies. Review the list of licenses to ensure that all used licenses are acceptable and applicable.
+
+When reviewing a code change that impacts the dependencies, the code reviewer shall ensure that the licenses of new dependencies are acceptable and applicable.
+
+== How to review this task
+
+Check from the dependency tracking tool that the licenses of included 3rd party components are acceptable and applicable.
+
+Check that the team's code review practice includes checking the license when reviewing new 3rd party dependencies.

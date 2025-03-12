@@ -1,0 +1,52 @@
+selectAll.
+
+result(result).
+
+childResult(result, Project, "project") :-
+    secdeva_closestProject({{cardKey}}, Project).
+
+childResult(result, Template, "uninstalledExtensions") :-
+    secdeva_installableExtension(PhaseIdentifier, _, Template, _, ExampleIdentifier),
+    field({{cardKey}}, "base/fieldTypes/identifier", PhaseIdentifier),
+    not field(Descendant, "base/fieldTypes/identifier", ExampleIdentifier) :
+    ancestor(Descendant, {{cardKey}}).
+
+field(Template, "moduleDescription", ModuleDescription) :-
+    secdeva_installableExtension(PhaseIdentifier, ModuleDescription, Template, _, _),
+    field({{cardKey}}, "base/fieldTypes/identifier", PhaseIdentifier).
+
+field(Template, "template", Template) :-
+    secdeva_installableExtension(PhaseIdentifier, _, Template, _, _),
+    field({{cardKey}}, "base/fieldTypes/identifier", PhaseIdentifier).
+
+field(Template, "buttonLabel", ButtonLabel) :-
+    secdeva_installableExtension(PhaseIdentifier, _, Template, ButtonLabel, _),
+    field({{cardKey}}, "base/fieldTypes/identifier", PhaseIdentifier).
+
+childResult(result, Template, "installedExtensions") :-
+    secdeva_installableExtension(PhaseIdentifier, _, Template, _, ExampleIdentifier),
+    field({{cardKey}}, "base/fieldTypes/identifier", PhaseIdentifier),
+    field(Descendant, "base/fieldTypes/identifier", ExampleIdentifier),
+    ancestor(Descendant, {{cardKey}}).
+
+childResult(result, Card, "tasks") :-
+    ancestor(Card, {{cardKey}}),
+    secdeva_closestProject(Card, Project),
+    secdeva_closestProject({{cardKey}}, Project),
+    base_recurringTask(Card).
+
+field(Card, "visible", "Yes") :- childResult(result, Card, "tasks"), not hiddenInTreeView(Card).
+field(Card, "visible", "No") :- childResult(result, Card, "tasks"), hiddenInTreeView(Card).
+
+field(Card, "compoundRank", Rank) :-
+    card(Card),
+    not parent(Card, _),
+    field(Card, "rank", Rank).
+
+field(Card, "compoundRank", @concatenate(ParentRank, " - ", Rank)) :-
+    card(Card),
+    parent(Card, Parent),
+    field(Card, "rank", Rank),
+    field(Parent, "compoundRank", ParentRank).
+
+order(2, "tasks", 1, "compoundRank", "ASC").

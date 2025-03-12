@@ -1,0 +1,6 @@
+{
+    "displayName": "Secure development management plan",
+    "description": "A plan on how to manage secure development in a development project",
+    "category": "Secure development specifications",
+    "name": "secdeva/templates/managementPlan"
+}

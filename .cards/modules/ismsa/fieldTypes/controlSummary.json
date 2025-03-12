@@ -1,0 +1,5 @@
+{
+    "name": "ismsa/fieldTypes/controlSummary",
+    "displayName": "Implementation summary",
+    "dataType": "longText"
+}

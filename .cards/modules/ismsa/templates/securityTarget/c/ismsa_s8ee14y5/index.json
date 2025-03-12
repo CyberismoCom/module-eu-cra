@@ -1,0 +1,9 @@
+{
+    "title": "Untitled security target",
+    "cardType": "ismsa/cardTypes/securityTarget",
+    "workflowState": "",
+    "rank": "0|b",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/dueDate": null
+}

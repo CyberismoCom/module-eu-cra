@@ -1,0 +1,6 @@
+{
+    "displayName": "Version status",
+    "description": "A status report of a development project version",
+    "category": "Secure development",
+    "name": "secdeva/reports/versionStatus"
+}

@@ -1,0 +1,12 @@
+{
+    "title": "Others",
+    "cardType": "base/cardTypes/task",
+    "workflowState": "",
+    "rank": "0|f",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": null,
+    "base/fieldTypes/justification": null,
+    "base/fieldTypes/dueDate": null,
+    "base/fieldTypes/adoptionStep": null,
+    "base/fieldTypes/identifier": null
+}

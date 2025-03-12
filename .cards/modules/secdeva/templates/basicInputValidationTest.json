@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/templates/basicInputValidationTest",
+    "displayName": "Basic input validation test",
+    "description": "Testing of the validation of external input",
+    "category": "Security testing"
+}

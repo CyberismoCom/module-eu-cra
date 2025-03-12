@@ -1,0 +1,6 @@
+{
+    "displayName": "Static code analysis review",
+    "description": "A review of the use of static code analysis in a development project",
+    "category": "Secure development reviews",
+    "name": "secdeva/templates/reviewOfStaticCodeAnalysis"
+}

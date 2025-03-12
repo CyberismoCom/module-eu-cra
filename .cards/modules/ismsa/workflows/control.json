@@ -1,0 +1,105 @@
+{
+    "name": "ismsa/workflows/control",
+    "states": [
+        {
+            "name": "Open",
+            "category": "initial"
+        },
+        {
+            "name": "Planning",
+            "category": "active"
+        },
+        {
+            "name": "Planned",
+            "category": "active"
+        },
+        {
+            "name": "Adopting",
+            "category": "active"
+        },
+        {
+            "name": "To be verified",
+            "category": "closed"
+        },
+        {
+            "name": "Closed as verified",
+            "category": "closed"
+        },
+        {
+            "name": "Closed as not applicable",
+            "category": "closed"
+        }
+    ],
+    "transitions": [
+        {
+            "name": "Create",
+            "fromState": [
+                ""
+            ],
+            "toState": "Open"
+        },
+        {
+            "name": "Start planning",
+            "fromState": [
+                "Open"
+            ],
+            "toState": "Planning"
+        },
+        {
+            "name": "Complete plan",
+            "fromState": [
+                "Planning"
+            ],
+            "toState": "Planned"
+        },
+        {
+            "name": "Start adoption",
+            "fromState": [
+                "Planned"
+            ],
+            "toState": "Adopting"
+        },
+        {
+            "name": "Ready for verification",
+            "fromState": [
+                "Adopting"
+            ],
+            "toState": "To be verified"
+        },
+        {
+            "name": "Verification passed",
+            "fromState": [
+                "To be verified"
+            ],
+            "toState": "Closed as verified"
+        },
+        {
+            "name": "Verification failed",
+            "fromState": [
+                "To be verified"
+            ],
+            "toState": "Planning"
+        },
+        {
+            "name": "Not applicable",
+            "fromState": [
+                "*"
+            ],
+            "toState": "Closed as not applicable"
+        },
+        {
+            "name": "Reverify control",
+            "fromState": [
+                "Closed as verified"
+            ],
+            "toState": "Closed as verified"
+        },
+        {
+            "name": "Reopen",
+            "fromState": [
+                "*"
+            ],
+            "toState": "Open"
+        }
+    ]
+}

@@ -1,0 +1,164 @@
+{
+    "name": "ismsa/workflows/risk",
+    "states": [
+        {
+            "name": "Open",
+            "category": "initial"
+        },
+        {
+            "name": "Analysed",
+            "category": "active"
+        },
+        {
+            "name": "Closed as duplicate",
+            "category": "closed"
+        },
+        {
+            "name": "Closed as accepted",
+            "category": "closed"
+        },
+        {
+            "name": "Closed as transferred",
+            "category": "closed"
+        },
+        {
+            "name": "Closed as avoided",
+            "category": "closed"
+        },
+        {
+            "name": "Closed as not applicable",
+            "category": "closed"
+        },
+        {
+            "name": "Treatment planned",
+            "category": "active"
+        },
+        {
+            "name": "Treatment in progress",
+            "category": "active"
+        },
+        {
+            "name": "Treatment complete",
+            "category": "active"
+        },
+        {
+            "name": "Needs monitoring",
+            "category": "active"
+        }
+    ],
+    "transitions": [
+        {
+            "name": "Create",
+            "fromState": [],
+            "toState": "Open"
+        },
+        {
+            "name": "Complete analysis",
+            "fromState": [
+                "Open"
+            ],
+            "toState": "Analysed"
+        },
+        {
+            "name": "Complete treatment planning",
+            "fromState": [
+                "Analysed"
+            ],
+            "toState": "Treatment planned"
+        },
+        {
+            "name": "Close as accepted",
+            "fromState": [
+                "Analysed",
+                "Needs monitoring"
+            ],
+            "toState": "Closed as accepted"
+        },
+        {
+            "name": "Close as not applicable",
+            "fromState": [
+                "Analysed"
+            ],
+            "toState": "Closed as not applicable"
+        },
+        {
+            "name": "Close as transferred",
+            "fromState": [
+                "Analysed"
+            ],
+            "toState": "Closed as transferred"
+        },
+        {
+            "name": "Close as avoided",
+            "fromState": [
+                "Analysed"
+            ],
+            "toState": "Closed as avoided"
+        },
+        {
+            "name": "Close as duplicate",
+            "fromState": [
+                "Analysed"
+            ],
+            "toState": "Closed as duplicate"
+        },
+        {
+            "name": "Approve treatment plan",
+            "fromState": [
+                "Treatment planned"
+            ],
+            "toState": "Treatment in progress"
+        },
+        {
+            "name": "Complete treatment",
+            "fromState": [
+                "Treatment in progress"
+            ],
+            "toState": "Treatment complete"
+        },
+        {
+            "name": "Monitor",
+            "fromState": [
+                "Treatment complete"
+            ],
+            "toState": "Needs monitoring"
+        },
+        {
+            "name": "Review progress",
+            "fromState": [
+                "Treatment in progress"
+            ],
+            "toState": "Treatment in progress"
+        },
+        {
+            "name": "Replan treatment",
+            "fromState": [
+                "Treatment planned",
+                "Treatment complete",
+                "Needs monitoring"
+            ],
+            "toState": "Analysed"
+        },
+        {
+            "name": "Review risk",
+            "fromState": [
+                "Needs monitoring"
+            ],
+            "toState": "Needs monitoring"
+        },
+        {
+            "name": "Accept residual risk",
+            "fromState": [
+                "Treatment complete"
+            ],
+            "toState": "Closed as accepted"
+        },
+        {
+            "name": "Reopen",
+            "fromState": [
+                "*"
+            ],
+            "toState": "Open"
+        }
+    ]
+}

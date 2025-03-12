@@ -1,0 +1,261 @@
+== Scope of review
+
+This document is a product documentation review for #add scope#. This review concerns the following product documentation:
+
+* #TODO: add links to the user manuals/product documentation#
+
+== Review checklist
+
+[NOTE]
+.Review instructions
+====
+
+On first review, fill in the checklist below. On subsequent reviews, ensure that the information is up to date.
+
+If you discover security related issues, then report a new Security Issue in the issue tracker and add a link in this document.
+====
+
+=== Manufacturer identification
+
+Ensure that the product is accompanied by the name, registered trade name or trademark of the manufacturer, and a postal address and an email address for contacting the manufacturer. This information should be on the product, or where that is not possible, in the product package or product documentation.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links to issue tracker:
+
+=== Product identification
+
+Ensure that the product is accompanied with the correct identification of the type, batch, version or serial number or other element that allows the user to identify the product and the corresponding product documentation.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links to issue tracker:
+
+=== Intended use and essential functions
+
+Document the intended use of the product and its essential functionalities.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links to issue tracker:
+
+=== Environmental requirements
+
+Document any environmental requirements that must be satisfied before the product is installed, and the possible security environment provided by the manufacturer.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links to issue tracker:
+
+=== Secure installation
+
+Document the best practices that need to be followed when installing the product or maintaining the product to implement the product's defence in depth strategy.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links to issue tracker:
+
+=== Secure uninstallation
+
+Document uninstallation procedures which ensure that
+
+* any sensitive data is securely deleted
+* any dangling references and configuration data is removed
+* product can be securely disposed to prevent data disclosure
+
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links to issue tracker:
+
+=== Hardening
+
+Document the hardening guidelines that the users must follow when installing and maintaining the product.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links to issue tracker:
+
+=== Hardening guidelines on integration
+
+Include the following instructions and rationale in the hardening guidelines: How to integrate the product and its third-party components with its product security context.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links to issue tracker:
+
+=== Hardening guidelines on APIs and interfaces
+
+Include the following instructions and rationale in the hardening guidelines: How to integrate the product’s application programming interfaces (APIs) and protocols with user applications securely.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links to issue tracker:
+
+=== Hardening guidelines on security options
+
+Include the following instructions and rationale in the hardening guidelines: How to configure and use the product’s security options/capabilities in support of local security policies.
+
+For each security option/capability, document:
+
+. The contribution of the feature to the product’s defence in depth strategy
+. Descriptions of configurable and default values. Explain how the values may affect security and impact work practices.
+. How to set, change or delete its value
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links to issue tracker:
+
+=== Security tools
+
+Document instructions and recommendations for the use of all security-related tools. These tools may support administration, monitoring, incident handling and evaluation of the security of the product. Document whether the tools should be removed from the system before completing the integration or system delivery.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links to issue tracker:
+
+=== Maintenance
+
+Document instructions, recommendations and best practices for periodic security maintenance and administration of the product.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links to issue tracker:
+
+=== Secure operation
+
+Document security guidelines for users and administrators, including the functions and interfaces available to different user roles, user and administrator responsibilities regarding the secure operation of the product.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links to issue tracker:
+
+=== Account management
+
+Document user account management and recommendations
+
+* Access control and required privileges for users
+* Software accounts, such as control system accounts and database accounts
+* Which default accounts are included in the product
+* Instructions for changing the default account names and passwords
+
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links to issue tracker:
+
+=== Known risks
+
+Document known security risks. Consider both the intended use of the product and any reasonably foreseeable misuse, which may lead to significant cybersecurity risks. Include threats that the product addresses by the defense in depth strategy. Include how changes to the product can affect the security of data.
+
+For risks that the users of the product can mitigate themselves, document the mitigation instructions. For all known security risks, document possible recommendations for compensating controls.
+
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links to issue tracker:
+
+=== SBOM
+
+Document if, and where applicable, where the software bill of materials (SBOM) can be accessed.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links to issue tracker:
+
+=== EU Declaration of conformity
+
+Document, where applicable, where the EU declaration of conformity can be accessed.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links to issue tracker:
+
+=== Reporting vulnerabilities
+
+Include in the end-user documentation instructions on how to report vulnerabilities about the product back to the product manufacturer.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links to issue tracker:
+
+=== No insecure practices
+
+Review that no insecure practices have been included in the product documentation. Notice that this review shall be done by a security advisor.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links to issue tracker:
+
+#TODO: Document here the name of the security advisor#
+
+=== Technical security support
+
+Document the type of technical security support offered by the manufacturer, and until when it will be provided. Document at the very least until when users can expect to receive security updates.
+
+Document or provide a reference as to how security-related software updates can be installed.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links to issue tracker:
+
+== Version history
+
+[cols="1,1,3"]
+|===============
+|Version | Date | Changes/Author
+
+| 0.1
+| 2024-01-01
+| XYZ changed by N.N.
+
+|===============
+
+{{#createCards}}
+  "template": "eucra/templates/securityIssue",
+  "buttonLabel": "Create a new security issue"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssueList"
+{{/report}}

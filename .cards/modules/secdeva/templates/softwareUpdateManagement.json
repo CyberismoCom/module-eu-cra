@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/templates/softwareUpdateManagement",
+    "displayName": "Review of software update management",
+    "description": "Review of the management of 3rd party software updates",
+    "category": "Secure development reviews"
+}

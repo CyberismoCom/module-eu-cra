@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/interfaceClassification",
+    "displayName": "Classification of an interface",
+    "description": "Classifying an interface based on the dataflow model",
+    "category": "Secure development"
+}

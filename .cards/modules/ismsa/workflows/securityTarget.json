@@ -1,0 +1,69 @@
+{
+    "name": "ismsa/workflows/securityTarget",
+    "states": [
+        {
+            "name": "Defining",
+            "category": "initial"
+        },
+        {
+            "name": "Approved",
+            "category": "initial"
+        },
+        {
+            "name": "Executing",
+            "category": "active"
+        },
+        {
+            "name": "Closed as done",
+            "category": "closed"
+        },
+        {
+            "name": "Postponed",
+            "category": "initial"
+        }
+    ],
+    "transitions": [
+        {
+            "name": "Create",
+            "fromState": [
+                ""
+            ],
+            "toState": "Defining"
+        },
+        {
+            "name": "Approve target",
+            "fromState": [
+                "Defining"
+            ],
+            "toState": "Approved"
+        },
+        {
+            "name": "Start execution",
+            "fromState": [
+                "Approved"
+            ],
+            "toState": "Executing"
+        },
+        {
+            "name": "Completed",
+            "fromState": [
+                "Executing"
+            ],
+            "toState": "Closed as done"
+        },
+        {
+            "name": "Postpone",
+            "fromState": [
+                "Executing"
+            ],
+            "toState": "Postponed"
+        },
+        {
+            "name": "Reactivate",
+            "fromState": [
+                "Postponed"
+            ],
+            "toState": "Executing"
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+{
+    "name": "ismsa/fieldTypes/assetContactDetails",
+    "displayName": "Contact details",
+    "dataType": "longText"
+}

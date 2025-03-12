@@ -1,0 +1,224 @@
+== Introduction
+
+This page documents the results of a privacy by design review of #Add scope#.
+
+== Personal data processed in the product
+
+[NOTE]
+.Review instructions
+====
+Ensure that all personal data processed or stored by the product is listed in the table below. The entries must also justify why it is necessary to process this data, and when the data can be removed.
+
+Personal data is information that relates to an identified or identifiable individual. Information is personal data even when identification of the individual requires combining information from other sources.
+
+Examples of personal data
+
+* Name and username.
+* identification number;
+* location data; and
+* an online identifier such as a cookie or an IP address
+
+Examples of justification:
+
+* Access control and audit trail, which are necessary to protect the integrity of the system and for audit purposes during its life cycle
+* History of user collaboration such as messages, diary entries, case descriptions, which are necessary for ensuring that the history of the system is known for audit purposes and for future system improvement
+
+Examples of when the data shall be removed
+
+* The data is necessary during the complete lifetime of the system, and it shall be removed upon system disposal
+
+For more information, see https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/key-definitions/what-is-personal-data/[ICO's instructions on what is personal data].
+
+If the product does not process any personal data, then you can add a single row that states this fact.
+====
+
+[width="100%",cols="20%,41%,39%",options="header",]
+|===
+| *Personal data* | *Justification for processing or storing* | *When the data shall be removed
+(When there is no longer a legal basis)*
+| (example data)
+| (example justification)
+| (exammple of when the data shall be removed)
+|===
+
+== Review checklist
+
+[NOTE]
+.Review instructions
+====
+
+On first review, fill in the checklist below. On subsequent reviews, ensure that the information is up to date.
+
+If the product does not process any personal data, then you can set *N/A* for all requirements.
+
+If you discover security related issues, then report a new Security Issue in the issue tracker and add a link in this document.
+====
+
+=== Privacy notice
+
+Product shall enable an administrator to configure the log-in screen or a welcome screen to include a privacy notice or a link to a privacy notice.
+
+How to review: Review product documentation or the user interface to confirm that the feature exists.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links to issue tracker:
+
+=== Audit trail
+
+Product shall record all accesses to personal data in an audit trail.
+
+How to review: Manual testing using the product and observing the audit trail
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links to issue tracker:
+
+=== Individual's access
+
+Product shall have the capability for an individual to review the personal data collected by the product.
+
+How to review: Review the product documentation or user interface.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links to issue tracker:
+
+=== Exporting data
+
+Product shall implement capabilities to support an individual's right to export their personal data.
+
+How to review: Data records must be available in commonly used format(s).
+
+This requirement may be inapplicable, if the personal data stored on applications is deeply related to the application and thereby not useful outside the context of the application.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links to issue tracker:
+
+=== User consent
+
+If user content is used as a legal basis for processing personal data, then the product shall record the consent for storing personal data.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links to issue tracker:
+
+=== Project usage
+
+Project shall not use personal data collected from a production environment or testing of the product.
+
+How to review: Interviewing personnel, auditing test systems
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links to issue tracker:
+
+=== Removing personal data
+
+Product shall store personal data in a format supporting permanent removal of the personal data, when there is no longer any legitimate reason to continue storing the data. When personal data is removed, the product shall be able to remove the personal data without compromising the integrity of the product. This extends to the backup data in addition to the live data.
+
+See the previous section of this document on the justification for storing personal data and removal of personal data. In many business-to-business applications, the legal basis for collecting and storing data is a legitimate interest. If user consent is used as the legal basis for storing any personal data, then the product does not typically need to implement specific features for removing personal data upon request.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links to issue tracker:
+
+=== Logs
+
+Product logs shall not contain any _unnecessary_ personal information such as usernames.
+
+How to review: Review the logs
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links to issue tracker:
+
+=== Confidentiality and Integrity
+
+Personal data shall be adequately protected both in transit and at rest against disclosure and tampering. Access to personal information and to the audit trail shall be restricted so that the information is available to other users only when necessary.
+
+How to review: Review and refer to the security controls that are in place for protecting personal data.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links to issue tracker:
+
+=== Monitoring
+
+Product shall implement sufficient monitoring capabilities ensuring security breaches related to personal information can be acted upon timely.
+
+How to review: Review product documentation or design documentation.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links to issue tracker:
+
+=== Data Protection Impact Assessment
+
+Project shall determine whether a Data Protection Impact Assessment (DPIA) is required for the product. A DPIA is required if the data processing is likely to result a high risk to individuals.
+
+How to decide: See the screening checklist in the appendix below for advice on how to determine whether DPIA is required.
+
+If a DPIA is required, then contact a security specialist of your organization.
+
+* [ ] Required
+* [ ] Not Applicable
+
+Comments, links to issue tracker:
+
+#Document the justification for requiring/not requiring a DPIA#
+
+== Appendix: Data protection impact assessments
+
+DPIA is required in the following cases:
+
+* product uses systematic and extensive profiling or automated decision-making to make significant decisions about people
+* product monitors a publicly accessible place on a large scale
+* product combines, compares or matches personal data from multiple sources
+* product processes genetic or biometric data for the purpose of uniquely identifying a natural person
+* product tracks an individual's online or offline location or behaviour
+* product processes sensitive personal data or data of highly personal nature 
+* product uses new technologies
+* if one suspects the application may need to process personal data in a manner that is not typical for organization application portfolio, please check the https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/accountability-and-governance/data-protection-impact-assessments/[DPIA screening checklist in the ICO GDPR guide]
+
+== Version history
+
+[cols="1,1,3"]
+|===============
+|Version | Date | Changes/Author
+
+| 0.1
+| 2024-01-01
+| XYZ changed by N.N.
+
+|===============
+
+{{#createCards}}
+  "template": "eucra/templates/securityIssue",
+  "buttonLabel": "Create a new security issue"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssueList"
+{{/report}}

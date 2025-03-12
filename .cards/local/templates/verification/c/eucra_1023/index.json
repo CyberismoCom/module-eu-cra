@@ -1,0 +1,17 @@
+{
+    "cardType": "base/cardTypes/annualTask",
+    "title": "Analyse the attack surface",
+    "workflowState": "",
+    "rank": "0|c",
+    "lastUpdated": "2025-01-22T20:03:18.885Z",
+    "links": [],
+    "eucra/fieldTypes/controlImplementer": "Independent person (not the developer of the product)",
+    "base/fieldTypes/adoptionStep": "step2",
+    "base/fieldTypes/justification": null,
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/reviewPeriod": 365,
+    "base/fieldTypes/reviewMonth": null,
+    "base/fieldTypes/lastReviewed": null,
+    "base/fieldTypes/identifier": "eucra_control_attack-surface-analysis"
+}

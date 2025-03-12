@@ -1,0 +1,13 @@
+{
+    "cardType": "base/cardTypes/review",
+    "title": "Product documentation review of (Scope)",
+    "workflowState": "",
+    "rank": "0|a",
+    "lastUpdated": "2025-01-20T08:48:53.440Z",
+    "links": [],
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/lastReviewed": null,
+    "base/fieldTypes/reviewPeriod": 730,
+    "base/fieldTypes/identifier": "eucra_review_product-documentation"
+}

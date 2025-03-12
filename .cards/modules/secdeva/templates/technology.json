@@ -1,0 +1,6 @@
+{
+    "displayName": "Technology selection",
+    "description": "A security review of a 3rd party technology",
+    "category": "Secure development reviews",
+    "name": "secdeva/templates/technology"
+}

@@ -1,0 +1,11 @@
+{
+    "title": "Review of manual code review practices",
+    "cardType": "base/cardTypes/review",
+    "workflowState": "",
+    "rank": "0|b",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/lastReviewed": null,
+    "base/fieldTypes/reviewPeriod": 365,
+    "base/fieldTypes/identifier": "secdeva_review_manual-code-review"
+}

@@ -1,0 +1,5 @@
+{
+    "name": "secdeva/fieldTypes/sbomComponentPurl",
+    "displayName": "SBOM component purl",
+    "dataType": "shortText"
+}

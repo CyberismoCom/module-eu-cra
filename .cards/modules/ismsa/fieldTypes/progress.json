@@ -1,0 +1,5 @@
+{
+    "name": "ismsa/fieldTypes/progress",
+    "displayName": "Progress label",
+    "dataType": "shortText"
+}

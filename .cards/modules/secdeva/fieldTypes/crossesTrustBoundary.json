@@ -1,0 +1,19 @@
+{
+    "name": "secdeva/fieldTypes/crossesTrustBoundary",
+    "displayName": "Does the interface or dataflow cross a trust boundary?",
+    "dataType": "enum",
+    "enumValues": [
+        {
+            "enumValue": "yes",
+            "enumDisplayValue": "Yes"
+        },
+        {
+            "enumValue": "no",
+            "enumDisplayValue": "No"
+        },
+        {
+            "enumValue": "noInfo",
+            "enumDisplayValue": "Dataflows not defined"
+        }
+    ]
+}

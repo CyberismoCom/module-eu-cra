@@ -1,0 +1,82 @@
+== Context diagram
+
+{{#graph}}
+  "model": "secdeva/graphModels/dataflow",
+  "view": "secdeva/graphViews/context"
+{{/graph}}
+
+== Detailed diagram
+
+{{#graph}}
+  "model": "secdeva/graphModels/dataflow",
+  "view": "secdeva/graphViews/allEntities"
+{{/graph}}
+
+== Interfaces
+
+{{#report}}
+  "name": "secdeva/reports/modelInterfaces"
+{{/report}}
+
+== Top-level elements
+
+Trust boundary:: A trust boundary is a boundary between different trust zone levels.
+
+{{#createCards}}
+    "buttonLabel": "Create a trust boundary",
+    "template": "secdeva/templates/trustBoundary"
+{{/createCards}}
+
+External entity:: An external entity is a source from which information flows into the system, or a recipients of information leaving the system
+
+{{#createCards}}
+  "buttonLabel": "Create an external entity",
+  "template": "secdeva/templates/external"
+{{/createCards}}
+
+Person:: A person is a user, an administrator or another human stakeholder. A special case of an external entity.
+
+{{#createCards}}
+  "buttonLabel": "Create a person",
+  "template": "secdeva/templates/person"
+{{/createCards}}
+
+Process:: A process represents an activity that the system carries out.
+
+{{#createCards}}
+  "buttonLabel": "Create a process",
+  "template": "secdeva/templates/process"
+{{/createCards}}
+
+Data store:: A data store stores information. For example, a database or a file.
+
+{{#createCards}}
+  "buttonLabel": "Create a data store",
+  "template": "secdeva/templates/dataStore"
+{{/createCards}}
+
+== Decisions and design specifications
+
+Document a technical decision or create a design specification.
+
+{{#createCards}}
+  "buttonLabel": "Create a decision",
+  "template": "base/templates/decision"
+{{/createCards}}
+
+{{#createCards}}
+  "buttonLabel": "Create a specification",
+  "template": "secdeva/templates/designSpecification"
+{{/createCards}}
+
+{{#report}}
+  "name": "base/reports/childrenTable",
+  "cardType": "base/cardTypes/decision",
+  "tableCaption": "Decisions"
+{{/report}}
+
+{{#report}}
+  "name": "base/reports/childrenTable",
+  "cardType": "base/cardTypes/controlledDocument",
+  "tableCaption": "Specifications"
+{{/report}}

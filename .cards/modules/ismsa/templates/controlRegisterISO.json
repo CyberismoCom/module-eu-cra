@@ -1,0 +1,6 @@
+{
+    "displayName": "Register for ISO27001 controls",
+    "description": "A register or ISO27001 controls",
+    "category": "Register management",
+    "name": "ismsa/templates/controlRegisterISO"
+}

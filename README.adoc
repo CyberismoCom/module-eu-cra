@@ -20,7 +20,7 @@ See separate file CONTRIBUTING.
 
 == About the Cyberismo EU Cyber Resilience Act module
 
-This module defines additional content on top of the Cyberismo secure development essentials module for help product manufacturers with compliance to the EU Cyber Resilience Act.
+This module defines additional content on top of the Cyberismo secure development essentials module. The goal of this module is to help product manufacturers comply with the EU Cyber Resilience Act.
 
 == Using the Cyberismo EU Cyber Resilience Act module
 

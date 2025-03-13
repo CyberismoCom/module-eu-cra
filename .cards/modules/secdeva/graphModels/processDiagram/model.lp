@@ -18,6 +18,14 @@ attr(node, Task, label, @concatenate("<<font point-size='32'> <b>", @wrap(Title)
     field(Task, "title", Title),
     visible(Task).
 
+% security requirement
+node(Requirement, toplevelGraph) :- field(Requirement, "cardType", "secdeva/cardTypes/requirement"), visible(Requirement).
+
+attr(node, Requirement, label, @concatenate("<<font point-size='32'> <b>", @wrap(Title), "</b> </font> <br/> <font point-size='19'>Technical requirement</font>>")) :-
+    field(Requirement, "cardType", "secdeva/cardTypes/requirement"),
+    field(Requirement, "title", Title),
+    visible(Requirement).
+
 % evidence
 evidence(Evidence) :-
     base_recurringTask(Task),
@@ -133,18 +141,19 @@ attr(edge, (X, Y, N), pendwidth, "3") :- edge((X, Y, N), _).
 attr(edge, (X, Y, N), arrowsize, "2") :- edge((X, Y, N), _).
 
 % shapes of nodes
-attr(node, X, shape, rectangle) :- node(X, _), field(X, "cardType", "ismsa/cardTypes/complianceRequirement"), not invisible(X).
-attr(node, X, style, rounded) :- node(X, _), field(X, "cardType", "ismsa/cardTypes/complianceRequirement"), not invisible(X).
-attr(node, X, shape, rectangle) :- node(X, _), base_recurringTask(X), not invisible(X).
-attr(node, X, style, rounded) :- node(X, _), base_recurringTask(X), not invisible(X).
-attr(node, X, shape, note) :- node(X, _), evidence(X), not invisible(X).
-attr(node, X, shape, note) :- node(X, _), evidencePlaceholder(X), not invisible(X).
-attr(node, X, style, dashed) :- node(X, _), evidencePlaceholder(X), not invisible(X).
+attr(node, X, shape, rectangle) :- node(X, _), field(X, "cardType", "ismsa/cardTypes/complianceRequirement").
+attr(node, X, style, rounded) :- node(X, _), field(X, "cardType", "ismsa/cardTypes/complianceRequirement").
+attr(node, X, shape, rectangle) :- node(X, _), base_recurringTask(X).
+attr(node, X, style, rounded) :- node(X, _), base_recurringTask(X).
+attr(node, X, shape, note) :- node(X, _), evidence(X).
+attr(node, X, shape, note) :- node(X, _), field(X, "cardType", "secdeva/cardTypes/requirement").
+attr(node, X, shape, note) :- node(X, _), evidencePlaceholder(X).
+attr(node, X, style, dashed) :- node(X, _), evidencePlaceholder(X).
 
 % fonts
 attr(graph, G, fontname, "helvetica") :- graph(G).
 attr(graph, G, fontname, "helvetica") :- graph(G, _).
-attr(node, N, fontname, "helvetica") :- node(N, _), not invisible(N).
+attr(node, N, fontname, "helvetica") :- node(N, _).
 attr(edge, (X, Y, N), fontname, "helvetica") :- edge((X, Y, N), _).
 
 #show graph /1.

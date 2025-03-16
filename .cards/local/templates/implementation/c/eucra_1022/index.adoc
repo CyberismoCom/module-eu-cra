@@ -1,4 +1,8 @@
-The attack surface of a system is the sum of the system's attack vectors. Attack vectors are routes or avenues by which attacks or other security issues may enter the system. The attack surface needs to be documented, in a detailed technical level,  so that it can be used later in the attack surface analysis phase to verify that the attack surface of the system has been minimized.
+The attack surface of a system is the sum of the system's attack vectors. Attack vectors are routes or avenues by which attacks or other security issues may enter the system.
+
+Limiting the attack surface, or _hardening_, is an important security practice.
+
+The attack surface needs to be documented, in a detailed technical level, so that it can be used later in the attack surface analysis task, to verify that the attack surface of the system has been minimised.
 
 == How to decide if this secure development task is required
 

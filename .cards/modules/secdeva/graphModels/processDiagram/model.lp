@@ -1,6 +1,9 @@
 graph(toplevelGraph).
 
+% drawableCard(X) means that X is a supported type of card in process diagrams.
+
 % compliance requirement
+drawableCard(Requirement) :- field(Requirement, "cardType", "ismsa/cardTypes/complianceRequirement").
 node(Requirement, toplevelGraph) :-
     field(Requirement, "cardType", "ismsa/cardTypes/complianceRequirement"),
     visible(Requirement).
@@ -11,6 +14,7 @@ attr(node, Requirement, label, @concatenate("<<font point-size='32'> <b>", @wrap
     visible(Requirement).
 
 % task
+drawableCard(Task) :- base_recurringTask(Task).
 node(Task, toplevelGraph) :- base_recurringTask(Task), visible(Task).
 
 attr(node, Task, label, @concatenate("<<font point-size='32'> <b>", @wrap(Title), "</b> </font> <br/> <font point-size='19'>Recurring task</font>>")) :-
@@ -19,17 +23,21 @@ attr(node, Task, label, @concatenate("<<font point-size='32'> <b>", @wrap(Title)
     visible(Task).
 
 % security requirement
+drawableCard(Requirement) :- field(Requirement, "cardType", "secdeva/cardTypes/requirement").
 node(Requirement, toplevelGraph) :- field(Requirement, "cardType", "secdeva/cardTypes/requirement"), visible(Requirement).
 
-attr(node, Requirement, label, @concatenate("<<font point-size='32'> <b>", @wrap(Title), "</b> </font> <br/> <font point-size='19'>Technical requirement</font>>")) :-
+attr(node, Requirement, label, @concatenate("<<font point-size='32'> <b>", @wrap(Title), "</b> </font> <br/> <font point-size='19'>Security requirement</font>>")) :-
     field(Requirement, "cardType", "secdeva/cardTypes/requirement"),
     field(Requirement, "title", Title),
     visible(Requirement).
 
 % evidence
+drawableCard(Document) :- field(Document, "cardType", "base/cardTypes/controlledDocument").
+drawableCard(Review) :- field(Review, "cardType", "base/cardTypes/review").
 evidence(Evidence) :-
     base_recurringTask(Task),
     visible(Task),
+    drawableCard(Evidence),
     link(Evidence, Task, "secdeva/linkTypes/evidences").
 
 node(Evidence, toplevelGraph) :- evidence(Evidence).

@@ -6,11 +6,11 @@ EU CRA Annex I (1) (2) (h) :: On the basis of the cybersecurity risk assessment 
 
 #TODO: Edit this as applicable and add any product-specific considerations#
 
-The product should be hardened against attacks that may compromise the identified essential functions, such as (distributed) denial of service attacks. Examples of protective mechanisms are listed below under "Technologies".
+The product should be hardened against attacks that may compromise the identified essential functions, such as (distributed) denial of service attacks.
 
 The essential functions are documented as part of the linked secure development task *Document security context*.
 
-The product and the product manuals shall support the users with their backup planning and disaster recovery planning. 
+The product and the product manuals shall support the users with their backup planning and disaster recovery planning.
 
 If applicable, security testing of the product may include network storm testing and fuzz testing of external interfaces. This testing should include observing that essential functions are maintained during the testing or at least restored after the testing.
 

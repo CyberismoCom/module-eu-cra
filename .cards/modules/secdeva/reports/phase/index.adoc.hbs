@@ -1,5 +1,19 @@
 {{#each results}}
 
+{{#each this.uninstalledExtensions}}
+There is some additional content available from {{this.moduleDescription}}.
+
+{{#createCards}}
+  "template": "{{this.template}}",
+  "buttonLabel": "{{this.buttonLabel}}"
+{{/createCards}}
+{{/each}}
+
+{{#each this.installedExtensions}}
+Content from {{this.moduleDescription}} has been added.
+
+{{/each}}
+
 {{#each this.project}}
 If there are secure development tasks on a higher adoption step than the current target adoption step, then they will not be visible in the navigation.
 {{#if this.[base/fieldTypes/adoptionStep]}}
@@ -28,17 +42,4 @@ The current target adoptioption step of the project is *None*.
 |===
 {{/if}}
 
-{{#each this.uninstalledExtensions}}
-There is some additional content available from {{this.moduleDescription}}.
-
-{{#createCards}}
-  "template": "{{this.template}}",
-  "buttonLabel": "{{this.buttonLabel}}"
-{{/createCards}}
-{{/each}}
-
-{{#each this.installedExtensions}}
-Content from {{this.moduleDescription}} has been added.
-
-{{/each}}
 {{/each}}

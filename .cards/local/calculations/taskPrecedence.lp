@@ -180,7 +180,9 @@ secdeva_implementationTask(
 ).
 
 secdeva_implementationTask(
-    "eucra_security-requirement_no-known-exploitable-vulnerabilities",
+    ("eucra_security-requirement_no-known-exploitable-vulnerabilities";
+    "secdeva_control_manage-defects",
+    "secdeva_control_vulnerability-management"),
     "eucra_compliance-requirement_annex-I-1-2-a"
 ).
 
@@ -306,4 +308,65 @@ secdeva_implementationTask(
 secdeva_implementationTask(
     "eucra_control_technical-documentation-review",
     "eucra_compliance-requirement_annex-VII"
+).
+
+secdeva_implementationTask(
+    ("secdeva_control_manage-defects";
+    "secdeva_control_vulnerability-management"),
+    "eucra_security-requirement_no-known-exploitable-vulnerabilities"
+).
+
+secdeva_implementationTask(
+    ("eucra_control_support-period";
+    "eucra_control_integrity-protection-of-release"),
+    "eucra_security-requirement_security-updates"
+).
+
+secdeva_implementationTask(
+    ("secdeva_control_security-context";
+    "eucra_control_document-attack-surface";
+    "eucra_control_attack-surface-analysis"),
+    "eucra_security-requirement_availability-of-essential-functions"
+).
+
+secdeva_implementationTask(
+    ("secdeva_control_use-of-cryptography";
+    "eucra_control_integrity-protection-of-release"),
+    "eucra_security-requirement_integrity-of-data"
+).
+
+secdeva_implementationTask(
+    "secdeva_control_use-of-cryptography",
+    "eucra_security-requirement_confidentiality-of-data"
+).
+
+secdeva_implementationTask(
+    ("secdeva_control_threat-models";
+    "secdeva_control_error-handling-testing";
+    "eucra_control_document-attack-surface";
+    "eucra_control_attack-surface-analysis"),
+    "eucra_security-requirement_minimise-negative-impact"
+).
+
+secdeva_implementationTask(
+    ("eucra_control_document-attack-surface";
+    "eucra_control_attack-surface-analysis"),
+    "eucra_security-requirement_limit-attack-surfaces"
+).
+
+secdeva_implementationTask(
+    ("eucra_control_security-design-review";
+    "eucra_control_privacy-by-design-review"),
+    "eucra_security-requirement_data-minimisation"
+).
+
+secdeva_implementationTask(
+    "eucra_control_product-documentation-review",
+    "eucra_security-requirement_possibility-to-remove-all-data"
+).
+
+secdeva_implementationTask(
+    ("eucra_control_security-design-review";
+    "secdeva_control_security-context"),
+    "eucra_security-requirement_reduce-the-impact-of-incidents"
 ).

@@ -109,16 +109,6 @@ secdeva_implementationTask(
 
 secdeva_implementationTask(
     "secdeva_control_vulnerability-management",
-    "eucra_compliance-requirement_article-14-4"
-).
-
-secdeva_implementationTask(
-    "secdeva_control_vulnerability-management",
-    "eucra_compliance-requirement_article-14-5"
-).
-
-secdeva_implementationTask(
-    "secdeva_control_vulnerability-management",
     "eucra_compliance-requirement_article-14-7"
 ).
 

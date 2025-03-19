@@ -1,0 +1,3 @@
+{{#report}}
+    "name": "secdeva/reports/complianceRequirementsSummary"
+{{/report}}

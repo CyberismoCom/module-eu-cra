@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/complianceRequirementsSummary",
+    "displayName": "Compliance requirements summary",
+    "description": "A table of descendant compliance requirements",
+    "category": "Secure development"
+}

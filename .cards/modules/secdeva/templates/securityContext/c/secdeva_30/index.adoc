@@ -16,7 +16,7 @@ The foreseeable use includes:
 
 * #TODO: document the foreseeable use#
 
-== Forseeable misuse
+== Foreseeable misuse
 
 The _reasonably foreseeable misuse_ means the use of a product or a solution in a way that is not in accordance with its intended purpose, but which may result from reasonably foreseeable human behaviour or interaction with other systems,
 

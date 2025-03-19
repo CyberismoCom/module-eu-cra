@@ -2,6 +2,10 @@
 attr(graph, toplevelGraph, rankdir, "{{layout}}").
 {{/if}}
 
+{{#each show}}
+view({{this}}, 1).
+{{/each}}
+
 view(TopLevelEntity, 1) :-
     entity(TopLevelEntity),
     entityLevel(TopLevelEntity, 1),

@@ -1,0 +1,14 @@
+{
+    "title": "EU CRA Annex I (1) (2) (g): Data minimisation",
+    "cardType": "ismsa/cardTypes/complianceRequirement",
+     "workflowState": "",
+    "rank": "0|i",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "public",
+    "base/fieldTypes/adoptionStep": null,
+    "base/fieldTypes/identifier": "eucra_compliance-requirement_annex-I-1-2-g",
+    "ismsa/fieldTypes/requirementImplementationStrategy": null,
+    "ismsa/fieldTypes/requirementOrigin": "Regulation (EU) 2024/2847 Cyber Resilience Act",
+    "links": [],
+    "lastUpdated": "2025-03-18T14:39:13.551Z"
+}

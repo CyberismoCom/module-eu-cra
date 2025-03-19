@@ -1,0 +1,31 @@
+{{#if results}}
+
+{{log results}}
+
+[cols="4,1,3,3"]
+.Compliance requirements
+|===
+| Compliance requirement | Workflow state | Implementation | Evidence
+
+{{#each results}}
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.workflowState}}
+{{#if this.implementedBy}}
+| {{#each implementedBy}}xref:{{this.key}}.adoc[{{this.title}}] {{#unless @last}},
+
+{{/unless}}{{/each}}
+{{else}}
+|
+{{/if}}
+{{#if this.evidencedBy}}
+| {{#each evidencedBy}}xref:{{this.key}}.adoc[{{this.title}}] {{#unless @last}},
+
+{{/unless}}{{/each}}
+{{else}}
+|
+{{/if}}
+{{/each}}
+
+|===
+
+{{/if}}

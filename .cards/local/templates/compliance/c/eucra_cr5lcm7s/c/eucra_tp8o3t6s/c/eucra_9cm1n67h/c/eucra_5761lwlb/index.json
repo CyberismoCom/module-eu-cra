@@ -1,0 +1,14 @@
+{
+    "title": "EU CRA Annex I (2) (3): Tests and reviews",
+    "cardType": "ismsa/cardTypes/complianceRequirement",
+     "workflowState": "",
+    "rank": "0|c",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "public",
+    "base/fieldTypes/adoptionStep": null,
+    "base/fieldTypes/identifier": "eucra_compliance-requirement_annex-I-2-3",
+    "ismsa/fieldTypes/requirementImplementationStrategy": null,
+    "ismsa/fieldTypes/requirementOrigin": "Regulation (EU) 2024/2847 Cyber Resilience Act",
+    "links": [],
+    "lastUpdated": "2025-03-18T14:49:31.875Z"
+}

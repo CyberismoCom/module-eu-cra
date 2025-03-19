@@ -1,0 +1,5 @@
+This hierarchy includes such requirements from EU CRA that may be relevant to *product manufacturers*, *importers* and *distributors*.
+
+{{#report}}
+    "name": "base/reports/childrenList"
+{{/report}}

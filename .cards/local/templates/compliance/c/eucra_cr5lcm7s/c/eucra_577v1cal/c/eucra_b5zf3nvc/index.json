@@ -1,0 +1,14 @@
+{
+    "title": "EU CRA Article 21: Cases in which obligations of manufacturers apply to importers and distributors",
+    "cardType": "ismsa/cardTypes/complianceRequirement",
+     "workflowState": "",
+    "rank": "0|yn",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "public",
+    "base/fieldTypes/adoptionStep": null,
+    "base/fieldTypes/identifier": "eucra_compliance-requirement_article-21",
+    "ismsa/fieldTypes/requirementImplementationStrategy": null,
+    "ismsa/fieldTypes/requirementOrigin": "Regulation (EU) 2024/2847 Cyber Resilience Act",
+    "links": [],
+    "lastUpdated": "2025-03-19T13:23:55.884Z"
+}

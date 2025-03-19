@@ -1,0 +1,30 @@
+selectAll.
+result(Requirement) :-
+    ancestor(Requirement, {{cardKey}}),
+    field(Requirement, "cardType", "ismsa/cardTypes/complianceRequirement").
+
+childResult(Requirement, Implementation, "implementedBy") :-
+    result(Requirement),
+    link(Implementation, Requirement, "ismsa/linkTypes/implements").
+
+childResult(Requirement, Evidence, "evidencedBy") :-
+    result(Requirement),
+    link(Evidence, Requirement, "secdeva/linkTypes/evidences").
+
+childResult(Requirement, Evidence, "evidencedBy") :-
+    result(Requirement),
+    link(Implementation, Requirement, "ismsa/linkTypes/implements"),
+    link(Evidence, Implementation, "secdeva/linkTypes/evidences").
+
+field(Card, "compoundRank", Rank) :-
+    card(Card),
+    not parent(Card, _),
+    field(Card, "rank", Rank).
+
+field(Card, "compoundRank", @concatenate(ParentRank, " - ", Rank)) :-
+    card(Card),
+    parent(Card, Parent),
+    field(Card, "rank", Rank),
+    field(Parent, "compoundRank", ParentRank).
+
+orderBy("compoundRank", "ASC").

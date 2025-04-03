@@ -23,3 +23,8 @@ policyCheckFailure(
         not field(Card, "workflowState", "Closed as rejected"),
         parent(ReviewTask, Card),
         not field(ReviewTask, "workflowState", "Closed as done").
+
+onTransitionExecuteTransition(Requirement, "Reopen", ReviewTask, "Reopen") :-
+    field(Requirement, "cardType", "secdeva/cardTypes/requirement"),
+    parent(ReviewTask, Requirement),
+    field(ReviewTask, "cardType", "base/cardTypes/task").

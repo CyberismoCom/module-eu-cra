@@ -1,0 +1,431 @@
+
+This document describes the business context for #add scope#.
+
+== Introduction
+:icons: font
+
+In a competitive commercial environment, it is never possible to have "perfect security". Resources are always limited, and we want to allocate them wisely. Therefore, it makes sense to start cybersecurity scoping from the business context. Taking a business view helps in prioritization and in choosing the controls that are proportional to the assets that we are protecting and to the risks that we have identified.
+
+It is useful to analyse and document the business context for the following aspects
+
+* A high-level description of the company, system or product, including purpose, users and main use cases
+* Motivation: business goals, reasons for investing in cybersecurity and security objectives
+* Environment: external compliance requirements, supply chain, delivery chain, the lifecycle of the solutions, competition and product security context
+* High-level assets that need protection
+* Damage scenarios and optionally, an analysis of threat agents
+* Conclusions about the scoping of cybersecurity work and recommended next steps
+
+== Target of evaluation
+
+.Review instructions
+[%collapsible]
+====
+Target of evaluation(ToE) is the company, system or product subject to the business context analysis. Definition of the ToE should cover at least the following:
+
+* the purpose of the company, system or product
+* high level system architecture
+* users, stake holders and collaborators
+* main use cases
+====
+
+This cybersecurity business context analysis concerns the #add scope#.
+
+The goal of the #add company, system or product# is to #add goal or purpose#. 
+
+The main services/uses cases of the #add company, system or product# are:
+
+* #add services/use cases#
+
+The stakeholders of the #add company, system or product# with there needs and expectation are listed in the following table.
+
+[cols="1,2"]
+|===
+|Stakeholder | Needs and expectations
+
+| #Add stakeholder 1#
+a| * #Add needs and expectations#
+* #Add needs and expectations#
+* #Add needs and expectations#
+
+| #Add stakeholder 2#
+a| * #Add needs and expectations#
+* #Add needs and expectations#
+* #Add needs and expectations#
+
+| Customers 
+a| 
+
+| Employees
+a| 
+
+| Subcontractors
+a| 
+
+
+| Suppliers
+a| 
+
+
+| Shareholders
+a| 
+
+
+| Authorities
+a| 
+
+
+|
+a| 
+
+
+|
+a| 
+
+
+|
+a| 
+
+|===
+
+
+
+== Motivation
+
+=== Business environment
+
+.Review instructions
+[%collapsible]
+====
+Business environment contains the landscape for the company, system or product.
+
+* Scale of the business and the potential customer base
+* Business objectives
+* Main challenges the company, system or product is to face during its life cycle.
+====
+
+The business environment is #add description of business environment#
+
+The business objectives for #add scope# are 
+
+* #TODO#
+
+The main opportunities for #add scope# are 
+
+* #TODO#
+
+The main challenges for #add scope# are 
+
+* #TODO#
+
+
+=== Motivation to invest in cybersecurity
+
+.Review instructions
+[%collapsible]
+====
+This section should contain a description of the motivation for investing in cybersecurity.
+====
+
+#Describe why company, system or product wants to invest in cybersecurity#
+
+=== Security objectives
+
+.Review instructions
+[%collapsible]
+====
+Security objectives can be created to ensure:
+
+* Confidentiality
+* Integrity
+* Availability
+* Accountability
+* Authenticity / Trustworthiness
+* Non-repudiation
+* Privacy
+* Dependability
+====
+
+Security objectives of the #add scope# are:
+
+* #TODO#
+
+== Environment
+
+=== High-level requirements
+
+.Review instructions
+[%collapsible]
+====
+
+This section should describe the most important requirements from customers, internal stakeholders, authorities and standards.
+====
+
+The most important requirements for #add scope# are 
+
+* #TODO#
+
+=== Supply chain
+
+.Review instructions
+[%collapsible]
+====
+
+This section should describe the most suppliers for company, system or product. 
+Include also considerations about the security posture of the key suppliers.
+====
+
+The most important suppliers for #add scope# are 
+
+* #TODO#
+
+=== Delivery chain and lifecycle (for products and services)
+
+.Review instructions
+[%collapsible]
+====
+This section should describe the role of this product or solution in the Operational Technology (OT) delivery chain.
+
+* Is this a repeatable product that can be used in multiple environments?
+
+* Is this a customer specific solution?
+
+* Is this a service that supports multiple customer specific solutions?
+
+This section should also describe the lifecycle phases of this product or solution:
+
+* Design and implementation
+* Delivery to the customer or end user environment
+* Operations and maintenance during the operations phase
+* End of life
+====
+
+#Describe what kind of delivery chain and lifecycle service(s) or product(s) have#
+
+
+
+=== Security context
+
+.Review instructions
+[%collapsible]
+====
+Security context defines the security provided by the environment, where the target of evaluation is intended to be used.
+
+Check that the assumptions about the product security context have been documented.
+
+The security context could include:
+
+* Expected location in the network
+* Physical or cyber security that is required to be provided by the deployment environment
+* Whether isolation from network perspective is expected to be provided by the deployment environment
+
+You can describe the product security context here, or link to a separate document.
+====
+
+#Describe what kind of security context company, system or product has? Do we need to make assumptions about the context in order to ensure sufficient security?#
+
+
+=== Competition
+
+.Review instructions
+[%collapsible]
+====
+This section should describe the competitors, their security posture and security related trends among the competition.
+====
+
+The main competitors of the #add scope# are:
+
+* #TODO#
+
+=== Cybersecurity management context
+
+.Review instructions
+[%collapsible]
+====
+This section should describe or link to separate documentation about
+
+* Security related roles and responsibilities related to the system
+* Incident management process for the company, system or product
+====
+
+#Add links to governance model and other relevant documents#
+
+=== Climate change and sustainability
+
+.Review instructions
+[%collapsible]
+====
+
+This section should describe 
+
+* What kinds of effect climate change could have for company, system or product
+* How company, system or product could affect the climate change (e.g. use of AI)
+
+====
+
+Climate change is posing escalating challenges on all human activities, including businesses. 
+In some cases, impacts associated with climate change could disrupt supply chains, 
+open new vulnerabilities for malicious actors to exploit, or cause other problems that could 
+be interlinked with cybersecurity.
+
+#Describe how climate change could affect company, system or product#
+
+#Describe what kinds of effect company, product or system could have on climate change#
+
+== Assets
+
+=== Assets that need protection
+
+.Review instructions
+[%collapsible]
+====
+This section should lists the most important assets categories that need protection. Assets may include
+
+* information assets
+* connected systems
+* the process that is being controlled or monitored
+* physical assets
+* hardware
+* 3rd party technologies, especially if there are export restrictions, 3rd party IPR or DRM considerations
+* sensitive data
+* training material and simulators
+* other copyrighted material such as images, icons and logos.
+
+Preferably, assets should be prioritized or the most critical assets should be identified.
+====
+
+The primary assets are:
+
+* #TODO#
+
+The supporting assets are:
+
+* #TODO#
+
+=== Roadmap
+
+.Review instructions
+[%collapsible]
+====
+Cybersecurity work should be planned in the light of the overall product or solution roadmap. This section should document
+
+* Ongoing development efforts
+* Planned development efforts
+====
+
+The ongoing development efforts related to #add scope# are:
+
+* #TODO#
+
+The planned development efforts related to #add scope# are:
+
+* #TODO#
+
+#Describe how security has been taken into account in these activities#
+
+#Estimate how much resources are left for actual cybersecurity work#
+
+
+== Threat intelligence
+
+=== Damage scenarios in the order of decreasing priority
+
+.Review instructions
+[%collapsible]
+====
+
+NIST SP800-82 based possible damage scenarios
+
+* Impact on national security — resist an act of terrorism
+* Injury or death of employees or persons in the community
+* Release, diversion, or theft of hazardous materials
+* Environmental damage, Product contamination
+* Own or customer’s monetary loss
+* Loss of own or customer brand image
+* Loss of confidence of customers or customer’s customers
+* Violation of regulatory requirements, legal issues
+* Reduction or loss of production
+* Damage to equipment
+* Loss of proprietary or confidential information
+====
+
+The most important damage scenarios for the #add scope# are:
+
+* #TODO#
+
+=== Threat landscape
+
+.Review instructions
+[%collapsible]
+====
+What kinds of threats intelligence sources are relevant for the company, system or product.
+
+What kinds of threat are most relevant for the company, system or product, see for example https://www.enisa.europa.eu/publications/interoperable-eu-risk-management-toolbox
+====
+
+The most relevant threat intelligence sources for the #add scope# are:
+
+* #TODO#
+
+The most relevant threat categories for the #add scope# are:
+
+* #TODO#
+
+=== Threat agents
+
+.Review instructions
+[%collapsible]
+====
+Identifying possible threat agents is an OPTIONAL step in business context analysis.
+
+You may identify potential attacker to understand their motivations and capabilities. Consider the following aspects
+
+* Targeted - Untargeted
+* Authenticated - Unauthenticated
+* Potential unfriendly threat agents
+* Attacker location
+* Internal - external
+* Amount of resources
+====
+
+The most relevant threat agents for the #add scope# are:
+
+* #TODO#
+
+== Conclusions
+
+.Review instructions
+[%collapsible]
+====
+This section should document
+
+* high-level conclusions about the cybersecurity priorities or
+* the recommended next steps.
+* any identified cybersecurity related opportunities
+====
+
+#Describe conclusions from the business context analysis#
+
+== Scope of Information Security Management System
+
+#Describe the selected scope for the information security management system#
+
+[cols="1,1,3"]
+|===============
+|Version {set:cellbgcolor:F4F4F4} | Date | Changes/Author
+
+| 1.0 {set:cellbgcolor:white}
+| #TODO <add date>#
+| First version created by #N.N#
+
+|===============
+
+== Reviews
+
+{{#createCards}}
+    "template": "base/templates/reviewTask",
+    "buttonLabel": "Add new review task"
+{{/createCards}}
+
+{{#report}}
+  "name": "base/reports/childrenTable"
+{{/report}}

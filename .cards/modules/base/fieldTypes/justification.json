@@ -1,6 +1,6 @@
 {
     "name": "base/fieldTypes/justification",
     "displayName": "Justification",
-    "fieldDescription": "Justification for why this task is not applicable",
+    "fieldDescription": "Justification for why this card is not applicable",
     "dataType": "longText"
 }

@@ -9,6 +9,7 @@
     "base/fieldTypes/identifier": "eucra_compliance-requirement_annex-I-2-4",
     "ismsa/fieldTypes/requirementImplementationStrategy": null,
     "ismsa/fieldTypes/requirementOrigin": "Regulation (EU) 2024/2847 Cyber Resilience Act",
+    "base/fieldTypes/justification": null,
     "links": [],
     "lastUpdated": "2025-03-18T14:49:39.768Z"
 }

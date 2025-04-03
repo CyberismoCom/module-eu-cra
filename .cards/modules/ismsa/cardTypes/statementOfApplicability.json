@@ -1,0 +1,33 @@
+{
+    "name": "ismsa/cardTypes/statementOfApplicability",
+    "workflow": "base/workflows/controlledDocument",
+    "customFields": [
+        {
+            "name": "ismsa/fieldTypes/soaScopeStatement"
+        },
+        {
+            "name": "ismsa/fieldTypes/soaVersion"
+        },
+        {
+            "name": "base/fieldTypes/owner"
+        },
+        {
+            "name": "base/fieldTypes/informationClassification"
+        },
+        {
+            "name": "base/fieldTypes/approver"
+        },
+        {
+            "name": "base/fieldTypes/approvalDate"
+        }
+    ],
+    "alwaysVisibleFields": [
+        "ismsa/fieldTypes/soaScopeStatement",
+        "ismsa/fieldTypes/soaVersion",
+        "base/fieldTypes/owner",
+        "base/fieldTypes/informationClassification",
+        "base/fieldTypes/approver",
+        "base/fieldTypes/approvalDate"
+    ],
+    "optionallyVisibleFields": []
+}

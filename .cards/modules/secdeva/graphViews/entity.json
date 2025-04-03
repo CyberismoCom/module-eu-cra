@@ -1,0 +1,5 @@
+{
+    "name": "secdeva/graphViews/entity",
+    "displayName": "Entity",
+    "description": "A dataflow diagram from the point of view of an entity"
+}

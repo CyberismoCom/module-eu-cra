@@ -1,0 +1,5 @@
+{
+    "name": "secdeva/graphViews/context",
+    "displayName": "Context",
+    "description": "A dataflow diagram that shows top-level entities"
+}

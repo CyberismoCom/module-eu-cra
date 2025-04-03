@@ -1,0 +1,5 @@
+{
+    "name": "ismsa/fieldTypes/soaScopeStatement",
+    "displayName": "Scope statement",
+    "dataType": "longText"
+}

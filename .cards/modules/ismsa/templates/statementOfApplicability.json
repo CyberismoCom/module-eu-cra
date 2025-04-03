@@ -1,0 +1,6 @@
+{
+    "name": "ismsa/templates/statementOfApplicability",
+    "displayName": "Statement of Applicability",
+    "description": "A formal document that lists the current cybersecurity controls.",
+    "category": "Cybersecurity management"
+}

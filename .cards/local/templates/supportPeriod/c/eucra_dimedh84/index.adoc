@@ -10,7 +10,7 @@ The expected time of use of the product is:
 
 #TODO: document the expected time of use#
 
-2. {empty} Any relevant laws that may determine the lifetime of products.
+2.{empty} Any relevant laws that may determine the lifetime of products.
 
 * [ ] Relevant laws have not been identified
 * [ ] Relevant laws have been identified

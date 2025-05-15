@@ -11,7 +11,7 @@
     "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
     "base/fieldTypes/reviewPeriod": 365,
-    "base/fieldTypes/reviewMonth": "april",
+    "base/fieldTypes/reviewMonth": "march",
     "base/fieldTypes/lastReviewed": null,
     "base/fieldTypes/identifier": "secdeva_control_3rd-party-technologies"
 }

@@ -45,7 +45,7 @@
         },
         {
             "name": "Done",
-            "fromState": ["In progress"],
+            "fromState": ["Open", "To do", "In progress"],
             "toState": "Closed as done"
         },
         {

@@ -17,7 +17,8 @@ field(Card, "base/fieldTypes/progress", 100 * Closed / Total) :-
         card(Task) :
         base_recurringTask(Task),
         ancestor(Task, Card),
-        field(Task, "workflowStateCategory", "closed")
+        field(Task, "workflowStateCategory", "closed"),
+        not hiddenInTreeView(Task)
     }.
 
 policyCheckFailure(

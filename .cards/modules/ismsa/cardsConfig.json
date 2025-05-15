@@ -1,4 +1,10 @@
 {
     "cardKeyPrefix": "ismsa",
-    "name": "ISMS essentials"
+    "name": "ISMS essentials",
+    "modules": [
+        {
+                "name": "base",
+                "location": "https://github.com/CyberismoCom/module-base.git"
+        }
+    ]
 }

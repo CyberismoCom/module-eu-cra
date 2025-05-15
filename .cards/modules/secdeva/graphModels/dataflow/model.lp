@@ -244,40 +244,112 @@ attr(edge, (X, Y, N), pendwidth, "3") :- edge((X, Y, N), _).
 attr(edge, (X, Y, N), arrowsize, "2") :- edge((X, Y, N), _).
 
 % node labels and descriptions
-attr(node, X, label, "<<font point-size='32'> <b> {{label}} </b> </font> <br/> <font point-size='19'>[{{kind}}]</font> <br/><font point-size='22'>{{description}}</font>>") :- description(X, _), not technology(X, _), entity(X), node(X, G), not invisible(X).
-attr(node, X, label, "<<font point-size='32'> <b> {{label}} </b> </font> <br/> <font point-size='19'>[{{kind}}: {{technology}}]</font> <br/><font point-size='22'>{{description}}</font>>") :- description(X, _), technology(X, _), entity(X), node(X, G), not invisible(X).
-attr(node, X, label, "<<font point-size='32'> <b> {{label}} </b> </font> <br/> <font point-size='19'>[{{kind}}]</font>>") :- not description(X, _), not technology(X, _), entity(X), node(X, G), not invisible(X).
-attr(node, X, label, "<<font point-size='32'> <b> {{label}} </b> </font> <br/> <font point-size='19'>[{{kind}}: {{technology}}]</font>>") :- not description(X, _), technology(X, _), entity(X), node(X, G), not invisible(X).
-attr(node, X, (label, label), @wrap(Title)) :- title(X, Title), entity(X), node(X, G), not invisible(X).
-attr(node, X, (label, description), @wrap(Description)) :- description(X, Description), entity(X), node(X, G), not invisible(X).
-attr(node, X, (label, technology), Technology) :- entity(X), technology(X, Technology), node(X, _), not invisible(X).
-attr(node, X, (label, kind), "Person") :- person(X),  node(X, _), not invisible(X).
-attr(node, X, (label, kind), "External") :- external(X), not person(X), node(X, _), not invisible(X).
-attr(node, X, (label, kind), "Process") :- process(X), node(X, _), not invisible(X).
-attr(node, X, (label, kind), "Trust Boundary") :- trustBoundary(X), node(X, _), not invisible(X).
-attr(node, X, (label, kind), "Datastore") :- datastore(X), node(X, _), not invisible(X).
+
+kind(X, "Person") :- person(X).
+kind(X, "External") :- external(X), not person(X).
+kind(X, "Process") :- process(X).
+kind(X, "Trust Boundary") :- trustBoundary(X).
+kind(X, "Datastore") :- datastore(X).
+
+attr(node, X, label, @concatenate(
+    "<<font point-size='32'><b> ", @wrap(Title)," </b></font><br/>",
+    "<font point-size='19'>[", Kind, "]</font> <br/>>")) :-
+        not description(X, _),
+        not technology(X, _),
+        title(X, Title),
+        kind(X, Kind),
+        entity(X),
+        node(X, G),
+        not invisible(X).
+
+attr(node, X, label, @concatenate(
+    "<<font point-size='32'> <b> ", @wrap(Title)," </b> </font> <br/>",
+    "<font point-size='19'>[", Kind,"]</font> <br/>",
+    "<font point-size='22'>", @wrap(Description), "</font>>")) :-
+        description(X, Description),
+        not technology(X, _),
+        title(X, Title),
+        kind(X, Kind),
+        entity(X),
+        node(X, G),
+        not invisible(X).
+
+attr(node, X, label, @concatenate(
+    "<<font point-size='32'><b> ", @wrap(Title)," </b></font><br/>",
+    "<font point-size='19'>[", Kind,": ", @wrap(Technology), "]</font>>")) :-
+        not description(X, _),
+        technology(X, Technology),
+        title(X, Title),
+        kind(X, Kind),
+        entity(X),
+        node(X, G),
+        not invisible(X).
+
+attr(node, X, label, @concatenate(
+    "<<font point-size='32'><b> ", @wrap(Title)," </b></font><br/>",
+    "<font point-size='19'>[", Kind,": ", @wrap(Technology), "]</font><br/>",
+    "<font point-size='22'>", @wrap(Description), "</font>>")) :-
+        description(X, Description),
+        technology(X, Technology),
+        title(X, Title),
+        kind(X, Kind),
+        entity(X),
+        node(X, G),
+        not invisible(X).
 
 % graph labels and descriptions
-attr(graph, X, label, "<<font point-size='24'> <b> {{label}} </b> </font> <br/><font point-size='19'>[{{kind}}]</font> <br/> <font point-size='22'>{{description}}</font>>") :- description(X, _), not technology(X, _), entity(X), graph(X, _).
-attr(graph, X, label, "<<font point-size='24'> <b> {{label}} </b> </font> <br/><font point-size='19'>[{{kind}}: {{technology}}]</font> <br/> <font point-size='22'>{{description}}</font>>") :- description(X, _), technology(X, _), entity(X), graph(X, _).
-attr(graph, X, label, "<<font point-size='24'> <b> {{label}} </b> </font> <br/> <font point-size='19'>[{{kind}}]</font>>") :- not description(X, _), not technology(X, _), entity(X), graph(X, _).
-attr(graph, X, label, "<<font point-size='24'> <b> {{label}} </b> </font> <br/> <font point-size='19'>[{{kind}}: {{technology}}]</font>>") :- not description(X, _), technology(X, _), entity(X), graph(X, _).
+
+attr(graph, X, label, @concatenate(
+    "<<font point-size='24'><b> ", @wrap(Title), " </b></font><br/>",
+    "<font point-size='19'>[", Kind, "]</font><br/>>")) :-
+        not description(X, _),
+        not technology(X, _),
+        title(X, Title),
+        kind(X, Kind),
+        entity(X),
+        graph(X, _).
+
+attr(graph, X, label, @concatenate(
+    "<<font point-size='24'><b> ", @wrap(Title), " </b></font><br/>",
+    "<font point-size='19'>[", Kind, "]</font><br/>",
+    "<font point-size='22'>", @wrap(Description), "</font>>")) :-
+        description(X, Description),
+        not technology(X, _),
+        title(X, Title),
+        kind(X, Kind),
+        entity(X),
+        graph(X, _).
+
+attr(graph, X, label, @concatenate(
+    "<<font point-size='24'><b> ", @wrap(Title), " </b></font><br/>",
+    "<font point-size='19'>[", Kind, ": ", @wrap(Technology), "]</font>>")) :-
+        not description(X, _),
+        technology(X, Technology),
+        title(X, Title),
+        kind(X, Kind),
+        entity(X),
+        graph(X, _).
+
+attr(graph, X, label, @concatenate(
+    "<<font point-size='24'><b> ", @wrap(Title), " </b></font><br/>",
+    "<font point-size='19'>[", Kind, ": ", @wrap(Technology), "]</font><br/>",
+    "<font point-size='22'>", @wrap(Description), "</font>>")) :-
+        description(X, Description),
+        technology(X, Technology),
+        title(X, Title),
+        kind(X, Kind),
+        entity(X),
+        graph(X, _).
+
 attr(graph, X, labelloc, b) :- entity(X), graph(X, _).
 attr(graph, X, labeljust, l) :- entity(X), graph(X, _).
-attr(graph, X, (label, label), @wrap(Title)) :- title(X, Title), entity(X), graph(X, _).
-attr(graph, X, (label, description), @wrap(Description)) :- description(X, Description), entity(X), graph(X, _).
-attr(graph, X, (label, technology), Technology) :- entity(X), technology(X, Technology), graph(X, _).
-attr(graph, X, (label, kind), "Person") :- person(X), graph(X, _).
-attr(graph, X, (label, kind), "External") :- external(X), not person(X), graph(X, _).
-attr(graph, X, (label, kind), "Process") :- process(X), graph(X, _).
-attr(graph, X, (label, kind), "Trust Boundary") :- trustBoundary(X), graph(X, _).
-attr(graph, X, (label, kind), "Datastore") :- datastore(X), graph(X, _).
+
 
 % edge labels. Edges cannot have technology descriptions
-% for compatibility reasons, we have to use at least a whitespace the label
-attr(edge, (X, Y, Title), label, "<<font point-size='24'>{{label}}</font>>") :- edge((X, Y, Title), _).
-attr(edge, (X, Y, Title), (label, label), @wrap(Title)) :- edge((X, Y, Title), _), Title != "".
-attr(edge, (X, Y, Title), (label, label), " ") :- edge((X, Y, Title), _), Title = "".
+% notice the extra spaces, as for compatibility reasons, we have to use at least a whitespace the label
+attr(edge, (X, Y, Title), label, @concatenate(
+    "<<font point-size='24'> ", Title, " </font>>")) :-
+        edge((X, Y, Title), _).
 
 % shapes of graphs
 attr(graph, X, shape, rectangle) :- process(X), graph(X, _).

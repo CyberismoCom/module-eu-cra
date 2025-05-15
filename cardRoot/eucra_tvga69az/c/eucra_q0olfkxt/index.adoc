@@ -1,0 +1,17 @@
+== Task description
+
+Review the support period document.
+
+[NOTE]
+.Review instructions
+====
+
+Review that the duration of the support period has been documented.
+
+Review that the document includes the information that was taken into account to determine the support period.
+
+Review that the support period is at least five years. Where the product is expected to be in use for less than five years, check that the support corresponds to the expected use time.
+
+====
+
+**Note**: The reviewer cannot be the same person as the owner or the approver of the document.

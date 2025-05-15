@@ -1,0 +1,45 @@
+This document specifies the support period for #TODO: add scope#.
+
+== Justification for the support period
+
+The following information must be considered when determining the support period, when applicable:
+
+1.{empty} The length of time during which the product is expected to be in use, taking into account reasonable user expectations regarding the support period, and the nature of the product and its intended purpose.
+
+The expected time of use of the product is:
+
+#TODO: document the expected time of use#
+
+2.{empty} Any relevant laws that may determine the lifetime of products.
+
+* [ ] Relevant laws have not been identified
+* [ ] Relevant laws have been identified
+
+#TODO: document the relevant laws if they have been identified#
+
+3.{empty} The support periods of competing products that offer a similar functionality
+
+The support periods of similar products are:
+
+#TODO: document the support periods of similar products#
+
+4.{empty} The availability of the operating environment
+
+#TODO: document what is known about the availability of the operating environment#
+
+5.{empty} The support periods of integrated components that provide core functions and are sourced from third parties
+
+#TODO: document what is known about the support periods of integrated components#
+
+6.{empty} Any relevant guidance provided by the dedicated administrative cooperation group (ADCO)
+
+* [ ] Relevant guidance has not been identified
+* [ ] Relevant guidance has been identified
+
+#TODO: document the relevant guidance if identified#
+
+== Determined support period
+
+NOTE: The support period shall be at least five years. Where the product is expected to be in use for less than five years, the support period shall correspond to the expected use time.
+
+The support period is #TODO#.

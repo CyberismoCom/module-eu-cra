@@ -1,4 +1,14 @@
 {
     "cardKeyPrefix": "secdeva",
-    "name": "Secure development essentials"
+    "name": "Secure development essentials",
+    "modules": [
+        {
+                "name": "base",
+                "location": "https://github.com/CyberismoCom/module-base.git"
+        },
+	{
+		"name": "ismsa",
+		"location": "https://github.com/CyberismoCom/module-isms-essentials.git"
+	}
+    ]
 }

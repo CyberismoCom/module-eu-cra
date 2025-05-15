@@ -1,12 +1,17 @@
 {{#if results}}
 
-[cols="5,2,2"]
+[cols="5,2,3,2"]
 |===
-| Security issue | Workflow State | Severity
+| Security issue | Workflow State | Affects | Severity
 
 {{#each results}}
 |xref:{{this.key}}.adoc[{{this.title}}]
 |{{this.workflowState}}
+{{#if this.affectedCardKey}}
+|xref:{{this.affectedCardKey}}.adoc[{{this.affectedCardTitle}}]
+{{else}}
+|
+{{/if}}
 |{{this.[secdeva/fieldTypes/severity].displayValue}}
 {{/each}}
 

@@ -2,7 +2,7 @@
     "title": "Document review - Threat model",
     "cardType": "base/cardTypes/reviewTask",
     "workflowState": "",
-    "rank": "0|b",
+    "rank": "0|a",
     "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
     "base/fieldTypes/reviewPeriod": 365,

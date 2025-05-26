@@ -10,8 +10,14 @@
         "ismsa/cardTypes/assetSupplier",
         "secdeva/cardTypes/project",
         "secdeva/cardTypes/process",
-        "secdeva/cardTypes/dataStore"
+        "secdeva/cardTypes/dataStore",
+        "secdeva/cardTypes/external",
+        "secdeva/cardTypes/person",
+        "secdeva/cardTypes/trustBoundary"
     ],
-    "destinationCardTypes": ["ismsa/cardTypes/risk"],
+    "destinationCardTypes": [
+        "ismsa/cardTypes/risk",
+        "secdeva/cardTypes/securityIssue"
+    ],
     "enableLinkDescription": false
 }

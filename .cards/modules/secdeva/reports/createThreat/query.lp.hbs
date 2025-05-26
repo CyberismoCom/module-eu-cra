@@ -1,0 +1,20 @@
+select("listOfThreats";"createLink";"affectedCard").
+
+secdeva_closestThreatModel(ThreatModel, ThreatModel) :-
+    field(ThreatModel, "base/fieldTypes/identifier", "secdeva_document_threat-model").
+
+secdeva_closestThreatModel(Card, ThreatModel) :-
+    field(ThreatModel, "base/fieldTypes/identifier", "secdeva_document_threat-model"),
+    not field(Card, "base/fieldTypes/identifier", "secdeva_document_threat-model"),
+    ancestor(Card, ThreatModel).
+
+result(result).
+
+field(result, "listOfThreats", ListOfThreats) :-
+    secdeva_closestThreatModel({{cardKey}}, ThreatModel),
+    secdeva_closestThreatModel(ListOfThreats, ThreatModel),
+    field(ListOfThreats, "base/fieldTypes/identifier", "secdeva_page_list-of-threat-model-findings").
+
+field(result, "createLink", "void") :-  secdeva_threatModelComponent({{cardKey}}).
+
+field(result, "affectedCard", {{cardKey}}).

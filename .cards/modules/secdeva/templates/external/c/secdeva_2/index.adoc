@@ -11,3 +11,7 @@
 ====
 To add a dataflow to or from this external entity, click the link symbol in the top level tool bar.
 ====
+
+{{#report}}
+  "name": "secdeva/reports/createThreat"
+{{/report}}

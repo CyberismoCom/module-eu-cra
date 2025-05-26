@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/createThreat",
+    "displayName": "Create a security threat",
+    "description": "A report for producing a button that will create findings from threat modelling",
+    "category": "Secure development"
+}

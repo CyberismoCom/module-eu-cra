@@ -48,10 +48,9 @@ To add a dataflow to or from this data store, click the link symbol in the top l
 
 == Security issues
 
-{{#createCards}}
-  "template": "secdeva/templates/threat",
-  "buttonLabel": "Create a new security issue"
-{{/createCards}}
+{{#report}}
+  "name": "secdeva/reports/createThreat"
+{{/report}}
 
 {{#report}}
   "name": "secdeva/reports/securityIssueList"

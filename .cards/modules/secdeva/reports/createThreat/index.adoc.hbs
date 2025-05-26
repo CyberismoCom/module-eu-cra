@@ -1,0 +1,17 @@
+{{#each results}}
+{{#createCards}}
+  "template": "secdeva/templates/threat",
+  "buttonLabel": "Create a new security issue"
+{{#if this.createLink}}
+{{#if this.listOfThreats}}
+  ,"cardKey": "{{this.listOfThreats}}",
+  "link": {
+    "cardKey" : "{{this.affectedCard}}",
+    "linkType": "ismsa/linkTypes/presentsRisk",
+    "direction": "outbound"
+  }
+{{/if}}
+{{/if}}
+{{/createCards}}
+{{/each}}
+

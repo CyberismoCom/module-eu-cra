@@ -1,0 +1,9 @@
+{
+    "title": "List of identified issues",
+    "cardType": "secdeva/cardTypes/page",
+    "workflowState": "",
+    "rank": "0|c",
+    "base/fieldTypes/adoptionStep": null,
+    "base/fieldTypes/identifier": "secdeva_page_list-of-threat-model-findings",
+    "lastUpdated": "2025-05-22T06:33:28.361Z"
+}

@@ -1,7 +1,7 @@
 {
     "name": "secdeva/linkTypes/fixes",
-    "outboundDisplayName": "Fixes",
-    "inboundDisplayName": "Fixed in version",
+    "outboundDisplayName": "fixes",
+    "inboundDisplayName": "fixed in version",
     "sourceCardTypes": ["secdeva/cardTypes/version"],
     "destinationCardTypes": ["secdeva/cardTypes/securityIssue"],
     "enableLinkDescription": false

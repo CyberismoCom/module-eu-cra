@@ -297,6 +297,9 @@ attr(node, X, label, @concatenate(
         node(X, G),
         not invisible(X).
 
+% To make the links work with SVGs, add the href attribute for nodes
+attr(node, X, href, @concatenate("/cards/", X)) :- node(X, _), not invisible(X).
+
 % graph labels and descriptions
 
 attr(graph, X, label, @concatenate(

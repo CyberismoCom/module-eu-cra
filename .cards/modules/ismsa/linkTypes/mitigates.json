@@ -9,6 +9,9 @@
         "base/cardTypes/annualTask",
         "secdeva/cardTypes/requirement"
     ],
-    "destinationCardTypes": ["ismsa/cardTypes/risk"],
+    "destinationCardTypes": [
+        "ismsa/cardTypes/risk",
+        "secdeva/cardTypes/securityIssue"
+    ],
     "enableLinkDescription": false
 }

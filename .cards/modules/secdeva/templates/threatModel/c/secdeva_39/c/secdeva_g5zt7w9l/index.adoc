@@ -1,0 +1,8 @@
+{{#createCards}}
+  "template": "secdeva/templates/threat",
+  "buttonLabel": "Create a new security issue"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssueList"
+{{/report}}

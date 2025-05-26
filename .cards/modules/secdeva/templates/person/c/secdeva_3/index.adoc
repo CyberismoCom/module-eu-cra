@@ -7,3 +7,7 @@
 ====
 To add a dataflow to or from this person, click the link symbol in the top level tool bar.
 ====
+
+{{#report}}
+  "name": "secdeva/reports/createThreat"
+{{/report}}

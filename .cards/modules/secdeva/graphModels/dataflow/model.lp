@@ -347,7 +347,6 @@ attr(graph, X, label, @concatenate(
 attr(graph, X, labelloc, b) :- entity(X), graph(X, _).
 attr(graph, X, labeljust, l) :- entity(X), graph(X, _).
 
-
 % edge labels. Edges cannot have technology descriptions
 % notice the extra spaces, as for compatibility reasons, we have to use at least a whitespace the label
 attr(edge, (X, Y, Title), label, @concatenate(

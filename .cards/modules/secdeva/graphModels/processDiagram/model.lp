@@ -133,6 +133,9 @@ attr(edge, (Task, @concatenate(Task, EvidenceIdentifier, EvidenceLabel), 1), lab
     not field(Evidence, "base/fieldTypes/identifier", EvidenceIdentifier) :
     link(Evidence, Task, "secdeva/linkTypes/evidences").
 
+% To make the links work with SVGs, add the href attribute for nodes
+attr(node, X, href, @concatenate("/cards/", X)) :- node(X, _), not evidencePlaceholder(X).
+
 % margins
 attr(graph, toplevelGraph, pad, "0.2").
 attr(graph, toplevelGraph, nodesep, "2").

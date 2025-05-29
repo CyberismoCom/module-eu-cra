@@ -50,6 +50,9 @@ attr(edge, (Risk, Control, 1), label, "<<font point-size='24'>Mitigated by</font
     visible(Control),
     visible(Risk).
 
+% To make the links work with SVGs, add the href attribute for nodes
+attr(node, X, href, @concatenate("/cards/", X)) :- node(X, _).
+
 % margins
 attr(graph, toplevelGraph, pad, "0.2").
 attr(graph, toplevelGraph, nodesep, "2").

@@ -1,7 +1,6 @@
 {
     "name": "secdeva/fieldTypes/deferrableSeverity",
     "displayName": "Deferrable severity",
-    "fieldDescription": "If the severity of a security issue is higher than deferrable severity, then fix cannot be deferred to a future release.",
     "dataType": "enum",
     "enumValues": [
         {
@@ -24,5 +23,6 @@
             "enumValue": "none",
             "enumDisplayValue": "None"
         }
-    ]
+    ],
+    "description": "If the severity of a security issue is higher than deferrable severity, then fix cannot be deferred to a future release."
 }

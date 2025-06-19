@@ -17,5 +17,6 @@
         "secdeva/cardTypes/trustBoundary",
         "secdeva/cardTypes/interface"
     ],
-    "enableLinkDescription": true
+    "enableLinkDescription": true,
+    "displayName": ""
 }

@@ -64,5 +64,6 @@
         "ismsa/fieldTypes/assetBackups",
         "secdeva/fieldTypes/acceptableSeverity",
         "secdeva/fieldTypes/deferrableSeverity"
-    ]
+    ],
+    "displayName": ""
 }

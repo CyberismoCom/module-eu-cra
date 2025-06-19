@@ -1,6 +1,6 @@
 {
     "name": "secdeva/fieldTypes/description",
     "displayName": "Description",
-    "fieldDescription": "A description of the entity",
-    "dataType": "longText"
+    "dataType": "longText",
+    "description": "A description of the entity"
 }

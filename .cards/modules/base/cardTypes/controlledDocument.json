@@ -22,5 +22,6 @@
     ],
     "optionallyVisibleFields": [
         "base/fieldTypes/informationClassification"
-    ]
+    ],
+    "displayName": ""
 }

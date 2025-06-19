@@ -1,4 +1,5 @@
 {
     "name": "secdeva/cardTypes/requirement",
-    "workflow": "secdeva/workflows/requirement"
+    "workflow": "secdeva/workflows/requirement",
+    "displayName": ""
 }

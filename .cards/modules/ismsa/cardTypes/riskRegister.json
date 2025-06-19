@@ -20,5 +20,6 @@
         "base/fieldTypes/owner",
         "base/fieldTypes/informationClassification",
         "ismsa/fieldTypes/acceptableRiskLevel"
-    ]
+    ],
+    "displayName": ""
 }

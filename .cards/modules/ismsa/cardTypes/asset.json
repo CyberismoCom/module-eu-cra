@@ -46,5 +46,6 @@
         "ismsa/fieldTypes/assetAvailability",
         "ismsa/fieldTypes/assetLocation",
         "ismsa/fieldTypes/assetBackups"
-    ]
+    ],
+    "displayName": ""
 }

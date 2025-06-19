@@ -2,13 +2,16 @@
     "name": "base/workflows/page",
     "states": [
         {
-            "name": "Draft", "category": "initial"
+            "name": "Draft",
+            "category": "initial"
         },
         {
-            "name": "Ready", "category": "closed"
+            "name": "Ready",
+            "category": "closed"
         },
         {
-            "name": "Deprecated", "category": "closed"
+            "name": "Deprecated",
+            "category": "closed"
         }
     ],
     "transitions": [
@@ -19,18 +22,25 @@
         },
         {
             "name": "Content ready",
-            "fromState": ["Draft"],
+            "fromState": [
+                "Draft"
+            ],
             "toState": "Ready"
         },
         {
             "name": "Archive",
-            "fromState": ["*"],
+            "fromState": [
+                "*"
+            ],
             "toState": "Deprecated"
         },
         {
             "name": "Reopen",
-            "fromState": ["*"],
+            "fromState": [
+                "*"
+            ],
             "toState": "Draft"
         }
-    ]
+    ],
+    "displayName": ""
 }

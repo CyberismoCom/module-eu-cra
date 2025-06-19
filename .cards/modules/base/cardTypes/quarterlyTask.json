@@ -35,5 +35,6 @@
         "base/fieldTypes/justification",
         "base/fieldTypes/quarterlyReviewMonth",
         "base/fieldTypes/informationClassification"
-    ]
+    ],
+    "displayName": ""
 }

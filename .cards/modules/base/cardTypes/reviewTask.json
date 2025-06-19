@@ -32,5 +32,6 @@
         "base/fieldTypes/justification",
         "base/fieldTypes/reviewPeriod",
         "base/fieldTypes/informationClassification"
-    ]
+    ],
+    "displayName": ""
 }

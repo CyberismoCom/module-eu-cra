@@ -1,7 +1,6 @@
 {
     "name": "base/fieldTypes/quarterlyReviewMonth",
     "displayName": "Quarterly review month",
-    "fieldDescription": "The month in each quarter in which this task should be revisited.",
     "dataType": "enum",
     "enumValues": [
         {
@@ -16,5 +15,6 @@
             "enumValue": "month3",
             "enumDisplayValue": "Month 3"
         }
-    ]
+    ],
+    "description": "The month in each quarter in which this task should be revisited."
 }

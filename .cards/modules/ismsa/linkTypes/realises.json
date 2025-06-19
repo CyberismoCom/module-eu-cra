@@ -8,5 +8,6 @@
     "destinationCardTypes": [
         "ismsa/cardTypes/incident"
     ],
-    "enableLinkDescription": false
+    "enableLinkDescription": false,
+    "displayName": ""
 }

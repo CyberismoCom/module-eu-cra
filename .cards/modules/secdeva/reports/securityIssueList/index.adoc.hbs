@@ -7,8 +7,10 @@
 {{#each results}}
 |xref:{{this.key}}.adoc[{{this.title}}]
 |{{this.workflowState}}
-{{#if this.affectedCardKey}}
-|xref:{{this.affectedCardKey}}.adoc[{{this.affectedCardTitle}}]
+{{#if this.affectedCard}}
+|{{#each this.affectedCard}}
+xref:{{this.key}}.adoc[{{this.title}}] 
+{{/each}}
 {{else}}
 |
 {{/if}}

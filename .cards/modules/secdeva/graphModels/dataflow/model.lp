@@ -245,54 +245,42 @@ attr(edge, (X, Y, N), arrowsize, "2") :- edge((X, Y, N), _).
 
 % node labels and descriptions
 
-kind(X, "Person") :- person(X).
-kind(X, "External") :- external(X), not person(X).
-kind(X, "Process") :- process(X).
-kind(X, "Trust Boundary") :- trustBoundary(X).
-kind(X, "Datastore") :- datastore(X).
-
 attr(node, X, label, @concatenate(
-    "<<font point-size='32'><b> ", @wrap(Title)," </b></font><br/>",
-    "<font point-size='19'>[", Kind, "]</font> <br/>>")) :-
+    "<<font point-size='32'><b> ", @wrap(Title)," </b></font><br/>>")) :-
         not description(X, _),
         not technology(X, _),
         title(X, Title),
-        kind(X, Kind),
         entity(X),
         node(X, G),
         not invisible(X).
 
 attr(node, X, label, @concatenate(
     "<<font point-size='32'> <b> ", @wrap(Title)," </b> </font> <br/>",
-    "<font point-size='19'>[", Kind,"]</font> <br/>",
     "<font point-size='22'>", @wrap(Description), "</font>>")) :-
         description(X, Description),
         not technology(X, _),
         title(X, Title),
-        kind(X, Kind),
         entity(X),
         node(X, G),
         not invisible(X).
 
 attr(node, X, label, @concatenate(
     "<<font point-size='32'><b> ", @wrap(Title)," </b></font><br/>",
-    "<font point-size='19'>[", Kind,": ", @wrap(Technology), "]</font>>")) :-
+    "<font point-size='19'>[", @wrap(Technology), "]</font>>")) :-
         not description(X, _),
         technology(X, Technology),
         title(X, Title),
-        kind(X, Kind),
         entity(X),
         node(X, G),
         not invisible(X).
 
 attr(node, X, label, @concatenate(
     "<<font point-size='32'><b> ", @wrap(Title)," </b></font><br/>",
-    "<font point-size='19'>[", Kind,": ", @wrap(Technology), "]</font><br/>",
+    "<font point-size='19'>[", @wrap(Technology), "]</font><br/>",
     "<font point-size='22'>", @wrap(Description), "</font>>")) :-
         description(X, Description),
         technology(X, Technology),
         title(X, Title),
-        kind(X, Kind),
         entity(X),
         node(X, G),
         not invisible(X).
@@ -303,44 +291,38 @@ attr(node, X, href, @concatenate("/cards/", X)) :- node(X, _), not invisible(X).
 % graph labels and descriptions
 
 attr(graph, X, label, @concatenate(
-    "<<font point-size='24'><b> ", @wrap(Title), " </b></font><br/>",
-    "<font point-size='19'>[", Kind, "]</font><br/>>")) :-
+    "<<font point-size='24'><b> ", @wrap(Title), " </b></font><br/>>")) :-
         not description(X, _),
         not technology(X, _),
         title(X, Title),
-        kind(X, Kind),
         entity(X),
         graph(X, _).
 
 attr(graph, X, label, @concatenate(
     "<<font point-size='24'><b> ", @wrap(Title), " </b></font><br/>",
-    "<font point-size='19'>[", Kind, "]</font><br/>",
     "<font point-size='22'>", @wrap(Description), "</font>>")) :-
         description(X, Description),
         not technology(X, _),
         title(X, Title),
-        kind(X, Kind),
         entity(X),
         graph(X, _).
 
 attr(graph, X, label, @concatenate(
     "<<font point-size='24'><b> ", @wrap(Title), " </b></font><br/>",
-    "<font point-size='19'>[", Kind, ": ", @wrap(Technology), "]</font>>")) :-
+    "<font point-size='19'>[", @wrap(Technology), "]</font>>")) :-
         not description(X, _),
         technology(X, Technology),
         title(X, Title),
-        kind(X, Kind),
         entity(X),
         graph(X, _).
 
 attr(graph, X, label, @concatenate(
     "<<font point-size='24'><b> ", @wrap(Title), " </b></font><br/>",
-    "<font point-size='19'>[", Kind, ": ", @wrap(Technology), "]</font><br/>",
+    "<font point-size='19'>[", @wrap(Technology), "]</font><br/>",
     "<font point-size='22'>", @wrap(Description), "</font>>")) :-
         description(X, Description),
         technology(X, Technology),
         title(X, Title),
-        kind(X, Kind),
         entity(X),
         graph(X, _).
 

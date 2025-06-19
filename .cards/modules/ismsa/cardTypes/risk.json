@@ -43,5 +43,6 @@
         "ismsa/fieldTypes/riskResidualImpact",
         "ismsa/fieldTypes/riskResidualRisk"
     ],
-    "optionallyVisibleFields": []
+    "optionallyVisibleFields": [],
+    "displayName": ""
 }

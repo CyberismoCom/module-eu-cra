@@ -10,5 +10,6 @@
         "base/cardTypes/annualTask",
         "base/cardTypes/quarterlyTask"
     ],
-    "enableLinkDescription": false
+    "enableLinkDescription": false,
+    "displayName": ""
 }

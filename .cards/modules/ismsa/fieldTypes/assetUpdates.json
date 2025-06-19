@@ -1,6 +1,6 @@
 {
     "name": "ismsa/fieldTypes/assetUpdates",
     "displayName": "Security updates",
-    "fieldDescription": "How security updates are arranged for this asset",
-    "dataType": "longText"
+    "dataType": "longText",
+    "description": "How security updates are arranged for this asset"
 }

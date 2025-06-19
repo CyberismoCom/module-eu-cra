@@ -4,5 +4,6 @@
     "inboundDisplayName": "is evidenced by",
     "sourceCardTypes": [],
     "destinationCardTypes": [],
-    "enableLinkDescription": false
+    "enableLinkDescription": false,
+    "displayName": ""
 }

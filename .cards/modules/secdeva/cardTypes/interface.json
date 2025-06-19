@@ -37,5 +37,6 @@
         "secdeva/fieldTypes/networkTrafficLoadTestingRequired",
         "secdeva/fieldTypes/interfaceTestingScopingJustification"
     ],
-    "optionallyVisibleFields": []
+    "optionallyVisibleFields": [],
+    "displayName": ""
 }

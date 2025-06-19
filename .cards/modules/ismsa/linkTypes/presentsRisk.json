@@ -19,5 +19,6 @@
         "ismsa/cardTypes/risk",
         "secdeva/cardTypes/securityIssue"
     ],
-    "enableLinkDescription": false
+    "enableLinkDescription": false,
+    "displayName": ""
 }

@@ -10,5 +10,6 @@
         "secdeva/cardTypes/requirement",
         "secdeva/cardTypes/interface"
     ],
-    "enableLinkDescription": false
+    "enableLinkDescription": false,
+    "displayName": ""
 }

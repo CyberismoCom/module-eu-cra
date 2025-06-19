@@ -15,5 +15,6 @@
         "ismsa/cardTypes/control",
         "ismsa/cardTypes/complianceRequirement"
     ],
-    "enableLinkDescription": false
+    "enableLinkDescription": false,
+    "displayName": ""
 }

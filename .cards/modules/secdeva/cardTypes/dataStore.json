@@ -15,5 +15,6 @@
         "secdeva/fieldTypes/description",
         "secdeva/fieldTypes/technology"
     ],
-    "optionallyVisibleFields": []
+    "optionallyVisibleFields": [],
+    "displayName": ""
 }

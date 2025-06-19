@@ -10,5 +10,6 @@
     "alwaysVisibleFields": [
         "secdeva/fieldTypes/description"
     ],
-    "optionallyVisibleFields": []
+    "optionallyVisibleFields": [],
+    "displayName": ""
 }

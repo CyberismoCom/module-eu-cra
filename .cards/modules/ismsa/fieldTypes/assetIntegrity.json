@@ -1,7 +1,6 @@
 {
     "name": "ismsa/fieldTypes/assetIntegrity",
     "displayName": "Integrity",
-    "fieldDescription": "The importance of the integrity of this asset",
     "dataType": "enum",
     "enumValues": [
         {
@@ -20,5 +19,6 @@
             "enumValue": "N/A",
             "enumDisplayValue": "Not Applicable"
         }
-    ]
+    ],
+    "description": "The importance of the integrity of this asset"
 }

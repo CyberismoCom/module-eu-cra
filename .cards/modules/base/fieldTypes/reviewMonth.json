@@ -1,7 +1,6 @@
 {
     "name": "base/fieldTypes/reviewMonth",
     "displayName": "Review month",
-    "fieldDescription": "The month in which this task should be revisited.",
     "dataType": "enum",
     "enumValues": [
         {
@@ -52,5 +51,6 @@
             "enumValue": "december",
             "enumDisplayValue": "December"
         }
-    ]
+    ],
+    "description": "The month in which this task should be revisited."
 }

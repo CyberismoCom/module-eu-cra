@@ -1,9 +1,18 @@
 {
     "name": "base/workflows/controlledDocument",
     "states": [
-        { "name": "Draft", "category": "initial" },
-        { "name": "Approved", "category": "closed" },
-        { "name": "Archived", "category": "closed" }
+        {
+            "name": "Draft",
+            "category": "initial"
+        },
+        {
+            "name": "Approved",
+            "category": "closed"
+        },
+        {
+            "name": "Archived",
+            "category": "closed"
+        }
     ],
     "transitions": [
         {
@@ -13,18 +22,25 @@
         },
         {
             "name": "Approve",
-            "fromState": ["Draft"],
+            "fromState": [
+                "Draft"
+            ],
             "toState": "Approved"
         },
         {
             "name": "Archive",
-            "fromState": ["*"],
+            "fromState": [
+                "*"
+            ],
             "toState": "Archived"
         },
         {
             "name": "Reopen",
-            "fromState": ["*"],
+            "fromState": [
+                "*"
+            ],
             "toState": "Draft"
         }
-    ]
+    ],
+    "displayName": ""
 }

@@ -1,7 +1,6 @@
 {
     "name": "ismsa/fieldTypes/assetCriticalityForOperations",
     "displayName": "Criticality for operations",
-    "fieldDescription": "The overall criticality of this asset, taking into account information classification, integrity and availability.",
     "dataType": "enum",
     "enumValues": [
         {
@@ -16,5 +15,6 @@
             "enumValue": "low",
             "enumDisplayValue": "Low"
         }
-    ]
+    ],
+    "description": "The overall criticality of this asset, taking into account information classification, integrity and availability."
 }

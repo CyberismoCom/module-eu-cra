@@ -9,5 +9,6 @@
     "destinationCardTypes": [
         "base/cardTypes/controlledDocument"
     ],
-    "enableLinkDescription": false
+    "enableLinkDescription": false,
+    "displayName": ""
 }

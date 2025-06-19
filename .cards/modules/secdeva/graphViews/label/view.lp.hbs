@@ -1,0 +1,8 @@
+{{#if layout}}
+attr(graph, toplevelGraph, rankdir, "{{layout}}").
+{{/if}}
+
+
+{{#each this.labels}}
+visible(Entity) :- label(Entity, "{{this}}").
+{{/each}}

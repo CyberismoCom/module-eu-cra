@@ -41,5 +41,6 @@
         "ismsa/fieldTypes/assetBackups",
         "ismsa/fieldTypes/assetRiskEvaluationNeeded"
     ],
-    "optionallyVisibleFields": []
+    "optionallyVisibleFields": [],
+    "displayName": ""
 }

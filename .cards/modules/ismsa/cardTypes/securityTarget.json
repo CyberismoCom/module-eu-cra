@@ -17,5 +17,6 @@
         "base/fieldTypes/informationClassification",
         "base/fieldTypes/dueDate"
     ],
-    "optionallyVisibleFields": []
+    "optionallyVisibleFields": [],
+    "displayName": ""
 }

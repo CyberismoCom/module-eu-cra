@@ -25,5 +25,6 @@
         "ismsa/fieldTypes/incidentEndDateTime",
         "ismsa/fieldTypes/incidentSeverity"
     ],
-    "optionallyVisibleFields": []
+    "optionallyVisibleFields": [],
+    "displayName": ""
 }

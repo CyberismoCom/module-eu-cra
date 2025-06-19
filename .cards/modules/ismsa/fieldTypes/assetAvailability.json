@@ -1,7 +1,6 @@
 {
     "name": "ismsa/fieldTypes/assetAvailability",
     "displayName": "Availability",
-    "fieldDescription": "The importance of the availability of this asset",
     "dataType": "enum",
     "enumValues": [
         {
@@ -20,5 +19,6 @@
             "enumValue": "N/A",
             "enumDisplayValue": "Not Applicable"
         }
-    ]
+    ],
+    "description": "The importance of the availability of this asset"
 }

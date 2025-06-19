@@ -4,13 +4,8 @@ result(Card) :-
     ancestor(Card, {{cardKey}}),
     field(Card, "cardType", "secdeva/cardTypes/securityIssue").
 
-field(Card, "affectedCardKey", AffectedCard) :-
+childResult(Card, AffectedCard, "affectedCard") :-
    result(Card),
    link(AffectedCard, Card, "ismsa/linkTypes/presentsRisk").
-
-field(Card, "affectedCardTitle", AffectedCardTitle) :-
-   result(Card),
-   link(AffectedCard, Card, "ismsa/linkTypes/presentsRisk"),
-   field(AffectedCard, "title", AffectedCardTitle).
 
 orderBy("rank", "ASC").

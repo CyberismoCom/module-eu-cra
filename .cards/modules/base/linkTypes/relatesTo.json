@@ -4,5 +4,6 @@
     "inboundDisplayName": "is related to",
     "sourceCardTypes": [],
     "destinationCardTypes": [],
-    "enableLinkDescription": false
+    "enableLinkDescription": false,
+    "displayName": ""
 }

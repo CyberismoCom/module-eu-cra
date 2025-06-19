@@ -31,5 +31,6 @@
     "optionallyVisibleFields": [
         "base/fieldTypes/justification",
         "base/fieldTypes/informationClassification"
-    ]
+    ],
+    "displayName": ""
 }

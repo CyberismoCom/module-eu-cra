@@ -62,6 +62,6 @@
         "ismsa/fieldTypes/assetIntegrity",
         "ismsa/fieldTypes/assetAvailability",
         "ismsa/fieldTypes/assetLocation"
-    ]
-
+    ],
+    "displayName": ""
 }

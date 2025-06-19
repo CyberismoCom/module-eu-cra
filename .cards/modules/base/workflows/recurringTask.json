@@ -25,38 +25,56 @@
     "transitions": [
         {
             "name": "Create",
-            "fromState": [""],
+            "fromState": [
+                ""
+            ],
             "toState": "Open"
         },
         {
             "name": "Reopen",
-            "fromState": ["*"],
+            "fromState": [
+                "*"
+            ],
             "toState": "Open"
         },
         {
             "name": "Review as applicable",
-            "fromState": ["Open", "Closed as not applicable"],
+            "fromState": [
+                "Open",
+                "Closed as not applicable"
+            ],
             "toState": "To do"
         },
         {
             "name": "Start progress",
-            "fromState": ["To do"],
+            "fromState": [
+                "To do"
+            ],
             "toState": "In progress"
         },
         {
             "name": "Done",
-            "fromState": ["Open", "To do", "In progress"],
+            "fromState": [
+                "Open",
+                "To do",
+                "In progress"
+            ],
             "toState": "Closed as done"
         },
         {
             "name": "Review as OK",
-            "fromState": ["Closed as done"],
+            "fromState": [
+                "Closed as done"
+            ],
             "toState": "Closed as done"
         },
         {
             "name": "Review as not applicable",
-            "fromState": ["*"],
+            "fromState": [
+                "*"
+            ],
             "toState": "Closed as not applicable"
         }
-    ]
+    ],
+    "displayName": ""
 }

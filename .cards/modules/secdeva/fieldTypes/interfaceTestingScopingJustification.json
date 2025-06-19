@@ -1,6 +1,6 @@
 {
     "name": "secdeva/fieldTypes/interfaceTestingScopingJustification",
     "displayName": "Justification for testing",
-    "fieldDescription": "Justification for why the testing activities are required or not required",
-    "dataType": "longText"
+    "dataType": "longText",
+    "description": "Justification for why the testing activities are required or not required"
 }

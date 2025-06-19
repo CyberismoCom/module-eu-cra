@@ -85,21 +85,25 @@
         {
             "name": "Fix required",
             "fromState": [
-                "Analysed", "Fix deferred"
+                "Analysed",
+                "Fix deferred"
             ],
             "toState": "Fix required"
         },
         {
             "name": "Start progress",
             "fromState": [
-                "Fix required", "Fix deferred"
+                "Fix required",
+                "Fix deferred"
             ],
             "toState": "In progress"
         },
         {
             "name": "Defer fix",
             "fromState": [
-                "Analysed", "Fix required", "In progress"
+                "Analysed",
+                "Fix required",
+                "In progress"
             ],
             "toState": "Fix deferred"
         },
@@ -138,5 +142,6 @@
             ],
             "toState": "Open"
         }
-    ]
+    ],
+    "displayName": ""
 }

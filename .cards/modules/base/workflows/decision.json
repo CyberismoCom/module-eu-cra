@@ -17,23 +17,32 @@
     "transitions": [
         {
             "name": "Create",
-            "fromState": [""],
+            "fromState": [
+                ""
+            ],
             "toState": "Draft"
         },
         {
             "name": "Approve",
-            "fromState": ["Draft"],
+            "fromState": [
+                "Draft"
+            ],
             "toState": "Approved"
         },
         {
             "name": "Archive",
-            "fromState": ["*"],
+            "fromState": [
+                "*"
+            ],
             "toState": "Deprecated"
         },
         {
             "name": "Reopen",
-            "fromState": ["*"],
+            "fromState": [
+                "*"
+            ],
             "toState": "Draft"
         }
-    ]
+    ],
+    "displayName": ""
 }

@@ -3,5 +3,6 @@
     "workflow": "secdeva/workflows/version",
     "customFields": [],
     "alwaysVisibleFields": [],
-    "optionallyVisibleFields": []
+    "optionallyVisibleFields": [],
+    "displayName": ""
 }

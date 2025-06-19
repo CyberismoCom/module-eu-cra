@@ -16,5 +16,6 @@
     "alwaysVisibleFields": [],
     "optionallyVisibleFields": [
         "base/fieldTypes/adoptionStep"
-    ]
+    ],
+    "displayName": ""
 }

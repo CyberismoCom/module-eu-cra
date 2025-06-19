@@ -8,5 +8,6 @@
     "destinationCardTypes": [
         "ismsa/cardTypes/risk"
     ],
-    "enableLinkDescription": false
+    "enableLinkDescription": false,
+    "displayName": ""
 }

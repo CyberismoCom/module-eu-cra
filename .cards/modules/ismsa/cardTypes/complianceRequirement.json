@@ -32,5 +32,6 @@
         "base/fieldTypes/justification",
         "ismsa/fieldTypes/requirementOrigin",
         "base/fieldTypes/informationClassification"
-    ]
+    ],
+    "displayName": ""
 }

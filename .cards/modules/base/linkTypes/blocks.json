@@ -4,5 +4,6 @@
     "inboundDisplayName": "is blocked by",
     "sourceCardTypes": [],
     "destinationCardTypes": [],
-    "enableLinkDescription": false
+    "enableLinkDescription": false,
+    "displayName": ""
 }

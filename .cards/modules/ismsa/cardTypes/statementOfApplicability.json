@@ -29,5 +29,6 @@
         "base/fieldTypes/approver",
         "base/fieldTypes/approvalDate"
     ],
-    "optionallyVisibleFields": []
+    "optionallyVisibleFields": [],
+    "displayName": ""
 }

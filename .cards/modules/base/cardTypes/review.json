@@ -22,5 +22,6 @@
     "optionallyVisibleFields": [
         "base/fieldTypes/reviewPeriod",
         "base/fieldTypes/informationClassification"
-    ]
+    ],
+    "displayName": ""
 }

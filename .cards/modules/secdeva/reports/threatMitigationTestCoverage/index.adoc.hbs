@@ -58,9 +58,12 @@ So far, security issues have not been identified in threat modelling, so the sco
 
 {{/unless}}{{/each}}
 {{else}}
-| ❗ Tests have not been linked
+  {{#if this.testingNeeded}}
+  |❗ Tests have not been linked 
+  {{else}}
+  |
+  {{/if}}
 {{/if}}
-
 {{/each}}
 
 |===

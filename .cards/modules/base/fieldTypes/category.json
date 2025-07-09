@@ -1,0 +1,5 @@
+{
+    "name": "base/fieldTypes/category",
+    "displayName": "Category",
+    "dataType": "shortText"
+}

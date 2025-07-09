@@ -2,6 +2,9 @@ selectAll.
 
 result(result).
 
+secdeva_testingNeeded("In progress"; "To be verified"; "Closed as verified"; "Fix required"; "Fix deferred").
+
+
 field(result, "scopingNotDone", "void") :-
     field({{cardKey}}, "workflowState", State),
     secdeva_scopingStatus(State, "Scoping not done").
@@ -13,6 +16,11 @@ field(result, "outOfScope", "void") :-
 field(result, "inScope", "void") :-
     field({{cardKey}}, "workflowState", State),
     secdeva_scopingStatus(State, "In scope").
+
+field(Threat, "testingNeeded", "void") :-
+    field(Threat, "cardType", "secdeva/cardTypes/securityIssue"),
+    field(Threat, "workflowState", State),
+    secdeva_testingNeeded(State).
 
 childResult(result, Threat, "threats") :-
     secdeva_closestProject({{cardKey}}, Project),

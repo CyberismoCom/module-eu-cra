@@ -1,0 +1,19 @@
+{
+    "name": "base/cardTypes/predicate",
+    "displayName": "",
+    "workflow": "base/workflows/page",
+    "customFields": [
+        {
+            "name": "base/fieldTypes/briefDescription"
+        },
+        {
+            "name": "base/fieldTypes/category"
+        }
+
+    ],
+    "alwaysVisibleFields": [
+        "base/fieldTypes/briefDescription",
+        "base/fieldTypes/category"
+    ],
+    "optionallyVisibleFields": []
+}

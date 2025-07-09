@@ -167,8 +167,3 @@ attr(graph, G, fontname, "helvetica") :- graph(G, _).
 attr(node, N, fontname, "helvetica") :- node(N, _).
 attr(edge, (X, Y, N), fontname, "helvetica") :- edge((X, Y, N), _).
 
-#show graph /1.
-#show graph /2.
-#show node /2.
-#show edge /2.
-#show attr /4.

@@ -1,6 +1,6 @@
 {
     "name": "base/cardTypes/predicate",
-    "displayName": "",
+    "displayName": "Predicate",
     "workflow": "base/workflows/page",
     "customFields": [
         {

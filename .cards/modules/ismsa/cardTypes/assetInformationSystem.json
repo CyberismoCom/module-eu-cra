@@ -63,5 +63,5 @@
         "ismsa/fieldTypes/assetAvailability",
         "ismsa/fieldTypes/assetLocation"
     ],
-    "displayName": ""
+    "displayName": "Information system asset"
 }

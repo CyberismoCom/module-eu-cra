@@ -37,5 +37,5 @@
         "ismsa/fieldTypes/assetLocation",
         "ismsa/fieldTypes/assetBackups"
     ],
-    "displayName": ""
+    "displayName": "Supplier asset"
 }

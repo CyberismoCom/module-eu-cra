@@ -33,5 +33,5 @@
         "ismsa/fieldTypes/requirementOrigin",
         "base/fieldTypes/informationClassification"
     ],
-    "displayName": ""
+    "displayName": "Compliance requirement"
 }

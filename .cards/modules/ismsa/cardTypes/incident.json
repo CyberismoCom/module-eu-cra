@@ -26,5 +26,5 @@
         "ismsa/fieldTypes/incidentSeverity"
     ],
     "optionallyVisibleFields": [],
-    "displayName": ""
+    "displayName": "Incident"
 }

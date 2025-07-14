@@ -1,6 +1,6 @@
 {
     "name": "base/cardTypes/externalFunction",
-    "displayName": "",
+    "displayName": "External function",
     "workflow": "base/workflows/page",
     "customFields": [
         {

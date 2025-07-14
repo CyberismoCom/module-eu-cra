@@ -18,5 +18,5 @@
         "base/fieldTypes/dueDate"
     ],
     "optionallyVisibleFields": [],
-    "displayName": ""
+    "displayName": "Security target"
 }

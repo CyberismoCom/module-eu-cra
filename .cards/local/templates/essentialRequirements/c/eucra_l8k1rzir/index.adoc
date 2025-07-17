@@ -6,7 +6,7 @@ EU CRA Annex I (1) (2) (b) :: On the basis of the cybersecurity risk assessment 
 
 #TODO: Edit this as applicable and add any product-specific considerations#
 
-* Settings on all applicable layers of the technology stack must be secure by default: network devices, operating systems, middleware components, and applications. 
+* Settings on all applicable layers of the technology stack must be secure by default: network devices, operating systems, middleware components, and applications.
 * Notice that secure default configuration cannot include well-known cryptographic keys or user accounts with well-known passwords.
-* If the default configurations requires an intial or default credential, then the credential must be set to a random intial value, which must be chosen separately for each product and generated with a cryptographically strong randon number generator
+* If the default configurations requires an initial or default credential, then the credential must be set to a random initial value, which must be chosen separately for each product and generated with a cryptographically strong randon number generator
 * There must be a way to reset the product to its original state, such as placing the default configuration in a non-erasable memory or providing a way to reinstall the default configuration.

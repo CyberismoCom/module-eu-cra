@@ -17,6 +17,8 @@ Fatal errors that result in stopping the execution, such as:
 
 Error handling testing should check that error cases are appropriately logged. Error messages must not reveal information that could be exploited by advesaries.
 
+Error handling testing should also check that the product does not cause negative impact on the availability of other devices or networks, for example by generating too many requests to a busy or not responsive service.
+
 === Scope of testing
 
 The scope of the testing that is reviewed:

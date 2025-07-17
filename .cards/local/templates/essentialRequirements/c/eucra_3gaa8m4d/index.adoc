@@ -13,5 +13,3 @@ Develop or use an existing a software update distribution mechanism. The mechani
 For secure delivery of software updates, see the linked secure development task about the integrity protection of releases.
 
 Notice that in order to support this requirement, the product must support data compatibility between versions, so that user data is not lost when software is updated. This requires planning and testing.
-
-

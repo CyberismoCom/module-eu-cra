@@ -16,10 +16,10 @@ If applicable, security testing of the product may include network storm testing
 
 The following technologies may be applicable to protect the availability of essential functions:
 
-* network devices that support storm protection
-* reverse proxies
-* network segmentation
-* rate limiting
-* backup solutions
-* hardening solutions
-* redundancy support and high-availability solutions
+* Network devices that support storm protection
+* Reverse proxies
+* Network segmentation
+* Rate limiting
+* Backup solutions
+* Hardening solutions
+* Redundancy support and high-availability solutions

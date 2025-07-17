@@ -1,0 +1,17 @@
+== Source
+
+EU CRA Article 13 (15) :: Manufacturers shall ensure that their products with digital elements bear a type, batch or serial number or other element allowing their identification, or, where that is not possible, that that information is provided on their packaging or in a document accompanying the product with digital elements.
+
+EU CRA Article 13 (16) :: Manufacturers shall indicate the name, registered trade name or registered trademark of the manufacturer, and the postal address, email address or other digital contact details, as well as, where applicable, the website where the manufacturer can be contacted, on the product with digital elements, on its packaging or in a document accompanying the product with digital elements. That information shall also be included in the information and instructions to the user set out in Annex II. The contact details shall be in a language which can be easily understood by users and market surveillance authorities.
+
+== Requirement description
+
+#TODO: Edit this as applicable and add any product-specific considerations#
+
+Label the product with unique product identification:
+
+* The product must bear a type, batch or serial number or other element allowing their identification, or, where that is not possible, that that information is provided on their packaging or in a document accompanying the product
+
+Label the product with manufacturer information:
+
+* Indicate the name, registered trade name or registered trademark of the manufacturer, and the postal address, email address or other digital contact details, as well as, where applicable, the website where the manufacturer can be contacted, on the product with, on product packaging or in a document accompanying the product

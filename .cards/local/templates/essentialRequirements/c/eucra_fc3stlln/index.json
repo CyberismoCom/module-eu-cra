@@ -1,0 +1,10 @@
+{
+    "title": "Product labeling",
+    "cardType": "secdeva/cardTypes/requirement",
+    "workflowState": "",
+    "rank": "0|o",
+    "lastUpdated": "2025-07-17T18:01:30.011Z",
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/identifier": "eucra_security-requirement_product-labeling"
+
+}

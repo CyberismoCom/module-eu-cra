@@ -1,0 +1,79 @@
+== Introduction
+
+When a product or a customer delivery based on a product includes distributed products that are made available on the EU market, the EU Cyber Resilience Act sets some requirements for the company acting in the role of a distributor. This document is a review of the distributor responsibilities.
+
+The scope of this review is: #TODO define scope#
+
+== Review checklist
+
+=== Identification of distributed products
+
+Check that you have identified all such 3rd party products, where the product that is in scope of this review is responsible for adhering to the distributor responsibilities.
+
+Review result:
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not applicable
+
+Links or notes:
+
+=== Essential requirements
+
+Check that the distributed products and the processes of their manufacturer meet the essential cybersecurity requirements that have been set out in in Annex I of the EU Cyber Resilience Act. The manufacturer of the product should document this in their technical documentation.
+
+Review result:
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not applicable
+
+Links or notes:
+
+=== Declaration of conformity and CE marking
+
+Check the following aspects about the declaration of conformity and CE marking of the distributed product:
+
+* The product bears the CE marking and is accompanied by the EU declaration of conformity
+* The product bears a type, batch or serial number or other element allowing their identification, or, where that is not possible, that that information is provided on their packaging or in a document accompanying the product
+* The product itself or its packaging indicates the name, registered trade name or registered trademark of the manufacturer, as well as of the importer, in case the product is imported from outside the EU, and the postal addresses, email addresses or other digital contact details, as well as, where applicable, the websites where the manufacturer and importer can be contacted, on the product with digital elements, on its packaging or in a document accompanying the product. The contact details must be written in a language which can be easily understood by users and market surveillance authorities.
+* The end date of the support period of the product, including at least the month and the year, is clearly and understandably specified in an easily accessible manner. If applicable, the end date of the support period should be placed on the product, its packaging or by digital means
+* The product includes product documentation that meets the requirements of EU CRA. If applicable, you can review the documentation using the product documentation review template. The product documentation has been written in a language which can be easily understood by users and market surveillance authorities
+
+Review result:
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not applicable
+
+Links or notes:
+
+=== Archiving the documentation
+
+Check that the documents that prove the fulfilment of the responsibilities checked above regarding the declaration of conformity and CE marking have been archived, so that we are able to provide the evidence to market surveillance authorities, if requested, for at least 10 years after the product has been placed on the market or for the support period, whichever is longer. One way to document the evidence is to record sufficient detail in this review document, and archive this review document, along with the declaration of conformity and the product documentation.
+
+Review result:
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not applicable
+
+Links or notes:
+
+=== Staying in conformity
+
+Check that there is a process in place to ensure that the distributed product stays in conformity, and that any non-conformity will be addressed. This includes:
+
+* If you have reason to believe that the distributed product or the processes put in place by the manufacturer are not in conformity with EU CRA, the product must not made available on the market until that product or the processes have been brought into conformity
+* If you become aware that the distributed product presents a significant cybersecurity risk, then you shall inform the manufacturer, the importer, and the market surveillance authorities without undue delay.
+* If you have reason to believe that the distributed product is no longer in conformity, you shall immediately take the corrective measures necessary to bring the product into conformity, or to withdraw or recall the product, if appropriate
+* If you become aware of a vulnerability in the distributed product, you shall inform the manufacturer without undue delay about that vulnerability. Furthermore, where the distributed product presents a significant cybersecurity risk, you shall immediately inform the market surveillance authorities of the EU Member States in which you have made the distributed product available on the market, giving details, in particular, of non-compliance and of any corrective measures taken
+* If you become aware that the manufacturer of the distributed product has ceased its operations and, as result, is not able to comply with the EU CRA obligations, the you shall inform the relevant market surveillance authorities about this situation, as well as, by any means available and to the extent possible, the users of the distributed products.
+
+Review result:
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not applicable
+
+Links or notes:

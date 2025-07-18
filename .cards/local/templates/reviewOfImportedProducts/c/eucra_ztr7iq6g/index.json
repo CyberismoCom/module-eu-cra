@@ -1,0 +1,12 @@
+{
+    "title": "Review of imported products",
+    "cardType": "base/cardTypes/review",
+    "workflowState": "",
+    "rank": "0|b",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/lastReviewed": null,
+    "base/fieldTypes/reviewPeriod": 365,
+    "lastUpdated": "2025-07-18T14:07:50.984Z",
+    "base/fieldTypes/identifier": "eucra_review_imported-products"
+}

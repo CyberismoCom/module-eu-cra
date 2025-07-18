@@ -1,0 +1,6 @@
+{
+    "name": "eucra/templates/reviewOfDistributedProducts",
+    "displayName": "Review of distributed products",
+    "category": "Secure development reviews",
+    "description": "A review of distributor responsibilities defined in EU CRA"
+}

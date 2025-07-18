@@ -10,6 +10,8 @@ secdeva_defaultTitlePrefix("eucra_review_integrity-protection-of-release", "Revi
 secdeva_defaultTitlePrefix("eucra_review_security-design", "Security design review for ").
 secdeva_defaultTitlePrefix("eucra_document_support-period", "Support period document for ").
 secdeva_defaultTitlePrefix("eucra_review_technical-documentation", "Technical documentation review for ").
+secdeva_defaultTitlePrefix("eucra_review_distributed-products", "Review of distributed products for ").
+secdeva_defaultTitlePrefix("eucra_review_imported-products", "Review of imported products for ").
 
 % The default title for security advisory includes today's date:
 onTransitionSetField(

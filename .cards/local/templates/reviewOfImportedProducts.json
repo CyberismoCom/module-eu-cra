@@ -1,0 +1,6 @@
+{
+    "name": "eucra/templates/reviewOfImportedProducts",
+    "displayName": "Review of imported products",
+    "category": "Secure development reviews",
+    "description": "A review of importer responsibilities defined in EU CRA"
+}

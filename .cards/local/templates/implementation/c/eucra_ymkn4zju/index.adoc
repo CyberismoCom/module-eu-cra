@@ -1,0 +1,34 @@
+The EU Cyber Resilience Act (CRA) sets obligations to importers and distributors when making products available on the EU market.
+
+== How to decide if this secure development task is applicable
+
+This task is required, if the product or the customer deliveries based on the product include placing other products on the EU market as an importer, or making other produces avaialble in the EU market as a distributor. In these cases, the importer and distributor responsibilities from EU CRA must be adhered to.
+
+An importer places on the EU market a product of a manufacturer that is from outside the European Union.
+
+A distributor makes a product available on the EU market without affecting the properties of the product.
+
+== How to implement
+
+Create a review of imported products and/or a review of distributed products, where applicable, and follow the instructions in the templates.
+
+== How to review
+
+Check that a review of imported products and a review of distributed products have been conducted as applicable, and that the reviews are up to date.
+
+{{#report}}
+  "name": "secdeva/reports/createChildReview",
+  "template": "eucra/templates/reviewOfImportedProducts",
+  "buttonLabel": "Create a review of imported products"
+{{/report}}
+
+{{#createCards}}
+  "template": "eucra/templates/reviewOfDistributedProducts",
+  "buttonLabel": "Create a review of distributed products"
+{{/createCards}}
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildReviewStatus"
+{{/report}}

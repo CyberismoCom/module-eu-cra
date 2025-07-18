@@ -1,0 +1,93 @@
+== Introduction
+
+When a product or a customer delivery based on a product includes imported products that are being placed on the EU market, the EU Cyber Resilience Act sets some requirements for the company acting in the role of an importer. This document is a review of the importer responsibilities.
+
+The scope of this review is: #TODO define scope#
+
+== Review checklist
+
+=== Identification of imported products
+
+Check that you have identified all such 3rd party products, where the product that is in scope of this review is responsible for adhering to the importer responsibilities.
+
+Review result:
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not applicable
+
+Links or notes:
+
+=== Essential requirements
+
+Check that the imported products and the processes of their manufacturer meet the essential cybersecurity requirements that have been set out in in Annex I of the EU Cyber Resilience Act. The manufacturer of the product should document this in their technical documentation.
+
+Review result:
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not applicable
+
+Links or notes:
+
+=== Conformity assessment and CE marking
+
+Check the following aspects about the EU conformity assessment and CE marking of the imported product
+
+* The manufacturer of the imported product has carried out an appropriate conformity assessment procedure
+* The manufacturer has drawn up the technical documentation that meets the requirements of EU CRA. If applicable, you can review the documentation using the technical documentation review template.
+* The product bears the CE marking and is accompanied by the EU declaration of conformity
+* The product includes product documentation that meets the requirements of EU CRA. If applicable, you can review the documentation using the technical documentation review template. The product documentation has been written in a language which can be easily understood by users and market surveillance authorities
+* The product bears a type, batch or serial number or other element allowing their identification, or, where that is not possible, that that information is provided on their packaging or in a document accompanying the product
+* The product itself or its packaging indicates the name, registered trade name or registered trademark of the manufacturer, and the postal address, email address or other digital contact details, as well as, where applicable, the website where the manufacturer can be contacted, on the product, on its packaging or in a document accompanying the product. The contact details are written in a language which can be easily understood by users and market surveillance authorities.
+* The end date of the support period of the product, including at least the month and the year, is clearly and understandably specified in an easily accessible manner. If applicable, the end date of the support period should be placed on the product, its packaging or by digital means
+
+Review result:
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not applicable
+
+Links or notes:
+
+=== Archiving the documentation
+
+Check that the documents that prove the fulfilment of the responsibilities checked above regarding the conformity assessment and CE marking have been archived, so that we are able to provide the evidence to market surveillance authorities, if requested, for at least 10 years after the product has been placed on the market or for the support period, whichever is longer.
+
+Review result:
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not applicable
+
+Links or notes:
+
+=== Importer contact details
+
+Check that the imported product, its packaging, or a document that accompanies the product includes importer name, registered trade name or registered trademark, the postal address, email address or other digital contact as well as, where applicable, the website at which you as the importer can be contacted. The contact details shall be in a language easily understood by users and market surveillance authorities.
+
+Review result:
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not applicable
+
+Links or notes:
+
+=== Staying in conformity
+
+Check that there is a process in place to ensure that the imported product stays in conformity, and that any non-conformity will be addressed. This includes:
+
+* If you have reason to believe that the imported product or the processes put in place by the manufacturer are not in conformity with EU CRA, the product must not be placed on the market until that product or the processes have been brought into conformity
+* If the imported product presents a significant cybersecurity risk, even in light of non-technical risk factors, the you shall inform the manufacturer and the market surveillance authorities
+* If you have reason to believe that the imported product is no longer in conformity, you shall immediately take the corrective measures necessary to bring the product into conformity, or to withdraw or recall the product, if appropriate
+* If you become aware of a vulnerability in the imported product, you shall inform the manufacturer without undue delay about that vulnerability. Furthermore, where the imported product presents a significant cybersecurity risk, you shall immediately inform the market surveillance authorities of the EU Member States in which you have made the imported product available on the market, giving details, in particular, of non-compliance and of any corrective measures taken
+* If you become aware that the manufacturer of the imported product has ceased its operations and, as result, is not able to comply with the EU CRA obligations, the you shall inform the relevant market surveillance authorities about this situation, as well as, by any means available and to the extent possible, the users of the imported products.
+
+Review result:
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not applicable
+
+Links or notes:

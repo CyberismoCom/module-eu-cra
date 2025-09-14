@@ -1,0 +1,6 @@
+== NIS2 basic cyber hygiene practices
+
+Basic hygiene practices are based on section 11 of link:https://kyberturvallisuuskeskus.fi/sites/default/files/media/file/Recommendation%20on%20cybersecurity%20risk%20management%20measures%20for%20NIS%20supervisory%20authorities.pdf[Finnish Transport and Communications Agency Traficom
+recommendation on cybersecurity risk management measures for NIS supervisory authorities]
+
+More details available in the above mentioned recommendation.

@@ -1,0 +1,12 @@
+{
+    "title": "Compliance register",
+    "cardType": "ismsa/cardTypes/register",
+    "workflowState": "",
+    "rank": "0|h",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "ismsa/fieldTypes/adoptionStep": "step1",
+    "ismsa/fieldTypes/progress": "compliance-progress",
+    "base/fieldTypes/identifier": null,
+    "lastUpdated": "2025-08-29T10:07:53.348Z"
+}

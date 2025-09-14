@@ -27,7 +27,9 @@
     ],
     "optionallyVisibleFields": [
         "base/fieldTypes/justification",
-        "base/fieldTypes/informationClassification"
+        "base/fieldTypes/informationClassification",
+        "base/fieldTypes/adoptionStep",
+        "base/fieldTypes/identifier"
     ],
     "displayName": "Task"
 }

@@ -44,3 +44,9 @@ Create a review of static code analysis to record your notes.
   "name": "secdeva/reports/checkChildReviewStatus"
 {{/report}}
 
+== References
+
+* IEC 62443-4-1 SI-1 c)
+* ISO 27001 A8.28
+* EU CRA Annex I (2) (3)
+* EU CRA Annex I (1) (2) (a)

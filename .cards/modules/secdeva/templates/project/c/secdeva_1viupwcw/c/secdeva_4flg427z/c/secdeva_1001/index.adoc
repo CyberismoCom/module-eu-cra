@@ -31,3 +31,10 @@ Different trainings are often provided for different roles. You can see the role
 {{/report}}
 
 Check that the trainings have not expired according to the requirements of the secure development training plan of the organisation.
+
+== References
+
+* IEC 62443-4-1 SM-4
+* ISO 27001 7.2
+* ISO 27001 A6.3
+* EU CRA Annex I (1) (1)

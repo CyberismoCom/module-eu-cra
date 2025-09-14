@@ -16,13 +16,13 @@ field(Register, "ismsa/fieldTypes/failureCount", Count + Count2) :-
     field(Register, "cardType", "ismsa/cardTypes/register"),
     Count = #count {
         (Card, Category, Title, Message) :
-        policyCheckFailure(Card, Category, Title, Message),
+        base_policyCheckFailure(Card, Category, Title, Message),
         ancestor(Card, Register),
         not hiddenInTreeView(Card)
     },
     Count2 = #count {
         (Card, Category, Title, Message) :
-        policyCheckFailure(Card, Category, Title, Message),
+        base_policyCheckFailure(Card, Category, Title, Message),
         Card = Register,
         not hiddenInTreeView(Card)
     }.
@@ -31,13 +31,13 @@ field(Register, "ismsa/fieldTypes/failureCount", Count + Count2) :-
     field(Register, "cardType", "ismsa/cardTypes/riskRegister"),
     Count = #count {
         (Card, Category, Title, Message) :
-        policyCheckFailure(Card, Category, Title, Message),
+        base_policyCheckFailure(Card, Category, Title, Message),
         ancestor(Card, Register),
         not hiddenInTreeView(Card)
     },
     Count2 = #count {
         (Card, Category, Title, Message) :
-        policyCheckFailure(Card, Category, Title, Message),
+        base_policyCheckFailure(Card, Category, Title, Message),
         Card = Register,
         not hiddenInTreeView(Card)
     }.

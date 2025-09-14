@@ -31,3 +31,10 @@ Assign people to the security-related roles by editing the child cards. Add new 
 * Check that all the required roles have been assigned
 * Ensure that the nominations are up to date.
 * If needed, confirm with the assignee that they are aware of this role assignment.
+
+== References
+
+* IEC 62443-4-1 SM-2
+* IEC 62443-4-1 SVV-5
+* ISO 27001 A5.2
+* EU CRA Annex I (1) (1)

@@ -44,3 +44,14 @@ Review and approve the security requirement specification to ensure that all rel
 {{/report}}
 
 #TODO: add an automated check for ensuring that the requirement reviews have been completed#
+
+== References
+
+* IEC 62443-4-1 SR-3
+* IEC 62443-4-1 SR-4
+* IEC 62443-4-1 SR-5
+* ISO 27001 A8.26
+* EU CRA Article 13 (3)
+* EU CRA Article 13 (4)
+* EU CRA Article 31 (1)
+* EU CRA Annex I (1) (1)

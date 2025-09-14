@@ -4,14 +4,14 @@ result(Card) :-
    ismsa_closestHome(Card, Home),
    ismsa_closestHome({{cardKey}}, Home),
    field(Card, "cardType", "ismsa/cardTypes/risk"),
-   policyCheckFailure(Card, _, _, _).
+   base_policyCheckFailure(Card, _, _, _).
 
 field(Card, "ismsa/fieldTypes/failureCount", Count) :-
    result(Card),
    Count = #count {
       (Card, Category, Title, Message) :
       result(Card),
-      policyCheckFailure(Card, Category, Title, Message)
+      base_policyCheckFailure(Card, Category, Title, Message)
    }.
 
 orderBy("base/fieldTypes/owner", "ASC").

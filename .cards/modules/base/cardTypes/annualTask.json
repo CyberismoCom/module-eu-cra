@@ -34,7 +34,9 @@
     "optionallyVisibleFields": [
         "base/fieldTypes/informationClassification",
         "base/fieldTypes/justification",
-        "base/fieldTypes/reviewMonth"
+        "base/fieldTypes/reviewMonth",
+        "base/fieldTypes/adoptionStep",
+        "base/fieldTypes/identifier"
     ],
     "displayName": "Annual task"
 }

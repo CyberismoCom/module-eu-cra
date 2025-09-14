@@ -30,3 +30,8 @@ Create a business context analysis document and follow the instructions in the t
 {{#report}}
   "name": "secdeva/reports/checkChildDocumentStatus"
 {{/report}}
+
+== References
+
+* ISO 27001 4.1
+* ISO 27001 4.2

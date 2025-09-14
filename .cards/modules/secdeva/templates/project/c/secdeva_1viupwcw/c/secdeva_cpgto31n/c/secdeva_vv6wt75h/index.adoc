@@ -29,3 +29,8 @@ Create a review of defect management and follow the instructions in the template
 {{#report}}
   "name": "secdeva/reports/checkChildReviewStatus"
 {{/report}}
+
+== References
+
+* IEC 62443-4-1 SM-11
+* IEC 62443-4-1 DM-6

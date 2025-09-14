@@ -25,3 +25,13 @@ Create a review of the use of cryptography and follow the instructions in the te
 {{#report}}
   "name": "secdeva/reports/checkChildReviewStatus"
 {{/report}}
+
+
+== References
+
+* IEC 62443 4-2 CR 4.3
+* IEC 62443 3-3 SR 4.3
+* ISO 27001 A8.24
+* EU CRA Annex I (2) (3)
+* EU CRA Annex I (1) (2) (e)
+* EU CRA Annex I (1) (2) (f)

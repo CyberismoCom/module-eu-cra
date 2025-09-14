@@ -41,3 +41,13 @@ If the supplier of a 3rd party component has published information about their s
 
 A checklist for manual checks is provided in the template for the review of software update vulnerability management.
 
+== References
+
+* IEC 62443-4-1 SUM-1
+* IEC 62443-4-1 SUM-3
+* ISO 27001 A8.8
+* EU CRA Article 13 (5)
+* EU CRA Annex I (1) (2) (a)
+* EU CRA Annex I (2) (1)
+* EU CRA Annex I (2) (2)
+* EU CRA Annex I (2) (4)

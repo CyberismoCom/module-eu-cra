@@ -39,3 +39,8 @@ The test plan and the test results must be documented. Typically, test plans are
 {{#report}}
   "name": "secdeva/reports/threatMitigationTestCoverage"
 {{/report}}
+
+== References
+
+* IEC 62443-4-1 SVV-2
+* EU CRA Annex I (2) (3)

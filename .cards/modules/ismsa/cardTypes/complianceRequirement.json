@@ -31,7 +31,9 @@
     "optionallyVisibleFields": [
         "base/fieldTypes/justification",
         "ismsa/fieldTypes/requirementOrigin",
-        "base/fieldTypes/informationClassification"
+        "base/fieldTypes/informationClassification",
+        "base/fieldTypes/adoptionStep",
+        "base/fieldTypes/identifier"
     ],
     "displayName": "Compliance requirement"
 }

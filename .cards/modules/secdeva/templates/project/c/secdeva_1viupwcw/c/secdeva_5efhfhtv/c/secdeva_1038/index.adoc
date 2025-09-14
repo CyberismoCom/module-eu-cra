@@ -38,3 +38,7 @@ Interfaces are documented as part of the dataflow models that are included in th
 == How to review this task
 
 Check that all exposed interfaces have been documented and included in the threat model and that the documents have been approved.
+
+== References
+
+* IEC 62443-4-1 SD-1

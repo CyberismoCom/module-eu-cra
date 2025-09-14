@@ -3,12 +3,12 @@
     "title": "EU conformity assessment procedure",
     "workflowState": "",
     "base/fieldTypes/owner": null,
-    "base/fieldTypes/adoptionStep": null,
+    "base/fieldTypes/adoptionStep": "step1",
     "base/fieldTypes/dueDate": null,
     "base/fieldTypes/informationClassification": "internal",
     "base/fieldTypes/justification": null,
     "rank": "0|s",
-    "lastUpdated": "2025-01-17T07:34:28.082Z",
+    "lastUpdated": "2025-09-14T18:00:14.435Z",
     "links": [],
     "base/fieldTypes/identifier": "eucra_control_eu-conformity-assessment"
 }

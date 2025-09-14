@@ -10,5 +10,7 @@
     "base/fieldTypes/quarterlyReviewMonth": "month2",
     "base/fieldTypes/lastReviewed": null,
     "base/fieldTypes/adoptionStep": "step1",
-    "base/fieldTypes/identifier": "secdeva_control_manage-defects"
+    "base/fieldTypes/identifier": "secdeva_control_manage-defects",
+    "links": [],
+    "lastUpdated": "2025-09-08T09:35:11.210Z"
 }

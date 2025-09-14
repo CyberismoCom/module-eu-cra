@@ -1,0 +1,3 @@
+== Requirement content
+
+Systems are updated regularly and critical updates are installed without delay.

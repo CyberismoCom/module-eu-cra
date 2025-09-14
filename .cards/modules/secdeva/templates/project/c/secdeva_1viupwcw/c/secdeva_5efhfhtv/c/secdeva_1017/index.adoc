@@ -30,3 +30,12 @@ The security context documentation defines, where the product is intended to be 
 {{/report}}
 
 If the security context has been defined in several places, such as separately on the topmost project and for subprojects, or in several different documents, then check that the definitions are aligned and not conflicting.
+
+== References
+
+* IEC 62443-4-1 SR-1
+* IEC 62443-4-1 SD-2
+* EU CRA Article 6
+* EU CRA Article 13 (3)
+* EU CRA Article 13 (4)
+* EU CRA Annex I (1) (1)

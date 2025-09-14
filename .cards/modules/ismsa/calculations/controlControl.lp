@@ -8,7 +8,7 @@ transitionDenied(Card, "Not applicable", "Set Status field to N/A" ):-
 
 transitionDenied(Card, "Complete plan", "Fix policy failures before completing plan" ):-
     field(Card, "cardType", "ismsa/cardTypes/control"),
-    policyCheckFailure(Card, _, _, _).
+    base_policyCheckFailure(Card, _, _, _).
 
 editingContentDenied(Card, "You can't edit closed controls" ):-
     field(Card, "cardType", "ismsa/cardTypes/control"),

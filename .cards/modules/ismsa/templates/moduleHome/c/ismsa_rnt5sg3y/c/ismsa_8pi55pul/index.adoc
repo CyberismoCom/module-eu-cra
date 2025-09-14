@@ -1,0 +1,15 @@
+## Company compliance register
+
+Compliance management is required to ensure that company meets its regulatory and contractual requirements.
+
+This register contains an up-to-date registry of #Company Oy# cybersecurity requirements.
+
+Currently following subregisters have been defined for requirements:
+
+{{#report}}
+  "name": "ismsa/reports/subregisters"
+{{/report}}
+
+{{#report}}
+  "name": "ismsa/reports/addControlRegisterNis2"
+{{/report}}

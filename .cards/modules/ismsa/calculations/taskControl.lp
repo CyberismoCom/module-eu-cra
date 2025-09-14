@@ -4,4 +4,4 @@ policyCheckFailure(Card, "ISMS", "Due date is a required field", "Due date has n
 
 transitionDenied(Card, "Approve target", "Fix policy failures before approving target" ):-
     field(Card, "cardType", "ismsa/cardTypes/securityTarget"),
-    policyCheckFailure(Card, _, _, _).
+    base_policyCheckFailure(Card, _, _, _).

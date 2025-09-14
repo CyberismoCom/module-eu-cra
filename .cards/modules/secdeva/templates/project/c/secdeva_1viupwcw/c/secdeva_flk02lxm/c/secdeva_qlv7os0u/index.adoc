@@ -19,3 +19,8 @@ Create a review of error handling testing and follow the instructions in the tem
 {{#report}}
   "name": "secdeva/reports/checkChildReviewStatus"
 {{/report}}
+
+== References
+
+* IEC 62443-4-1 SVV-1
+* EU CRA Annex I (2) (3)

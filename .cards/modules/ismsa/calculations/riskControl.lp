@@ -17,7 +17,7 @@ transitionDenied(Card, "Complete analysis", "Fill needed metadata fields for thi
     field(Card, "cardType", "ismsa/cardTypes/risk"),
     not field(Card, "base/fieldTypes/informationClassification", _).
 
-policyCheckFailure(Card, "ISMS", "'Initial likelihood' is a required field", "'Initial likelihood' has not been defined for this risk. Set this field.") :-
+policyCheckFailure(Card, "ISMS", "'Initial likelihood' is a required field", "'Initial likelihood' has not been defined for this risk. Set this field.", "ismsa/fieldTypes/riskInitialLikelihood") :-
     field(Card, "cardType", "ismsa/cardTypes/risk"),
     not field(Card, "ismsa/fieldTypes/riskInitialLikelihood", _).
 
@@ -25,7 +25,7 @@ transitionDenied(Card, "Complete analysis", "Fill needed metadata fields for thi
     field(Card, "cardType", "ismsa/cardTypes/risk"),
     not field(Card, "ismsa/fieldTypes/riskInitialLikelihood", _).
 
-policyCheckFailure(Card, "ISMS", "'Initial impact' is a required field", "'Initial impact' has not been defined for this risk. Set this field.") :-
+policyCheckFailure(Card, "ISMS", "'Initial impact' is a required field", "'Initial impact' has not been defined for this risk. Set this field.", "ismsa/fieldTypes/riskInitialImpact") :-
     field(Card, "cardType", "ismsa/cardTypes/risk"),
     not field(Card, "ismsa/fieldTypes/riskInitialImpact", _).
 
@@ -33,15 +33,11 @@ transitionDenied(Card, "Complete analysis", "Fill needed metadata fields for thi
     field(Card, "cardType", "ismsa/cardTypes/risk"),
     not field(Card, "ismsa/fieldTypes/riskInitialImpact", _).
 
-policyCheckFailure(Card, "ISMS", "'Initial risk level' is a required field", "'Initial risk level' has not been defined for this risk. Set this field.") :-
-    field(Card, "cardType", "ismsa/cardTypes/risk"),
-    not field(Card, "ismsa/fieldTypes/riskInitialRisk", _).
-
 transitionDenied(Card, "Complete analysis", "Fill needed metadata fields for this risk before completing analysis" ):-
     field(Card, "cardType", "ismsa/cardTypes/risk"),
     not field(Card, "ismsa/fieldTypes/riskInitialRisk", _).
 
-policyCheckFailure(Card, "ISMS", "Mitigation strategy is a required field", "Mitigation strategy has not been defined for this risk. Set this field.") :-
+policyCheckFailure(Card, "ISMS", "Mitigation strategy is a required field", "Mitigation strategy has not been defined for this risk. Set this field.", "ismsa/fieldTypes/riskMitigationStrategy") :-
     field(Card, "cardType", "ismsa/cardTypes/risk"),
     not field(Card, "ismsa/fieldTypes/riskMitigationStrategy", _).
 

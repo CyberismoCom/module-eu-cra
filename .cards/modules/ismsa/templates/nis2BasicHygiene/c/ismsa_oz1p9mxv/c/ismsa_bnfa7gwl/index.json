@@ -1,0 +1,16 @@
+{
+    "title": "11.2 Asset management",
+    "cardType": "ismsa/cardTypes/complianceRequirement",
+    "workflowState": "Open",
+    "rank": "0|c",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "public",
+    "base/fieldTypes/adoptionStep": null,
+    "base/fieldTypes/identifier": null,
+    "ismsa/fieldTypes/requirementImplementationStrategy": null,
+    "ismsa/fieldTypes/requirementOrigin": "Directive (EU) 2022/2555 NIS 2 Directive",
+    "links": [],
+    "base/fieldTypes/justification": null,
+    "lastUpdated": "2025-08-26T08:17:36.020Z",
+    "templateCardKey": "ismsa_vsgssc6e"
+}

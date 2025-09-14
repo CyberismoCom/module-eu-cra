@@ -1,0 +1,3 @@
+== Requirement content
+
+Privileged access accounts are separated and properly managed.

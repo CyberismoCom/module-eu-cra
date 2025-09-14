@@ -35,3 +35,9 @@ If test plans are created and test executions are managed a test management tool
   "name": "secdeva/reports/checkChildReviewStatus"
 {{/report}}
 
+== References
+
+* IEC 62443-4-1 SVV-3 c)
+* ISO 27001 A8.8
+* EU CRA Annex I (1) (2) (a)
+* EU CRA Annex I (2) (3)

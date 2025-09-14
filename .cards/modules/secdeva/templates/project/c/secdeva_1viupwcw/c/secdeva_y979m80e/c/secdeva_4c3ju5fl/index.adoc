@@ -34,3 +34,8 @@ Create a review of protecting environments and follow the instructions in the te
   "name": "secdeva/reports/checkChildReviewStatus"
 {{/report}}
 
+== References
+
+* IEC 62443-4-1 SM-7
+* ISO 27001 A8.31
+* EU CRA Annex I (1) (2) (k)

@@ -10,5 +10,7 @@
     "base/fieldTypes/reviewMonth": "october",
     "base/fieldTypes/lastReviewed": null,
     "base/fieldTypes/adoptionStep": "step1",
-    "base/fieldTypes/identifier": "secdeva_control_protect-environments"
+    "base/fieldTypes/identifier": "secdeva_control_protect-environments",
+    "links": [],
+    "lastUpdated": "2025-09-08T09:39:52.070Z"
 }

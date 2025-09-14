@@ -1,0 +1,3 @@
+== Requirement content
+
+Critical and vulnerable networks and information systems have been segregated from other environments.

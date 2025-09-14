@@ -1,0 +1,6 @@
+{
+    "name": "ismsa/reports/addControlRegisterNis2",
+    "displayName": "Add NIS2 Control Register",
+    "description": "Show a button to add a NIS2 control register ",
+    "category": "Register management"
+}

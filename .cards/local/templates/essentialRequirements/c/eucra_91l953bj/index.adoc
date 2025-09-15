@@ -6,4 +6,4 @@ EU CRA Annex I (1) (2) (a) :: On the basis of the cybersecurity risk assessment 
 
 #TODO: Edit this as applicable and add any product-specific considerations#
 
-This requirement is implemented by the linked secure development tasks *Manage 3rd party vulnerabilities* and *Manage defects*.
+This requirement is implemented by the linked secure development tasks.footnote:[You must add development tasks from the EU CRA module and set the target adoption step to at least step 2 to see all linked tasks.]

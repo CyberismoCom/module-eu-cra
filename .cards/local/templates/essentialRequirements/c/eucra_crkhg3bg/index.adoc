@@ -6,4 +6,4 @@ EU CRA Annex I (1) (2) (e) :: On the basis of the cybersecurity risk assessment 
 
 #TODO: Edit this as applicable and add any product-specific considerations#
 
-In accordance with the nature of the product and to the relevant risks identified in the risk analysis, an appropriate protection mechanism shall be implemented. This may include encryption, which requires appropriate management of cryptographic keys.
+In accordance with the nature of the product and to the relevant risks identified in the risk analysis, an appropriate protection mechanism shall be implemented. This may include encryption, which requires appropriate management of cryptographic keys, see the linked secure development task.footnote:[You must add development tasks from the EU CRA module and set the target adoption step to at least step 2 to see the linked task.]

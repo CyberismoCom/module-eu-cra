@@ -52,5 +52,12 @@ secdeva_evidence(
     "Review of release integrity protection"
 ).
 
+secdeva_evidence(
+    "eucra_control_obligations-of-importers-and-distributors",
+    ("eucra_review_distributed-products";
+    "eucra_review_imported-products"),
+    "Review of release integrity protection"
+).
+
 %secdeva_evidence("eucra_control_eu-conformity-assessment", "eucra_TODO", "TODO: Evidence to be planned").
 

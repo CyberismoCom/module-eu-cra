@@ -6,7 +6,7 @@ EU CRA Annex I (1) (2) (k) :: On the basis of the cybersecurity risk assessment 
 
 #TODO: Edit this as applicable and add any product-specific considerations#
 
-The linked secure development task about Security design review includes a review of defence in depth design. This means that the product should be designed in a way that gaining unauthorised access to a function or data does not automatically lead to a complete access to all product functions and data.
+The linked secure development task about Security design review includes a review of defence in depth design. This means that the product should be designed in a way that gaining unauthorised access to a function or data does not automatically lead to a complete access to all product functions and data.footnote:[You must add development tasks from the EU CRA module and set the target adoption step to at least step 2 to see the linked task.]
 
 The linked secure development task to document the security context includes defining the expected protections from the deployment environment.
 

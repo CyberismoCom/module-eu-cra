@@ -10,6 +10,6 @@ This requirement is implemented by the linked secure development tasks: attack s
 
 The product must also support appropriate hardening mechanisms:
 
-* The default configuration shall limit or disable all non-essential features  such as  interfaces, connections, network ports, running services, features, privileges, any APIs, protocols and other entry points  that are not strictly required for performing the tasks that the product is expected to do
+* The default configuration shall limit or disable all non-essential features  such as interfaces, connections, network ports, running services, features, privileges, any APIs, protocols and other entry points  that are not strictly required for performing the tasks that the product is expected to do
 * Hardening must consider all applicable layers of the technology stack, such as network devices, operating systems, middleware components, applications
 * If required by a risk assessment, a physical product should include tamper-resistant features

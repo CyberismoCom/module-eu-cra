@@ -26,7 +26,6 @@ secdeva_implementationTask(
     "eucra_compliance-requirement_article-13-3"
 ).
 
-
 secdeva_implementationTask(
     ("eucra_control_technical-documentation-review";
     "secdeva_control_high-level-risks";
@@ -34,6 +33,18 @@ secdeva_implementationTask(
     "secdeva_control_security-context";
     "secdeva_control_security-requirements"),
     "eucra_compliance-requirement_article-13-4"
+).
+
+secdeva_implementationTask(
+    ("secdeva_control_3rd-party-technologies";
+    "secdeva_control_vulnerability-management";
+    "secdeva_control_software-update-management"),
+    "eucra_compliance-requirement_article-13-5"
+).
+
+secdeva_implementationTask(
+    "secdeva_control_vulnerability-management",
+    "eucra_compliance-requirement_article-13-6"
 ).
 
 secdeva_implementationTask(
@@ -46,7 +57,8 @@ secdeva_implementationTask(
 
 secdeva_implementationTask(
     ("eucra_control_technical-documentation-review";
-    "eucra_control_support-period"),
+    "eucra_control_support-period";
+    "secdeva_control_vulnerability-management"),
     "eucra_compliance-requirement_article-13-8"
 ).
 
@@ -62,12 +74,19 @@ secdeva_implementationTask(
 ).
 
 secdeva_implementationTask(
-    "eucra_control_product-documentation-review",
+    "eucra_control_support-period",
+    "eucra_compliance-requirement_article-13-14"
+).
+
+secdeva_implementationTask(
+    ("eucra_control_product-documentation-review";
+    "eucra_security-requirement_product-labeling"),
     "eucra_compliance-requirement_article-13-15"
 ).
 
 secdeva_implementationTask(
-    "eucra_control_product-documentation-review",
+    ("eucra_control_product-documentation-review";
+    "eucra_security-requirement_product-labeling"),
     "eucra_compliance-requirement_article-13-16"
 ).
 
@@ -82,7 +101,9 @@ secdeva_implementationTask(
 ).
 
 secdeva_implementationTask(
-    "eucra_control_product-documentation-review",
+    ("eucra_control_product-documentation-review";
+    "eucra_control_support-period";
+    "eucra_security-requirement_notification-about-end-of-support"),
     "eucra_compliance-requirement_article-13-19"
 ).
 
@@ -234,13 +255,15 @@ secdeva_implementationTask(
 
 secdeva_implementationTask(
     ("eucra_security-requirement_integrity-of-data";
-    "secdeva_control_use-of-cryptography"),
+    "secdeva_control_use-of-cryptography";
+    "eucra_control_integrity-protection-of-release"),
     "eucra_compliance-requirement_annex-I-1-2-f"
 ).
 
 secdeva_implementationTask(
     ("eucra_security-requirement_data-minimisation";
-    "eucra_control_security-design-review"),
+    "eucra_control_security-design-review";
+    "eucra_control_privacy-by-design-review"),
     "eucra_compliance-requirement_annex-I-1-2-g"
 ).
 
@@ -254,7 +277,10 @@ secdeva_implementationTask(
 
 secdeva_implementationTask(
     ("eucra_security-requirement_minimise-negative-impact";
-    "secdeva_control_threat-models"),
+    "secdeva_control_threat-models";
+    "secdeva_control_error-handling-testing";
+    "eucra_control_document-attack-surface";
+    "eucra_control_attack-surface-analysis"),
     "eucra_compliance-requirement_annex-I-1-2-i"
 ).
 
@@ -268,7 +294,8 @@ secdeva_implementationTask(
 secdeva_implementationTask(
     ("eucra_security-requirement_reduce-the-impact-of-incidents";
     "secdeva_control_protect-environments";
-    "secdeva_control_security-context"),
+    "secdeva_control_security-context";
+    "eucra_control_security-design-review"),
     "eucra_compliance-requirement_annex-I-1-2-k"
 ).
 
@@ -354,7 +381,13 @@ secdeva_implementationTask(
 
 secdeva_implementationTask(
     ("secdeva_control_manage-defects";
-    "secdeva_control_vulnerability-management"),
+    "secdeva_control_vulnerability-management";
+    "secdeva_control_3rd-party-technologies";
+    "secdeva_control_known-vulnerability-scanning";
+    "secdeva_control_static-code-analysis";
+    "secdeva_control_manual-code-review";
+    "eucra_control_attack-surface-analysis";
+    "eucra_control_penetration-testing"),
     "eucra_security-requirement_no-known-exploitable-vulnerabilities"
 ).
 
@@ -367,7 +400,8 @@ secdeva_implementationTask(
 secdeva_implementationTask(
     ("secdeva_control_security-context";
     "eucra_control_document-attack-surface";
-    "eucra_control_attack-surface-analysis"),
+    "eucra_control_attack-surface-analysis";
+    "secdeva_control_error-handling-testing"),
     "eucra_security-requirement_availability-of-essential-functions"
 ).
 
@@ -409,6 +443,7 @@ secdeva_implementationTask(
 
 secdeva_implementationTask(
     ("eucra_control_security-design-review";
-    "secdeva_control_security-context"),
+    "secdeva_control_security-context";
+    "secdeva_control_protect-environments"),
     "eucra_security-requirement_reduce-the-impact-of-incidents"
 ).

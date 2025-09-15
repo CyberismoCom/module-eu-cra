@@ -10,6 +10,6 @@ In accordance with the nature of the product and to the relevant risks identifie
 
 Notice that this requirement concerns both information at rest and in transit.
 
-Notice that the data that must be integrity-protected includes software updates. See linked secure development task about protecting the integrity of releases.
+Notice that the data that must be integrity-protected includes software updates. See the linked secure development task about protecting the integrity of releases.footnote:[You must add development tasks from the EU CRA module and set the target adoption step to at least step 2 to see the linked task.]
 
 For devices, the integrity requirement concerns the boot process.

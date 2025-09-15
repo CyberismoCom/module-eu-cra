@@ -128,7 +128,7 @@ Comments, links:
 
 === No single points of failure
 
-The failure of any single aspect does not result in system failure |If redundancy is applicable, identify cases where the failure of any of the software processes, execution threads, computers, communication endpoints, 3rd party components or technologies, network elements or hardware components may result in system failure.
+The failure of any single aspect does not result in system failure. If redundancy is applicable, identify cases where the failure of any of the software processes, execution threads, computers, communication endpoints, 3rd party components or technologies, network elements or hardware components may result in system failure.
 
 * [ ] OK
 * [ ] Not OK
@@ -138,7 +138,7 @@ Comments, links:
 
 === Sufficient capacity
 
-The design provides sufficient capacity for dependable operation and includes enough reserve capacity. |Check whether sufficient capacity estimation has been included in the design specification. Identify risks in excessive CPU, memory, disk or network usage.
+The design provides sufficient capacity for dependable operation and includes enough reserve capacity. Check whether sufficient capacity estimation has been included in the design specification. Identify risks in excessive CPU, memory, disk or network usage.
 
 * [ ] OK
 * [ ] Not OK

@@ -25,3 +25,9 @@ If vulnerability scanning of infrastructure has been performed to the same syste
 {{#report}}
   "name": "secdeva/reports/checkChildReviewStatus"
 {{/report}}
+
+== References
+
+* IEC 62443-4-1 SVV-4
+* EU CRA Annex I (1) (2) (a)
+* EU CRA Annex I (2) (3)

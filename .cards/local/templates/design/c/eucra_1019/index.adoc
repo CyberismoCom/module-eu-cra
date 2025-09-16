@@ -29,3 +29,10 @@ Create a privacy by design review document and follow the instructions in the te
 {{/report}}
 
 Check that any identified security-related findings have been reported as security issues.
+
+== References
+
+References
+
+EU General Data Protection Regulation (GDPR)
+EU CRA Annex I (2) (3)

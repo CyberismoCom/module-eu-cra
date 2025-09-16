@@ -21,3 +21,12 @@ Create a security design review document and follow the instructions in the temp
 {{/report}}
 
 Check that any identified security-related findings have been reported as security issues.
+
+== References
+
+* IEC 62443-4-1 SD-2
+* IEC 62443-4-1 SD-3
+* IEC 62443-4-1 SD-4
+* ISO 27001 A8.27
+* ISO 27001 A8.28
+* EU CRA Annex I (1) (1)

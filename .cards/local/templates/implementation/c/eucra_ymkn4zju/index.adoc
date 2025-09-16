@@ -32,3 +32,17 @@ Check that a review of imported products and a review of distributed products ha
 {{#report}}
   "name": "secdeva/reports/checkChildReviewStatus"
 {{/report}}
+
+== References
+
+* EU CRA Article 19 (1)
+* EU CRA Article 19 (2)
+* EU CRA Article 19 (3)
+* EU CRA Article 19 (4)
+* EU CRA Article 19 (5)
+* EU CRA Article 19 (6)
+* EU CRA Article 19 (7)
+* EU CRA Article 19 (8)
+* EU CRA Article 20
+* EU CRA Article 21
+* EU CRA Article 22

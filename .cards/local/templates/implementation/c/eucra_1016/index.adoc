@@ -21,3 +21,19 @@ Create a product documentation review document and follow the instructions in th
 {{#report}}
   "name": "secdeva/reports/checkChildReviewStatus"
 {{/report}}
+
+== References
+
+References
+
+* IEC 62443-4-1 SG Practice
+* EU CRA Article 13(7)
+* EU CRA Article 13(15)
+* EU CRA Article 13(16)
+* EU CRA Article 13(17)
+* EU CRA Article 13(18)
+* EU CRA Article 13(19)
+* EU CRA Article 13(20)
+* EU CRA Annex I (2) (3)
+* EU CRA Annex I (2) (6)
+* EU CRA Annex II

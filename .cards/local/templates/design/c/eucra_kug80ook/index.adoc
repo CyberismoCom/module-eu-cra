@@ -19,3 +19,10 @@ Create a support period document and follow the instructions in the template.
 {{#report}}
   "name": "secdeva/reports/checkChildDocumentStatus"
 {{/report}}
+
+== References
+
+* EU CRA Article 13 (8)
+* EU CRA Article 13 (14)
+* EU CRA Article 13 (19)
+* EU CRA Annex I (1) (2) (c)

@@ -27,3 +27,11 @@ When you revisit the review, record the result of the new review in the technica
 {{/report}}
 
 Check that any identified security-related findings have been reported as security issues.
+
+== References
+
+* EU CRA Article 13 (4)
+* EU CRA Article 13 (7)
+* EU CRA Article 13 (8)
+* EU CRA Article 13 (12)
+* EU CRA Article 13 (24)

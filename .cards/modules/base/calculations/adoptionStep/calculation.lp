@@ -3,7 +3,7 @@
 % we generate base_greaterAdoptionStep only for non-template cards and cards that have an ancestor relationship
 
 base_greaterAdoptionStep(Card1, Card2) :-
-    field(Card1, "base/fieldTypes/adoptionStep", "step1"),
+    field(Card1, "base/fieldTypes/adoptionStep", _),
     card(Card2),
     not field(Card2, "base/fieldTypes/adoptionStep", _),
     field(Card1, "cardType", CardType1),
@@ -17,7 +17,7 @@ base_greaterAdoptionStep(Card1, Card2) :-
     ancestor(Card2, Ancestor2).
 
 base_greaterAdoptionStep(Card1, Card2) :-
-    field(Card1, "base/fieldTypes/adoptionStep", "step1"),
+    field(Card1, "base/fieldTypes/adoptionStep", _),
     card(Card2),
     not field(Card2, "base/fieldTypes/adoptionStep", _),
     field(Card1, "cardType", CardType1),

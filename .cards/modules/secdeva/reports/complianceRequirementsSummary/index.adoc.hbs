@@ -11,14 +11,14 @@
 |xref:{{this.key}}.adoc[{{this.title}}]
 |{{this.workflowState}}
 {{#if this.implementedBy}}
-| {{#each implementedBy}}xref:{{this.key}}.adoc[{{this.title}}] {{#unless @last}},
+| {{#each implementedBy}}xref:{{this.key}}.adoc[{{this.title}}]{{#unless @last}},
 
 {{/unless}}{{/each}}
 {{else}}
 |
 {{/if}}
 {{#if this.evidencedBy}}
-| {{#each evidencedBy}}xref:{{this.key}}.adoc[{{this.title}}] {{#unless @last}},
+| {{#each evidencedBy}}xref:{{this.key}}.adoc[{{this.title}}]{{#unless @last}},
 
 {{/unless}}{{/each}}
 {{else}}

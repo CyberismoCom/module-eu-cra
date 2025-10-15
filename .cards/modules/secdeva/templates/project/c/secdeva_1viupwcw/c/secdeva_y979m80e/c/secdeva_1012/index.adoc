@@ -7,7 +7,7 @@
 {{/graph}}
 ====
 
-The goal of the vulnerability management of a technology is to identify and characterize potential security vulnerabilities in the 3rd party technology, and to address the vulnerabilities.
+The goal of the vulnerability management is to identify, characterize, address, and communicate potential security vulnerabilities in 3rd party technology.
 
 == How to decide if this secure development task is required
 
@@ -16,6 +16,8 @@ Vulnerability management is required for all 3rd party technology.
 This analysis must be performed on all executable files.
 
 == How to implement
+
+Development teams must integrate timely identification, assessment, addressing, and communications of security issues and vulnerabilities in their continuous development practices.
 
 For products, the development team shall draw up and maintain an SBOM in a commonly used and machine-readable format. The SBOM shall cover at the very least the top-level dependencies.
 

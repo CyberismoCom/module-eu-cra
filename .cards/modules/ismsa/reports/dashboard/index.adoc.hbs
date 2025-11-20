@@ -4,9 +4,13 @@
 
 {{#each results}}
 
-.^| xref:{{this.key}}.adoc[{{this.title}}]
-^| pass:[<span style="font-size:4vw;">{{this.[base/fieldTypes/progress]}}%</span>]
-^| pass:[<span style="font-size:4vw;">{{this.[ismsa/fieldTypes/failureCount]}}</span>]
+^.^a| {{#xref}} "cardKey": "{{this.key}}" {{/xref}}
+{{#if this.[base/fieldTypes/progress]}}
+^.^a| {{#percentage}} "value":{{this.[base/fieldTypes/progress]}}, "legend": "Completed", "title": "" {{/percentage}}
+{{else}}
+^.^a| {{#percentage}} "value":0, "legend": "Completed", "title": "" {{/percentage}}
+{{/if}}
+^.^a| {{#scoreCard}} "value":{{this.[ismsa/fieldTypes/failureCount]}}, "title": "Failures" {{/scoreCard}}
 
 {{/each}}
 

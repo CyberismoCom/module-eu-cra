@@ -48,6 +48,16 @@ a|
 
 |=========================================================
 
+== Definitions
+
+* An **asset** in anything that has value to the organisation and therefore requires protection. It can be data, process, technology, facility, competence, supplier etc. 
+
+* A **threat** is anything that has the potential to exploit a weakness and cause harm to your assets. It can be intentional or unintentional, internal or external, natural or industrial etc.
+
+* A **vulnerability** is a weakness or flaw in your system/process design, implementation, or operation that could be used by a threat actor to gain unauthorized access or disrupt functionality.
+
+* **Risk** is the likelihood that threat will exploit a vulnerability to cause harm to an assets. It is expressed as a combination of the impact of such loss or disruption and the probability of occurrence of the incident.
+
 == Process description
 
 Risks and treatment plans are recorded to Risk Register in accordance to following steps.

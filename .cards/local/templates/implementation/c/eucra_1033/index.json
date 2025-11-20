@@ -7,7 +7,6 @@
     "base/fieldTypes/adoptionStep": "step2",
     "base/fieldTypes/informationClassification": "internal",
     "base/fieldTypes/justification": null,
-    "eucra/fieldTypes/controlImplementer": "Development team",
     "base/fieldTypes/reviewPeriod": 365,
     "base/fieldTypes/reviewMonth": null,
     "base/fieldTypes/lastReviewed": null,

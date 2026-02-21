@@ -1,0 +1,45 @@
+selectAll.
+
+result(result).
+
+childResult(result, Template, "uninstalledExtensions") :-
+    ismsa_installableExtension(TargetIdentifier, _, Template, _, ExampleIdentifier),
+    field({{cardKey}}, "base/fieldTypes/identifier", TargetIdentifier),
+    not field(Descendant, "base/fieldTypes/identifier", ExampleIdentifier) :
+    ancestor(Descendant, {{cardKey}}).
+
+childResult(result, Template, "uninstalledExtensions") :-
+    ismsa_installableExtension(TargetCardType, _, Template, _, ExampleIdentifier),
+    field({{cardKey}}, "cardType", TargetCardType),
+    not field(Descendant, "base/fieldTypes/identifier", ExampleIdentifier) :
+    ancestor(Descendant, {{cardKey}}).
+
+field(Template, "moduleDescription", ModuleDescription) :-
+    ismsa_installableExtension(TargetIdentifier, ModuleDescription, Template, _, _),
+    field({{cardKey}}, "base/fieldTypes/identifier", TargetIdentifier).
+
+field(Template, "template", Template) :-
+    ismsa_installableExtension(TargetIdentifier, _, Template, _, _),
+    field({{cardKey}}, "base/fieldTypes/identifier", TargetIdentifier).
+
+field(Template, "buttonLabel", ButtonLabel) :-
+    ismsa_installableExtension(TargetIdentifier, _, Template, ButtonLabel, _),
+    field({{cardKey}}, "base/fieldTypes/identifier", TargetIdentifier).
+
+field(Template, "moduleDescription", ModuleDescription) :-
+    ismsa_installableExtension(TargetCardType, ModuleDescription, Template, _, _),
+    field({{cardKey}}, "cardType", TargetCardType).
+
+field(Template, "template", Template) :-
+    ismsa_installableExtension(TargetCardType, _, Template, _, _),
+    field({{cardKey}}, "cardType", TargetCardType).
+
+field(Template, "buttonLabel", ButtonLabel) :-
+    ismsa_installableExtension(TargetCardType, _, Template, ButtonLabel, _),
+    field({{cardKey}}, "cardType", TargetCardType).
+
+childResult(result, Template, "installedExtensions") :-
+    ismsa_installableExtension(TargetIdentifier, _, Template, _, ExampleIdentifier),
+    field({{cardKey}}, "base/fieldTypes/identifier", TargetIdentifier),
+    field(Descendant, "base/fieldTypes/identifier", ExampleIdentifier),
+    ancestor(Descendant, {{cardKey}}).

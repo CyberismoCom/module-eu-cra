@@ -1,5 +1,6 @@
 {
     "name": "ismsa/fieldTypes/requirementImplementationStrategy",
     "displayName": "Implementation strategy",
-    "dataType": "longText"
+    "dataType": "longText",
+    "description": "How the compliance requirement will be implemented"
 }

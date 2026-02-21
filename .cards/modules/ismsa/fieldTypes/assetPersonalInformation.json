@@ -19,5 +19,6 @@
             "enumValue": "none",
             "enumDisplayValue": "None"
         }
-    ]
+    ],
+    "description": "Whether the asset contains personal information and its sensitivity"
 }

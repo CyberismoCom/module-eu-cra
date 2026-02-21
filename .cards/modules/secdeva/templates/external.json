@@ -1,6 +1,6 @@
 {
     "displayName": "External entity",
-    "description": "A source from which information flows into the system, or a recipients of information leaving the system",
+    "description": "A source from which information flows into the system, or a recipients of information leaving the system in a dataflow model",
     "category": "Dataflow model",
     "name": "secdeva/templates/external"
 }

@@ -1,0 +1,9 @@
+== Task description
+
+* Finalise the statement of applicability by first ensuring that the needed metadata is filled in and that there is at least one completed document review
+
+* Approve the statement of applicability by progressing status to Approved
+
+== Records of completion
+
+#TODO# Add record of completion

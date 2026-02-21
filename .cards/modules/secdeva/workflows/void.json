@@ -15,5 +15,6 @@
             "toState": "None"
         }
     ],
-    "displayName": "Void"
+    "displayName": "Void",
+    "description": "Single-state (None) workflow for cards without state transitions"
 }

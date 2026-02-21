@@ -7,6 +7,6 @@
     "base/fieldTypes/informationClassification": "internal",
     "ismsa/fieldTypes/adoptionStep": "step1",
     "ismsa/fieldTypes/progress": "compliance-progress",
-    "base/fieldTypes/identifier": null,
+    "base/fieldTypes/identifier": "ismsa_register_compliance",
     "lastUpdated": "2025-08-29T10:07:53.348Z"
 }

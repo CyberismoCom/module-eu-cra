@@ -3,22 +3,28 @@
     "workflow": "ismsa/workflows/control",
     "customFields": [
         {
-            "name": "base/fieldTypes/owner"
+            "name": "base/fieldTypes/owner",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/informationClassification"
+            "name": "base/fieldTypes/informationClassification",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/controlStatus"
+            "name": "ismsa/fieldTypes/controlStatus",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/controlJustification"
+            "name": "ismsa/fieldTypes/controlJustification",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/controlSummary"
+            "name": "ismsa/fieldTypes/controlSummary",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/controlOrigin"
+            "name": "ismsa/fieldTypes/controlOrigin",
+            "isCalculated": false
         }
     ],
     "alwaysVisibleFields": [
@@ -31,5 +37,6 @@
     "optionallyVisibleFields": [
         "ismsa/fieldTypes/controlOrigin"
     ],
-    "displayName": "Control"
+    "displayName": "Control",
+    "description": "A cybersecurity control or mitigation measure"
 }

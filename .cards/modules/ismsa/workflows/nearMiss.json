@@ -1,0 +1,47 @@
+{
+    "name": "ismsa/workflows/nearMiss",
+    "displayName": "Near miss",
+    "states": [
+        {
+            "name": "Open",
+            "category": "initial"
+        },
+        {
+            "name": "Analysed",
+            "category": "active"
+        },
+        {
+            "name": "Closed",
+            "category": "closed"
+        }
+    ],
+    "transitions": [
+        {
+            "name": "Create",
+            "fromState": [],
+            "toState": "Open"
+        },
+        {
+            "name": "Complete analysis",
+            "fromState": [
+                "Open"
+            ],
+            "toState": "Analysed"
+        },
+        {
+            "name": "Close",
+            "fromState": [
+                "Analysed"
+            ],
+            "toState": "Closed"
+        },
+        {
+            "name": "Reopen",
+            "fromState": [
+                "*"
+            ],
+            "toState": "Open"
+        }
+    ],
+    "description": "Open → Analysed → Closed lifecycle for near misses"
+}

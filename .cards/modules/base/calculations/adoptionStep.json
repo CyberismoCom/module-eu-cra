@@ -1,5 +1,5 @@
 {
-  "name": "base/calculations/adoptionStep",
-  "displayName": "Adoption Step",
-  "description": ""
+    "name": "base/calculations/adoptionStep",
+    "displayName": "Adoption step",
+    "description": "Defines helper predicates to compares adoption step levels between related cards"
 }

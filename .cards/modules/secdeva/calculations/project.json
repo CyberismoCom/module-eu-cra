@@ -1,5 +1,5 @@
 {
-  "name": "secdeva/calculations/project",
-  "displayName": "Project",
-  "description": ""
+    "name": "secdeva/calculations/project",
+    "displayName": "Project",
+    "description": "Links projects to ISMS assets and manages risk evaluation and policy checks"
 }

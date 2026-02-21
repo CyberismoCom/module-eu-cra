@@ -1,5 +1,6 @@
 {
     "name": "ismsa/fieldTypes/soaScopeStatement",
     "displayName": "Scope statement",
-    "dataType": "longText"
+    "dataType": "longText",
+    "description": "Scope of the Statement of Applicability"
 }

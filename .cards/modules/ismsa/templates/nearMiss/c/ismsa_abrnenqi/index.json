@@ -1,0 +1,11 @@
+{
+    "title": "Untitled near miss",
+    "cardType": "ismsa/cardTypes/nearMiss",
+    "workflowState": "",
+    "rank": "0|b",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": null,
+    "ismsa/fieldTypes/incidentEndDateTime": null,
+    "ismsa/fieldTypes/incidentStartDateTime": null,
+    "lastUpdated": "2026-01-16T13:24:21.536Z"
+}

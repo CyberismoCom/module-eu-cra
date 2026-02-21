@@ -1,5 +1,5 @@
 {
-  "name": "ismsa/calculations/complianceProgress",
-  "displayName": "Compliance Progress",
-  "description": ""
+    "name": "ismsa/calculations/complianceProgress",
+    "displayName": "Compliance progress",
+    "description": "Calculates compliance register progress from requirement workflow states"
 }

@@ -161,5 +161,6 @@
             "toState": "Open"
         }
     ],
-    "displayName": "Risk"
+    "displayName": "Risk",
+    "description": "Open → Analysed → Treatment → Monitoring → Closed lifecycle for risks"
 }

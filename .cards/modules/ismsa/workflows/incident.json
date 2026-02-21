@@ -64,5 +64,6 @@
             "toState": "Open"
         }
     ],
-    "displayName": "Incident"
+    "displayName": "Incident",
+    "description": "Open → Analysed → Response → Closed lifecycle for incidents"
 }

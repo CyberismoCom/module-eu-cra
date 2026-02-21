@@ -5,10 +5,10 @@
     "rank": "0|a",
     "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
-    "base/fieldTypes/identifier": null,
+    "base/fieldTypes/identifier": "ismsa_register_processes",
     "ismsa/fieldTypes/adoptionStep": "step1",
     "ismsa/fieldTypes/progress": "process-progress",
     "labels": [],
     "links": [],
-    "lastUpdated": "2024-12-14T09:53:30.023Z"
+    "lastUpdated": "2026-01-16T11:44:00.734Z"
 }

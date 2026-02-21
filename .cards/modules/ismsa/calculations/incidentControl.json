@@ -1,5 +1,5 @@
 {
-  "name": "ismsa/calculations/incidentControl",
-  "displayName": "Incident Control",
-  "description": ""
+    "name": "ismsa/calculations/incidentControl",
+    "displayName": "Incident control",
+    "description": "Enforces required fields and transition rules for incidents"
 }

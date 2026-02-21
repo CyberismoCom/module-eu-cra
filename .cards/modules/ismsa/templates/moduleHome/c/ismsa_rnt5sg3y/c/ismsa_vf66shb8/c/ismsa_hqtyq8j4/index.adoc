@@ -7,6 +7,10 @@ Security reviews are held at least quarterly. Create a separate subregister for 
   "buttonLabel": "Create register for security reviews"
 {{/createCards}}
 
+{{#report}}
+  "name": "ismsa/reports/installExtension"
+{{/report}}
+
 == Yearly reviews
 
 {{#report}}

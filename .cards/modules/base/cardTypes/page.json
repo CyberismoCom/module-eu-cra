@@ -3,10 +3,12 @@
     "workflow": "base/workflows/page",
     "customFields": [
         {
-            "name": "base/fieldTypes/owner"
+            "name": "base/fieldTypes/owner",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/informationClassification"
+            "name": "base/fieldTypes/informationClassification",
+            "isCalculated": false
         }
     ],
     "alwaysVisibleFields": [
@@ -15,5 +17,6 @@
     "optionallyVisibleFields": [
         "base/fieldTypes/informationClassification"
     ],
-    "displayName": "Page"
+    "displayName": "Page",
+    "description": "A general-purpose content page"
 }

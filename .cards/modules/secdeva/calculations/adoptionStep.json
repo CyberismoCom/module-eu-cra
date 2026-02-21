@@ -1,5 +1,5 @@
 {
-  "name": "secdeva/calculations/adoptionStep",
-  "displayName": "Adoption Step",
-  "description": ""
+    "name": "secdeva/calculations/adoptionStep",
+    "displayName": "Adoption step",
+    "description": "Hides cards above the project adoption step and validates adoption step justification"
 }

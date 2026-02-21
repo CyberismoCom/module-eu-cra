@@ -1,5 +1,5 @@
 {
-  "name": "secdeva/calculations/scoping",
-  "displayName": "Scoping",
-  "description": ""
+    "name": "secdeva/calculations/scoping",
+    "displayName": "Scoping",
+    "description": "Maps workflow states to scoping statuses for secure development tasks"
 }

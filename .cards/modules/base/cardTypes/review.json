@@ -3,16 +3,20 @@
     "workflow": "base/workflows/review",
     "customFields": [
         {
-            "name": "base/fieldTypes/owner"
+            "name": "base/fieldTypes/owner",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/informationClassification"
+            "name": "base/fieldTypes/informationClassification",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/lastReviewed"
+            "name": "base/fieldTypes/lastReviewed",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/reviewPeriod"
+            "name": "base/fieldTypes/reviewPeriod",
+            "isCalculated": false
         }
     ],
     "alwaysVisibleFields": [
@@ -23,5 +27,6 @@
         "base/fieldTypes/reviewPeriod",
         "base/fieldTypes/informationClassification"
     ],
-    "displayName": "Review"
+    "displayName": "Review",
+    "description": "Tracks a review that can pass or fail"
 }

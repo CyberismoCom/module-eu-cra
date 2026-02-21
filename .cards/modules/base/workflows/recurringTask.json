@@ -76,5 +76,6 @@
             "toState": "Closed as not applicable"
         }
     ],
-    "displayName": "Recurring task"
+    "displayName": "Recurring task",
+    "description": "Open → To do → In progress → Done/Not applicable lifecycle for repeating tasks"
 }

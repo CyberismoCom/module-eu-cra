@@ -1,0 +1,14 @@
+== Task description
+
+* Document risk treatment plans as tasks or controls. Use a task for smaller fixes and controls for larger things that will be shown in diagrams and in the statement of applicability.
+
+*Note*: any controls that are under the risk are automatically linked to the risk with an "is mitigate by" link. 
+Relevant controls that are in the control register need to be linked manually using the "mitigates/is mitigated by" link type.
+
+* Ensure you have risk treatment plans for each risk that is not on an acceptable level
+
+* Remember to progress the status by choosing "Complete treatment planning" once treatment planning has been completed
+
+== Records of completion
+
+#TODO# Add record of completion

@@ -19,5 +19,6 @@
             "enumValue": "notApplicable",
             "enumDisplayValue": "N/A"
         }
-    ]
+    ],
+    "description": "Implementation status of the control"
 }

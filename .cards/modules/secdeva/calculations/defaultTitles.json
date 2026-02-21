@@ -1,5 +1,5 @@
 {
-  "name": "secdeva/calculations/defaultTitles",
-  "displayName": "Default Titles",
-  "description": ""
+    "name": "secdeva/calculations/defaultTitles",
+    "displayName": "Default titles",
+    "description": "Sets default titles for secure development cards based on their type and project name"
 }

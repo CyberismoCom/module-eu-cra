@@ -73,5 +73,6 @@
             "toState": "Draft"
         }
     ],
-    "displayName": "Requirement"
+    "displayName": "Requirement",
+    "description": "Draft → Content ready → Verified/Rejected lifecycle for security requirements"
 }

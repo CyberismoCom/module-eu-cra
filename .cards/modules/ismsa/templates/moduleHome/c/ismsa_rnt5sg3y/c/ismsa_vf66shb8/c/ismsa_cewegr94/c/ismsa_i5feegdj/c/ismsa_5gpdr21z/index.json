@@ -1,0 +1,14 @@
+{
+    "title": "Create risk treatment plans",
+    "cardType": "base/cardTypes/task",
+    "workflowState": "",
+    "rank": "0|d",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": null,
+    "base/fieldTypes/justification": null,
+    "base/fieldTypes/dueDate": null,
+    "base/fieldTypes/adoptionStep": null,
+    "base/fieldTypes/identifier": null,
+    "lastUpdated": "2026-01-22T16:07:50.120Z",
+    "links": []
+}

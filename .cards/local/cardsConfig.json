@@ -1,7 +1,8 @@
 {
-    "schemaVersion": 1,
+    "schemaVersion": 2,
     "cardKeyPrefix": "eucra",
     "name": "EU Cyber Resilience Act",
+    "description": "",
     "modules": [
         {
             "name": "base",
@@ -15,5 +16,6 @@
             "name": "secdeva",
             "location": "https://github.com/CyberismoCom/module-secure-development-essentials.git"
         }
-    ]
+    ],
+    "hubs": []
 }

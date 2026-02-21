@@ -1,5 +1,5 @@
 {
-  "name": "secdeva/calculations/securityRequirement",
-  "displayName": "Security Requirement",
-  "description": ""
+    "name": "secdeva/calculations/securityRequirement",
+    "displayName": "Security requirement",
+    "description": "Links requirements to risks and enforces review completion before approval"
 }

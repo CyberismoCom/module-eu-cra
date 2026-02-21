@@ -8,15 +8,19 @@
             "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/owner"
+            "name": "base/fieldTypes/owner",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/informationClassification"
+            "name": "base/fieldTypes/informationClassification",
+            "isCalculated": false
         }
     ],
     "alwaysVisibleFields": [
         "base/fieldTypes/owner",
         "base/fieldTypes/informationClassification"
     ],
-    "displayName": "Module home"
+    "displayName": "Module home",
+    "optionallyVisibleFields": [],
+    "description": "Start page for an ISMS project"
 }

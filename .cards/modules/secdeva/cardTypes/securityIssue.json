@@ -3,28 +3,36 @@
     "workflow": "secdeva/workflows/securityIssue",
     "customFields": [
         {
-            "name": "secdeva/fieldTypes/securityIssueCategory"
+            "name": "secdeva/fieldTypes/securityIssueCategory",
+            "isCalculated": false
         },
         {
-            "name": "secdeva/fieldTypes/severity"
+            "name": "secdeva/fieldTypes/severity",
+            "isCalculated": false
         },
         {
-            "name": "secdeva/fieldTypes/severityJustification"
+            "name": "secdeva/fieldTypes/severityJustification",
+            "isCalculated": false
         },
         {
-            "name": "secdeva/fieldTypes/rootCauseCategory"
+            "name": "secdeva/fieldTypes/rootCauseCategory",
+            "isCalculated": false
         },
         {
-            "name": "secdeva/fieldTypes/rootCauseJustification"
+            "name": "secdeva/fieldTypes/rootCauseJustification",
+            "isCalculated": false
         },
         {
-            "name": "secdeva/fieldTypes/strategy"
+            "name": "secdeva/fieldTypes/strategy",
+            "isCalculated": false
         },
         {
-            "name": "secdeva/fieldTypes/reporting"
+            "name": "secdeva/fieldTypes/reporting",
+            "isCalculated": false
         },
         {
-            "name": "secdeva/fieldTypes/testingToBypassMitigation"
+            "name": "secdeva/fieldTypes/testingToBypassMitigation",
+            "isCalculated": false
         }
     ],
     "alwaysVisibleFields": [
@@ -38,5 +46,6 @@
         "secdeva/fieldTypes/testingToBypassMitigation"
     ],
     "optionallyVisibleFields": [],
-    "displayName": "Security issue"
+    "displayName": "Security issue",
+    "description": "A security-related issue such as a vulnerability or threat"
 }

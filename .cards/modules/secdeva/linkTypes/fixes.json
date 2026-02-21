@@ -9,5 +9,6 @@
         "secdeva/cardTypes/securityIssue"
     ],
     "enableLinkDescription": false,
-    "displayName": ""
+    "displayName": "Fixes",
+    "description": "Links a fix to the security issue it resolves"
 }

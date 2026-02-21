@@ -3,37 +3,48 @@
     "workflow": "ismsa/workflows/asset",
     "customFields": [
         {
-            "name": "base/fieldTypes/owner"
+            "name": "base/fieldTypes/owner",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/informationClassification"
+            "name": "base/fieldTypes/informationClassification",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/assetAccessControl"
+            "name": "ismsa/fieldTypes/assetAccessControl",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/assetAvailability"
+            "name": "ismsa/fieldTypes/assetAvailability",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/assetBackups"
+            "name": "ismsa/fieldTypes/assetBackups",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/assetCriticalityForOperations"
+            "name": "ismsa/fieldTypes/assetCriticalityForOperations",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/assetIntegrity"
+            "name": "ismsa/fieldTypes/assetIntegrity",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/assetLocation"
+            "name": "ismsa/fieldTypes/assetLocation",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/assetPersonalInformation"
+            "name": "ismsa/fieldTypes/assetPersonalInformation",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/assetRiskEvaluationNeeded"
+            "name": "ismsa/fieldTypes/assetRiskEvaluationNeeded",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/assetUpdates"
+            "name": "ismsa/fieldTypes/assetUpdates",
+            "isCalculated": false
         }
     ],
     "alwaysVisibleFields": [
@@ -51,5 +62,6 @@
         "ismsa/fieldTypes/assetIntegrity",
         "ismsa/fieldTypes/assetAvailability"
     ],
-    "displayName": "Device asset"
+    "displayName": "Device asset",
+    "description": "A physical device or device collection that needs protection"
 }

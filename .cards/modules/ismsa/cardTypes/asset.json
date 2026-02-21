@@ -3,34 +3,44 @@
     "workflow": "ismsa/workflows/asset",
     "customFields": [
         {
-            "name": "base/fieldTypes/owner"
+            "name": "base/fieldTypes/owner",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/informationClassification"
+            "name": "base/fieldTypes/informationClassification",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/assetAvailability"
+            "name": "ismsa/fieldTypes/assetAvailability",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/assetBackups"
+            "name": "ismsa/fieldTypes/assetBackups",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/assetCriticalityForOperations"
+            "name": "ismsa/fieldTypes/assetCriticalityForOperations",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/assetIntegrity"
+            "name": "ismsa/fieldTypes/assetIntegrity",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/assetLocation"
+            "name": "ismsa/fieldTypes/assetLocation",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/assetPersonalInformation"
+            "name": "ismsa/fieldTypes/assetPersonalInformation",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/assetRiskEvaluationNeeded"
+            "name": "ismsa/fieldTypes/assetRiskEvaluationNeeded",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/assetType"
+            "name": "ismsa/fieldTypes/assetType",
+            "isCalculated": false
         }
     ],
     "alwaysVisibleFields": [
@@ -47,5 +57,6 @@
         "ismsa/fieldTypes/assetLocation",
         "ismsa/fieldTypes/assetBackups"
     ],
-    "displayName": "Asset"
+    "displayName": "Asset",
+    "description": "A generic asset that needs protection"
 }

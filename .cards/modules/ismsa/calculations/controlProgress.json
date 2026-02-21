@@ -1,5 +1,5 @@
 {
-  "name": "ismsa/calculations/controlProgress",
-  "displayName": "Control Progress",
-  "description": ""
+    "name": "ismsa/calculations/controlProgress",
+    "displayName": "Control progress",
+    "description": "Calculates control register progress from control workflow states"
 }

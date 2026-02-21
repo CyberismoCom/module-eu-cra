@@ -1,0 +1,13 @@
+== Task description
+
+* Add Implementation summary or create Implementation plan for each People control
+
+* Add a Justification for applying or not applying the control
+
+* Link each control to relevant risks using the "mitigates" link type
+
+* Remember to progress the status to reflect the current situation (Not applicable, Planned, Adopting, Ready for verification) as you review the controls 
+
+== Records of completion
+
+#TODO# Add record of completion

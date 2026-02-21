@@ -3,22 +3,28 @@
     "workflow": "base/workflows/controlledDocument",
     "customFields": [
         {
-            "name": "ismsa/fieldTypes/soaScopeStatement"
+            "name": "ismsa/fieldTypes/soaScopeStatement",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/soaVersion"
+            "name": "ismsa/fieldTypes/soaVersion",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/owner"
+            "name": "base/fieldTypes/owner",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/informationClassification"
+            "name": "base/fieldTypes/informationClassification",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/approver"
+            "name": "base/fieldTypes/approver",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/approvalDate"
+            "name": "base/fieldTypes/approvalDate",
+            "isCalculated": false
         }
     ],
     "alwaysVisibleFields": [
@@ -30,5 +36,6 @@
         "base/fieldTypes/approvalDate"
     ],
     "optionallyVisibleFields": [],
-    "displayName": "Statement of applicability"
+    "displayName": "Statement of applicability",
+    "description": "A formal document listing applicable cybersecurity controls"
 }

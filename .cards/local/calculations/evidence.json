@@ -1,5 +1,5 @@
 {
-  "name": "eucra/calculations/evidence",
-  "displayName": "Evidence",
-  "description": ""
+    "name": "eucra/calculations/evidence",
+    "displayName": "Evidence",
+    "description": "Links evidence cards to the EU CRA tasks they support"
 }

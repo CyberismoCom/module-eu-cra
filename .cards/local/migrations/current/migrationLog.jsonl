@@ -1,0 +1,7 @@
+{"timestamp":"2026-02-21T15:25:01.627Z","operation":"resource_update","target":"eucra/calculations/defaultTitles","parameters":{"type":"calculations","operation":"change","key":"displayName"}}
+{"timestamp":"2026-02-21T15:25:07.128Z","operation":"resource_update","target":"eucra/calculations/installableExtensions","parameters":{"type":"calculations","operation":"change","key":"displayName"}}
+{"timestamp":"2026-02-21T15:25:11.788Z","operation":"resource_update","target":"eucra/calculations/taskPrecedence","parameters":{"type":"calculations","operation":"change","key":"displayName"}}
+{"timestamp":"2026-02-21T15:26:37.381Z","operation":"resource_update","target":"eucra/calculations/defaultTitles","parameters":{"type":"calculations","operation":"change","key":"description"}}
+{"timestamp":"2026-02-21T15:26:37.390Z","operation":"resource_update","target":"eucra/calculations/evidence","parameters":{"type":"calculations","operation":"change","key":"description"}}
+{"timestamp":"2026-02-21T15:26:37.391Z","operation":"resource_update","target":"eucra/calculations/installableExtensions","parameters":{"type":"calculations","operation":"change","key":"description"}}
+{"timestamp":"2026-02-21T15:26:37.392Z","operation":"resource_update","target":"eucra/calculations/taskPrecedence","parameters":{"type":"calculations","operation":"change","key":"description"}}

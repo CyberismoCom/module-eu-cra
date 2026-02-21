@@ -5,7 +5,7 @@
     "rank": "0|c",
     "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
-    "base/fieldTypes/identifier": null,
+    "base/fieldTypes/identifier": "ismsa_register_suppliers",
     "ismsa/fieldTypes/adoptionStep": "step1",
     "ismsa/fieldTypes/progress": null
 }

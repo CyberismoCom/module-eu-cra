@@ -1,5 +1,6 @@
 {
     "name": "secdeva/fieldTypes/sbomComponentGroup",
     "displayName": "SBOM component group",
-    "dataType": "shortText"
+    "dataType": "shortText",
+    "description": "Group identifier of an SBOM component"
 }

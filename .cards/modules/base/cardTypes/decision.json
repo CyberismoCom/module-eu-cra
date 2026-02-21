@@ -3,13 +3,16 @@
     "workflow": "base/workflows/decision",
     "customFields": [
         {
-            "name": "base/fieldTypes/owner"
+            "name": "base/fieldTypes/owner",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/informationClassification"
+            "name": "base/fieldTypes/informationClassification",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/decisionDate"
+            "name": "base/fieldTypes/decisionDate",
+            "isCalculated": false
         }
     ],
     "alwaysVisibleFields": [
@@ -19,5 +22,6 @@
     "optionallyVisibleFields": [
         "base/fieldTypes/informationClassification"
     ],
-    "displayName": "Decision"
+    "displayName": "Decision",
+    "description": "Records a decision and its rationale"
 }

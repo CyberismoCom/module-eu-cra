@@ -1,5 +1,5 @@
 {
-  "name": "secdeva/calculations/threatModel",
-  "displayName": "Threat Model",
-  "description": ""
+    "name": "secdeva/calculations/threatModel",
+    "displayName": "Threat model",
+    "description": "Links threat model components to their associated security issues as risks"
 }

@@ -13,5 +13,6 @@
             "enumDisplayValue": "Urgent",
             "enumDescription": "The issue must be released urgently"
         }
-    ]
+    ],
+    "description": "Urgency level of releasing a fix to a security issue"
 }

@@ -65,5 +65,6 @@
             "enumDisplayValue": "Cryptographic asset",
             "enumDescription": "A cryptographic asset including algorithms, protocols, certificates, keys, tokens, and secrets."
         }
-    ]
+    ],
+    "description": "Type of an SBOM component"
 }

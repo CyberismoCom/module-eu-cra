@@ -18,5 +18,6 @@
         "secdeva/cardTypes/interface"
     ],
     "enableLinkDescription": true,
-    "displayName": ""
+    "displayName": "Dataflow",
+    "description": "Represents a data flow between elements in a dataflow model"
 }

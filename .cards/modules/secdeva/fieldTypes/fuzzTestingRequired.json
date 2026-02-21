@@ -1,5 +1,6 @@
 {
     "name": "secdeva/fieldTypes/fuzzTestingRequired",
     "displayName": "Fuzz testing required?",
-    "dataType": "boolean"
+    "dataType": "boolean",
+    "description": "Whether fuzz testing is required"
 }

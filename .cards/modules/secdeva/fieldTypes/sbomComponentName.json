@@ -1,5 +1,6 @@
 {
     "name": "secdeva/fieldTypes/sbomComponentName",
     "displayName": "SBOM component name",
-    "dataType": "shortText"
+    "dataType": "shortText",
+    "description": "Name of an SBOM component"
 }

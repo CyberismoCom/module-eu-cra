@@ -1,5 +1,6 @@
 {
     "name": "ismsa/fieldTypes/assetContactDetails",
     "displayName": "Contact details",
-    "dataType": "longText"
+    "dataType": "longText",
+    "description": "Contact information for the asset owner or supplier"
 }

@@ -1,0 +1,14 @@
+{
+    "title": "Define security roles and responsibilities",
+    "cardType": "base/cardTypes/task",
+    "workflowState": "",
+    "rank": "0|c",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": null,
+    "base/fieldTypes/justification": null,
+    "base/fieldTypes/dueDate": null,
+    "base/fieldTypes/adoptionStep": null,
+    "base/fieldTypes/identifier": null,
+    "lastUpdated": "2026-01-22T16:03:23.219Z",
+    "links": []
+}

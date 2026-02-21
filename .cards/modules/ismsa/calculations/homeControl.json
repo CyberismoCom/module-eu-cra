@@ -1,5 +1,5 @@
 {
-  "name": "ismsa/calculations/homeControl",
-  "displayName": "Home Control",
-  "description": ""
+    "name": "ismsa/calculations/homeControl",
+    "displayName": "Home control",
+    "description": "Enforces policy checks on the module home and its children before marking ready"
 }

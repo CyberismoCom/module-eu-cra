@@ -15,5 +15,6 @@
             "enumValue": "public",
             "enumDisplayValue": "Public"
         }
-    ]
+    ],
+    "description": "Sensitivity level: public, internal, or confidential"
 }

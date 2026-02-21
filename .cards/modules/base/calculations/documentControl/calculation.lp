@@ -1,4 +1,4 @@
-transitionDenied(Document, "Approve", "Fix policy failures before approving" ):-
+transitionDenied(Document, "Approve", "Fix policy failures before approving") :-
     field(Document, "cardType", "base/cardTypes/controlledDocument"),
     policyCheckFailure(Document, _, _, _).
 
@@ -8,23 +8,23 @@ transitionDenied(Document, "Approve", "Fix policy failures in at least one of th
     field(ReviewTask, "cardType", "base/cardTypes/reviewTask"),
     parent(ReviewTask, Document).
 
-transitionDenied(Document, "Approve", "Fill in the owner field before approving" ):-
+transitionDenied(Document, "Approve", "Fill in the owner field before approving") :-
     field(Document, "cardType", "base/cardTypes/controlledDocument"),
     not field(Document, "base/fieldTypes/owner", _).
 
-transitionDenied(Document, "Approve", "Fill in the approver field before approving" ):-
+transitionDenied(Document, "Approve", "Fill in the approver field before approving") :-
     field(Document, "cardType", "base/cardTypes/controlledDocument"),
     not field(Document, "base/fieldTypes/approver", _).
 
-transitionDenied(Document, "Approve", "Fill in the information classification field before approving" ):-
+transitionDenied(Document, "Approve", "Fill in the information classification field before approving") :-
     field(Document, "cardType", "base/cardTypes/controlledDocument"),
     not field(Document, "base/fieldTypes/informationClassification", _).
 
-transitionDenied(Document, "Approve", "Fill in the approval date field before approving" ):-
+transitionDenied(Document, "Approve", "Fill in the approval date field before approving") :-
     field(Document, "cardType", "base/cardTypes/controlledDocument"),
     not field(Document, "base/fieldTypes/approvalDate", _).
 
-transitionDenied(Document, "Approve", "Complete the review task(s) before approving" ):-
+transitionDenied(Document, "Approve", "Complete the review task(s) before approving") :-
     field(Document, "cardType", "base/cardTypes/controlledDocument"),
     parent(ReviewTask, Document),
     field(ReviewTask, "cardType", "base/cardTypes/reviewTask"),
@@ -90,19 +90,3 @@ policyCheckFailure(ReviewTask, "Document control", "Reviewer cannot be the same 
     field(Document, "base/fieldTypes/owner", DocumentOwner),
     field(ReviewTask, "base/fieldTypes/owner", Reviewer),
     DocumentOwner = Reviewer.
-
-policyCheckFailure(Document, "Document control", "Reviewer cannot be the same as document approver", "The owner of a review task is also the approver for this document. Change the owner of the review task or the approver of this document.") :-
-    field(Document, "cardType", "base/cardTypes/controlledDocument"),
-    parent(ReviewTask, Document),
-    field(ReviewTask, "cardType", "base/cardTypes/reviewTask"),
-    field(Document, "base/fieldTypes/approver", DocumentApprover),
-    field(ReviewTask, "base/fieldTypes/owner", Reviewer),
-    DocumentApprover = Reviewer.
-
-policyCheckFailure(ReviewTask, "Document control", "Reviewer cannot be the same as document approver", "The owner of this review task is also the approver of the document. Change the owner of this review task or the approver of the document.") :-
-    field(Document, "cardType", "base/cardTypes/controlledDocument"),
-    parent(ReviewTask, Document),
-    field(ReviewTask, "cardType", "base/cardTypes/reviewTask"),
-    field(Document, "base/fieldTypes/approver", DocumentApprover),
-    field(ReviewTask, "base/fieldTypes/owner", Reviewer),
-    DocumentApprover = Reviewer.

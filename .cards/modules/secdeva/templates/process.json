@@ -1,6 +1,6 @@
 {
     "displayName": "Process",
-    "description": "An activity that the system carries out.",
+    "description": "An entity in a dataflow model that represents an activity that the system carries out.",
     "category": "Dataflow model",
     "name": "secdeva/templates/process"
 }

@@ -1,5 +1,5 @@
 {
-  "name": "ismsa/calculations/automaticLinks",
-  "displayName": "Automatic Links",
-  "description": ""
+    "name": "ismsa/calculations/automaticLinks",
+    "displayName": "Automatic links",
+    "description": "Auto-creates presentsRisk and mitigates links from parent-child relationships"
 }

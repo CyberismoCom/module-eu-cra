@@ -1,5 +1,6 @@
 {
     "name": "base/fieldTypes/category",
     "displayName": "Category",
-    "dataType": "shortText"
+    "dataType": "shortText",
+    "description": "Classification category for the item"
 }

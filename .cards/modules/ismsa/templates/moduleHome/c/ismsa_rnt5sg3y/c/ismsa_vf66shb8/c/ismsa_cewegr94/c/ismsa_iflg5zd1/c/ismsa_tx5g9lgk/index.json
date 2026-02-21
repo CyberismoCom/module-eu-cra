@@ -1,0 +1,14 @@
+{
+    "title": "Review technological controls",
+    "cardType": "base/cardTypes/task",
+    "workflowState": "",
+    "rank": "0|e",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": null,
+    "base/fieldTypes/justification": null,
+    "base/fieldTypes/dueDate": null,
+    "base/fieldTypes/adoptionStep": null,
+    "base/fieldTypes/identifier": null,
+    "lastUpdated": "2026-01-22T16:11:05.339Z",
+    "links": []
+}

@@ -1,7 +1,7 @@
 
 == Information security management system (ISMS)
 
-Information security management system (ISMS) for #TODO <add scope># 
+Information security management system (ISMS) for #TODO <add scope>#
 consists of the following registers:
 
 {{#report}}
@@ -11,14 +11,13 @@ consists of the following registers:
 New registers should be added as needed:
 
 {{#createCards}}
-  "template": "ismsa/templates/processRegister",
-  "buttonLabel": "Add process register"
-{{/createCards}}
-
-{{#createCards}}
   "template": "ismsa/templates/register",
   "buttonLabel": "Add another register"
 {{/createCards}}
+
+{{#report}}
+  "name": "ismsa/reports/installExtension"
+{{/report}}
 
 == Status for current registers
 

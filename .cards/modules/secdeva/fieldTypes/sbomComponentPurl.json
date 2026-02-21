@@ -1,5 +1,6 @@
 {
     "name": "secdeva/fieldTypes/sbomComponentPurl",
     "displayName": "SBOM component purl",
-    "dataType": "shortText"
+    "dataType": "shortText",
+    "description": "Package URL (PURL) identifier of an SBOM component"
 }

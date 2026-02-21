@@ -15,5 +15,6 @@
             "enumValue": "done",
             "enumDisplayValue": "Done"
         }
-    ]
+    ],
+    "description": "Testing approach to verify that threat mitigations cannot be bypassed"
 }

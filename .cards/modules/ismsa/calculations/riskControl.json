@@ -1,5 +1,5 @@
 {
-  "name": "ismsa/calculations/riskControl",
-  "displayName": "Risk Control",
-  "description": ""
+    "name": "ismsa/calculations/riskControl",
+    "displayName": "Risk control",
+    "description": "Enforces required fields, transition rules, and acceptable risk levels for risks"
 }

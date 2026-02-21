@@ -23,5 +23,6 @@
             "enumDisplayValue": "Accept",
             "enumDescription": "Risk can be accepted"
         }
-    ]
+    ],
+    "description": "Chosen approach: mitigate, transfer, avoid, or accept"
 }

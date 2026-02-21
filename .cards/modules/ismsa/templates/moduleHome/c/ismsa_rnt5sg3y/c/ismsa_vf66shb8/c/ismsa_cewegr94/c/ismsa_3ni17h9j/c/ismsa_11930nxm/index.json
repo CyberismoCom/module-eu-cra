@@ -1,0 +1,14 @@
+{
+    "title": "Create information security policy",
+    "cardType": "base/cardTypes/task",
+    "workflowState": "",
+    "rank": "0|b",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": null,
+    "base/fieldTypes/justification": null,
+    "base/fieldTypes/dueDate": null,
+    "base/fieldTypes/adoptionStep": null,
+    "base/fieldTypes/identifier": null,
+    "lastUpdated": "2026-01-22T16:03:11.316Z",
+    "links": []
+}

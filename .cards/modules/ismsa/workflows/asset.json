@@ -50,5 +50,6 @@
             "toState": "Draft"
         }
     ],
-    "displayName": "Asset"
+    "displayName": "Asset",
+    "description": "Draft → Active → Inactive lifecycle for assets"
 }

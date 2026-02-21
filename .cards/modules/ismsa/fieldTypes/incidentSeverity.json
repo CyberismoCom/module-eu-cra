@@ -15,5 +15,6 @@
             "enumValue": "high",
             "enumDisplayValue": "High"
         }
-    ]
+    ],
+    "description": "Severity level of the incident: low, medium, or high"
 }

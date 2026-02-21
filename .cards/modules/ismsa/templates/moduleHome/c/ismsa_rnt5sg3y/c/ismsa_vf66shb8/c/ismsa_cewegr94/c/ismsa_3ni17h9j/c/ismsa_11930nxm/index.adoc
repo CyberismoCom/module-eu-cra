@@ -1,0 +1,8 @@
+== Task description
+
+* Document management commitment and direction into an Information Security Policy or a Cybersecurity policy and store a reviewed and approved version (or link)
+under Process register
+
+== Records of completion
+
+#TODO# Add record of completion

@@ -27,5 +27,6 @@
             "enumValue": "notApplicable",
             "enumDisplayValue": "Not applicable"
         }
-    ]
+    ],
+    "description": "Category of the root cause of a security issue"
 }

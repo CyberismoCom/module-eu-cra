@@ -1,0 +1,13 @@
+== Task description
+
+* Create a training and awareness plan that contains 
+
+** mandatory information security training
+
+** role-based trainings for targeted groups
+
+** awareness topics and other methods to improve awareness
+
+== Records of completion
+
+#TODO# Add record of completion

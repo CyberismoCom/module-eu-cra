@@ -23,5 +23,6 @@
             "enumValue": "veryHigh",
             "enumDisplayValue": "Very High"
         }
-    ]
+    ],
+    "description": "Maximum risk level the organization is willing to accept"
 }

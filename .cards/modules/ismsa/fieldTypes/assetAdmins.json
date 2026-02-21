@@ -1,5 +1,6 @@
 {
     "name": "ismsa/fieldTypes/assetAdmins",
     "displayName": "Admins",
-    "dataType": "longText"
+    "dataType": "longText",
+    "description": "Administrators responsible for the asset"
 }

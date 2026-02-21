@@ -1,5 +1,9 @@
 {
     "name": "secdeva/cardTypes/requirement",
     "workflow": "secdeva/workflows/requirement",
-    "displayName": "Requirement"
+    "displayName": "Requirement",
+    "customFields": [],
+    "alwaysVisibleFields": [],
+    "optionallyVisibleFields": [],
+    "description": "A technical security requirement"
 }

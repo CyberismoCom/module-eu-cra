@@ -16,5 +16,6 @@
         "secdeva/fieldTypes/technology"
     ],
     "optionallyVisibleFields": [],
-    "displayName": "Data store"
+    "displayName": "Data store",
+    "description": "A data store element in a dataflow model"
 }

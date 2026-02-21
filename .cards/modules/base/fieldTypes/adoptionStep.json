@@ -15,5 +15,6 @@
             "enumValue": "step3",
             "enumDisplayValue": "Step 3"
         }
-    ]
+    ],
+    "description": "Adoption progress level (step 1–3)"
 }

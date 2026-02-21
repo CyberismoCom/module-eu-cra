@@ -3,28 +3,36 @@
     "workflow": "base/workflows/recurringTask",
     "customFields": [
         {
-            "name": "base/fieldTypes/owner"
+            "name": "base/fieldTypes/owner",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/informationClassification"
+            "name": "base/fieldTypes/informationClassification",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/reviewPeriod"
+            "name": "base/fieldTypes/reviewPeriod",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/lastReviewed"
+            "name": "base/fieldTypes/lastReviewed",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/justification"
+            "name": "base/fieldTypes/justification",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/quarterlyReviewMonth"
+            "name": "base/fieldTypes/quarterlyReviewMonth",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/adoptionStep"
+            "name": "base/fieldTypes/adoptionStep",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/identifier"
+            "name": "base/fieldTypes/identifier",
+            "isCalculated": false
         }
     ],
     "alwaysVisibleFields": [
@@ -38,5 +46,6 @@
         "base/fieldTypes/adoptionStep",
         "base/fieldTypes/identifier"
     ],
-    "displayName": "Quarterly task"
+    "displayName": "Quarterly task",
+    "description": "A recurring task revisited once per quarter"
 }

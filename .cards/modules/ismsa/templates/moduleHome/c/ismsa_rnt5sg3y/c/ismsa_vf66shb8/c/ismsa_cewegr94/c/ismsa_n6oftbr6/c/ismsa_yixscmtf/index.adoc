@@ -1,0 +1,8 @@
+== Task description
+
+* Organize a table-top exercise to test the incident management process and 
+business continuity and disaster recovery plans
+
+== Records of completion
+
+#TODO# Add record of completion

@@ -3,25 +3,32 @@
     "workflow": "ismsa/workflows/asset",
     "customFields": [
         {
-            "name": "base/fieldTypes/owner"
+            "name": "base/fieldTypes/owner",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/informationClassification"
+            "name": "base/fieldTypes/informationClassification",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/assetContactDetails"
+            "name": "ismsa/fieldTypes/assetContactDetails",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/assetCriticalityForOperations"
+            "name": "ismsa/fieldTypes/assetCriticalityForOperations",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/assetProvidedServices"
+            "name": "ismsa/fieldTypes/assetProvidedServices",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/assetPersonalInformation"
+            "name": "ismsa/fieldTypes/assetPersonalInformation",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/assetRiskEvaluationNeeded"
+            "name": "ismsa/fieldTypes/assetRiskEvaluationNeeded",
+            "isCalculated": false
         }
     ],
     "alwaysVisibleFields": [
@@ -37,5 +44,6 @@
         "ismsa/fieldTypes/assetLocation",
         "ismsa/fieldTypes/assetBackups"
     ],
-    "displayName": "Supplier asset"
+    "displayName": "Supplier asset",
+    "description": "A supplier relationship that needs security management"
 }

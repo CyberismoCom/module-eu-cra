@@ -23,5 +23,6 @@
             "enumDisplayValue": "Security advisory as unresolved",
             "enumDescription": "A security advisory will be published even before the issue has been resolved"
         }
-    ]
+    ],
+    "description": "Reporting requirements for a security issue"
 }

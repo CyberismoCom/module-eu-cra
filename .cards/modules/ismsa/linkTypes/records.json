@@ -10,5 +10,6 @@
         "base/cardTypes/controlledDocument"
     ],
     "enableLinkDescription": false,
-    "displayName": ""
+    "displayName": "Records",
+    "description": "Links a register to a controlled document that records its evidence"
 }

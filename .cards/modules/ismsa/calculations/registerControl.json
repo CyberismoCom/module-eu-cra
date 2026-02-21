@@ -1,5 +1,5 @@
 {
-  "name": "ismsa/calculations/registerControl",
-  "displayName": "Register Control",
-  "description": ""
+    "name": "ismsa/calculations/registerControl",
+    "displayName": "Register control",
+    "description": "Enforces policy checks and minimum content before marking a register ready"
 }

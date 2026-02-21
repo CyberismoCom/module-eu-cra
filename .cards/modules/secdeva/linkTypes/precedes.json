@@ -11,5 +11,6 @@
         "base/cardTypes/quarterlyTask"
     ],
     "enableLinkDescription": false,
-    "displayName": ""
+    "displayName": "Precedes",
+    "description": "Defines task ordering where the source task precedes the target"
 }

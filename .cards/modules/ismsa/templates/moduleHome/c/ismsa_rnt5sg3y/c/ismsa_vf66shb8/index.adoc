@@ -1,12 +1,16 @@
 ## Company task register
 
-ISMS tasks are divided into three registers
+ISMS tasks are divided into the following registers
 
-* Security targets
-* Security reviews
-* Other tasks
+{{#report}}
+  "name": "base/reports/childrenList"
+{{/report}}
 
 Add new tasks under suitable subregister. New subregisters can be added using the register template, if needed.
+
+{{#report}}
+  "name": "ismsa/reports/installExtension"
+{{/report}}
 
 {{#report}}
   "name": "ismsa/reports/tasksByOwner"

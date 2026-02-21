@@ -1,5 +1,5 @@
 {
-  "name": "ismsa/calculations/basicPolicyCheck",
-  "displayName": "Basic Policy Check",
-  "description": ""
+    "name": "ismsa/calculations/basicPolicyCheck",
+    "displayName": "Basic policy check",
+    "description": "Enforces owner and classification as required fields for active cards"
 }

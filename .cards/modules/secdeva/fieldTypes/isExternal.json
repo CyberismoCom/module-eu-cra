@@ -15,5 +15,6 @@
             "enumValue": "noInfo",
             "enumDisplayValue": "Dataflows not defined"
         }
-    ]
+    ],
+    "description": "Whether the interface receives input from external entities"
 }

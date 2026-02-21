@@ -1,6 +1,6 @@
 {
     "name": "secdeva/reports/projectPolicyChecks",
-    "displayName": "",
-    "description": "",
+    "displayName": "Project policy checks",
+    "description": "A table of failed and successful policy checks in a development project",
     "category": "Uncategorised report"
 }

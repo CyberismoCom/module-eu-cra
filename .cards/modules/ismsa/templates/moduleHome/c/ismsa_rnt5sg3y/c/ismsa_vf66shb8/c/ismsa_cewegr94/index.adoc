@@ -1,0 +1,10 @@
+## ISMS setup tasks
+
+{{#report}}
+  "name": "base/reports/childrenTable"
+{{/report}}
+
+{{#createCards}}
+  "template": "base/templates/oneTimeTask",
+  "buttonLabel": "Add new task"
+{{/createCards}}

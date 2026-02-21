@@ -3,28 +3,36 @@
     "workflow": "base/workflows/controlledDocument",
     "customFields": [
         {
-            "name": "base/fieldTypes/owner"
+            "name": "base/fieldTypes/owner",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/informationClassification"
+            "name": "base/fieldTypes/informationClassification",
+            "isCalculated": false
         },
         {
-            "name": "secdeva/fieldTypes/basicInputValidationTestingRequired"
+            "name": "secdeva/fieldTypes/basicInputValidationTestingRequired",
+            "isCalculated": false
         },
         {
-            "name": "secdeva/fieldTypes/basicStressTestingRequired"
+            "name": "secdeva/fieldTypes/basicStressTestingRequired",
+            "isCalculated": false
         },
         {
-            "name": "secdeva/fieldTypes/fuzzTestingRequired"
+            "name": "secdeva/fieldTypes/fuzzTestingRequired",
+            "isCalculated": false
         },
         {
-            "name": "secdeva/fieldTypes/capacityTestingRequired"
+            "name": "secdeva/fieldTypes/capacityTestingRequired",
+            "isCalculated": false
         },
         {
-            "name": "secdeva/fieldTypes/networkTrafficLoadTestingRequired"
+            "name": "secdeva/fieldTypes/networkTrafficLoadTestingRequired",
+            "isCalculated": false
         },
         {
-            "name": "secdeva/fieldTypes/interfaceTestingScopingJustification"
+            "name": "secdeva/fieldTypes/interfaceTestingScopingJustification",
+            "isCalculated": false
         }
     ],
     "alwaysVisibleFields": [
@@ -38,5 +46,6 @@
         "secdeva/fieldTypes/interfaceTestingScopingJustification"
     ],
     "optionallyVisibleFields": [],
-    "displayName": "Interface"
+    "displayName": "Interface",
+    "description": "An exposed interface with security documentation"
 }

@@ -56,5 +56,6 @@
             "toState": "Closed as not applicable"
         }
     ],
-    "displayName": "Task"
+    "displayName": "Task",
+    "description": "Open → In progress → Done/Not applicable lifecycle for one-time tasks"
 }

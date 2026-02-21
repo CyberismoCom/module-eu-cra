@@ -16,5 +16,6 @@
         "ismsa/cardTypes/complianceRequirement"
     ],
     "enableLinkDescription": false,
-    "displayName": ""
+    "displayName": "Implements",
+    "description": "Links a task or document to the control or requirement it implements"
 }

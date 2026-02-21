@@ -1,0 +1,12 @@
+{
+    "title": "ISMS set-up",
+    "cardType": "ismsa/cardTypes/register",
+    "workflowState": "",
+    "rank": "0|a",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": null,
+    "ismsa/fieldTypes/adoptionStep": null,
+    "ismsa/fieldTypes/progress": null,
+    "base/fieldTypes/identifier": null,
+    "lastUpdated": "2026-01-16T12:04:08.384Z"
+}

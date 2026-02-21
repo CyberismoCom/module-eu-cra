@@ -1,5 +1,5 @@
 {
-  "name": "ismsa/calculations/assetProgress",
-  "displayName": "Asset Progress",
-  "description": ""
+    "name": "ismsa/calculations/assetProgress",
+    "displayName": "Asset progress",
+    "description": "Calculates asset register progress from child register readiness"
 }

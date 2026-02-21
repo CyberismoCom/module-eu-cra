@@ -9,5 +9,6 @@
         "ismsa/cardTypes/risk"
     ],
     "enableLinkDescription": false,
-    "displayName": ""
+    "displayName": "Increases risk",
+    "description": "Links an element to a security issue whose risk it increases"
 }

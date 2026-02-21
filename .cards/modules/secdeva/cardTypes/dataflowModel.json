@@ -11,5 +11,6 @@
         "secdeva/fieldTypes/description"
     ],
     "optionallyVisibleFields": [],
-    "displayName": "Dataflow model"
+    "displayName": "Dataflow model",
+    "description": "Top-level container for dataflow model elements"
 }

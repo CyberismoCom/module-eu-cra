@@ -3,19 +3,24 @@
     "workflow": "ismsa/workflows/incident",
     "customFields": [
         {
-            "name": "base/fieldTypes/owner"
+            "name": "base/fieldTypes/owner",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/informationClassification"
+            "name": "base/fieldTypes/informationClassification",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/incidentStartDateTime"
+            "name": "ismsa/fieldTypes/incidentStartDateTime",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/incidentEndDateTime"
+            "name": "ismsa/fieldTypes/incidentEndDateTime",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/incidentSeverity"
+            "name": "ismsa/fieldTypes/incidentSeverity",
+            "isCalculated": false
         }
     ],
     "alwaysVisibleFields": [
@@ -26,5 +31,6 @@
         "ismsa/fieldTypes/incidentSeverity"
     ],
     "optionallyVisibleFields": [],
-    "displayName": "Incident"
+    "displayName": "Incident",
+    "description": "A cybersecurity incident requiring response and recovery"
 }

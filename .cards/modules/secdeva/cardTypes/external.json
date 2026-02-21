@@ -16,5 +16,6 @@
         "secdeva/fieldTypes/technology"
     ],
     "optionallyVisibleFields": [],
-    "displayName": "External entity"
+    "displayName": "External entity",
+    "description": "An external entity in a dataflow model"
 }

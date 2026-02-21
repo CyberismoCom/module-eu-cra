@@ -1,5 +1,5 @@
 {
-  "name": "ismsa/calculations/riskProgress",
-  "displayName": "Risk Progress",
-  "description": ""
+    "name": "ismsa/calculations/riskProgress",
+    "displayName": "Risk progress",
+    "description": "Calculates risk register progress from risk treatment workflow states"
 }

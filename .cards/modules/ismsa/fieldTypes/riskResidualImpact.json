@@ -10,7 +10,7 @@
         },
         {
             "enumValue": "low",
-            "enumDisplayValue": " Low",
+            "enumDisplayValue": "Low",
             "enumDescription": "Minor"
         },
         {
@@ -28,5 +28,6 @@
             "enumDisplayValue": "Very High",
             "enumDescription": "Severe"
         }
-    ]
+    ],
+    "description": "Estimated impact after risk treatment"
 }

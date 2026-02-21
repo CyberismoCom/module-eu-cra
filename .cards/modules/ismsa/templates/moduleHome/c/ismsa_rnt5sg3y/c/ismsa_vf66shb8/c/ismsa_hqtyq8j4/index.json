@@ -2,7 +2,7 @@
     "title": "Security reviews",
     "cardType": "ismsa/cardTypes/register",
     "workflowState": "",
-    "rank": "0|b",
+    "rank": "0|c",
     "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
     "base/fieldTypes/identifier": null,

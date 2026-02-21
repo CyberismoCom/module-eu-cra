@@ -9,5 +9,6 @@
         "ismsa/cardTypes/incident"
     ],
     "enableLinkDescription": false,
-    "displayName": ""
+    "displayName": "Realises",
+    "description": "Links a risk to the incident it resulted in"
 }

@@ -1,5 +1,6 @@
 {
     "name": "ismsa/fieldTypes/incidentStartDateTime",
     "displayName": "Start date and time",
-    "dataType": "dateTime"
+    "dataType": "dateTime",
+    "description": "When the incident started"
 }

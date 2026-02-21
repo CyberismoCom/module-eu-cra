@@ -1,0 +1,6 @@
+{
+    "name": "ismsa/calculations/extensions",
+    "displayName": "Extensions",
+    "calculation": "calculation.lp",
+    "description": "Defines the installable extension mechanism for ISMS cards"
+}

@@ -1,5 +1,5 @@
 {
     "name": "secdeva/graphViews/label",
-    "displayName": "",
-    "description": ""
+    "displayName": "Label",
+    "description": "A dataflow diagram that includes entities by label"
 }

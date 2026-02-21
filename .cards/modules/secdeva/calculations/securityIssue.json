@@ -1,5 +1,5 @@
 {
-  "name": "secdeva/calculations/securityIssue",
-  "displayName": "Security Issue",
-  "description": ""
+    "name": "secdeva/calculations/securityIssue",
+    "displayName": "Security issue",
+    "description": "Enforces required fields and transition rules for security issue management"
 }

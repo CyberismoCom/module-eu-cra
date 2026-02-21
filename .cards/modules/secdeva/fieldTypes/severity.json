@@ -23,5 +23,6 @@
             "enumValue": "none",
             "enumDisplayValue": "None"
         }
-    ]
+    ],
+    "description": "Severity level of a security issue"
 }

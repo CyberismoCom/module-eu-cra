@@ -14,3 +14,7 @@ Currently following subregisters have been defined for controls:
 {{#report}}
   "name": "ismsa/reports/addControlRegisterISO"
 {{/report}}
+
+{{#report}}
+  "name": "ismsa/reports/installExtension"
+{{/report}}

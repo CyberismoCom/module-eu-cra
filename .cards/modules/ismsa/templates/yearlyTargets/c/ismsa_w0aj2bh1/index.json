@@ -5,7 +5,7 @@
     "rank": "0|b",
     "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
-    "base/fieldTypes/identifier": null,
+    "base/fieldTypes/identifier": "ismsa_register_yearly-targets",
     "ismsa/fieldTypes/adoptionStep": "step1",
     "ismsa/fieldTypes/progress": null
 }

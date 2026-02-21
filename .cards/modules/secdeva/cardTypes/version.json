@@ -4,5 +4,6 @@
     "customFields": [],
     "alwaysVisibleFields": [],
     "optionallyVisibleFields": [],
-    "displayName": "Version"
+    "displayName": "Version",
+    "description": "A product release version"
 }

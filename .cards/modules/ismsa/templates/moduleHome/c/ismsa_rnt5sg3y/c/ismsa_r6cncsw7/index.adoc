@@ -2,6 +2,10 @@
 
 Process register contains process descriptions for the key processes used in #Company# Information Security Management System (CISMS).
 
+{{#report}}
+  "name": "ismsa/reports/installExtension"
+{{/report}}
+
 Currently following processes have been defined:
 
 {{#report}}

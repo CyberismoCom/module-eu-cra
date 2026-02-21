@@ -11,5 +11,6 @@
             "enumValue": "flaw",
             "enumDisplayValue": "Security flaw"
         }
-    ]
+    ],
+    "description": "Category of a security issue"
 }

@@ -47,5 +47,6 @@
             "toState": "Draft"
         }
     ],
-    "displayName": "Review"
+    "displayName": "Review",
+    "description": "Draft → Passed/Failed lifecycle for reviews"
 }

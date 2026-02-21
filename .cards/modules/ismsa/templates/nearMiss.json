@@ -1,0 +1,6 @@
+{
+    "name": "ismsa/templates/nearMiss",
+    "displayName": "Cybersecurity near miss",
+    "description": "A cybersecurity event that could have had an impact on the organization but does not require response or recovery.",
+    "category": "Cybersecurity management"
+}

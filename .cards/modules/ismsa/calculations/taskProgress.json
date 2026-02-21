@@ -1,5 +1,5 @@
 {
-  "name": "ismsa/calculations/taskProgress",
-  "displayName": "Task Progress",
-  "description": ""
+    "name": "ismsa/calculations/taskProgress",
+    "displayName": "Task progress",
+    "description": "Calculates task register progress from task and security target states"
 }

@@ -16,5 +16,6 @@
         "secdeva/fieldTypes/technology"
     ],
     "optionallyVisibleFields": [],
-    "displayName": "Trust boundary"
+    "displayName": "Trust boundary",
+    "description": "A trust boundary in a dataflow model"
 }

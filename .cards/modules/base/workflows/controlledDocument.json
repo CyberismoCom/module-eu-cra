@@ -42,5 +42,6 @@
             "toState": "Draft"
         }
     ],
-    "displayName": "Controlled document"
+    "displayName": "Controlled document",
+    "description": "Draft → Approved → Archived lifecycle for formal documents"
 }

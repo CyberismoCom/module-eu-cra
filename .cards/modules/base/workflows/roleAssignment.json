@@ -37,5 +37,6 @@
             "toState": "Archived"
         }
     ],
-    "displayName": "Role assignment"
+    "displayName": "Role assignment",
+    "description": "Draft → Assigned → Archived lifecycle for role assignments"
 }

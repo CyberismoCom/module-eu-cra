@@ -1,0 +1,6 @@
+{
+    "name": "ismsa/reports/installExtension",
+    "displayName": "Install extension",
+    "category": "Uncategorised report",
+    "description": "If an extension is available for the card, then display a button to install the extension."
+}

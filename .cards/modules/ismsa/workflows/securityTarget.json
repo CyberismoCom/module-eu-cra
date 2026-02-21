@@ -66,5 +66,6 @@
             "toState": "Executing"
         }
     ],
-    "displayName": "Security target"
+    "displayName": "Security target",
+    "description": "Defining → Approved → Executing → Done/Postponed lifecycle for targets"
 }

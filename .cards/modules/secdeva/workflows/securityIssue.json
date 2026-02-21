@@ -143,5 +143,6 @@
             "toState": "Open"
         }
     ],
-    "displayName": "Security issue"
+    "displayName": "Security issue",
+    "description": "Open → Analysed → Fix → Verified/Accepted lifecycle for security issues"
 }

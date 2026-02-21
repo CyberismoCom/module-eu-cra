@@ -1,5 +1,5 @@
 {
-  "name": "base/calculations/statusIndicator",
-  "displayName": "Status Indicator",
-  "description": ""
+    "name": "base/calculations/statusIndicator",
+    "displayName": "Status indicator",
+    "description": "Derives the status indicator from policy failures and workflow state"
 }

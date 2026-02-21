@@ -5,7 +5,7 @@
     "rank": "0|g",
     "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
-    "base/fieldTypes/identifier": null,
+    "base/fieldTypes/identifier": "ismsa_register_incidents",
     "ismsa/fieldTypes/adoptionStep": "step1",
     "ismsa/fieldTypes/progress": "incident-progress",
     "labels": [],

@@ -1,0 +1,7 @@
+== Task description
+
+* Ensure you have filled in all needed metadata fields for each asset
+
+== Records of completion
+
+#TODO# Add record of completion

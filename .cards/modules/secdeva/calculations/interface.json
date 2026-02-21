@@ -1,5 +1,5 @@
 {
-  "name": "secdeva/calculations/interface",
-  "displayName": "Interface",
-  "description": ""
+    "name": "secdeva/calculations/interface",
+    "displayName": "Interface",
+    "description": "Determines whether interfaces are external and cross trust boundaries based on dataflow links"
 }

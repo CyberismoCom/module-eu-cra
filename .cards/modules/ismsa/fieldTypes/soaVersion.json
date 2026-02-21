@@ -1,5 +1,6 @@
 {
     "name": "ismsa/fieldTypes/soaVersion",
     "displayName": "Version",
-    "dataType": "number"
+    "dataType": "number",
+    "description": "Version number of the Statement of Applicability"
 }

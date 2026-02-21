@@ -1,5 +1,5 @@
 {
-  "name": "secdeva/calculations/evidence",
-  "displayName": "Evidence",
-  "description": ""
+    "name": "secdeva/calculations/evidence",
+    "displayName": "Evidence",
+    "description": "Automatically links evidence cards to the secure development tasks they support"
 }

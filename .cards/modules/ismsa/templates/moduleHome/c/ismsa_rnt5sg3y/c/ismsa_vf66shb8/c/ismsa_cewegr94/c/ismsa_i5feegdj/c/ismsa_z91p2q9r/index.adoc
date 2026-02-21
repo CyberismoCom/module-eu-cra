@@ -1,0 +1,9 @@
+== Task description
+
+* Ensure you have filled risk description, risk analysis, and all needed metadata, for each risk
+
+* Remember to progress the status by choosing "Complete analysis" once risks have been analysed
+
+== Records of completion
+
+#TODO# Add record of completion

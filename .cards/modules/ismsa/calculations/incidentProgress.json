@@ -1,5 +1,5 @@
 {
-  "name": "ismsa/calculations/incidentProgress",
-  "displayName": "Incident Progress",
-  "description": ""
+    "name": "ismsa/calculations/incidentProgress",
+    "displayName": "Incident progress",
+    "description": "Calculates incident register progress from incident and task states"
 }

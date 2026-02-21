@@ -1,5 +1,5 @@
 {
-  "name": "ismsa/calculations/taskControl",
-  "displayName": "Task Control",
-  "description": ""
+    "name": "ismsa/calculations/taskControl",
+    "displayName": "Task control",
+    "description": "Enforces due date and policy checks for security targets"
 }

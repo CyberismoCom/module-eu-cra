@@ -1,5 +1,5 @@
 {
-  "name": "ismsa/calculations/processProgress",
-  "displayName": "Process Progress",
-  "description": ""
+    "name": "ismsa/calculations/processProgress",
+    "displayName": "Process progress",
+    "description": "Calculates process register progress from controlled document approval states"
 }

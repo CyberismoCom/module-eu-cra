@@ -1,0 +1,15 @@
+{{#each results}}
+{{#each this.uninstalledExtensions}}
+There is some additional content available from {{this.moduleDescription}}.
+
+{{#createCards}}
+  "template": "{{this.template}}",
+  "buttonLabel": "{{this.buttonLabel}}"
+{{/createCards}}
+{{/each}}
+
+{{#each this.installedExtensions}}
+Content from {{this.moduleDescription}} has been added.
+
+{{/each}}
+{{/each}}

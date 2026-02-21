@@ -102,5 +102,6 @@
             "toState": "Open"
         }
     ],
-    "displayName": "Control"
+    "displayName": "Control",
+    "description": "Open → Planning → Adopting → Verified/Not applicable lifecycle for controls"
 }

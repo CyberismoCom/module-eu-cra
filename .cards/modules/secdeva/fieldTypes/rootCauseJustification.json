@@ -1,5 +1,6 @@
 {
     "name": "secdeva/fieldTypes/rootCauseJustification",
     "displayName": "Root cause justification",
-    "dataType": "longText"
+    "dataType": "longText",
+    "description": "Justification for the root cause categorization"
 }

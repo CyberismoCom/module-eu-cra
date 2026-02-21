@@ -33,5 +33,6 @@
             "toState": "Draft"
         }
     ],
-    "displayName": "Entity"
+    "displayName": "Entity",
+    "description": "Draft → Ready lifecycle for dataflow model entities"
 }

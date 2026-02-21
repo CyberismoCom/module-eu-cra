@@ -1,6 +1,0 @@
-{
-    "displayName": "Process register",
-    "description": "A Process register with template processes for asset, risk and incident management",
-    "category": "Register management",
-    "name": "ismsa/templates/processRegister"
-}

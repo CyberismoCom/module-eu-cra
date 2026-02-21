@@ -3,25 +3,32 @@
     "workflow": "base/workflows/controlledDocument",
     "customFields": [
         {
-            "name": "base/fieldTypes/owner"
+            "name": "base/fieldTypes/owner",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/informationClassification"
+            "name": "base/fieldTypes/informationClassification",
+            "isCalculated": false
         },
         {
-            "name": "secdeva/fieldTypes/sbomComponentType"
+            "name": "secdeva/fieldTypes/sbomComponentType",
+            "isCalculated": false
         },
         {
-            "name": "secdeva/fieldTypes/sbomComponentGroup"
+            "name": "secdeva/fieldTypes/sbomComponentGroup",
+            "isCalculated": false
         },
         {
-            "name": "secdeva/fieldTypes/sbomComponentName"
+            "name": "secdeva/fieldTypes/sbomComponentName",
+            "isCalculated": false
         },
         {
-            "name": "secdeva/fieldTypes/sbomComponentCpe"
+            "name": "secdeva/fieldTypes/sbomComponentCpe",
+            "isCalculated": false
         },
         {
-            "name": "secdeva/fieldTypes/sbomComponentPurl"
+            "name": "secdeva/fieldTypes/sbomComponentPurl",
+            "isCalculated": false
         }
     ],
     "optionallyVisibleFields": [
@@ -35,5 +42,6 @@
         "base/fieldTypes/owner",
         "base/fieldTypes/informationClassification"
     ],
-    "displayName": "Technology"
+    "displayName": "Technology",
+    "description": "A third-party technology used in development"
 }

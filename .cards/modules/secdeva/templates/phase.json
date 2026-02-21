@@ -1,5 +1,6 @@
 {
     "name": "secdeva/templates/phase",
     "displayName": "Development project phase",
-    "category": "Secure development reviews"
+    "category": "Secure development reviews",
+    "description": "A phase of a development project"
 }

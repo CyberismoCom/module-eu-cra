@@ -3,13 +3,16 @@
     "workflow": "ismsa/workflows/securityTarget",
     "customFields": [
         {
-            "name": "base/fieldTypes/owner"
+            "name": "base/fieldTypes/owner",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/informationClassification"
+            "name": "base/fieldTypes/informationClassification",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/dueDate"
+            "name": "base/fieldTypes/dueDate",
+            "isCalculated": false
         }
     ],
     "alwaysVisibleFields": [
@@ -18,5 +21,6 @@
         "base/fieldTypes/dueDate"
     ],
     "optionallyVisibleFields": [],
-    "displayName": "Security target"
+    "displayName": "Security target",
+    "description": "A cybersecurity improvement target with a deadline"
 }

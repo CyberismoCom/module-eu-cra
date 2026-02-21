@@ -13,3 +13,7 @@ Currently following subregisters have been defined for requirements:
 {{#report}}
   "name": "ismsa/reports/addControlRegisterNis2"
 {{/report}}
+
+{{#report}}
+  "name": "ismsa/reports/installExtension"
+{{/report}}

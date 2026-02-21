@@ -1,5 +1,6 @@
 {
     "name": "ismsa/fieldTypes/assetPublisher",
     "displayName": "Publisher",
-    "dataType": "shortText"
+    "dataType": "shortText",
+    "description": "Vendor or publisher of the asset"
 }

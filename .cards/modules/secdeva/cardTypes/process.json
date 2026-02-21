@@ -16,5 +16,6 @@
         "secdeva/fieldTypes/technology"
     ],
     "optionallyVisibleFields": [],
-    "displayName": "Process"
+    "displayName": "Process",
+    "description": "A process element in a dataflow model"
 }

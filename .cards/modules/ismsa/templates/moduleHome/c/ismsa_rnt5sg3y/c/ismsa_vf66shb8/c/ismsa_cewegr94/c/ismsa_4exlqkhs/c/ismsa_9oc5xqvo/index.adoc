@@ -1,0 +1,7 @@
+== Task description
+
+* Document key assets into the Asset register using suitable asset templates
+
+== Records of completion
+
+#TODO# Add record of completion

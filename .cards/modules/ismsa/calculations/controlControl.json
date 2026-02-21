@@ -1,5 +1,5 @@
 {
-  "name": "ismsa/calculations/controlControl",
-  "displayName": "Control Control",
-  "description": ""
+    "name": "ismsa/calculations/controlControl",
+    "displayName": "Control control",
+    "description": "Enforces transition rules and required fields for controls"
 }

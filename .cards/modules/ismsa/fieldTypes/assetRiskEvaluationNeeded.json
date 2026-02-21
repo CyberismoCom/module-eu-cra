@@ -11,5 +11,6 @@
             "enumValue": "no",
             "enumDisplayValue": "No"
         }
-    ]
+    ],
+    "description": "Whether a risk evaluation is required for this asset"
 }

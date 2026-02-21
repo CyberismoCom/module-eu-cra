@@ -15,5 +15,6 @@
             "enumValue": "otherControl",
             "enumDisplayValue": "Other"
         }
-    ]
+    ],
+    "description": "Source of the control: risk assessment, ISO 27001, or other"
 }

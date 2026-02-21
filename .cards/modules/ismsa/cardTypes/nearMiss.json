@@ -1,0 +1,31 @@
+{
+    "name": "ismsa/cardTypes/nearMiss",
+    "displayName": "Near miss",
+    "workflow": "ismsa/workflows/nearMiss",
+    "customFields": [
+        {
+            "name": "base/fieldTypes/owner",
+            "isCalculated": false
+        },
+        {
+            "name": "base/fieldTypes/informationClassification",
+            "isCalculated": false
+        },
+        {
+            "name": "ismsa/fieldTypes/incidentStartDateTime",
+            "isCalculated": false
+        },
+        {
+            "name": "ismsa/fieldTypes/incidentEndDateTime",
+            "isCalculated": false
+        }
+    ],
+    "alwaysVisibleFields": [
+        "base/fieldTypes/owner",
+        "base/fieldTypes/informationClassification",
+        "ismsa/fieldTypes/incidentStartDateTime",
+        "ismsa/fieldTypes/incidentEndDateTime"
+    ],
+    "optionallyVisibleFields": [],
+    "description": "A cybersecurity event that did not cause impact but warrants analysis"
+}

@@ -14,5 +14,6 @@
         "secdeva/cardTypes/securityIssue"
     ],
     "enableLinkDescription": false,
-    "displayName": ""
+    "displayName": "Mitigates",
+    "description": "Links a control or task to the risk it mitigates"
 }

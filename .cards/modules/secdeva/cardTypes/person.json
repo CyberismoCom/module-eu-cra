@@ -11,5 +11,6 @@
         "secdeva/fieldTypes/description"
     ],
     "optionallyVisibleFields": [],
-    "displayName": "Person"
+    "displayName": "Person",
+    "description": "A human stakeholder in a dataflow model"
 }

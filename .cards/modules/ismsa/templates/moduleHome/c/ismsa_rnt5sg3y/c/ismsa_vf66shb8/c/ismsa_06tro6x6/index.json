@@ -2,7 +2,7 @@
     "title": "Security targets",
     "cardType": "ismsa/cardTypes/register",
     "workflowState": "",
-    "rank": "0|a",
+    "rank": "0|b",
     "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
     "base/fieldTypes/identifier": null,

@@ -1,5 +1,5 @@
 {
-  "name": "secdeva/calculations/progress",
-  "displayName": "Progress",
-  "description": ""
+    "name": "secdeva/calculations/progress",
+    "displayName": "Progress",
+    "description": "Calculates completion progress of secure development tasks and validates completeness"
 }

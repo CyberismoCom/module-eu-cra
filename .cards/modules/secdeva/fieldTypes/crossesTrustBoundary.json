@@ -15,5 +15,6 @@
             "enumValue": "noInfo",
             "enumDisplayValue": "Dataflows not defined"
         }
-    ]
+    ],
+    "description": "Whether an interface crosses a trust boundary"
 }

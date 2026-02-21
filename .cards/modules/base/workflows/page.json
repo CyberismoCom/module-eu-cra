@@ -42,5 +42,6 @@
             "toState": "Draft"
         }
     ],
-    "displayName": "Page"
+    "displayName": "Page",
+    "description": "Draft → Ready → Deprecated lifecycle for pages"
 }

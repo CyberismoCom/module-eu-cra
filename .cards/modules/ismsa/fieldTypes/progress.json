@@ -1,5 +1,6 @@
 {
     "name": "ismsa/fieldTypes/progress",
     "displayName": "Progress label",
-    "dataType": "shortText"
+    "dataType": "shortText",
+    "description": "Calculated progress label for registers"
 }

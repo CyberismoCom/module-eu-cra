@@ -74,5 +74,6 @@
             "toState": "Closed as not applicable"
         }
     ],
-    "displayName": "Review task"
+    "displayName": "Review task",
+    "description": "Open → In progress → Done/Not applicable lifecycle with change requests"
 }

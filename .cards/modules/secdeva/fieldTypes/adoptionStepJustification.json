@@ -1,5 +1,6 @@
 {
     "name": "secdeva/fieldTypes/adoptionStepJustification",
     "displayName": "Adoption step justification",
-    "dataType": "longText"
+    "dataType": "longText",
+    "description": "Justification for the selected adoption step level"
 }

@@ -44,5 +44,6 @@
             "toState": "Draft"
         }
     ],
-    "displayName": "Decision"
+    "displayName": "Decision",
+    "description": "Draft → Approved → Deprecated lifecycle for decisions"
 }

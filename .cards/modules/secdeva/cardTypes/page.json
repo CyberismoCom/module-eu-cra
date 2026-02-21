@@ -17,5 +17,6 @@
     "optionallyVisibleFields": [
         "base/fieldTypes/adoptionStep"
     ],
-    "displayName": "Page"
+    "displayName": "Page",
+    "description": "A page for organizing secure development content"
 }

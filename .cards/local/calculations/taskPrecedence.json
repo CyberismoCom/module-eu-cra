@@ -1,5 +1,5 @@
 {
-  "name": "eucra/calculations/taskPrecedence",
-  "displayName": "Task Precedence",
-  "description": ""
+    "name": "eucra/calculations/taskPrecedence",
+    "displayName": "Task precedence",
+    "description": "Defines dependency and implementation relationships between EU CRA tasks and compliance requirements"
 }

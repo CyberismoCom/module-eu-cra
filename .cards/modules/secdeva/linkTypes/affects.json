@@ -9,5 +9,6 @@
         "secdeva/cardTypes/version"
     ],
     "enableLinkDescription": false,
-    "displayName": ""
+    "displayName": "Affects",
+    "description": "Links a security issue to a component it affects"
 }

@@ -1,5 +1,6 @@
 {
     "name": "secdeva/fieldTypes/strategy",
     "displayName": "Strategy",
-    "dataType": "longText"
+    "dataType": "longText",
+    "description": "Strategy for addressing a security issue"
 }

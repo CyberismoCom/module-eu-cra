@@ -3,25 +3,32 @@
     "workflow": "ismsa/workflows/complianceRequirement",
     "customFields": [
         {
-            "name": "base/fieldTypes/owner"
+            "name": "base/fieldTypes/owner",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/informationClassification"
+            "name": "base/fieldTypes/informationClassification",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/adoptionStep"
+            "name": "base/fieldTypes/adoptionStep",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/identifier"
+            "name": "base/fieldTypes/identifier",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/requirementImplementationStrategy"
+            "name": "ismsa/fieldTypes/requirementImplementationStrategy",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/requirementOrigin"
+            "name": "ismsa/fieldTypes/requirementOrigin",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/justification"
+            "name": "base/fieldTypes/justification",
+            "isCalculated": false
         }
     ],
     "alwaysVisibleFields": [
@@ -35,5 +42,6 @@
         "base/fieldTypes/adoptionStep",
         "base/fieldTypes/identifier"
     ],
-    "displayName": "Compliance requirement"
+    "displayName": "Compliance requirement",
+    "description": "An external compliance requirement from regulations or standards"
 }

@@ -20,5 +20,6 @@
         "secdeva/cardTypes/securityIssue"
     ],
     "enableLinkDescription": false,
-    "displayName": ""
+    "displayName": "Presents risk",
+    "description": "Links an asset to a risk it is exposed to"
 }

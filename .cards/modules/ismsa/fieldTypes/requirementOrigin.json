@@ -1,5 +1,6 @@
 {
     "name": "ismsa/fieldTypes/requirementOrigin",
     "displayName": "Requirement origin",
-    "dataType": "shortText"
+    "dataType": "shortText",
+    "description": "Source regulation, standard, or stakeholder for the requirement"
 }

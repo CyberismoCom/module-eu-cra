@@ -5,5 +5,6 @@
     "sourceCardTypes": [],
     "destinationCardTypes": [],
     "enableLinkDescription": false,
-    "displayName": ""
+    "displayName": "Evidences",
+    "description": "Links evidence to a secure development task it supports"
 }

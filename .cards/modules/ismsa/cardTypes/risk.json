@@ -3,29 +3,36 @@
     "workflow": "ismsa/workflows/risk",
     "customFields": [
         {
-            "name": "base/fieldTypes/owner"
+            "name": "base/fieldTypes/owner",
+            "isCalculated": false
         },
         {
-            "name": "base/fieldTypes/informationClassification"
+            "name": "base/fieldTypes/informationClassification",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/riskInitialLikelihood"
+            "name": "ismsa/fieldTypes/riskInitialLikelihood",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/riskInitialImpact"
+            "name": "ismsa/fieldTypes/riskInitialImpact",
+            "isCalculated": false
         },
         {
             "name": "ismsa/fieldTypes/riskInitialRisk",
             "isCalculated": true
         },
         {
-            "name": "ismsa/fieldTypes/riskMitigationStrategy"
+            "name": "ismsa/fieldTypes/riskMitigationStrategy",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/riskResidualLikelihood"
+            "name": "ismsa/fieldTypes/riskResidualLikelihood",
+            "isCalculated": false
         },
         {
-            "name": "ismsa/fieldTypes/riskResidualImpact"
+            "name": "ismsa/fieldTypes/riskResidualImpact",
+            "isCalculated": false
         },
         {
             "name": "ismsa/fieldTypes/riskResidualRisk",
@@ -44,5 +51,6 @@
         "ismsa/fieldTypes/riskResidualRisk"
     ],
     "optionallyVisibleFields": [],
-    "displayName": "Risk"
+    "displayName": "Risk",
+    "description": "A cybersecurity risk with impact, likelihood, and treatment tracking"
 }

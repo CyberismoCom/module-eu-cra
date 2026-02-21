@@ -95,5 +95,6 @@
             "toState": "Closed as not applicable"
         }
     ],
-    "displayName": "Compliance requirement"
+    "displayName": "Compliance requirement",
+    "description": "Open → Planning → Adopting → Verified/Not applicable lifecycle for compliance"
 }

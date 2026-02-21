@@ -1,5 +1,5 @@
 {
-  "name": "eucra/calculations/defaultTitles",
-  "displayName": "Default Titles",
-  "description": ""
+    "name": "eucra/calculations/defaultTitles",
+    "displayName": "Default titles",
+    "description": "Sets default titles for EU CRA cards based on their type and project name"
 }

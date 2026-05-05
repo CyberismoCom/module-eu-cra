@@ -3,6 +3,7 @@
     "cardKeyPrefix": "eucra",
     "name": "EU Cyber Resilience Act",
     "description": "",
+    "version": "1.0.0",
     "modules": [
         {
             "name": "base",

@@ -1,0 +1,6 @@
+{
+    "name": "ismsa/calculations/reviewAssessment",
+    "displayName": "Review assessment",
+    "calculation": "calculation.lp",
+    "description": "Assesses the status of reviews based on their workflow state and policy check results."
+}

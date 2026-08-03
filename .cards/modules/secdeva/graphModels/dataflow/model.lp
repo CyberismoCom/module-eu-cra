@@ -38,12 +38,22 @@ technology(X, Technology) :- entity(X), field(X, "secdeva/fieldTypes/technology"
 consistsOf(Y, X) :- parent(X, Y), entity(X), entity(Y).
 contains(X, Y) :- consistsOf(X, Y), entity(X), entity(Y).
 contains(X, Z) :- consistsOf(X, Y), contains(Y, Z), entity(X), entity(Y), entity(Z).
-entityLevel(X, 1) :- entity(X), not consistsOf(_, X).
-entityLevel(X, N+1) :- entity(X), consistsOf(Y, X), entityLevel(Y, N).
+% effectiveParent(X, Y) means Y is the nearest non-trust-boundary ancestor of X
+effectiveParent(X, Y) :- consistsOf(Y, X), entity(X), entity(Y), not trustBoundary(Y).
+effectiveParent(X, Z) :- consistsOf(Y, X), entity(X), trustBoundary(Y), effectiveParent(Y, Z).
+
+% entityLevel calculates architectural depth, treating trust boundaries as transparent.
+% Trust boundaries do not have an entityLevel.
+entityLevel(X, 1) :- entity(X), not trustBoundary(X), not effectiveParent(X, _).
+entityLevel(X, N+1) :- entity(X), not trustBoundary(X), effectiveParent(X, Y), entityLevel(Y, N).
 
 % dataflows
 
 dataflow(A, B, Title) :- link(A, B, "secdeva/linkTypes/dataflow", Title).
+
+% Propagate dataflows through interfaces to their parent entity
+dataflow(A, P, Title) :- dataflow(A, I, Title), interface(I), consistsOf(P, I), entity(P), not interface(P).
+
 
 %
 % Conversion from the architecture model to clingraph format
@@ -64,12 +74,21 @@ hide(Y) :- entity(X), hide(X), consistsOf(X, Y).
 directlyVisible(X) :- entity(X), viewAll, not hide(X).
 visible(X) :- directlyVisible(X), not hide(X).
 
+% Trust boundaries become visible when they contain visible entities
+visible(X) :- trustBoundary(X), consistsOf(X, Y), visible(Y), not hide(X).
+
 % the user may define view(X) to mean that entity X and all its composite entities should be visible
 directlyVisible(X) :- entity(X), view(X), not hide(X).
 view(Y) :- entity(X), view(X), consistsOf(X, Y), not hide(Y).
 
 % the user may define view(X, N) to mean that entity X and its composite entities are visible on N composite levels
-view(Y, N - 1) :- entity(X), view(X, N), N > 1, consistsOf(X, Y), not hide(Y).
+% When expanding views, trust boundaries are transparent and don't consume a level.
+% Non-trust-boundary to non-trust-boundary: standard decrement
+view(Y, N - 1) :- entity(X), not trustBoundary(X), view(X, N), N > 1, consistsOf(X, Y), not hide(Y), not trustBoundary(Y).
+% Any entity to trust boundary child: entering a trust boundary is free
+view(Y, N) :- entity(X), view(X, N), N > 1, consistsOf(X, Y), not hide(Y), trustBoundary(Y).
+% Trust boundary to non-trust-boundary child: the architectural level transition
+view(Y, N - 1) :- trustBoundary(X), view(X, N), N > 1, consistsOf(X, Y), not hide(Y), not trustBoundary(Y).
 directlyVisible(X) :- entity(X), view(X, N), N > 0, not hide(X).
 
 % the user may define viewAll(N) to mean that all entities should be shown
@@ -78,6 +97,11 @@ directlyVisible(X) :- entity(X), view(X, N), N > 0, not hide(X).
 view(X, N) :- entity(X), entityLevel(X, 1), viewAll(N), not hide(X).
 
 % graphs
+
+% nearestVisibleAncestor(X, A): A is the nearest visible ancestor of X,
+% found by walking up through invisible intermediaries.
+nearestVisibleAncestor(X, A) :- consistsOf(A, X), visible(A).
+nearestVisibleAncestor(X, A) :- consistsOf(P, X), entity(P), not visible(P), nearestVisibleAncestor(P, A).
 
 % top level graph is for top level entities and enties whose parent is not visible
 graph(toplevelGraph).
@@ -90,17 +114,19 @@ graph(toplevelGraph).
 
 % graphTopLevelEntity(X) means that X is a top-level entity that must be drawn as a graph,
 % because it has visible "children"
-graphTopLevelEntity(X) :- entity(X), visible(X), entityLevel(X, 1), visible(Y), consistsOf(X, Y).
+graphTopLevelEntity(X) :- entity(X), visible(X), not consistsOf(_, X), contains(X, Y), visible(Y).
 graph(X, toplevelGraph) :- graphTopLevelEntity(X).
 node(X, X) :- graphTopLevelEntity(X).
 invisible(X) :- graphTopLevelEntity(X).
 attr(node, X, shape, point) :- graphTopLevelEntity(X).
 attr(node, X, style, invis) :- graphTopLevelEntity(X).
 
-% graphEntityHiddenAncestors(X) means that X is an entity that must be drawn as a graph in the toplevelGraph,
-% because it has visible "children", and its own parent is not visible
-graphEntityHiddenAncestors(X) :-  visible(X), not visible(P), consistsOf(P, X), entity(X), visible(Y), consistsOf(X, Y).
-graph(X, toplevelGraph) :- graphEntityHiddenAncestors(X).
+% graphEntityHiddenAncestors(X) means that X is an entity that must be drawn as a graph,
+% because it has visible "children", and its own parent is not visible.
+% If a nearest visible ancestor exists, X is placed inside it; otherwise at the top level.
+graphEntityHiddenAncestors(X) :-  visible(X), not visible(P), consistsOf(P, X), entity(X), contains(X, Y), visible(Y).
+graph(X, G) :- graphEntityHiddenAncestors(X), nearestVisibleAncestor(X, G).
+graph(X, toplevelGraph) :- graphEntityHiddenAncestors(X), not nearestVisibleAncestor(X, _).
 node(X, X) :- graphEntityHiddenAncestors(X).
 invisible(X) :- graphEntityHiddenAncestors(X).
 attr(node, X, shape, point) :- graphEntityHiddenAncestors(X).
@@ -108,7 +134,7 @@ attr(node, X, style, invis) :- graphEntityHiddenAncestors(X).
 
 % graphLowerLevel(X, P) means that X has visible children and a visible parent,
 % so it must be drawn as a subgraph of P
-graphLowerLevel(X, P) :- visible(X), entity(X), visible(P), consistsOf(P, X), visible(Y), consistsOf(X, Y).
+graphLowerLevel(X, P) :- visible(X), entity(X), visible(P), consistsOf(P, X), contains(X, Y), visible(Y).
 graph(X, P) :- graphLowerLevel(X, P).
 node(X, X) :- graphLowerLevel(X, P).
 invisible(X) :- graphLowerLevel(X, P).
@@ -117,10 +143,13 @@ attr(node, X, style, invis) :- graphLowerLevel(X, P).
 
 % nodes
 
-% if an entity is visible, but it's not a graph (= does not have visible children), then it is a node
-node(X, toplevelGraph) :- entity(X), visible(X), entityLevel(X, 1), not graph(X, toplevelGraph).
+% if an entity is visible, but it's not a graph (= does not have visible children), then it is a node.
+% if the immediate parent is not visible, the node is placed in the nearest visible ancestor graph,
+% or at the top level if no such ancestor exists.
+node(X, toplevelGraph) :- entity(X), visible(X), not consistsOf(_, X), not graph(X, toplevelGraph).
 node(X, Y) :- entity(X), visible(X), consistsOf(Y, X), not graph(X, _), visible(Y).
-node(X, toplevelGraph) :- entity(X), visible(X), consistsOf(Y, X), not graph(X, _), not visible(Y).
+node(X, G) :- entity(X), visible(X), consistsOf(Y, X), not graph(X, _), not visible(Y), nearestVisibleAncestor(X, G).
+node(X, toplevelGraph) :- entity(X), visible(X), consistsOf(Y, X), not graph(X, _), not visible(Y), not nearestVisibleAncestor(X, _).
 
 % edges and representatives of entities when drawing dataflows
 
@@ -240,7 +269,7 @@ attr(graph, X, margin, "25") :- graph(X, _).
 attr(graph, X, penwidth, "3") :- graph(X).
 attr(graph, X, penwidth, "3") :- graph(X, _).
 attr(node, X, penwidth, "3") :- node(X, _).
-attr(edge, (X, Y, N), pendwidth, "3") :- edge((X, Y, N), _).
+attr(edge, (X, Y, N), penwidth, "2") :- edge((X, Y, N), _).
 attr(edge, (X, Y, N), arrowsize, "2") :- edge((X, Y, N), _).
 
 % node labels and descriptions

@@ -1,12 +1,14 @@
 {
-    "schemaVersion": 2,
+    "schemaVersion": 4,
     "cardKeyPrefix": "ismsa",
     "name": "ISMS essentials",
     "description": "",
+    "version": "1.3.3",
     "modules": [
         {
             "name": "base",
-            "location": "https://github.com/CyberismoCom/module-base.git"
+            "location": "https://github.com/CyberismoCom/module-base.git",
+            "private": false
         }
     ],
     "hubs": []

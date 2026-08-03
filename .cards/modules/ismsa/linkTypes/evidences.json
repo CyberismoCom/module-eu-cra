@@ -1,0 +1,20 @@
+{
+    "name": "ismsa/linkTypes/evidences",
+    "displayName": "Evidences",
+    "outboundDisplayName": "evidences",
+    "inboundDisplayName": "is evidenced by",
+    "sourceCardTypes": [
+        "base/cardTypes/controlledDocument",
+        "base/cardTypes/review"
+    ],
+    "destinationCardTypes": [
+        "ismsa/cardTypes/internalControl",
+        "base/cardTypes/annualTask",
+        "base/cardTypes/quarterlyTask",
+        "base/cardTypes/task",
+        "base/cardTypes/monthlyTask"
+    ],
+    "enableLinkDescription": false,
+    "category": "Cybersecurity management",
+    "description": "Links a controlled document or a review to a task or an internal control that it evidences"
+}

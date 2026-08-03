@@ -1,0 +1,52 @@
+{
+    "name": "ismsa/workflows/internalControl",
+    "displayName": "Internal control",
+    "states": [
+        {
+            "name": "Open",
+            "category": "initial"
+        },
+        {
+            "name": "In scope",
+            "category": "closed"
+        },
+        {
+            "name": "Out of scope",
+            "category": "closed"
+        }
+    ],
+    "transitions": [
+        {
+            "name": "Create",
+            "fromState": [
+                ""
+            ],
+            "toState": "Open"
+        },
+        {
+            "name": "Mark in scope",
+            "toState": "In scope",
+            "fromState": [
+                "Open",
+                "Out of scope"
+            ]
+        },
+        {
+            "name": "Mark out of scope",
+            "toState": "Out of scope",
+            "fromState": [
+                "In scope",
+                "Open"
+            ]
+        },
+        {
+            "name": "Reopen",
+            "toState": "Open",
+            "fromState": [
+                "In scope",
+                "Out of scope"
+            ]
+        }
+    ],
+    "description": "Open → In scope/Out of scope lifecycle for internal controls"
+}

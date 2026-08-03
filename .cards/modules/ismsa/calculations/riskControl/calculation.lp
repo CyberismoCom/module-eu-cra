@@ -9,11 +9,11 @@ ismsa_riskLessThan("moderate", "high").
 ismsa_riskLessThan("moderate", "veryHigh").
 ismsa_riskLessThan("high", "veryHigh").
 
-transitionDenied(Card, "Complete analysis", "Fill needed metadata fields for this risk before completing analysis" ):-
+transitionDenied(Card, "Complete analysis", "Fill in the owner for this risk before completing analysis" ):-
     field(Card, "cardType", "ismsa/cardTypes/risk"),
     not field(Card, "base/fieldTypes/owner", _).
 
-transitionDenied(Card, "Complete analysis", "Fill needed metadata fields for this risk before completing analysis" ):-
+transitionDenied(Card, "Complete analysis", "Fill the information classification for this risk before completing analysis" ):-
     field(Card, "cardType", "ismsa/cardTypes/risk"),
     not field(Card, "base/fieldTypes/informationClassification", _).
 
@@ -21,7 +21,7 @@ policyCheckFailure(Card, "ISMS", "'Initial likelihood' is a required field", "'I
     field(Card, "cardType", "ismsa/cardTypes/risk"),
     not field(Card, "ismsa/fieldTypes/riskInitialLikelihood", _).
 
-transitionDenied(Card, "Complete analysis", "Fill needed metadata fields for this risk before completing analysis" ):-
+transitionDenied(Card, "Complete analysis", "Fill in the initial likelihood for this risk before completing analysis" ):-
     field(Card, "cardType", "ismsa/cardTypes/risk"),
     not field(Card, "ismsa/fieldTypes/riskInitialLikelihood", _).
 
@@ -29,11 +29,11 @@ policyCheckFailure(Card, "ISMS", "'Initial impact' is a required field", "'Initi
     field(Card, "cardType", "ismsa/cardTypes/risk"),
     not field(Card, "ismsa/fieldTypes/riskInitialImpact", _).
 
-transitionDenied(Card, "Complete analysis", "Fill needed metadata fields for this risk before completing analysis" ):-
+transitionDenied(Card, "Complete analysis", "Fill in the initial impact for this risk before completing analysis" ):-
     field(Card, "cardType", "ismsa/cardTypes/risk"),
     not field(Card, "ismsa/fieldTypes/riskInitialImpact", _).
 
-transitionDenied(Card, "Complete analysis", "Fill needed metadata fields for this risk before completing analysis" ):-
+transitionDenied(Card, "Complete analysis", "Fill in the initial risk level for this risk before completing analysis" ):-
     field(Card, "cardType", "ismsa/cardTypes/risk"),
     not field(Card, "ismsa/fieldTypes/riskInitialRisk", _).
 
@@ -41,7 +41,7 @@ policyCheckFailure(Card, "ISMS", "Mitigation strategy is a required field", "Mit
     field(Card, "cardType", "ismsa/cardTypes/risk"),
     not field(Card, "ismsa/fieldTypes/riskMitigationStrategy", _).
 
-transitionDenied(Card, "Complete analysis", "Fill needed metadata fields for this risk before completing analysis" ):-
+transitionDenied(Card, "Complete analysis", "Fill in the risk mitigation strategy for this risk before completing analysis" ):-
     field(Card, "cardType", "ismsa/cardTypes/risk"),
     not field(Card, "ismsa/fieldTypes/riskMitigationStrategy", _).
 

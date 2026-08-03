@@ -1,0 +1,6 @@
+{
+    "name": "ismsa/reports/evidenceAssessments",
+    "displayName": "Evidence assessments",
+    "category": "Internal control",
+    "description": "Shows evidence assessments for an internal control"
+}

@@ -1,0 +1,15 @@
+{{#if results}}
+
+[cols="4,2,6"]
+|===
+| Evidence | Assessment | Assessment Explanation
+
+{{#each results}}
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.[base/fieldTypes/assessment].displayValue}}
+|{{this.[base/fieldTypes/assessmentExplanation]}}
+{{/each}}
+
+|===
+
+{{/if}}

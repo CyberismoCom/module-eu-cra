@@ -9,11 +9,14 @@
         "ismsa/cardTypes/assetInformationSystem",
         "ismsa/cardTypes/assetSupplier",
         "secdeva/cardTypes/project",
+        "secdeva/cardTypes/project2",
+        "secdeva/cardTypes/threatModel",
         "secdeva/cardTypes/process",
         "secdeva/cardTypes/dataStore",
         "secdeva/cardTypes/external",
         "secdeva/cardTypes/person",
-        "secdeva/cardTypes/trustBoundary"
+        "secdeva/cardTypes/trustBoundary",
+        "secdeva/cardTypes/interface"
     ],
     "destinationCardTypes": [
         "ismsa/cardTypes/risk",

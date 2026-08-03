@@ -1,8 +1,9 @@
 {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "cardKeyPrefix": "secdeva",
     "name": "Secure development essentials",
     "description": "",
+    "version": "1.0.0",
     "modules": [
         {
             "name": "base",

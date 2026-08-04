@@ -1,0 +1,41 @@
+selectAll.
+
+result(result).
+
+childObject(result, Project, "project") :-
+  secdeva_closestProject({{cardKey}}, Project).
+
+childResult(result, Card, "open") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "cardType", "ismsa/cardTypes/internalControl"),
+  field(Card, "base/fieldTypes/assessment", "open"),
+  not base_greaterAdoptionStep(Card, Project).
+
+childResult(result, Card, "inScope") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "cardType", "ismsa/cardTypes/internalControl"),
+  field(Card, "workflowState", "In scope").
+
+childResult(result, Card, "outOfScope") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "cardType", "ismsa/cardTypes/internalControl"),
+  field(Card, "workflowState", "Out of scope").
+
+field(Card, "compoundRank", Rank) :-
+  card(Card),
+  not parent(Card, _),
+  field(Card, "rank", Rank).
+
+field(Card, "compoundRank", @concatenate(ParentRank, " - ", Rank)) :-
+  card(Card),
+  parent(Card, Parent),
+  field(Card, "rank", Rank),
+  field(Parent, "compoundRank", ParentRank).
+
+order(2, "open", 1, "compoundRank", "ASC").
+order(2, "inScope", 1, "compoundRank", "ASC").
+order(2, "outOfScope", 1, "compoundRank", "ASC").
+

@@ -1,0 +1,143 @@
+{{#each results}}
+The current adoption step of this project is *{{this.project.[base/fieldTypes/adoptionStep].displayValue}}*. 
+{{#unless (eq this.project.[base/fieldTypes/adoptionStep].value "step3")}}
+The following tables do not include internal controls on higher adoption steps. You can change the target adoption step field in {{#report}}"name":"secdeva/reports/xref", "identifier":"secdeva_project"{{/report}}.
+{{#unless inProgress}}
+{{#unless notOk}}
+{{#unless open}}
+
+TIP: You have completed the internal controls on the current adoption step, so you can begin working on the items on the next adoption step. Change the target adoption step field in {{#report}}"name":"secdeva/reports/xref", "identifier":"secdeva_project"{{/report}}.
+
+{{/unless}}
+{{/unless}}
+{{/unless}}
+{{/unless}}
+
+{{#if gettingStarted}}
+
+=== Essential internal controls
+
+First, ensure that the following fundamental internal controls have been completed. See {{#report}}"name":"secdeva/reports/xref", "identifier": "secdeva_getting-started"{{/report}} for more information.
+
+[cols="3,1,4"]
+|===
+| Control | Assessment  | Assessment explanation
+
+{{#each gettingStarted}}
+| {{#xref}}"cardKey": "{{this.key}}"{{/xref}}
+| {{this.[base/fieldTypes/assessment].displayValue}}
+| {{this.[base/fieldTypes/assessmentExplanation]}}
+
+{{/each}}
+|===
+
+{{else}}
+
+You have commpleted the essential internal controls for getting started.
+
+{{/if}}
+
+{{#if inProgress}}
+=== Internal controls in progress
+
+Complete the following controls that are in progress:
+
+[cols="3,1,4"]
+|===
+| Control | Assessment  | Assessment explanation
+
+{{#each inProgress}}
+| {{#xref}}"cardKey": "{{this.key}}"{{/xref}}
+| {{this.[base/fieldTypes/assessment].displayValue}}
+| {{this.[base/fieldTypes/assessmentExplanation]}}
+
+{{/each}}
+|===
+
+{{/if}}
+
+{{#if notOk}}
+=== Internal controls that require attention
+
+The following controls are not OK and require attention:
+
+[cols="3,1,4"]
+|===
+| Control | Assessment  | Assessment explanation
+
+{{#each notOk}}
+| {{#xref}}"cardKey": "{{this.key}}"{{/xref}}
+| {{this.[base/fieldTypes/assessment].displayValue}}
+| {{this.[base/fieldTypes/assessmentExplanation]}}
+
+{{/each}}
+|===
+
+{{/if}}
+
+{{#if open}}
+=== Internal controls that have not been started
+
+You have not started working on the following internal controls:
+
+.See open controls
+[%collapsible]
+=====
+[cols="3,1,4"]
+|===
+| Control | Assessment  | Assessment explanation
+
+{{#each open}}
+| {{#xref}}"cardKey": "{{this.key}}"{{/xref}}
+| {{this.[base/fieldTypes/assessment].displayValue}}
+| {{this.[base/fieldTypes/assessmentExplanation]}}
+
+{{/each}}
+|===
+=====
+{{/if}}
+
+
+{{#if notApplicable}}
+=== Internal controls that are out of scope
+
+.See controls that are out of scope
+[%collapsible]
+=====
+[cols="3,1,4"]
+|===
+| Control | Assessment  | Assessment explanation
+
+{{#each notApplicable}}
+| {{#xref}}"cardKey": "{{this.key}}"{{/xref}}
+| {{this.[base/fieldTypes/assessment].displayValue}}
+| {{this.[base/fieldTypes/assessmentExplanation]}}
+
+{{/each}}
+|===
+=====
+
+{{/if}}
+
+{{#if ok}}
+=== Internal controls that OK
+
+.See controls that OK
+[%collapsible]
+=====
+[cols="3,1,4"]
+|===
+| Control | Assessment  | Assessment explanation
+
+{{#each ok}}
+| {{#xref}}"cardKey": "{{this.key}}"{{/xref}}
+| {{this.[base/fieldTypes/assessment].displayValue}}
+| {{this.[base/fieldTypes/assessmentExplanation]}}
+
+{{/each}}
+|===
+=====
+
+{{/if}}
+
+{{/each}}

@@ -1,0 +1,69 @@
+selectAll.
+
+result(result).
+
+childResult(result, Card, "tasks_step1") :-
+    ancestor(Card, ControlRegister),
+    field(ControlRegister, "base/fieldTypes/identifier", "{{controls}}"),
+    secdeva_closestProject(ControlRegister, Project),
+    secdeva_closestProject({{cardKey}}, Project),
+    field(Card, "cardType", "ismsa/cardTypes/internalControl"),
+    field(Card, "base/fieldTypes/adoptionStep", "step1").
+
+childResult(result, Card, "tasks_step1") :-
+    ancestor(Card, ControlRegister),
+    field(ControlRegister, "base/fieldTypes/identifier", "{{controls}}"),
+    secdeva_closestProject(ControlRegister, Project),
+    secdeva_closestProject({{cardKey}}, Project),
+    field(Card, "cardType", "ismsa/cardTypes/internalControl"),
+    not field(Card, "base/fieldTypes/adoptionStep", _).
+
+childResult(result, Card, "tasks_step2") :-
+    ancestor(Card, ControlRegister),
+    field(ControlRegister, "base/fieldTypes/identifier", "{{controls}}"),
+    secdeva_closestProject(ControlRegister, Project),
+    secdeva_closestProject({{cardKey}}, Project),
+    field(Card, "cardType", "ismsa/cardTypes/internalControl"),
+    field(Card, "base/fieldTypes/adoptionStep", "step2").
+
+childResult(result, Card, "tasks_step3") :-
+    ancestor(Card, ControlRegister),
+    field(ControlRegister, "base/fieldTypes/identifier", "{{controls}}"),
+    secdeva_closestProject(ControlRegister, Project),
+    secdeva_closestProject({{cardKey}}, Project),
+    field(Card, "cardType", "ismsa/cardTypes/internalControl"),
+    field(Card, "base/fieldTypes/adoptionStep", "step3").
+
+childResult(Task, Evidence, "evidence") :-
+    childResult(result, Task, "tasks_step1"),
+    link(Evidence, Task, "ismsa/linkTypes/evidences").
+
+childResult(Task, Evidence, "evidence") :-
+    childResult(result, Task, "tasks_step2"),
+    link(Evidence, Task, "ismsa/linkTypes/evidences").
+
+childResult(Task, Evidence, "evidence") :-
+    childResult(result, Task, "tasks_step3"),
+    link(Evidence, Task, "ismsa/linkTypes/evidences").
+
+field(Card, "visible", "Yes") :- childResult(result, Card, "tasks_step1"), not hiddenInTreeView(Card).
+field(Card, "visible", "No") :- childResult(result, Card, "tasks_step1"), hiddenInTreeView(Card).
+field(Card, "visible", "Yes") :- childResult(result, Card, "tasks_step2"), not hiddenInTreeView(Card).
+field(Card, "visible", "No") :- childResult(result, Card, "tasks_step2"), hiddenInTreeView(Card).
+field(Card, "visible", "Yes") :- childResult(result, Card, "tasks_step3"), not hiddenInTreeView(Card).
+field(Card, "visible", "No") :- childResult(result, Card, "tasks_step3"), hiddenInTreeView(Card).
+
+field(Card, "compoundRank", Rank) :-
+    card(Card),
+    not parent(Card, _),
+    field(Card, "rank", Rank).
+
+field(Card, "compoundRank", @concatenate(ParentRank, " - ", Rank)) :-
+    card(Card),
+    parent(Card, Parent),
+    field(Card, "rank", Rank),
+    field(Parent, "compoundRank", ParentRank).
+
+order(2, "tasks_step1", 1, "compoundRank", "ASC").
+order(2, "tasks_step2", 1, "compoundRank", "ASC").
+order(2, "tasks_step3", 1, "compoundRank", "ASC").

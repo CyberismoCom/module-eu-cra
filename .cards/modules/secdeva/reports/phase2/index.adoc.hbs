@@ -1,0 +1,94 @@
+{{#each results}}
+
+{{#if this.tasks_step1}}
+
+.Adoption step 1. Complete these controls first.
+[cols="2,3,3"]
+|===
+| Internal control | Assessment | Evidence
+
+{{#each this.tasks_step1}}
+
+{{#if (eq this.[base/fieldTypes/assessment].value "ok")}}
+a| * [x] {{#xref}} "cardKey": "{{this.key}}" {{/xref}}
+{{else if (eq this.[base/fieldTypes/assessment].value "notApplicable")}}
+a| * [x] {{#xref}} "cardKey": "{{this.key}}" {{/xref}}
+{{else}}
+a| * [ ] {{#xref}} "cardKey": "{{this.key}}" {{/xref}}
+{{/if}}
+| *{{this.[base/fieldTypes/assessment].displayValue}}*: {{this.[base/fieldTypes/assessmentExplanation]}}
+{{#if (eq this.[base/fieldTypes/assessment].value "notApplicable")}}
+| Not required
+{{else}}
+a|
+{{#each this.evidence}} 
+* {{#xref}} "cardKey": "{{this.key}}" {{/xref}}
+{{/each}}
+{{/if}}
+{{/each}}
+|===
+
+{{/if}}
+
+{{#if this.tasks_step2}}
+
+.Adoption step 2. Complete these controls after adoption step 1.
+[cols="2,3,3"]
+|===
+| Internal control | Assessment | Evidence
+
+{{#each this.tasks_step2}}
+
+{{#if (eq this.[base/fieldTypes/assessment].value "ok")}}
+a| * [x] {{#xref}} "cardKey": "{{this.key}}" {{/xref}}
+{{else if (eq this.[base/fieldTypes/assessment].value "notApplicable")}}
+a| * [x] {{#xref}} "cardKey": "{{this.key}}" {{/xref}}
+{{else}}
+a| * [ ] {{#xref}} "cardKey": "{{this.key}}" {{/xref}}
+{{/if}}
+| *{{this.[base/fieldTypes/assessment].displayValue}}*: {{this.[base/fieldTypes/assessmentExplanation]}}
+{{#if (eq this.[base/fieldTypes/assessment].value "notApplicable")}}
+| Not required
+{{else}}
+a|
+{{#each this.evidence}} 
+* {{#xref}} "cardKey": "{{this.key}}" {{/xref}}
+{{/each}}
+{{/if}}
+{{/each}}
+|===
+
+{{/if}}
+
+{{#if this.tasks_step3}}
+
+.Adoption step 3. Complete these controls after adoption step 2.
+[cols="2,3,3"]
+|===
+| Internal control | Assessment | Evidence
+
+{{#each this.tasks_step3}}
+
+{{#if (eq this.[base/fieldTypes/assessment].value "ok")}}
+a| * [x] {{#xref}} "cardKey": "{{this.key}}" {{/xref}}
+{{else if (eq this.[base/fieldTypes/assessment].value "notApplicable")}}
+a| * [x] {{#xref}} "cardKey": "{{this.key}}" {{/xref}}
+{{else}}
+a| * [ ] {{#xref}} "cardKey": "{{this.key}}" {{/xref}}
+{{/if}}
+| *{{this.[base/fieldTypes/assessment].displayValue}}*: {{this.[base/fieldTypes/assessmentExplanation]}}
+{{#if (eq this.[base/fieldTypes/assessment].value "notApplicable")}}
+| Not required
+{{else}}
+a|
+{{#each this.evidence}} 
+* {{#xref}} "cardKey": "{{this.key}}" {{/xref}}
+{{/each}}
+{{/if}}
+{{/each}}
+|===
+
+{{/if}}
+
+{{/each}}
+

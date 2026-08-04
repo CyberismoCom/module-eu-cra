@@ -1,6 +1,6 @@
 {
-    "displayName": "Technology selection",
-    "description": "A security review of a 3rd party technology",
+    "displayName": "Technology assessment",
+    "description": "A security and quality review of a 3rd party technology",
     "category": "Secure development reviews",
     "name": "secdeva/templates/technology"
 }

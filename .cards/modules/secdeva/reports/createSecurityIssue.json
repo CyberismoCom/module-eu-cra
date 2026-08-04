@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/createSecurityIssue",
+    "displayName": "Create a security issue",
+    "category": "Secure development",
+    "description": "Create a new security requirement. Used within assets cards"
+}

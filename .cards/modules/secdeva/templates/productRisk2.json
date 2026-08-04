@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/templates/productRisk2",
+    "displayName": "Product security risk",
+    "description": "A cybersecurity risk present in a product.",
+    "category": "Secure development"
+}

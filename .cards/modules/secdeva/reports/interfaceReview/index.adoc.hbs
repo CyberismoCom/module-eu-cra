@@ -1,0 +1,51 @@
+
+{{#each results}}
+
+{{#if interfaces}}
+
+.Interfaces
+[cols="3,3,2,2"]
+|===
+| Asset | Interface | External? | Crosses trust boundary?
+
+{{#each interfaces}}
+|xref:{{this.[secdeva/fieldTypes/interfaceElementCardKey]}}.adoc[{{this.[secdeva/fieldTypes/interfaceElementTitle]}}]
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.[secdeva/fieldTypes/isExternal].displayValue}}
+|{{this.[secdeva/fieldTypes/crossesTrustBoundary].displayValue}}
+
+{{/each}}
+
+|===
+
+{{else}}
+
+There are no interfaces in the threat model.
+
+{{/if}}
+
+{{#if physicalConnections}}
+
+.Physical ports and connections
+[cols="3,3,1, 2,2"]
+|===
+| Asset | Physical connection | Count |External? | Crosses trust boundary?
+
+{{#each physicalConnections}}
+|xref:{{this.[secdeva/fieldTypes/physicalConnectionElementCardKey]}}.adoc[{{this.[secdeva/fieldTypes/physicalConnectionElementTitle]}}]
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.[secdeva/fieldTypes/physicalConnectionCount]}}
+|{{this.[secdeva/fieldTypes/isExternal].displayValue}}
+|{{this.[secdeva/fieldTypes/crossesTrustBoundary].displayValue}}
+
+{{/each}}
+
+|===
+
+{{else}}
+
+There are no physical connections in the threat model.
+
+{{/if}}
+
+{{/each}}

@@ -1,0 +1,35 @@
+selectAll.
+
+result(result).
+
+threatModelEntity(Card) :-
+  ancestor(Card, {{cardKey}}).
+
+threatModelEntity({{cardKey}}).
+
+resultField(result, "issueRegister", Register, "shortText") :-
+  field(Register, "base/fieldTypes/identifier", "secdeva_register_security-issues"),
+  secdeva_closestProject({{cardKey}}, Project),
+  secdeva_closestProject(Register, Project).
+
+resultField(result, "riskRegister", Register, "shortText") :-
+  field(Register, "base/fieldTypes/identifier", "secdeva_register_risks"),
+  secdeva_closestProject({{cardKey}}, Project),
+  secdeva_closestProject(Register, Project).
+
+childResult(result, Risk, "risks") :-
+  field(Risk, "cardType", "ismsa/cardTypes/risk"),
+  link(AffectedCard, Risk, "ismsa/linkTypes/presentsRisk"),
+  secdeva_closestProject(Risk, Project),
+  secdeva_closestProject({{cardKey}}, Project).
+
+childResult(result, Issue, "securityIssues") :-
+  field(Issue, "cardType", "secdeva/cardTypes/securityIssue"),
+  link(AffectedCard, Issue, "ismsa/linkTypes/presentsRisk"),
+  threatModelEntity(AffectedCard).
+
+childResult(Card, AffectedCard, "affectedCard") :-
+   childResult(result, Card, _),
+   link(AffectedCard, Card, "ismsa/linkTypes/presentsRisk").
+
+orderBy("title", "ASC").

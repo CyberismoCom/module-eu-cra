@@ -1,6 +1,6 @@
 {
-    "displayName": "Interface specification",
+    "displayName": "Interface specification (deprecated)",
     "description": "Security documentation of an exposed interface",
-    "category": "Secure development specifications",
+    "category": "Deprecated",
     "name": "secdeva/templates/interface"
 }

@@ -1,0 +1,17 @@
+{{#if results}}
+
+[cols="4,3,2"]
+|===
+| Decision | Owner  | Status
+
+{{#each results}}
+| xref:{{this.key}}.adoc[{{this.title}}]
+| {{this.[base/fieldTypes/owner]}}
+| {{this.workflowState}}
+{{/each}}
+|===
+{{else}}
+
+There are no decisions in this project.
+
+{{/if}}

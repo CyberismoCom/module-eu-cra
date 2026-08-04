@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/createSecurityRequirement",
+    "displayName": "Create a security requirement for asset",
+    "category": "Secure development specifications",
+    "description": "Create a new security requirement. Used within assets cards"
+}

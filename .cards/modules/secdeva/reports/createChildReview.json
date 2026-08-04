@@ -1,6 +1,6 @@
 {
-    "displayName": "Create a review",
-    "description": "Create a new review, if needed",
-    "category": "Secure development",
+    "displayName": "Create a review (deprecated)",
+    "description": "Create a new review, if needed. Old version, included for backward compatibility",
+    "category": "Deprecated",
     "name": "secdeva/reports/createChildReview"
 }

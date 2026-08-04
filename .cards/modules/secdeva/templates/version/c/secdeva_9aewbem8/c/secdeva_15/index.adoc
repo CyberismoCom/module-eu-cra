@@ -2,11 +2,9 @@
 
 The purpose of the release review is to ensure that we have complete visibility on the state of cybersecurity management for the release, so that we can accept the release from the point of view of security. The release review can be accepted either by noting that all security work has been done and tracked to closure, or that you accept the risk related to some unfinished security work.
 
-=== Secure development tasks
+=== Internal controls
 
-All secure development tasks should be *Closed as done* or *Closed as not applicable* and the review of the task should not be expired.
-
-See the status of secure development tasks in the parent card.
+Internal controls should be in an acceptable state. See {{#report}}"name": "xref", "identifier": "secdeva_status-and-next-steps"{{/report}}.
 
 * [ ] OK
 * [ ] Not OK
@@ -15,9 +13,7 @@ Comments, links:
 
 === Security issue status
 
-Check that Security issues affecting this version have been tracked to closure or deferred to a future release with a justified reason.
-
-See the status in the parent card.
+Check that Security issues affecting this version have been tracked to closure or deferred to a future release with a justified reason. See {{#report}}"name": "xref", "identifier": "secdeva_status-and-next-steps"{{/report}}.
 
 Notice that products must not be released if there are any known exploitable vulnerabilities.
 
@@ -50,7 +46,7 @@ Comments, links:
 
 === Automated policy checks
 
-Check the status of automated policy checks in the parent card of this card.
+Check the status of automated policy checks in the project. See {{#report}}"name": "xref", "identifier": "secdeva_status-and-next-steps"{{/report}}.
 
 * [ ] OK
 * [ ] Not OK
@@ -121,13 +117,13 @@ Comments, links:
 
 #TODO: add here a conclusion, whether the release can be done and risks from the remaining open issues can be accepted, or whether the release cannot be made before specific items have been tracked to closure.#
 
-== Action items
+== Identified security issues
 
 {{#createCards}}
-  "template": "base/templates/oneTimeTask",
-  "buttonLabel": "Add a new task"
+  "template": "secdeva/templates/securityIssue",
+  "buttonLabel": "Create a new security issue"
 {{/createCards}}
 
 {{#report}}
-  "name": "base/reports/childrenTable"
+  "name": "secdeva/reports/securityIssueList"
 {{/report}}

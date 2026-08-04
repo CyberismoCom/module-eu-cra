@@ -1,0 +1,14 @@
+{
+    "title": "Security issues",
+    "cardType": "secdeva/cardTypes/securityIssueRegister",
+    "workflowState": "",
+    "rank": "0|bw",
+    "secdeva/fieldTypes/acceptableSeverity": null,
+    "secdeva/fieldTypes/deferrableSeverity": null,
+    "ismsa/fieldTypes/adoptionStep": null,
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": null,
+    "lastUpdated": "2026-07-28T15:05:59.405Z",
+    "links": [],
+    "base/fieldTypes/identifier": "secdeva_register_security-issues"
+}

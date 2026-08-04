@@ -1,0 +1,7 @@
+{
+    "name": "secdeva/calculations/roleAssignments",
+    "displayName": "Role assignments",
+    "description": "Hide archived role assignments in the tree view.",
+    "calculation": "calculation.lp",
+    "category": "Secure development"
+}

@@ -1,0 +1,10 @@
+{
+    "title": "Configuration item: test reports",
+    "cardType": "secdeva/cardTypes/configurationItem",
+    "workflowState": "",
+    "rank": "0|i",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": null,
+    "lastUpdated": "2026-07-21T07:44:44.060Z",
+    "links": []
+}

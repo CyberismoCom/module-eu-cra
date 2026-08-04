@@ -1,0 +1,30 @@
+== Introduction
+
+This document is a review of the security requirement management
+
+== Review checklist
+
+=== Scope and boundaries and IEC 62443 SL-C
+
+The security requirements register {{#report}} "name": "secdeva/reports/xref", "identifier": "secdeva_register_security-requirements" {{/report}} includes an up-to-date description about the scope and boundaries of the product or system, and the required IEC 62443 security capability level (SL-C). 
+
+* [ ] OK
+* [ ] Not OK
+
+=== Requirement identification
+
+Security requirements have been identified in sufficient level of detail and recorded in the security requirement register:
+
+* [ ] OK
+* [ ] Not OK
+
+== Identified security issues from this review
+
+{{#createCards}}
+  "template": "secdeva/templates/securityIssue",
+  "buttonLabel": "Create a new security issue"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssueList"
+{{/report}}

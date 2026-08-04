@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/templates/requirementManagementReview",
+    "displayName": "Review of security requirement management",
+    "category": "Secure development reviews",
+    "description": "A review of security requirement management in a development project"
+}

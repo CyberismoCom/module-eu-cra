@@ -1,0 +1,15 @@
+{
+    "title": "Document review - Use of cryptography",
+    "cardType": "base/cardTypes/reviewTask",
+    "workflowState": "",
+    "rank": "0|a",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/reviewPeriod": null,
+    "base/fieldTypes/lastReviewed": null,
+    "base/fieldTypes/justification": null,
+    "base/fieldTypes/adoptionStep": null,
+    "base/fieldTypes/identifier": null,
+    "lastUpdated": "2026-08-02T16:33:16.130Z",
+    "links": []
+}

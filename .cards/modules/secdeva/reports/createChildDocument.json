@@ -1,6 +1,6 @@
 {
-    "displayName": "Create a document",
-    "description": "Create a new controlled document, if needed",
-    "category": "Secure development",
+    "displayName": "Create a document (deprecated)",
+    "description": "Create a new controlled document, if needed. Old version, included for backward compatibility",
+    "category": "Deprecated",
     "name": "secdeva/reports/createChildDocument"
 }

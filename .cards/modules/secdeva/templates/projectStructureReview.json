@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/templates/projectStructureReview",
+    "displayName": "Project structure review",
+    "category": "Secure development reviews",
+    "description": "A review of whether the development project has been appropriately divided into subprojects."
+}

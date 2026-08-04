@@ -1,0 +1,46 @@
+{{#each results}}
+{{#if this.register.[base/fieldTypes/reviewPeriod]}}
+The review period in the periodic review register has been set to *{{this.register.[base/fieldTypes/reviewPeriod]}} days*.
+{{/if}}
+{{#if reviews}}
+{{#if (eq this.daysSincePreviousReview 0)}}
+The latest review is from today.
+{{else}}
+{{#unless this.daysSincePreviousReview}}
+You have not completed any periodic reviews yet
+{{/unless}}
+{{/if}}
+{{#if this.daysSincePreviousReview}}
+It has been *{{this.daysSincePreviousReview}} day(s)* since the previous review.
+{{/if}}
+{{#if this.reviewDue}}
+
+IMPORTANT: The project has reached its periodic review interval and requires a new periodic review
+{{/if}}
+
+[cols="3,1,3"]
+|===
+| Review | Status | Policy violations
+
+{{#each reviews}}
+| {{#xref}}"cardKey": "{{this.key}}"{{/xref}}
+| {{this.workflowState}}
+{{#if this.policyChecks.failures}}
+a|
+{{#each this.policyChecks.failures}}
+* {{this.title}}
+{{/each}}
+{{else}}
+|
+{{/if}}
+
+{{/each}}
+|===
+
+{{else}}
+
+You have not created any periodic reviews yet.
+
+{{/if}}
+
+{{/each}}

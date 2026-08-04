@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/risks",
+    "displayName": "Risks",
+    "description": "Summary of the risk register for a development project",
+    "category": "Secure development"
+}

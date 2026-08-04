@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/statusAndNextSteps",
+    "displayName": "Status and next steps",
+    "category": "Secure development",
+    "description": "Produces the contents of the Status and next steps page"
+}

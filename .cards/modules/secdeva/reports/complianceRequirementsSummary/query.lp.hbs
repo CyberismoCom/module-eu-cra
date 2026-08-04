@@ -9,12 +9,12 @@ childResult(Requirement, Implementation, "implementedBy") :-
 
 childResult(Requirement, Evidence, "evidencedBy") :-
     result(Requirement),
-    link(Evidence, Requirement, "secdeva/linkTypes/evidences").
+    link(Evidence, Requirement, "ismsa/linkTypes/evidences").
 
 childResult(Requirement, Evidence, "evidencedBy") :-
     result(Requirement),
     link(Implementation, Requirement, "ismsa/linkTypes/implements"),
-    link(Evidence, Implementation, "secdeva/linkTypes/evidences").
+    link(Evidence, Implementation, "ismsa/linkTypes/evidences").
 
 field(Card, "compoundRank", Rank) :-
     card(Card),

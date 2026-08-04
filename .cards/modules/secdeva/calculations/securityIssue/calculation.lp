@@ -1,3 +1,7 @@
+hiddenInTreeView(Issue) :-
+  ancestor(Issue, SecurityIssueRegister),
+  field(SecurityIssueRegister, "base/fieldTypes/identifier", "secdeva_register_security-issues").  
+
 transitionDenied(
     Issue,
     "Analyse",
@@ -9,6 +13,8 @@ transitionDenied(
 policyCheckFailure(Issue, "Secure development", "Severity is required", "Severity is a required field.") :-
         field(Issue, "cardType", "secdeva/cardTypes/securityIssue"),
         not field(Issue, "workflowStateCategory", "initial"),
+        not field(Issue, "workflowState", "Closed as duplicate"),
+        not field(Issue, "workflowState", "Closed as not applicable"),
         not field(Issue, "secdeva/fieldTypes/severity", _).
 
 transitionDenied(
@@ -22,6 +28,8 @@ transitionDenied(
 policyCheckFailure(Issue, "Secure development", "Root cause category is required", "Root cause category is a required field.") :-
         field(Issue, "cardType", "secdeva/cardTypes/securityIssue"),
         not field(Issue, "workflowStateCategory", "initial"),
+        not field(Issue, "workflowState", "Closed as duplicate"),
+        not field(Issue, "workflowState", "Closed as not applicable"),
         not field(Issue, "secdeva/fieldTypes/rootCauseCategory", _).
 
 transitionDenied(
@@ -35,6 +43,8 @@ transitionDenied(
 policyCheckFailure(Issue, "Secure development", "Reporting is required", "Reporting is a required field.") :-
         field(Issue, "cardType", "secdeva/cardTypes/securityIssue"),
         not field(Issue, "workflowStateCategory", "initial"),
+        not field(Issue, "workflowState", "Closed as duplicate"),
+        not field(Issue, "workflowState", "Closed as not applicable"),
         not field(Issue, "secdeva/fieldTypes/reporting", _).
 
 transitionDenied(

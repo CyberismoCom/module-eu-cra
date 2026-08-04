@@ -1,0 +1,8 @@
+== Review instructions
+
+Review that the attack surface specification covers all ingress and egress avenues. Pay special attention to:
+
+* File shares and weak ACLs
+* Open ports
+* Services running with elevated privileges
+* Unused services and protocols

@@ -1,12 +1,13 @@
 {
     "cardType": "base/cardTypes/review",
-    "title": "Software update management for (Scope)",
+    "title": "Review of software update management - (Scope)",
     "workflowState": "",
     "rank": "0|a",
-    "lastUpdated": "2024-09-13T14:19:36.412Z",
+    "lastUpdated": "2026-07-30T11:09:24.228Z",
     "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
     "base/fieldTypes/reviewPeriod": 365,
     "base/fieldTypes/lastReviewed": null,
-    "base/fieldTypes/identifier": "secdeva_review_software-update-management"
+    "base/fieldTypes/identifier": "secdeva_review_software-update-management",
+    "links": []
 }

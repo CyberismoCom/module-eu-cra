@@ -1,6 +1,6 @@
 {
-    "displayName": "Defect management review",
-    "description": "A review of defect management in a development project",
+    "displayName": "Review of security issue management",
+    "description": "A review of security issue management in a development project",
     "category": "Secure development reviews",
     "name": "secdeva/templates/defectManagementReview"
 }

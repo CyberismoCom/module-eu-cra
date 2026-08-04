@@ -15,7 +15,8 @@
         "secdeva/cardTypes/process",
         "secdeva/cardTypes/dataStore",
         "secdeva/cardTypes/trustBoundary",
-        "secdeva/cardTypes/interface"
+        "secdeva/cardTypes/interface",
+        "secdeva/cardTypes/physicalConnection"
     ],
     "enableLinkDescription": true,
     "displayName": "Dataflow",

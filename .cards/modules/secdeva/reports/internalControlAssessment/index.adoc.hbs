@@ -1,0 +1,37 @@
+{{#each results}}
+=== Automated checks
+
+{{#if (eq this.workflowState "Open")}}
+
+* [ ] Scoping: The workflow state of this task is *Open* (scoping not done).
+* [ ] Assessment: To be checked, once the task has been scoped.
+
+Determine, whether the task is in scope and select an appropriate workflow transition.
+
+{{else}}
+
+{{#if (eq this.workflowState "Out of scope")}}
+
+* [x] Scoping has been done. This task is out of scope.
+* [x] Assessment: There is no need to check evidence.
+
+{{else}}
+
+* [x] Scoping has been done. This task is in scope.
+{{#if (eq this.[base/fieldTypes/assessment].value "ok")}}
+* [x] Assessment: *{{this.[base/fieldTypes/assessment].displayValue}}*: {{this.[base/fieldTypes/assessmentExplanation]}}
+{{else}}
+* [ ] Assessment: *{{this.[base/fieldTypes/assessment].displayValue}}*: {{this.[base/fieldTypes/assessmentExplanation]}}
+{{/if}}
+
+{{#report}}
+  "name": "ismsa/reports/evidenceAssessments"
+{{/report}}
+
+=== Manual checks
+
+* Check, if the evidence should be revisited because of any recent changes.
+
+{{/if}}
+{{/if}}
+{{/each}}

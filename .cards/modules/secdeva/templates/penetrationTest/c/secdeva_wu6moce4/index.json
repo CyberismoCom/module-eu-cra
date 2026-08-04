@@ -1,0 +1,13 @@
+{
+    "title": "Penetration test for (Scope)",
+    "cardType": "base/cardTypes/review",
+    "workflowState": "",
+    "rank": "0|b",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": null,
+    "base/fieldTypes/lastReviewed": null,
+    "base/fieldTypes/reviewPeriod": null,
+    "lastUpdated": "2026-08-03T09:11:48.161Z",
+    "links": [],
+    "base/fieldTypes/identifier": "secdeva_test_penetration"
+}

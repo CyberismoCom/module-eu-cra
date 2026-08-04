@@ -1,0 +1,113 @@
+== Introduction
+
+This document is a review of the cybersecurity risk management.
+
+
+== Risk identification
+
+Risks have been identified in sufficient level of detail and recorded in the risk register:
+
+* [ ] OK
+* [ ] Not OK
+
+Review notes about the overall status of risk identification:
+
+#TODO: Describe any notes and remarks about the review here#
+
+You can cross check your identified risks against the checklists in the appendix to ensure that you did not miss anything important.
+
+== Risk treatment
+
+Once risks have been identified, you must assess them to determine their priority, plan and implement their treatment, and monitor the risks that could not be tracked to closure.
+
+There are automatic policy checks to ensure that risk treatment is working. Check the list of risks in {{#report}}"name": "secdeva/reports/xref", "identifier": "secdeva_register_risks"{{/report}} and fix any policy check failures. 
+
+Review notes about the overall status of risk treatment:
+
+#TODO: Describe any notes and remarks about the review here#
+
+== Identified security issues from this review
+
+{{#createCards}}
+  "template": "secdeva/templates/securityIssue",
+  "buttonLabel": "Create a new security issue"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssueList"
+{{/report}}
+
+
+'''
+
+.*Appendix: Risk identification checklist*
+[%collapsible]
+=====
+
+*Identify risks related to information systems or products*
+
+If the development project is developing an information system, then consider the following types of risks:
+
+* Leaks from/corruption of/destruction of important databases or data storage
+* Loss of IPR
+* Loss or major changes at key suppliers, supply chain attack
+* Risks that may realise if the system or product is not available
+* Insecure development/testing/production environments
+* Lack of proper (internal/customer) documentation
+* Defects in software maintenance/updating
+* Insufficient protection of cryptographic assets (e.g., signing keys)
+
+*Identify risks related to products*
+
+If the development project is developing a product, the cybersecurity risk assessment should comprise:
+
+General:
+
+* Risks that may impact the health or safety of users. Interference of safety functions.
+* Risks based on the intended purpose and reasonably foreseeable use of the product
+* Risks related to the conditions of use or the operational environment
+* Risks that affect any valuable assets that should be protected
+* The length of time the product is expected to be in use
+
+Confidentiality:
+
+* Leaking customer information such as configuration or production data. Consired both information at rest and in transit.
+* Leaking personal information. Consired both information at rest and in transit.
+* Unplanned disposal process or deficiencies in the procedures for removing data
+
+Integrity:
+
+* Insecure default settings, which may lead to insecure configurations being used in the field
+* Unauthorised modification of configuration or parameters. Consired both information at rest and in transit.
+* Malformed or tampered production data. Consired both information at rest and in transit.
+* Ransomware or malicious code infection
+* Supply chain attacks on software or hardware components
+* Unauthorised physical access to the product
+* Insufficient software update support, such as lack of automation risking that updates are not done
+* Deficiencies in product hardening, leading to unnecessarily exposed attack surface
+
+Availability:
+
+* Unavailability of the product functionality, especially the essential functions
+* Unavailability of customer systems due to a product security issue
+* Unavailability of mechanisms to detect security incidents
+* Destruction or corruption of key databases or data
+
+IPR:
+
+* Theft of intellectual property
+* Counterfeit products
+
+*Identify risks from security issues*
+
+When applying the secure development process, you will identify security-related issues in design, implementation, 3rd party technology, documentation, and testing. Consider, whether there are following kinds of high-level cybersecurity risks:
+
+* Risks that may happen due to high-severity security issues
+* Risks that may happen due toa chain or a combination of multiple security issues
+* Risks that may happen due to a large number of open security issues
+
+{{#report}}
+  "name": "secdeva/reports/securityIssuesNeedingAttention"
+{{/report}}
+
+=====

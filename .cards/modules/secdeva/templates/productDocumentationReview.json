@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/templates/productDocumentationReview",
+    "displayName": "Product documentation review",
+    "description": "Review of the security considerations in the product documentation for users",
+    "category": "Secure development reviews"
+}

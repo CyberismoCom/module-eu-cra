@@ -1,6 +1,6 @@
 {
     "name": "secdeva/templates/threat",
-    "displayName": "Security threat",
+    "displayName": "Security issue from threat modelling (deprecated)",
     "description": "A security issue identified in threat modelling",
-    "category": "Security issues"
+    "category": "Deprecated"
 }

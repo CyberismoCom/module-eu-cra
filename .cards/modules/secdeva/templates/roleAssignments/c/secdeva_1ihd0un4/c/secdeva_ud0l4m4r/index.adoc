@@ -1,0 +1,3 @@
+Handles security incidents, vulnerability reports, and coordinated disclosure.
+
+This card assigns a person to a role. Add the assignee in the *Owner* field.

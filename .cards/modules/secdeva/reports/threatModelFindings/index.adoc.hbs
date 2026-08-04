@@ -1,0 +1,104 @@
+{{#each results}}
+
+=== Risks
+
+[TIP]
+====
+Create a risk if you identify a cyber threat — something that can cause harm by exploiting one or more vulnerabilities.
+
+If the risk affects a certain element such as a process or a data store, then create it under that element.
+====
+
+{{#if this.risks}}
+.All risks in this project
+[cols="5,2,3"]
+|===
+| Risk | State | Affected assets
+
+{{#each this.risks}}
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.workflowState}}
+{{#if this.affectedCard}}
+|
+{{#each this.affectedCard}}
+* xref:{{this.key}}.adoc[{{this.title}}]
+{{/each}}
+{{else}}
+|
+{{/if}}
+{{/each}}
+
+|===
+
+{{else}}
+
+No risks have been identified in this threat model.
+
+{{/if}}
+
+{{#createCards}}
+    "template": "secdeva/templates/productRisk2",
+    "buttonLabel": "Create a risk that affects the entire product",
+    "cardKey": "{{riskRegister}}",
+    "link": {
+      "linkType": "ismsa/linkTypes/presentsRisk",
+      "direction": "outbound",
+      "cardKey": "{{../cardKey}}"
+    }
+{{/createCards}}
+
+=== Security issues
+
+[TIP]
+====
+Create a security issue if you identify a vulnerability — a weakness that a threat could exploit.
+
+If the security issue affects a certain element such as a process or a data store, then create it under that element.
+
+====
+
+{{#if this.securityIssues}}
+
+.Security issues related to the assets in the threat model
+[cols="5,2,3"]
+|===
+| Security issue | State | Affected assets
+
+{{#each this.securityIssues}}
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.workflowState}}
+{{#if this.affectedCard}}
+|
+{{#each this.affectedCard}}
+* xref:{{this.key}}.adoc[{{this.title}}]
+{{/each}}
+{{else}}
+|
+{{/if}}
+{{/each}}
+
+|===
+
+{{#each this.risks}}
+{{/each}}
+
+{{else}}
+
+No security issues have been identified in this threat model.
+
+{{/if}}
+
+See the security issue register ({{#report}}"name": "secdeva/reports/xref", "identifier": "secdeva_register_security-issues"{{/report}}) for a complete list of risks in this project.
+
+{{#createCards}}
+    "template": "secdeva/templates/securityIssue",
+    "buttonLabel": "Create a security issue that affects the entire product",
+    "cardKey": "{{issueRegister}}",
+    "link": {
+      "linkType": "ismsa/linkTypes/presentsRisk",
+      "direction": "outbound",
+      "cardKey": "{{../cardKey}}"
+    }
+{{/createCards}}
+
+{{/each}}

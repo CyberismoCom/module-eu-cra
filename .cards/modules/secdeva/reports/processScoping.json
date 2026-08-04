@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/processScoping",
+    "displayName": "Process scoping",
+    "description": "A summary of how internal controls have been scoped",
+    "category": "Secure development"
+}

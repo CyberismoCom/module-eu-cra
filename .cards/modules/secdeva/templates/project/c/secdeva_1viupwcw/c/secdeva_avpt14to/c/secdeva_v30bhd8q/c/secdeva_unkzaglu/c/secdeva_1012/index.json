@@ -1,0 +1,16 @@
+{
+    "cardType": "ismsa/cardTypes/internalControl",
+    "title": "Manage 3rd party vulnerabilities",
+    "workflowState": "",
+    "rank": "0|a",
+    "lastUpdated": "2026-07-30T10:11:25.299Z",
+    "links": [],
+    "base/fieldTypes/adoptionStep": "step1",
+    "base/fieldTypes/justification": null,
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "ismsa/fieldTypes/internalControlReviewPeriod": "3months",
+    "base/fieldTypes/reviewMonth": "march",
+    "base/fieldTypes/lastReviewed": null,
+    "base/fieldTypes/identifier": "secdeva_control_vulnerability-management"
+}

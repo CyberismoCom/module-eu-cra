@@ -1,0 +1,19 @@
+selectAll.
+
+result(result).
+
+childResult(result, Document, "specifications") :-
+    link({{cardKey}}, Document, "base/linkTypes/relatesTo"),
+    field(Document, "base/fieldTypes/identifier", "secdeva_document_design-specification").
+
+childResult(result, Document, "specifications") :-
+    link(Document, {{cardKey}}, "base/linkTypes/relatesTo"),
+    field(Document, "base/fieldTypes/identifier", "secdeva_document_design-specification").
+
+
+childObject(result, Phase, "phase") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    field(Phase, "base/fieldTypes/identifier", "secdeva_phase_design"),
+    secdeva_closestProject(Phase, Project).
+
+orderBy("rank", "ASC").

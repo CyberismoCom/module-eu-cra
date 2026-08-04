@@ -1,0 +1,41 @@
+selectAll.
+
+result(result).
+
+% Interfaces
+
+childResult(result, Interface, "interfaces") :-
+    field(Interface, "cardType", "secdeva/cardTypes/interface"),
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(Interface, Project).
+
+field(Interface, "secdeva/fieldTypes/interfaceElementCardKey", Element) :-
+    childResult(result, Interface, "interfaces"),
+    parent(Interface, Element).
+
+field(Interface, "secdeva/fieldTypes/interfaceElementTitle", Title) :-
+    childResult(result, Interface, "interfaces"),
+    parent(Interface, Element),
+    field(Element, "title", Title).
+
+% Physical ports and connections
+
+childResult(result, PhysicalConnection, "physicalConnections") :-
+    field(PhysicalConnection, "cardType", "secdeva/cardTypes/physicalConnection"),
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(PhysicalConnection, Project).
+
+field(PhysicalConnection, "secdeva/fieldTypes/physicalConnectionElementCardKey", Element) :-
+    childResult(result, PhysicalConnection, "physicalConnections"),
+    parent(PhysicalConnection, Element).
+
+field(PhysicalConnection, "secdeva/fieldTypes/physicalConnectionElementTitle", Title) :-
+    childResult(result, PhysicalConnection, "physicalConnections"),
+    parent(PhysicalConnection, Element),
+    field(Element, "title", Title).
+
+order(2, "interfaces", 1, "secdeva/fieldTypes/interfaceElementTitle", "ASC").
+order(2, "interfaces", 2, "title", "ASC").
+
+order(2, "physicalConnections", 1, "secdeva/fieldTypes/physicalConnectionElementTitle", "ASC").
+order(2, "physicalConnections", 2, "title", "ASC").

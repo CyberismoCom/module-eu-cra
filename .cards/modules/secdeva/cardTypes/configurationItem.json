@@ -1,0 +1,24 @@
+{
+    "name": "secdeva/cardTypes/configurationItem",
+    "displayName": "Configuration item",
+    "workflow": "base/workflows/page",
+    "customFields": [
+        {
+            "name": "base/fieldTypes/owner",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "base/fieldTypes/informationClassification",
+            "displayName": "",
+            "isCalculated": false
+        }
+    ],
+    "alwaysVisibleFields": [
+        "base/fieldTypes/owner",
+        "base/fieldTypes/informationClassification"
+    ],
+    "optionallyVisibleFields": [],
+    "description": "Describes a configuration item as part of a configuration management plan",
+    "category": "Secure development specifications"
+}

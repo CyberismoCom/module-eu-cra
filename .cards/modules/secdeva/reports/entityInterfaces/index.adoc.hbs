@@ -40,9 +40,31 @@ There are no dataflows to or from this entity.
 
 {{else}}
 
-There are no interface specifications.
+There are no interfaces.
 
 {{/if}}
 
+{{#if physicalConnections}}
+
+.Physical ports and connections
+[cols="3,3,1"]
+|===
+| Element | Physical connection | Count
+
+{{#each physicalConnections}}
+|xref:{{this.[secdeva/fieldTypes/physicalConnectionElementCardKey]}}.adoc[{{this.[secdeva/fieldTypes/physicalConnectionElementTitle]}}]
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.[secdeva/fieldTypes/physicalConnectionCount]}}
+
+
+{{/each}}
+
+|===
+
+{{else}}
+
+There are no physical connections.
+
+{{/if}}
 
 {{/each}}

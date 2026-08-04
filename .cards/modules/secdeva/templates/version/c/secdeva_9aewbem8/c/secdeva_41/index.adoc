@@ -39,15 +39,3 @@ The configuration management process requires that all artifacts of the included
 === Product content
 
 #TODO: Add here links to any content that is included in this product version, such as source code#
-
-=== Manually tracked technology selections
-
-#TODO: Add here the versions of such included 3rd party technologies, whose version information is not managed automatically, for example in a source code repository.#
-
-[width="100%",cols="34%,33%,33%",options="header",]
-|===
-|*Technology Vendor* |*Technology Name* |*Technology Version*
-| (vendor)
-| (technology)
-| (version)
-|===

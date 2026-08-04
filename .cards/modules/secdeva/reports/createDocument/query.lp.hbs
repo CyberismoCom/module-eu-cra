@@ -1,0 +1,14 @@
+selectAll.
+
+result(result).
+
+childObject(result, Phase, "phase") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    field(Phase, "base/fieldTypes/identifier", "{{phase}}"),
+    secdeva_closestProject(Phase, Project).
+
+childResult(result, Document, "documents") :-
+    link(Document, {{cardKey}}, "ismsa/linkTypes/evidences"),
+    field(Document, "cardType", "base/cardTypes/controlledDocument").
+
+orderBy("rank", "ASC").

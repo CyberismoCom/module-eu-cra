@@ -1,0 +1,44 @@
+{{#graph}}
+  "model": "secdeva/graphModels/assetsRisksControls",
+  "view": "ismsa/graphViews/asset"
+{{/graph}}
+
+== Asset description
+
+#TODO add asset description and/or link#
+
+== Related risks
+
+{{#report}}
+  "name": "secdeva/reports/createRisk"
+{{/report}}
+
+== Related security issues
+
+{{#report}}
+  "name": "secdeva/reports/createSecurityIssue"
+{{/report}}
+
+== Related security requirements
+
+{{#report}}
+  "name": "secdeva/reports/createSecurityRequirement"
+{{/report}}
+
+== Related technology assessments
+
+{{#report}}
+  "name": "secdeva/reports/createTechnologyAssessment"
+{{/report}}
+
+== Related decisions
+
+{{#report}}
+  "name": "secdeva/reports/createDecision"
+{{/report}}
+
+== Related design specifications
+
+{{#report}}
+  "name": "secdeva/reports/createDesignSpecification"
+{{/report}}

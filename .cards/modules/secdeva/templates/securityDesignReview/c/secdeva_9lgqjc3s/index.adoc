@@ -1,0 +1,148 @@
+== Introduction
+
+This page documents the results of a security design review.
+
+== Product overview
+
+This security design review concerns the following scope:
+
+#TODO: describe the scope of the review#
+
+== Design related to security requirements and threats
+
+=== Design of security requirements
+
+If security requirements have been identified, then check that the _design_ addresses the security requirements adequately.
+
+Check that each significant design change is reviewed to determine that there are no security requirements that are not addressed by the defense in depth strategy.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Design of threat mitigations
+
+If security issues have been identified in threat modeling, then check that the _design_ mitigates the identified issues.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Threat model status
+
+If issues were found regarding how either design or the implementation addresses security threats, then check that the threat model is up to date.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+== Secure design best practices
+
+The component or system design process incorporates secure design best practices. This applies to all features, not just security features.
+
+=== Keep It Simple, Stupid (KISS)
+
+Prefer designs that are simple and transparent. If there is a choice between a simple method and a complex method, use the simple method even if the complex method promises efficiency or elegance.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Principle of least privilege
+
+Every module must be able to access only the information and resources that are necessary for its legitimate purpose.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Defense in depth
+
+Protect data and functionality using multiple layers of security. One mistake (by a developer, user, administrator or operator) should not compromise overall security.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Attack surface reduction
+
+Limit the ways that an attacker could interact with the system. Disable unnecessary features and protocols.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Minimisation of data
+
+Only collect and process the minimum amount of data needed for the intended purpose.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Proven design
+
+Use proven security mechanisms instead of designing your own. For example, use established authentication protocols and cryptographic libraries.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== No single points of failure
+
+Design so that there is no single point of failure which, if compromised, would compromise the security of the system.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Sufficient capacity
+
+Ensure that the system has sufficient capacity to handle expected and unexpected load, preventing denial-of-service situations.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+=== Removing debug features
+
+Debug and development features must be removed or disabled before the product is released.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not Applicable
+
+Comments, links:
+
+== Security issues
+
+{{#createCards}}
+  "template": "secdeva/templates/securityIssue",
+  "buttonLabel": "Create a new security issue"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssueList"
+{{/report}}

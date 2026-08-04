@@ -1,0 +1,40 @@
+[TIP]
+====
+Create a technology assessment for significant 3rd party technologies such as databases, frameworks, or toolkits.
+You do not need to create assessments for smaller libraries and packages, as they are assessed as part of code review.
+====
+
+{{#each results}}
+
+{{#if technologies}}
+
+[caption=]
+.Existing technology assessments
+[cols="5,2"]
+|===
+| Technology | Workflow State
+
+{{#each technologies}}
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.workflowState}}
+{{/each}}
+
+|===
+
+Create another technology assessment, if needed:
+{{else}}
+You have not yet created or linked any technology assessments.
+{{/if}}
+
+{{#createCards}}
+    "template": "secdeva/templates/technology",
+    "buttonLabel": "Create a technology assessment",
+    "cardKey": "{{register.key}}",
+    "link": {
+      "linkType": "base/linkTypes/relatesTo",
+      "direction": "outbound",
+      "cardKey": "{{../cardKey}}"
+    }
+{{/createCards}}
+
+{{/each}}

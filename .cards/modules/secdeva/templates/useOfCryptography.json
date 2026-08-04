@@ -1,0 +1,6 @@
+{
+    "displayName": "Use of cryptography",
+    "description": "A specification of the use of cryptography",
+    "category": "Secure development documentation",
+    "name": "secdeva/templates/useOfCryptography"
+}

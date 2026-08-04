@@ -1,0 +1,15 @@
+{
+    "title": "Document review - Attack surface specification",
+    "cardType": "base/cardTypes/reviewTask",
+    "workflowState": "",
+    "rank": "0|b",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": null,
+    "base/fieldTypes/reviewPeriod": null,
+    "base/fieldTypes/lastReviewed": null,
+    "base/fieldTypes/justification": null,
+    "base/fieldTypes/adoptionStep": null,
+    "base/fieldTypes/identifier": null,
+    "lastUpdated": "2026-08-03T09:03:10.928Z",
+    "links": []
+}

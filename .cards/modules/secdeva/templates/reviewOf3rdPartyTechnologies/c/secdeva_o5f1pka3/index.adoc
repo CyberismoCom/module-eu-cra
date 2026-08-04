@@ -1,0 +1,43 @@
+== Introduction
+
+This document is a review of 3rd party technologies. This review focuses on the selection and documentation of the technologies. Vulnerabilities are reviewed separately.
+
+== Review 
+
+The following major 3rd party technologies have been identified:
+
+{{#report}}
+  "name": "secdeva/reports/projectTechnologies"
+{{/report}}
+
+== Technology assessments
+
+All major 3rd party technologies have been identified, and the relevant technology assessments have been approved.
+
+* [ ] Not OK
+* [ ] OK
+
+== Selection of libraries and packages
+
+For libraries and packages, where separate technology assessments are not necessary, check that the team's code review practice includes review of new 3rd party dependencies.
+
+* [ ] Not OK
+* [ ] OK
+
+== SBOM
+
+A software bill of materials (SBOM) has been drawn up, all 3rd party dependencies, libraries and packages are included in the software bill of materials (SBOM), and the SBOM is up to date.
+
+* [ ] Not OK
+* [ ] OK
+
+== Identified security issues from this review
+
+{{#createCards}}
+  "template": "secdeva/templates/securityIssue",
+  "buttonLabel": "Create a new security issue"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssueList"
+{{/report}}

@@ -1,10 +1,10 @@
 {
     "name": "secdeva/linkTypes/evidences",
-    "outboundDisplayName": "evidences",
-    "inboundDisplayName": "is evidenced by",
+    "outboundDisplayName": "evidences (deprecated)",
+    "inboundDisplayName": "is evidenced by (deprecated)",
     "sourceCardTypes": [],
     "destinationCardTypes": [],
     "enableLinkDescription": false,
     "displayName": "Evidences",
-    "description": "Links evidence to a secure development task it supports"
+    "description": "Links evidence to a secure development task it supports. Deprecated, use 'ismsa/linkTypes/evidences' instead."
 }

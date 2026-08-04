@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/projectInternalControls",
+    "displayName": "Project internal controls",
+    "category": "Secure development",
+    "description": "Tables of internal controls in different states for project status page"
+}

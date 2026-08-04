@@ -1,25 +1,31 @@
 == Introduction
 
-The risks and justifications for selecting a 3rd party technology must be documented when adopting 3rd party solutions such as
+This document is a technology assessment.
 
-* commercial off-the-shelf (COTS) with support
-* free/libre open source software (FLOSS, FOSS, OSS) with or without paid support https://www.gnu.org/philosophy/floss-and-foss.en.html[FLOSS and FOSS - GNU Project - Free Software Foundation]
-* software of unknown provenance (SOUP), any software of the previous categories or any binary solution with pedigree unproven on this field of industry
+.Instructions
+[%collapsible]
+====
+When adopting 3rd party solutions, the risks and justifications for the selection must be documented. Such solutions include:
 
-It is important to consider business compliance, intellectual property rights, user acceptance and risks throughout the projected life cycle: acquisition, integration, testing, maintenance and end-of-life. Not all the assets have to meet all the criteria. With a proper justification for accepting the related risk or deploying compensating security controls it is possible to adopt assets lacking according to these criteria.
+* Commercial off-the-shelf (COTS) with support
+* Free/libre open source software (FLOSS, FOSS, OSS), with or without paid support — see https://www.gnu.org/philosophy/floss-and-foss.en.html[FLOSS and FOSS]
+* Software of unknown provenance (SOUP): any of the above, or any binary solution without a proven pedigree in this field of industry
 
-The decision must involve the responsible architect and if there are business implications, then also involve a business responsible person in the decision. If you, as the technology selection responsible, business responsible or responsible architect, consider that you are not entitled to accept the risks, then the decision is escalated to architect team or management of the product according to the technology selection process.
+Consider business compliance, intellectual property rights, user acceptance and risks across the full life cycle: acquisition, integration, testing, maintenance and end-of-life. An asset need not meet every criterion — those falling short can still be adopted with proper justification for accepting the related risk or with compensating security controls.
 
-The technology can be adopted for use once the following conditions are met:
+The decision must involve the responsible architect, and any business implications must also involve a business responsible person. If you (as the technology selection responsible, business responsible or responsible architect) are not entitled to accept the risks, escalate to the architect team or product management per the technology selection process.
 
-* Technology selection checklist is filled, and the possible required escalations is concluded.
-* Identified risks can be accepted
-* Maintenance responsible is nominated
-* Vulnerability management and software update management for the technology is planned and documented
+Technology can be adopted once:
 
-Remember to inform all impacted stakeholders of the product about the decision!
+* The technology assessment checklist is filled and any required escalations are concluded;
+* Identified risks can be accepted;
+* A maintenance responsible is nominated;
+* Vulnerability management and software update management are planned and documented.
 
-== Technology selection checklist
+Remember to inform all impacted product stakeholders of the decision.
+====
+
+== Technology assessment checklist
 
 === Business goals
 
@@ -97,7 +103,7 @@ The technology is widely used, or already in use within the product.
 
 Comments, links:
 
-=== Overlapping technologies
+=== No overlapping technologies
 
 The technology is not redundant or overlapping with another technology that the product is already using for the same purpose. For example, if the product already includes a crypto library, ensure that this technology is not another, overlapping crypto library.
 
@@ -213,18 +219,15 @@ The support and maintenance responsibilities for the technology have been define
 
 Comments, links:
 
-== Conclusion on the technology selection
-
-How to decide about the technology selection
+== Conclusion on the technology assessment
 
 The technology can be adopted for use once the following conditions are met:
 
-* The owner of this document has filled in the technology selection checklist and conducted the possibly required escalations, so that the identified risks can be accepted
+* The owner of this document has filled in the technology assessment checklist and conducted the possibly required escalations, so that the identified risks can be accepted
 
 The proposed technology
 
 * [ ] is approved for use
 * [ ] is rejected for use
 
-for the planned purpose of #TODO: document the purpose#.
-
+for the purpose of #TODO: document the purpose#.

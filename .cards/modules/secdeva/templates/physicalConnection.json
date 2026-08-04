@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/templates/physicalConnection",
+    "displayName": "Physical connection",
+    "category": "Threat model",
+    "description": "A physical port or connection of a process or data store."
+}

@@ -1,0 +1,19 @@
+selectAll.
+
+result(result).
+
+childResult(result, Technology, "technologies") :-
+    link({{cardKey}}, Technology, "base/linkTypes/relatesTo"),
+    field(Technology, "cardType", "secdeva/cardTypes/technology").
+
+childResult(result, Technology, "technologies") :-
+    link(Technology, {{cardKey}}, "base/linkTypes/relatesTo"),
+    field(Technology, "cardType", "secdeva/cardTypes/technology").
+
+
+childObject(result, Register, "register") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    field(Register, "base/fieldTypes/identifier", "secdeva_register_technology-assessments"),
+    secdeva_closestProject(Register, Project).
+
+orderBy("rank", "ASC").

@@ -1,6 +1,6 @@
 {
-    "displayName": "Controlled document child cards",
-    "description": "The status of controlled documents",
-    "category": "Secure development",
+    "displayName": "Check controlled document evidence (deprecated)",
+    "description": "The status of controlled documents evidence of an internal control",
+    "category": "Deprecated",
     "name": "secdeva/reports/checkChildDocumentStatus"
 }

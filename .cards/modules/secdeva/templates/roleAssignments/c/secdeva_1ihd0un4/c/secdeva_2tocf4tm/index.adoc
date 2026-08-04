@@ -1,0 +1,3 @@
+Accountable for the product's overall security posture and secure development lifecycle.
+
+This card assigns a person to a role. Add the assignee in the *Owner* field.

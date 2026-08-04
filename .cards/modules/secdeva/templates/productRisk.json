@@ -1,6 +1,6 @@
 {
-    "displayName": "Product cybersecurity risk",
-    "description": "A cybersecurity risk present in a product.",
-    "category": "Cybersecurity management",
+    "displayName": "Product security risk (deprecated)",
+    "description": "A cybersecurity risk present in a product. Included for backward compatibility",
+    "category": "Deprecated",
     "name": "secdeva/templates/productRisk"
 }

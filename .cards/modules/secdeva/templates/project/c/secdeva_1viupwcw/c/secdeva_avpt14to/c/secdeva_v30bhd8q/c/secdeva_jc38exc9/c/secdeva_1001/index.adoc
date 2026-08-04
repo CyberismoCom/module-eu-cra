@@ -1,0 +1,44 @@
+.View diagram
+[%collapsible]
+====
+{{#graph}}
+  "model": "secdeva/graphModels/processDiagram",
+  "view": "secdeva/graphViews/processTask"
+{{/graph}}
+====
+
+People involved in the development projects are required to have sufficient security knowledge. Ensuring that the staff has a good cybersecurity competence is one of the most cost-effective ways to improve security.
+
+== How to decide if this control is required
+
+This task is required, if the project is responsible for ensuring the competence of the team. The task is not required, if competence is ensured on some other level, such as top level project or centrally.
+
+== How to implement
+
+Participating to security training is the recommended way to ensure competence.
+
+Encourage team members to take e-learning courses or to participate in instructor-led trainings according to their secure development role.
+
+Keep track of participation to mandatory trainings.
+
+Create a competence review document:
+
+{{#report}}
+  "name": "secdeva/reports/createReview",
+  "template": "secdeva/templates/competenceReview",
+  "buttonLabel": "Create a competence review",
+  "phase": "secdeva_phase_foundation"
+{{/report}}
+
+== Assessment
+
+{{#report}}
+  "name": "secdeva/reports/internalControlAssessment"
+{{/report}}
+
+== References
+
+* IEC 62443-4-1 SM-4
+* ISO 27001 7.2
+* ISO 27001 A6.3
+* EU CRA Annex I (1) (1)

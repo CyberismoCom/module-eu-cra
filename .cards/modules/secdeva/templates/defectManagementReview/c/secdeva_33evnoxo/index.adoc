@@ -1,6 +1,6 @@
 == Introduction
 
-This document records a review of defect management in the development project.
+This document records a review of security issue management in the development project.
 
 == Review checklist
 
@@ -38,18 +38,6 @@ Review the security-related issue management process in general. Examine the rec
 #TODO: if applicable, add a link or an attachment to external systems for more information or evidence.#
 
 #TODO: Describe any notes and remarks about the review here#
-
-== Version history
-
-[cols="1,1,3"]
-|===============
-|Version | Date | Changes/Author
-
-| 0.1
-| 2024-01-01
-| XYZ changed by N.N.
-
-|===============
 
 == Identified security issues from this review
 

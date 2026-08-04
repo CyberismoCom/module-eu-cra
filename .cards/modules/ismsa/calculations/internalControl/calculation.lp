@@ -22,18 +22,6 @@ field(Control, "base/fieldTypes/assessmentExplanation", "The control has been ma
   field(Control, "cardType", "ismsa/cardTypes/internalControl"),
   field(Control, "workflowState", "Out of scope").
 
-% Not OK because the internal control itself has failed policy checks
-
-field(Control, "base/fieldTypes/assessment", "notOk") :-
-  field(Control, "cardType", "ismsa/cardTypes/internalControl"),
-  field(Control, "workflowState", "In scope"),
-  base_policyCheckFailure(Control, _, _, _).
-
-field(Control, "base/fieldTypes/assessmentExplanation", "The control has failed policy checks") :-
-  field(Control, "cardType", "ismsa/cardTypes/internalControl"),
-  field(Control, "workflowState", "In scope"),
-  base_policyCheckFailure(Control, _, _, _).
-
 % Not OK because of no evidence
 
 ismsa_internalControlMissingEvidence(Control) :-
@@ -43,14 +31,26 @@ ismsa_internalControlMissingEvidence(Control) :-
 field(Control, "base/fieldTypes/assessment", "notOk") :-
   field(Control, "cardType", "ismsa/cardTypes/internalControl"),
   field(Control, "workflowState", "In scope"),
-  not base_policyCheckFailure(Control, _, _, _),
   ismsa_internalControlMissingEvidence(Control).
 
 field(Control, "base/fieldTypes/assessmentExplanation", "The control is in scope but required evidence has not been linked") :-
   field(Control, "cardType", "ismsa/cardTypes/internalControl"),
   field(Control, "workflowState", "In scope"),
-  not base_policyCheckFailure(Control, _, _, _),
   ismsa_internalControlMissingEvidence(Control).
+
+% Not OK because the internal control itself has failed policy checks
+
+field(Control, "base/fieldTypes/assessment", "notOk") :-
+  field(Control, "cardType", "ismsa/cardTypes/internalControl"),
+  field(Control, "workflowState", "In scope"),
+  base_policyCheckFailure(Control, _, _, _),
+  not ismsa_internalControlMissingEvidence(Control).
+
+field(Control, "base/fieldTypes/assessmentExplanation", "The control has failed policy checks") :-
+  field(Control, "cardType", "ismsa/cardTypes/internalControl"),
+  field(Control, "workflowState", "In scope"),
+  base_policyCheckFailure(Control, _, _, _),
+  not ismsa_internalControlMissingEvidence(Control).
 
 % Not OK because there is evidence that has not been assessed as OK
 

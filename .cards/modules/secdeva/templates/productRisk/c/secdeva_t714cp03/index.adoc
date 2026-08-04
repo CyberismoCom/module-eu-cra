@@ -1,5 +1,5 @@
 {{#graph}}
-  "model": "ismsa/graphModels/assetsRisksControls",
+  "model": "secdeva/graphModels/assetsRisksControls",
   "view": "ismsa/graphViews/risk"
 {{/graph}}
 

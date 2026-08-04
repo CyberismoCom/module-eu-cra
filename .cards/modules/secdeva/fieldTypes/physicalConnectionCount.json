@@ -1,0 +1,7 @@
+{
+    "name": "secdeva/fieldTypes/physicalConnectionCount",
+    "displayName": "Number of connections",
+    "dataType": "integer",
+    "description": "The count of this type of physical connections.",
+    "category": "Threat model"
+}

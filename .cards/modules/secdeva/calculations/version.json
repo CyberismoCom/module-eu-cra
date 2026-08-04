@@ -1,5 +1,0 @@
-{
-    "name": "secdeva/calculations/version",
-    "displayName": "Version",
-    "description": "Validates that release tasks and documents are completed before release"
-}

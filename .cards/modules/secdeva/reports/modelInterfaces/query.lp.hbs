@@ -141,6 +141,21 @@ field(Interface, "secdeva/fieldTypes/interfaceElementTitle", Title) :-
     parent(Interface, Element),
     field(Element, "title", Title).
 
+% Physical ports and connections
+
+childResult(result, PhysicalConnection, "physicalConnections") :-
+    field(PhysicalConnection, "cardType", "secdeva/cardTypes/physicalConnection"),
+    ancestor(PhysicalConnection, {{cardKey}}).
+
+field(PhysicalConnection, "secdeva/fieldTypes/physicalConnectionElementCardKey", Element) :-
+    childResult(result, PhysicalConnection, "physicalConnections"),
+    parent(PhysicalConnection, Element).
+
+field(PhysicalConnection, "secdeva/fieldTypes/physicalConnectionElementTitle", Title) :-
+    childResult(result, PhysicalConnection, "physicalConnections"),
+    parent(PhysicalConnection, Element),
+    field(Element, "title", Title).
+
 order(2, "externalDataflows", 1, "secdeva/fieldTypes/direction", "ASC").
 order(2, "externalDataflows", 2, "secdeva/fieldTypes/internalTitle", "ASC").
 
@@ -149,3 +164,6 @@ order(2, "internalDataflows", 2, "secdeva/fieldTypes/source", "ASC").
 
 order(2, "interfaces", 1, "secdeva/fieldTypes/interfaceElementTitle", "ASC").
 order(2, "interfaces", 2, "title", "ASC").
+
+order(2, "physicalConnections", 1, "secdeva/fieldTypes/physicalConnectionElementTitle", "ASC").
+order(2, "physicalConnections", 2, "title", "ASC").

@@ -1,0 +1,7 @@
+{
+    "name": "secdeva/calculations/registers",
+    "displayName": "Registers",
+    "description": "Policy checks and assessments for registers",
+    "calculation": "calculation.lp",
+    "category": "Secure development"
+}

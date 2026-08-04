@@ -1,6 +1,6 @@
 {
-    "displayName": "Trust boundary",
-    "description": "A boundary between different trust zone levels in a dataflow model",
-    "category": "Dataflow model",
+    "displayName": "Trust boundary (deprecated)",
+    "description": "A boundary between different trust zone levels in a dataflow model. Included for backward compatibility.",
+    "category": "Deprecated",
     "name": "secdeva/templates/trustBoundary"
 }

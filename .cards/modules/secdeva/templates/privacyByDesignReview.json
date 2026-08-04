@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/templates/privacyByDesignReview",
+    "displayName": "Review of privacy by design",
+    "description": "A review of the handling of personal information",
+    "category": "Secure development reviews"
+}

@@ -1,0 +1,13 @@
+{
+    "title": "Review of security requirement testing - (Scope)",
+    "cardType": "base/cardTypes/review",
+    "workflowState": "",
+    "rank": "0|b",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/lastReviewed": null,
+    "base/fieldTypes/reviewPeriod": null,
+    "base/fieldTypes/identifier": "secdeva_review_security-requirement-testing",
+    "lastUpdated": "2026-07-31T12:29:31.693Z",
+    "links": []
+}

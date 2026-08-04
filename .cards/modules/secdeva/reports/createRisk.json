@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/createRisk",
+    "displayName": "Create a risk",
+    "category": "Secure development",
+    "description": "Create a new risk. Used within assets cards"
+}

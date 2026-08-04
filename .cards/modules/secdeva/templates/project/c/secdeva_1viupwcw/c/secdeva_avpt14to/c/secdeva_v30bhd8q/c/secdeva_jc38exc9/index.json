@@ -1,0 +1,13 @@
+{
+    "title": "Foundation",
+    "cardType": "ismsa/cardTypes/register",
+    "workflowState": "",
+    "rank": "0|b",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "ismsa/fieldTypes/adoptionStep": "step1",
+    "ismsa/fieldTypes/progress": "secdeva_internal-control-progress",
+    "base/fieldTypes/identifier": "secdeva_register_foundation-controls",
+    "lastUpdated": "2026-07-17T12:23:39.279Z",
+    "links": []
+}

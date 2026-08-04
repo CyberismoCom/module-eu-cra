@@ -1,0 +1,34 @@
+{{#each results}}
+
+{{#if specifications}}
+
+[caption=]
+.Existing specifications
+[cols="5,2"]
+|===
+| Decision | Workflow State
+
+{{#each specifications}}
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.workflowState}}
+{{/each}}
+
+|===
+
+Create another specification, if needed:
+{{else}}
+You have not yet created or linked any specifications.
+{{/if}}
+
+{{#createCards}}
+    "template": "secdeva/templates/designSpecification",
+    "buttonLabel": "Create a design specification",
+    "cardKey": "{{phase.key}}",
+    "link": {
+      "linkType": "base/linkTypes/relatesTo",
+      "direction": "outbound",
+      "cardKey": "{{../cardKey}}"
+    }
+{{/createCards}}
+
+{{/each}}

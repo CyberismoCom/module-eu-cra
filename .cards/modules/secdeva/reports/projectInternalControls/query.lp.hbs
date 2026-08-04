@@ -1,0 +1,75 @@
+selectAll.
+
+result(result).
+
+secdeva_gettingStartedTask("secdeva_control_assign-people-to-project-roles").
+secdeva_gettingStartedTask("secdeva_control_ensure-competence").
+secdeva_gettingStartedTask("secdeva_control_security-context").
+secdeva_gettingStartedTask("secdeva_control_threat-models").
+secdeva_gettingStartedTask("secdeva_control_high-level-risks").
+secdeva_gettingStartedTask("secdeva_control_security-requirements").
+secdeva_gettingStartedTask("secdeva_control_scope-secure-development-activities").
+
+childObject(result, Project, "project") :-
+  secdeva_closestProject({{cardKey}}, Project).
+
+childResult(result, Card, "gettingStarted") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "cardType", "ismsa/cardTypes/internalControl"),
+  field(Card, "base/fieldTypes/identifier", Identifier),
+  secdeva_gettingStartedTask(Identifier),
+  not field(Card, "base/fieldTypes/assessment", "ok"),
+  not field(Card, "base/fieldTypes/assessment", "notApplicable").
+
+childResult(result, Card, "open") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "cardType", "ismsa/cardTypes/internalControl"),
+  field(Card, "base/fieldTypes/assessment", "open"),
+  not base_greaterAdoptionStep(Card, Project).
+
+childResult(result, Card, "inProgress") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "cardType", "ismsa/cardTypes/internalControl"),
+  field(Card, "base/fieldTypes/assessment", "notOk"),
+  field(Card, "base/fieldTypes/assessmentExplanation", "The control is in scope but the linked evidence is not ready"),
+  not base_greaterAdoptionStep(Card, Project).
+
+childResult(result, Card, "notApplicable") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "cardType", "ismsa/cardTypes/internalControl"),
+  field(Card, "base/fieldTypes/assessment", "notApplicable"),
+  not base_greaterAdoptionStep(Card, Project).
+
+childResult(result, Card, "ok") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "cardType", "ismsa/cardTypes/internalControl"),
+  field(Card, "base/fieldTypes/assessment", "ok"),
+  not base_greaterAdoptionStep(Card, Project).
+
+childResult(result, Card, "notOk") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "cardType", "ismsa/cardTypes/internalControl"),
+  field(Card, "base/fieldTypes/assessment", "notOk"),
+  not field(Card, "base/fieldTypes/assessmentExplanation", "The control is in scope but the linked evidence is not ready"),
+  not base_greaterAdoptionStep(Card, Project).
+
+field(Card, "compoundRank", Rank) :-
+  card(Card),
+  not parent(Card, _),
+  field(Card, "rank", Rank).
+
+field(Card, "compoundRank", @concatenate(ParentRank, " - ", Rank)) :-
+  card(Card),
+  parent(Card, Parent),
+  field(Card, "rank", Rank),
+  field(Parent, "compoundRank", ParentRank).
+
+order(2, "open", 1, "compoundRank", "ASC").
+order(2, "inScope", 1, "compoundRank", "ASC").
+order(2, "outOfScope", 1, "compoundRank", "ASC").

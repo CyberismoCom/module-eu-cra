@@ -7,5 +7,7 @@
     "base/fieldTypes/informationClassification": "internal",
     "base/fieldTypes/lastReviewed": null,
     "base/fieldTypes/reviewPeriod": 365,
-    "base/fieldTypes/identifier": "secdeva_review_manual-code-review"
+    "base/fieldTypes/identifier": "secdeva_review_manual-code-review",
+    "links": [],
+    "lastUpdated": "2026-07-20T13:27:10.529Z"
 }

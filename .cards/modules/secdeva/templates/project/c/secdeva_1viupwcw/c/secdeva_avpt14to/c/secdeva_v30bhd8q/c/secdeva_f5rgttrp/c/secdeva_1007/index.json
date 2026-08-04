@@ -1,0 +1,16 @@
+{
+    "cardType": "ismsa/cardTypes/internalControl",
+    "title": "Manage threat models",
+    "workflowState": "",
+    "rank": "0|at",
+    "lastUpdated": "2026-07-22T12:21:40.426Z",
+    "links": [],
+    "base/fieldTypes/adoptionStep": null,
+    "base/fieldTypes/justification": null,
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "ismsa/fieldTypes/internalControlReviewPeriod": "12months",
+    "base/fieldTypes/reviewMonth": "march",
+    "base/fieldTypes/lastReviewed": null,
+    "base/fieldTypes/identifier": "secdeva_control_threat-models"
+}

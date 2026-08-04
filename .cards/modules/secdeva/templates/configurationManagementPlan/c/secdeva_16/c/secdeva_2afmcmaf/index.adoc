@@ -1,0 +1,50 @@
+== Introduction
+Configuration management covers how different configuration items are managed. This card describes the configuration management plan for a single configuration item type.
+
+== Configuration item type and scope
+
+This card covers the configuration management for requirements, including security requirements.
+
+All product requirements, including but not limited to security requirements, must be documented and there must be a process to review and approve changes to the requirements.
+
+== Storage and tooling
+#TODO: document which tool and which repository or artifact store is used to manage these configuration items, and where they are stored.#
+
+Requirements are handled in the Cyberismo tool using the requirement card type. See the separate configuration item description for Cyberismo content.
+
+== Access control
+#TODO: describe who may read and who may modify these configuration items, and how access rights are granted, reviewed and revoked.#
+
+See the separate configuration item description for Cyberismo content.
+
+== Versioning and unique identification
+#TODO: document how this type of configuration item is versioned (including the versioning scheme), how each configuration item is uniquely identified, and how those identifiers relate to component or product versions.#
+
+See the separate configuration item description for Cyberismo content.
+
+== Change history
+#TODO: document how change history between component or system versions is recorded, and how to automatically generate a list of changes between two component versions for this configuration item type. Each recorded change should include the originator, the date and time, and the nature of the change.#
+
+See the separate configuration item description for Cyberismo content.
+
+== Authorization of changes
+#TODO: describe the mechanisms that ensure only authorized changes are made, including any review or approval steps and segregation of duties, and how the authorization is evidenced.#
+
+Security requirements include 4 review tasks, by different roles, and the review tasks must be closed before the security requirement can be approved.
+
+See the separate configuration item description for Cyberismo content.
+
+== Acceptance
+#TODO: describe how new or newly modified configuration items are accepted, including the acceptance criteria, who is responsible for acceptance, and how acceptance is recorded.#
+
+The acceptance of security requirements is tracked by its workflow. 
+
+== Integrity protection
+#TODO: describe how the integrity of these configuration items is protected against unauthorized or undetected modification (for example access controls, signing, checksums or hashes), and how tampering would be detected.#
+
+See the separate configuration item description for Cyberismo content.
+
+== Backup and recovery
+#TODO: describe how these configuration items are backed up, how long they are retained, and how they can be recovered.#
+
+See the separate configuration item description for Cyberismo content.

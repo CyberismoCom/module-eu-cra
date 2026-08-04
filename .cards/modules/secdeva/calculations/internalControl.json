@@ -1,0 +1,7 @@
+{
+    "name": "secdeva/calculations/internalControl",
+    "displayName": "Internal control",
+    "description": "Make internal controls read-only",
+    "calculation": "calculation.lp",
+    "category": "Secure development"
+}

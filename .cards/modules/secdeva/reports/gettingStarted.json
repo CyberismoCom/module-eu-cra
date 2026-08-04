@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/gettingStarted",
+    "displayName": "Getting started",
+    "description": "Produces the contents of the getting started page",
+    "category": "Secure development"
+}

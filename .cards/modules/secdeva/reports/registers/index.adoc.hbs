@@ -1,0 +1,19 @@
+{{#each results}}
+
+== Registers
+
+Registers are structured collections where you record and track security-related information throughout the product development. Each register serves a specific purpose and is referenced by the internal controls that produce or consume its content.
+
+=== Register descriptions
+
+* *{{#xref}} "cardKey": "{{this.assets}}" {{/xref}}* — Protected assets such as data, devices, systems, and suppliers.
+* *{{#xref}} "cardKey": "{{this.risks}}" {{/xref}}* — Cybersecurity risk items that can cause harm by exploiting one or more vulnerabilities.
+* *{{#xref}} "cardKey": "{{this.securityIssues}}" {{/xref}}* — Concrete security weaknesses to fix: vulnerabilities, misconfigurations, or control gaps.
+* *{{#xref}} "cardKey": "{{this.securityRequirements}}" {{/xref}}* — The security requirements your product must meet, including scope, boundaries, and target security levels.
+* *{{#xref}} "cardKey": "{{this.technologyAssessments}}" {{/xref}}* — Evaluations of third-party technologies for business fit, quality, maintainability, and security.
+* *{{#xref}} "cardKey": "{{this.compliance}}" {{/xref}}* — External requirements from authorities, regulations, standards, or customers that the project must satisfy.
+* *{{#xref}} "cardKey": "{{this.periodicReviews}}" {{/xref}}* — Recurring review activities against project status. Use these for milestone and checkpoint reviews.
+* *{{#xref}} "cardKey": "{{this.decisions}}" {{/xref}}* — Documented project decisions on architecture, design, operations, or significant changes.
+* *{{#xref}} "cardKey": "{{this.internalControls}}" {{/xref}}* — The secure development control framework, organized by phase (Foundation, Design, Implementation, Verification, Operations).
+
+{{/each}}

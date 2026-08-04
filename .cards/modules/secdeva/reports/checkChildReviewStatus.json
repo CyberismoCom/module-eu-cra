@@ -1,6 +1,6 @@
 {
-    "displayName": "Review child cards",
-    "description": "The status of review reports",
-    "category": "Secure development",
+    "displayName": "Check review evidence (deprecated)",
+    "description": "The status of review report evidence of an internal control",
+    "category": "Deprecated",
     "name": "secdeva/reports/checkChildReviewStatus"
 }

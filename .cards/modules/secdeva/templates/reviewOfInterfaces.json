@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/templates/reviewOfInterfaces",
+    "displayName": "Review of interfaces",
+    "category": "Secure development reviews",
+    "description": "Review of the interfaces of a development project"
+}

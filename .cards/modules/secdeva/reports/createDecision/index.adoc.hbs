@@ -1,0 +1,34 @@
+{{#each results}}
+
+{{#if decisions}}
+
+[caption=]
+.Existing decisions
+[cols="5,2"]
+|===
+| Decision | Workflow State
+
+{{#each decisions}}
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.workflowState}}
+{{/each}}
+
+|===
+
+Create another decision, if needed:
+{{else}}
+You have not yet created or linked any decisions.
+{{/if}}
+
+{{#createCards}}
+    "template": "base/templates/decision",
+    "buttonLabel": "Create a decision",
+    "cardKey": "{{register.key}}",
+    "link": {
+      "linkType": "base/linkTypes/relatesTo",
+      "direction": "outbound",
+      "cardKey": "{{../cardKey}}"
+    }
+{{/createCards}}
+
+{{/each}}

@@ -1,6 +1,6 @@
 {
-    "displayName": "Security requirements specification",
-    "description": "A document that gathers the security requirements of the project",
-    "category": "Secure development specifications",
+    "displayName": "Security requirements specification (deprecated)",
+    "description": "A document that gathers the security requirements of the project. Deprecated, use the Security requirements register under the development project instead.",
+    "category": "Deprecated",
     "name": "secdeva/templates/securityRequirementsSpecification"
 }

@@ -1,0 +1,16 @@
+{
+    "cardType": "ismsa/cardTypes/internalControl",
+    "title": "Test security requirements",
+    "workflowState": "",
+    "rank": "0|b",
+    "lastUpdated": "2026-07-31T12:39:09.211Z",
+    "links": [],
+    "base/fieldTypes/adoptionStep": "step2",
+    "base/fieldTypes/justification": null,
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": "internal",
+    "ismsa/fieldTypes/internalControlReviewPeriod": "12months",
+    "base/fieldTypes/reviewMonth": "october",
+    "base/fieldTypes/lastReviewed": null,
+    "base/fieldTypes/identifier": "secdeva_control_security-requirement-testing"
+}

@@ -1,0 +1,7 @@
+select("title").
+
+result(AttackVector) :-
+    parent(AttackVector, {{cardKey}}),
+    field(AttackVector, "base/fieldTypes/identifier", "secdeva_attack-vector").
+
+orderBy("title", "ASC").

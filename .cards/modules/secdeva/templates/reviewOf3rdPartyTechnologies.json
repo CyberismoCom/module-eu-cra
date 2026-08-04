@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/templates/reviewOf3rdPartyTechnologies",
+    "displayName": "Review of 3rd party technologies",
+    "category": "Secure development reviews",
+    "description": "A review of security requirement management in a development project"
+}

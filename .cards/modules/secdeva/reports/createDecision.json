@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/createDecision",
+    "displayName": "Create a decision",
+    "description": "Create a new decision. Used within assets cards",
+    "category": "Secure development"
+}

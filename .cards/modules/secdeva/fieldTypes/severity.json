@@ -4,24 +4,25 @@
     "dataType": "enum",
     "enumValues": [
         {
-            "enumValue": "critical",
-            "enumDisplayValue": "Critical"
-        },
-        {
-            "enumValue": "high",
-            "enumDisplayValue": "High"
-        },
-        {
-            "enumValue": "medium",
-            "enumDisplayValue": "Medium"
+            "enumValue": "none",
+            "enumDisplayValue": "None (irrelevant)",
+            "enumDescription": ""
         },
         {
             "enumValue": "low",
             "enumDisplayValue": "Low"
         },
         {
-            "enumValue": "none",
-            "enumDisplayValue": "None"
+            "enumValue": "medium",
+            "enumDisplayValue": "Medium"
+        },
+        {
+            "enumValue": "high",
+            "enumDisplayValue": "High"
+        },
+        {
+            "enumValue": "critical",
+            "enumDisplayValue": "Critical"
         }
     ],
     "description": "Severity level of a security issue"

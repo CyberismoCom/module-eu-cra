@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/createDesignSpecification",
+    "displayName": "Create a design specification",
+    "category": "Secure development",
+    "description": "Create a new design specification. Used within assets cards"
+}

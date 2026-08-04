@@ -1,16 +1,14 @@
 {{#each results}}
-
 {{#if failures}}
 
 .Policy check failures
-[cols="3,3,4,5"]
+[cols="3,4,5"]
 |===
-| Category | Policy check  | Card | Error
+| Policy check  | Card | Error
 
 {{#each failures}}
 
 {{#each this.policyChecks.failures}}
-| {{this.category}}
 | {{this.title}}
 | xref:{{../key}}.adoc[{{../title}}]
 | {{this.errorMessage}}
@@ -28,17 +26,15 @@ No policy check failures in this project.
 .Successful policy checks
 [%collapsible]
 ====
-[cols="3,3,4,5"]
+[cols="3,3"]
 |===
-| Category | Policy check  | Card | Error
+| Policy check  | Card
 
-{{#each failures}}
+{{#each successes}}
 
-{{#each this.policyChecks.failures}}
-| {{this.category}}
+{{#each this.policyChecks.successes}}
 | {{this.title}}
 | xref:{{../key}}.adoc[{{../title}}]
-| {{this.errorMessage}}
 {{/each}}
 {{/each}}
 |===

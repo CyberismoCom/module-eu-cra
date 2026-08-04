@@ -1,0 +1,14 @@
+{
+    "title": "Technology assessments",
+    "cardType": "secdeva/cardTypes/register",
+    "workflowState": "",
+    "rank": "0|cq",
+    "base/fieldTypes/owner": null,
+    "base/fieldTypes/informationClassification": null,
+    "ismsa/fieldTypes/progress": null,
+    "base/fieldTypes/identifier": "secdeva_register_technology-assessments",
+    "lastUpdated": "2026-07-29T13:55:02.954Z",
+    "links": [],
+    "secdeva/fieldTypes/adoptionStepJustification": null,
+    "base/fieldTypes/adoptionStep": null
+}

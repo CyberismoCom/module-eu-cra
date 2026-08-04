@@ -1,0 +1,24 @@
+== References
+
+* #TODO: add references and sources#
+
+== Background and justification
+
+#TODO#
+
+== Requirement desciption
+
+#TODO: describe the requirement#
+
+Ubiquitous: The <system> shall <response>
+
+Event-driven: When <trigger>, the <system> shall <response>
+
+State-driven: While <in state>, the <system> shall <response>
+
+Unwanted behaviour: If <trigger>, then the <system> shall <response>
+
+Optional feature: Where <feature is included>, the <system> shall <response>
+
+Complex: combinations of the above, in a fixed order
+

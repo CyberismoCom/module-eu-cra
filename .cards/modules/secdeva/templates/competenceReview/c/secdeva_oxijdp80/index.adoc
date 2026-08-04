@@ -1,0 +1,35 @@
+== Introduction
+
+This document records a review of the competencies in a development project.
+
+== Review checklist
+
+Check that all nominated persons have completed the security training that is required in the organisation. Alternatively, check that the nominated persons have sufficient competence from previous experience.
+
+Different trainings are often provided for different roles, see roles assignments {{#report}}"name": "secdeva/reports/xref", "identifier": "secdeva_review_role-assignments"{{/report}}.
+
+* [ ] OK
+* [ ] Not OK
+
+
+Check that the trainings have not expired according to the requirements of the secure development training plan of the organisation.
+
+* [ ] OK
+* [ ] Not OK
+
+== Review notes
+
+#TODO: if applicable, add a link or an attachment to external systems for more information or evidence.#
+
+#TODO: Describe any notes and remarks about the review here#
+
+== Identified security issues
+
+{{#createCards}}
+  "template": "secdeva/templates/securityIssue",
+  "buttonLabel": "Create a new security issue"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssueList"
+{{/report}}

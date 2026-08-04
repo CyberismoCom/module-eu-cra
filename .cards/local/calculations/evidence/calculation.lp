@@ -1,21 +1,25 @@
+% Legacy content
 secdeva_evidence(
     "eucra_control_attack-surface-analysis",
     "eucra_review_attack-surface",
     "Attack surface analysis"
 ).
 
+% Legacy content
 secdeva_evidence(
     "eucra_control_document-attack-surface",
     "eucra_document_attack-surface",
     "Attack surface documentation"
 ).
 
+% Legacy content
 secdeva_evidence(
     "eucra_control_penetration-testing",
     "eucra_test_penetration",
     "Review of penetration testing"
 ).
 
+% Legacy content
 secdeva_evidence(
     "eucra_control_privacy-by-design-review",
     "eucra_review_privacy-by-design",
@@ -34,18 +38,21 @@ secdeva_evidence(
     "Support period documentation"
 ).
 
+% Legacy content
 secdeva_evidence(
     "eucra_control_product-documentation-review",
     "eucra_review_product-documentation",
     "Product documentation review"
 ).
 
+% Legacy content
 secdeva_evidence(
     "eucra_control_security-design-review",
     "eucra_review_security-design",
     "Security design review"
 ).
 
+% Legacy content
 secdeva_evidence(
     "eucra_control_integrity-protection-of-release",
     "eucra_review_integrity-protection-of-release",
@@ -71,6 +78,7 @@ secdeva_evidence(
     "Review of distributed products"
 ).
 
+% Legacy content
 secdeva_evidence(
     "eucra_control_obligations-of-importers-and-distributors",
     "eucra_review_imported-products",

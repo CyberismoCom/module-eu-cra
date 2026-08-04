@@ -1,0 +1,33 @@
+The EU Cyber Resilience Act (CRA) sets obligations to distributors when making products available on the EU market.
+
+== How to decide if this secure development task is applicable
+
+This task is required, if the product or the customer deliveries based on the product include placing other products on the EU market as a distributor. In these cases, the distributor responsibilities from EU CRA must be adhered to.
+
+A distributor makes a product available on the EU market without affecting the properties of the product from a manufacturer that is from within the European Union.
+
+== How to implement
+
+Create a review of distributed products and follow the instructions in the templates.
+
+== How to review
+
+Check that a review of distributed products have been conducted as applicable, and that the reviews are up to date.
+
+{{#report}}
+  "name": "secdeva/reports/createReview",
+  "template": "eucra/templates/reviewOfDistributedProducts",
+  "buttonLabel": "Create a review of distributed products"
+{{/report}}
+
+== Assessment
+
+{{#report}}
+  "name": "secdeva/reports/internalControlAssessment"
+{{/report}}
+
+== References
+
+* EU CRA Article 20
+* EU CRA Article 21
+* EU CRA Article 22

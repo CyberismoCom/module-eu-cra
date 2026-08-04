@@ -1,6 +1,6 @@
 {
     "name": "eucra/templates/design",
-    "displayName": "EU CRA - Design",
-    "category": "EU Cyber Resilience Act",
+    "displayName": "EU CRA - Design (Deprecated)",
+    "category": "Deprecated",
     "description": "Additional tasks for the design of a development project"
 }

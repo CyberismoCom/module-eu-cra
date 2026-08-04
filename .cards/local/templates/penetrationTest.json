@@ -1,6 +1,6 @@
 {
-    "displayName": "Penetration test",
-    "description": "Black-box exploratory testing to exploit vulnerabilities",
-    "category": "Security testing",
+    "displayName": "Penetration test (Deprecated)",
+    "description": "Black-box exploratory testing to exploit vulnerabilities. This template has been moved to the secure development essentials module.",
+    "category": "Deprecated",
     "name": "eucra/templates/penetrationTest"
 }

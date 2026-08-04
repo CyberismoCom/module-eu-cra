@@ -19,8 +19,6 @@ Create a technical documentation review document and follow the instructions in 
   "phase": "secdeva_phase_implementation"
 {{/report}}
 
-When you revisit the review, record the result of the new review in the technical documentation review document.
-
 == Assessment
 
 {{#report}}

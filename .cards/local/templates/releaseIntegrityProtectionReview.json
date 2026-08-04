@@ -1,6 +1,6 @@
 {
-    "displayName": "Release integrity protection review",
-    "description": "Review of the integrity protection of releases",
-    "category": "Secure development reviews",
+    "displayName": "Release integrity protection review (Deprecated)",
+    "description": "Review of the integrity protection of releases. This template has been moved to the secure development essentials module.",
+    "category": "Deprecated",
     "name": "eucra/templates/releaseIntegrityProtectionReview"
 }

@@ -1,5 +1,5 @@
 {
-    "title": "Support period document for (scope)",
+    "title": "Support period document - Scope",
     "cardType": "base/cardTypes/controlledDocument",
     "workflowState": "",
     "rank": "0|b",
@@ -7,5 +7,7 @@
     "base/fieldTypes/informationClassification": "internal",
     "base/fieldTypes/approver": null,
     "base/fieldTypes/approvalDate": null,
-    "base/fieldTypes/identifier": "eucra_document_support-period"
+    "base/fieldTypes/identifier": "eucra_document_support-period",
+    "links": [],
+    "lastUpdated": "2026-08-04T06:25:42.491Z"
 }

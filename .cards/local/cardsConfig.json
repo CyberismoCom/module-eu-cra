@@ -17,7 +17,7 @@
         },
         {
             "name": "secdeva",
-            "location": "https://github.com/CyberismoCom/module-secure-development-essentials.git",
+            "location": "file:/Users/henryhaverinen/cyberismo/cyberismo-projects/module-secure-development-essentials",
             "private": false
         }
     ],

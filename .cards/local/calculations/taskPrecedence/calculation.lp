@@ -48,7 +48,8 @@ secdeva_implementationTask(
 ).
 
 secdeva_implementationTask(
-    ("eucra_control_product-documentation-review";
+    ("secdeva_control_product-documentation-review";
+    "eucra_control_product-documentation-review"; % legacy template
     "eucra_control_technical-documentation-review";
     "secdeva_control_high-level-risks";
     "secdeva_control_vulnerability-management"),
@@ -79,36 +80,42 @@ secdeva_implementationTask(
 ).
 
 secdeva_implementationTask(
-    ("eucra_control_product-documentation-review";
+    ("secdeva_control_product-documentation-review";
+    "eucra_control_product-documentation-review"; % Legacy content
     "eucra_security-requirement_product-labeling"),
     "eucra_compliance-requirement_article-13-15"
 ).
 
 secdeva_implementationTask(
-    ("eucra_control_product-documentation-review";
+    ("secdeva_control_product-documentation-review";
+    "eucra_control_product-documentation-review"; % Legacy content
     "eucra_security-requirement_product-labeling"),
     "eucra_compliance-requirement_article-13-16"
 ).
 
 secdeva_implementationTask(
-    "eucra_control_product-documentation-review",
+    ("secdeva_control_product-documentation-review";
+    "eucra_control_product-documentation-review"), % Legacy content
     "eucra_compliance-requirement_article-13-17"
 ).
 
 secdeva_implementationTask(
-    "eucra_control_product-documentation-review",
+    ("secdeva_control_product-documentation-review";
+    "eucra_control_product-documentation-review"), % Legacy content
     "eucra_compliance-requirement_article-13-18"
 ).
 
 secdeva_implementationTask(
-    ("eucra_control_product-documentation-review";
+    ("secdeva_control_product-documentation-review";
+    "eucra_control_product-documentation-review"; % Legacy content
     "eucra_control_support-period";
     "eucra_security-requirement_notification-about-end-of-support"),
     "eucra_compliance-requirement_article-13-19"
 ).
 
 secdeva_implementationTask(
-   ("eucra_control_product-documentation-review";
+   ("secdeva_control_product-documentation-review";
+   "eucra_control_product-documentation-review"; % Legacy content
    "eucra_control_eu-conformity-assessment"),
     "eucra_compliance-requirement_article-13-20"
 ).
@@ -167,7 +174,9 @@ secdeva_implementationTask(
 ).
 
 secdeva_implementationTask(
-    "eucra_control_obligations-of-importers-and-distributors",
+    ("eucra_control_obligations-of-importers";
+    "eucra_control_obligations-of-distributors";
+    "eucra_control_obligations-of-importers-and-distributors"), % Legacy content
     ("eucra_compliance-requirement_article-19-1";
     "eucra_compliance-requirement_article-19-2";
     "eucra_compliance-requirement_article-19-3";
@@ -208,6 +217,7 @@ secdeva_implementationTask(
     "eucra_compliance-requirement_article-31-4"
 ).
 
+
 secdeva_implementationTask(
   ("secdeva_control_threat-models";
   "secdeva_control_security-context";
@@ -215,7 +225,8 @@ secdeva_implementationTask(
   "secdeva_control_management-plan";
   "secdeva_control_assign-people-to-project-roles";
   "secdeva_control_ensure-competence";
-  "eucra_control_security-design-review"),
+  "secdeva_control_security-design-review";
+  "eucra_control_security-design-review"), % Legacy content
   "eucra_compliance-requirement_annex-I-1-1-1").
 
 secdeva_implementationTask(
@@ -226,8 +237,10 @@ secdeva_implementationTask(
     "secdeva_control_manual-code-review";
     "secdeva_control_manage-defects";
     "secdeva_control_vulnerability-management";
-    "eucra_control_attack-surface-analysis";
-    "eucra_control_penetration-testing"),
+    "secdeva_control_attack-surface-analysis";
+    "secdeva_control_penetration-testing";
+    "eucra_control_attack-surface-analysis"; % Legacy content
+    "eucra_control_penetration-testing"), % Legacy content
     "eucra_compliance-requirement_annex-I-1-2-a"
 ).
 
@@ -256,21 +269,26 @@ secdeva_implementationTask(
 secdeva_implementationTask(
     ("eucra_security-requirement_integrity-of-data";
     "secdeva_control_use-of-cryptography";
-    "eucra_control_integrity-protection-of-release"),
+    "secdeva_control_integrity-protection-of-release";
+    "eucra_control_integrity-protection-of-release"), % Legacy content
     "eucra_compliance-requirement_annex-I-1-2-f"
 ).
 
 secdeva_implementationTask(
     ("eucra_security-requirement_data-minimisation";
-    "eucra_control_security-design-review";
-    "eucra_control_privacy-by-design-review"),
+    "secdeva_control_security-design-review";
+    "secdeva_control_privacy-by-design-review";
+    "eucra_control_security-design-review"; % Legacy content
+    "eucra_control_privacy-by-design-review"), % Legacy content
     "eucra_compliance-requirement_annex-I-1-2-g"
 ).
 
 secdeva_implementationTask(
     ("eucra_security-requirement_availability-of-essential-functions";
-    "eucra_control_document-attack-surface";
-    "eucra_control_attack-surface-analysis";
+    "secdeva_control_document-attack-surface";
+    "secdeva_control_attack-surface-analysis";
+    "eucra_control_document-attack-surface"; % Legacy content
+    "eucra_control_attack-surface-analysis"; % Legacy content
     "secdeva_control_error-handling-testing"),
     "eucra_compliance-requirement_annex-I-1-2-h"
 ).
@@ -279,15 +297,19 @@ secdeva_implementationTask(
     ("eucra_security-requirement_minimise-negative-impact";
     "secdeva_control_threat-models";
     "secdeva_control_error-handling-testing";
-    "eucra_control_document-attack-surface";
-    "eucra_control_attack-surface-analysis"),
+    "secdeva_control_document-attack-surface";
+    "secdeva_control_attack-surface-analysis";
+    "eucra_control_document-attack-surface"; % Legacy content
+    "eucra_control_attack-surface-analysis"),% Legacy content
     "eucra_compliance-requirement_annex-I-1-2-i"
 ).
 
 secdeva_implementationTask(
     ("eucra_security-requirement_limit-attack-surfaces";
-    "eucra_control_document-attack-surface";
-    "eucra_control_attack-surface-analysis"),
+    "secdeva_control_document-attack-surface";
+    "secdeva_control_attack-surface-analysis";
+    "eucra_control_document-attack-surface"; % Legacy content
+    "eucra_control_attack-surface-analysis"), % Legacy content
     "eucra_compliance-requirement_annex-I-1-2-j"
 ).
 
@@ -295,6 +317,7 @@ secdeva_implementationTask(
     ("eucra_security-requirement_reduce-the-impact-of-incidents";
     "secdeva_control_protect-environments";
     "secdeva_control_security-context";
+    "secdeva_control_security-design-review";
     "eucra_control_security-design-review"),
     "eucra_compliance-requirement_annex-I-1-2-k"
 ).
@@ -306,7 +329,8 @@ secdeva_implementationTask(
 
 secdeva_implementationTask(
     ("eucra_security-requirement_possibility-to-remove-all-data";
-    "eucra_control_product-documentation-review"),
+    "secdeva_control_product-documentation-review";
+    "eucra_control_product-documentation-review"), % Legacy content
     "eucra_compliance-requirement_annex-I-1-2-m"
 ).
 
@@ -332,12 +356,16 @@ secdeva_implementationTask(
     "secdeva_control_error-handling-testing";
     "secdeva_control_security-requirement-testing";
     "secdeva_control_threat-mitigation-testing";
-    "eucra_control_privacy-by-design-review";
-    "eucra_control_product-documentation-review";
-    "eucra_control_security-design-review";
+    "secdeva_control_privacy-by-design-review";
+    "secdeva_control_product-documentation-review";
+    "secdeva_control_security-design-review";
+    "eucra_control_privacy-by-design-review"; % Legacy content
+    "eucra_control_product-documentation-review"; % Legacy content
+    "eucra_control_security-design-review"; % Legacy content
     "eucra_control_technical-documentation-review";
     "secdeva_control_manual-code-review";
-    "eucra_control_attack-surface-analysis";
+    "secdeva_control_attack-surface-analysis";
+    "eucra_control_attack-surface-analysis"; % Legacy content
     "secdeva_control_known-vulnerability-scanning"),
     "eucra_compliance-requirement_annex-I-2-3"
 ).
@@ -355,12 +383,14 @@ secdeva_implementationTask(
 ).
 
 secdeva_implementationTask(
-    "eucra_control_product-documentation-review",
+    ("secdeva_control_product-documentation-review";
+    "eucra_control_product-documentation-review"), % Legacy content
     "eucra_compliance-requirement_annex-I-2-6"
 ).
 
 secdeva_implementationTask(
-    "eucra_control_integrity-protection-of-release",
+    ("secdeva_control_integrity-protection-of-release";
+    "eucra_control_integrity-protection-of-release"), % Legacy content
     "eucra_compliance-requirement_annex-I-2-7"
 ).
 
@@ -370,7 +400,8 @@ secdeva_implementationTask(
 ).
 
 secdeva_implementationTask(
-    "eucra_control_product-documentation-review",
+    ("secdeva_control_product-documentation-review";
+    "eucra_control_product-documentation-review"), % Legacy content
     "eucra_compliance-requirement_annex-II"
 ).
 
@@ -386,28 +417,34 @@ secdeva_implementationTask(
     "secdeva_control_known-vulnerability-scanning";
     "secdeva_control_static-code-analysis";
     "secdeva_control_manual-code-review";
-    "eucra_control_attack-surface-analysis";
-    "eucra_control_penetration-testing"),
+    "secdeva_control_attack-surface-analysis";
+    "secdeva_control_penetration-testing";
+    "eucra_control_attack-surface-analysis"; % Legacy content
+    "eucra_control_penetration-testing"), % Legacy content
     "eucra_security-requirement_no-known-exploitable-vulnerabilities"
 ).
 
 secdeva_implementationTask(
     ("eucra_control_support-period";
-    "eucra_control_integrity-protection-of-release"),
+    "secdeva_control_integrity-protection-of-release";
+    "eucra_control_integrity-protection-of-release"), % Legacy content
     "eucra_security-requirement_security-updates"
 ).
 
 secdeva_implementationTask(
     ("secdeva_control_security-context";
-    "eucra_control_document-attack-surface";
-    "eucra_control_attack-surface-analysis";
+    "secdeva_control_document-attack-surface";
+    "secdeva_control_attack-surface-analysis";
+    "eucra_control_document-attack-surface"; % Legacy content
+    "eucra_control_attack-surface-analysis"; % Legacy content
     "secdeva_control_error-handling-testing"),
     "eucra_security-requirement_availability-of-essential-functions"
 ).
 
 secdeva_implementationTask(
     ("secdeva_control_use-of-cryptography";
-    "eucra_control_integrity-protection-of-release"),
+    "secdeva_control_integrity-protection-of-release";
+    "eucra_control_integrity-protection-of-release"), % Legacy content
     "eucra_security-requirement_integrity-of-data"
 ).
 
@@ -419,30 +456,38 @@ secdeva_implementationTask(
 secdeva_implementationTask(
     ("secdeva_control_threat-models";
     "secdeva_control_error-handling-testing";
-    "eucra_control_document-attack-surface";
-    "eucra_control_attack-surface-analysis"),
+    "secdeva_control_document-attack-surface";
+    "secdeva_control_attack-surface-analysis";
+    "eucra_control_document-attack-surface"; % Legacy content
+    "eucra_control_attack-surface-analysis"), % Legacy content
     "eucra_security-requirement_minimise-negative-impact"
 ).
 
 secdeva_implementationTask(
-    ("eucra_control_document-attack-surface";
-    "eucra_control_attack-surface-analysis"),
+    ("secdeva_control_document-attack-surface";
+    "secdeva_control_attack-surface-analysis";
+    "eucra_control_document-attack-surface"; % Legacy content
+    "eucra_control_attack-surface-analysis"), % Legacy content
     "eucra_security-requirement_limit-attack-surfaces"
 ).
 
 secdeva_implementationTask(
-    ("eucra_control_security-design-review";
-    "eucra_control_privacy-by-design-review"),
+    ("secdeva_control_security-design-review";
+    "secdeva_control_privacy-by-design-review";
+    "eucra_control_security-design-review"; % Legacy content
+    "eucra_control_privacy-by-design-review"), % Legacy content
     "eucra_security-requirement_data-minimisation"
 ).
 
 secdeva_implementationTask(
-    "eucra_control_product-documentation-review",
+    ("secdeva_control_product-documentation-review";
+    "eucra_control_product-documentation-review"), % Legacy content
     "eucra_security-requirement_possibility-to-remove-all-data"
 ).
 
 secdeva_implementationTask(
-    ("eucra_control_security-design-review";
+    ("secdeva_control_security-design-review";
+    "eucra_control_security-design-review"; % Legacy content
     "secdeva_control_security-context";
     "secdeva_control_protect-environments"),
     "eucra_security-requirement_reduce-the-impact-of-incidents"

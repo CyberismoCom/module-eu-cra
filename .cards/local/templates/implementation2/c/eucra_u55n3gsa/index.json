@@ -1,16 +1,15 @@
 {
-    "cardType": "base/cardTypes/annualTask",
     "title": "Review technical documentation",
+    "cardType": "ismsa/cardTypes/internalControl",
     "workflowState": "",
-    "rank": "0|zz",
-    "lastUpdated": "2026-08-04T06:37:26.665Z",
-    "links": [],
+    "rank": "0|a",
     "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
-    "base/fieldTypes/reviewMonth": null,
-    "base/fieldTypes/reviewPeriod": 365,
-    "base/fieldTypes/lastReviewed": null,
+    "base/fieldTypes/justification": null,
     "base/fieldTypes/adoptionStep": "step2",
     "base/fieldTypes/identifier": "eucra_control_technical-documentation-review",
-    "base/fieldTypes/justification": null
+    "ismsa/fieldTypes/internalControlReviewPeriod": "12months",
+    "base/fieldTypes/reviewMonth": null,
+    "lastUpdated": "2026-08-04T06:40:17.644Z",
+    "links": []
 }

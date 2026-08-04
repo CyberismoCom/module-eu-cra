@@ -1,6 +1,6 @@
 {
-    "displayName": "Secure design review",
-    "description": "A review of the traceability of security in the design",
-    "category": "Secure development reviews",
+    "displayName": "Secure design review (Deprecated)",
+    "description": "A review of the traceability of security in the design. This template has been moved to the secure development essentials module.",
+    "category": "Deprecated",
     "name": "eucra/templates/securityDesignReview"
 }

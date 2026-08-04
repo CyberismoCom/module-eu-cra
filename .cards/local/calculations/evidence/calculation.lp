@@ -53,11 +53,28 @@ secdeva_evidence(
 ).
 
 secdeva_evidence(
+    "eucra_control_obligations-of-importers",
+    "eucra_review_imported-products",
+    "Review of imported products"
+).
+
+secdeva_evidence(
+    "eucra_control_obligations-of-distributors",
+    "eucra_review_distributed-products",
+    "Review of distributed products"
+).
+
+% Evidence for backward compatibility of legacy content: 
+secdeva_evidence(
     "eucra_control_obligations-of-importers-and-distributors",
-    ("eucra_review_distributed-products";
-    "eucra_review_imported-products"),
-    "Review of release integrity protection"
+    "eucra_review_distributed-products",
+    "Review of distributed products"
+).
+
+secdeva_evidence(
+    "eucra_control_obligations-of-importers-and-distributors",
+    "eucra_review_imported-products",
+    "Review of imported products"
 ).
 
 %secdeva_evidence("eucra_control_eu-conformity-assessment", "eucra_TODO", "TODO: Evidence to be planned").
-

@@ -17,7 +17,8 @@ Check that a review of imported products has been conducted as applicable, and t
 {{#report}}
   "name": "secdeva/reports/createReview",
   "template": "eucra/templates/reviewOfImportedProducts",
-  "buttonLabel": "Create a review of imported products"
+  "buttonLabel": "Create a review of imported products",
+  "phase": "secdeva_phase_implementation"
 {{/report}}
 
 == Assessment

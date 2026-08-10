@@ -17,7 +17,8 @@ Check that a review of distributed products have been conducted as applicable, a
 {{#report}}
   "name": "secdeva/reports/createReview",
   "template": "eucra/templates/reviewOfDistributedProducts",
-  "buttonLabel": "Create a review of distributed products"
+  "buttonLabel": "Create a review of distributed products",
+  "phase": "secdeva_phase_implementation"
 {{/report}}
 
 == Assessment

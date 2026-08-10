@@ -126,17 +126,7 @@ A copy of the EU declaration of conformity
 
 Comments, links:
 
-== Version history
-
-[cols="1,1,3"]
-|===============
-|Version | Date | Changes/Author
-
-| 0.1
-| 2024-01-01
-| XYZ changed by N.N.
-
-|===============
+== Security issues
 
 {{#createCards}}
   "template": "eucra/templates/securityIssue",

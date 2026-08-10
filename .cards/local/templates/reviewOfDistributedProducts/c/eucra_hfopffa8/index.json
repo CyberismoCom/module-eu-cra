@@ -7,6 +7,7 @@
     "base/fieldTypes/informationClassification": "internal",
     "base/fieldTypes/lastReviewed": null,
     "base/fieldTypes/reviewPeriod": 365,
-    "lastUpdated": "2025-07-18T14:08:00.886Z",
-    "base/fieldTypes/identifier": "eucra_review_distributed-products"
+    "lastUpdated": "2026-08-10T15:03:59.038Z",
+    "base/fieldTypes/identifier": "eucra_review_distributed-products",
+    "links": []
 }

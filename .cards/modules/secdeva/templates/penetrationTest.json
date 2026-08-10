@@ -1,6 +1,6 @@
 {
     "name": "secdeva/templates/penetrationTest",
-    "displayName": "Penetration test",
+    "displayName": "Review of penetration testing",
     "description": "Black-box exploratory testing to exploit vulnerabilities",
     "category": "Security testing"
 }

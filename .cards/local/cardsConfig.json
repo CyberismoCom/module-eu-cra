@@ -1,18 +1,18 @@
 {
     "schemaVersion": 5,
     "cardKeyPrefix": "eucra",
-    "name": "EU Cyber Resilience Act",
-    "description": "",
+    "name": "EU Cyber Resilience Act Essentials",
+    "description": "Essentials templates and internal controls for the team-level work that is required for EU CRA compliance",
     "version": "1.0.0",
     "modules": [
         {
             "name": "base",
-            "location": "https://github.com/CyberismoCom/module-base.git",
+            "location": "file:/Users/henryhaverinen/cyberismo/cyberismo-projects/module-base",
             "private": false
         },
         {
             "name": "ismsa",
-            "location": "https://github.com/CyberismoCom/module-isms-essentials.git",
+            "location": "file:/Users/henryhaverinen/cyberismo/cyberismo-projects/module-isms-essentials",
             "private": false
         },
         {

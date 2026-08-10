@@ -9,7 +9,7 @@ Recording decisions explicitly may be useful for
 * Significant changes
 ====
 
-TIP: If you need to create longer specifications, see {{#report}}"name":"xref","identifier":"secdeva_phase_design"{{/report}}.
+TIP: If you need to create longer specifications, see {{#report}}"name":"secdeva/reports/xref","identifier":"secdeva_phase_design"{{/report}}.
 
 {{#createCards}}
   "buttonLabel": "Create a decision",

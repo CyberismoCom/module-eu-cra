@@ -8,7 +8,7 @@
 {{#each requirements}}
 |xref:{{this.key}}.adoc[{{this.title}}] [*{{this.workflowState}}*]
 {{#if this.risks}}
-|
+a|
 {{#each this.risks}}
 * xref:{{this.key}}.adoc[{{this.title}}]
 {{/each}}
@@ -16,7 +16,7 @@
 |
 {{/if}}
 {{#if this.assets}}
-|
+a|
 {{#each this.assets}}
 * xref:{{this.key}}.adoc[{{this.title}}]
 {{/each}}

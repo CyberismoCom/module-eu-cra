@@ -6,6 +6,12 @@ Penetration testing is a combination of ad-hoc, exploratory and vulnerability te
 
 Test runs shall be documented and any findings shall be reported as security issues.
 
+=== Tester and testing time
+
+The testing is performed by: #TODO#
+
+Testing is performed #TODO describe when the testing is done#
+
 === Scope of testing
 
 The scope of penetration testing is:

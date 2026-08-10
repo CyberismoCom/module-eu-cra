@@ -27,7 +27,8 @@ resultField(Asset, "type", Type, "shortText") :-
 
 childResult(Asset, Risk, "risks") :-
   childResult(result, Asset, "assets"),
-  link(Asset, Risk, "ismsa/linkTypes/presentsRisk").
+  link(Asset, Risk, "ismsa/linkTypes/presentsRisk"),
+  field(Risk, "cardType", "ismsa/cardTypes/risk").
 
 childResult(Asset, Requirement, "securityRequirements") :-
   childResult(result, Asset, "assets"),

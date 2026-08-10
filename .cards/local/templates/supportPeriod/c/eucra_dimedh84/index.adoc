@@ -1,4 +1,4 @@
-This document specifies the support period for #TODO: add scope#.
+This document documents and justifies the support period.
 
 == Justification for the support period
 
@@ -43,3 +43,14 @@ The support periods of similar products are:
 NOTE: The support period shall be at least five years. Where the product is expected to be in use for less than five years, the support period shall correspond to the expected use time.
 
 The support period is #TODO#.
+
+== Identified security issues
+
+{{#createCards}}
+  "template": "secdeva/templates/securityIssue",
+  "buttonLabel": "Create a new security issue"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssueList"
+{{/report}}

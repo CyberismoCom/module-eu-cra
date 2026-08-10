@@ -1,6 +1,6 @@
 == Scope of review
 
-This document is a product documentation review for #add scope#. This review concerns the following product documentation:
+This document is a product documentation review for the product or solution. This review concerns the following product documentation:
 
 * #TODO: add links to the user manuals/product documentation#
 

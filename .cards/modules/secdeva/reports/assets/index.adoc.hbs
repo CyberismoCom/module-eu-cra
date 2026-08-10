@@ -9,7 +9,7 @@
 | {{this.type}} xref:{{this.key}}.adoc[{{this.title}}] [*{{this.workflowState}}*]
 | {{this.[base/fieldTypes/owner]}}
 {{#if this.risks}}
-|
+a|
 {{#each this.risks}}
 * xref:{{this.key}}.adoc[{{this.title}}]
 {{/each}}
@@ -17,7 +17,7 @@
 |
 {{/if}}
 {{#if this.securityRequirements}}
-|
+a|
 {{#each this.securityRequirements}}
 * xref:{{this.key}}.adoc[{{this.title}}]
 {{/each}}

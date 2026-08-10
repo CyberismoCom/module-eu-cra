@@ -8,7 +8,7 @@ NOTE: You do not need to get a perfect score to close the review as passed, but 
 
 === Internal controls
 
-Check the status of internal controls in {{#report}}"name":"xref","identifier":"secdeva_status-and-next-steps"{{/report}}. Your goal is to have no internal controls that would require attention. 
+Check the status of internal controls in {{#report}}"name":"secdeva/reports/xref","identifier":"secdeva_status-and-next-steps"{{/report}}. Your goal is to have no internal controls that would require attention.
 
 This can be marked as OK if the missing actions are planned.
 
@@ -19,7 +19,7 @@ Comments, links:
 
 === Security issue status
 
-Check the table of security issues in that need attention in {{#report}}"name":"xref","identifier":"secdeva_status-and-next-steps"{{/report}}.
+Check the table of security issues in that need attention in {{#report}}"name":"secdeva/reports/xref","identifier":"secdeva_status-and-next-steps"{{/report}}.
 
 * [ ] OK
 * [ ] Not OK
@@ -50,7 +50,7 @@ Comments, links:
 
 === Automated policy checks
 
-Check the status of automated policy checks in {{#report}}"name":"xref","identifier":"secdeva_status-and-next-steps"{{/report}}.
+Check the status of automated policy checks in {{#report}}"name":"secdeva/reports/xref","identifier":"secdeva_status-and-next-steps"{{/report}}.
 
 This can be marked as OK if the missing actions are planned.
 
@@ -68,7 +68,7 @@ Comments, links:
 
 === Retrospective
 
-TIP: Document here what went well in this period, and what could be improved in the next periods. 
+TIP: Document here what went well in this period, and what could be improved in the next periods.
 
 == Conclusion
 

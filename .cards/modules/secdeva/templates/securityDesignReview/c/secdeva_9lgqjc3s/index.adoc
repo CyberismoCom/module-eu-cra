@@ -4,9 +4,9 @@ This page documents the results of a security design review.
 
 == Product overview
 
-This security design review concerns the following scope:
+This security design review concerns the following:
 
-#TODO: describe the scope of the review#
+#TODO: describe the version and scope of the review#
 
 == Design related to security requirements and threats
 
@@ -22,9 +22,9 @@ Check that each significant design change is reviewed to determine that there ar
 
 Comments, links:
 
-=== Design of threat mitigations
+=== Design of risk mitigations
 
-If security issues have been identified in threat modeling, then check that the _design_ mitigates the identified issues.
+If risks have been identified in threat modeling, then check that the _design_ mitigates the identified risks.
 
 * [ ] OK
 * [ ] Not OK

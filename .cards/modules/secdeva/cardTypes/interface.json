@@ -37,15 +37,16 @@
     ],
     "alwaysVisibleFields": [
         "base/fieldTypes/owner",
-        "base/fieldTypes/informationClassification",
+        "base/fieldTypes/informationClassification"
+    ],
+    "optionallyVisibleFields": [
         "secdeva/fieldTypes/basicInputValidationTestingRequired",
         "secdeva/fieldTypes/basicStressTestingRequired",
-        "secdeva/fieldTypes/fuzzTestingRequired",
-        "secdeva/fieldTypes/capacityTestingRequired",
         "secdeva/fieldTypes/networkTrafficLoadTestingRequired",
+        "secdeva/fieldTypes/capacityTestingRequired",
+        "secdeva/fieldTypes/fuzzTestingRequired",
         "secdeva/fieldTypes/interfaceTestingScopingJustification"
     ],
-    "optionallyVisibleFields": [],
     "displayName": "Interface",
     "description": "An exposed interface with security documentation"
 }

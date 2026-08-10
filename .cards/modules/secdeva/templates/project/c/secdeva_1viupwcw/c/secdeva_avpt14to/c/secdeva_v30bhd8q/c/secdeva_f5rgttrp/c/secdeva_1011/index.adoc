@@ -19,7 +19,7 @@ Reusing components from other internal projects may also introduce risks. Theref
 
 1. For libraries and packages, the code reviewer shall consider the license, security and quality risks before approving a pull request that adds a new 3rd party dependency. Vulnerability management shall be in place. The development team should review the used 3rd party libraries and packages periodically, to remove unnecessary dependencies and to consider the risks that may have changed over time.
 
-2. For applications, frameworks, databases, toolkits and other significant 3rd party technologies, create a technology assessment document and follow the instructions from the template. The developent team should review the used significant 3rd party technologies periodically, to remove unnecessary dependencies and to consider the risks that may have changed over time. See {{#report}}"name": "xref", "identifier": "secdeva_register_technology-assessments"{{/report}} for how to create technology assessments.
+2. For applications, frameworks, databases, toolkits and other significant 3rd party technologies, create a technology assessment document and follow the instructions from the template. The developent team should review the used significant 3rd party technologies periodically, to remove unnecessary dependencies and to consider the risks that may have changed over time. See {{#report}}"name": "secdeva/reports/xref", "identifier": "secdeva_register_technology-assessments"{{/report}} for how to create technology assessments.
 
 3. In general, the development team must ensure that all 3rd party libraries, packages and significant dependencies are documented in a software bill of material (SBOM).
 

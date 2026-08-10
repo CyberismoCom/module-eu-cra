@@ -17,6 +17,12 @@
         {
             "name": "base/fieldTypes/approvalDate",
             "isCalculated": false
+        },
+        {
+            "name": "base/fieldTypes/identifier",
+            "displayName": "",
+            "isCalculated": false,
+            "enableOverride": false
         }
     ],
     "alwaysVisibleFields": [

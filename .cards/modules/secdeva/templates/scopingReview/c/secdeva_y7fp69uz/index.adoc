@@ -2,7 +2,7 @@
 
 This document records a review of process scoping for the development project. The purpose of this review is to verify that a security specialist has assessed the applicability of each internal control based on the project's risk profile, and that scoping decisions have been appropriately justified.
 
-TIP: You can see a summary of the scoping decisions in the internal control register, see {{#report}}"name": "xref", "identifier": "secdeva_register_internal-controls"{{/report}}.
+TIP: You can see a summary of the scoping decisions in the internal control register, see {{#report}}"name": "secdeva/reports/xref", "identifier": "secdeva_register_internal-controls"{{/report}}.
 
 == Review checklist
 

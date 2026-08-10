@@ -7,7 +7,7 @@
     "modules": [
         {
             "name": "base",
-            "location": "https://github.com/CyberismoCom/module-base.git",
+            "location": "file:/Users/henryhaverinen/cyberismo/cyberismo-projects/module-base",
             "private": false
         }
     ],

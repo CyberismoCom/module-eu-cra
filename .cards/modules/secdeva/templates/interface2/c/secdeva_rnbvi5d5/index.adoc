@@ -2,6 +2,8 @@
 
 This page documents the design of an interface.
 
+NOTE: Completing interface specifications is required on Adoption Step 3 only.
+
 == Interface review
 
 .Review instructions
@@ -200,7 +202,6 @@ The implementation of this interface: (Select one of the following options)
 - List the used 3rd party technologies here, or refer to another document
 
 == Design insights
-
 
 .Instructions
 [%collapsible]

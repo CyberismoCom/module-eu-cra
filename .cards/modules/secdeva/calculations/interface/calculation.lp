@@ -19,6 +19,7 @@ field(Card, "secdeva/fieldTypes/isExternal", "yes") :-
 
 field(Card, "secdeva/fieldTypes/isExternal", "no") :-
     secdeva_interfaceOrPhysicalConnection(Card),
+    link(_, Card, "secdeva/linkTypes/dataflow", _),
     not secdeva_externalEntity(Source) :
     link(Source, Card, "secdeva/linkTypes/dataflow", _).
 
@@ -47,32 +48,53 @@ field(Card, "secdeva/fieldTypes/crossesTrustBoundary", "no") :-
     field(TrustBoundary, "cardType", "secdeva/cardTypes/trustBoundary"),
     ancestor(Card, TrustBoundary).
 
-% Mandatory fields
+% Mandatory fields on adoption step 3
 
 policyCheckFailure(Interface, "Interfaces", "Basic input validation testing is a required field", "Whether basic input validation testing is required has not been defined.", "secdeva/fieldTypes/basicInputValidationTestingRequired") :-
   field(Interface, "cardType", "secdeva/cardTypes/interface"),
+  secdeva_closestProject(Interface, Project),
+  field(Project, "base/fieldTypes/adoptionStep", "step3"),
   not field(Interface, "secdeva/fieldTypes/basicInputValidationTestingRequired", _).
 
 policyCheckFailure(Interface, "Interfaces", "Basic stress testing is a required field", "Whether basic stress testing is required has not been defined.","secdeva/fieldTypes/basicStressTestingRequired") :-
   field(Interface, "cardType", "secdeva/cardTypes/interface"),
+  secdeva_closestProject(Interface, Project),
+  field(Project, "base/fieldTypes/adoptionStep", "step3"),
   not field(Interface, "secdeva/fieldTypes/basicStressTestingRequired", _).
   
 policyCheckFailure(Interface, "Interfaces", "Fuzz testing is a required field", "Whether fuzz testing is required has not been defined.","secdeva/fieldTypes/fuzzTestingRequired") :-
   field(Interface, "cardType", "secdeva/cardTypes/interface"),
+  secdeva_closestProject(Interface, Project),
+  field(Project, "base/fieldTypes/adoptionStep", "step3"),
   not field(Interface, "secdeva/fieldTypes/fuzzTestingRequired", _).
 
 policyCheckFailure(Interface, "Interfaces", "Capacity testing is a required field", "Whether capacity testing is required has not been defined.","secdeva/fieldTypes/capacityTestingRequired") :-
   field(Interface, "cardType", "secdeva/cardTypes/interface"),
+  secdeva_closestProject(Interface, Project),
+  field(Project, "base/fieldTypes/adoptionStep", "step3"),
   not field(Interface, "secdeva/fieldTypes/capacityTestingRequired", _).
 
 policyCheckFailure(Interface, "Interfaces", "Network traffic load testing is a required field", "Whether network traffic load testing is required has not been defined.","secdeva/fieldTypes/networkTrafficLoadTestingRequired") :-
   field(Interface, "cardType", "secdeva/cardTypes/interface"),
+  secdeva_closestProject(Interface, Project),
+  field(Project, "base/fieldTypes/adoptionStep", "step3"),
   not field(Interface, "secdeva/fieldTypes/networkTrafficLoadTestingRequired", _).
 
 policyCheckFailure(Interface, "Interfaces", "Justification for security testing is a required field", "The justification for security testing has not been defined.","secdeva/fieldTypes/interfaceTestingScopingJustification") :-
   field(Interface, "cardType", "secdeva/cardTypes/interface"),
+  secdeva_closestProject(Interface, Project),
+  field(Project, "base/fieldTypes/adoptionStep", "step3"),
   not field(Interface, "secdeva/fieldTypes/interfaceTestingScopingJustification", _).
 
+% Hide the interface review task in navigation unless on adoption step 3
+
+hiddenInTreeView(ReviewTask) :-
+  parent(ReviewTask, Interface),
+  field(Interface, "cardType", "secdeva/cardTypes/interface"),
+  field(ReviewTask, "cardType", "base/cardTypes/reviewTask"),
+  secdeva_closestProject(Interface, Project),
+  not field(Project, "base/fieldTypes/adoptionStep", "step3").
+  
 % Assessment
 
 % Helper: true when an interface has an open review task with policy check failures

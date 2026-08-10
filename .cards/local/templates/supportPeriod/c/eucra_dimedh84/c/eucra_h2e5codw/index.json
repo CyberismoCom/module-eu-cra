@@ -1,5 +1,5 @@
 {
-    "title": "Document review - support period",
+    "title": "Document review - Support period",
     "cardType": "base/cardTypes/reviewTask",
     "workflowState": "",
     "rank": "0|b",
@@ -9,5 +9,7 @@
     "base/fieldTypes/lastReviewed": null,
     "base/fieldTypes/justification": null,
     "base/fieldTypes/adoptionStep": null,
-    "base/fieldTypes/identifier": null
+    "base/fieldTypes/identifier": null,
+    "links": [],
+    "lastUpdated": "2026-08-10T08:31:17.290Z"
 }

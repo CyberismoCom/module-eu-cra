@@ -1,3 +1,5 @@
+Design controls ensure that security is considered before code is written — through threat modeling, security architecture, and requirements derivation. Addressing security at the design stage is far less costly than fixing flaws discovered later in implementation or production.
+
 Internal controls:
 
 {{#report}}

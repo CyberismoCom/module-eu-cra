@@ -65,17 +65,17 @@ Fixing security weaknesses in design is far less costly than fixing them in prod
 
 Many design-related aspects are documented in the following registers:
 
-* Processes, interfaces, data stores of the threat model and other assets are in {{#report}}"name":"xref","identifier":"secdeva_register_assets"{{/report}} register
-* Cybersecurity risks are in {{#report}}"name":"xref","identifier":"secdeva_register_risks"{{/report}} register
-* Security requirements are in {{#report}}"name":"xref","identifier":"secdeva_register_security-requirements"{{/report}} register
-* Assessments of 3rd party technologies are in {{#report}}"name":"xref","identifier":"secdeva_register_technology-assessments"{{/report}} register
-* Decisions are in {{#report}}"name":"xref","identifier":"secdeva_register_decisions"{{/report}} register
+* Processes, interfaces, data stores of the threat model and other assets are in {{#report}}"name":"secdeva/reports/xref","identifier":"secdeva_register_assets"{{/report}} register
+* Cybersecurity risks are in {{#report}}"name":"secdeva/reports/xref","identifier":"secdeva_register_risks"{{/report}} register
+* Security requirements are in {{#report}}"name":"secdeva/reports/xref","identifier":"secdeva_register_security-requirements"{{/report}} register
+* Assessments of 3rd party technologies are in {{#report}}"name":"secdeva/reports/xref","identifier":"secdeva_register_technology-assessments"{{/report}} register
+* Decisions are in {{#report}}"name":"secdeva/reports/xref","identifier":"secdeva_register_decisions"{{/report}} register
 
 === Architecture and design specifications
 
 You can document architecture or design in a specification here.
 
-TIP: If you need to document architecture or design decisions, see {{#report}}"name":"xref","identifier":"secdeva_register_decisions"{{/report}}.
+TIP: If you need to document architecture or design decisions, see {{#report}}"name":"secdeva/reports/xref","identifier":"secdeva_register_decisions"{{/report}}.
 
 {{#createCards}}
   "buttonLabel": "Create a specification",

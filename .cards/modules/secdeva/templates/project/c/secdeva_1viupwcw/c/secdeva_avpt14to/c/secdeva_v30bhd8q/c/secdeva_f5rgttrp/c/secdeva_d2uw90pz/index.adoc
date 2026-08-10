@@ -29,7 +29,7 @@ For each internal control, set an owner and transition the control to the approp
 * Mark *in scope* — the control must be implemented
 * Mark *out of scope* — the control does not apply. Document the justification in the *Scoping justification field*.
 
-TIP: You can see a summary of the scoping decisions in the internal control register, see {{#report}}"name": "xref", "identifier": "secdeva_register_internal-controls"{{/report}}.
+TIP: You can see a summary of the scoping decisions in the internal control register, see {{#report}}"name": "secdeva/reports/xref", "identifier": "secdeva_register_internal-controls"{{/report}}.
 
 Create a review of scoping and follow the instructions in the template. The review should be performed by a security specialist with sufficient competence.
 

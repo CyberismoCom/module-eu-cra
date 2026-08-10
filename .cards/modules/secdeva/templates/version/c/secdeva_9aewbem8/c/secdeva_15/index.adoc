@@ -4,7 +4,7 @@ The purpose of the release review is to ensure that we have complete visibility 
 
 === Internal controls
 
-Internal controls should be in an acceptable state. See {{#report}}"name": "xref", "identifier": "secdeva_status-and-next-steps"{{/report}}.
+Internal controls should be in an acceptable state. See {{#report}}"name": "secdeva/reports/xref", "identifier": "secdeva_status-and-next-steps"{{/report}}.
 
 * [ ] OK
 * [ ] Not OK
@@ -13,7 +13,7 @@ Comments, links:
 
 === Security issue status
 
-Check that Security issues affecting this version have been tracked to closure or deferred to a future release with a justified reason. See {{#report}}"name": "xref", "identifier": "secdeva_status-and-next-steps"{{/report}}.
+Check that Security issues affecting this version have been tracked to closure or deferred to a future release with a justified reason. See {{#report}}"name": "secdeva/reports/xref", "identifier": "secdeva_status-and-next-steps"{{/report}}.
 
 Notice that products must not be released if there are any known exploitable vulnerabilities.
 
@@ -46,7 +46,7 @@ Comments, links:
 
 === Automated policy checks
 
-Check the status of automated policy checks in the project. See {{#report}}"name": "xref", "identifier": "secdeva_status-and-next-steps"{{/report}}.
+Check the status of automated policy checks in the project. See {{#report}}"name": "secdeva/reports/xref", "identifier": "secdeva_status-and-next-steps"{{/report}}.
 
 * [ ] OK
 * [ ] Not OK

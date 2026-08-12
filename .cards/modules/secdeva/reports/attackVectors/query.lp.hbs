@@ -1,0 +1,8 @@
+select("title").
+
+result(AttackVector) :-
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(AttackVector, Project),
+    field(AttackVector, "base/fieldTypes/identifier", "secdeva_attack-vector").
+
+orderBy("title", "ASC").

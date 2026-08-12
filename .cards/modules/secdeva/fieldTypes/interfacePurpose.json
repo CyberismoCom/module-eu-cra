@@ -1,0 +1,24 @@
+{
+    "name": "secdeva/fieldTypes/interfacePurpose",
+    "displayName": "Purpose",
+    "dataType": "list",
+    "enumValues": [
+        {
+            "enumValue": "operational",
+            "enumDisplayValue": "Operational",
+            "enumDescription": ""
+        },
+        {
+            "enumValue": "maintenance",
+            "enumDisplayValue": "Maintenance",
+            "enumDescription": ""
+        },
+        {
+            "enumValue": "debug",
+            "enumDisplayValue": "Debug",
+            "enumDescription": ""
+        }
+    ],
+    "description": "Whether the interface is applicable to operations, maintenance, or debug",
+    "category": "Threat model"
+}

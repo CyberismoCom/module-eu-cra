@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/attackVectors",
+    "displayName": "Attack vectors",
+    "description": "Shows the attack vectors that have been identified in the threat model",
+    "category": "Secure development"
+}

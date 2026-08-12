@@ -46,4 +46,4 @@ It is recommended to have 2–6 checkpoints per year to keep secure development 
 
 == Activation
 
-Once you have filled in this template, use the "Activate" workflow transition to mark this card ready.
+Once you have filled in this template, set the owner field and use the "Activate" workflow transition to mark this card ready.

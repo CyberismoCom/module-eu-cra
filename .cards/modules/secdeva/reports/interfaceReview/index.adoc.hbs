@@ -4,15 +4,16 @@
 {{#if interfaces}}
 
 .Interfaces
-[cols="3,3,2,2"]
+[cols="3,3,2,2,2"]
 |===
-| Asset | Interface | External? | Crosses trust boundary?
+| Asset | Interface | External? | Crosses trust boundary? | Port(s)
 
 {{#each interfaces}}
 |xref:{{this.[secdeva/fieldTypes/interfaceElementCardKey]}}.adoc[{{this.[secdeva/fieldTypes/interfaceElementTitle]}}]
 |xref:{{this.key}}.adoc[{{this.title}}]
 |{{this.[secdeva/fieldTypes/isExternal].displayValue}}
 |{{this.[secdeva/fieldTypes/crossesTrustBoundary].displayValue}}
+|{{this.[secdeva/fieldTypes/port]}}
 
 {{/each}}
 

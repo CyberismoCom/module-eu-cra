@@ -1,0 +1,24 @@
+{
+    "name": "secdeva/fieldTypes/transportSecurity",
+    "displayName": "Transport security",
+    "dataType": "enum",
+    "enumValues": [
+        {
+            "enumValue": "no",
+            "enumDisplayValue": "No transport security",
+            "enumDescription": ""
+        },
+        {
+            "enumValue": "optional",
+            "enumDisplayValue": "Optional",
+            "enumDescription": ""
+        },
+        {
+            "enumValue": "required",
+            "enumDisplayValue": "Required",
+            "enumDescription": ""
+        }
+    ],
+    "description": "Whether communications is cryptographically protected",
+    "category": "Threat model"
+}

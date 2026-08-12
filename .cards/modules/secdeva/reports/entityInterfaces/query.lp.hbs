@@ -90,6 +90,7 @@ field(@concatenate(A, B, Title), "secdeva/fieldTypes/internalCardKey", B) :-
 
 childResult(result, Interface, "interfaces") :-
     field(Interface, "cardType", "secdeva/cardTypes/interface"),
+    field(Interface, "secdeva/fieldTypes/interfaceType", "logical"),
     ancestor(Interface, {{cardKey}}).
 
 field(Interface, "secdeva/fieldTypes/interfaceElementCardKey", Element) :-
@@ -104,7 +105,8 @@ field(Interface, "secdeva/fieldTypes/interfaceElementTitle", Title) :-
 % Physical connections
 
 childResult(result, PhysicalConnection, "physicalConnections") :-
-    field(PhysicalConnection, "cardType", "secdeva/cardTypes/physicalConnection"),
+    field(PhysicalConnection, "cardType", "secdeva/cardTypes/interface"),
+    field(PhysicalConnection, "secdeva/fieldTypes/interfaceType", "physical"),
     ancestor(PhysicalConnection, {{cardKey}}).
 
 field(PhysicalConnection, "secdeva/fieldTypes/physicalConnectionElementCardKey", Element) :-

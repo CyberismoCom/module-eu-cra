@@ -142,7 +142,7 @@ An attack vector is a _route_ or _means_ by which an attacker can attack the sys
 * Services running with elevated privileges
 * Application Programming Interfaces (APIs)
 
-When reviewing this section, ensure that the known potential attack vectors are listed.
+When reviewing this section, ensure that the known potential attack vectors are listed. Note that interfaces, physical ports, and 3rd party technologies are already listed in the sections above.
 
 Attack surface: The attack surface of a system or a component is the sum of the different points (the "attack vectors") where an unauthorized user (the "attacker") can try to enter data to or extract data from the system or component.
 

@@ -45,9 +45,15 @@ resultField(result, "projectCheckbox", "[ ]", "shortText") :-
   secdeva_closestProject({{cardKey}}, Project),
   not field(Project, "workflowStateCategory", "closed").
 
+resultField(result, "projectCheckbox", "[ ]", "shortText") :-
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Project, "workflowStateCategory", "closed"),
+  base_policyCheckFailure(Project, _, _, _).
+
 resultField(result, "projectCheckbox", "[x]", "shortText") :-
   secdeva_closestProject({{cardKey}}, Project),
-  field(Project, "workflowStateCategory", "closed").
+  field(Project, "workflowStateCategory", "closed"),
+  not base_policyCheckFailure(Project, _, _, _).
 
 resultField(result, "assignPeople", Card, "shortText") :-
   secdeva_closestProject(Card, Project),

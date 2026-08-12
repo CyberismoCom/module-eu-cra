@@ -4,7 +4,9 @@
     "customFields": [
         {
             "name": "base/fieldTypes/owner",
-            "isCalculated": false
+            "displayName": "",
+            "isCalculated": true,
+            "enableOverride": true
         },
         {
             "name": "base/fieldTypes/informationClassification",
@@ -16,7 +18,9 @@
         },
         {
             "name": "base/fieldTypes/reviewPeriod",
-            "isCalculated": false
+            "displayName": "",
+            "isCalculated": true,
+            "enableOverride": true
         },
         {
             "name": "base/fieldTypes/identifier",

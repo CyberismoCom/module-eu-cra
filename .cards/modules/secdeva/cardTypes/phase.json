@@ -17,9 +17,17 @@
             "name": "base/fieldTypes/adoptionStep",
             "displayName": "",
             "isCalculated": false
+        },
+        {
+            "name": "base/fieldTypes/owner",
+            "displayName": "",
+            "isCalculated": true,
+            "enableOverride": true
         }
     ],
-    "alwaysVisibleFields": [],
+    "alwaysVisibleFields": [
+        "base/fieldTypes/owner"
+    ],
     "optionallyVisibleFields": [
         "base/fieldTypes/adoptionStep"
     ],

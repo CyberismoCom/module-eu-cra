@@ -50,11 +50,31 @@ entityLevel(X, N+1) :- entity(X), not trustBoundary(X), effectiveParent(X, Y), e
 
 % dataflows
 
-dataflow(A, B, Title) :- link(A, B, "secdeva/linkTypes/dataflow", Title).
+% Interfaces are never shown in the diagram, so a dataflow that ends at an
+% interface is drawn as a dataflow to the entity that owns the interface.
+% interfaceOwner(I, E) means that entity E is the nearest ancestor of interface I
+% that is not an interface itself.
+interfaceOwner(I, E) :- interface(I), consistsOf(E, I), entity(E), not interface(E).
+interfaceOwner(I, E) :- interface(I), consistsOf(J, I), interface(J), interfaceOwner(J, E).
 
-% Propagate dataflows through interfaces to their parent entity
-dataflow(A, P, Title) :- dataflow(A, I, Title), interface(I), consistsOf(P, I), entity(P), not interface(P).
+% endpoint(B, E) means that entity E is drawn as the endpoint of a dataflow that
+% is linked to card B. Each card has at most one endpoint, so a dataflow is
+% never drawn twice.
+endpoint(B, B) :- entity(B), not interface(B).
+endpoint(B, E) :- interfaceOwner(B, E).
 
+% The title of a dataflow is annotated with the port of the destination,
+% if the destination defines one. Only the destination of a dataflow can have a
+% port, as a port is a listening port.
+dataflow(A, E, Title) :-
+  link(A, B, "secdeva/linkTypes/dataflow", Title),
+  endpoint(B, E),
+  not field(B, "secdeva/fieldTypes/port", _).
+
+dataflow(A, E, @concatenate(Title, " (", Port, ")")) :-
+  link(A, B, "secdeva/linkTypes/dataflow", Title),
+  endpoint(B, E),
+  field(B, "secdeva/fieldTypes/port", Port).
 
 %
 % Conversion from the architecture model to clingraph format

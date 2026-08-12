@@ -1,0 +1,5 @@
+{
+    "name": "secdeva/reports/projectExtensions",
+    "displayName": "Installable extensions",
+    "description": "Provide a way to instantiate available extensions from other modules for the entire project, in the Status and next steps card."
+}

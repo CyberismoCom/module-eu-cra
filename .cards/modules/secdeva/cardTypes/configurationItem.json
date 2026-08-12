@@ -6,7 +6,8 @@
         {
             "name": "base/fieldTypes/owner",
             "displayName": "",
-            "isCalculated": false
+            "isCalculated": true,
+            "enableOverride": true
         },
         {
             "name": "base/fieldTypes/informationClassification",

@@ -1,6 +1,6 @@
 == Introduction
 
-This document is an overall review of the interfaces in the threat model. APIs, protocols, physical connections, and other interfaces are typically a significant attack vector. Documenting the interfaces according to the interface specification template ensures that secure design principles have been applied when designing the interface.
+This document is an overall review of the interfaces and physical ports in the threat model. APIs, protocols, physical connections, and other interfaces are typically a significant attack vector. Documenting the interfaces  ensures that secure design principles have been applied when designing the interface.
 
 == Summary of interfaces
 
@@ -12,7 +12,7 @@ This document is an overall review of the interfaces in the threat model. APIs, 
 
 === Interface identification
 
-Relevant interfaces have been identified in the threat model:
+Relevant interfaces and physical connections have been identified in the threat model:
 
 * [ ] OK
 * [ ] Not OK

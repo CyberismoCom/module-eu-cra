@@ -33,9 +33,16 @@
         {
             "name": "secdeva/fieldTypes/testingToBypassMitigation",
             "isCalculated": false
+        },
+        {
+            "name": "base/fieldTypes/owner",
+            "displayName": "",
+            "isCalculated": true,
+            "enableOverride": true
         }
     ],
     "alwaysVisibleFields": [
+        "base/fieldTypes/owner",
         "secdeva/fieldTypes/securityIssueCategory",
         "secdeva/fieldTypes/severity",
         "secdeva/fieldTypes/severityJustification",

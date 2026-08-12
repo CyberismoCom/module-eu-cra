@@ -1,0 +1,7 @@
+{
+    "name": "secdeva/fieldTypes/port",
+    "displayName": "Port(s)",
+    "dataType": "shortText",
+    "description": "Listening port and transport, e.g. 4840/tcp or 4000-4100/udp",
+    "category": "Threat model"
+}

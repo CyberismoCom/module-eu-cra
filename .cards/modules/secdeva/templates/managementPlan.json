@@ -2,5 +2,5 @@
     "displayName": "Configuration management plan",
     "description": "A plan on how to manage secure development related configuration items in a development project",
     "category": "Secure development specifications",
-    "name": "secdeva/templates/configurationManagementPlan"
+    "name": "secdeva/templates/managementPlan"
 }

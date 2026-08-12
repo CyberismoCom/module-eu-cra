@@ -4,21 +4,21 @@
 
 % Open
 
-field(Control, "base/fieldTypes/assessment", "open") :-
+fieldCalculated(Control, "base/fieldTypes/assessment", "open") :-
   field(Control, "cardType", "ismsa/cardTypes/internalControl"),
   field(Control, "workflowState", "Open").
 
-field(Control, "base/fieldTypes/assessmentExplanation", "The control has not been scoped yet") :-
+fieldCalculated(Control, "base/fieldTypes/assessmentExplanation", "The control has not been scoped yet") :-
   field(Control, "cardType", "ismsa/cardTypes/internalControl"),
   field(Control, "workflowState", "Open").
 
 % Not applicable
 
-field(Control, "base/fieldTypes/assessment", "notApplicable") :-
+fieldCalculated(Control, "base/fieldTypes/assessment", "notApplicable") :-
   field(Control, "cardType", "ismsa/cardTypes/internalControl"),
   field(Control, "workflowState", "Out of scope").
 
-field(Control, "base/fieldTypes/assessmentExplanation", "The control has been marked out of scope") :-
+fieldCalculated(Control, "base/fieldTypes/assessmentExplanation", "The control has been marked out of scope") :-
   field(Control, "cardType", "ismsa/cardTypes/internalControl"),
   field(Control, "workflowState", "Out of scope").
 
@@ -28,25 +28,30 @@ ismsa_internalControlMissingEvidence(Control) :-
   field(Control, "cardType", "ismsa/cardTypes/internalControl"),
   not link(_, Control, "ismsa/linkTypes/evidences").
 
-field(Control, "base/fieldTypes/assessment", "notOk") :-
+ismsa_internalControlEvidenceFailure(Control) :-
+  field(Control, "cardType", "ismsa/cardTypes/internalControl"),
+  link(Evidence, Control, "ismsa/linkTypes/evidences"),
+  base_policyCheckFailure(Evidence, _, _, _).
+
+fieldCalculated(Control, "base/fieldTypes/assessment", "notOk") :-
   field(Control, "cardType", "ismsa/cardTypes/internalControl"),
   field(Control, "workflowState", "In scope"),
   ismsa_internalControlMissingEvidence(Control).
 
-field(Control, "base/fieldTypes/assessmentExplanation", "The control is in scope but required evidence has not been linked") :-
+fieldCalculated(Control, "base/fieldTypes/assessmentExplanation", "The control is in scope but required evidence has not been linked") :-
   field(Control, "cardType", "ismsa/cardTypes/internalControl"),
   field(Control, "workflowState", "In scope"),
   ismsa_internalControlMissingEvidence(Control).
 
 % Not OK because the internal control itself has failed policy checks
 
-field(Control, "base/fieldTypes/assessment", "notOk") :-
+fieldCalculated(Control, "base/fieldTypes/assessment", "notOk") :-
   field(Control, "cardType", "ismsa/cardTypes/internalControl"),
   field(Control, "workflowState", "In scope"),
   base_policyCheckFailure(Control, _, _, _),
   not ismsa_internalControlMissingEvidence(Control).
 
-field(Control, "base/fieldTypes/assessmentExplanation", "The control has failed policy checks") :-
+fieldCalculated(Control, "base/fieldTypes/assessmentExplanation", "The control has failed policy checks") :-
   field(Control, "cardType", "ismsa/cardTypes/internalControl"),
   field(Control, "workflowState", "In scope"),
   base_policyCheckFailure(Control, _, _, _),
@@ -54,7 +59,7 @@ field(Control, "base/fieldTypes/assessmentExplanation", "The control has failed 
 
 % Not OK because there is evidence that has not been assessed as OK
 
-field(Control, "base/fieldTypes/assessment", "notOk") :-
+fieldCalculated(Control, "base/fieldTypes/assessment", "notOk") :-
   field(Control, "cardType", "ismsa/cardTypes/internalControl"),
   field(Control, "workflowState", "In scope"),
   not base_policyCheckFailure(Control, _, _, _),
@@ -62,7 +67,7 @@ field(Control, "base/fieldTypes/assessment", "notOk") :-
   link(Evidence, Control, "ismsa/linkTypes/evidences"),
   not field(Evidence, "base/fieldTypes/assessment", "ok").
 
-field(Control, "base/fieldTypes/assessmentExplanation", "The control is in scope but the linked evidence is not ready") :-
+fieldCalculated(Control, "base/fieldTypes/assessmentExplanation", "The control is in scope but the linked evidence is not ready") :-
   field(Control, "cardType", "ismsa/cardTypes/internalControl"),
   field(Control, "workflowState", "In scope"),
   not base_policyCheckFailure(Control, _, _, _),
@@ -72,7 +77,7 @@ field(Control, "base/fieldTypes/assessmentExplanation", "The control is in scope
 
 % Not OK because there is evidence and all evidence is ready, but there are policy check failures
 
-field(Control, "base/fieldTypes/assessment", "notOk") :-
+fieldCalculated(Control, "base/fieldTypes/assessment", "notOk") :-
   field(Control, "cardType", "ismsa/cardTypes/internalControl"),
   field(Control, "workflowState", "In scope"),
   not base_policyCheckFailure(Control, _, _, _),
@@ -82,32 +87,34 @@ field(Control, "base/fieldTypes/assessment", "notOk") :-
   field(Evidence2, "base/fieldTypes/assessment", "ok") :
   link(Evidence2, Control, "ismsa/linkTypes/evidences").
 
-field(Control, "base/fieldTypes/assessmentExplanation", "The control is in scope but the linked evidence has failed policy checks") :-
+fieldCalculated(Control, "base/fieldTypes/assessmentExplanation", "The control is in scope but the linked evidence has failed policy checks") :-
   field(Control, "cardType", "ismsa/cardTypes/internalControl"),
   field(Control, "workflowState", "In scope"),
   not base_policyCheckFailure(Control, _, _, _),
   not ismsa_internalControlMissingEvidence(Control),
   link(Evidence, Control, "ismsa/linkTypes/evidences"),
   base_policyCheckFailure(Evidence, _, _, _),
-  not field(Evidence2, "base/fieldTypes/assessment", "ok") :
+  field(Evidence2, "base/fieldTypes/assessment", "ok") :
   link(Evidence2, Control, "ismsa/linkTypes/evidences").
 
 % OK because there is evidence and all linked evidence is ok
 
-field(Control, "base/fieldTypes/assessment", "ok") :-
+fieldCalculated(Control, "base/fieldTypes/assessment", "ok") :-
   field(Control, "cardType", "ismsa/cardTypes/internalControl"),
   field(Control, "workflowState", "In scope"),
   not base_policyCheckFailure(Control, _, _, _),
   not ismsa_internalControlMissingEvidence(Control),
+  not ismsa_internalControlEvidenceFailure(Control),
   link(_, Control, "ismsa/linkTypes/evidences"),
   field(Evidence, "base/fieldTypes/assessment", "ok"):
   link(Evidence, Control, "ismsa/linkTypes/evidences").
 
-field(Control, "base/fieldTypes/assessmentExplanation", "The control is in scope and there is valid evidence") :-
+fieldCalculated(Control, "base/fieldTypes/assessmentExplanation", "The control is in scope and there is valid evidence") :-
   field(Control, "cardType", "ismsa/cardTypes/internalControl"),
   field(Control, "workflowState", "In scope"),
   not base_policyCheckFailure(Control, _, _, _),
   not ismsa_internalControlMissingEvidence(Control),
+  not ismsa_internalControlEvidenceFailure(Control),
   link(_, Control, "ismsa/linkTypes/evidences"),
   field(Evidence, "base/fieldTypes/assessment", "ok") :
   link(Evidence, Control, "ismsa/linkTypes/evidences").
@@ -145,11 +152,24 @@ policyCheckFailure(
     field(Control, "workflowState", "Out of scope"),
     not field(Control, "base/fieldTypes/justification", _).
 
+%
+% Policy check: Assessment has been overridden but the explanation has not been updated
+%
+
+policyCheckFailure(
+  Control,
+  "Internal control",
+  "Assessment explanation not given for overridden assessment",
+  "The assessment field has been overridden, but the assessment explanation has not been updated. Explain the assessment by overriding the assessment explanation field.",
+  "base/fieldTypes/assessmentExplanation"
+) :-
+  field(Control, "cardType", "ismsa/cardTypes/internalControl"),
+  fieldOverride(Control, "base/fieldTypes/assessment", _),
+  not fieldOverride(Control, "base/fieldTypes/assessmentExplanation", _).
 
 %
 % Policy check: All linked review evidence has expired
 %
-
 
 policyCheckFailure(
   Control,

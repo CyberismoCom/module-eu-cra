@@ -16,9 +16,17 @@ NOTE: Because the purpose of the attack surface specification is to enable techn
 
 == Attack surface specification
 
-#TODO: Document the scope of this analysis#
+The threat model defines the following interfaces, physical connections, and other attack vectors:
 
-#TODO: add here the specification of the attack surface, or a link/an attachment to the attack surface specification.#
+{{#report}}
+  "name": "secdeva/reports/interfaceReview"
+{{/report}}
+
+{{#report}}
+  "name": "secdeva/reports/attackVectors"
+{{/report}}
+
+#TODO: add here any additional specification of the attack surface, or a link/an attachment to the attack surface specification.#
 
 == Reviews
 

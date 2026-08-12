@@ -2,8 +2,17 @@
     "name": "secdeva/cardTypes/requirement",
     "workflow": "secdeva/workflows/requirement",
     "displayName": "Requirement",
-    "customFields": [],
-    "alwaysVisibleFields": [],
+    "customFields": [
+        {
+            "name": "base/fieldTypes/owner",
+            "displayName": "",
+            "isCalculated": true,
+            "enableOverride": true
+        }
+    ],
+    "alwaysVisibleFields": [
+        "base/fieldTypes/owner"
+    ],
     "optionallyVisibleFields": [],
     "description": "A technical security requirement"
 }

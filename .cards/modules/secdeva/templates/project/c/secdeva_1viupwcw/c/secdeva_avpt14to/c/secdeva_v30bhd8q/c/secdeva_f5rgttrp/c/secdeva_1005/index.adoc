@@ -19,7 +19,7 @@ Create a configuration management plan and follow the instructions in the templa
 
 {{#report}}
   "name": "secdeva/reports/createDocument",
-  "template": "secdeva/templates/configurationManagementPlan",
+  "template": "secdeva/templates/managementPlan",
   "buttonLabel": "Create a configuration management plan",
   "phase": "secdeva_phase_design"
 {{/report}}

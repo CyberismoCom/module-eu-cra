@@ -4,12 +4,12 @@
     "workflowState": "",
     "rank": "0|b",
     "base/fieldTypes/owner": null,
-    "base/fieldTypes/informationClassification": null,
+    "base/fieldTypes/informationClassification": "internal",
     "base/fieldTypes/reviewPeriod": null,
     "base/fieldTypes/lastReviewed": null,
     "base/fieldTypes/justification": null,
     "base/fieldTypes/adoptionStep": null,
     "base/fieldTypes/identifier": null,
-    "lastUpdated": "2026-08-03T09:03:10.928Z",
+    "lastUpdated": "2026-08-12T06:53:44.379Z",
     "links": []
 }

@@ -43,14 +43,3 @@ The scope of the testing that is reviewed:
 === Notes
 
 #TODO Add any notes about this review#
-
-== Identified security issues from this review
-
-{{#createCards}}
-  "template": "secdeva/templates/securityIssue",
-  "buttonLabel": "Create a new security issue"
-{{/createCards}}
-
-{{#report}}
-  "name": "secdeva/reports/securityIssueList"
-{{/report}}

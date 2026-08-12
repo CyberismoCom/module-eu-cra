@@ -9,13 +9,21 @@
         {
             "name": "secdeva/fieldTypes/technology",
             "isCalculated": false
+        },
+        {
+            "name": "base/fieldTypes/owner",
+            "displayName": "",
+            "isCalculated": true,
+            "enableOverride": true
         }
     ],
     "alwaysVisibleFields": [
         "secdeva/fieldTypes/description",
         "secdeva/fieldTypes/technology"
     ],
-    "optionallyVisibleFields": [],
+    "optionallyVisibleFields": [
+        "base/fieldTypes/owner"
+    ],
     "displayName": "Data store",
     "description": "A data store element in a dataflow model"
 }

@@ -47,7 +47,7 @@ flowchart LR
       direction TB
       R[Assign people to security-related project roles] --> C[Ensure competence]
     end
-    subgraph D[Design]
+    subgraph D[Risk assessment]
       direction TB
       SC[Document product security context] --> TM[Manage threat models]
       TM --> RI[Identify risks]
@@ -57,7 +57,7 @@ flowchart LR
     D --> Next[Perform security controls scoping]
 ----
 
-* {{this.projectCheckbox}} Fill in the project scope and objectives on the card *{{#xref}}"cardKey": "{{this.project}}"{{/xref}}* and then mark the page ready by using the "Activate" workflow transition.
+* {{this.projectCheckbox}} Fill in the project scope and objectives on the card *{{#xref}}"cardKey": "{{this.project}}"{{/xref}}*, set the owner field, and then mark the page ready by using the "Activate" workflow transition.
 * {{this.assignPeopleCheckbox}} *{{#xref}}"cardKey": "{{this.assignPeople}}"{{/xref}}* — Define who is responsible for security in the project. Without clear ownership, tasks will not get done.
 * {{this.ensureCompetenceCheckbox}} *{{#xref}}"cardKey": "{{this.ensureCompetence}}"{{/xref}}* — Verify that assigned people have adequate cybersecurity knowledge, and arrange training where needed.
 * {{this.documentSecurityContextCheckbox}} *{{#xref}}"cardKey": "{{this.documentSecurityContext}}"{{/xref}}* — Describe the product's operating environment, trust boundaries, and key security assumptions. This context guides threat modeling and requirements work.

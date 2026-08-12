@@ -7,6 +7,7 @@ resultField(result, "register", Register, "shortText") :-
   secdeva_closestProject({{cardKey}}, Project),
   secdeva_closestProject(Register, Project),
   field(Register, "base/fieldTypes/identifier", "secdeva_register_technology-assessments").
+  
 resultField(result, "registerStatus", Status, "shortText") :-
   secdeva_closestProject({{cardKey}}, Project),
   secdeva_closestProject(Register, Project),
@@ -14,10 +15,8 @@ resultField(result, "registerStatus", Status, "shortText") :-
   field(Register, "workflowState", Status).
 
 childResult(result, Technology, "technologies") :-
-  secdeva_registerMember(Technology, Register),
-  secdeva_closestProject(Register, Project),
   secdeva_closestProject({{cardKey}}, Project),
   secdeva_closestProject(Technology, Project),
-  field(Register, "base/fieldTypes/identifier", "secdeva_register_technology-assessments").
+  field(Technology, "cardType", "secdeva/cardTypes/technology").
 
 orderBy("title", "ASC").

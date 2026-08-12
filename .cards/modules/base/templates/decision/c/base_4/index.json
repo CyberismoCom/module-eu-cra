@@ -2,9 +2,8 @@
     "title": "Untitled decision",
     "cardType": "base/cardTypes/decision",
     "workflowState": "",
-    "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
-    "base/fieldTypes/decisionDate": null,
     "rank": "0|a",
-    "lastUpdated": "2024-08-01T14:25:19.229Z"
+    "lastUpdated": "2026-08-10T19:26:53.875Z",
+    "links": []
 }

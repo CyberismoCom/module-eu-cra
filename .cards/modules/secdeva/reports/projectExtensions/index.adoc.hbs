@@ -1,0 +1,37 @@
+{{#each results}}
+
+{{#unless this.uninstalledExtensions}}
+
+There are no uninstalled extensions available.
+
+{{/unless}}
+
+{{#each this.uninstalledExtensions}}
+
+Add new content under {{#xref}}"cardKey": "{{this.extensibleCard}}"{{/xref}} from {{this.moduleDescription}}:
+
+{{#createCards}}
+  "cardKey": "{{this.extensibleCard}}",
+  "template": "{{this.template}}",
+  "buttonLabel": "{{this.buttonLabel}}"
+{{/createCards}}
+{{/each}}
+
+
+{{#if this.installedExtensions}}
+
+.Extensions that have been installed
+[%collapsible]
+=====
+{{#each this.installedExtensions}}
+
+Content from {{this.moduleDescription}} has been added under {{#xref}}"cardKey": "{{this.extensibleCard}}"{{/xref}}.
+
+{{/each}}
+=====
+{{else}}
+
+No extensions have been installed.
+
+{{/if}}
+{{/each}}

@@ -6,6 +6,7 @@ result(result).
 
 childResult(result, Interface, "interfaces") :-
     field(Interface, "cardType", "secdeva/cardTypes/interface"),
+    field(Interface, "secdeva/fieldTypes/interfaceType", "logical"),
     secdeva_closestProject({{cardKey}}, Project),
     secdeva_closestProject(Interface, Project).
 
@@ -21,7 +22,8 @@ field(Interface, "secdeva/fieldTypes/interfaceElementTitle", Title) :-
 % Physical ports and connections
 
 childResult(result, PhysicalConnection, "physicalConnections") :-
-    field(PhysicalConnection, "cardType", "secdeva/cardTypes/physicalConnection"),
+    field(PhysicalConnection, "cardType", "secdeva/cardTypes/interface"),
+    field(PhysicalConnection, "secdeva/fieldTypes/interfaceType", "physical"),
     secdeva_closestProject({{cardKey}}, Project),
     secdeva_closestProject(PhysicalConnection, Project).
 

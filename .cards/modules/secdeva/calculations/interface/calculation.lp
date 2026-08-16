@@ -9,9 +9,6 @@ secdeva_externalEntity(Card) :-
 secdeva_interfaceOrPhysicalConnection(Card) :-
     field(Card, "cardType", "secdeva/cardTypes/interface").
 
-secdeva_interfaceOrPhysicalConnection(Card) :-
-    field(Card, "cardType", "secdeva/cardTypes/physicalConnection").
-
 field(Card, "secdeva/fieldTypes/isExternal", "yes") :-
     secdeva_interfaceOrPhysicalConnection(Card),
     link(Source, Card, "secdeva/linkTypes/dataflow", _),

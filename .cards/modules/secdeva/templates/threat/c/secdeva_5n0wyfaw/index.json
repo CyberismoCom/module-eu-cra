@@ -4,11 +4,6 @@
     "workflowState": "",
     "rank": "0|b",
     "secdeva/fieldTypes/securityIssueCategory": "threat",
-    "secdeva/fieldTypes/severity": null,
-    "secdeva/fieldTypes/severityJustification": null,
-    "secdeva/fieldTypes/rootCauseCategory": null,
-    "secdeva/fieldTypes/rootCauseJustification": null,
-    "secdeva/fieldTypes/strategy": null,
-    "secdeva/fieldTypes/reporting": null,
-    "secdeva/fieldTypes/testingToBypassMitigation": null
+    "links": [],
+    "lastUpdated": "2026-08-16T20:28:21.171Z"
 }

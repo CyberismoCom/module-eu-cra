@@ -1,0 +1,13 @@
+{
+    "cardType": "ismsa/cardTypes/internalControl",
+    "title": "Review code changes manually",
+    "workflowState": "",
+    "rank": "0|b",
+    "lastUpdated": "2026-08-16T20:28:21.165Z",
+    "links": [],
+    "base/fieldTypes/adoptionStep": "step2",
+    "base/fieldTypes/informationClassification": "internal",
+    "ismsa/fieldTypes/internalControlReviewPeriod": "12months",
+    "base/fieldTypes/reviewMonth": "september",
+    "base/fieldTypes/identifier": "secdeva_control_manual-code-review"
+}

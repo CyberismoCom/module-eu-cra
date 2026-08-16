@@ -71,6 +71,12 @@
             "displayName": "",
             "isCalculated": false,
             "enableOverride": false
+        },
+        {
+            "name": "base/fieldTypes/identifier",
+            "displayName": "",
+            "isCalculated": false,
+            "enableOverride": false
         }
     ],
     "alwaysVisibleFields": [
@@ -89,7 +95,8 @@
         "secdeva/fieldTypes/networkTrafficLoadTestingRequired",
         "secdeva/fieldTypes/capacityTestingRequired",
         "secdeva/fieldTypes/fuzzTestingRequired",
-        "secdeva/fieldTypes/interfaceTestingScopingJustification"
+        "secdeva/fieldTypes/interfaceTestingScopingJustification",
+        "base/fieldTypes/identifier"
     ],
     "displayName": "Interface",
     "description": "An exposed interface with security documentation"

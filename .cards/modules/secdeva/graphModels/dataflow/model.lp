@@ -24,7 +24,6 @@ entity(X) :- datastore(X).
 
 % interfaces and physical ports and connections (always hidden)
 interface(X) :- field(X, "cardType", "secdeva/cardTypes/interface").
-interface(X) :- field(X, "cardType", "secdeva/cardTypes/physicalConnection").
 entity(X) :- interface(X).
 hide(X) :- interface(X).
 
@@ -119,6 +118,11 @@ view(X, N) :- entity(X), entityLevel(X, 1), viewAll(N), not hide(X).
 
 % graphs
 
+% nearestVisibleAncestor(X, A): A is the nearest visible ancestor of X,
+% found by walking up through invisible intermediaries.
+nearestVisibleAncestor(X, A) :- consistsOf(A, X), visible(A).
+nearestVisibleAncestor(X, A) :- consistsOf(P, X), entity(P), not visible(P), nearestVisibleAncestor(P, A).
+
 % top level graph is for top level entities and enties whose parent is not visible
 graph(toplevelGraph).
 
@@ -130,17 +134,19 @@ graph(toplevelGraph).
 
 % graphTopLevelEntity(X) means that X is a top-level entity that must be drawn as a graph,
 % because it has visible "children"
-graphTopLevelEntity(X) :- entity(X), visible(X), not consistsOf(_, X), visible(Y), consistsOf(X, Y).
+graphTopLevelEntity(X) :- entity(X), visible(X), not consistsOf(_, X), contains(X, Y), visible(Y).
 graph(X, toplevelGraph) :- graphTopLevelEntity(X).
 node(X, X) :- graphTopLevelEntity(X).
 invisible(X) :- graphTopLevelEntity(X).
 attr(node, X, shape, point) :- graphTopLevelEntity(X).
 attr(node, X, style, invis) :- graphTopLevelEntity(X).
 
-% graphEntityHiddenAncestors(X) means that X is an entity that must be drawn as a graph in the toplevelGraph,
-% because it has visible "children", and its own parent is not visible
-graphEntityHiddenAncestors(X) :-  visible(X), not visible(P), consistsOf(P, X), entity(X), visible(Y), consistsOf(X, Y).
-graph(X, toplevelGraph) :- graphEntityHiddenAncestors(X).
+% graphEntityHiddenAncestors(X) means that X is an entity that must be drawn as a graph,
+% because it has visible "children", and its own parent is not visible.
+% If a nearest visible ancestor exists, X is placed inside it; otherwise at the top level.
+graphEntityHiddenAncestors(X) :-  visible(X), not visible(P), consistsOf(P, X), entity(X), contains(X, Y), visible(Y).
+graph(X, G) :- graphEntityHiddenAncestors(X), nearestVisibleAncestor(X, G).
+graph(X, toplevelGraph) :- graphEntityHiddenAncestors(X), not nearestVisibleAncestor(X, _).
 node(X, X) :- graphEntityHiddenAncestors(X).
 invisible(X) :- graphEntityHiddenAncestors(X).
 attr(node, X, shape, point) :- graphEntityHiddenAncestors(X).
@@ -148,7 +154,7 @@ attr(node, X, style, invis) :- graphEntityHiddenAncestors(X).
 
 % graphLowerLevel(X, P) means that X has visible children and a visible parent,
 % so it must be drawn as a subgraph of P
-graphLowerLevel(X, P) :- visible(X), entity(X), visible(P), consistsOf(P, X), visible(Y), consistsOf(X, Y).
+graphLowerLevel(X, P) :- visible(X), entity(X), visible(P), consistsOf(P, X), contains(X, Y), visible(Y).
 graph(X, P) :- graphLowerLevel(X, P).
 node(X, X) :- graphLowerLevel(X, P).
 invisible(X) :- graphLowerLevel(X, P).
@@ -157,10 +163,13 @@ attr(node, X, style, invis) :- graphLowerLevel(X, P).
 
 % nodes
 
-% if an entity is visible, but it's not a graph (= does not have visible children), then it is a node
+% if an entity is visible, but it's not a graph (= does not have visible children), then it is a node.
+% if the immediate parent is not visible, the node is placed in the nearest visible ancestor graph,
+% or at the top level if no such ancestor exists.
 node(X, toplevelGraph) :- entity(X), visible(X), not consistsOf(_, X), not graph(X, toplevelGraph).
 node(X, Y) :- entity(X), visible(X), consistsOf(Y, X), not graph(X, _), visible(Y).
-node(X, toplevelGraph) :- entity(X), visible(X), consistsOf(Y, X), not graph(X, _), not visible(Y).
+node(X, G) :- entity(X), visible(X), consistsOf(Y, X), not graph(X, _), not visible(Y), nearestVisibleAncestor(X, G).
+node(X, toplevelGraph) :- entity(X), visible(X), consistsOf(Y, X), not graph(X, _), not visible(Y), not nearestVisibleAncestor(X, _).
 
 % edges and representatives of entities when drawing dataflows
 

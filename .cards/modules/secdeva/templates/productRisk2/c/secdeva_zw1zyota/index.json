@@ -3,13 +3,6 @@
     "cardType": "ismsa/cardTypes/risk",
     "workflowState": "",
     "rank": "0|b",
-    "base/fieldTypes/owner": null,
-    "base/fieldTypes/informationClassification": null,
-    "ismsa/fieldTypes/riskInitialLikelihood": null,
-    "ismsa/fieldTypes/riskInitialImpact": null,
-    "ismsa/fieldTypes/riskMitigationStrategy": null,
-    "ismsa/fieldTypes/riskResidualLikelihood": null,
-    "ismsa/fieldTypes/riskResidualImpact": null,
-    "lastUpdated": "2026-07-22T11:13:10.119Z",
+    "lastUpdated": "2026-08-16T20:28:21.149Z",
     "links": []
 }

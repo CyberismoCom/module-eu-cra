@@ -3,8 +3,7 @@
     "cardType": "base/cardTypes/controlledDocument",
     "workflowState": "",
     "rank": "0|b",
-    "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
-    "base/fieldTypes/approver": null,
-    "base/fieldTypes/approvalDate": null
+    "links": [],
+    "lastUpdated": "2026-08-16T20:13:38.645Z"
 }

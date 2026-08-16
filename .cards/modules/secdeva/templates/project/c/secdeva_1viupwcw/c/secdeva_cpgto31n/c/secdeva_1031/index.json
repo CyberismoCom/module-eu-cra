@@ -1,0 +1,13 @@
+{
+    "cardType": "base/cardTypes/annualTask",
+    "title": "Use static code analysis",
+    "workflowState": "",
+    "rank": "0|cx",
+    "lastUpdated": "2026-08-16T20:28:21.153Z",
+    "links": [],
+    "base/fieldTypes/adoptionStep": "step1",
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/reviewPeriod": 365,
+    "base/fieldTypes/reviewMonth": "august",
+    "base/fieldTypes/identifier": "secdeva_control_static-code-analysis"
+}

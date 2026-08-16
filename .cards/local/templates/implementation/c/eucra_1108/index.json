@@ -3,14 +3,10 @@
     "title": "Review technical documentation",
     "workflowState": "",
     "rank": "0|zz",
-    "lastUpdated": "2026-08-04T06:37:26.665Z",
+    "lastUpdated": "2026-08-16T20:45:38.673Z",
     "links": [],
-    "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
-    "base/fieldTypes/reviewMonth": null,
     "base/fieldTypes/reviewPeriod": 365,
-    "base/fieldTypes/lastReviewed": null,
     "base/fieldTypes/adoptionStep": "step2",
-    "base/fieldTypes/identifier": "eucra_control_technical-documentation-review",
-    "base/fieldTypes/justification": null
+    "base/fieldTypes/identifier": "eucra_control_technical-documentation-review"
 }

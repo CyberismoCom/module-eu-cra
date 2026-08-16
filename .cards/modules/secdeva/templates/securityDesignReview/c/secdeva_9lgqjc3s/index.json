@@ -3,11 +3,8 @@
     "cardType": "base/cardTypes/review",
     "workflowState": "",
     "rank": "0|b",
-    "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
-    "base/fieldTypes/lastReviewed": null,
-    "base/fieldTypes/reviewPeriod": null,
-    "lastUpdated": "2026-08-04T11:30:44.208Z",
+    "lastUpdated": "2026-08-16T20:28:21.169Z",
     "links": [],
     "base/fieldTypes/identifier": "secdeva_review_security-design"
 }

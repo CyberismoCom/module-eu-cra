@@ -1,0 +1,15 @@
+You can document technical decisions and design specifications either as part of a dataflow model (under a threat model), or you can create them here. In both cases, the decisions and design specifications will be shown in the summary tables below.
+
+{{#createCards}}
+  "buttonLabel": "Create a decision",
+  "template": "base/templates/decision"
+{{/createCards}}
+
+{{#createCards}}
+  "buttonLabel": "Create a specification",
+  "template": "secdeva/templates/designSpecification"
+{{/createCards}}
+
+{{#report}}
+    "name": "secdeva/reports/projectDecisionsAndSpecifications"
+{{/report}}

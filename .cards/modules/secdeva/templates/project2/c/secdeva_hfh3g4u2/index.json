@@ -1,0 +1,11 @@
+{
+    "title": "Untitled development project",
+    "cardType": "secdeva/cardTypes/project2",
+    "workflowState": "",
+    "rank": "0|e",
+    "base/fieldTypes/adoptionStep": "step1",
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/identifier": "secdeva_project",
+    "links": [],
+    "lastUpdated": "2026-08-16T20:28:21.156Z"
+}

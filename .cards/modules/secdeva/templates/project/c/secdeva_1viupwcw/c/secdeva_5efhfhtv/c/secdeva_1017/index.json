@@ -1,0 +1,12 @@
+{
+    "cardType": "base/cardTypes/annualTask",
+    "title": "Document security context",
+    "workflowState": "",
+    "rank": "0|a",
+    "lastUpdated": "2026-08-16T20:28:21.154Z",
+    "links": [],
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/reviewPeriod": 365,
+    "base/fieldTypes/reviewMonth": "april",
+    "base/fieldTypes/identifier": "secdeva_control_security-context"
+}

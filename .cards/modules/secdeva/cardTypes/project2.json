@@ -22,6 +22,12 @@
             "name": "secdeva/fieldTypes/adoptionStepJustification",
             "displayName": "",
             "isCalculated": false
+        },
+        {
+            "name": "base/fieldTypes/identifier",
+            "displayName": "",
+            "isCalculated": false,
+            "enableOverride": false
         }
     ],
     "alwaysVisibleFields": [
@@ -30,6 +36,8 @@
         "base/fieldTypes/adoptionStep",
         "secdeva/fieldTypes/adoptionStepJustification"
     ],
-    "optionallyVisibleFields": [],
+    "optionallyVisibleFields": [
+        "base/fieldTypes/identifier"
+    ],
     "description": "A software or hardware development project"
 }

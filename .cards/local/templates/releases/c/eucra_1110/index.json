@@ -2,13 +2,10 @@
     "cardType": "base/cardTypes/task",
     "title": "EU conformity assessment procedure",
     "workflowState": "",
-    "base/fieldTypes/owner": null,
     "base/fieldTypes/adoptionStep": "step1",
-    "base/fieldTypes/dueDate": null,
     "base/fieldTypes/informationClassification": "internal",
-    "base/fieldTypes/justification": null,
     "rank": "0|s",
-    "lastUpdated": "2025-09-14T18:00:14.435Z",
+    "lastUpdated": "2026-08-16T20:45:38.675Z",
     "links": [],
     "base/fieldTypes/identifier": "eucra_control_eu-conformity-assessment"
 }

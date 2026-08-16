@@ -3,10 +3,8 @@
     "cardType": "base/cardTypes/review",
     "workflowState": "",
     "rank": "0|b",
-    "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
-    "base/fieldTypes/lastReviewed": null,
     "base/fieldTypes/reviewPeriod": 365,
-    "lastUpdated": "2026-05-14T19:11:10.983Z",
+    "lastUpdated": "2026-08-16T20:13:38.661Z",
     "links": []
 }

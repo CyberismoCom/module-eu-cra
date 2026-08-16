@@ -1,0 +1,13 @@
+{
+    "cardType": "ismsa/cardTypes/internalControl",
+    "title": "Use static code analysis",
+    "workflowState": "",
+    "rank": "0|a",
+    "lastUpdated": "2026-08-16T20:28:21.165Z",
+    "links": [],
+    "base/fieldTypes/adoptionStep": "step1",
+    "base/fieldTypes/informationClassification": "internal",
+    "ismsa/fieldTypes/internalControlReviewPeriod": "12months",
+    "base/fieldTypes/reviewMonth": "august",
+    "base/fieldTypes/identifier": "secdeva_control_static-code-analysis"
+}

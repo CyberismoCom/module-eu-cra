@@ -31,6 +31,12 @@
         {
             "name": "secdeva/fieldTypes/sbomComponentPurl",
             "isCalculated": false
+        },
+        {
+            "name": "base/fieldTypes/identifier",
+            "displayName": "",
+            "isCalculated": false,
+            "enableOverride": false
         }
     ],
     "optionallyVisibleFields": [
@@ -38,7 +44,8 @@
         "secdeva/fieldTypes/sbomComponentGroup",
         "secdeva/fieldTypes/sbomComponentName",
         "secdeva/fieldTypes/sbomComponentCpe",
-        "secdeva/fieldTypes/sbomComponentPurl"
+        "secdeva/fieldTypes/sbomComponentPurl",
+        "base/fieldTypes/identifier"
     ],
     "alwaysVisibleFields": [
         "base/fieldTypes/owner",

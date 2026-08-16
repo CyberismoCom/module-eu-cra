@@ -1,0 +1,13 @@
+{
+    "cardType": "ismsa/cardTypes/internalControl",
+    "title": "Make a configuration management plan",
+    "workflowState": "",
+    "rank": "0|fn",
+    "lastUpdated": "2026-08-16T20:28:21.163Z",
+    "links": [],
+    "base/fieldTypes/adoptionStep": "step3",
+    "base/fieldTypes/informationClassification": "internal",
+    "ismsa/fieldTypes/internalControlReviewPeriod": "12months",
+    "base/fieldTypes/reviewMonth": "february",
+    "base/fieldTypes/identifier": "secdeva_control_configuration-management-plan"
+}

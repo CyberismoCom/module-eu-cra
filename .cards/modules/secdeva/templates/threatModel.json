@@ -1,6 +1,6 @@
 {
     "displayName": "Threat model (deprecated)",
     "description": "A document for systematic security threat management. Included for backward compatibility.",
-    "category": "Deprecated.",
+    "category": "Deprecated",
     "name": "secdeva/templates/threatModel"
 }

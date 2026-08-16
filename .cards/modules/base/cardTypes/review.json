@@ -35,7 +35,8 @@
     ],
     "optionallyVisibleFields": [
         "base/fieldTypes/reviewPeriod",
-        "base/fieldTypes/informationClassification"
+        "base/fieldTypes/informationClassification",
+        "base/fieldTypes/identifier"
     ],
     "displayName": "Review",
     "description": "Tracks a review that can pass or fail"

@@ -1,13 +1,12 @@
 {
     "title": "Untitled development project",
-    "cardType": "secdeva/cardTypes/project2",
+    "cardType": "secdeva/cardTypes/project",
     "workflowState": "",
-    "rank": "0|e",
-    "base/fieldTypes/owner": null,
+    "rank": "0|b",
     "base/fieldTypes/adoptionStep": "step1",
-    "secdeva/fieldTypes/adoptionStepJustification": null,
     "base/fieldTypes/informationClassification": "internal",
-    "base/fieldTypes/identifier": "secdeva_project",
+    "secdeva/fieldTypes/acceptableSeverity": "low",
+    "secdeva/fieldTypes/deferrableSeverity": "medium",
     "links": [],
-    "lastUpdated": "2026-08-11T05:52:41.932Z"
+    "lastUpdated": "2026-08-16T20:28:21.149Z"
 }

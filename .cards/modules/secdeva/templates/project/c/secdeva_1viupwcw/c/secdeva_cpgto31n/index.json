@@ -1,12 +1,10 @@
 {
     "title": "Implementation",
-    "cardType": "secdeva/cardTypes/phase",
+    "cardType": "secdeva/cardTypes/page",
     "workflowState": "",
     "rank": "0|e",
-    "ismsa/fieldTypes/adoptionStep": "step1",
+    "base/fieldTypes/adoptionStep": "step1",
     "links": [],
-    "lastUpdated": "2026-07-30T07:30:28.767Z",
-    "base/fieldTypes/identifier": "secdeva_phase_implementation",
-    "ismsa/fieldTypes/progress": "secdeva_phase-progress",
-    "base/fieldTypes/adoptionStep": null
+    "lastUpdated": "2026-08-16T20:28:21.151Z",
+    "base/fieldTypes/identifier": "secdeva_phase_implementation"
 }

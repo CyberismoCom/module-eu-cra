@@ -3,11 +3,8 @@
     "cardType": "base/cardTypes/review",
     "workflowState": "",
     "rank": "0|b",
-    "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
-    "base/fieldTypes/lastReviewed": null,
-    "base/fieldTypes/reviewPeriod": null,
-    "lastUpdated": "2026-08-03T14:05:56.722Z",
+    "lastUpdated": "2026-08-16T20:28:21.141Z",
     "links": [],
     "base/fieldTypes/identifier": "secdeva_review_attack-surface"
 }

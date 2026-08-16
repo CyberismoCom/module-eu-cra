@@ -3,11 +3,9 @@
     "title": "Technical documentation review of (Scope)",
     "workflowState": "",
     "rank": "0|a",
-    "lastUpdated": "2026-08-10T15:03:46.468Z",
+    "lastUpdated": "2026-08-16T20:45:38.677Z",
     "links": [],
-    "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
-    "base/fieldTypes/lastReviewed": null,
     "base/fieldTypes/reviewPeriod": 365,
     "base/fieldTypes/identifier": "eucra_review_technical-documentation"
 }

@@ -3,11 +3,8 @@
     "cardType": "base/cardTypes/review",
     "workflowState": "",
     "rank": "0|b",
-    "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
-    "base/fieldTypes/lastReviewed": null,
-    "base/fieldTypes/reviewPeriod": null,
-    "lastUpdated": "2026-07-30T11:09:55.231Z",
+    "lastUpdated": "2026-08-16T20:28:21.166Z",
     "base/fieldTypes/identifier": "secdeva_review_3rd-party-technologies",
     "links": []
 }

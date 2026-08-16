@@ -1,0 +1,10 @@
+{
+    "title": "Subprojects",
+    "cardType": "secdeva/cardTypes/page",
+    "workflowState": "",
+    "rank": "0|q",
+    "base/fieldTypes/adoptionStep": "step1",
+    "links": [],
+    "lastUpdated": "2026-08-16T20:28:21.150Z",
+    "base/fieldTypes/identifier": "secdeva_phase_subprojects"
+}

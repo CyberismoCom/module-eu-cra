@@ -1,0 +1,12 @@
+{
+    "title": "Use cryptography properly and effectively",
+    "cardType": "base/cardTypes/annualTask",
+    "workflowState": "",
+    "rank": "0|q",
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/reviewPeriod": 365,
+    "base/fieldTypes/adoptionStep": "step2",
+    "base/fieldTypes/identifier": "secdeva_control_use-of-cryptography",
+    "links": [],
+    "lastUpdated": "2026-08-16T20:28:21.155Z"
+}

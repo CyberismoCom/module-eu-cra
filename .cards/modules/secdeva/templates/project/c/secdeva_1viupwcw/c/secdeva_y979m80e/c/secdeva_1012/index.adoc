@@ -1,0 +1,70 @@
+.View process diagram
+[%collapsible]
+====
+{{#graph}}
+  "model": "secdeva/graphModels/processDiagram",
+  "view": "secdeva/graphViews/processTask"
+{{/graph}}
+====
+
+The goal of the vulnerability management is to identify, characterize, address, and communicate potential security vulnerabilities in 3rd party technology.
+
+== How to decide if this secure development task is required
+
+Vulnerability management is required for all 3rd party technology.
+
+This analysis must be performed on all executable files.
+
+== How to implement
+
+Development teams must integrate timely identification, assessment, addressing, and communications of security issues and vulnerabilities in their continuous development practices.
+
+For products, the development team shall draw up and maintain an SBOM in a commonly used and machine-readable format. The SBOM shall cover at the very least the top-level dependencies.
+
+Notice that vulnerability management shall continue even after active development has ended. Vulnerability management shall continue also for previously released product versions during their support period.
+
+For interpreted code and binary executable files compiled by the development team, the analysis can be done by creating an SBOM and analysing vulnerabilities based on the SBOM with a dependency tracking tool.
+
+For binary executable files that are compiled by a 3rd party organization, the analysis shall be done by analysing the binary with a software composition analysis tool.
+
+The source for the known vulnerabilities should be the recent contents of an established, industry-recognized public vulnerability database.
+
+If the supplier of a 3rd party component has published information about their vulnerabilities, then ensure that this information is taken into account. Update the threat model, other possible technical documentation and product documentation when applicable.
+
+{{#report}}
+  "name": "secdeva/reports/createChildReview",
+  "template": "secdeva/templates/vulnerabilityManagement",
+  "buttonLabel": "Create a review of vulnerability management"
+{{/report}}
+
+== How to review this task
+
+{{#report}}
+  "name": "secdeva/reports/checkChildReviewStatus"
+{{/report}}
+
+=== Manual checks
+
+A checklist for manual checks is provided in the template for the review of vulnerability management.
+
+== References
+
+* SVV-3 d) 1)
+* ISO 27001 A8.8
+* EU CRA Article 13 (5)
+* EU CRA Article 13 (7)
+* EU CRA Article 13 (24)
+* EU CRA Article 13 (25)
+* EU CRA Article 14 (2)
+* EU CRA Article 14 (3)
+* EU CRA Article 14 (4)
+* EU CRA Article 14 (5)
+* EU CRA Article 14 (7)
+* EU CRA Article 14 (8)
+* EU CRA Article 15 (1)
+* EU CRA Article 15 (2)
+* EU CRA Annex I (1) (2) (a)
+* EU CRA Annex I (2) (1)
+* EU CRA Annex I (2) (2)
+* EU CRA Annex I (2) (4)
+* EU CRA Annex I (2) (8)

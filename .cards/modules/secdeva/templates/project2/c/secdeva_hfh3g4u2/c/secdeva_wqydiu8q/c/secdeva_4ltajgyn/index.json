@@ -1,0 +1,11 @@
+{
+    "title": "Compliance controls",
+    "cardType": "secdeva/cardTypes/register",
+    "workflowState": "",
+    "rank": "0|d",
+    "base/fieldTypes/informationClassification": "internal",
+    "ismsa/fieldTypes/progress": "compliance-progress",
+    "base/fieldTypes/identifier": "secdeva_register_compliance-controls",
+    "lastUpdated": "2026-08-16T20:28:21.158Z",
+    "links": []
+}

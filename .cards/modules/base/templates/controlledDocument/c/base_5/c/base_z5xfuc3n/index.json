@@ -1,5 +1,5 @@
 {
-    "title": "Controlled document review",
+    "title": "Document review",
     "cardType": "base/cardTypes/reviewTask",
     "workflowState": "",
     "rank": "0|b",
@@ -7,5 +7,5 @@
     "base/fieldTypes/reviewPeriod": 365,
     "base/fieldTypes/adoptionStep": "step1",
     "links": [],
-    "lastUpdated": "2026-08-10T19:26:53.874Z"
+    "lastUpdated": "2026-08-16T17:55:02.772Z"
 }

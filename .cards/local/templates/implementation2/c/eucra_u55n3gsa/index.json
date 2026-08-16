@@ -3,13 +3,10 @@
     "cardType": "ismsa/cardTypes/internalControl",
     "workflowState": "",
     "rank": "0|a",
-    "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
-    "base/fieldTypes/justification": null,
     "base/fieldTypes/adoptionStep": "step2",
     "base/fieldTypes/identifier": "eucra_control_technical-documentation-review",
     "ismsa/fieldTypes/internalControlReviewPeriod": "12months",
-    "base/fieldTypes/reviewMonth": null,
-    "lastUpdated": "2026-08-04T06:40:17.644Z",
+    "lastUpdated": "2026-08-16T20:45:38.674Z",
     "links": []
 }

@@ -135,7 +135,7 @@ policyCheckFailure(ReviewTask, "Threat model control", "Reviewer cannot be the s
     DocumentOwner = Reviewer.
 
 policyCheckFailure(Document, "Document control", "Review has expired", "Complete a new review of this document.") :-
-    field(Document, "cardType", "base/cardTypes/threatModel"),
+    field(Document, "cardType", "secdeva/cardTypes/threatModel"),
     field(Document, "workflowState", "Approved"),
     field(Document, "base/fieldTypes/reviewPeriod", ReviewPeriod),
     @daysSince(LastReviewed) > ReviewPeriod :

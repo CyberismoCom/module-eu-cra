@@ -3,9 +3,7 @@
     "cardType": "secdeva/cardTypes/requirement",
     "workflowState": "",
     "rank": "0|l",
-    "base/fieldTypes/owner": null,
-    "base/fieldTypes/informationClassification": "internal",
     "base/fieldTypes/identifier": "eucra_security-requirement_reduce-the-impact-of-incidents",
     "links": [],
-    "lastUpdated": "2025-09-15T14:57:30.650Z"
+    "lastUpdated": "2026-08-16T20:45:38.664Z"
 }

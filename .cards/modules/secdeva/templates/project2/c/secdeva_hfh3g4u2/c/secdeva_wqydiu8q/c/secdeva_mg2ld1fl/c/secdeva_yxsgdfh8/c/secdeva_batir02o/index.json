@@ -1,0 +1,13 @@
+{
+    "title": "Perform penetration testing",
+    "cardType": "ismsa/cardTypes/internalControl",
+    "workflowState": "",
+    "rank": "0|g",
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/adoptionStep": "step2",
+    "base/fieldTypes/identifier": "secdeva_control_penetration-testing",
+    "ismsa/fieldTypes/internalControlReviewPeriod": "12months",
+    "base/fieldTypes/reviewMonth": "october",
+    "lastUpdated": "2026-08-16T20:28:21.161Z",
+    "links": []
+}

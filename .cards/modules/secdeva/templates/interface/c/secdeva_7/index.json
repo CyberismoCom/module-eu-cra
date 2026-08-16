@@ -3,15 +3,8 @@
     "title": "Untitled interface",
     "workflowState": "",
     "rank": "0|a",
-    "lastUpdated": "2025-01-20T08:48:53.436Z",
+    "lastUpdated": "2026-08-16T20:28:21.144Z",
     "links": [],
-    "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
-    "base/fieldTypes/identifier": "secdeva_document_interface",
-    "secdeva/fieldTypes/basicInputValidationTestingRequired": null,
-    "secdeva/fieldTypes/basicStressTestingRequired": null,
-    "secdeva/fieldTypes/fuzzTestingRequired": null,
-    "secdeva/fieldTypes/capacityTestingRequired": null,
-    "secdeva/fieldTypes/networkTrafficLoadTestingRequired": null,
-    "secdeva/fieldTypes/interfaceTestingScopingJustification": null
+    "base/fieldTypes/identifier": "secdeva_document_interface"
 }

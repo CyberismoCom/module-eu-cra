@@ -1,0 +1,21 @@
+The project may consists of such independent components for which it makes sense to manage the secure development process separately. A good rule of thumb is that running the secure development process separately may make sense if the component is independently updateable and if it is being developed by a separate team or a separate subproject.
+
+Notes:
+
+* Third party custom-developed components must be developed using the secure development process as well. If a supplier is responsible for the development of a component, the supplier should follow a secure development process
+
+* If the development team makes a substantial modification of a 3rd party product or places a 3rd party product on the market under their own trademark or name, then the development team may have to apply the secure development process for the component, including responsibilities to conform with EU regulations
+
+* A component may be used as a building block in other projects. To avoid duplicate work, the secure development for the project is documented just once, where it was originally done, and it is referred elsewhere as a technology selection.
+
+== How to decide if this secure development task is required
+
+This control is required, if the project has possible subprojects or suppliers that develop custom components.
+
+== How to implement
+
+If the project includes an independent subproject, then set up secure development for the new project.
+
+== How to review this task
+
+Check that components correctly identified in the project's security documentation.

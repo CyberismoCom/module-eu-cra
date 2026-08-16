@@ -3,12 +3,8 @@
     "cardType": "ismsa/cardTypes/control",
     "workflowState": "Open",
     "rank": "0|adt",
-    "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
-    "ismsa/fieldTypes/controlStatus": null,
-    "ismsa/fieldTypes/controlJustification": null,
-    "ismsa/fieldTypes/controlSummary": null,
     "ismsa/fieldTypes/controlOrigin": "iso27001y2022Control",
     "links": [],
-    "lastUpdated": "2024-12-27T07:35:52.739Z"
+    "lastUpdated": "2026-08-16T20:13:38.648Z"
 }

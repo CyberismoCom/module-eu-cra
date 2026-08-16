@@ -3,11 +3,6 @@
     "cardType": "base/cardTypes/task",
     "workflowState": "",
     "rank": "0|b",
-    "base/fieldTypes/dueDate": null,
-    "base/fieldTypes/informationClassification": null,
-    "base/fieldTypes/justification": null,
-    "base/fieldTypes/identifier": null,
-    "base/fieldTypes/adoptionStep": null,
-    "base/fieldTypes/owner": null,
-    "base/fieldTypes/reviewPeriod": null
+    "links": [],
+    "lastUpdated": "2026-08-16T20:13:38.662Z"
 }

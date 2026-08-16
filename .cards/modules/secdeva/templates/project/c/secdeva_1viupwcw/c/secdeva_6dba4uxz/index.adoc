@@ -1,0 +1,10 @@
+*Subprojects* are development projects that implement components or subsystems for a larger development project.
+
+{{#createCards}}
+    "template": "secdeva/templates/project",
+    "buttonLabel": "Create a new subproject"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/phase"
+{{/report}}

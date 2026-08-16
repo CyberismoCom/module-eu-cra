@@ -3,13 +3,8 @@
     "cardType": "base/cardTypes/reviewTask",
     "workflowState": "",
     "rank": "0|a",
-    "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
     "base/fieldTypes/reviewPeriod": 365,
-    "base/fieldTypes/lastReviewed": null,
-    "base/fieldTypes/justification": null,
-    "base/fieldTypes/adoptionStep": null,
-    "base/fieldTypes/identifier": null,
     "links": [],
-    "lastUpdated": "2026-07-21T08:00:47.811Z"
+    "lastUpdated": "2026-08-16T20:28:21.146Z"
 }

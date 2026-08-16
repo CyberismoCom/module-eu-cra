@@ -3,11 +3,8 @@
     "title": "Configuration management plan for (scope)",
     "workflowState": "",
     "rank": "0|b",
-    "lastUpdated": "2026-07-21T09:10:16.518Z",
+    "lastUpdated": "2026-08-16T20:28:21.145Z",
     "links": [],
-    "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
-    "base/fieldTypes/approver": null,
-    "base/fieldTypes/approvalDate": null,
     "base/fieldTypes/identifier": "secdeva_document_configuration-management-plan"
 }

@@ -46,3 +46,10 @@ field(Card, "statusIndicator", "closed") :-
   not base_policyCheckFailure(Card, _, _, _),
   not field(Card, "progress", _),
   field(Card, "base/fieldTypes/assessment", "ok").
+
+field(Card, "statusIndicator", "closed") :-
+  field(Card, "cardType", CardType),
+  customField(CardType, "base/fieldTypes/assessment"),
+  not base_policyCheckFailure(Card, _, _, _),
+  not field(Card, "progress", _),
+  field(Card, "base/fieldTypes/assessment", "notApplicable").

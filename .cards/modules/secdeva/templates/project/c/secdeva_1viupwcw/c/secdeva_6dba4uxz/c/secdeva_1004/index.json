@@ -1,0 +1,13 @@
+{
+    "cardType": "base/cardTypes/annualTask",
+    "title": "Ensure that secure development process is appropriately organized in possible subprojects",
+    "workflowState": "",
+    "rank": "0|a",
+    "lastUpdated": "2026-08-16T20:28:21.153Z",
+    "links": [],
+    "base/fieldTypes/adoptionStep": "step2",
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/reviewPeriod": 365,
+    "base/fieldTypes/reviewMonth": "june",
+    "base/fieldTypes/identifier": "secdeva_control_subprojects"
+}

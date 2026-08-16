@@ -3,14 +3,8 @@
     "title": "Untitled technology",
     "workflowState": "",
     "rank": "0|c",
-    "lastUpdated": "2026-07-23T10:55:10.311Z",
+    "lastUpdated": "2026-08-16T20:28:21.171Z",
     "links": [],
-    "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
-    "secdeva/fieldTypes/sbomComponentType": null,
-    "secdeva/fieldTypes/sbomComponentGroup": null,
-    "secdeva/fieldTypes/sbomComponentName": null,
-    "secdeva/fieldTypes/sbomComponentCpe": null,
-    "secdeva/fieldTypes/sbomComponentPurl": null,
     "base/fieldTypes/identifier": "secdeva_document_technology"
 }

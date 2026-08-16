@@ -19,6 +19,12 @@
         {
             "name": "ismsa/fieldTypes/adoptionStep",
             "isCalculated": false
+        },
+        {
+            "name": "ismsa/fieldTypes/progress",
+            "displayName": "",
+            "isCalculated": false,
+            "enableOverride": false
         }
     ],
     "alwaysVisibleFields": [

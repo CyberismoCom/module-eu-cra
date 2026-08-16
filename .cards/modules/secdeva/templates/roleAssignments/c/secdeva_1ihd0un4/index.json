@@ -3,11 +3,8 @@
     "cardType": "base/cardTypes/review",
     "workflowState": "",
     "rank": "0|b",
-    "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
-    "base/fieldTypes/lastReviewed": null,
-    "base/fieldTypes/reviewPeriod": null,
-    "lastUpdated": "2026-07-17T08:19:46.860Z",
+    "lastUpdated": "2026-08-16T20:28:21.167Z",
     "base/fieldTypes/identifier": "secdeva_review_project-role-assignments",
     "links": []
 }

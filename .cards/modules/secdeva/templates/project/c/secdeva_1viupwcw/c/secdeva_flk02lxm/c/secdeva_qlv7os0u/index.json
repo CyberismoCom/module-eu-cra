@@ -1,0 +1,12 @@
+{
+    "title": "Test error handling",
+    "cardType": "base/cardTypes/annualTask",
+    "workflowState": "",
+    "rank": "0|ai",
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/reviewPeriod": 365,
+    "base/fieldTypes/adoptionStep": "step2",
+    "base/fieldTypes/identifier": "secdeva_control_error-handling-testing",
+    "links": [],
+    "lastUpdated": "2026-08-16T20:28:21.153Z"
+}

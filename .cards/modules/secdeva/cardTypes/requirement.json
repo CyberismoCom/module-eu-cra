@@ -8,11 +8,19 @@
             "displayName": "",
             "isCalculated": true,
             "enableOverride": true
+        },
+        {
+            "name": "base/fieldTypes/identifier",
+            "displayName": "",
+            "isCalculated": false,
+            "enableOverride": false
         }
     ],
     "alwaysVisibleFields": [
         "base/fieldTypes/owner"
     ],
-    "optionallyVisibleFields": [],
+    "optionallyVisibleFields": [
+        "base/fieldTypes/identifier"
+    ],
     "description": "A technical security requirement"
 }

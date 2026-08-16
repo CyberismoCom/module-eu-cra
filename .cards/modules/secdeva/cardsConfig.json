@@ -3,17 +3,19 @@
     "cardKeyPrefix": "secdeva",
     "name": "Secure Development Essentials",
     "description": "",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "modules": [
         {
             "name": "base",
-            "location": "file:/Users/henryhaverinen/cyberismo/cyberismo-projects/module-base",
-            "private": false
+            "location": "git@github.com:CyberismoCom/module-base.git",
+            "private": false,
+            "version": "1.x"
         },
         {
             "name": "ismsa",
-            "location": "file:/Users/henryhaverinen/cyberismo/cyberismo-projects/module-isms-essentials",
-            "private": false
+            "location": "git@github.com:CyberismoCom/module-isms-essentials.git",
+            "private": false,
+            "version": "1.x"
         }
     ],
     "hubs": []

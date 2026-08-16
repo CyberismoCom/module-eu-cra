@@ -1,10 +1,10 @@
 {
-    "title": "Status & next steps",
+    "title": "Periodic reviews",
     "cardType": "secdeva/cardTypes/page",
     "workflowState": "",
-    "rank": "0|an",
+    "rank": "0|u",
     "base/fieldTypes/adoptionStep": "step1",
     "links": [],
-    "lastUpdated": "2026-07-29T07:16:19.500Z",
-    "base/fieldTypes/identifier": "secdeva_status-and-next-steps"
+    "lastUpdated": "2025-02-24T17:04:52.415Z",
+    "base/fieldTypes/identifier": "secdeva_phase_periodic-reviews"
 }

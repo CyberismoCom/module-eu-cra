@@ -1,0 +1,32 @@
+== Implementation
+
+The Implementation phase focuses on catching security issues as code is written. These controls ensure that defects are found early through automated and manual analysis, and that identified issues are tracked to resolution.
+
+.*What this phase covers*
+[%collapsible]
+====
+[mermaid]
+----
+flowchart LR
+    subgraph Detection
+      direction TB
+      SAST[Use static code analysis] --> D[Manage defects]
+      CR[Review code changes manually] --> D
+    end
+----
+
+* *Use static code analysis* — Run automated SAST tools to detect potential security issues directly from source code.
+* *Review code changes manually* — Peer review code to catch security-relevant programming and design errors that tooling may miss.
+* *Manage defects* — Track security issues to closure or documented risk acceptance, and communicate findings to stakeholders.
+====
+
+=== Why it matters
+
+The earlier a vulnerability is found, the cheaper it is to fix. Static analysis and code review form complementary detection layers — automated tools catch common patterns at scale, while human reviewers spot logic and design flaws. Defect management ensures nothing slips through unresolved.
+
+=== Controls
+
+{{#report}}
+  "name": "secdeva/reports/phase2",
+  "controls": "secdeva_register_implementation-controls"
+{{/report}}

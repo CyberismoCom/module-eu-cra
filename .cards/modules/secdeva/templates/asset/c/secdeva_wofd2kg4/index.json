@@ -3,16 +3,6 @@
     "cardType": "ismsa/cardTypes/asset",
     "workflowState": "",
     "rank": "0|b",
-    "base/fieldTypes/owner": null,
-    "base/fieldTypes/informationClassification": null,
-    "ismsa/fieldTypes/assetAvailability": null,
-    "ismsa/fieldTypes/assetBackups": null,
-    "ismsa/fieldTypes/assetCriticalityForOperations": null,
-    "ismsa/fieldTypes/assetIntegrity": null,
-    "ismsa/fieldTypes/assetLocation": null,
-    "ismsa/fieldTypes/assetPersonalInformation": null,
-    "ismsa/fieldTypes/assetRiskEvaluationNeeded": null,
-    "ismsa/fieldTypes/assetType": null,
-    "lastUpdated": "2026-07-22T20:44:27.917Z",
+    "lastUpdated": "2026-08-16T20:28:21.141Z",
     "links": []
 }

@@ -3,11 +3,8 @@
     "cardType": "base/cardTypes/controlledDocument",
     "workflowState": "",
     "rank": "0|c",
-    "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
-    "base/fieldTypes/approver": null,
-    "base/fieldTypes/approvalDate": null,
     "base/fieldTypes/identifier": "secdeva_document_use-of-cryptography",
     "links": [],
-    "lastUpdated": "2026-08-11T13:12:25.560Z"
+    "lastUpdated": "2026-08-16T20:28:21.173Z"
 }

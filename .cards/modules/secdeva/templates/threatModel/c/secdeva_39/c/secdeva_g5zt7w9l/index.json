@@ -3,7 +3,7 @@
     "cardType": "secdeva/cardTypes/page",
     "workflowState": "",
     "rank": "0|c",
-    "base/fieldTypes/adoptionStep": null,
     "base/fieldTypes/identifier": "secdeva_page_list-of-threat-model-findings",
-    "lastUpdated": "2025-05-22T06:33:28.361Z"
+    "lastUpdated": "2026-08-16T20:28:21.171Z",
+    "links": []
 }

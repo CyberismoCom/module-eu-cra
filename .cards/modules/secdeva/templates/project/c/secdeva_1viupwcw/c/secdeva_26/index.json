@@ -3,8 +3,7 @@
     "title": "Meetings",
     "workflowState": "",
     "rank": "0|z",
-    "lastUpdated": "2025-01-20T08:48:53.616Z",
+    "lastUpdated": "2026-08-16T20:28:21.149Z",
     "links": [],
-    "base/fieldTypes/identifier": "secdeva_phase_meetings",
-    "base/fieldTypes/adoptionStep": null
+    "base/fieldTypes/identifier": "secdeva_phase_meetings"
 }

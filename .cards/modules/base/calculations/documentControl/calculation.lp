@@ -52,20 +52,25 @@ transitionDenied(ReviewTask, "Done", "Fill in the owner field before completing 
     field(ReviewTask, "cardType", "base/cardTypes/reviewTask"),
     not field(ReviewTask, "base/fieldTypes/owner", _).
 
-policyCheckFailure(Document, "Document control", "Owner is a required field", "Fill in the owner field." ):-
+policyCheckFailure(Document, "Document control", "Owner is a required field", "Fill in the owner field.", "base/fieldTypes/owner"):-
     field(Document, "cardType", "base/cardTypes/controlledDocument"),
     not field(Document, "workflowStateCategory", "initial"),
     not field(Document, "base/fieldTypes/owner", _).
 
-policyCheckFailure(Document, "Document control", "Approver is a required field", "Fill in the approver field." ):-
+policyCheckFailure(Document, "Document control", "Approver is a required field", "Fill in the approver field.", "base/fieldTypes/approver"):-
     field(Document, "cardType", "base/cardTypes/controlledDocument"),
     not field(Document, "workflowStateCategory", "initial"),
     not field(Document, "base/fieldTypes/approver", _).
 
-policyCheckFailure(Document, "Document control", "Approval date is a mandatory field", "Fill in the approval date field." ):-
+policyCheckFailure(Document, "Document control", "Approval date is a mandatory field", "Fill in the approval date field.", "base/fieldTypes/approvalDate"):-
     field(Document, "cardType", "base/cardTypes/controlledDocument"),
     not field(Document, "workflowStateCategory", "initial"),
     not field(Document, "base/fieldTypes/approvalDate", _).
+
+policyCheckFailure(Document, "Document control", "Review period is a required field", "Fill in the Review period field.", "base/fieldTypes/reviewPeriod"):-
+    field(Document, "cardType", "base/cardTypes/controlledDocument"),
+    not field(Document, "workflowStateCategory", "initial"),
+    not field(Document, "base/fieldTypes/reviewPeriod", _).
 
 policyCheckFailure(Document, "Document control", "The review subtasks of approved documents must be closed", "Complete review task(s)" ):-
     field(Document, "cardType", "base/cardTypes/controlledDocument"),

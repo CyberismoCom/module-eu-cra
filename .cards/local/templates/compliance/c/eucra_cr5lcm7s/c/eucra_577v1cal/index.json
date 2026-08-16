@@ -1,10 +1,8 @@
 {
     "title": "Obligations of manufacturers",
     "cardType": "secdeva/cardTypes/page",
-     "workflowState": "",
+    "workflowState": "",
     "rank": "0|bn",
-    "base/fieldTypes/adoptionStep": null,
-    "base/fieldTypes/identifier": null,
     "links": [],
-    "lastUpdated": "2025-03-19T13:25:31.049Z"
+    "lastUpdated": "2026-08-16T20:45:38.634Z"
 }

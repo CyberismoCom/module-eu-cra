@@ -42,7 +42,8 @@
     ],
     "optionallyVisibleFields": [
         "base/fieldTypes/informationClassification",
-        "base/fieldTypes/reviewPeriod"
+        "base/fieldTypes/reviewPeriod",
+        "base/fieldTypes/identifier"
     ],
     "displayName": "Controlled document",
     "description": "A formal document with an approval workflow"

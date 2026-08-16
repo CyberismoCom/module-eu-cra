@@ -1,0 +1,9 @@
+{
+    "title": "Security issues",
+    "cardType": "secdeva/cardTypes/securityIssueRegister",
+    "workflowState": "",
+    "rank": "0|bw",
+    "lastUpdated": "2026-08-16T20:28:21.158Z",
+    "links": [],
+    "base/fieldTypes/identifier": "secdeva_register_security-issues"
+}

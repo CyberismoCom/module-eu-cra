@@ -1,0 +1,13 @@
+{
+    "title": "Review security design",
+    "cardType": "ismsa/cardTypes/internalControl",
+    "workflowState": "",
+    "rank": "0|gh",
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/adoptionStep": "step2",
+    "base/fieldTypes/identifier": "secdeva_control_security-design-review",
+    "ismsa/fieldTypes/internalControlReviewPeriod": "12months",
+    "base/fieldTypes/reviewMonth": "february",
+    "lastUpdated": "2026-08-16T20:28:21.162Z",
+    "links": []
+}

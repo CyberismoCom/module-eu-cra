@@ -1,0 +1,13 @@
+{
+    "title": "Review product documentation",
+    "cardType": "ismsa/cardTypes/internalControl",
+    "workflowState": "",
+    "rank": "0|e",
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/adoptionStep": "step2",
+    "base/fieldTypes/identifier": "secdeva_control_product-documentation-review",
+    "ismsa/fieldTypes/internalControlReviewPeriod": "12months",
+    "base/fieldTypes/reviewMonth": "may",
+    "lastUpdated": "2026-08-16T20:28:21.165Z",
+    "links": []
+}

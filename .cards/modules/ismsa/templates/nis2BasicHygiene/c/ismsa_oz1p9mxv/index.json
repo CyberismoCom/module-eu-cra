@@ -3,10 +3,8 @@
     "cardType": "ismsa/cardTypes/register",
     "workflowState": "",
     "rank": "0|b",
-    "base/fieldTypes/owner": null,
-    "base/fieldTypes/informationClassification": null,
-    "ismsa/fieldTypes/adoptionStep": null,
     "ismsa/fieldTypes/progress": "compliance-progress",
     "base/fieldTypes/identifier": "NIS2_basic_hygiene_practices_all",
-    "lastUpdated": "2025-08-26T08:16:59.375Z"
+    "lastUpdated": "2026-08-16T20:13:38.675Z",
+    "links": []
 }

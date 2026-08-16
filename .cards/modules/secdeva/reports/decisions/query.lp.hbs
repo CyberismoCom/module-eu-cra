@@ -1,0 +1,10 @@
+selectAll.
+
+result(Decision) :-
+  secdeva_registerMember(Decision, Register),
+  secdeva_closestProject(Register, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  secdeva_closestProject(Decision, Project),
+  field(Register, "base/fieldTypes/identifier", "secdeva_register_decisions").
+
+orderBy("title", "ASC").

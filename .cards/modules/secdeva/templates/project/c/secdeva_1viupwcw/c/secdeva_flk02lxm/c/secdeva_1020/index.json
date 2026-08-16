@@ -3,14 +3,11 @@
     "title": "Scan for known vulnerabilities",
     "workflowState": "",
     "rank": "0|an",
-    "lastUpdated": "2025-09-08T09:35:46.970Z",
+    "lastUpdated": "2026-08-16T20:28:21.152Z",
     "links": [],
     "base/fieldTypes/adoptionStep": "step1",
-    "base/fieldTypes/justification": null,
-    "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
     "base/fieldTypes/reviewPeriod": 365,
     "base/fieldTypes/reviewMonth": "october",
-    "base/fieldTypes/lastReviewed": null,
     "base/fieldTypes/identifier": "secdeva_control_known-vulnerability-scanning"
 }

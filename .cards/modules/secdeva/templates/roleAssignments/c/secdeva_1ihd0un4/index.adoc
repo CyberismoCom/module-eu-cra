@@ -1,0 +1,20 @@
+== Role assignments
+
+Assign people to the security-related roles by editing the child cards. Add new role assignments, as needed.
+
+{{#createCards}}
+  "template": "base/templates/roleAssignment",
+  "buttonLabel": "Add a role assignment"
+{{/createCards}}
+
+{{#report}}
+  "name": "base/reports/roleAssignments"
+{{/report}}
+
+== Role assigment review
+
+* Check that all the required roles have been assigned
+* Ensure that the nominations are up to date.
+* If needed, confirm with the assignee that they are aware of this role assignment.
+
+This card can be marked as *Passed* if the role assignments are complete and up to date. Otherwise, mark the card as *Failed*.

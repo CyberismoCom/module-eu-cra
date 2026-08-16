@@ -3,9 +3,7 @@
     "cardType": "secdeva/cardTypes/requirement",
     "workflowState": "",
     "rank": "0|f",
-    "base/fieldTypes/owner": null,
-    "base/fieldTypes/informationClassification": "internal",
     "base/fieldTypes/identifier": "eucra_security-requirement_confidentiality-of-data",
     "links": [],
-    "lastUpdated": "2025-09-15T14:55:24.618Z"
+    "lastUpdated": "2026-08-16T20:45:38.663Z"
 }

@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/templates/dataflowModel2",
+    "displayName": "Dataflow model",
+    "category": "Threat model",
+    "description": "A top level container for the elements of a dataflow model."
+}

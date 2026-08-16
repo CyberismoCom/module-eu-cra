@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/templates/dataStore2",
+    "displayName": "Data store",
+    "category": "Threat model",
+    "description": "An entity in a threat model that stores information. For example, a database or a file."
+}

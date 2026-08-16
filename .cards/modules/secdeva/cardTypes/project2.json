@@ -1,0 +1,43 @@
+{
+    "name": "secdeva/cardTypes/project2",
+    "displayName": "Development project",
+    "workflow": "ismsa/workflows/asset",
+    "customFields": [
+        {
+            "name": "base/fieldTypes/owner",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "base/fieldTypes/informationClassification",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "base/fieldTypes/adoptionStep",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "secdeva/fieldTypes/adoptionStepJustification",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "base/fieldTypes/identifier",
+            "displayName": "",
+            "isCalculated": false,
+            "enableOverride": false
+        }
+    ],
+    "alwaysVisibleFields": [
+        "base/fieldTypes/owner",
+        "base/fieldTypes/informationClassification",
+        "base/fieldTypes/adoptionStep",
+        "secdeva/fieldTypes/adoptionStepJustification"
+    ],
+    "optionallyVisibleFields": [
+        "base/fieldTypes/identifier"
+    ],
+    "description": "A software or hardware development project"
+}

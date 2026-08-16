@@ -13,20 +13,19 @@ Write technical documentation that includes the sections that are listed in the 
 Create a technical documentation review document and follow the instructions in the template.
 
 {{#report}}
-  "name": "secdeva/reports/createChildReview",
+  "name": "secdeva/reports/createReview",
   "template": "eucra/templates/technicalDocumentationReview",
-  "buttonLabel": "Create a technical documentation review"
+  "buttonLabel": "Create a technical documentation review",
+  "phase": "secdeva_phase_implementation"
 {{/report}}
 
 When you revisit the review, record the result of the new review in the technical documentation review document.
 
-== How to review this task
+== Assessment
 
 {{#report}}
-  "name": "secdeva/reports/checkChildReviewStatus"
+  "name": "secdeva/reports/internalControlAssessment"
 {{/report}}
-
-Check that any identified security-related findings have been reported as security issues.
 
 == References
 

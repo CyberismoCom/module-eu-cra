@@ -1,0 +1,6 @@
+{
+    "name": "eucra/calculations/legacyInstallableExtensions",
+    "displayName": "Installable extensions (deprecated)",
+    "description": "Defines installable EU CRA extensions for secure development project phases. Included for backward compatibility to legacy content (projects of the type secdeva/cardTypes/project).",
+    "category": "Deprecated"
+}

@@ -1,0 +1,10 @@
+{
+    "title": "Registers",
+    "cardType": "ismsa/cardTypes/register",
+    "workflowState": "",
+    "rank": "0|q",
+    "base/fieldTypes/identifier": "secdeva_registers",
+    "lastUpdated": "2026-08-16T20:28:21.157Z",
+    "base/fieldTypes/informationClassification": "internal",
+    "links": []
+}

@@ -1,0 +1,16 @@
+{
+    "title": "Untitled physical connection",
+    "cardType": "secdeva/cardTypes/interface",
+    "workflowState": "",
+    "rank": "0|c",
+    "lastUpdated": "2026-08-11T13:57:34.233Z",
+    "links": [],
+    "secdeva/fieldTypes/physicalConnectionCount": 1,
+    "secdeva/fieldTypes/interfaceType": "physical",
+    "secdeva/fieldTypes/interfaceTestingScopingJustification": "Physical interface",
+    "secdeva/fieldTypes/networkTrafficLoadTestingRequired": false,
+    "secdeva/fieldTypes/capacityTestingRequired": false,
+    "secdeva/fieldTypes/fuzzTestingRequired": false,
+    "secdeva/fieldTypes/basicStressTestingRequired": false,
+    "secdeva/fieldTypes/basicInputValidationTestingRequired": false
+}

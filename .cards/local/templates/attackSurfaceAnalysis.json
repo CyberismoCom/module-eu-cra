@@ -1,6 +1,6 @@
 {
-    "displayName": "Attack surface analysis",
-    "description": "Testing of the actual exposed attack surface",
-    "category": "Security testing",
+    "displayName": "Attack surface analysis (Deprecated)",
+    "description": "Testing of the actual exposed attack surface. This template has been moved to the secure development essentials module.",
+    "category": "Deprecated",
     "name": "eucra/templates/attackSurfaceAnalysis"
 }

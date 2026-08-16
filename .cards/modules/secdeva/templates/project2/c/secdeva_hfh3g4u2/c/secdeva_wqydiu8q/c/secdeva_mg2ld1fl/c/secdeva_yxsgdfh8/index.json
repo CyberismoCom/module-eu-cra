@@ -1,0 +1,12 @@
+{
+    "title": "Verification",
+    "cardType": "ismsa/cardTypes/register",
+    "workflowState": "",
+    "rank": "0|e",
+    "base/fieldTypes/informationClassification": "internal",
+    "ismsa/fieldTypes/adoptionStep": "step1",
+    "ismsa/fieldTypes/progress": "secdeva_internal-control-progress",
+    "base/fieldTypes/identifier": "secdeva_register_verification-controls",
+    "lastUpdated": "2026-08-16T20:28:21.160Z",
+    "links": []
+}

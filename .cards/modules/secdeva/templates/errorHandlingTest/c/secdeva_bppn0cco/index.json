@@ -1,11 +1,10 @@
 {
-    "title": "Error handling test for (scope)",
+    "title": "Review of error handling testing - (Scope)",
     "cardType": "base/cardTypes/review",
     "workflowState": "",
     "rank": "0|b",
-    "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
-    "base/fieldTypes/lastReviewed": null,
-    "base/fieldTypes/reviewPeriod": 365,
-    "base/fieldTypes/identifier": "secdeva_test_error-handling"
+    "base/fieldTypes/identifier": "secdeva_test_error-handling",
+    "links": [],
+    "lastUpdated": "2026-08-16T20:28:21.144Z"
 }

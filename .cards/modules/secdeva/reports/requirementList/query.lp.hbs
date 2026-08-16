@@ -1,11 +1,30 @@
 selectAll.
-result(Card) :-
-    ancestor(Card, {{cardKey}}),
-    field(Card, "cardType", "secdeva/cardTypes/requirement").
+select(2, "requirements", "policyChecks").
 
-result(Card) :-
-    secdeva_closestProject({{cardKey}}, Project),
-    secdeva_closestProject(Card, Project),
-    field(Card, "cardType", "secdeva/cardTypes/requirement").
+result(result).
+
+resultField(result, "register", Register, "shortText") :-
+  secdeva_closestProject({{cardKey}}, Project),
+  secdeva_closestProject(Register, Project),
+  field(Register, "base/fieldTypes/identifier", "secdeva_register_security-requirements").
+  
+resultField(result, "registerStatus", Status, "shortText") :-
+  secdeva_closestProject({{cardKey}}, Project),
+  secdeva_closestProject(Register, Project),
+  field(Register, "base/fieldTypes/identifier", "secdeva_register_security-requirements"),
+  field(Register, "workflowState", Status).
+
+childResult(result, Requirement, "requirements") :-
+  secdeva_closestProject({{cardKey}}, Project),
+  secdeva_closestProject(Requirement, Project),
+  field(Requirement, "cardType", "secdeva/cardTypes/requirement").
+
+childResult(Requirement, Risk, "risks") :-
+  childResult(result, Requirement, "requirements"),
+  link(Requirement, Risk, "ismsa/linkTypes/mitigates").
+
+childResult(Requirement, Asset, "assets") :-
+  childResult(result, Requirement, "requirements"),
+  link(Requirement, Asset, "secdeva/linkTypes/appliesTo").
 
 orderBy("rank", "ASC").

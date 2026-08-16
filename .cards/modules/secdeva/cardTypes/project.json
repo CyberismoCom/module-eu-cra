@@ -78,6 +78,6 @@
         "secdeva/fieldTypes/acceptableSeverity",
         "secdeva/fieldTypes/deferrableSeverity"
     ],
-    "displayName": "Development project",
+    "displayName": "Development project (deprecated)",
     "description": "A software or hardware development project"
 }

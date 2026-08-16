@@ -2,11 +2,9 @@
     "title": "Untitled document",
     "cardType": "base/cardTypes/controlledDocument",
     "workflowState": "",
-    "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
-    "base/fieldTypes/approver": null,
-    "base/fieldTypes/approvalDate": null,
-    "base/fieldTypes/reviewPeriod": 365,
-    "rank": "0|a",
-    "lastUpdated": "2024-08-01T14:25:19.226Z"
+    "rank": "0|d",
+    "lastUpdated": "2026-08-11T12:56:47.441Z",
+    "links": [],
+    "base/fieldTypes/reviewPeriod": 365
 }

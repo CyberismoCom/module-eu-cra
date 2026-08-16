@@ -1,0 +1,39 @@
+[TIP]
+====
+Create a security issue if you identify a vulnerability — a weakness that a threat could exploit.
+====
+
+{{#each results}}
+
+{{#if issues}}
+
+[caption=]
+.Existing issues
+[cols="5,2"]
+|===
+| Security issue | Workflow State
+
+{{#each issues}}
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.workflowState}}
+{{/each}}
+
+|===
+
+Create another issue, if needed:
+{{else}}
+You have not yet created or linked any security issues.
+{{/if}}
+
+{{#createCards}}
+    "template": "secdeva/templates/securityIssue",
+    "buttonLabel": "Create a security issue",
+    "cardKey": "{{register.key}}",
+    "link": {
+      "linkType": "ismsa/linkTypes/presentsRisk",
+      "direction": "outbound",
+      "cardKey": "{{../cardKey}}"
+    }
+{{/createCards}}
+
+{{/each}}

@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/templates/external2",
+    "displayName": "External entity",
+    "category": "Threat model",
+    "description": "A source from which information flows into the system, or a recipients of information leaving the system in a threat model."
+}

@@ -3,6 +3,6 @@
     "cardType": "secdeva/cardTypes/page",
     "workflowState": "",
     "rank": "0|b",
-    "base/fieldTypes/adoptionStep": null,
-    "base/fieldTypes/identifier": null
+    "links": [],
+    "lastUpdated": "2026-08-16T20:28:21.148Z"
 }

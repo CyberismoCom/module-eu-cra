@@ -1,0 +1,72 @@
+{{#each results}}
+== Getting started with secure development
+
+This project guides you through the Secure Development Lifecycle using the Cyberismo tool. It is structured into phases and adoption steps that align with your product's journey from initial planning to production operations.
+
+=== How this project is organized
+
+[mermaid]
+----
+flowchart TB
+    F[Foundation] --> P
+    subgraph P[Product development cycle]
+      direction LR
+      D[Design] --> I[Implementation]
+      I --> V[Verification]
+      V --> R[Releases]
+      R --> O[Operations]
+      O --> D
+    end
+----
+
+Each phase contains security controls and tasks relevant to that stage:
+
+* *{{#xref}}"cardKey": "{{this.foundationPhase}}"{{/xref}}* — Establish security governance, training, and tooling before development begins.
+* *{{#xref}}"cardKey": "{{this.designPhase}}"{{/xref}}* — Define security requirements, perform threat modeling, and create specifications.
+* *{{#xref}}"cardKey": "{{this.implementationPhase}}"{{/xref}}* — Apply secure coding practices and manage third-party dependencies.
+* *{{#xref}}"cardKey": "{{this.verificationPhase}}"{{/xref}}* — Conduct security testing and validate that requirements are met.
+* *{{#xref}}"cardKey": "{{this.releasesPhase}}"{{/xref}}* — Prepare secure release artifacts and documentation.
+* *{{#xref}}"cardKey": "{{this.operationsPhase}}"{{/xref}}* — Handle vulnerability disclosures, patches, and end-of-life planning.
+
+=== Adoption steps
+
+Controls and tasks are assigned an adoption step (1–3) so you can roll out secure development incrementally:
+
+* *Step 1* — Essential practices. Start here to establish baseline security across all phases.
+* *Step 2* — Strengthened practices. Expand coverage once Step 1 is in place.
+* *Step 3* — Advanced practices. Achieve standards compliance.
+
+Focus on completing all Step 1 items before moving to Step 2. This ensures the most critical security practices are in place first.
+
+=== Where to start
+
+[mermaid]
+----
+flowchart LR
+    subgraph F[Foundation]
+      direction TB
+      R[Assign people to security-related project roles] --> C[Ensure competence]
+    end
+    subgraph D[Risk assessment]
+      direction TB
+      SC[Document product security context] --> TM[Manage threat models]
+      TM --> RI[Identify risks]
+      RI --> SR[Derive security requirements]
+    end
+    F --> D
+    D --> Next[Perform security controls scoping]
+----
+
+* {{this.projectCheckbox}} Fill in the project scope and objectives on the card *{{#xref}}"cardKey": "{{this.project}}"{{/xref}}*, set the owner field, and then mark the page ready by using the "Activate" workflow transition.
+* {{this.assignPeopleCheckbox}} *{{#xref}}"cardKey": "{{this.assignPeople}}"{{/xref}}* — Define who is responsible for security in the project. Without clear ownership, tasks will not get done.
+* {{this.ensureCompetenceCheckbox}} *{{#xref}}"cardKey": "{{this.ensureCompetence}}"{{/xref}}* — Verify that assigned people have adequate cybersecurity knowledge, and arrange training where needed.
+* {{this.documentSecurityContextCheckbox}} *{{#xref}}"cardKey": "{{this.documentSecurityContext}}"{{/xref}}* — Describe the product's operating environment, trust boundaries, and key security assumptions. This context guides threat modeling and requirements work.
+* {{this.manageThreatModelsCheckbox}} *{{#xref}}"cardKey": "{{this.manageThreatModels}}"{{/xref}}* — Model your system's architecture and identify how it could be attacked. This reveals the risks and weaknesses that matter most.
+* {{this.manageRisksCheckbox}} *{{#xref}}"cardKey": "{{this.manageRisks}}"{{/xref}}* - Identify and document risks for the entire product or for a specific asset
+* {{this.securityRequirementsCheckbox}} *{{#xref}}"cardKey": "{{this.securityRequirements}}"{{/xref}}* — Turn identified risks into concrete security requirements that guide implementation and testing.
+* {{this.processScopingCheckbox}} *{{#xref}}"cardKey": "{{this.processScoping}}"{{/xref}}* — Go through security controls to perform risk based security controls scoping
+* As development progresses, address controls in each subsequent phase.
+* Use *{{#xref}}"cardKey": "{{this.statusNextSteps}}"{{/xref}}* to track overall progress and identify gaps.
+
+TIP: You do not need to complete all phases at once. Start with Foundation and Design, then expand as your product matures.
+{{/each}}

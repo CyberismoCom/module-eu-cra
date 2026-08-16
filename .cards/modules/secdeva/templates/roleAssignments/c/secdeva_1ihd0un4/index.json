@@ -1,0 +1,10 @@
+{
+    "title": "Role assignments",
+    "cardType": "base/cardTypes/review",
+    "workflowState": "",
+    "rank": "0|b",
+    "base/fieldTypes/informationClassification": "internal",
+    "lastUpdated": "2026-08-16T20:28:21.167Z",
+    "base/fieldTypes/identifier": "secdeva_review_project-role-assignments",
+    "links": []
+}

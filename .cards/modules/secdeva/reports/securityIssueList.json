@@ -1,6 +1,6 @@
 {
-    "displayName": "List of threats",
+    "displayName": "List of threats (deprecated)",
     "description": "A list of descendant threat cards",
-    "category": "Secure development",
+    "category": "Deprecated",
     "name": "secdeva/reports/securityIssueList"
 }

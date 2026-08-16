@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/templates/trustBoundary2",
+    "displayName": "Trust boundary",
+    "category": "Threat model",
+    "description": "A boundary between different trust zone levels in a threat model."
+}

@@ -1,0 +1,7 @@
+{
+    "name": "secdeva/calculations/risks",
+    "displayName": "Risks",
+    "description": "Hide the child cards of the risk register",
+    "calculation": "calculation.lp",
+    "category": "Secure development"
+}

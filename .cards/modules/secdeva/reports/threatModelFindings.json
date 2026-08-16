@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/threatModelFindings",
+    "displayName": "Threat model findings",
+    "description": "Shows lists of identified risks and security issues in a threat model.",
+    "category": "Threat model"
+}

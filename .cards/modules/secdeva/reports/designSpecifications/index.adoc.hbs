@@ -1,0 +1,16 @@
+{{#if results}}
+[cols="4,3,2"]
+|===
+| Document | Owner  | Status
+
+{{#each results}}
+| xref:{{this.key}}.adoc[{{this.title}}]
+| {{this.[base/fieldTypes/owner]}}
+| {{this.workflowState}}
+{{/each}}
+|===
+{{else}}
+
+There are no design specifications in this project.
+
+{{/if}}

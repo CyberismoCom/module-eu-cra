@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/templates/interface2",
+    "displayName": "Interface",
+    "description": "Security documentation of an exposed interface",
+    "category": "Threat model"
+}

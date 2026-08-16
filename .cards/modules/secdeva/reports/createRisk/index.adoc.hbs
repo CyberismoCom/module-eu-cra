@@ -1,0 +1,39 @@
+[TIP]
+====
+Create a risk if you identify a cyber threat — something that can cause harm by exploiting one or more vulnerabilities.
+====
+
+{{#each results}}
+
+{{#if risks}}
+
+[caption=]
+.Existing risks
+[cols="5,2"]
+|===
+| Risk | Workflow State
+
+{{#each risks}}
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.workflowState}}
+{{/each}}
+
+|===
+
+Create another risk, if needed:
+{{else}}
+You have not yet created or linked any risks.
+{{/if}}
+
+{{#createCards}}
+    "template": "secdeva/templates/productRisk2",
+    "buttonLabel": "Create a risk",
+    "cardKey": "{{register.key}}",
+    "link": {
+      "linkType": "ismsa/linkTypes/presentsRisk",
+      "direction": "outbound",
+      "cardKey": "{{../cardKey}}"
+    }
+{{/createCards}}
+
+{{/each}}

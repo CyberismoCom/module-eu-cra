@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/internalControlAssessment",
+    "displayName": "Internal control assessment",
+    "category": "Secure development",
+    "description": "Shows an automatic assessment of an internal control"
+}

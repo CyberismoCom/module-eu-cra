@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/registers",
+    "displayName": "Registers",
+    "description": "Shows a summary of the registers of a development project",
+    "category": "Secure development"
+}

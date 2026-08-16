@@ -1,14 +1,43 @@
-{{#if results }}
-
-[cols="5,2"]
-|===
-| Requirement | Workflow State
-
 {{#each results}}
-|xref:{{this.key}}.adoc[{{this.title}}] 
-|{{this.workflowState}}
+{{#if requirements}}
+
+[cols="4,3,3,3"]
+|===
+| Requirement | Risks | Assets | Policy violations
+
+{{#each requirements}}
+|xref:{{this.key}}.adoc[{{this.title}}] [*{{this.workflowState}}*]
+{{#if this.risks}}
+a|
+{{#each this.risks}}
+* xref:{{this.key}}.adoc[{{this.title}}]
+{{/each}}
+{{else}}
+|
+{{/if}}
+{{#if this.assets}}
+a|
+{{#each this.assets}}
+* xref:{{this.key}}.adoc[{{this.title}}]
+{{/each}}
+{{else}}
+|
+{{/if}}
+{{#if this.policyChecks.failures}}
+a|
+{{#each this.policyChecks.failures}}
+* {{this.title}}
+{{/each}}
+{{else}}
+|
+{{/if}}
 {{/each}}
 
 |===
 
+{{else}}
+
+There are no security requirements in this project.
+
 {{/if}}
+{{/each}}

@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/createDocument",
+    "displayName": "Create a document",
+    "category": "Secure development",
+    "description": "Create a new controlled document, if needed. Used within internal controls"
+}

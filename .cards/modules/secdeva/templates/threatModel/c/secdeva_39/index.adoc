@@ -82,7 +82,7 @@ In addition to the documented 3rd party technologies, the following external dep
 [NOTE]
 .Review instructions
 ====
-When reviewing this section, check that all internal and external interfaces, such as communication protocols are listed. Create dataflows and interface descriptions in the underlying dataflow model.
+When reviewing this section, check that all internal and external interfaces, such as communication protocols are listed. Create dataflows and interface descriptions in the underlying threat model.
 ====
 
 {{#report}}
@@ -162,18 +162,6 @@ Note that handling of security issues is not part of threat model review.
 {{#report}}
   "name": "secdeva/reports/securityIssueList"
 {{/report}}
-
-== Version history
-
-[cols="1,1,3"]
-|===============
-|Version | Date | Changes/Author
-
-| 0.1
-| 2024-01-01
-| XYZ changed by N.N.
-
-|===============
 
 == Reviews
 

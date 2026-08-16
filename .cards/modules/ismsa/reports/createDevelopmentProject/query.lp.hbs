@@ -1,1 +1,3 @@
-result("secdeva/cardTypes/project") :- cardType("secdeva/cardTypes/project").
+result("secdeva/cardTypes/project2") :- cardType("secdeva/cardTypes/project2").
+
+result("secdeva/cardTypes/project") :- cardType("secdeva/cardTypes/project"), not cardType("secdeva/cardTypes/project2").

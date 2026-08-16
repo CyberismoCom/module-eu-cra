@@ -1,0 +1,37 @@
+Configuration Management (CM) is the systematic process of identifying, controlling, and tracking all components of a software system throughout its development, testing, deployment, and maintenance lifecycle. Configuration management covers how different _configuration items_ are managed in terms of the following aspects:
+
+* Storage and tooling
+* Access control
+* Versioning and unique identification
+* Change history
+* Authorisation of changes
+* Acceptance
+* Integrity protection
+* Backup and recovery
+
+== How to decide if this control is required
+
+Configuration management is typically planned in the organisation in general for all development projects. A configuration management plan is required in the development project, if the plan has not been documented elsewhere.
+
+== How to implement
+
+Create a configuration management plan and follow the instructions in the template.
+
+{{#report}}
+  "name": "secdeva/reports/createDocument",
+  "template": "secdeva/templates/managementPlan",
+  "buttonLabel": "Create a configuration management plan",
+  "phase": "secdeva_phase_design"
+{{/report}}
+
+== Assessment
+
+{{#report}}
+  "name": "secdeva/reports/internalControlAssessment"
+{{/report}}
+
+== References
+
+* IEC 62443-4-1 SM-1
+* ISO 27001 A8.25
+* EU CRA Annex I (1) (1)

@@ -1,0 +1,5 @@
+{
+    "name": "secdeva/calculations/extensions",
+    "displayName": "Extensions",
+    "description": "Defines installable extensions from other modules"
+}

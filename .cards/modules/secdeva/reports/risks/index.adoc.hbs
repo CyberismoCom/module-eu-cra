@@ -1,0 +1,42 @@
+{{#each results}}
+
+{{#if risks}}
+[cols="4,3,3,3,3"]
+|===
+| Risk | Owner  | Affected assets | Security requirements | Policy violations
+
+{{#each risks}}
+| xref:{{this.key}}.adoc[{{this.title}}] [*{{this.workflowState}}*]
+| {{this.[base/fieldTypes/owner]}}
+{{#if this.affectedAssets}}
+a|
+{{#each this.affectedAssets}}
+* xref:{{this.key}}.adoc[{{this.title}}]
+{{/each}}
+{{else}}
+|
+{{/if}}
+{{#if this.securityRequirements}}
+a|
+{{#each this.securityRequirements}}
+* xref:{{this.key}}.adoc[{{this.title}}]
+{{/each}}
+{{else}}
+|
+{{/if}}
+{{#if this.policyChecks.failures}}
+a|
+{{#each this.policyChecks.failures}}
+* {{this.title}}
+{{/each}}
+{{else}}
+|
+{{/if}}
+{{/each}}
+|===
+{{else}}
+
+There are no risks in this project.
+{{/if}}
+
+{{/each}}

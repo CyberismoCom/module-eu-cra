@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/templates/roleAssignments",
+    "displayName": "Role assignments",
+    "category": "Secure development",
+    "description": "A review of the role assignments of a development project. Includes the actual role assignments as child cards."
+}

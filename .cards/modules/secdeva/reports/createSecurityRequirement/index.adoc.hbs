@@ -1,0 +1,34 @@
+{{#each results}}
+
+{{#if requirements}}
+
+[caption=]
+.Existing requirements
+[cols="5,2"]
+|===
+| Requirement | Workflow State
+
+{{#each requirements}}
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.workflowState}}
+{{/each}}
+
+|===
+
+Create another requirement, if needed:
+{{else}}
+You have not yet created or linked any requirements.
+{{/if}}
+
+{{#createCards}}
+    "template": "secdeva/templates/securityRequirement",
+    "buttonLabel": "Create a security requirement",
+    "cardKey": "{{register.key}}",
+    "link": {
+      "linkType": "secdeva/linkTypes/appliesTo",
+      "direction": "inbound",
+      "cardKey": "{{../cardKey}}"
+    }
+{{/createCards}}
+
+{{/each}}

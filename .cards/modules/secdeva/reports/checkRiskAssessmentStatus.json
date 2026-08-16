@@ -1,6 +1,6 @@
 {
     "name": "secdeva/reports/checkRiskAssessmentStatus",
-    "displayName": "Product security risk status",
+    "displayName": "Product security risk status (deprecated)",
     "description": "The status of product security risks",
-    "category": "Secure development"
+    "category": "Deprecated"
 }

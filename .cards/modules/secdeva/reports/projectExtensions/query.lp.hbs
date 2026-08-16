@@ -1,0 +1,45 @@
+selectAll.
+
+result(result).
+
+% secdeva_template(Card, Template) means that Card was instantiated from Template
+
+% TODO: Before INTDEV-1398 is fixed, the "templateCardKey" field value is a string, 
+% while card keys in ancestor/2 are constants, so the template card key must be converted first
+% this conversion can be removed once the bug has been fixed.
+secdeva_template(Card, Template) :-
+  projectCard(Card),
+  field(Card, "templateCardKey", TemplateCardKey),
+  template(Template),
+  ancestor(TemplateCard, Template),
+  @concatenate(TemplateCard, "") == @concatenate(TemplateCardKey, "").
+
+childResult(result, (Template, ExtensibleCard), "uninstalledExtensions") :-
+  secdeva_closestProject({{cardKey}}, Project),
+  secdeva_closestProject(ExtensibleCard, Project),
+  secdeva_installableExtension(ExtensibleCardIdentifier, _, Template, _),
+  field(ExtensibleCard, "base/fieldTypes/identifier", ExtensibleCardIdentifier),
+  not secdeva_template(Descendant, Template):
+  ancestor(Descendant, ExtensibleCard).
+
+resultFields((Template, ExtensibleCard), 
+  "moduleDescription", ModuleDescription, "shortText",
+  "buttonLabel", ButtonLabel, "shortText") :-
+  childResult(result, (Template, ExtensibleCard), _),
+  secdeva_installableExtension(ExtensibleCardIdentifier, ModuleDescription, Template, ButtonLabel),
+  secdeva_closestProject({{cardKey}}, Project),
+  secdeva_closestProject(ExtensibleCard, Project),
+  field(ExtensibleCard, "base/fieldTypes/identifier", ExtensibleCardIdentifier).
+
+resultFields((Template, ExtensibleCard), 
+  "template", Template, "shortText",
+  "extensibleCard", ExtensibleCard, "shortText") :-
+  childResult(result, (Template, ExtensibleCard), _).
+
+childResult(result, (Template, ExtensibleCard), "installedExtensions") :-
+  secdeva_closestProject({{cardKey}}, Project),
+  secdeva_closestProject(ExtensibleCard, Project),
+  secdeva_installableExtension(ExtensibleCardIdentifier, _, Template, _),
+  field(ExtensibleCard, "base/fieldTypes/identifier", ExtensibleCardIdentifier),
+  ancestor(Descendant, ExtensibleCard),
+  secdeva_template(Descendant, Template).

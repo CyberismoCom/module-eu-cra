@@ -1,0 +1,195 @@
+result(result).
+
+% Find the phase cards
+
+resultField(result, "foundationPhase", Card, "shortText") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_phase_foundation").
+
+resultField(result, "designPhase", Card, "shortText") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_phase_design").
+
+resultField(result, "implementationPhase", Card, "shortText") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_phase_implementation").
+
+resultField(result, "verificationPhase", Card, "shortText") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_phase_verification").
+
+resultField(result, "releasesPhase", Card, "shortText") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_phase_releases").
+
+resultField(result, "operationsPhase", Card, "shortText") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_phase_operations").
+
+% Find the first tasks
+
+% tick the checkbox for the following assessment values:
+secdeva_tickCheckbox("ok").
+secdeva_tickCheckbox("notApplicable").
+
+resultField(result, "project", Project, "shortText") :-
+  secdeva_closestProject({{cardKey}}, Project).
+
+resultField(result, "projectCheckbox", "[ ]", "shortText") :-
+  secdeva_closestProject({{cardKey}}, Project),
+  not field(Project, "workflowStateCategory", "closed").
+
+resultField(result, "projectCheckbox", "[ ]", "shortText") :-
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Project, "workflowStateCategory", "closed"),
+  base_policyCheckFailure(Project, _, _, _).
+
+resultField(result, "projectCheckbox", "[x]", "shortText") :-
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Project, "workflowStateCategory", "closed"),
+  not base_policyCheckFailure(Project, _, _, _).
+
+resultField(result, "assignPeople", Card, "shortText") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_control_assign-people-to-project-roles").
+
+resultField(result, "assignPeopleCheckbox", "[ ]", "shortText") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_control_assign-people-to-project-roles"),
+  field(Card, "base/fieldTypes/assessment", Assessment),
+  not secdeva_tickCheckbox(Assessment).
+
+resultField(result, "assignPeopleCheckbox", "[x]", "shortText") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_control_assign-people-to-project-roles"),
+  field(Card, "base/fieldTypes/assessment", Assessment),
+  secdeva_tickCheckbox(Assessment).
+
+resultField(result, "ensureCompetence", Card, "shortText") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_control_ensure-competence").
+
+resultField(result, "ensureCompetenceCheckbox", "[ ]", "shortText") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_control_ensure-competence"),
+  field(Card, "base/fieldTypes/assessment", Assessment),
+  not secdeva_tickCheckbox(Assessment).
+
+resultField(result, "ensureCompetenceCheckbox", "[x]", "shortText") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_control_ensure-competence"),
+  field(Card, "base/fieldTypes/assessment", Assessment),
+  secdeva_tickCheckbox(Assessment).
+
+resultField(result, "documentSecurityContext", Card, "shortText") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_control_security-context").
+
+resultField(result, "documentSecurityContextCheckbox", "[ ]", "shortText") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_control_security-context"),
+  field(Card, "base/fieldTypes/assessment", Assessment),
+  not secdeva_tickCheckbox(Assessment).
+
+resultField(result, "documentSecurityContextCheckbox", "[x]", "shortText") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_control_security-context"),
+  field(Card, "base/fieldTypes/assessment", Assessment),
+  secdeva_tickCheckbox(Assessment).
+
+resultField(result, "manageThreatModels", Card, "shortText") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_control_threat-models").
+
+resultField(result, "manageThreatModelsCheckbox", "[ ]", "shortText") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_control_threat-models"),
+  field(Card, "base/fieldTypes/assessment", Assessment),
+  not secdeva_tickCheckbox(Assessment).
+
+resultField(result, "manageThreatModelsCheckbox", "[x]", "shortText") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_control_threat-models"),
+  field(Card, "base/fieldTypes/assessment", Assessment),
+  secdeva_tickCheckbox(Assessment).
+
+resultField(result, "manageRisks", Card, "shortText") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_control_high-level-risks").
+
+resultField(result, "manageRisksCheckbox", "[ ]", "shortText") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_control_high-level-risks"),
+  field(Card, "base/fieldTypes/assessment", Assessment),
+  not secdeva_tickCheckbox(Assessment).
+
+resultField(result, "manageRisksCheckbox", "[x]", "shortText") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_control_high-level-risks"),
+  field(Card, "base/fieldTypes/assessment", Assessment),
+  secdeva_tickCheckbox(Assessment).
+
+resultField(result, "securityRequirements", Card, "shortText") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_control_security-requirements").
+
+resultField(result, "securityRequirementsCheckbox", "[ ]", "shortText") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_control_security-requirements"),
+  field(Card, "base/fieldTypes/assessment", Assessment),
+  not secdeva_tickCheckbox(Assessment).
+
+resultField(result, "securityRequirementsCheckbox", "[x]", "shortText") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_control_security-requirements"),
+  field(Card, "base/fieldTypes/assessment", Assessment),
+  secdeva_tickCheckbox(Assessment).
+
+resultField(result, "processScoping", Card, "shortText") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_control_scope-secure-development-activities").
+
+resultField(result, "processScopingCheckbox", "[ ]", "shortText") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_control_scope-secure-development-activities"),
+  field(Card, "base/fieldTypes/assessment", Assessment),
+  not secdeva_tickCheckbox(Assessment).
+
+resultField(result, "processScopingCheckbox", "[x]", "shortText") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_control_scope-secure-development-activities"),
+  field(Card, "base/fieldTypes/assessment", Assessment),
+  secdeva_tickCheckbox(Assessment).
+
+resultField(result, "statusNextSteps", Card, "shortText") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_status-and-next-steps").
+

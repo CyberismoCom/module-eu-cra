@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/createAttackVector",
+    "displayName": "Create an attack vector",
+    "category": "Threat model",
+    "description": "Create a technology assessment. Used within threat models"
+}

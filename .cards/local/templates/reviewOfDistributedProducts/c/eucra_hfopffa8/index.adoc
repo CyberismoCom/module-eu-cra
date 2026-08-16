@@ -77,3 +77,14 @@ Review result:
 * [ ] Not applicable
 
 Links or notes:
+
+== Security issues
+
+{{#createCards}}
+  "template": "eucra/templates/securityIssue",
+  "buttonLabel": "Create a new security issue"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssueList"
+{{/report}}

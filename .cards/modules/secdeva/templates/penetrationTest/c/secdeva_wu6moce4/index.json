@@ -1,0 +1,10 @@
+{
+    "title": "Review of penetration testing - Scope",
+    "cardType": "base/cardTypes/review",
+    "workflowState": "",
+    "rank": "0|b",
+    "base/fieldTypes/informationClassification": "internal",
+    "lastUpdated": "2026-08-16T20:28:21.147Z",
+    "links": [],
+    "base/fieldTypes/identifier": "secdeva_test_penetration"
+}

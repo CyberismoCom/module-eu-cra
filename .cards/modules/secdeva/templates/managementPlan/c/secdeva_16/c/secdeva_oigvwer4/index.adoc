@@ -1,11 +1,11 @@
 == Task description
 
-Review the secure development management plan.
+Review the configuration management plan.
 
 [NOTE]
 .Review instructions
 ====
-It is important that the management plan refers to any applicable to general development process descriptions that are used in the project, and that it includes a plan as to how periodic security checkpoints are scheduled.
+Verify that the configuration management plan covers all relevant configuration item types, that each configuration item card documents the required aspects (storage, access control, versioning, change history, authorization, acceptance, integrity, and backup), and that cross-references between configuration items are consistent and accurate.
 ====
 
 **Note**: The reviewer cannot be the same person as the owner or the approver of the document.

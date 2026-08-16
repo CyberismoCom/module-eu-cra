@@ -1,6 +1,6 @@
 {
     "name": "secdeva/reports/modelInterfaces",
-    "displayName": "External and internal interfaces",
-    "description": "Interfaces and dataflows of a dataflow model",
-    "category": "Secure"
+    "displayName": "Interfaces and physical connections",
+    "description": "Interfaces, physical connections, and data flows of a dataflow model",
+    "category": "Threat model"
 }

@@ -3,14 +3,11 @@
     "title": "Assign people to security-related project roles",
     "workflowState": "",
     "rank": "0|e",
-    "lastUpdated": "2025-09-08T09:10:01.867Z",
+    "lastUpdated": "2026-08-16T20:28:21.155Z",
     "links": [],
     "base/fieldTypes/adoptionStep": "step1",
-    "base/fieldTypes/justification": null,
-    "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
     "base/fieldTypes/reviewPeriod": 365,
     "base/fieldTypes/reviewMonth": "january",
-    "base/fieldTypes/lastReviewed": null,
     "base/fieldTypes/identifier": "secdeva_control_assign-people-to-project-roles"
 }

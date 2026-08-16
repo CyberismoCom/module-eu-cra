@@ -1,0 +1,12 @@
+{
+    "title": "Fulfill the distributor obligations",
+    "cardType": "ismsa/cardTypes/internalControl",
+    "workflowState": "",
+    "rank": "0|c",
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/adoptionStep": "step2",
+    "base/fieldTypes/identifier": "eucra_control_obligations-of-distributors",
+    "ismsa/fieldTypes/internalControlReviewPeriod": "12months",
+    "lastUpdated": "2026-08-16T20:45:38.674Z",
+    "links": []
+}

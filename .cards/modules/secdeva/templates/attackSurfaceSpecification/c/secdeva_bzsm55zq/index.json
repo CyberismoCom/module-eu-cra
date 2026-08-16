@@ -1,0 +1,10 @@
+{
+    "title": "Attack surface specification - (Scope)",
+    "cardType": "base/cardTypes/controlledDocument",
+    "workflowState": "",
+    "rank": "0|b",
+    "base/fieldTypes/informationClassification": "internal",
+    "lastUpdated": "2026-08-16T20:28:21.142Z",
+    "links": [],
+    "base/fieldTypes/identifier": "secdeva_document_attack-surface"
+}

@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/createSecurityRequirementForRisk",
+    "displayName": "Create a security requirement for risk",
+    "description": "Create a new security requirement. Used within risk cards",
+    "category": "Secure development specifications"
+}

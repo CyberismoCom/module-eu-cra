@@ -1,0 +1,21 @@
+This register captures key decisions made during the project. Documenting decisions and the reasoning behind them prevents revisiting the same questions, clarifies intent for new team members, and provides an audit trail when stakeholders ask why a particular approach was chosen.
+
+[TIP]
+====
+Recording decisions explicitly may be useful for
+
+* Architecture and design decisions
+* Operations decisions
+* Significant changes
+====
+
+TIP: If you need to create longer specifications, see {{#report}}"name":"secdeva/reports/xref","identifier":"secdeva_phase_design"{{/report}}.
+
+{{#createCards}}
+  "buttonLabel": "Create a decision",
+  "template": "base/templates/decision"
+{{/createCards}}
+
+{{#report}}
+    "name": "secdeva/reports/decisions"
+{{/report}}

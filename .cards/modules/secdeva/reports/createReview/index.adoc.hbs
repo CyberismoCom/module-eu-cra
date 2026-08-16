@@ -1,0 +1,29 @@
+{{#each results}}
+
+{{#if reviews}}
+
+[caption=]
+.Existing reviews
+[cols="5,2"]
+|===
+| Review | Workflow State
+
+{{#each reviews}}
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.workflowState}}
+{{/each}}
+
+|===
+
+Create another review, if needed:
+{{else}}
+You have not yet created any reviews.
+{{/if}}
+
+{{#createCards}}
+    "template": "{{../template}}",
+    "buttonLabel": "{{../buttonLabel}}",
+  "cardKey": "{{phase.key}}"
+{{/createCards}}
+
+{{/each}}

@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/xref",
+    "displayName": "Cross-reference by identifier",
+    "description": "This report creates a cross reference to the card that has the given identifier in the current development project",
+    "category": "Secure development"
+}

@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/templates/configurationItem",
+    "displayName": "Configuration item",
+    "description": "Specifies how a configuration item is handled as part of the configuration management plan",
+    "category": "Secure development specifications"
+}

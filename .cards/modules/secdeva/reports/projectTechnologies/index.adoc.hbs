@@ -1,19 +1,29 @@
-{{#if results}}
+{{#each results}}
+{{#if technologies}}
 
-[cols="4,2"]
+[cols="4,2,3"]
 .3rd party technologies
 |===
-|Technology | Workflow state
+|Technology | Workflow state | Policy violations
 
-{{#each results}}
+{{#each technologies}}
 |xref:{{this.key}}.adoc[{{this.title}}]
 |{{this.workflowState}}
+{{#if this.policyChecks.failures}}
+a|
+{{#each this.policyChecks.failures}}
+* {{this.title}}
+{{/each}}
+{{else}}
+|
+{{/if}}
 {{/each}}
 
 |===
 
 {{else}}
 
-There are no 3rd party technology documents.
+There are no 3rd party technology assessments.
 
 {{/if}}
+{{/each}}

@@ -3,14 +3,10 @@
     "title": "Perform penetration testing",
     "workflowState": "",
     "rank": "0|m",
-    "lastUpdated": "2025-01-23T20:37:00.384Z",
+    "lastUpdated": "2026-08-16T20:45:38.677Z",
     "links": [],
     "base/fieldTypes/adoptionStep": "step2",
-    "base/fieldTypes/justification": null,
-    "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
     "base/fieldTypes/reviewPeriod": 365,
-    "base/fieldTypes/reviewMonth": null,
-    "base/fieldTypes/lastReviewed": null,
     "base/fieldTypes/identifier": "eucra_control_penetration-testing"
 }

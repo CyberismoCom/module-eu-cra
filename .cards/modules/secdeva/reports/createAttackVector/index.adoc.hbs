@@ -1,0 +1,14 @@
+{{#each results}}
+* xref:{{this.key}}.adoc[{{this.title}}]
+{{/each}}
+
+{{#unless results}}
+
+You have not yet created any attack vectors.
+
+{{/unless}}
+
+{{#createCards}}
+    "template": "secdeva/templates/attackVector",
+    "buttonLabel": "Create an attack vector"
+{{/createCards}}

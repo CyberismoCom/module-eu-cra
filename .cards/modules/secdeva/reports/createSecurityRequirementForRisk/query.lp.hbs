@@ -1,0 +1,14 @@
+selectAll.
+
+result(result).
+
+childResult(result, Requirement, "requirements") :-
+    link(Requirement, {{cardKey}}, "ismsa/linkTypes/mitigates"),
+    field(Requirement, "cardType", "secdeva/cardTypes/requirement").
+
+childObject(result, Register, "register") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    field(Register, "base/fieldTypes/identifier", "secdeva_register_security-requirements"),
+    secdeva_closestProject(Register, Project).
+
+orderBy("rank", "ASC").

@@ -3,12 +3,11 @@
     "cardType": "ismsa/cardTypes/register",
     "workflowState": "",
     "rank": "0|d",
-    "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
     "base/fieldTypes/identifier": "ismsa_register_controls",
     "ismsa/fieldTypes/adoptionStep": "step1",
     "ismsa/fieldTypes/progress": "control-progress",
     "labels": [],
     "links": [],
-    "lastUpdated": "2025-08-26T15:14:19.017Z"
+    "lastUpdated": "2026-08-16T20:13:38.665Z"
 }

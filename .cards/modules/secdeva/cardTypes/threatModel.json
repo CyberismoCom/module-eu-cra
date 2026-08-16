@@ -1,0 +1,50 @@
+{
+    "name": "secdeva/cardTypes/threatModel",
+    "displayName": "Threat model",
+    "workflow": "base/workflows/controlledDocument",
+    "customFields": [
+        {
+            "name": "base/fieldTypes/owner",
+            "displayName": "",
+            "isCalculated": true,
+            "enableOverride": true
+        },
+        {
+            "name": "base/fieldTypes/approver",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "base/fieldTypes/approvalDate",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "base/fieldTypes/informationClassification",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "base/fieldTypes/identifier",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "base/fieldTypes/reviewPeriod",
+            "displayName": "",
+            "isCalculated": true,
+            "enableOverride": true
+        }
+    ],
+    "alwaysVisibleFields": [
+        "base/fieldTypes/owner",
+        "base/fieldTypes/approver",
+        "base/fieldTypes/approvalDate"
+    ],
+    "optionallyVisibleFields": [
+        "base/fieldTypes/informationClassification",
+        "base/fieldTypes/reviewPeriod"
+    ],
+    "description": "Identifies and quantifies cyber threats and security-related issues in a system, then developing mitigations for them. This involves mapping out the system's attack surfaces, trust boundaries, data flows, processes, and external entities.",
+    "category": "Secure development specifications"
+}

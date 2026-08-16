@@ -1,0 +1,55 @@
+{{#each results}}
+== Maturity overview
+
+[mermaid]
+----
+flowchart LR
+    subgraph Project[{{this.project.title}} {{this.project.progress}}% on Adoption {{this.project.[base/fieldTypes/adoptionStep].displayValue}}]
+      direction LR
+      F[Foundation\n{{this.foundationPhase.progress}}%] --> D[Design\n{{this.designPhase.progress}}%]
+      D --> I[Implementation\n{{this.implementationPhase.progress}}%]
+      I --> V[Verification\n{{this.verificationPhase.progress}}%]
+      V --> R[Releases\n ]
+      R --> O[Operations\n{{this.operationsPhase.progress}}%]
+    end
+----
+
+=== Extensions
+
+{{#report}}
+  "name": "secdeva/reports/projectExtensions"
+{{/report}}
+
+== 1. Track open security issues to closure
+
+Security issues represent concrete weaknesses or problems that need to be fixed.
+
+{{#report}}
+  "name": "secdeva/reports/securityIssuesNeedingAttention"
+{{/report}}
+
+== 2. Work on the next internal controls
+
+Internal controls define the security practices and activities your team performs throughout the development lifecycle.
+
+{{#report}}
+  "name": "secdeva/reports/projectInternalControls"
+{{/report}}
+
+== 3. Implement the required policy corrections
+
+Resolve policy violations by the next periodic review checkpoint.
+
+{{#report}}
+  "name": "secdeva/reports/projectPolicyChecks"
+{{/report}}
+
+== 4. Conduct periodic reviews
+
+{{#report}}
+  "name": "secdeva/reports/periodicReviews"
+{{/report}}
+
+To conduct a review, see {{#report}}"name": "secdeva/reports/xref", "identifier": "secdeva_register_periodic-reviews"{{/report}}.
+
+{{/each}}

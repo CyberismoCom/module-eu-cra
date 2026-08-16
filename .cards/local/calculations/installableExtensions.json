@@ -1,5 +1,6 @@
 {
     "name": "eucra/calculations/installableExtensions",
     "displayName": "Installable extensions",
-    "description": "Defines installable EU CRA extensions for secure development project phases"
+    "description": "Defines installable EU CRA extensions for secure development projects",
+    "calculation": "calculation.lp"
 }

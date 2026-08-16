@@ -4,9 +4,7 @@
     "workflowState": "",
     "rank": "0|f",
     "base/fieldTypes/adoptionStep": "step1",
-    "base/fieldTypes/owner": null,
-    "base/fieldTypes/informationClassification": "internal",
     "links": [],
-    "lastUpdated": "2025-02-14T07:49:43.980Z",
+    "lastUpdated": "2026-08-16T20:28:21.151Z",
     "base/fieldTypes/identifier": "secdeva_phase_verification"
 }

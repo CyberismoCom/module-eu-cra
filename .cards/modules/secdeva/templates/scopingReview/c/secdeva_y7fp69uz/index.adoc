@@ -1,0 +1,48 @@
+== Introduction
+
+This document records a review of process scoping for the development project. The purpose of this review is to verify that a security specialist has assessed the applicability of each internal control based on the project's risk profile, and that scoping decisions have been appropriately justified.
+
+TIP: You can see a summary of the scoping decisions in the internal control register, see {{#report}}"name": "secdeva/reports/xref", "identifier": "secdeva_register_internal-controls"{{/report}}.
+
+== Review checklist
+
+Check that the security context of the product has been considered when making scoping decisions (intended use, deployment environment, risk level).
+
+* [ ] OK
+* [ ] Not OK
+
+Check that each internal control has been assessed and marked as either in scope or out of scope in the internal control register.
+
+* [ ] OK
+* [ ] Not OK
+
+Check that controls marked as out of scope have a documented justification that is reasonable and defensible.
+
+* [ ] OK
+* [ ] Not OK
+
+Check that the scoping is consistent with the risk level of the product. High-risk products should not have an excessive number of controls scoped out.
+
+* [ ] OK
+* [ ] Not OK
+
+Check that the scoping has been reviewed or updated since the last significant change in the project scope, architecture, or regulatory environment.
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not applicable
+
+== Review notes
+
+#TODO: Describe any notes and remarks about the review here#
+
+== Identified security issues from this review
+
+{{#createCards}}
+  "template": "secdeva/templates/securityIssue",
+  "buttonLabel": "Create a new security issue"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssueList"
+{{/report}}

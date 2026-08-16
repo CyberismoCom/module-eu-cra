@@ -3,9 +3,9 @@
     "cardType": "ismsa/cardTypes/register",
     "workflowState": "",
     "rank": "0|b",
-    "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
     "base/fieldTypes/identifier": "ismsa_register_yearly-targets",
     "ismsa/fieldTypes/adoptionStep": "step1",
-    "ismsa/fieldTypes/progress": null
+    "links": [],
+    "lastUpdated": "2026-08-16T20:13:38.679Z"
 }

@@ -1,0 +1,38 @@
+selectAll.
+
+result(result).
+
+% Find the project card and the phase cards
+
+childObject(result, Project, "project") :-
+  secdeva_closestProject({{cardKey}}, Project).
+
+childObject(result, Card, "foundationPhase") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_phase_foundation").
+
+childObject(result, Card, "designPhase") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_phase_design").
+
+childObject(result, Card, "implementationPhase") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_phase_implementation").
+
+childObject(result, Card, "verificationPhase") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_phase_verification").
+
+childObject(result, Card, "releasesPhase") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_phase_releases").
+
+childObject(result, Card, "operationsPhase") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_phase_operations").

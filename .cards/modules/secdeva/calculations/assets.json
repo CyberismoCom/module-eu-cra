@@ -1,0 +1,7 @@
+{
+    "name": "secdeva/calculations/assets",
+    "displayName": "Assets",
+    "description": "Hide assets that have been directly added in the asset register in the navigation",
+    "calculation": "calculation.lp",
+    "category": "Secure development"
+}

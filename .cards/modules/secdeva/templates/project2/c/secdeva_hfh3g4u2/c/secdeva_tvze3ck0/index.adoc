@@ -1,0 +1,31 @@
+== Releases
+
+The Releases phase ensures that every version shipped to customers has passed a structured security gate. It covers the release review, internal documentation of what was included, and external communication to customers.
+
+.*What this phase covers*
+[%collapsible]
+====
+[mermaid]
+----
+flowchart LR
+    RR[Release review] --> IRN[Internal release notes]
+    RR --> ERN[External release notes]
+    IRN --> V[Version released]
+    ERN --> V
+----
+
+* *Release review* — A security gate checklist that verifies all secure development tasks are closed, security issues are resolved, tool findings are handled, and the release is signed off.
+* *Internal release notes* — Document changes, fixed security issues, and archive release artifacts such as SBOMs and packages.
+* *External release notes* — Communicate addressed security issues, compatibility constraints, update instructions, and authenticity verification to customers.
+====
+
+=== Why it matters
+
+A release is the handoff point between development and the real world. The release review is your last opportunity to catch unresolved issues before they reach customers. Clear release notes — internal and external — ensure traceability and give stakeholders the information they need to assess and apply updates.
+
+=== Versions
+
+{{#createCards}}
+  "template": "secdeva/templates/version",
+  "buttonLabel": "Create a new version"
+{{/createCards}}

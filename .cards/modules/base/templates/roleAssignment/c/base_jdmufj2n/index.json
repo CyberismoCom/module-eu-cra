@@ -3,6 +3,7 @@
     "cardType": "base/cardTypes/roleAssignment",
     "workflowState": "",
     "rank": "0|b",
-    "base/fieldTypes/owner": null,
-    "base/fieldTypes/informationClassification": "internal"
+    "base/fieldTypes/informationClassification": "internal",
+    "links": [],
+    "lastUpdated": "2026-08-10T19:26:53.882Z"
 }

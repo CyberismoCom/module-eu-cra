@@ -4,7 +4,9 @@
     "customFields": [
         {
             "name": "base/fieldTypes/owner",
-            "isCalculated": false
+            "displayName": "",
+            "isCalculated": true,
+            "enableOverride": true
         },
         {
             "name": "base/fieldTypes/informationClassification",
@@ -12,11 +14,25 @@
         },
         {
             "name": "base/fieldTypes/approver",
-            "isCalculated": false
+            "displayName": "",
+            "isCalculated": true,
+            "enableOverride": true
         },
         {
             "name": "base/fieldTypes/approvalDate",
             "isCalculated": false
+        },
+        {
+            "name": "base/fieldTypes/identifier",
+            "displayName": "",
+            "isCalculated": false,
+            "enableOverride": false
+        },
+        {
+            "name": "base/fieldTypes/reviewPeriod",
+            "displayName": "",
+            "isCalculated": true,
+            "enableOverride": true
         }
     ],
     "alwaysVisibleFields": [
@@ -25,7 +41,9 @@
         "base/fieldTypes/approvalDate"
     ],
     "optionallyVisibleFields": [
-        "base/fieldTypes/informationClassification"
+        "base/fieldTypes/informationClassification",
+        "base/fieldTypes/reviewPeriod",
+        "base/fieldTypes/identifier"
     ],
     "displayName": "Controlled document",
     "description": "A formal document with an approval workflow"

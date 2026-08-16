@@ -1,0 +1,35 @@
+selectAll.
+select(2, "risks", "policyChecks").
+
+result(result).
+
+resultField(result, "register", Register, "shortText") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(Register, Project),
+    field(Register, "base/fieldTypes/identifier", "secdeva_register_risks").
+resultField(result, "registerStatus", Status, "shortText") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(Register, Project),
+    field(Register, "base/fieldTypes/identifier", "secdeva_register_risks"),
+    field(Register, "workflowState", Status).
+
+secdeva_riskResult(Risk) :-
+  secdeva_registerMember(Risk, Register),
+  secdeva_closestProject(Register, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  secdeva_closestProject(Risk, Project),
+  field(Register, "base/fieldTypes/identifier", "secdeva_register_risks").
+
+childResult(result, Risk, "risks") :-
+  secdeva_riskResult(Risk).
+
+childResult(Risk, Asset, "affectedAssets") :-
+  secdeva_riskResult(Risk),
+  link(Asset, Risk, "ismsa/linkTypes/presentsRisk").
+
+childResult(Risk, Requirement, "securityRequirements") :-
+  secdeva_riskResult(Risk),
+  link(Requirement, Risk, "ismsa/linkTypes/mitigates"),
+  field(Requirement, "cardType", "secdeva/cardTypes/requirement").
+
+orderBy("title", "ASC").

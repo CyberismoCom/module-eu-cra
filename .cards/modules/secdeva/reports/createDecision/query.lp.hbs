@@ -1,0 +1,19 @@
+selectAll.
+
+result(result).
+
+childResult(result, Decision, "decisions") :-
+    link({{cardKey}}, Decision, "base/linkTypes/relatesTo"),
+    field(Decision, "cardType", "base/cardTypes/decision").
+
+childResult(result, Decision, "decisions") :-
+    link(Decision, {{cardKey}}, "base/linkTypes/relatesTo"),
+    field(Decision, "cardType", "base/cardTypes/decision").
+
+
+childObject(result, Register, "register") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    field(Register, "base/fieldTypes/identifier", "secdeva_register_decisions"),
+    secdeva_closestProject(Register, Project).
+
+orderBy("rank", "ASC").

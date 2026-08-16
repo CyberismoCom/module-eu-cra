@@ -3,14 +3,11 @@
     "title": "Manage 3rd party technologies",
     "workflowState": "",
     "rank": "0|p",
-    "lastUpdated": "2025-09-08T09:16:46.385Z",
+    "lastUpdated": "2026-08-16T20:28:21.154Z",
     "links": [],
     "base/fieldTypes/adoptionStep": "step1",
-    "base/fieldTypes/justification": null,
-    "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
     "base/fieldTypes/reviewPeriod": 365,
     "base/fieldTypes/reviewMonth": "march",
-    "base/fieldTypes/lastReviewed": null,
     "base/fieldTypes/identifier": "secdeva_control_3rd-party-technologies"
 }

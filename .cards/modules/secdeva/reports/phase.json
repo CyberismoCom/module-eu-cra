@@ -1,6 +1,6 @@
 {
     "name": "secdeva/reports/phase",
-    "displayName": "Development project phase",
-    "description": "A summary of a development project phase",
-    "category": "Secure development"
+    "displayName": "Development project phase (deprecated)",
+    "description": "A summary of a development project phase. Old version, included for backward compatibility",
+    "category": "Deprecated"
 }

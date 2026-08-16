@@ -1,6 +1,6 @@
 {
     "name": "secdeva/reports/installableExtensions",
-    "displayName": "Installable extensions",
-    "description": "Provide a way to instantiate available extensions from other modules",
+    "displayName": "Installable extensions of a phase (deprecated)",
+    "description": "Provide a way to instantiate available extensions from other modules under the phase card that uses this report",
     "category": "General"
 }

@@ -1,0 +1,24 @@
+{
+    "name": "secdeva/fieldTypes/interfaceAuthentication",
+    "displayName": "Authentication",
+    "dataType": "enum",
+    "enumValues": [
+        {
+            "enumValue": "no",
+            "enumDisplayValue": "No authentication",
+            "enumDescription": ""
+        },
+        {
+            "enumValue": "optional",
+            "enumDisplayValue": "Optional",
+            "enumDescription": ""
+        },
+        {
+            "enumValue": "required",
+            "enumDisplayValue": "Required",
+            "enumDescription": ""
+        }
+    ],
+    "description": "Whether interface supports or requires authentication",
+    "category": "Threat model"
+}

@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/createTechnologyAssessment",
+    "displayName": "Create a technology assessment",
+    "category": "Secure development specifications",
+    "description": "Create a technology assessment. Used within assets cards"
+}

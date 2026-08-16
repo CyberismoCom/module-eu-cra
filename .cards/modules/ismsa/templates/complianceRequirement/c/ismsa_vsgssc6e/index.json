@@ -3,13 +3,7 @@
     "cardType": "ismsa/cardTypes/complianceRequirement",
     "workflowState": "",
     "rank": "0|b",
-    "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
-    "base/fieldTypes/adoptionStep": null,
-    "base/fieldTypes/identifier": null,
-    "ismsa/fieldTypes/requirementImplementationStrategy": null,
-    "ismsa/fieldTypes/requirementOrigin": null,
     "links": [],
-    "base/fieldTypes/justification": null,
-    "lastUpdated": "2025-03-18T14:19:27.105Z"
+    "lastUpdated": "2026-08-16T20:13:38.645Z"
 }

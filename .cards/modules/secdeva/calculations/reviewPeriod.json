@@ -1,0 +1,7 @@
+{
+    "name": "secdeva/calculations/reviewPeriod",
+    "displayName": "Review period",
+    "description": "Calculate the review period of evidence documents and reviews from the related control",
+    "calculation": "calculation.lp",
+    "category": "Secure development"
+}

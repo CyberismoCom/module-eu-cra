@@ -3,14 +3,11 @@
     "title": "Manage 3rd party software updates",
     "workflowState": "",
     "rank": "0|b",
-    "lastUpdated": "2025-09-08T09:39:24.472Z",
+    "lastUpdated": "2026-08-16T20:28:21.151Z",
     "links": [],
     "base/fieldTypes/adoptionStep": "step1",
-    "base/fieldTypes/justification": null,
-    "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
     "base/fieldTypes/reviewPeriod": 365,
     "base/fieldTypes/reviewMonth": "august",
-    "base/fieldTypes/lastReviewed": null,
     "base/fieldTypes/identifier": "secdeva_control_software-update-management"
 }

@@ -1,0 +1,11 @@
+{
+    "title": "Untitled interface",
+    "cardType": "secdeva/cardTypes/interface",
+    "workflowState": "",
+    "rank": "0|b",
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/identifier": "secdeva_document_interface",
+    "lastUpdated": "2026-08-16T20:28:21.145Z",
+    "links": [],
+    "secdeva/fieldTypes/interfaceType": "logical"
+}

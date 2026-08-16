@@ -1,0 +1,28 @@
+{
+    "name": "ismsa/fieldTypes/internalControlReviewPeriod",
+    "displayName": "Review period",
+    "dataType": "enum",
+    "enumValues": [
+        {
+            "enumValue": "1month",
+            "enumDisplayValue": "1 month",
+            "enumDescription": ""
+        },
+        {
+            "enumValue": "3months",
+            "enumDisplayValue": "3 months",
+            "enumDescription": ""
+        },
+        {
+            "enumValue": "6months",
+            "enumDisplayValue": "6 months",
+            "enumDescription": ""
+        },
+        {
+            "enumValue": "12months",
+            "enumDisplayValue": "12 months",
+            "enumDescription": ""
+        }
+    ],
+    "description": "How often the internal control should be reviewed"
+}

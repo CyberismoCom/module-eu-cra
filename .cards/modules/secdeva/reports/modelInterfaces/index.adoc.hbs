@@ -1,4 +1,9 @@
+
+TIP: Create dataflows, interfaces and physical connections in the underlying threat model.
+
 {{#each results}}
+
+=== Exteral data flows 
 
 {{#if externalDataflows}}
 
@@ -18,9 +23,11 @@
 
 {{else}}
 
-There are no dataflows with entities outside all trust boundaries. You can create them in the underlying dataflow model.
+There are no dataflows with entities outside all trust boundaries.
 
 {{/if}}
+
+=== Internal data flows
 
 {{#if internalDataflows}}
 
@@ -39,16 +46,27 @@ There are no dataflows with entities outside all trust boundaries. You can creat
 
 {{else}}
 
-There are no dataflows inside at least one trust boundary. You can create them in the underlying dataflow model.
+There are no dataflows inside at least one trust boundary.
 
 {{/if}}
+
+=== Interfaces
+
+.Instructions
+[%collapsible]
+=====
+[NOTE]
+====
+When reviewing this section, check that all internal and external interfaces, such as communication protocols are listed. 
+====
+=====
 
 {{#if interfaces}}
 
 .Interfaces
 [cols="3,3,2,2"]
 |===
-| Element | Interface | External? | Crosses trust boundary?
+| Asset | Interface | External? | Crosses trust boundary?
 
 {{#each interfaces}}
 |xref:{{this.[secdeva/fieldTypes/interfaceElementCardKey]}}.adoc[{{this.[secdeva/fieldTypes/interfaceElementTitle]}}]
@@ -62,9 +80,44 @@ There are no dataflows inside at least one trust boundary. You can create them i
 
 {{else}}
 
-There are no interface specifications. You can create them in the underlying dataflow model.
+There are no interfaces.
 
 {{/if}}
 
+=== Physical ports and connections
+
+.Instructions
+[%collapsible]
+=====
+[NOTE]
+====
+When reviewing this section, check that all physical ports and connections are listed.
+
+* Externally accessible physical ports, including debug ports
+* Circuit board connections such as as Joint Test Action Group (JTAG) connections or debug headers which might be used to attack the hardware
+====
+=====
+
+{{#if physicalConnections}}
+
+.Physical ports and connections
+[cols="3,3,1"]
+|===
+| Asset | Physical connection | Count 
+
+{{#each physicalConnections}}
+|xref:{{this.[secdeva/fieldTypes/physicalConnectionElementCardKey]}}.adoc[{{this.[secdeva/fieldTypes/physicalConnectionElementTitle]}}]
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.[secdeva/fieldTypes/physicalConnectionCount]}}
+
+{{/each}}
+
+|===
+
+{{else}}
+
+There are no physical connections.
+
+{{/if}}
 
 {{/each}}

@@ -1,0 +1,11 @@
+{
+    "title": "Scope secure development activities",
+    "cardType": "ismsa/cardTypes/internalControl",
+    "workflowState": "",
+    "rank": "0|en",
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/adoptionStep": "step1",
+    "base/fieldTypes/identifier": "secdeva_control_scope-secure-development-activities",
+    "lastUpdated": "2026-08-16T20:28:21.162Z",
+    "links": []
+}

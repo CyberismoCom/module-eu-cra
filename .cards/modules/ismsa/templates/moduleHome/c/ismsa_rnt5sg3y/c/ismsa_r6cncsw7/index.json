@@ -3,12 +3,11 @@
     "cardType": "ismsa/cardTypes/register",
     "workflowState": "",
     "rank": "0|a",
-    "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
     "base/fieldTypes/identifier": "ismsa_register_processes",
     "ismsa/fieldTypes/adoptionStep": "step1",
     "ismsa/fieldTypes/progress": "process-progress",
     "labels": [],
     "links": [],
-    "lastUpdated": "2026-01-16T11:44:00.734Z"
+    "lastUpdated": "2026-08-16T20:13:38.665Z"
 }

@@ -1,0 +1,61 @@
+{{#each results}}
+The current adoption step of this project is *{{this.project.[base/fieldTypes/adoptionStep].displayValue}}*. 
+{{#unless (eq this.project.[base/fieldTypes/adoptionStep].value "step3")}}
+The following tables do not include internal controls on higher adoption steps. You can change the target adoption step field in {{#report}}"name":"secdeva/reports/xref", "identifier":"secdeva_project"{{/report}}.
+{{/unless}}
+
+
+{{#if open}}
+=== Internal controls that have not been scoped
+
+[cols="3,2,4"]
+|===
+| Control | Workflow state  | Scoping justification
+
+{{#each open}}
+| {{#xref}}"cardKey": "{{this.key}}"{{/xref}}
+| {{this.workflowState}}
+| {{this.[base/fieldTypes/justification]}}
+
+{{/each}}
+|===
+
+{{/if}}
+
+{{#if inScope}}
+=== Internal controls that are in scope
+
+[cols="3,2,4"]
+|===
+| Control | Workflow state  | Scoping justification
+
+{{#each inScope}}
+| {{#xref}}"cardKey": "{{this.key}}"{{/xref}}
+| {{this.workflowState}}
+| {{this.[base/fieldTypes/justification]}}
+
+{{/each}}
+|===
+
+{{/if}}
+
+{{#if outOfScope}}
+=== Internal controls that are out of scope
+
+[cols="3,2,4"]
+|===
+| Control | Workflow state  | Scoping justification
+
+{{#each outOfScope}}
+| {{#xref}}"cardKey": "{{this.key}}"{{/xref}}
+| {{this.workflowState}}
+| {{this.[base/fieldTypes/justification]}}
+
+{{/each}}
+|===
+
+{{/if}}
+
+
+{{/each}}
+

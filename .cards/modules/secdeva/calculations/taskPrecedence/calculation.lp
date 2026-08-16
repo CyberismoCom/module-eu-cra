@@ -42,10 +42,6 @@ secdeva_precedingTask(
     "secdeva_control_threat-models",
     "secdeva_control_high-level-risks").
 
-secdeva_precedingTask(
-    "secdeva_control_high-level-risks",
-    "secdeva_control_threat-models").
-
 secdeva_prerequisiteTask(
     "secdeva_control_security-context",
     "secdeva_control_threat-models").
@@ -66,6 +62,10 @@ secdeva_precedingTask(
     "secdeva_control_high-level-risks",
     "secdeva_control_security-requirements").
 
+secdeva_precedingTask(
+    "secdeva_control_high-level-risks",
+    "secdeva_control_scope-secure-development-activities").
+
 secdeva_prerequisiteTask(
     "secdeva_control_security-requirements",
     "secdeva_control_security-requirement-testing").
@@ -77,5 +77,21 @@ secdeva_prerequisiteTask(
 secdeva_prerequisiteTask(
     "secdeva_control_3rd-party-technologies",
     "secdeva_control_software-update-management").
+
+secdeva_prerequisiteTask(
+    "secdeva_control_threat-models",
+    "secdeva_control_security-design-review").
+
+secdeva_prerequisiteTask(
+    "secdeva_control_document-attack-surface",
+    "secdeva_control_attack-surface-analysis").
+
+secdeva_precedingTask(
+    "secdeva_control_attack-surface-analysis",
+    "secdeva_control_penetration-testing").
+
+secdeva_prerequisiteTask(
+    "secdeva_control_use-of-cryptography",
+    "secdeva_control_integrity-protection-of-release").
 
 

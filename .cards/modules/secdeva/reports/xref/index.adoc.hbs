@@ -1,0 +1,1 @@
+{{#each results}}{{#unless @first}}{{#unless @last}}, {{/unless}}{{/unless}}{{#if @last}}{{#unless @first}} and {{/unless}}{{/if}}{{#xref}}"cardKey": "{{this.key}}"{{/xref}}{{/each}}

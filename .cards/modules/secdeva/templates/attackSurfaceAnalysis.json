@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/templates/attackSurfaceAnalysis",
+    "displayName": "Attack surface analysis",
+    "description": "Testing of the actual exposed attack surface",
+    "category": "Security testing"
+}

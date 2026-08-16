@@ -1,0 +1,68 @@
+{
+    "name": "ismsa/cardTypes/assessedComplianceRequirement",
+    "displayName": "Compliance requirement (assessed)",
+    "workflow": "ismsa/workflows/internalControl",
+    "customFields": [
+        {
+            "name": "base/fieldTypes/owner",
+            "displayName": "",
+            "isCalculated": true,
+            "enableOverride": true
+        },
+        {
+            "name": "base/fieldTypes/informationClassification",
+            "displayName": "",
+            "isCalculated": false,
+            "enableOverride": false
+        },
+        {
+            "name": "ismsa/fieldTypes/requirementImplementationStrategy",
+            "displayName": "",
+            "isCalculated": false,
+            "enableOverride": false
+        },
+        {
+            "name": "base/fieldTypes/assessment",
+            "displayName": "",
+            "isCalculated": true,
+            "enableOverride": true
+        },
+        {
+            "name": "base/fieldTypes/assessmentExplanation",
+            "displayName": "",
+            "isCalculated": true,
+            "enableOverride": true
+        },
+        {
+            "name": "base/fieldTypes/identifier",
+            "displayName": "",
+            "isCalculated": false,
+            "enableOverride": false
+        },
+        {
+            "name": "ismsa/fieldTypes/requirementOrigin",
+            "displayName": "",
+            "isCalculated": false,
+            "enableOverride": false
+        },
+        {
+            "name": "base/fieldTypes/adoptionStep",
+            "displayName": "",
+            "isCalculated": false,
+            "enableOverride": false
+        }
+    ],
+    "alwaysVisibleFields": [
+        "base/fieldTypes/owner",
+        "ismsa/fieldTypes/requirementImplementationStrategy",
+        "base/fieldTypes/assessment",
+        "base/fieldTypes/assessmentExplanation"
+    ],
+    "optionallyVisibleFields": [
+        "base/fieldTypes/informationClassification",
+        "ismsa/fieldTypes/requirementOrigin",
+        "base/fieldTypes/identifier",
+        "base/fieldTypes/adoptionStep"
+    ],
+    "description": "An external compliance requirement from regulations or standards with automatic assessment"
+}

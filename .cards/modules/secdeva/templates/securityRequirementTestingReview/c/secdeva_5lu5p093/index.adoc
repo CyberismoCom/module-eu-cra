@@ -1,0 +1,25 @@
+== Introduction
+
+This document is a review of security requirement testing in a development project.
+
+=== Goal of testing
+
+The goal of security requirement testing is to test that
+
+* Security requirements have been correctly implemented
+* When security requirements mitigate cyber risks, security requirement testing acts as mitigation testing. In this case, the testing should include, where practical, tests that attempt to defeat (thwart) the mitigation.
+
+=== Documentation and reporting
+
+#TODO: Add a link or an attachment to the detailed test plan and test results, for example to a test management system or to automated tests. If you're tracking manual testing in this tool, then describe the test plan and the test results here.#
+
+== Identified security issues
+
+{{#createCards}}
+  "template": "secdeva/templates/securityIssue",
+  "buttonLabel": "Create a new security issue"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssueList"
+{{/report}}

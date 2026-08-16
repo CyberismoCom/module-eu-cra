@@ -1,0 +1,49 @@
+{
+    "name": "secdeva/cardTypes/register",
+    "displayName": "Register",
+    "workflow": "secdeva/workflows/void",
+    "customFields": [
+        {
+            "name": "base/fieldTypes/owner",
+            "displayName": "",
+            "isCalculated": true,
+            "enableOverride": true
+        },
+        {
+            "name": "base/fieldTypes/informationClassification",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "ismsa/fieldTypes/progress",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "base/fieldTypes/identifier",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "base/fieldTypes/assessment",
+            "displayName": "",
+            "isCalculated": true
+        },
+        {
+            "name": "base/fieldTypes/assessmentExplanation",
+            "displayName": "",
+            "isCalculated": true
+        }
+    ],
+    "alwaysVisibleFields": [
+        "base/fieldTypes/owner",
+        "base/fieldTypes/assessment",
+        "base/fieldTypes/assessmentExplanation",
+        "base/fieldTypes/informationClassification"
+    ],
+    "optionallyVisibleFields": [
+        "base/fieldTypes/identifier"
+    ],
+    "description": "A register that groups and tracks related items.",
+    "category": "Secure development"
+}

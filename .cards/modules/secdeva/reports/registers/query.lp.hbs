@@ -1,0 +1,46 @@
+result(result).
+
+resultField(result, "assets", Assets, "shortText") :-
+  secdeva_closestProject({{cardKey}}, Project),
+  secdeva_closestProject(Assets, Project),
+  field(Assets, "base/fieldTypes/identifier", "secdeva_register_assets").
+
+resultField(result, "risks", Risks, "shortText") :-
+  secdeva_closestProject({{cardKey}}, Project),
+  secdeva_closestProject(Risks, Project),
+  field(Risks, "base/fieldTypes/identifier", "secdeva_register_risks").
+
+resultField(result, "securityIssues", SecurityIssues, "shortText") :-
+  secdeva_closestProject({{cardKey}}, Project),
+  secdeva_closestProject(SecurityIssues, Project),
+  field(SecurityIssues, "base/fieldTypes/identifier", "secdeva_register_security-issues").
+
+resultField(result, "securityRequirements", SecurityRequirements, "shortText") :-
+  secdeva_closestProject({{cardKey}}, Project),
+  secdeva_closestProject(SecurityRequirements, Project),
+  field(SecurityRequirements, "base/fieldTypes/identifier", "secdeva_register_security-requirements").
+
+resultField(result, "technologyAssessments", TechnologyAssessments, "shortText") :-
+  secdeva_closestProject({{cardKey}}, Project),
+  secdeva_closestProject(TechnologyAssessments, Project),
+  field(TechnologyAssessments, "base/fieldTypes/identifier", "secdeva_register_technology-assessments").
+
+resultField(result, "compliance", Compliance, "shortText") :-
+  secdeva_closestProject({{cardKey}}, Project),
+  secdeva_closestProject(Compliance, Project),
+  field(Compliance, "base/fieldTypes/identifier", "secdeva_register_compliance-controls").
+
+resultField(result, "periodicReviews", PeriodicReviews, "shortText") :-
+  secdeva_closestProject({{cardKey}}, Project),
+  secdeva_closestProject(PeriodicReviews, Project),
+  field(PeriodicReviews, "base/fieldTypes/identifier", "secdeva_register_periodic-reviews").
+
+resultField(result, "decisions", Decisions, "shortText") :-
+  secdeva_closestProject({{cardKey}}, Project),
+  secdeva_closestProject(Decisions, Project),
+  field(Decisions, "base/fieldTypes/identifier", "secdeva_register_decisions").
+
+resultField(result, "internalControls", InternalControls, "shortText") :-
+  secdeva_closestProject({{cardKey}}, Project),
+  secdeva_closestProject(InternalControls, Project),
+  field(InternalControls, "base/fieldTypes/identifier", "secdeva_register_internal-controls").

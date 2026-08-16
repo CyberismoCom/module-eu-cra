@@ -1,0 +1,29 @@
+== Introduction
+
+This document is an overall review of the interfaces and physical ports in the threat model. APIs, protocols, physical connections, and other interfaces are typically a significant attack vector. Documenting the interfaces  ensures that secure design principles have been applied when designing the interface.
+
+== Summary of interfaces
+
+{{#report}}
+  "name": "secdeva/reports/interfaceReview"
+{{/report}}
+
+== Review checklist
+
+=== Interface identification
+
+Relevant interfaces and physical connections have been identified in the threat model:
+
+* [ ] OK
+* [ ] Not OK
+
+== Identified security issues from this review
+
+{{#createCards}}
+  "template": "secdeva/templates/securityIssue",
+  "buttonLabel": "Create a new security issue"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssueList"
+{{/report}}

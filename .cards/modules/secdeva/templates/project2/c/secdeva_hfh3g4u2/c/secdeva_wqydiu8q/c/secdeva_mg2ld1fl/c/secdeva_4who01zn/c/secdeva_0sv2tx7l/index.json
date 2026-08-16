@@ -1,0 +1,13 @@
+{
+    "title": "Manage security issues",
+    "cardType": "ismsa/cardTypes/internalControl",
+    "workflowState": "",
+    "rank": "0|c",
+    "base/fieldTypes/informationClassification": "internal",
+    "ismsa/fieldTypes/internalControlReviewPeriod": "3months",
+    "base/fieldTypes/reviewMonth": "february",
+    "base/fieldTypes/adoptionStep": "step1",
+    "base/fieldTypes/identifier": "secdeva_control_manage-defects",
+    "links": [],
+    "lastUpdated": "2026-08-16T20:28:21.164Z"
+}

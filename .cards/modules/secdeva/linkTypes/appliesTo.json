@@ -1,0 +1,25 @@
+{
+    "name": "secdeva/linkTypes/appliesTo",
+    "displayName": "Applies to",
+    "outboundDisplayName": "applies to",
+    "inboundDisplayName": "is subject to",
+    "sourceCardTypes": [
+        "secdeva/cardTypes/requirement"
+    ],
+    "destinationCardTypes": [
+        "secdeva/cardTypes/dataStore",
+        "secdeva/cardTypes/dataflowModel",
+        "secdeva/cardTypes/interface",
+        "secdeva/cardTypes/process",
+        "secdeva/cardTypes/project",
+        "secdeva/cardTypes/project2",
+        "ismsa/cardTypes/asset",
+        "ismsa/cardTypes/assetData",
+        "ismsa/cardTypes/assetDevice",
+        "ismsa/cardTypes/assetInformationSystem",
+        "ismsa/cardTypes/assetSupplier"
+    ],
+    "enableLinkDescription": false,
+    "description": "A link between a requirement and a component",
+    "category": "Secure development specifications"
+}

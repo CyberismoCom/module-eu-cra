@@ -14,7 +14,14 @@ New incidents are recorded using the incident template that contains four cards:
 
 *Note*: If an incident contains CONFIDENTIAL information, it can be stored at separately selected location with limited access. A link to material is added to incidents that are recorded here.
 
+*Note 2*: Security events that do not qualify as incidents can be recorded as near misses.
+
 {{#createCards}}
   "template": "ismsa/templates/incident",
   "buttonLabel": "Add new incident"
+{{/createCards}}
+
+{{#createCards}}
+  "template": "ismsa/templates/nearMiss",
+  "buttonLabel": "Add new near miss"
 {{/createCards}}

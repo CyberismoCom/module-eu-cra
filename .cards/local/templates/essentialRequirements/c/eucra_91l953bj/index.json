@@ -3,9 +3,7 @@
     "cardType": "secdeva/cardTypes/requirement",
     "workflowState": "",
     "rank": "0|b",
-    "base/fieldTypes/owner": null,
-    "base/fieldTypes/informationClassification": "internal",
     "base/fieldTypes/identifier": "eucra_security-requirement_no-known-exploitable-vulnerabilities",
     "links": [],
-    "lastUpdated": "2025-09-15T14:59:03.665Z"
+    "lastUpdated": "2026-08-16T20:45:38.662Z"
 }

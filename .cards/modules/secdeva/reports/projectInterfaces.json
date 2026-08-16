@@ -1,6 +1,6 @@
 {
     "name": "secdeva/reports/projectInterfaces",
-    "displayName": "Interfaces of a development project",
-    "description": "A summary of the interfaces of a development project",
+    "displayName": "Security testing of interfaces",
+    "description": "A summary of how security testing has been scoped for the interfaces of a development project",
     "category": "Secure development"
 }

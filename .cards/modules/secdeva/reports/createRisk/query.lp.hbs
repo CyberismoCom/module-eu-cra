@@ -1,0 +1,14 @@
+selectAll.
+
+result(result).
+
+childResult(result, Risk, "risks") :-
+    link({{cardKey}}, Risk, "ismsa/linkTypes/presentsRisk"),
+    field(Risk, "cardType", "ismsa/cardTypes/risk").
+
+childObject(result, Register, "register") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    field(Register, "base/fieldTypes/identifier", "secdeva_register_risks"),
+    secdeva_closestProject(Register, Project).
+
+orderBy("rank", "ASC").

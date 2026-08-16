@@ -1,0 +1,9 @@
+{
+    "title": "Untitled attack vector",
+    "cardType": "secdeva/cardTypes/page",
+    "workflowState": "",
+    "rank": "0|b",
+    "base/fieldTypes/identifier": "secdeva_attack-vector",
+    "lastUpdated": "2026-08-16T20:28:21.142Z",
+    "links": []
+}

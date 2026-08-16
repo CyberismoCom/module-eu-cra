@@ -1,0 +1,37 @@
+selectAll.
+select(2, "reviews", "policyChecks").
+
+result(result).
+
+childObject(result, Register, "register") :-
+  secdeva_closestProject(Register, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Register, "base/fieldTypes/identifier", "secdeva_register_periodic-reviews").
+
+resultField(result, "daysSincePreviousReview", DaysSinceReview, "integer") :-
+  secdeva_closestProject(Register, Project),
+  field(Register, "base/fieldTypes/identifier", "secdeva_register_periodic-reviews"),
+  secdeva_closestProject({{cardKey}}, Project),
+  DaysSinceReview != #sup,
+  DaysSinceReview = #min {
+    Days :
+    secdeva_registerMember(Review, Register),
+    not field(Review, "workflowState", "Draft"),
+    field(Review, "base/fieldTypes/lastReviewed", LastReviewed),
+    Days = @daysSince(LastReviewed)
+  }.
+
+resultField(result, "reviewDue", "void", "shortText") :-
+  secdeva_closestProject(Register, Project),
+  field(Register, "base/fieldTypes/identifier", "secdeva_register_periodic-reviews"),
+  secdeva_closestProject({{cardKey}}, Project),
+  resultField(result, "daysSincePreviousReview", DaysSinceReview, _),
+  field(Register, "base/fieldTypes/reviewPeriod", ReviewPeriod),
+  DaysSinceReview > ReviewPeriod.
+
+childResult(result, Card, "reviews") :-
+  secdeva_closestProject(Card, Project),
+  secdeva_closestProject({{cardKey}}, Project),
+  field(Card, "base/fieldTypes/identifier", "secdeva_review_periodic").
+
+orderBy("title", "DESC").

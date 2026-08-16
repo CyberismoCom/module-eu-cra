@@ -1,0 +1,10 @@
+{
+    "title": "Security requirements",
+    "cardType": "secdeva/cardTypes/register",
+    "workflowState": "",
+    "rank": "0|cg",
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/identifier": "secdeva_register_security-requirements",
+    "lastUpdated": "2026-08-16T20:28:21.157Z",
+    "links": []
+}

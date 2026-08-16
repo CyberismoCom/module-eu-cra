@@ -1,0 +1,67 @@
+== Introduction
+
+This document documents the use of cryptography in a development project to ensure that cryptography is used properly and effectively.
+
+== Use cases for cryptography
+
+#TODO: Describe the use cases here, or add a link to documentation.#
+
+NOTE: Notice that the use of cryptograpy must be planned in the light of the expected usage period. Select such algorithms and key lengths that are expected to be applicable during the usage period and as new technologies such as quantum computing become available.
+
+=== #TODO: Title of use case 1#
+
+Use case:: #TODO: describe the use case#
+Expected usage period:: #TODO: describe the expected usage period of the protected information#
+References:: #TODO: add references that justify the use of cryptography and the selected algorithms, key lengths, key management arrangements#
+Algorithms:: #TODO: describe the cryptographic algorithms#
+Key length:: #TODO: describe the length of cryptographic keys#
+Roles and responsibilities:: #TODO: describe any human user roles and their responsibilities related to this use case#
+Key management:: #TODO: add a link or a description of how keys are managed. This includes how they are created, exchanged, stored, access controlled, protected, renewed, revoked, and deleted.#
+
+In this use case, cryptography is used properly and effectively, and the algorithms, key lengths and key management arrangements are up to date and suitable for the use case and the expected usage period:
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not applicable
+
+=== #TODO: Title of use case 2#
+
+Use case:: #TODO: describe the use case#
+Expected usage period:: #TODO: describe the expected usage period of the protected information#
+References:: #TODO: add references that justify the use of cryptography and the selected algorithms, key lengths, key management arrangements#
+Algorithms:: #TODO: describe the cryptographic algorithms#
+Key length:: #TODO: describe the length of cryptographic keys#
+Roles and responsibilities:: #TODO: describe any human user roles and their responsibilities related to this use case#
+Key management:: #TODO: add a link or a description of how keys are managed. This includes how they are created, exchanged, stored, access controlled, protected, renewed, revoked, and deleted.#
+
+In this use case, cryptography is used properly and effectively, and the algorithms, key lengths and key management arrangements are up to date and suitable for the use case and the expected usage period:
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not applicable
+
+== Reviews
+
+{{#createCards}}
+    "template": "base/templates/reviewTask",
+    "buttonLabel": "Add new review task"
+{{/createCards}}
+
+{{#report}}
+  "name": "base/reports/childrenTable",
+  "cardType": "base/cardTypes/reviewTask"
+{{/report}}
+
+== Identified security issues from this review
+
+{{#createCards}}
+  "template": "secdeva/templates/securityIssue",
+  "buttonLabel": "Create a new security issue"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssueList"
+{{/report}}
+
+
+

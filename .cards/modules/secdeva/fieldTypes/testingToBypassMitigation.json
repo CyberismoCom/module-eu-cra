@@ -1,6 +1,6 @@
 {
     "name": "secdeva/fieldTypes/testingToBypassMitigation",
-    "displayName": "Testing to bypass the mitigation",
+    "displayName": "Testing to defeat the mitigation",
     "dataType": "enum",
     "enumValues": [
         {
@@ -16,5 +16,5 @@
             "enumDisplayValue": "Done"
         }
     ],
-    "description": "Testing approach to verify that threat mitigations cannot be bypassed"
+    "description": "Testing approach to verify that threat mitigations cannot be defeated (thwarted)"
 }

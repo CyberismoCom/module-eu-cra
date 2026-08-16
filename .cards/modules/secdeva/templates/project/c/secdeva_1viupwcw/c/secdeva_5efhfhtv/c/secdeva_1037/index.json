@@ -3,14 +3,11 @@
     "title": "Write security requirements specifications",
     "workflowState": "",
     "rank": "0|cn",
-    "lastUpdated": "2025-09-08T09:20:08.622Z",
+    "lastUpdated": "2026-08-16T20:28:21.154Z",
     "links": [],
     "base/fieldTypes/adoptionStep": "step1",
-    "base/fieldTypes/justification": null,
-    "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
     "base/fieldTypes/reviewPeriod": 365,
     "base/fieldTypes/reviewMonth": "may",
-    "base/fieldTypes/lastReviewed": null,
     "base/fieldTypes/identifier": "secdeva_control_security-requirements"
 }

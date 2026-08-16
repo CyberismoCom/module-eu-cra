@@ -1,0 +1,7 @@
+{
+    "name": "secdeva/calculations/project2",
+    "displayName": "Project",
+    "description": "Links projects to ISMS assets",
+    "calculation": "calculation.lp",
+    "category": "Secure development"
+}

@@ -1,0 +1,12 @@
+{
+    "cardType": "ismsa/cardTypes/internalControl",
+    "title": "Document product security context",
+    "workflowState": "",
+    "rank": "0|an",
+    "lastUpdated": "2026-08-16T20:28:21.162Z",
+    "links": [],
+    "base/fieldTypes/informationClassification": "internal",
+    "ismsa/fieldTypes/internalControlReviewPeriod": "12months",
+    "base/fieldTypes/reviewMonth": "april",
+    "base/fieldTypes/identifier": "secdeva_control_security-context"
+}

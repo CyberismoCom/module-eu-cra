@@ -3,14 +3,10 @@
     "title": "Review security design",
     "workflowState": "",
     "rank": "0|q",
-    "lastUpdated": "2025-09-16T17:22:03.836Z",
+    "lastUpdated": "2026-08-16T20:45:38.661Z",
     "links": [],
     "base/fieldTypes/adoptionStep": "step2",
-    "base/fieldTypes/justification": null,
-    "base/fieldTypes/owner": null,
     "base/fieldTypes/informationClassification": "internal",
     "base/fieldTypes/reviewPeriod": 365,
-    "base/fieldTypes/reviewMonth": null,
-    "base/fieldTypes/lastReviewed": null,
     "base/fieldTypes/identifier": "eucra_control_security-design-review"
 }

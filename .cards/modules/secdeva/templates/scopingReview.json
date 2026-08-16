@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/templates/scopingReview",
+    "displayName": "Review of process scoping",
+    "description": "A review of the decisions about which internal controls are applicable",
+    "category": "Secure development reviews"
+}

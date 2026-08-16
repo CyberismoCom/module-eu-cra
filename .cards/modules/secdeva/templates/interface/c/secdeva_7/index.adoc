@@ -14,10 +14,10 @@ Review instructions
 [NOTE]
 .Review instructions
 ====
-Interfaces are classified automatically based on the dataflow model. To review this section:
+Interfaces are classified automatically based on the threat model. To review this section:
 
-. Check that the interface has been correctly classified as an external interface or internal interface. If not, then improve the dataflows of dataflow model. External interfaces have dataflows from external entities or persons.
-. Check that the relationship of this interface to the trust boundaries have been correctly classified. If not, then improve the dataflows and trust boundaries of the dataflow model.
+. Check that the interface has been correctly classified as an external interface or internal interface. If not, then improve the dataflows of threat model. External interfaces have dataflows from external entities or persons.
+. Check that the relationship of this interface to the trust boundaries have been correctly classified. If not, then improve the dataflows and trust boundaries of the threat model.
 ====
 
 {{#report}}
@@ -93,7 +93,7 @@ For example
 [NOTE]
 .Review instructions
 ====
-. Identify the potential users of the interface and check that they are represented in the dataflow model. See a summary above in *Classification of the interface*
+. Identify the potential users of the interface and check that they are represented in the threat model. See a summary above in *Classification of the interface*
 . Group the users into user categories based on similar needs of accessing the assets
 . Aim at a simple design
 
@@ -207,18 +207,6 @@ Security testing for interface tests fall into the following categories.
 * Network traffic load tests
 * Performance and scalability tests
 ====
-
-== Version history
-
-[cols="1,1,3"]
-|===============
-|Version | Date | Changes/Author
-
-| 0.1
-| 2024-01-01
-| XYZ changed by N.N.
-
-|===============
 
 == Reviews
 

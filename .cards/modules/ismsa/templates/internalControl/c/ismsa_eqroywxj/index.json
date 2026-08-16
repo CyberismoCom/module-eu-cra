@@ -1,0 +1,11 @@
+{
+    "title": "Untitled internal control",
+    "cardType": "ismsa/cardTypes/internalControl",
+    "workflowState": "",
+    "rank": "0|b",
+    "base/fieldTypes/informationClassification": "internal",
+    "ismsa/fieldTypes/internalControlReviewPeriod": "12months",
+    "lastUpdated": "2026-08-16T20:13:38.664Z",
+    "links": [],
+    "base/fieldTypes/reviewMonth": "january"
+}

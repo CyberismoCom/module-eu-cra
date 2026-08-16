@@ -1,0 +1,7 @@
+{
+    "name": "secdeva/calculations/defaultOwner",
+    "displayName": "Default owner and approver",
+    "description": "Set the owner and approver by default as the owner of the parent card",
+    "calculation": "calculation.lp",
+    "category": "Secure development"
+}

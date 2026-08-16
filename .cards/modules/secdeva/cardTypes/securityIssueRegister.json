@@ -1,0 +1,53 @@
+{
+    "name": "secdeva/cardTypes/securityIssueRegister",
+    "displayName": "Security issue register",
+    "workflow": "secdeva/workflows/void",
+    "customFields": [
+        {
+            "name": "secdeva/fieldTypes/acceptableSeverity",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "secdeva/fieldTypes/deferrableSeverity",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "base/fieldTypes/owner",
+            "displayName": "",
+            "isCalculated": true,
+            "enableOverride": true
+        },
+        {
+            "name": "base/fieldTypes/informationClassification",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "base/fieldTypes/identifier",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "base/fieldTypes/assessment",
+            "displayName": "",
+            "isCalculated": true
+        },
+        {
+            "name": "base/fieldTypes/assessmentExplanation",
+            "displayName": "",
+            "isCalculated": true
+        }
+    ],
+    "alwaysVisibleFields": [
+        "base/fieldTypes/owner",
+        "base/fieldTypes/assessment",
+        "base/fieldTypes/assessmentExplanation",
+        "base/fieldTypes/informationClassification",
+        "secdeva/fieldTypes/acceptableSeverity",
+        "secdeva/fieldTypes/deferrableSeverity"
+    ],
+    "optionallyVisibleFields": [],
+    "description": "A register for managing security issues. Defines the severities for issues that can be accepted and deferred."
+}

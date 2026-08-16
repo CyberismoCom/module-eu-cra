@@ -3,8 +3,7 @@
     "cardType": "secdeva/cardTypes/requirement",
     "workflowState": "",
     "rank": "0|b",
-    "base/fieldTypes/owner": null,
-    "base/fieldTypes/informationClassification": "internal",
-    "base/fieldTypes/identifier": "secdeva_security_requirement"
-
+    "base/fieldTypes/identifier": "secdeva_security_requirement",
+    "links": [],
+    "lastUpdated": "2026-08-16T20:28:21.169Z"
 }

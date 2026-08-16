@@ -1,15 +1,31 @@
 {{#each results}}
 
 {{#if issuesNeedingAttention}}
+[caption=]
 .Security issues that need attention
-[cols="5,2,2"]
+[cols="5,2,3,3"]
 |===
-| Security issue | Workflow State | Severity
+| Security issue | Severity | Affected assets | Policy violations
 
 {{#each issuesNeedingAttention}}
-|xref:{{this.key}}.adoc[{{this.title}}]
-|{{this.workflowState}}
+|xref:{{this.key}}.adoc[{{this.title}}] [*{{this.workflowState}}*]
 |{{this.[secdeva/fieldTypes/severity].displayValue}}
+{{#if this.affectedAssets}}
+a|
+{{#each this.affectedAssets}}
+* xref:{{this.key}}.adoc[{{this.title}}]
+{{/each}}
+{{else}}
+|
+{{/if}}
+{{#if this.policyChecks.failures}}
+a|
+{{#each this.policyChecks.failures}}
+* {{this.title}}
+{{/each}}
+{{else}}
+|
+{{/if}}
 {{/each}}
 |===
 
@@ -24,14 +40,29 @@ There are no security issues that need attention.
 [%collapsible]
 ====
 
-[cols="5,2,2"]
+[cols="5,2,3,3"]
 |===
-| Security issue | Workflow State | Severity
+| Security issue | Severity | Affected assets | Policy violations
 
 {{#each deferredIssues}}
-|xref:{{this.key}}.adoc[{{this.title}}]
-|{{this.workflowState}}
+|xref:{{this.key}}.adoc[{{this.title}}] [*{{this.workflowState}}*]
 |{{this.[secdeva/fieldTypes/severity].displayValue}}
+{{#if this.affectedAssets}}
+|
+{{#each this.affectedAssets}}
+* xref:{{this.key}}.adoc[{{this.title}}]
+{{/each}}
+{{else}}
+|
+{{/if}}
+{{#if this.policyChecks.failures}}
+a|
+{{#each this.policyChecks.failures}}
+* {{this.title}}
+{{/each}}
+{{else}}
+|
+{{/if}}
 {{/each}}
 |===
 
@@ -43,14 +74,30 @@ There are no security issues that need attention.
 [%collapsible]
 ====
 
-[cols="5,2,2"]
+[cols="5,2,2,3,3"]
 |===
-| Security issue | Workflow State | Severity
+| Security issue | Workflow State | Severity | Affected assets | Policy violations
 
 {{#each closedIssues}}
 |xref:{{this.key}}.adoc[{{this.title}}]
 |{{this.workflowState}}
 |{{this.[secdeva/fieldTypes/severity].displayValue}}
+{{#if this.affectedAssets}}
+|
+{{#each this.affectedAssets}}
+* xref:{{this.key}}.adoc[{{this.title}}]
+{{/each}}
+{{else}}
+|
+{{/if}}
+{{#if this.policyChecks.failures}}
+a|
+{{#each this.policyChecks.failures}}
+* {{this.title}}
+{{/each}}
+{{else}}
+|
+{{/if}}
 {{/each}}
 |===
 ====

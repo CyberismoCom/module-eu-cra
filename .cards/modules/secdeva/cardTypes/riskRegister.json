@@ -1,0 +1,48 @@
+{
+    "name": "secdeva/cardTypes/riskRegister",
+    "displayName": "Risk register",
+    "workflow": "secdeva/workflows/void",
+    "customFields": [
+        {
+            "name": "base/fieldTypes/owner",
+            "displayName": "",
+            "isCalculated": true,
+            "enableOverride": true
+        },
+        {
+            "name": "base/fieldTypes/informationClassification",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "base/fieldTypes/identifier",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "base/fieldTypes/assessment",
+            "displayName": "",
+            "isCalculated": true
+        },
+        {
+            "name": "base/fieldTypes/assessmentExplanation",
+            "displayName": "",
+            "isCalculated": true
+        },
+        {
+            "name": "ismsa/fieldTypes/acceptableRiskLevel",
+            "displayName": "",
+            "isCalculated": false
+        }
+    ],
+    "alwaysVisibleFields": [
+        "base/fieldTypes/owner",
+        "base/fieldTypes/assessment",
+        "base/fieldTypes/assessmentExplanation",
+        "ismsa/fieldTypes/acceptableRiskLevel",
+        "base/fieldTypes/informationClassification"
+    ],
+    "optionallyVisibleFields": [],
+    "description": "A register for managing cybersecurity risks with an acceptable risk threshold",
+    "category": "Secure development"
+}

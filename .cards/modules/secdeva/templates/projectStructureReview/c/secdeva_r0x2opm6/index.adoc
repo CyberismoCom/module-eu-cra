@@ -1,0 +1,50 @@
+== Introduction
+
+A development project may consists of such independent components for which it makes sense to manage the secure development process separately. A good rule of thumb is that running the secure development process separately may make sense if the component is independently updateable and if it is being developed by a separate team or a separate subproject.
+
+This document records a review of the subproject structure of a development project.
+
+== Review checklist
+
+=== Subprojects
+
+Secure development is being appropriately managed for subprojects:
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not applicable
+
+=== Custom-developed supplier components
+
+Secure development is being appropriately managed for any custom-developed third party components:
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not applicable
+
+=== Modified or rebranded 3rd party components
+
+If the development team makes a substantial modification of a 3rd party product or places a 3rd party product on the market under their own trademark or name, then the development team may have to apply the secure development process for the component, including responsibilities to conform with EU regulations.
+
+Secure development is being appropriately managed for any substantially modified or rebranded 3rd party components:
+
+* [ ] OK
+* [ ] Not OK
+* [ ] Not applicable
+
+== Review notes
+
+#TODO: if applicable, add a link or an attachment to external systems for more information or evidence.#
+
+#TODO: Describe any notes and remarks about the review here#
+
+== Identified security issues
+
+{{#createCards}}
+  "template": "secdeva/templates/securityIssue",
+  "buttonLabel": "Create a new security issue"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssueList"
+{{/report}}

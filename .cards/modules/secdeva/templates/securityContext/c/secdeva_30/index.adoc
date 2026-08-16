@@ -72,18 +72,6 @@ Ensure that the requirements for the network environment are clearly documented,
 
 Consider also the responsibilities regarding OS and middleware vulnerability management. Ensure that the the assumptions and responsibilities are clearly documented, also in the customer documentation, if applicable.
 
-== Version history
-
-[cols="1,1,3"]
-|===============
-|Version | Date | Changes/Author
-
-| 0.1
-| 2024-01-01
-| XYZ changed by N.N.
-
-|===============
-
 == Reviews
 
 {{#createCards}}

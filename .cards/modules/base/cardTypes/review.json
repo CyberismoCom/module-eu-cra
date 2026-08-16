@@ -4,7 +4,9 @@
     "customFields": [
         {
             "name": "base/fieldTypes/owner",
-            "isCalculated": false
+            "displayName": "",
+            "isCalculated": true,
+            "enableOverride": true
         },
         {
             "name": "base/fieldTypes/informationClassification",
@@ -16,7 +18,15 @@
         },
         {
             "name": "base/fieldTypes/reviewPeriod",
-            "isCalculated": false
+            "displayName": "",
+            "isCalculated": true,
+            "enableOverride": true
+        },
+        {
+            "name": "base/fieldTypes/identifier",
+            "displayName": "",
+            "isCalculated": false,
+            "enableOverride": false
         }
     ],
     "alwaysVisibleFields": [
@@ -25,7 +35,8 @@
     ],
     "optionallyVisibleFields": [
         "base/fieldTypes/reviewPeriod",
-        "base/fieldTypes/informationClassification"
+        "base/fieldTypes/informationClassification",
+        "base/fieldTypes/identifier"
     ],
     "displayName": "Review",
     "description": "Tracks a review that can pass or fail"

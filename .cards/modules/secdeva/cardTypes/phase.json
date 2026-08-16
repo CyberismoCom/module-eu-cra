@@ -1,0 +1,36 @@
+{
+    "name": "secdeva/cardTypes/phase",
+    "displayName": "Phase",
+    "workflow": "secdeva/workflows/void",
+    "customFields": [
+        {
+            "name": "base/fieldTypes/identifier",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "ismsa/fieldTypes/progress",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "base/fieldTypes/adoptionStep",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "base/fieldTypes/owner",
+            "displayName": "",
+            "isCalculated": true,
+            "enableOverride": true
+        }
+    ],
+    "alwaysVisibleFields": [
+        "base/fieldTypes/owner"
+    ],
+    "optionallyVisibleFields": [
+        "base/fieldTypes/adoptionStep"
+    ],
+    "description": "A development project phase",
+    "category": "Secure development"
+}

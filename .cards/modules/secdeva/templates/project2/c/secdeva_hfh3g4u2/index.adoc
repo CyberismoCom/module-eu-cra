@@ -1,0 +1,49 @@
+== The scope of this secure development project
+
+#TODO: Briefly describe what the product or solution is, who it serves, and its primary value proposition in 1-3 sentences.#
+
+== Project security objectives & scope
+#TODO: Define what success in cybersecurity looks like#
+ 
+Primary security goal: #TODO. e.g., Launch the beta version with core authentication features.#
+ 
+Out of scope (currently): #TODO: what cybersecurity topics are we explicitly NOT doing right now?#
+
+You can see a summary of the scoping of internal controls in {{#report}}"name": "secdeva/reports/xref", "identifier": "secdeva_register_internal-controls"{{/report}}.
+ 
+== Target audience & stakeholders
+The following stakeholders will use this product and/or care about its security.
+ 
+End users: #TODO: Description of the user base#
+
+Internal stakeholders: #TODO: e.g., Legal, Compliance, CTO#
+
+NOTE: Set the owner field of this card to denote the person, who is responsible for cybersecurity of this development project. 
+
+== Success metrics (KPIs)
+How will we measure if the security integration was successful?
+
+#TODO: document or link to documentation about how the compliance, cybersecurity management and vulnerability management are measured#
+
+== Milestones and checkpoints
+
+.Instructions
+[%collapsible]
+=====
+[TIP]
+====
+It is recommended to have 2–6 checkpoints per year to keep secure development work on track. You can integrate secure development checkpoints into practices you already have, such as:
+
+* Program increment reviews
+* Quarterly reviews
+* Milestone reviews
+* Gate reviews
+
+====
+=====
+
+#TODO: Add a description or link showing your general milestone/checkpoint practices and how secure development reviews fit into them#
+
+== Activation
+
+Once you have filled in this template, set the owner field and use the "Activate" workflow transition to mark this card ready.

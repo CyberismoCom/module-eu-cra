@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/templates/attackVector",
+    "displayName": "Attack vector",
+    "description": "An attack vector in the threat model",
+    "category": "Threat model"
+}

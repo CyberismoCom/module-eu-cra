@@ -20,9 +20,8 @@ transitionDenied(Document, "Approve", "Fill in the information classification fi
     field(Document, "cardType", "base/cardTypes/controlledDocument"),
     not field(Document, "base/fieldTypes/informationClassification", _).
 
-transitionDenied(Document, "Approve", "Fill in the approval date field before approving") :-
-    field(Document, "cardType", "base/cardTypes/controlledDocument"),
-    not field(Document, "base/fieldTypes/approvalDate", _).
+onTransitionSetField(Document, "Approve", Document, "base/fieldTypes/approvalDate", @today) :-
+    field(Document, "cardType", "base/cardTypes/controlledDocument").
 
 transitionDenied(Document, "Approve", "Complete the review task(s) before approving") :-
     field(Document, "cardType", "base/cardTypes/controlledDocument"),
@@ -53,20 +52,25 @@ transitionDenied(ReviewTask, "Done", "Fill in the owner field before completing 
     field(ReviewTask, "cardType", "base/cardTypes/reviewTask"),
     not field(ReviewTask, "base/fieldTypes/owner", _).
 
-policyCheckFailure(Document, "Document control", "Owner is a required field", "Fill in the owner field." ):-
+policyCheckFailure(Document, "Document control", "Owner is a required field", "Fill in the owner field.", "base/fieldTypes/owner"):-
     field(Document, "cardType", "base/cardTypes/controlledDocument"),
     not field(Document, "workflowStateCategory", "initial"),
     not field(Document, "base/fieldTypes/owner", _).
 
-policyCheckFailure(Document, "Document control", "Approver is a required field", "Fill in the approver field." ):-
+policyCheckFailure(Document, "Document control", "Approver is a required field", "Fill in the approver field.", "base/fieldTypes/approver"):-
     field(Document, "cardType", "base/cardTypes/controlledDocument"),
     not field(Document, "workflowStateCategory", "initial"),
     not field(Document, "base/fieldTypes/approver", _).
 
-policyCheckFailure(Document, "Document control", "Approval date is a mandatory field", "Fill in the approval date field." ):-
+policyCheckFailure(Document, "Document control", "Approval date is a mandatory field", "Fill in the approval date field.", "base/fieldTypes/approvalDate"):-
     field(Document, "cardType", "base/cardTypes/controlledDocument"),
     not field(Document, "workflowStateCategory", "initial"),
     not field(Document, "base/fieldTypes/approvalDate", _).
+
+policyCheckFailure(Document, "Document control", "Review period is a required field", "Fill in the Review period field.", "base/fieldTypes/reviewPeriod"):-
+    field(Document, "cardType", "base/cardTypes/controlledDocument"),
+    not field(Document, "workflowStateCategory", "initial"),
+    not field(Document, "base/fieldTypes/reviewPeriod", _).
 
 policyCheckFailure(Document, "Document control", "The review subtasks of approved documents must be closed", "Complete review task(s)" ):-
     field(Document, "cardType", "base/cardTypes/controlledDocument"),
@@ -90,3 +94,13 @@ policyCheckFailure(ReviewTask, "Document control", "Reviewer cannot be the same 
     field(Document, "base/fieldTypes/owner", DocumentOwner),
     field(ReviewTask, "base/fieldTypes/owner", Reviewer),
     DocumentOwner = Reviewer.
+
+policyCheckFailure(Document, "Document control", "Review has expired", "Complete a new review of this document.") :-
+    field(Document, "cardType", "base/cardTypes/controlledDocument"),
+    field(Document, "workflowState", "Approved"),
+    field(Document, "base/fieldTypes/reviewPeriod", ReviewPeriod),
+    @daysSince(LastReviewed) > ReviewPeriod :
+    parent(ReviewTask, Document),
+    field(ReviewTask, "cardType", "base/cardTypes/reviewTask"),
+    field(ReviewTask, "workflowState", "Closed as done"),
+    field(ReviewTask, "base/fieldTypes/lastReviewed", LastReviewed).

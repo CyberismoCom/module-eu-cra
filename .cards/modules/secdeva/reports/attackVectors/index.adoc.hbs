@@ -1,0 +1,12 @@
+{{#if results}}
+
+Attack vectors:
+
+{{#each results}}
+* xref:{{this.key}}.adoc[{{this.title}}]
+{{/each}}
+{{else}}
+
+The threat model does not define any attack vectors.
+
+{{/if}}

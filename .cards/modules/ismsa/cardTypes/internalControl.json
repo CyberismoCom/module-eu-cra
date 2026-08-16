@@ -1,0 +1,64 @@
+{
+    "name": "ismsa/cardTypes/internalControl",
+    "displayName": "Internal control",
+    "workflow": "ismsa/workflows/internalControl",
+    "customFields": [
+        {
+            "name": "base/fieldTypes/owner",
+            "displayName": "",
+            "isCalculated": true,
+            "enableOverride": true
+        },
+        {
+            "name": "base/fieldTypes/informationClassification",
+            "isCalculated": false
+        },
+        {
+            "name": "base/fieldTypes/justification",
+            "displayName": "Scoping justification",
+            "isCalculated": false
+        },
+        {
+            "name": "base/fieldTypes/adoptionStep",
+            "isCalculated": false
+        },
+        {
+            "name": "base/fieldTypes/identifier",
+            "isCalculated": false
+        },
+        {
+            "name": "ismsa/fieldTypes/internalControlReviewPeriod",
+            "isCalculated": false
+        },
+        {
+            "name": "base/fieldTypes/assessment",
+            "displayName": "",
+            "isCalculated": true,
+            "enableOverride": true
+        },
+        {
+            "name": "base/fieldTypes/assessmentExplanation",
+            "displayName": "",
+            "isCalculated": true,
+            "enableOverride": true
+        },
+        {
+            "name": "base/fieldTypes/reviewMonth",
+            "isCalculated": false
+        }
+    ],
+    "alwaysVisibleFields": [
+        "base/fieldTypes/owner",
+        "base/fieldTypes/justification",
+        "base/fieldTypes/assessment",
+        "base/fieldTypes/assessmentExplanation"
+    ],
+    "optionallyVisibleFields": [
+        "base/fieldTypes/informationClassification",
+        "base/fieldTypes/adoptionStep",
+        "ismsa/fieldTypes/internalControlReviewPeriod",
+        "base/fieldTypes/reviewMonth",
+        "base/fieldTypes/identifier"
+    ],
+    "description": "A cybersecurity safeguard"
+}

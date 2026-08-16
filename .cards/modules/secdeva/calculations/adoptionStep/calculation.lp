@@ -1,7 +1,10 @@
+
+% TODO: this rule supports legacy content
 hiddenInTreeView(Card) :-
     card(Card),
     secdeva_closestProject(Card, Project),
-    base_greaterAdoptionStep(Card, Project).
+    base_greaterAdoptionStep(Card, Project),
+    field(Project, "cardType", "secdeva/cardTypes/project").
 
 policyCheckFailure(
     Project,

@@ -1,0 +1,10 @@
+{
+    "title": "Untitled review",
+    "cardType": "base/cardTypes/review",
+    "workflowState": "",
+    "rank": "0|b",
+    "base/fieldTypes/informationClassification": "internal",
+    "base/fieldTypes/reviewPeriod": 365,
+    "lastUpdated": "2026-08-16T20:13:38.661Z",
+    "links": []
+}

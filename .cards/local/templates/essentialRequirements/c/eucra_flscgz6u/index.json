@@ -3,7 +3,7 @@
     "cardType": "secdeva/cardTypes/requirement",
     "workflowState": "",
     "rank": "0|p",
-    "lastUpdated": "2025-07-17T18:01:34.179Z",
-    "base/fieldTypes/informationClassification": "internal",
-    "base/fieldTypes/identifier": "eucra_security-requirement_notification-about-end-of-support"
+    "lastUpdated": "2026-08-16T20:45:38.663Z",
+    "base/fieldTypes/identifier": "eucra_security-requirement_notification-about-end-of-support",
+    "links": []
 }

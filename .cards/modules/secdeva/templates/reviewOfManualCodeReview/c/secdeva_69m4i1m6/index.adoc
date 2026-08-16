@@ -15,18 +15,6 @@ Check that manual code reviews have been performed against secure coding standar
 
 #TODO: Describe any notes and remarks about the review here#
 
-== Version history
-
-[cols="1,1,3"]
-|===============
-|Version | Date | Changes/Author
-
-| 0.1
-| 2024-01-01
-| XYZ changed by N.N.
-
-|===============
-
 == Identified security issues
 
 {{#createCards}}

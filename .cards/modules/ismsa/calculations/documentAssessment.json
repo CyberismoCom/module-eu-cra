@@ -1,0 +1,6 @@
+{
+    "name": "ismsa/calculations/documentAssessment",
+    "displayName": "Document assessment",
+    "calculation": "calculation.lp",
+    "description": "Assesses the status of controlled documents based on their workflow state and policy check results."
+}

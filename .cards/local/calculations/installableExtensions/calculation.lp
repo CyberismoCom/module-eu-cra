@@ -1,27 +1,27 @@
 secdeva_installableExtension(
     "secdeva_register_compliance-controls",
-    "Cyberismo EU CRA module",
+    "Cyberismo EU CRA Essentials Module",
     "eucra/templates/compliance",
-    "Add compliance requirements from EU CRA module"
+    "Add new compliance requirements"
 ).
 
 secdeva_installableExtension(
     "secdeva_register_design-controls",
-    "Cyberismo EU CRA module",
+    "Cyberismo EU CRA Essentials Module",
     "eucra/templates/design2",
-    "Add design controls from EU CRA module"
+    "Add new design controls"
 ).
 
 secdeva_installableExtension(
     "secdeva_register_implementation-controls",
-    "Cyberismo EU CRA module",
+    "Cyberismo EU CRA Essentials Module",
     "eucra/templates/implementation2",
-    "Add implementation controls from EU CRA module"
+    "Add new implementation controls"
 ).
 
 secdeva_installableExtension(
     "secdeva_register_security-requirements",
-    "Cyberismo EU CRA module",
+    "Cyberismo EU CRA Essentials Module",
     "eucra/templates/essentialRequirements",
-    "Add essential requirements from EU CRA module"
+    "Add new essential security requirements"
 ).

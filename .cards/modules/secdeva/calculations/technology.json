@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/calculations/technology",
+    "displayName": "Technology assessment",
+    "description": "Enforce document control for technology assessments",
+    "calculation": "calculation.lp"
+}

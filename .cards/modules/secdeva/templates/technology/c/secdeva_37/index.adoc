@@ -1,6 +1,7 @@
 == Introduction
 
-This document is a technology assessment.
+This document is a technology assessment for the purpose of #TODO: document the purpose of the techology#.
+
 
 .Instructions
 [%collapsible]
@@ -219,15 +220,14 @@ The support and maintenance responsibilities for the technology have been define
 
 Comments, links:
 
-== Conclusion on the technology assessment
+== Reviews of this document
 
-The technology can be adopted for use once the following conditions are met:
+{{#createCards}}
+    "template": "base/templates/reviewTask",
+    "buttonLabel": "Add a new review task"
+{{/createCards}}
 
-* The owner of this document has filled in the technology assessment checklist and conducted the possibly required escalations, so that the identified risks can be accepted
-
-The proposed technology
-
-* [ ] is approved for use
-* [ ] is rejected for use
-
-for the purpose of #TODO: document the purpose#.
+{{#report}}
+  "name": "base/reports/childrenTable",
+  "cardType": "base/cardTypes/reviewTask"
+{{/report}}

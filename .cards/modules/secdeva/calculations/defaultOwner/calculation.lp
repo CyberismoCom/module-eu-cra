@@ -4,13 +4,13 @@
 fieldCalculated(Card, "base/fieldTypes/owner", Owner) :-
   parent(Card, Parent),
   field(Parent, "base/fieldTypes/owner", Owner),
-  field(Card, "cardType", CardType),
+  base_projectCardType(Card, CardType),
   calculatedField(CardType, "base/fieldTypes/owner"),
   overridableField(CardType, "base/fieldTypes/owner").
 
 fieldCalculated(Card, "base/fieldTypes/approver", Owner) :-
   parent(Card, Parent),
   field(Parent, "base/fieldTypes/owner", Owner),
-  field(Card, "cardType", CardType),
+  base_projectCardType(Card, CardType),
   calculatedField(CardType, "base/fieldTypes/approver"),
   overridableField(CardType, "base/fieldTypes/approver").

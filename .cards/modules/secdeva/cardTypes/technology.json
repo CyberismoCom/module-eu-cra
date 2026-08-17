@@ -37,6 +37,18 @@
             "displayName": "",
             "isCalculated": false,
             "enableOverride": false
+        },
+        {
+            "name": "base/fieldTypes/approver",
+            "displayName": "",
+            "isCalculated": false,
+            "enableOverride": false
+        },
+        {
+            "name": "base/fieldTypes/approvalDate",
+            "displayName": "",
+            "isCalculated": false,
+            "enableOverride": false
         }
     ],
     "optionallyVisibleFields": [
@@ -45,11 +57,13 @@
         "secdeva/fieldTypes/sbomComponentName",
         "secdeva/fieldTypes/sbomComponentCpe",
         "secdeva/fieldTypes/sbomComponentPurl",
-        "base/fieldTypes/identifier"
+        "base/fieldTypes/identifier",
+        "base/fieldTypes/informationClassification"
     ],
     "alwaysVisibleFields": [
         "base/fieldTypes/owner",
-        "base/fieldTypes/informationClassification"
+        "base/fieldTypes/approver",
+        "base/fieldTypes/approvalDate"
     ],
     "displayName": "Technology",
     "description": "A third-party technology used in development"

@@ -1,7 +1,7 @@
 editingContentDenied(InternalControl, "Internal controls are read-only") :-
-  field(InternalControl, "cardType", "ismsa/cardTypes/internalControl"),
+  base_projectCardType(InternalControl, "ismsa/cardTypes/internalControl"),
   ancestor(InternalControl, DevelopmentProject),
-  field(DevelopmentProject, "cardType", "secdeva/cardTypes/project2").
+  base_projectCardType(DevelopmentProject, "secdeva/cardTypes/project2").
 
 % Internal controls that are required by default
 

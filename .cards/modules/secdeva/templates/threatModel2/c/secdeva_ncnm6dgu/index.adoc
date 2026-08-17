@@ -56,40 +56,40 @@ You can evaluate whether the DFD describes the system with sufficient detail by 
 
 == Create a top-level element
 
-Trust boundary:: A trust boundary is a boundary between different trust zone levels.
+[cols="4,2"]
+|===
 
-{{#createCards}}
+a| A *trust boundary* is a boundary between different trust zone levels.
+a| {{#createCards}}
     "buttonLabel": "Create a trust boundary",
     "template": "secdeva/templates/trustBoundary2"
 {{/createCards}}
 
-External entity:: An external entity is a source from which information flows into the system, or a recipients of information leaving the system
-
-{{#createCards}}
+| An *external entity* is a source from which information flows into the system, or a recipients of information leaving the system
+a| {{#createCards}}
   "buttonLabel": "Create an external entity",
   "template": "secdeva/templates/external2"
 {{/createCards}}
 
-Person:: A person is a user, an administrator or another human stakeholder. A special case of an external entity.
-
-{{#createCards}}
+| A *person* is a user, an administrator or another human stakeholder. A special case of an external entity.
+a| {{#createCards}}
   "buttonLabel": "Create a person",
   "template": "secdeva/templates/person2"
 {{/createCards}}
 
-Process:: A process represents an activity that the system carries out.
-
-{{#createCards}}
+| A *process* represents an activity that the system carries out.
+a| {{#createCards}}
   "buttonLabel": "Create a process",
   "template": "secdeva/templates/process2"
 {{/createCards}}
 
-Data store:: A data store stores information. For example, a database or a file.
-
-{{#createCards}}
+| A *data store* stores information. For example, a database or a file.
+a| {{#createCards}}
   "buttonLabel": "Create a data store",
   "template": "secdeva/templates/dataStore2"
 {{/createCards}}
+
+|===
 
 == 3rd party technologies
 

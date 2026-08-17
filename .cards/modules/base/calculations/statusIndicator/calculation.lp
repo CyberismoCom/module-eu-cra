@@ -9,7 +9,7 @@ field(Card, "statusIndicator", StatusIndicator) :-
   not base_policyCheckFailure(Card, _, _, _),
   not field(Card, "progress", _),
   workflowState(Workflow, State, StatusIndicator),
-  field(Card, "cardType", CardType),
+  base_projectCardType(Card, CardType),
   field(Card, "workflowState", State),
   field(CardType, "workflow", Workflow),
   not base_disableDefaultStatusIndicator,
@@ -18,37 +18,37 @@ field(Card, "statusIndicator", StatusIndicator) :-
 % Indicator for card types that use the assessment field
 
 base_disableDefaultStatusIndicator(Card) :-
-  field(Card, "cardType", CardType),
+  base_projectCardType(Card, CardType),
   customField(CardType, "base/fieldTypes/assessment").
 
 field(Card, "statusIndicator", "error") :-
   base_policyCheckFailure(Card, _, _, _),
-  field(Card, "cardType", CardType),
+  base_projectCardType(Card, CardType),
   customField(CardType, "base/fieldTypes/assessment").
 
 field(Card, "statusIndicator", "initial") :-
-  field(Card, "cardType", CardType),
+  base_projectCardType(Card, CardType),
   customField(CardType, "base/fieldTypes/assessment"),
   not base_policyCheckFailure(Card, _, _, _),
   not field(Card, "progress", _),
   field(Card, "base/fieldTypes/assessment", "open").
 
 field(Card, "statusIndicator", "active") :-
-  field(Card, "cardType", CardType),
+  base_projectCardType(Card, CardType),
   customField(CardType, "base/fieldTypes/assessment"),
   not base_policyCheckFailure(Card, _, _, _),
   not field(Card, "progress", _),
   field(Card, "base/fieldTypes/assessment", "notOk").
 
 field(Card, "statusIndicator", "closed") :-
-  field(Card, "cardType", CardType),
+  base_projectCardType(Card, CardType),
   customField(CardType, "base/fieldTypes/assessment"),
   not base_policyCheckFailure(Card, _, _, _),
   not field(Card, "progress", _),
   field(Card, "base/fieldTypes/assessment", "ok").
 
 field(Card, "statusIndicator", "closed") :-
-  field(Card, "cardType", CardType),
+  base_projectCardType(Card, CardType),
   customField(CardType, "base/fieldTypes/assessment"),
   not base_policyCheckFailure(Card, _, _, _),
   not field(Card, "progress", _),

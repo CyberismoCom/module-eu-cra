@@ -1,0 +1,5 @@
+{
+    "name": "base/calculations/projectCardType",
+    "displayName": "Project card type",
+    "description": "Binds a card to its card type for project cards only, so that rules do not range over template cards"
+}

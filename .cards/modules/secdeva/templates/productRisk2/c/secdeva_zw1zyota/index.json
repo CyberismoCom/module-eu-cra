@@ -3,6 +3,7 @@
     "cardType": "ismsa/cardTypes/risk",
     "workflowState": "",
     "rank": "0|b",
-    "lastUpdated": "2026-08-16T20:28:21.149Z",
-    "links": []
+    "lastUpdated": "2026-08-17T14:19:58.786Z",
+    "links": [],
+    "base/fieldTypes/informationClassification": "internal"
 }

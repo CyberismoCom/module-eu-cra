@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/createThreatModel",
+    "displayName": "Create a threat model",
+    "description": "Create a new threat model, if needed. Used within the threat model internal control",
+    "category": "Secure development"
+}

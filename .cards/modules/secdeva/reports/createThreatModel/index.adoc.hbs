@@ -1,0 +1,29 @@
+{{#each results}}
+
+{{#if documents}}
+
+[caption=]
+.Existing threat models
+[cols="5,2"]
+|===
+| Threat model | Workflow State
+
+{{#each documents}}
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.workflowState}}
+{{/each}}
+
+|===
+
+{{else}}
+You have not yet created a threat model yet.
+
+{{#createCards}}
+  "template": "{{../template}}",
+  "buttonLabel": "{{../buttonLabel}}",
+  "cardKey": "{{phase.key}}"
+{{/createCards}}
+
+{{/if}}
+
+{{/each}}

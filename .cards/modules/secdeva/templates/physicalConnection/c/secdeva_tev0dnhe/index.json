@@ -3,7 +3,7 @@
     "cardType": "secdeva/cardTypes/interface",
     "workflowState": "",
     "rank": "0|c",
-    "lastUpdated": "2026-08-11T13:57:34.233Z",
+    "lastUpdated": "2026-08-17T07:18:29.185Z",
     "links": [],
     "secdeva/fieldTypes/physicalConnectionCount": 1,
     "secdeva/fieldTypes/interfaceType": "physical",
@@ -12,5 +12,6 @@
     "secdeva/fieldTypes/capacityTestingRequired": false,
     "secdeva/fieldTypes/fuzzTestingRequired": false,
     "secdeva/fieldTypes/basicStressTestingRequired": false,
-    "secdeva/fieldTypes/basicInputValidationTestingRequired": false
+    "secdeva/fieldTypes/basicInputValidationTestingRequired": false,
+    "base/fieldTypes/informationClassification": "internal"
 }

@@ -4,7 +4,7 @@
 
 % Include recurring tasks and internal controls in progress calculation
 secdeva_includeInProgressCalculation(Task) :- base_recurringTask(Task).
-secdeva_includeInProgressCalculation(Control) :- field(Control, "cardType", "ismsa/cardTypes/internalControl").
+secdeva_includeInProgressCalculation(Control) :- base_projectCardType(Control, "ismsa/cardTypes/internalControl").
 
 % Closed tasks are considered acceptable
 secdeva_isAcceptableInProgressCalculation(Task) :- 
@@ -13,22 +13,22 @@ secdeva_isAcceptableInProgressCalculation(Task) :-
 
 % internal controls are acceptable if the assessment is OK or Not applicable
 secdeva_isAcceptableInProgressCalculation(Control) :- 
-    field(Control, "cardType", "ismsa/cardTypes/internalControl"),
+    base_projectCardType(Control, "ismsa/cardTypes/internalControl"),
     field(Control, "base/fieldTypes/assessment", "ok").
 
 secdeva_isAcceptableInProgressCalculation(Control) :- 
-    field(Control, "cardType", "ismsa/cardTypes/internalControl"),
+    base_projectCardType(Control, "ismsa/cardTypes/internalControl"),
     field(Control, "base/fieldTypes/assessment", "notApplicable").
 
 % calculate progress for the entire project
 secdeva_calculateProgress(Project) :-
-    field(Project, "cardType", "secdeva/cardTypes/project").
+    base_projectCardType(Project, "secdeva/cardTypes/project").
 secdeva_calculateProgress(Project) :-
-    field(Project, "cardType", "secdeva/cardTypes/project2").
+    base_projectCardType(Project, "secdeva/cardTypes/project2").
 
 % calculate progress for internal control registers
 secdeva_calculateProgress(ControlRegister) :-
-    field(ControlRegister, "cardType", "ismsa/cardTypes/register"),
+    base_projectCardType(ControlRegister, "ismsa/cardTypes/register"),
     field(ControlRegister, "ismsa/fieldTypes/progress", "secdeva_internal-control-progress").
 
 % copy progress metric from control registers to phase pages
@@ -51,7 +51,7 @@ field(Phase, "base/fieldTypes/progress", Progress) :-
 % the previous version of the project template
 % TODO: this rule can be removed once there are no users for the old project format
 secdeva_calculateProgress(Phase) :-
-    field(Phase, "cardType", "secdeva/cardTypes/page"),
+    base_projectCardType(Phase, "secdeva/cardTypes/page"),
     ancestor(Task, Phase),
     secdeva_includeInProgressCalculation(Task).
 
@@ -79,7 +79,7 @@ policyCheckFailure(
     "Secure development tasks are not complete",
     @concatenate("Only ", Progress, "% of secure development tasks have been completed. Complete all tasks or close them as not applicable.")
     ) :-
-        field(Project, "cardType", "secdeva/cardTypes/project"),
+        base_projectCardType(Project, "secdeva/cardTypes/project"),
         field(Project, "base/fieldTypes/progress", Progress),
         Progress < 100.
 
@@ -88,5 +88,5 @@ policyCheckSuccess(
     "Secure development",
     "Secure development tasks are complete"
     ) :-
-        field(Project, "cardType", "secdeva/cardTypes/project"),
+        base_projectCardType(Project, "secdeva/cardTypes/project"),
         field(Project, "base/fieldTypes/progress", 100).

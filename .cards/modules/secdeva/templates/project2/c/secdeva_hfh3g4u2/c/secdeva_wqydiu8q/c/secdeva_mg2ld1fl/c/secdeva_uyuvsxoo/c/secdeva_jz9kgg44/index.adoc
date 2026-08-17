@@ -26,7 +26,7 @@ A top-level threat model is required on the topmost project level, if the projec
 === 2. Create a threat model document
 
 {{#report}}
-  "name": "secdeva/reports/createDocument",
+  "name": "secdeva/reports/createThreatModel",
   "template": "secdeva/templates/threatModel2",
   "buttonLabel": "Create a threat model",
   "phase": "secdeva_phase_design"
@@ -38,7 +38,9 @@ Follow the instructions in the template.
 
 The  diagram is the most important part of this documentation.
 
-=== 4. Identify weaknesses
+=== 4. Identify risks and weaknesses
+
+Identify cyber threats and create risk cards.
 
 Identify weaknesses in the design and create security issues.
 
@@ -48,7 +50,7 @@ Review and approve the threat model document.
 
 === 6. Corrective actions
 
-Include the corrective actions in the backlog of the development work.
+Create security requirements, and include the corrective actions in the backlog of the development work.
 
 === 7. Maintenance
 

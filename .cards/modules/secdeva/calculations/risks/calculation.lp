@@ -1,3 +1,4 @@
 hiddenInTreeView(Risk) :-
   ancestor(Risk, RiskRegister),
-  field(RiskRegister, "base/fieldTypes/identifier", "secdeva_register_risks").  
+  field(RiskRegister, "base/fieldTypes/identifier", "secdeva_register_risks"),
+  field(Risk, "workflowStateCategory", "closed").

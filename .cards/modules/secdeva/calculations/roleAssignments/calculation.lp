@@ -1,3 +1,3 @@
 hiddenInTreeView(Assignment) :-
-  field(Assignment, "cardType", "base/cardTypes/roleAssignment"),
+  base_projectCardType(Assignment, "base/cardTypes/roleAssignment"),
   field(Assignment, "workflowState", "Archived").

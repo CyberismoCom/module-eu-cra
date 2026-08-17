@@ -1,8 +1,8 @@
 ismsa_task(Task) :-
-    field(Task, "cardType", "base/cardTypes/task").
+    base_projectCardType(Task, "base/cardTypes/task").
 
 ismsa_task(Task) :-
-    field(Task, "cardType", "base/cardTypes/recurringTask").
+    base_projectCardType(Task, "base/cardTypes/recurringTask").
 
 field(X, "base/fieldTypes/progress", ((100 * (Ok + NotRequired) + 20 * InProgress) + (100 * OkTargets + 20 * InProgressTargets)) / (TotalTasks + TotalTargets)) :-
     field(X, "ismsa/fieldTypes/progress", "task-progress"),
@@ -14,7 +14,7 @@ field(X, "base/fieldTypes/progress", ((100 * (Ok + NotRequired) + 20 * InProgres
     },
     TotalTargets = #count {
         card(Target):
-        field(Target, "cardType", "ismsa/cardTypes/securityTarget"),
+        base_projectCardType(Target, "ismsa/cardTypes/securityTarget"),
         ancestor(Target, X),
         not hiddenInTreeView(Target)
     },
@@ -42,14 +42,14 @@ field(X, "base/fieldTypes/progress", ((100 * (Ok + NotRequired) + 20 * InProgres
     },
     OkTargets = #count {
         card(Target):
-        field(Target, "cardType", "ismsa/cardTypes/securityTarget"),
+        base_projectCardType(Target, "ismsa/cardTypes/securityTarget"),
         ancestor(Target, X),
         field(Target, "workflowState", "Closed as done"),
         not hiddenInTreeView(Target)
     },
     InProgressTargets = #count {
         card(Target):
-        field(Target, "cardType", "ismsa/cardTypes/securityTarget"),
+        base_projectCardType(Target, "ismsa/cardTypes/securityTarget"),
         ancestor(Target, X),
         field(Target, "workflowState", "Executing"),
         not hiddenInTreeView(Target)
@@ -65,7 +65,7 @@ field(X, "base/fieldTypes/progress", 0) :-
     },
     TotalTargets = #count {
         card(Target):
-        field(Target, "cardType", "ismsa/cardTypes/securityTarget"),
+        base_projectCardType(Target, "ismsa/cardTypes/securityTarget"),
         ancestor(Target, X),
         not hiddenInTreeView(Target)
     },

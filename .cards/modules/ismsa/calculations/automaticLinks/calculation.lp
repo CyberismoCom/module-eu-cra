@@ -1,9 +1,9 @@
 link(Asset, Risk, "ismsa/linkTypes/presentsRisk") :-
     ismsa_asset(Asset),
-    field(Risk, "cardType", "ismsa/cardTypes/risk"),
+    base_projectCardType(Risk, "ismsa/cardTypes/risk"),
     parent(Risk, Asset).
 
 link(Control, Risk, "ismsa/linkTypes/mitigates") :-
-    field(Risk, "cardType", "ismsa/cardTypes/risk"),
-    field(Control, "cardType", "ismsa/cardTypes/control"),
+    base_projectCardType(Risk, "ismsa/cardTypes/risk"),
+    base_projectCardType(Control, "ismsa/cardTypes/control"),
     parent(Control, Risk).

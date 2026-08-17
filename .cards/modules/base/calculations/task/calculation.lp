@@ -1,16 +1,16 @@
 base_task(Task) :-
-    field(Task, "cardType", "base/cardTypes/task").
+    base_projectCardType(Task, "base/cardTypes/task").
 
 base_task(Task) :- base_recurringTask(Task).
 
 base_recurringTask(Task) :-
-    field(Task, "cardType", "base/cardTypes/monthlyTask").
+    base_projectCardType(Task, "base/cardTypes/monthlyTask").
 
 base_recurringTask(Task) :-
-    field(Task, "cardType", "base/cardTypes/quarterlyTask").
+    base_projectCardType(Task, "base/cardTypes/quarterlyTask").
 
 base_recurringTask(Task) :-
-    field(Task, "cardType", "base/cardTypes/annualTask").
+    base_projectCardType(Task, "base/cardTypes/annualTask").
 
 transitionDenied(
     Task,

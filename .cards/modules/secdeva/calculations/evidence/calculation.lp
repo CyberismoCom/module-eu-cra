@@ -16,7 +16,7 @@ link(Evidence, Task, "ismsa/linkTypes/evidences") :-
   secdeva_closestProject(Task, Project),
   secdeva_closestProject(Evidence, Project),
   secdeva_legacyEvidence(TaskIdentifier, EvidenceIdentifier, _),
-  field(Project, "cardType", "secdeva/cardTypes/project"),
+  base_projectCardType(Project, "secdeva/cardTypes/project"),
   field(Task, "base/fieldTypes/identifier", TaskIdentifier),
   field(Evidence, "base/fieldTypes/identifier", EvidenceIdentifier).
 
@@ -72,7 +72,7 @@ link(RoleAssignment, Task, "ismsa/linkTypes/evidences") :-
   secdeva_closestProject(Task, Project),
   secdeva_closestProject(RoleAssignment, Project),
   field(Task, "base/fieldTypes/identifier", "secdeva_control_assign-people-to-project-roles"),
-  field(RoleAssignment, "cardType", "base/cardTypes/roleAssignment"),
+  base_projectCardType(RoleAssignment, "base/cardTypes/roleAssignment"),
   parent(RoleAssignment, RoleAssignments),
   field(RoleAssignments, "base/fieldTypes/identifier", "secdeva_control_assign-people-to-project-roles").
 
@@ -81,9 +81,9 @@ link(RoleAssignment, Task, "ismsa/linkTypes/evidences") :-
 link(Evidence, Task, "ismsa/linkTypes/evidences") :-
   secdeva_closestProject(Task, Project),
   secdeva_closestProject(Evidence, Project),
-  field(Project, "cardType", "secdeva/cardTypes/project"),
+  base_projectCardType(Project, "secdeva/cardTypes/project"),
   field(Task, "base/fieldTypes/identifier", "secdeva_control_high-level-risks"),
-  field(Evidence, "cardType", "ismsa/cardTypes/risk").
+  base_projectCardType(Evidence, "ismsa/cardTypes/risk").
 
 ismsa_internalControlMissingEvidence(Task) :-
   secdeva_evidence(TaskIdentifier, EvidenceIdentifier, _),

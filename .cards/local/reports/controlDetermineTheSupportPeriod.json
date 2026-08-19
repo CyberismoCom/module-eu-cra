@@ -1,0 +1,6 @@
+{
+    "name": "eucra/reports/controlDetermineTheSupportPeriod",
+    "displayName": "Control - Determine the support period",
+    "description": "The content of the internal control 'Determine the support period'",
+    "category": "EU Cyber Resilience Act"
+}

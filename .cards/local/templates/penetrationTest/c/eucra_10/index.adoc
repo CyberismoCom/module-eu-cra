@@ -27,7 +27,7 @@ More specifically this penetration testing has the following goals:
 === Identified security issues
 
 {{#createCards}}
-  "template": "eucra/templates/securityIssue",
+  "template": "secdeva/templates/securityIssue",
   "buttonLabel": "Create a new security issue"
 {{/createCards}}
 

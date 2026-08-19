@@ -169,7 +169,7 @@ Comments, links:
 |===============
 
 {{#createCards}}
-  "template": "eucra/templates/securityIssue",
+  "template": "secdeva/templates/securityIssue",
   "buttonLabel": "Create a new security issue"
 {{/createCards}}
 

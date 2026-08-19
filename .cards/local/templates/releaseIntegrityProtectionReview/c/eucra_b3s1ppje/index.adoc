@@ -39,7 +39,7 @@ If public-key cryptography is used, then appropriate technical and procedural co
 == Identified security issues
 
 {{#createCards}}
-  "template": "eucra/templates/securityIssue",
+  "template": "secdeva/templates/securityIssue",
   "buttonLabel": "Create a new security issue"
 {{/createCards}}
 

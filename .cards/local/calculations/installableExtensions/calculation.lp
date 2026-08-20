@@ -1,11 +1,4 @@
 secdeva_installableExtension(
-    "secdeva_register_compliance-controls",
-    "Cyberismo EU CRA Essentials Module",
-    "eucra/templates/compliance",
-    "Add new compliance requirements"
-).
-
-secdeva_installableExtension(
     "secdeva_register_design-controls",
     "Cyberismo EU CRA Essentials Module",
     "eucra/templates/design2",

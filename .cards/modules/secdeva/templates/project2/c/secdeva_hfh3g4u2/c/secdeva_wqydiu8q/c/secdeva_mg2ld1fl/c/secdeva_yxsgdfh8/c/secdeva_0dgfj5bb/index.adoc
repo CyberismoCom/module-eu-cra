@@ -1,36 +1,3 @@
-The goal of attack surface analysis is to verify that the attack surface of the system is minimized according to the attack surface specification. In other words, attack surface analysis ensures that hardening has been done as specified. Attack surface analysis is technical testing that is executed using a designated tool.
-
-== How to decide if this control is required
-
-Analysing the attack surface is required in the secure development process. This control is applicable, unless attack surface is already managed on another level, such as a higher-level project or subprojects.
-
-== How to implement
-
-Attack surface analysis requires specific competencies, so you should ensure that the person doing the testing has training or experience in how to find security issues in the attack surface.
-
-A recommended practice is to keep the attack surface specification constantly up-to-date and perform attack surface analysis at least annually.
-
-Create an attack surface analysis and follow the instructions in the template.
-
 {{#report}}
-  "name": "secdeva/reports/createReview",
-  "template": "secdeva/templates/attackSurfaceAnalysis",
-  "buttonLabel": "Create an attack surface analysis document",
-  "phase": "secdeva_phase_verification"
+  "name": "secdeva/reports/controlAnalyseTheAttackSurface"
 {{/report}}
-
-Also, ensure that test executions are documented.
-
-== Assessment
-
-{{#report}}
-  "name": "secdeva/reports/internalControlAssessment"
-{{/report}}
-
-== References
-
-* IEC 62443-4-1 SVV-3 b)
-* ISO 27001 A8.28
-* EU CRA Annex I (1) (2) (a)
-* EU CRA Annex I (1) (2) (j)
-* EU CRA Annex I (2) (3)

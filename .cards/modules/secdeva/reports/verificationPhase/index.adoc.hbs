@@ -1,0 +1,52 @@
+== Verification
+
+The Verification phase validates that your product meets its security requirements and can withstand attack. It combines automated scanning with targeted manual testing to confirm that defences work as intended.
+
+.*What this phase covers*
+[%collapsible]
+====
+[mermaid]
+----
+flowchart TB
+    subgraph Scanning[Automated scanning]
+      direction LR
+      KV[Scan for known vulnerabilities] --> 3PV[Manage 3rd party vulnerabilities]
+      3PU[Manage 3rd party software updates]
+    end
+    subgraph Testing[Security testing]
+      direction LR
+      SR[Test security requirements] --> TM[Test threat mitigations]
+      IV[Test input validation] --> EH[Test error handling]
+    end
+    Scanning --> PE[Protect environments]
+    Testing --> PE
+----
+
+*Automated scanning*
+
+* *Scan for known vulnerabilities* — Detect known vulnerabilities across applications, hosts, and devices before release.
+* *Manage 3rd party vulnerabilities* — Identify, assess, and address security vulnerabilities in third-party components using SBOM-based practices.
+* *Manage 3rd party software updates* — Track and apply security updates from suppliers for dependent components.
+
+*Security testing*
+
+* *Test security requirements* — Confirm that security requirements are implemented correctly, including error handling validation.
+* *Test threat mitigations* — Attempt to bypass mitigations to verify they work as designed.
+* *Test input validation* — Verify boundary, edge, and schema checks on all external interfaces.
+* *Test error handling* — Ensure the product handles exceptional and fatal error conditions safely.
+
+*Environment protection*
+
+* *Protect environments* — Secure development, test, staging, and production environments with access control, hardening, and monitoring.
+====
+
+=== Why it matters
+
+Design and implementation controls reduce the likelihood of vulnerabilities, but verification provides the evidence. Without testing, you cannot demonstrate that security measures actually work — to your own team, to auditors, or to customers.
+
+=== Controls
+
+{{#report}}
+  "name": "secdeva/reports/phase2",
+  "controls": "secdeva_register_verification-controls"
+{{/report}}

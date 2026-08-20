@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/meetings",
+    "displayName": "Meetings",
+    "description": "Produces the contents of the Meetings page",
+    "category": "Secure development"
+}

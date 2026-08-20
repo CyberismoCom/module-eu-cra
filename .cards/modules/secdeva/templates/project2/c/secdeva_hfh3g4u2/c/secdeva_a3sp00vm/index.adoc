@@ -1,30 +1,3 @@
-== Operations
-
-The Operations phase covers ongoing security responsibilities that continue after a product is released. These controls apply throughout both the active development and support periods to keep your product and its infrastructure secure.
-
-.*What this phase covers*
-[%collapsible]
-====
-[mermaid]
-----
-flowchart LR
-    3PV[Manage 3rd party vulnerabilities] --> 3PU[Manage 3rd party software updates]
-    3PU --> PE[Protect environments]
-    3PV --> PE
-----
-
-* *Manage 3rd party vulnerabilities* — Continuously identify, assess, and address vulnerabilities in third-party components using SBOM-based analysis, including during the support period.
-* *Manage 3rd party software updates* — Track supplier security updates for dependent components and operating systems, and ensure they are applied or distributed.
-* *Protect environments* — Maintain separation and security of development, test, staging, and production environments with access control, hardening, and safe handling of production data.
-====
-
-=== Why it matters
-
-Security does not end at release. New vulnerabilities in third-party components emerge continuously, and unpatched environments become easy targets. These controls ensure your team stays on top of emerging threats and keeps infrastructure protected for as long as the product is in use.
-
-=== Controls
-
 {{#report}}
-  "name": "secdeva/reports/phase2",
-  "controls": "secdeva_register_operations-controls"
+  "name": "secdeva/reports/operationsPhase"
 {{/report}}

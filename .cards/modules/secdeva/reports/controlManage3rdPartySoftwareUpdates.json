@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/controlManage3rdPartySoftwareUpdates",
+    "displayName": "Control - Manage 3rd party software updates",
+    "description": "The content of the internal control 'Manage 3rd party software updates'",
+    "category": "Secure development"
+}

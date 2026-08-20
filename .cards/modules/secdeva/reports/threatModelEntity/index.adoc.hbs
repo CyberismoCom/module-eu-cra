@@ -1,0 +1,347 @@
+{{#graph}}
+  "model": "secdeva/graphModels/dataflow",
+  "view": "secdeva/graphViews/entity"
+{{/graph}}
+
+{{#unless (eq variant "external")}}
+== Composite elements
+
+[TIP]
+====
+To add a dataflow to or from this {{#if (eq variant "process")}}process{{/if}}{{#if (eq variant "dataStore")}}data store{{/if}}{{#if (eq variant "trustBoundary")}}trust boundary{{/if}}, click the link symbol in the top level tool bar.{{#unless (eq variant "trustBoundary")}} Optionally, if you want to model interfaces as well, you can create an interface and link any incoming dataflows to the interface.{{/unless}}
+====
+
+{{#unless (eq variant "trustBoundary")}}
+{{#createCards}}
+  "buttonLabel": "Create an interface",
+  "template": "secdeva/templates/interface2"
+{{/createCards}}
+
+{{#createCards}}
+  "buttonLabel": "Create a physical port or connection",
+  "template": "secdeva/templates/physicalConnection"
+{{/createCards}}
+
+{{/unless}}
+{{#createCards}}
+  "buttonLabel": "Create a trust boundary",
+  "template": "secdeva/templates/trustBoundary2"
+{{/createCards}}
+
+{{#createCards}}
+  "buttonLabel": "Create an external entity",
+  "template": "secdeva/templates/external2"
+{{/createCards}}
+
+{{#createCards}}
+  "buttonLabel": "Create a person",
+  "template": "secdeva/templates/person2"
+{{/createCards}}
+
+{{#createCards}}
+  "buttonLabel": "Create a process",
+  "template": "secdeva/templates/process2"
+{{/createCards}}
+
+{{#createCards}}
+  "buttonLabel": "Create a data store",
+  "template": "secdeva/templates/dataStore2"
+{{/createCards}}
+
+{{/unless}}
+{{#each results}}
+
+== Interfaces and physical connections
+
+{{#if (eq ../variant "external")}}
+[TIP]
+====
+To add a dataflow to or from this external entity, click the link symbol in the top level tool bar.
+====
+
+{{/if}}
+{{#if externalDataflows}}
+
+.Dataflows to and from this entity
+[cols="2,2,2,4"]
+|===
+|Direction | Inside element | Outside element | Dataflow
+
+{{#each externalDataflows}}
+|{{this.[secdeva/fieldTypes/direction]}}
+|xref:{{this.[secdeva/fieldTypes/internalCardKey]}}.adoc[{{this.[secdeva/fieldTypes/internalTitle]}}]
+|xref:{{this.[secdeva/fieldTypes/externalCardKey]}}.adoc[{{this.[secdeva/fieldTypes/externalTitle]}}]
+|{{this.[secdeva/fieldTypes/title]}}
+{{/each}}
+
+|===
+
+{{else}}
+
+There are no dataflows to or from this entity.
+
+{{/if}}
+
+{{#if interfaces}}
+
+.Interfaces
+[cols="3,3,2,2,2"]
+|===
+| Element | Interface | External? | Crosses a trust boundary? | Port(s)
+
+{{#each interfaces}}
+|xref:{{this.[secdeva/fieldTypes/interfaceElementCardKey]}}.adoc[{{this.[secdeva/fieldTypes/interfaceElementTitle]}}]
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.[secdeva/fieldTypes/isExternal].displayValue}}
+|{{this.[secdeva/fieldTypes/crossesTrustBoundary].displayValue}}
+|{{this.[secdeva/fieldTypes/port]}}
+{{/each}}
+
+|===
+
+{{else}}
+
+There are no interfaces.
+
+{{/if}}
+
+{{#if physicalConnections}}
+
+.Physical ports and connections
+[cols="3,3,1"]
+|===
+| Element | Physical connection | Count
+
+{{#each physicalConnections}}
+|xref:{{this.[secdeva/fieldTypes/physicalConnectionElementCardKey]}}.adoc[{{this.[secdeva/fieldTypes/physicalConnectionElementTitle]}}]
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.[secdeva/fieldTypes/physicalConnectionCount]}}
+
+
+{{/each}}
+
+|===
+
+{{else}}
+
+There are no physical connections.
+
+{{/if}}
+
+== Related risks
+
+[TIP]
+====
+Create a risk if you identify a cyber threat — something that can cause harm by exploiting one or more vulnerabilities.
+====
+
+{{#if risks}}
+
+[caption=]
+.Existing risks
+[cols="5,2"]
+|===
+| Risk | Workflow State
+
+{{#each risks}}
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.workflowState}}
+{{/each}}
+
+|===
+
+Create another risk, if needed:
+{{else}}
+You have not yet created or linked any risks.
+{{/if}}
+
+{{#createCards}}
+    "template": "secdeva/templates/productRisk2",
+    "buttonLabel": "Create a risk",
+    "cardKey": "{{riskRegister.key}}",
+    "link": {
+      "linkType": "ismsa/linkTypes/presentsRisk",
+      "direction": "outbound",
+      "cardKey": "{{../cardKey}}"
+    }
+{{/createCards}}
+
+== Related security issues
+
+[TIP]
+====
+Create a security issue if you identify a vulnerability — a weakness that a threat could exploit.
+====
+
+{{#if issues}}
+
+[caption=]
+.Existing issues
+[cols="5,2"]
+|===
+| Security issue | Workflow State
+
+{{#each issues}}
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.workflowState}}
+{{/each}}
+
+|===
+
+Create another issue, if needed:
+{{else}}
+You have not yet created or linked any security issues.
+{{/if}}
+
+{{#createCards}}
+    "template": "secdeva/templates/securityIssue",
+    "buttonLabel": "Create a security issue",
+    "cardKey": "{{securityIssueRegister.key}}",
+    "link": {
+      "linkType": "ismsa/linkTypes/presentsRisk",
+      "direction": "outbound",
+      "cardKey": "{{../cardKey}}"
+    }
+{{/createCards}}
+
+{{#unless (eq ../variant "external")}}
+== Related security requirements
+
+{{#if requirements}}
+
+[caption=]
+.Existing requirements
+[cols="5,2"]
+|===
+| Requirement | Workflow State
+
+{{#each requirements}}
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.workflowState}}
+{{/each}}
+
+|===
+
+Create another requirement, if needed:
+{{else}}
+You have not yet created or linked any requirements.
+{{/if}}
+
+{{#createCards}}
+    "template": "secdeva/templates/securityRequirement",
+    "buttonLabel": "Create a security requirement",
+    "cardKey": "{{securityRequirementRegister.key}}",
+    "link": {
+      "linkType": "secdeva/linkTypes/appliesTo",
+      "direction": "inbound",
+      "cardKey": "{{../cardKey}}"
+    }
+{{/createCards}}
+
+== Related technology assessments
+
+[TIP]
+====
+Create a technology assessment for significant 3rd party technologies such as databases, frameworks, or toolkits.
+You do not need to create assessments for smaller libraries and packages, as they are assessed as part of code review.
+====
+
+{{#if technologies}}
+
+[caption=]
+.Existing technology assessments
+[cols="5,2"]
+|===
+| Technology | Workflow State
+
+{{#each technologies}}
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.workflowState}}
+{{/each}}
+
+|===
+
+Create another technology assessment, if needed:
+{{else}}
+You have not yet created or linked any technology assessments.
+{{/if}}
+
+{{#createCards}}
+    "template": "secdeva/templates/technology",
+    "buttonLabel": "Create a technology assessment",
+    "cardKey": "{{technologyAssessmentRegister.key}}",
+    "link": {
+      "linkType": "base/linkTypes/relatesTo",
+      "direction": "outbound",
+      "cardKey": "{{../cardKey}}"
+    }
+{{/createCards}}
+
+{{/unless}}
+== Related decisions
+
+{{#if decisions}}
+
+[caption=]
+.Existing decisions
+[cols="5,2"]
+|===
+| Decision | Workflow State
+
+{{#each decisions}}
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.workflowState}}
+{{/each}}
+
+|===
+
+Create another decision, if needed:
+{{else}}
+You have not yet created or linked any decisions.
+{{/if}}
+
+{{#createCards}}
+    "template": "base/templates/decision",
+    "buttonLabel": "Create a decision",
+    "cardKey": "{{decisionRegister.key}}",
+    "link": {
+      "linkType": "base/linkTypes/relatesTo",
+      "direction": "outbound",
+      "cardKey": "{{../cardKey}}"
+    }
+{{/createCards}}
+
+== Related design specifications
+
+{{#if specifications}}
+
+[caption=]
+.Existing specifications
+[cols="5,2"]
+|===
+| Design specification | Workflow State
+
+{{#each specifications}}
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.workflowState}}
+{{/each}}
+
+|===
+
+Create another specification, if needed:
+{{else}}
+You have not yet created or linked any specifications.
+{{/if}}
+
+{{#createCards}}
+    "template": "secdeva/templates/designSpecification",
+    "buttonLabel": "Create a design specification",
+    "cardKey": "{{designPhase.key}}",
+    "link": {
+      "linkType": "base/linkTypes/relatesTo",
+      "direction": "outbound",
+      "cardKey": "{{../cardKey}}"
+    }
+{{/createCards}}
+
+{{/each}}

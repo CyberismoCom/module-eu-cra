@@ -4,8 +4,18 @@ result(Card) :-
     ancestor(Card, {{cardKey}}),
     field(Card, "cardType", "secdeva/cardTypes/securityIssue").
 
-childResult(Card, AffectedCard, "affectedCard") :-
+% Wrap the affected card in a (Card, AffectedCard) tuple key so that it can
+% never become a parent of Card in turn: childResult cycles make the result
+% tree unbounded and hang grounding.
+childResult(Card, (Card, AffectedCard), "affectedCard") :-
    result(Card),
    link(AffectedCard, Card, "ismsa/linkTypes/presentsRisk").
+
+resultField((Card, AffectedCard), "key", AffectedCard, "shortText") :-
+   childResult(Card, (Card, AffectedCard), "affectedCard").
+
+resultField((Card, AffectedCard), "title", Title, "shortText") :-
+   childResult(Card, (Card, AffectedCard), "affectedCard"),
+   field(AffectedCard, "title", Title).
 
 orderBy("rank", "ASC").

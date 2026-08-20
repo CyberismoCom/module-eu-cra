@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/registerDesignControls",
+    "displayName": "Register - Design controls",
+    "description": "Produces the contents of the design controls register",
+    "category": "Secure development"
+}

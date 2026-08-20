@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/registerTechnologyAssessments",
+    "displayName": "Register - Technology assessments",
+    "description": "Produces the contents of the technology assessments register",
+    "category": "Secure development"
+}

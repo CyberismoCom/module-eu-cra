@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/registerFoundationControls",
+    "displayName": "Register - Foundation controls",
+    "description": "Produces the contents of the foundation controls register",
+    "category": "Secure development"
+}

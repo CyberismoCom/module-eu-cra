@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/registerPeriodicReviews",
+    "displayName": "Register - Periodic reviews",
+    "description": "Produces the contents of the periodic reviews register",
+    "category": "Secure development"
+}

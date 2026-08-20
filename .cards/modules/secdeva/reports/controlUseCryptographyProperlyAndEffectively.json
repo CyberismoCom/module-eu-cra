@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/controlUseCryptographyProperlyAndEffectively",
+    "displayName": "Control - Use cryptography properly and effectively",
+    "description": "The content of the internal control 'Use cryptography properly and effectively'",
+    "category": "Secure development"
+}

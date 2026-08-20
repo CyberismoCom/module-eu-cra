@@ -1,0 +1,31 @@
+{
+    "$id": "reportMacroDefaultSchema",
+    "additionalProperties": false,
+    "description": "A report object provides supplemental information about a report",
+    "properties": {
+        "name": {
+            "description": "The name of the report",
+            "type": "string"
+        },
+        "cardKey": {
+            "description": "Used to override the default cardKey, which is the cardKey of the card, in which the report macro is used",
+            "type": "string"
+        },
+        "variant": {
+            "description": "The type of the dataflow model entity. Selects the entity specific wording, the composite element buttons and the sections that are shown.",
+            "enum": [
+                "process",
+                "dataStore",
+                "trustBoundary",
+                "external"
+            ],
+            "type": "string"
+        }
+    },
+    "required": [
+        "name",
+        "variant"
+    ],
+    "title": "Report",
+    "type": "object"
+}

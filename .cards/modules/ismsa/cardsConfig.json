@@ -3,13 +3,13 @@
     "cardKeyPrefix": "ismsa",
     "name": "ISMS essentials",
     "description": "",
-    "version": "1.4.2",
+    "version": "1.4.4",
     "modules": [
         {
             "name": "base",
-            "location": "git@github.com:CyberismoCom/module-base.git",
+            "location": "https://github.com/CyberismoCom/module-base.git",
             "private": false,
-            "version": "1.x"
+            "version": "^1.4.0"
         }
     ],
     "hubs": []

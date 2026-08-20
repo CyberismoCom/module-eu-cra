@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/threatModelEntity",
+    "displayName": "Entity in a threat model",
+    "category": "Threat model",
+    "description": "The full content of a dataflow model entity: entity graph, composite element buttons, interfaces and physical connections, and related risks, security issues, security requirements, technology assessments, decisions and design specifications. The variant parameter selects the entity type: process, dataStore, trustBoundary or external."
+}

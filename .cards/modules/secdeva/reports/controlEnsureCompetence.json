@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/controlEnsureCompetence",
+    "displayName": "Control - Ensure competence",
+    "description": "The content of the internal control 'Ensure competence'",
+    "category": "Secure development"
+}

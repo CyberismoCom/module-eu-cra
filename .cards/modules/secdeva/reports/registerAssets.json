@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/registerAssets",
+    "displayName": "Register - Assets",
+    "description": "Produces the contents of the assets register",
+    "category": "Secure development"
+}

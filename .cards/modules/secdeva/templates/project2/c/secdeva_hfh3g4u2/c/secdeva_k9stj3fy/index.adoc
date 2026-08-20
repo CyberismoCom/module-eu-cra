@@ -1,31 +1,3 @@
-== Foundation
-
-The Foundation phase establishes the prerequisites for secure development. Complete these tasks before or in parallel with early development work — they ensure your team has the right people, knowledge, and context to make security decisions throughout the project.
-
-.*What this phase covers*
-[%collapsible]
-====
-[mermaid]
-----
-flowchart TB
-    B[Analyse the business context]
-    subgraph P[Roles]
-      direction LR
-      S[Assign security roles] --> I[Ensure competence]
-    end
-----
-
-* *Analyse the business context* — Identify what you are protecting, who might attack it, and what damage could result. This drives all subsequent security decisions. Involve business stakeholders to security enhancement.
-* *Assign security roles* — Make security responsibilities explicit by assigning accountable people to key roles.
-* *Ensure competence* — Verify that team members have adequate cybersecurity knowledge for their roles, and arrange training where needed.
-====
-=== Why it matters
-
-Without a clear business context, security efforts lack direction. Without assigned roles, tasks fall through the cracks. Without competence, even good processes produce weak results. Foundation addresses all three.
-
-=== Controls
-
 {{#report}}
-  "name": "secdeva/reports/phase2",
-  "controls": "secdeva_register_foundation-controls"
+  "name": "secdeva/reports/foundationPhase"
 {{/report}}

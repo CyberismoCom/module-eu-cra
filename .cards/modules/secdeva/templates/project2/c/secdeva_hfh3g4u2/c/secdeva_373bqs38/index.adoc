@@ -1,4 +1,3 @@
-{{#createCards}}
-  "template": "base/templates/meetingMemo",
-  "buttonLabel": "Create a meeting memo"
-{{/createCards}}
+{{#report}}
+  "name": "secdeva/reports/meetings"
+{{/report}}

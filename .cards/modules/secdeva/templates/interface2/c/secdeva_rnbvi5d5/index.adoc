@@ -4,6 +4,8 @@ This page documents the design of an interface.
 
 NOTE: Completing interface specifications is required on Adoption Step 3 only.
 
+TIP: Write your own documentation in the sections below. The classification of the interface and the links to the related cards at the end of this page are generated automatically from the threat model.
+
 == Interface review
 
 .Review instructions
@@ -12,24 +14,6 @@ NOTE: Completing interface specifications is required on Adoption Step 3 only.
 * Review this document according to the review instructions of each chapter.
 * Document the results of the review in the review subtask
 ====
-
-== Classification of the interface
-
-.Instructions
-[%collapsible]
-=====
-[NOTE]
-====
-Interfaces are classified automatically based on the threat model. To review this section:
-
-. Check that the interface has been correctly classified as an external interface or internal interface. If not, then improve the dataflows of threat model. External interfaces have dataflows from external entities or persons.
-. Check that the relationship of this interface to the trust boundaries have been correctly classified. If not, then improve the dataflows and trust boundaries of the threat model.
-====
-=====
-
-{{#report}}
-  "name": "secdeva/reports/interfaceClassification"
-{{/report}}
 
 == Security context considerations
 
@@ -42,11 +26,7 @@ The _security context_ refers to the security that is provided by the deployment
 
 To review this section:
 
-. Check what has been documented about the security context of the product. The security context is documented in a security context document: {{#report}}
-  "name": "secdeva/reports/linkByIdentifier",
-  "identifier": "secdeva_document_security-context",
-  "messageIfNoResults": "#TODO# There are no security context documents yet. Create a security context document under *Design* → *Document security context*."
-{{/report}}
+. Check what has been documented about the security context of the product. The security context documents of the project are listed in *Security context of the product* at the end of this page.
 . Check that this section describes how the security context has been taken into account for the security of this interface:
 * How the protections offered by the security context have been used
 * How the vulnerabilities resulting from the security context have been addressed
@@ -108,7 +88,7 @@ For example
 =====
 [NOTE]
 ====
-. Identify the potential users of the interface and check that they are represented in the threat model. See a summary above in *Classification of the interface*
+. Identify the potential users of the interface and check that they are represented in the threat model. See the summary in *Classification of the interface* at the end of this page
 . Group the users into user categories based on similar needs of accessing the assets
 . Aim at a simple design
 
@@ -189,17 +169,17 @@ To review this section
 
 To review this section:
 
-. Check that a technology selection document has been created for all 3rd party products that are used to implement this interface
-. Check that the used 3rd party technologies are listed in this section
+. Check that a technology asssessment document has been created for the relevant 3rd party products that are used to implement this interface
+. Check that any other used 3rd party technologies are listed in this section. The technology assessments that have been linked to this interface are listed in *Related technology assessments* at the end of this page.
 ====
 =====
 
 The implementation of this interface: (Select one of the following options)
 
 * [ ] Does not use 3rd party technologies
-* [ ] Uses the following 3rd party technologies:
+* [ ] Uses 3rd party technologies
 
-- List the used 3rd party technologies here, or refer to another document
+- #TODO# List the used 3rd party technologies here, or add technology assessments at the end of this page, or refer to another document
 
 == Design insights
 
@@ -243,50 +223,6 @@ Security testing for interface tests fall into the following categories.
 ====
 =====
 
-== Related risks
-
 {{#report}}
-  "name": "secdeva/reports/createRisk"
-{{/report}}
-
-== Related security issues
-
-{{#report}}
-  "name": "secdeva/reports/createSecurityIssue"
-{{/report}}
-
-== Related security requirements
-
-{{#report}}
-  "name": "secdeva/reports/createSecurityRequirement"
-{{/report}}
-
-== Related technology assessments
-
-{{#report}}
-  "name": "secdeva/reports/createTechnologyAssessment"
-{{/report}}
-
-== Related decisions
-
-{{#report}}
-  "name": "secdeva/reports/createDecision"
-{{/report}}
-
-== Related design specifications
-
-{{#report}}
-  "name": "secdeva/reports/createDesignSpecification"
-{{/report}}
-
-== Reviews
-
-{{#createCards}}
-    "template": "base/templates/reviewTask",
-    "buttonLabel": "Add new review task"
-{{/createCards}}
-
-{{#report}}
-  "name": "base/reports/childrenTable",
-  "cardType": "base/cardTypes/reviewTask"
+  "name": "secdeva/reports/threatModelInterface"
 {{/report}}

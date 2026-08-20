@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/registerVerificationControls",
+    "displayName": "Register - Verification controls",
+    "description": "Produces the contents of the verification controls register",
+    "category": "Secure development"
+}

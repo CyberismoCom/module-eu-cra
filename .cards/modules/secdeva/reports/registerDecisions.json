@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/registerDecisions",
+    "displayName": "Register - Decisions",
+    "description": "Produces the contents of the decisions register",
+    "category": "Secure development"
+}

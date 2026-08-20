@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/controlProtectEnvironments",
+    "displayName": "Control - Protect environments",
+    "description": "The content of the internal control 'Protect environments'",
+    "category": "Secure development"
+}

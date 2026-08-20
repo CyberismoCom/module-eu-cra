@@ -1,0 +1,32 @@
+Product documentation refers to the information and instructions that are provided to the users of the product. A product documentation review ensures that the product documentation supports the secure deployment, operation and disposal of the product.
+
+== How to decide if this control is required
+
+This control is required if product documentation is created and reviewed in this project. Typically, product documentation is managed on the topmost project level.
+
+== How to implement
+
+Write product documentation that includes security guidelines.
+
+Create a product documentation review document and follow the instructions in the template.
+
+{{#report}}
+  "name": "secdeva/reports/createReview",
+  "template": "secdeva/templates/productDocumentationReview",
+  "buttonLabel": "Create a product documentation review",
+  "phase": "secdeva_phase_implementation"
+{{/report}}
+
+== Assessment
+
+{{#report}}
+  "name": "secdeva/reports/internalControlAssessment"
+{{/report}}
+
+== References
+
+* IEC 62443-4-1 SG Practice
+* EU CRA Article 13(7)
+* EU CRA Annex I (2) (3)
+* EU CRA Annex I (2) (6)
+* EU CRA Annex II

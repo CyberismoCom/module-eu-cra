@@ -1,7 +1,3 @@
-Verification controls confirm that security requirements are actually met — through testing, reviews, and analysis. Design and implementation intentions are only as good as the evidence that they work. These controls provide that evidence and catch defects before they reach users.
-
-Internal controls:
-
 {{#report}}
-  "name": "base/reports/childrenList"
+  "name": "secdeva/reports/registerVerificationControls"
 {{/report}}

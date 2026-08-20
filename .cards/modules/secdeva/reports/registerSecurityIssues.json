@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/registerSecurityIssues",
+    "displayName": "Register - Security issues",
+    "description": "Produces the contents of the security issues register",
+    "category": "Secure development"
+}

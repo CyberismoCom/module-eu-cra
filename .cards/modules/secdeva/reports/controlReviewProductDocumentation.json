@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/controlReviewProductDocumentation",
+    "displayName": "Control - Review product documentation",
+    "description": "The content of the internal control 'Review product documentation'",
+    "category": "Secure development"
+}

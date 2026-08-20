@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/registerSecurityRequirements",
+    "displayName": "Register - Security requirements",
+    "description": "Produces the contents of the security requirements register",
+    "category": "Secure development"
+}

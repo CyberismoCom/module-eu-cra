@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/controlReviewCodeChangesManually",
+    "displayName": "Control - Review code changes manually",
+    "description": "The content of the internal control 'Review code changes manually'",
+    "category": "Secure development"
+}

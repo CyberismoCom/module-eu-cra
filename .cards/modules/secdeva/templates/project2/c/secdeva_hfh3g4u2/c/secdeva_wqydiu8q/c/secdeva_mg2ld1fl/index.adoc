@@ -1,22 +1,3 @@
-== Introduction
-
-Internal controls are the security practices and activities your team performs throughout the development lifecycle. They define *what* you do to build securely — from code reviews and dependency checks to release verification and incident response processes.
-
-This register organises controls by development phase so you can see which practices apply at each stage. Use it to track adoption, identify gaps, and demonstrate to stakeholders that security is built into your process.
-
-Internal controls by development phase:
-
-* *Foundation* — Establish security governance, training, and tooling before development begins.
-* *Design* — Define security requirements, perform threat modeling, and create specifications.
-* *Implementation* — Apply secure coding practices and manage third-party dependencies.
-* *Verification* — Conduct security testing and validate that requirements are met.
-* *Releases* — Prepare secure release artifacts and documentation.
-* *Operations* — Handle vulnerability disclosures, patches, and end-of-life planning.
-
-== Process scoping
-
-Process scoping refers to deciding which internal controls are applicable for the development project.
-
 {{#report}}
-  "name": "secdeva/reports/processScoping"
+  "name": "secdeva/reports/registerInternalControls"
 {{/report}}

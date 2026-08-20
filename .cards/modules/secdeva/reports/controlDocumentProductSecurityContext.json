@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/controlDocumentProductSecurityContext",
+    "displayName": "Control - Document product security context",
+    "description": "The content of the internal control 'Document product security context'",
+    "category": "Secure development"
+}

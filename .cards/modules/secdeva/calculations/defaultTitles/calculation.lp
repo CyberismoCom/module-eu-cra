@@ -8,7 +8,7 @@
 
 
 secdeva_defaultTitleWithDate("secdeva_test_basic-input-validation", "Review of basic input validation testing - ").
-secdeva_defaultTitle("secdeva_document_business-context-analysis", "Business context analysis - ").
+secdeva_defaultTitle("secdeva_document_business-context-analysis", "Business context analysis - "). % Legacy
 secdeva_defaultTitleWithDate("secdeva_review_use-of-cryptography", "Review of the use of cryptography - ").
 secdeva_defaultTitleWithDate("secdeva_document_use-of-cryptography", "Use of cryptography - ").
 secdeva_defaultTitleWithDate("secdeva_review_process-scoping", "Review of process scoping - ").
@@ -18,7 +18,7 @@ secdeva_defaultTitle("secdeva_document_design-specification", "Design specificat
 secdeva_defaultTitleWithDate("secdeva_review_protect-environments", "Review of environment protection - ").
 secdeva_defaultTitleWithDate("secdeva_test_error-handling", "Review of error handling testing - ").
 secdeva_defaultTitleWithDate("secdeva_test_known-vulnerability", "Review of known vulnerability scanning - ").
-secdeva_defaultTitle("secdeva_document_configuration-management-plan", "Configuration management plan - ").
+secdeva_defaultTitle("secdeva_document_configuration-management-plan", "Configuration management plan - "). % Legacy
 secdeva_defaultTitleWithDate("secdeva_review_manual-code-review", "Review of manual code review practices - ").
 secdeva_defaultTitleWithDate("secdeva_review_static-code-analysis", "Review of static code analysis - ").
 secdeva_defaultTitle("secdeva_document_security-context", "Security context - ").
@@ -36,7 +36,7 @@ secdeva_defaultTitleWithDate("secdeva_review_competence", "Competence review - "
 secdeva_defaultTitleWithDate("secdeva_review_periodic", "Periodic review - ").
 secdeva_defaultTitleWithDate("secdeva_review_3rd-party-technologies", "Review of 3rd party technologies - ").
 secdeva_defaultTitleWithDate("secdeva_review_risk-management", "Review of risk management - ").
-secdeva_defaultTitleWithDate("secdeva_review_interfaces", "Review of interfaces - ").
+secdeva_defaultTitleWithDate("secdeva_review_interfaces", "Review of interfaces - "). % Legacy
 secdeva_defaultTitleWithDate("secdeva_review_process-scoping", "Review of process scoping - ").
 
 secdeva_defaultTitleWithDate("secdeva_review_security-design", "Review of security design - ").

@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/controlEnsureSecureDevelopmentInSubprojects",
+    "displayName": "Control - Ensure secure development in subprojects",
+    "description": "The content of the internal control 'Ensure secure development in subprojects'",
+    "category": "Secure development"
+}

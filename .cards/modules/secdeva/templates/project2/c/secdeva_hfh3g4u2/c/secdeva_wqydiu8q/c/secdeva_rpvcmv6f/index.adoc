@@ -1,14 +1,3 @@
-This register tracks evaluations of third-party technologies used in your product: toolkits, frameworks, services, and components you did not build yourself. Each technology you depend on can introduce vulnerabilities, licensing issues, or maintenance risks. Assessing them upfront prevents surprises later when a dependency becomes unsupported or is found to be insecure.
-
-TIP: Technology assessments are most useful when linked to the assets or threat model elements they relate to, giving you traceability from component to risk. Create them from the asset cards or from the elements of the threat model {{#report}}"name":"secdeva/reports/xref","identifier":"secdeva_document_threat-model"{{/report}} - so they will be automatically linked to the related asset.
-
-If you cannot create a technology assessment from the related elements of the threat model or from related assets, then click the following button.
-
-{{#createCards}}
-  "template": "secdeva/templates/technology",
-  "buttonLabel": "Create a technology assessment"
-{{/createCards}}
-
 {{#report}}
-  "name": "secdeva/reports/projectTechnologies"
+  "name": "secdeva/reports/registerTechnologyAssessments"
 {{/report}}

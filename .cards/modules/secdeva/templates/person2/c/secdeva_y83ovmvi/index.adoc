@@ -1,21 +1,3 @@
-{{#graph}}
-  "model": "secdeva/graphModels/dataflow",
-  "view": "secdeva/graphViews/entity"
-{{/graph}}
-
-[TIP]
-====
-To add a dataflow to or from this person, click the link symbol in the top level tool bar.
-====
-
-== Related risks
-
 {{#report}}
-  "name": "secdeva/reports/createRisk"
-{{/report}}
-
-== Related security issues
-
-{{#report}}
-  "name": "secdeva/reports/createSecurityIssue"
+  "name": "secdeva/reports/threatModelPerson"
 {{/report}}

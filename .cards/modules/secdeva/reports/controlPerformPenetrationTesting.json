@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/controlPerformPenetrationTesting",
+    "displayName": "Control - Perform penetration testing",
+    "description": "The content of the internal control 'Perform penetration testing'",
+    "category": "Secure development"
+}

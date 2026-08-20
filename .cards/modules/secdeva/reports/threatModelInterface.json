@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/threatModelInterface",
+    "displayName": "Interface classification and related cards",
+    "category": "Threat model",
+    "description": "The derived part of an interface specification: the automatic classification of the interface, the security context documents of the project, the related risks, security issues, security requirements, technology assessments, decisions and design specifications, and the review tasks. Used at the end of the interface and physical connection cards, after the sections that the user writes."
+}

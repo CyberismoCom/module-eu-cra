@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/controlUseStaticCodeAnalysis",
+    "displayName": "Control - Use static code analysis",
+    "description": "The content of the internal control 'Use static code analysis'",
+    "category": "Secure development"
+}

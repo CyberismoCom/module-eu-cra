@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/controlScanForKnownVulnerabilities",
+    "displayName": "Control - Scan for known vulnerabilities",
+    "description": "The content of the internal control 'Scan for known vulnerabilities'",
+    "category": "Secure development"
+}

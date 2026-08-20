@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/registerImplementationControls",
+    "displayName": "Register - Implementation controls",
+    "description": "Produces the contents of the implementation controls register",
+    "category": "Secure development"
+}

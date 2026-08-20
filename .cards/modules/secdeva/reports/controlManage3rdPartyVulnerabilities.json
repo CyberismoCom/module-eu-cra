@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/controlManage3rdPartyVulnerabilities",
+    "displayName": "Control - Manage 3rd party vulnerabilities",
+    "description": "The content of the internal control 'Manage 3rd party vulnerabilities'",
+    "category": "Secure development"
+}

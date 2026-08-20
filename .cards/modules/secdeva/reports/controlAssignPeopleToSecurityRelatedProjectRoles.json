@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/controlAssignPeopleToSecurityRelatedProjectRoles",
+    "displayName": "Control - Assign people to security-related project roles",
+    "description": "The content of the internal control 'Assign people to security-related project roles'",
+    "category": "Secure development"
+}

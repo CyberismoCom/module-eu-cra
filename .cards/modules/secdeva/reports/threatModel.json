@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/threatModel",
+    "displayName": "Threat model",
+    "category": "Threat model",
+    "description": "The full content of a threat model: assets, security context, dataflow diagrams, 3rd party technologies, interfaces and physical connections, attack vectors, identified risks and security issues, and threat model reviews."
+}

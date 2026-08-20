@@ -1,0 +1,89 @@
+{{#graph}}
+  "model": "secdeva/graphModels/dataflow",
+  "view": "secdeva/graphViews/entity"
+{{/graph}}
+
+[TIP]
+====
+To add a dataflow to or from this person, click the link symbol in the top level tool bar.
+====
+
+{{#each results}}
+
+== Related risks
+
+[TIP]
+====
+Create a risk if you identify a cyber threat — something that can cause harm by exploiting one or more vulnerabilities.
+====
+
+{{#if risks}}
+
+[caption=]
+.Existing risks
+[cols="5,2"]
+|===
+| Risk | Workflow State
+
+{{#each risks}}
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.workflowState}}
+{{/each}}
+
+|===
+
+Create another risk, if needed:
+{{else}}
+You have not yet created or linked any risks.
+{{/if}}
+
+{{#createCards}}
+    "template": "secdeva/templates/productRisk2",
+    "buttonLabel": "Create a risk",
+    "cardKey": "{{riskRegister.key}}",
+    "link": {
+      "linkType": "ismsa/linkTypes/presentsRisk",
+      "direction": "outbound",
+      "cardKey": "{{../cardKey}}"
+    }
+{{/createCards}}
+
+== Related security issues
+
+[TIP]
+====
+Create a security issue if you identify a vulnerability — a weakness that a threat could exploit.
+====
+
+{{#if issues}}
+
+[caption=]
+.Existing issues
+[cols="5,2"]
+|===
+| Security issue | Workflow State
+
+{{#each issues}}
+|xref:{{this.key}}.adoc[{{this.title}}]
+|{{this.workflowState}}
+{{/each}}
+
+|===
+
+Create another issue, if needed:
+{{else}}
+You have not yet created or linked any security issues.
+{{/if}}
+
+{{#createCards}}
+    "template": "secdeva/templates/securityIssue",
+    "buttonLabel": "Create a security issue",
+    "cardKey": "{{securityIssueRegister.key}}",
+    "link": {
+      "linkType": "ismsa/linkTypes/presentsRisk",
+      "direction": "outbound",
+      "cardKey": "{{../cardKey}}"
+    }
+{{/createCards}}
+
+{{/each}}

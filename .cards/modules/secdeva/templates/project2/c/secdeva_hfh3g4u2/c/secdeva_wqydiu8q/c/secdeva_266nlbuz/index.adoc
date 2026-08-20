@@ -1,22 +1,3 @@
-This register captures identified security risks for your product.
-Create a risk if you identify a _cyber threat_ — something that can cause harm by exploiting one or more vulnerabilities. Risks are assessed by their potential for loss: how likely a threat is to exploit a vulnerability, and how severe the resulting harm would be.
-
-Each risk can lead to security requirements, design decisions, or testing activities. Without documented risks, security work lacks focus and prioritisation.
-
-Risks are typically identified during threat modeling but can emerge at any point in the lifecycle.
-
-[TIP] 
-====
-If the risk affects a certain element of the threat model or a certain asset, then you can create the risk within the affected card. 
-====
-
-Add risks that cannot be created in the threat model or in one of the assets by clicking the following button.
-
-{{#createCards}}
-  "template": "secdeva/templates/productRisk2",
-  "buttonLabel": "Create a risk"
-{{/createCards}}
-
 {{#report}}
-  "name": "secdeva/reports/risks"
+  "name": "secdeva/reports/registerRisks"
 {{/report}}

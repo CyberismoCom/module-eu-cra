@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/registerRisks",
+    "displayName": "Register - Risks",
+    "description": "Produces the contents of the risks register",
+    "category": "Secure development"
+}

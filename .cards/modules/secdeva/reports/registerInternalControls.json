@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/registerInternalControls",
+    "displayName": "Register - Internal controls",
+    "description": "Produces the contents of the internal controls register",
+    "category": "Secure development"
+}

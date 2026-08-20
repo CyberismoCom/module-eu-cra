@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/controlWriteSecurityRequirements",
+    "displayName": "Control - Write security requirements",
+    "description": "The content of the internal control 'Write security requirements'",
+    "category": "Secure development"
+}

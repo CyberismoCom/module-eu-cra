@@ -1,0 +1,330 @@
+selectAll.
+select(2, "assets", "policyChecks").
+select(2, "technologies", "policyChecks").
+
+result(result).
+
+% ----------------------------------------------------------------------------
+% Helper predicates
+% ----------------------------------------------------------------------------
+
+secdeva_entityOutsideTrustBoundaries(Entity, Model) :-
+    ancestor(Entity, Model),
+    not field(Ancestor, "cardType", "secdeva/cardTypes/trustBoundary") :
+    ancestor(Entity, Ancestor).
+
+secdeva_entityWithinTrustBoundary(Entity, Model) :-
+     ancestor(Entity, Model),
+     ancestor(TrustBoundary, Model),
+     ancestor(Entity, TrustBoundary),
+     field(TrustBoundary, "cardType", "secdeva/cardTypes/trustBoundary").
+
+secdeva_threatModelEntity(Card) :-
+    ancestor(Card, {{cardKey}}).
+
+secdeva_threatModelEntity({{cardKey}}).
+
+% ----------------------------------------------------------------------------
+% Asset register cross-reference
+% ----------------------------------------------------------------------------
+
+childResult(result, Card, "assetRegisterRefs") :-
+    secdeva_closestProject(Card, Project),
+    secdeva_closestProject({{cardKey}}, Project),
+    field(Card, "base/fieldTypes/identifier", "secdeva_register_assets").
+
+% ----------------------------------------------------------------------------
+% Assets
+% ----------------------------------------------------------------------------
+
+childResult(result, Asset, "assets") :-
+    secdeva_registerMember(Asset, Register),
+    secdeva_closestProject(Register, Project),
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(Asset, Project),
+    field(Register, "base/fieldTypes/identifier", "secdeva_register_assets").
+
+resultField(Asset, "type", Type, "shortText") :-
+    childResult(result, Asset, "assets"),
+    field(Asset, "cardType", CardType),
+    field(CardType, "displayName", Type).
+
+childResult(Asset, Risk, "assetRisks") :-
+    childResult(result, Asset, "assets"),
+    link(Asset, Risk, "ismsa/linkTypes/presentsRisk"),
+    field(Risk, "cardType", "ismsa/cardTypes/risk").
+
+childResult(Asset, Requirement, "assetSecurityRequirements") :-
+    childResult(result, Asset, "assets"),
+    link(Requirement, Asset, "secdeva/linkTypes/appliesTo"),
+    field(Requirement, "cardType", "secdeva/cardTypes/requirement").
+
+% ----------------------------------------------------------------------------
+% Security context documents
+% ----------------------------------------------------------------------------
+
+childResult(result, Card, "securityContextDocuments") :-
+    secdeva_closestProject(Card, Project),
+    secdeva_closestProject({{cardKey}}, Project),
+    field(Card, "base/fieldTypes/identifier", "secdeva_document_security-context").
+
+% ----------------------------------------------------------------------------
+% Technology assessment register cross-reference
+% ----------------------------------------------------------------------------
+
+childResult(result, Card, "technologyRegisterRefs") :-
+    secdeva_closestProject(Card, Project),
+    secdeva_closestProject({{cardKey}}, Project),
+    field(Card, "base/fieldTypes/identifier", "secdeva_register_technology-assessments").
+
+% ----------------------------------------------------------------------------
+% 3rd party technologies
+% ----------------------------------------------------------------------------
+
+childResult(result, Technology, "technologies") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(Technology, Project),
+    field(Technology, "cardType", "secdeva/cardTypes/technology").
+
+% ----------------------------------------------------------------------------
+% Interfaces and physical connections of the whole model
+% ----------------------------------------------------------------------------
+
+% outbound external dataflow
+childResult(result, @concatenate(A, B, Title), "externalDataflows") :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
+     secdeva_entityOutsideTrustBoundaries(B, {{cardKey}}).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/direction", "Outbound") :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
+     secdeva_entityOutsideTrustBoundaries(B, {{cardKey}}).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/title", Title) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
+     secdeva_entityOutsideTrustBoundaries(B, {{cardKey}}).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/externalTitle", External) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
+     secdeva_entityOutsideTrustBoundaries(B, {{cardKey}}),
+     field(B, "title", External).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/externalCardKey", B) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
+     secdeva_entityOutsideTrustBoundaries(B, {{cardKey}}).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/internalTitle", Internal) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
+     secdeva_entityOutsideTrustBoundaries(B, {{cardKey}}),
+     field(A, "title", Internal).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/internalCardKey", A) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
+     secdeva_entityOutsideTrustBoundaries(B, {{cardKey}}).
+
+% inbound external dataflow
+childResult(result, @concatenate(A, B, Title), "externalDataflows") :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityOutsideTrustBoundaries(A, {{cardKey}}),
+     secdeva_entityWithinTrustBoundary(B, {{cardKey}}).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/direction", "Inbound") :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityOutsideTrustBoundaries(A, {{cardKey}}),
+     secdeva_entityWithinTrustBoundary(B, {{cardKey}}).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/title", Title) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityOutsideTrustBoundaries(A, {{cardKey}}),
+     secdeva_entityWithinTrustBoundary(B, {{cardKey}}).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/externalTitle", External) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityOutsideTrustBoundaries(A, {{cardKey}}),
+     secdeva_entityWithinTrustBoundary(B, {{cardKey}}),
+     field(A, "title", External).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/externalCardKey", A) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityOutsideTrustBoundaries(A, {{cardKey}}),
+     secdeva_entityWithinTrustBoundary(B, {{cardKey}}),
+     field(B, "title", _).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/internalTitle", Internal) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityOutsideTrustBoundaries(A, {{cardKey}}),
+     secdeva_entityWithinTrustBoundary(B, {{cardKey}}),
+     field(B, "title", Internal).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/internalCardKey", B) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityOutsideTrustBoundaries(A, {{cardKey}}),
+     secdeva_entityWithinTrustBoundary(B, {{cardKey}}).
+
+% internal dataflows
+childResult(result, @concatenate(A, B, Title), "internalDataflows") :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
+     secdeva_entityWithinTrustBoundary(B, {{cardKey}}).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/title", Title) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
+     secdeva_entityWithinTrustBoundary(B, {{cardKey}}).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/source", Source) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
+     secdeva_entityWithinTrustBoundary(B, {{cardKey}}),
+     field(A, "title", Source).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/destination", Destination) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
+     secdeva_entityWithinTrustBoundary(B, {{cardKey}}),
+     field(B, "title", Destination).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/destinationCardKey", B) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
+     secdeva_entityWithinTrustBoundary(B, {{cardKey}}).
+
+field(@concatenate(A, B, Title), "secdeva/fieldTypes/sourceCardKey", A) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
+     secdeva_entityWithinTrustBoundary(B, {{cardKey}}).
+
+% interfaces
+childResult(result, Interface, "interfaces") :-
+    field(Interface, "cardType", "secdeva/cardTypes/interface"),
+    field(Interface, "secdeva/fieldTypes/interfaceType", "logical"),
+    ancestor(Interface, {{cardKey}}).
+
+field(Interface, "secdeva/fieldTypes/interfaceElementCardKey", Element) :-
+    childResult(result, Interface, "interfaces"),
+    parent(Interface, Element).
+
+field(Interface, "secdeva/fieldTypes/interfaceElementTitle", Title) :-
+    childResult(result, Interface, "interfaces"),
+    parent(Interface, Element),
+    field(Element, "title", Title).
+
+% physical ports and connections
+childResult(result, PhysicalConnection, "physicalConnections") :-
+    field(PhysicalConnection, "cardType", "secdeva/cardTypes/interface"),
+    field(PhysicalConnection, "secdeva/fieldTypes/interfaceType", "physical"),
+    ancestor(PhysicalConnection, {{cardKey}}).
+
+field(PhysicalConnection, "secdeva/fieldTypes/physicalConnectionElementCardKey", Element) :-
+    childResult(result, PhysicalConnection, "physicalConnections"),
+    parent(PhysicalConnection, Element).
+
+field(PhysicalConnection, "secdeva/fieldTypes/physicalConnectionElementTitle", Title) :-
+    childResult(result, PhysicalConnection, "physicalConnections"),
+    parent(PhysicalConnection, Element),
+    field(Element, "title", Title).
+
+% ----------------------------------------------------------------------------
+% Attack vectors
+% ----------------------------------------------------------------------------
+
+childResult(result, AttackVector, "attackVectors") :-
+    parent(AttackVector, {{cardKey}}),
+    field(AttackVector, "base/fieldTypes/identifier", "secdeva_attack-vector").
+
+% ----------------------------------------------------------------------------
+% Identified risks and security issues
+% ----------------------------------------------------------------------------
+
+resultField(result, "issueRegister", Register, "shortText") :-
+    field(Register, "base/fieldTypes/identifier", "secdeva_register_security-issues"),
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(Register, Project).
+
+resultField(result, "riskRegister", Register, "shortText") :-
+    field(Register, "base/fieldTypes/identifier", "secdeva_register_risks"),
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(Register, Project).
+
+childResult(result, Risk, "allRisks") :-
+    field(Risk, "cardType", "ismsa/cardTypes/risk"),
+    link(_, Risk, "ismsa/linkTypes/presentsRisk"),
+    secdeva_closestProject(Risk, Project),
+    secdeva_closestProject({{cardKey}}, Project).
+
+childResult(result, Issue, "securityIssues") :-
+    field(Issue, "cardType", "secdeva/cardTypes/securityIssue"),
+    link(AffectedCard, Issue, "ismsa/linkTypes/presentsRisk"),
+    secdeva_threatModelEntity(AffectedCard).
+
+% The affected card is wrapped in a (Card, AffectedCard) tuple key rather than
+% used as a bare card key. A bare key would let the same card appear both as a
+% parent and as a child of another result, and childResult cycles make the
+% result tree unbounded, which hangs grounding. See also "assetRisks" above,
+% which walks the same presentsRisk link in the opposite direction.
+childResult(Card, (Card, AffectedCard), "affectedCard") :-
+    childResult(result, Card, "allRisks"),
+    link(AffectedCard, Card, "ismsa/linkTypes/presentsRisk").
+
+childResult(Card, (Card, AffectedCard), "affectedCard") :-
+    childResult(result, Card, "securityIssues"),
+    link(AffectedCard, Card, "ismsa/linkTypes/presentsRisk").
+
+resultField((Card, AffectedCard), "key", AffectedCard, "shortText") :-
+    childResult(Card, (Card, AffectedCard), "affectedCard").
+
+resultField((Card, AffectedCard), "title", Title, "shortText") :-
+    childResult(Card, (Card, AffectedCard), "affectedCard"),
+    field(AffectedCard, "title", Title).
+
+childResult(result, Card, "securityIssueRegisterRefs") :-
+    secdeva_closestProject(Card, Project),
+    secdeva_closestProject({{cardKey}}, Project),
+    field(Card, "base/fieldTypes/identifier", "secdeva_register_security-issues").
+
+% ----------------------------------------------------------------------------
+% Threat model reviews
+% ----------------------------------------------------------------------------
+
+childResult(result, Card, "reviewTasks") :-
+    card(Card),
+    parent(Card, {{cardKey}}),
+    field(Card, "cardType", "base/cardTypes/reviewTask").
+
+% ----------------------------------------------------------------------------
+% Ordering
+% ----------------------------------------------------------------------------
+
+order(2, "assets", 1, "title", "ASC").
+order(3, "assetRisks", 1, "title", "ASC").
+order(3, "assetSecurityRequirements", 1, "title", "ASC").
+
+order(2, "securityContextDocuments", 1, "title", "ASC").
+
+order(2, "technologies", 1, "title", "ASC").
+
+order(2, "externalDataflows", 1, "secdeva/fieldTypes/direction", "ASC").
+order(2, "externalDataflows", 2, "secdeva/fieldTypes/internalTitle", "ASC").
+
+order(2, "internalDataflows", 1, "secdeva/fieldTypes/destination", "ASC").
+order(2, "internalDataflows", 2, "secdeva/fieldTypes/source", "ASC").
+
+order(2, "interfaces", 1, "secdeva/fieldTypes/interfaceElementTitle", "ASC").
+order(2, "interfaces", 2, "title", "ASC").
+
+order(2, "physicalConnections", 1, "secdeva/fieldTypes/physicalConnectionElementTitle", "ASC").
+order(2, "physicalConnections", 2, "title", "ASC").
+
+order(2, "attackVectors", 1, "title", "ASC").
+
+order(2, "allRisks", 1, "title", "ASC").
+order(2, "securityIssues", 1, "title", "ASC").
+order(3, "affectedCard", 1, "title", "ASC").
+
+order(2, "reviewTasks", 1, "rank", "ASC").

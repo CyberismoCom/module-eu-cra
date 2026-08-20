@@ -1,0 +1,205 @@
+selectAll.
+
+result(result).
+
+% ----------------------------------------------------------------------------
+% Classification of the interface
+% ----------------------------------------------------------------------------
+
+field(result, "parentName", ParentName) :-
+    parent({{cardKey}}, Parent),
+    field(Parent, "title", ParentName).
+
+childResult(result, (Source, Parent, Description), "parentDataflows") :-
+    link(Source, Parent, "secdeva/linkTypes/dataflow", Description),
+    parent({{cardKey}}, Parent).
+
+childResult(result, (Source, {{cardKey}}, Description), "dataflows") :-
+    link(Source, {{cardKey}}, "secdeva/linkTypes/dataflow", Description).
+
+field((Source, Destination, Description), "sourceCardKey", Source) :-
+    childResult(result, (Source, Destination, Description), _ ),
+    field(Source, "title", _).
+
+field((Source, Destination, Description), "sourceTitle", SourceTitle) :-
+    childResult(result, (Source, Destination, Description), _ ),
+    field(Source, "title", SourceTitle).
+
+field((Source, Destination, Description), "sourceType", "Data store") :-
+    childResult(result, (Source, Destination, Description), _ ),
+    field(Source, "cardType", "secdeva/cardTypes/dataStore").
+
+field((Source, Destination, Description), "sourceType", "External entity") :-
+    childResult(result, (Source, Destination, Description), _ ),
+    field(Source, "cardType", "secdeva/cardTypes/external").
+
+field((Source, Destination, Description), "sourceType", "Person") :-
+    childResult(result, (Source, Destination, Description), _ ),
+    field(Source, "cardType", "secdeva/cardTypes/person").
+
+field((Source, Destination, Description), "sourceType", "Process") :-
+    childResult(result, (Source, Destination, Description), _ ),
+    field(Source, "cardType", "secdeva/cardTypes/process").
+
+field((Source, Destination, Description), "sourceType", "Trust boundary") :-
+    childResult(result, (Source, Destination, Description), _ ),
+    field(Source, "cardType", "secdeva/cardTypes/trustBoundary").
+
+field((Source, Destination, Description), "external", "Yes, used by a user") :-
+    childResult(result, (Source, Destination, Description), _ ),
+    field(Source, "cardType", "secdeva/cardTypes/person").
+
+field((Source, Destination, Description), "external", "Yes, used by an external entity") :-
+    childResult(result, (Source, Destination, Description), _ ),
+    field(Source, "cardType", "secdeva/cardTypes/external").
+
+field((Source, Destination, Description), "external", "No") :-
+    childResult(result, (Source, Destination, Description), _ ),
+    not field(Source, "cardType", "secdeva/cardTypes/external"),
+    not field(Source, "cardType", "secdeva/cardTypes/person").
+
+field((Source, Destination, Description), "description", Description) :-
+    childResult(result, (Source, Destination, Description), _ ).
+
+childResult((Source, {{cardKey}}, Description), TrustBoundary, "trustBoundaries") :-
+    childResult(result, (Source, {{cardKey}}, Description), "dataflows"),
+    field(TrustBoundary, "cardType", "secdeva/cardTypes/trustBoundary"),
+    ancestor({{cardKey}}, TrustBoundary),
+    not ancestor(Source, TrustBoundary).
+
+field(result, "crossesTrustBoundary", "void") :-
+    field({{cardKey}}, "secdeva/fieldTypes/crossesTrustBoundary", "yes").
+
+field(result, "external", "void") :-
+    field({{cardKey}}, "secdeva/fieldTypes/isExternal", "yes").
+
+% ----------------------------------------------------------------------------
+% Security context documents of the project
+% ----------------------------------------------------------------------------
+
+childResult(result, Card, "securityContextDocuments") :-
+    secdeva_closestProject(Card, Project),
+    secdeva_closestProject({{cardKey}}, Project),
+    field(Card, "base/fieldTypes/identifier", "secdeva_document_security-context").
+
+% ----------------------------------------------------------------------------
+% Related risks
+% ----------------------------------------------------------------------------
+
+childResult(result, Risk, "risks") :-
+    link({{cardKey}}, Risk, "ismsa/linkTypes/presentsRisk"),
+    field(Risk, "cardType", "ismsa/cardTypes/risk").
+
+childObject(result, Register, "riskRegister") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    field(Register, "base/fieldTypes/identifier", "secdeva_register_risks"),
+    secdeva_closestProject(Register, Project).
+
+% ----------------------------------------------------------------------------
+% Related security issues
+% ----------------------------------------------------------------------------
+
+childResult(result, Issue, "issues") :-
+    link({{cardKey}}, Issue, "ismsa/linkTypes/presentsRisk"),
+    field(Issue, "cardType", "secdeva/cardTypes/securityIssue").
+
+childObject(result, Register, "securityIssueRegister") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    field(Register, "base/fieldTypes/identifier", "secdeva_register_security-issues"),
+    secdeva_closestProject(Register, Project).
+
+% ----------------------------------------------------------------------------
+% Related security requirements
+% ----------------------------------------------------------------------------
+
+childResult(result, Requirement, "requirements") :-
+    link(Requirement, {{cardKey}}, "secdeva/linkTypes/appliesTo"),
+    field(Requirement, "cardType", "secdeva/cardTypes/requirement").
+
+childObject(result, Register, "securityRequirementRegister") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    field(Register, "base/fieldTypes/identifier", "secdeva_register_security-requirements"),
+    secdeva_closestProject(Register, Project).
+
+% ----------------------------------------------------------------------------
+% Related technology assessments
+% ----------------------------------------------------------------------------
+
+childResult(result, Technology, "technologies") :-
+    link({{cardKey}}, Technology, "base/linkTypes/relatesTo"),
+    field(Technology, "cardType", "secdeva/cardTypes/technology").
+
+childResult(result, Technology, "technologies") :-
+    link(Technology, {{cardKey}}, "base/linkTypes/relatesTo"),
+    field(Technology, "cardType", "secdeva/cardTypes/technology").
+
+childObject(result, Register, "technologyAssessmentRegister") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    field(Register, "base/fieldTypes/identifier", "secdeva_register_technology-assessments"),
+    secdeva_closestProject(Register, Project).
+
+% ----------------------------------------------------------------------------
+% Related decisions
+% ----------------------------------------------------------------------------
+
+childResult(result, Decision, "decisions") :-
+    link({{cardKey}}, Decision, "base/linkTypes/relatesTo"),
+    field(Decision, "cardType", "base/cardTypes/decision").
+
+childResult(result, Decision, "decisions") :-
+    link(Decision, {{cardKey}}, "base/linkTypes/relatesTo"),
+    field(Decision, "cardType", "base/cardTypes/decision").
+
+childObject(result, Register, "decisionRegister") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    field(Register, "base/fieldTypes/identifier", "secdeva_register_decisions"),
+    secdeva_closestProject(Register, Project).
+
+% ----------------------------------------------------------------------------
+% Related design specifications
+% ----------------------------------------------------------------------------
+
+childResult(result, Document, "specifications") :-
+    link({{cardKey}}, Document, "base/linkTypes/relatesTo"),
+    field(Document, "base/fieldTypes/identifier", "secdeva_document_design-specification").
+
+childResult(result, Document, "specifications") :-
+    link(Document, {{cardKey}}, "base/linkTypes/relatesTo"),
+    field(Document, "base/fieldTypes/identifier", "secdeva_document_design-specification").
+
+childObject(result, Phase, "designPhase") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    field(Phase, "base/fieldTypes/identifier", "secdeva_phase_design"),
+    secdeva_closestProject(Phase, Project).
+
+% ----------------------------------------------------------------------------
+% Reviews
+% ----------------------------------------------------------------------------
+
+childResult(result, Card, "reviewTasks") :-
+    card(Card),
+    parent(Card, {{cardKey}}),
+    field(Card, "cardType", "base/cardTypes/reviewTask").
+
+% ----------------------------------------------------------------------------
+% Ordering
+% ----------------------------------------------------------------------------
+
+order(2, "parentDataflows", 1, "sourceTitle", "ASC").
+order(2, "parentDataflows", 2, "description", "ASC").
+
+order(2, "dataflows", 1, "sourceTitle", "ASC").
+order(2, "dataflows", 2, "description", "ASC").
+
+order(3, "trustBoundaries", 1, "title", "ASC").
+
+order(2, "securityContextDocuments", 1, "title", "ASC").
+
+order(2, "risks", 1, "rank", "ASC").
+order(2, "issues", 1, "rank", "ASC").
+order(2, "requirements", 1, "rank", "ASC").
+order(2, "technologies", 1, "rank", "ASC").
+order(2, "decisions", 1, "rank", "ASC").
+order(2, "specifications", 1, "rank", "ASC").
+
+order(2, "reviewTasks", 1, "rank", "ASC").

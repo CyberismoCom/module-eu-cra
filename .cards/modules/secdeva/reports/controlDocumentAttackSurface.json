@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/controlDocumentAttackSurface",
+    "displayName": "Control - Document attack surface",
+    "description": "The content of the internal control 'Document attack surface'",
+    "category": "Secure development"
+}

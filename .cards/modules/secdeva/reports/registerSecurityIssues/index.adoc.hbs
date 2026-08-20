@@ -1,0 +1,14 @@
+This register tracks security issues, which represent concrete weaknesses or problems that need to be fixed. Unlike risks which describe potential future harm, security issues describe problems that already exist and require action.
+
+Issues can surface from threat modelling, security testing, code reviews, vulnerability disclosures, or operational monitoring. Tracking them here ensures nothing falls through the cracks and provides visibility into the product's security posture over time.
+
+TIP: If a security issue is related to a specific element of the threat model or to a specific asset, you can create it directly in the affected card.
+
+{{#createCards}}
+  "template": "secdeva/templates/securityIssue",
+  "buttonLabel": "Create a security issue"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssuesNeedingAttention"
+{{/report}}

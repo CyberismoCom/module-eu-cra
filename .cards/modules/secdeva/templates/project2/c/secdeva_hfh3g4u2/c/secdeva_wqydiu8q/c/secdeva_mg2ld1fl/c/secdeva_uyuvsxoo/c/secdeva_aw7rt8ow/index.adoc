@@ -1,34 +1,3 @@
-The project may consists of such independent components for which it makes sense to manage the secure development process separately. A good rule of thumb is that running the secure development process separately may make sense if the component is independently updateable and if it is being developed by a separate team or a separate subproject.
-
-Notes:
-
-* Third party custom-developed components must be developed using the secure development process as well. If a supplier is responsible for the development of a component, the supplier should follow a secure development process
-
-* If the development team makes a substantial modification of a 3rd party product or places a 3rd party product on the market under their own trademark or name, then the development team may have to apply the secure development process for the component, including responsibilities to conform with EU regulations
-
-* A component may be used as a building block in other projects. To avoid duplicate work, the secure development for the project is documented just once, where it was originally done, and it is referred elsewhere as a technology selection.
-
-== How to decide if this control is required
-
-This control is required, if the project has possible subprojects or suppliers that develop custom components, if the development project makes substantial modifications to 3rd party products, or rebrands 3rd party products.
-
-If none of these is applicable, you can mark this control out of scope.
-
-== How to implement
-
-If the project includes an independent subproject, then set up secure development for the new project.
-
-Create a review of the project structure and follow the instructions in the template.
-
 {{#report}}
-  "name": "secdeva/reports/createReview",
-  "template": "secdeva/templates/projectStructureReview",
-  "buttonLabel": "Create a project structure review",
-  "phase": "secdeva_phase_design"
-{{/report}}
-
-== Assessment
-
-{{#report}}
-  "name": "secdeva/reports/internalControlAssessment"
+  "name": "secdeva/reports/controlEnsureSecureDevelopmentInSubprojects"
 {{/report}}

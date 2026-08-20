@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/controlManageThreatModels",
+    "displayName": "Control - Manage threat models",
+    "description": "The content of the internal control 'Manage threat models'",
+    "category": "Secure development"
+}

@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/controlAnalyseTheAttackSurface",
+    "displayName": "Control - Analyse the attack surface",
+    "description": "The content of the internal control 'Analyse the attack surface'",
+    "category": "Secure development"
+}

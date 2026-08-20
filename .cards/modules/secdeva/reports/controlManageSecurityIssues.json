@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/controlManageSecurityIssues",
+    "displayName": "Control - Manage security issues",
+    "description": "The content of the internal control 'Manage security issues'",
+    "category": "Secure development"
+}

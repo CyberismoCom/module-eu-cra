@@ -1,8 +1,13 @@
-Understanding what you are protecting is a prerequisite for effective security work. This register captures the assets, or things of value, associated with your product or system. Assets may include data, processes, technology, facilities, competences, or suppliers.
+Understanding what you are protecting is a prerequisite for effective security work. This register captures the assets, or things of value, associated with your product or system.
 
-TIP: The list of assets includes processes, interfaces and data stores from the threat model {{#report}}"name":"secdeva/reports/xref","identifier":"secdeva_document_threat-model"{{/report}} - add this kind of assets directly in the threat model.
+[TIP]
+====
+*Where does an asset belong?* If it is part of the product, model it in the threat model {{#report}}"name":"secdeva/reports/xref","identifier":"secdeva_document_threat-model"{{/report}}. If it is part of how you *build, ship or run* the product, create it here.
 
-Document assets that cannot be created in the threat model by clicking one of the following buttons.
+The processes, interfaces and data stores of the threat model appear in the list below automatically. Record the categories of data each of them holds — including cryptographic keys, credentials and personal data — directly on those elements.
+====
+
+Document assets that are not part of the product by clicking one of the following buttons.
 
 {{#createCards}}
   "template": "secdeva/templates/asset",
@@ -28,6 +33,8 @@ Document assets that cannot be created in the threat model by clicking one of th
   "template": "secdeva/templates/assetSupplier",
   "buttonLabel": "Add a new supplier"
 {{/createCards}}
+
+== Assets
 
 {{#report}}
   "name": "secdeva/reports/assets"

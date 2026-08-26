@@ -1,0 +1,8 @@
+{
+    "title": "Solution structure",
+    "cardType": "secdeva/cardTypes/register",
+    "workflowState": "",
+    "rank": "0|cn",
+    "base/fieldTypes/identifier": "secdeva_register_solution-structure",
+    "links": []
+}

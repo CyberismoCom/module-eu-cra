@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/registerReleasesControls",
+    "displayName": "Register - Releases controls",
+    "description": "Produces the contents of the releases controls register",
+    "category": "Secure development"
+}

@@ -1,0 +1,24 @@
+{
+    "name": "ismsa/fieldTypes/assetConfidentiality",
+    "displayName": "Criticality of confidentiality",
+    "dataType": "enum",
+    "enumValues": [
+        {
+            "enumValue": "high",
+            "enumDisplayValue": "High"
+        },
+        {
+            "enumValue": "medium",
+            "enumDisplayValue": "Medium"
+        },
+        {
+            "enumValue": "low",
+            "enumDisplayValue": "Low"
+        },
+        {
+            "enumValue": "N/A",
+            "enumDisplayValue": "Not Applicable"
+        }
+    ],
+    "description": "The impact if the confidentiality of this asset is compromised. This concerns the asset itself; the sensitivity of this card is defined separately in the information classification field."
+}

@@ -2,5 +2,5 @@
     "name": "secdeva/reports/threatModelPerson",
     "displayName": "Person in a threat model",
     "category": "Threat model",
-    "description": "The full content of a person entity in a threat model: entity graph and related risks and security issues."
+    "description": "The full content of a person entity in a threat model: entity graph, dataflows and related risks and security issues."
 }

@@ -1,0 +1,40 @@
+selectAll.
+select(2, "products", "policyChecks").
+
+result(result).
+
+childResult(result, Product, "products") :-
+    base_projectCardType(Product, "secdeva/cardTypes/product"),
+    secdeva_closestProject(Product, Project),
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_productInScope(Product).
+
+% When the report is placed on a grouping card, show the products that belong to that
+% group by origin. Anywhere else, show every product of the project. Grouping follows
+% the origin field rather than the position of the card, so this listing and the
+% assessment of the group card can never disagree.
+
+secdeva_productInScope(Product) :-
+    field({{cardKey}}, "base/fieldTypes/identifier", GroupIdentifier),
+    secdeva_productGroup(Product, GroupIdentifier).
+
+secdeva_productInScope(Product) :-
+    base_projectCardType(Product, "secdeva/cardTypes/product"),
+    not secdeva_groupingCard({{cardKey}}).
+
+secdeva_groupingCard(Card) :- field(Card, "base/fieldTypes/identifier", "secdeva_group_own-products").
+secdeva_groupingCard(Card) :- field(Card, "base/fieldTypes/identifier", "secdeva_group_third-party-products").
+
+childResult(Product, (Product, Parent, Label), "partOf") :-
+    childResult(result, Product, "products"),
+    secdeva_csafRelationship(Product, Parent, _, Label).
+
+field((Product, Parent, Label), "secdeva/fieldTypes/relationshipLabel", Label) :-
+    secdeva_csafRelationship(Product, Parent, _, Label).
+field((Product, Parent, Label), "secdeva/fieldTypes/relatedKey", Parent) :-
+    secdeva_csafRelationship(Product, Parent, _, Label).
+field((Product, Parent, Label), "secdeva/fieldTypes/relatedTitle", Title) :-
+    secdeva_csafRelationship(Product, Parent, _, Label),
+    field(Parent, "title", Title).
+
+orderBy("title", "ASC").

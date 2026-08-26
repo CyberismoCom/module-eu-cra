@@ -9,7 +9,15 @@ flowchart LR
       F[Foundation\n{{this.foundationPhase.progress}}%] --> D[Design\n{{this.designPhase.progress}}%]
       D --> I[Implementation\n{{this.implementationPhase.progress}}%]
       I --> V[Verification\n{{this.verificationPhase.progress}}%]
-      V --> R[Releases\n ]
+{{#if this.releasesPhase.progress}}
+      V --> R[Releases\n{{this.releasesPhase.progress}}%]
+{{else}}
+{{#if (eq this.releasesPhase.progress 0)}}
+      V --> R[Releases\n0%]
+{{else}}
+      V --> R[Releases\n]
+{{/if}}
+{{/if}}
       R --> O[Operations\n{{this.operationsPhase.progress}}%]
     end
 ----

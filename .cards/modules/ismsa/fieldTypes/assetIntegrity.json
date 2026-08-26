@@ -1,6 +1,6 @@
 {
     "name": "ismsa/fieldTypes/assetIntegrity",
-    "displayName": "Integrity",
+    "displayName": "Criticality of integrity",
     "dataType": "enum",
     "enumValues": [
         {
@@ -20,5 +20,5 @@
             "enumDisplayValue": "Not Applicable"
         }
     ],
-    "description": "The importance of the integrity of this asset"
+    "description": "The impact if the integrity of this asset is compromised, for example by unauthorised or accidental changes."
 }

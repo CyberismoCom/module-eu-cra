@@ -1,0 +1,25 @@
+{
+    "name": "ismsa/fieldTypes/assetHse",
+    "displayName": "Criticality for health, safety and environment (HSE)",
+    "dataType": "enum",
+    "enumValues": [
+        {
+            "enumValue": "high",
+            "enumDisplayValue": "High"
+        },
+        {
+            "enumValue": "medium",
+            "enumDisplayValue": "Medium"
+        },
+        {
+            "enumValue": "low",
+            "enumDisplayValue": "Low"
+        },
+        {
+            "enumValue": "N/A",
+            "enumDisplayValue": "Not applicable",
+            "enumDescription": ""
+        }
+    ],
+    "description": "The impact on health, safety and the environment if this asset fails or is compromised. Set to Not Applicable if this asset has no health, safety or environmental relevance."
+}

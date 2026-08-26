@@ -1,0 +1,24 @@
+{
+    "name": "secdeva/fieldTypes/productOrigin",
+    "displayName": "Origin",
+    "dataType": "enum",
+    "enumValues": [
+        {
+            "enumValue": "own",
+            "enumDisplayValue": "Own product",
+            "enumDescription": "A product developed by your own organisation."
+        },
+        {
+            "enumValue": "thirdPartyCommercial",
+            "enumDisplayValue": "Third-party commercial",
+            "enumDescription": "A commercial product from another manufacturer."
+        },
+        {
+            "enumValue": "thirdPartyOpenSource",
+            "enumDisplayValue": "Third-party open source",
+            "enumDescription": "An open source product or component maintained outside your organisation."
+        }
+    ],
+    "description": "Whether the product is developed by your own organisation or comes from a third party",
+    "category": "Solution structure"
+}

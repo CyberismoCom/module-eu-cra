@@ -1,0 +1,116 @@
+{{#each results}}
+
+{{#if this.mitigations}}
+
+{{#if this.requirements}}
+
+[caption=]
+[cols="4,3,2,2,3"]
+.Security requirements that mitigate a risk
+|===
+| Security requirement | Mitigates risk | Workflow state | Testing to defeat the mitigation | Tested by
+
+{{#each this.requirements}}
+|xref:{{this.key}}.adoc[{{this.title}}]
+{{#if this.risks}}
+a|
+{{#each this.risks}}
+* xref:{{this.key}}.adoc[{{this.title}}]
+{{/each}}
+{{else}}
+|
+{{/if}}
+|{{this.workflowState}}
+{{#if this.bypassTestingNotDecided}}
+|❗ Not set
+{{else}}
+|{{this.[secdeva/fieldTypes/testingToBypassMitigation].displayValue}}
+{{/if}}
+{{#if this.tests}}
+a|
+{{#each this.tests}}
+* xref:{{this.key}}.adoc[{{this.title}}] [{{this.workflowState}}]
+{{/each}}
+{{else}}
+|
+{{/if}}
+{{/each}}
+
+|===
+
+{{else}}
+
+No security requirements have been linked to a risk with a 'mitigates' link.
+
+{{/if}}
+
+{{#if this.issues}}
+
+[caption=]
+[cols="4,3,2,2,2,3"]
+.Security issues that increase a risk
+|===
+| Security issue | Increases risk | Workflow state | Severity | Testing to defeat the mitigation | Tested by
+
+{{#each this.issues}}
+|xref:{{this.key}}.adoc[{{this.title}}]
+{{#if this.risks}}
+a|
+{{#each this.risks}}
+* xref:{{this.key}}.adoc[{{this.title}}]
+{{/each}}
+{{else}}
+|
+{{/if}}
+|{{this.workflowState}}
+|{{this.[secdeva/fieldTypes/severity].displayValue}}
+{{#if this.bypassTestingNotDecided}}
+|❗ Not set
+{{else}}
+|{{this.[secdeva/fieldTypes/testingToBypassMitigation].displayValue}}
+{{/if}}
+{{#if this.tests}}
+a|
+{{#each this.tests}}
+* xref:{{this.key}}.adoc[{{this.title}}] [{{this.workflowState}}]
+{{/each}}
+{{else}}
+|
+{{/if}}
+{{/each}}
+
+|===
+
+{{else}}
+
+No security issues have been linked to a risk with an 'increases risk' link.
+
+{{/if}}
+
+{{#if this.bypassTestingDecided}}
+
+* [x] Testing to defeat the mitigation has been decided for all mitigations of a risk.
+
+{{else}}
+
+* [ ] Testing to defeat the mitigation has not been decided for all mitigations of a risk. Set the *Testing to defeat the mitigation* field of the cards that are marked as *Not set* above.
+
+{{/if}}
+
+{{#if this.bypassTestingExecuted}}
+
+* [x] There are no mitigations for which testing to defeat the mitigation is still required.
+
+{{else}}
+
+* [ ] Testing to defeat the mitigation is still *Required* for one or more mitigations. Execute the testing, record the results, link the tests with 'tests' links, and set the field to *Done*.
+
+{{/if}}
+
+{{else}}
+
+Security requirements have not been linked to a risk with a 'mitigates' link, and security issues have not been linked to a risk with an 'increases risk' link. There are no risk mitigations to test.
+
+{{/if}}
+
+{{/each}}

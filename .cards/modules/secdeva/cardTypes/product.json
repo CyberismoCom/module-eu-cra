@@ -1,0 +1,94 @@
+{
+    "name": "secdeva/cardTypes/product",
+    "displayName": "Product",
+    "workflow": "ismsa/workflows/asset",
+    "customFields": [
+        {
+            "name": "base/fieldTypes/owner",
+            "displayName": "",
+            "isCalculated": true,
+            "enableOverride": true
+        },
+        {
+            "name": "secdeva/fieldTypes/productOrigin",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "secdeva/fieldTypes/productVendor",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "secdeva/fieldTypes/deliveryModel",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "secdeva/fieldTypes/supplyChainRole",
+            "displayName": "",
+            "isCalculated": true,
+            "enableOverride": true
+        },
+        {
+            "name": "secdeva/fieldTypes/supplyChainRoleJustification",
+            "displayName": "",
+            "isCalculated": true,
+            "enableOverride": true
+        },
+        {
+            "name": "base/fieldTypes/informationClassification",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "secdeva/fieldTypes/sbomComponentType",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "secdeva/fieldTypes/sbomComponentGroup",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "secdeva/fieldTypes/sbomComponentName",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "secdeva/fieldTypes/sbomComponentCpe",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "secdeva/fieldTypes/sbomComponentPurl",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "base/fieldTypes/identifier",
+            "displayName": "",
+            "isCalculated": false
+        }
+    ],
+    "alwaysVisibleFields": [
+        "base/fieldTypes/owner",
+        "secdeva/fieldTypes/productOrigin",
+        "secdeva/fieldTypes/productVendor",
+        "secdeva/fieldTypes/deliveryModel",
+        "secdeva/fieldTypes/supplyChainRole",
+        "secdeva/fieldTypes/supplyChainRoleJustification"
+    ],
+    "optionallyVisibleFields": [
+        "base/fieldTypes/informationClassification",
+        "secdeva/fieldTypes/sbomComponentType",
+        "secdeva/fieldTypes/sbomComponentGroup",
+        "secdeva/fieldTypes/sbomComponentName",
+        "secdeva/fieldTypes/sbomComponentCpe",
+        "secdeva/fieldTypes/sbomComponentPurl",
+        "base/fieldTypes/identifier"
+    ],
+    "description": "A product or component that is part of the solution, whether developed in-house or obtained from a third party",
+    "category": "Solution structure"
+}

@@ -1,0 +1,120 @@
+% Expectations for the solution structure test fixture under Test content.
+%
+% secdeva_expect(Identifier, ExpectedRole, ExpectedFailure) where ExpectedRole is the
+% supply chain role the rules should derive, or "-" when no role should be derived
+% at all, and ExpectedFailure is "yes" or "no" for policy check failures on the card.
+%
+% Test cards are matched by their identifier, never by card key, so the fixture survives
+% being recreated.
+
+secdeva_expect("secdeva_test_ss_umbrella",                    "manufacturer",       "no").
+secdeva_expect("secdeva_test_ss_own_operated",                "none",               "no").
+secdeva_expect("secdeva_test_ss_own_nodelivery",              "-",                  "no").
+secdeva_expect("secdeva_test_ss_delivered",                   "distributor",        "no").
+secdeva_expect("secdeva_test_ss_imported",                    "importer",           "no").
+secdeva_expect("secdeva_test_ss_rebranded",                   "manufacturer",       "no").
+secdeva_expect("secdeva_test_ss_builtin",                     "integratedComponent","no").
+secdeva_expect("secdeva_test_ss_customer",                    "none",               "no").
+secdeva_expect("secdeva_test_ss_consumed",                    "none",               "no").
+secdeva_expect("secdeva_test_ss_nodelivery",                  "-",                  "no").
+secdeva_expect("secdeva_test_ss_bad_customer_builtin",        "integratedComponent","yes").
+secdeva_expect("secdeva_test_ss_bad_consumed_bundled",        "none",               "yes").
+secdeva_expect("secdeva_test_ss_bad_consumed_installed",      "none",               "yes").
+secdeva_expect("secdeva_test_ss_bad_thirdparty_developed",    "-",                  "yes").
+secdeva_expect("secdeva_test_ss_neg_operated_builtin",        "integratedComponent","no").
+secdeva_expect("secdeva_test_ss_neg_installed_on_consumed",   "none",               "no").
+
+% State-dependent cases. The required-field checks are gated on the card leaving the
+% initial workflow state, so these four are Active where every other case is Draft.
+
+secdeva_expect("secdeva_test_ss_active_bare",                 "-",                  "yes").
+secdeva_expect("secdeva_test_ss_active_nodelivery",           "-",                  "yes").
+secdeva_expect("secdeva_test_ss_active_complete_own",         "manufacturer",       "no").
+secdeva_expect("secdeva_test_ss_active_complete_third",       "distributor",        "no").
+
+secdeva_testCard(Id, Card) :-
+    secdeva_expect(Id, _, _),
+    field(Card, "base/fieldTypes/identifier", Id).
+
+secdeva_actualRole(Card, Role) :-
+    secdeva_testCard(_, Card),
+    fieldCalculated(Card, "secdeva/fieldTypes/supplyChainRole", Role).
+
+secdeva_roleCount(Card, N) :-
+    secdeva_testCard(_, Card),
+    N = #count { Role : secdeva_actualRole(Card, Role) }.
+
+secdeva_actualFailure(Card) :-
+    secdeva_testCard(_, Card),
+    base_policyCheckFailure(Card, _, _, _).
+
+% A role expectation passes only when exactly one role is derived. Deriving two roles
+% is the failure mode a card cannot show, because the field displays only one of them.
+
+secdeva_roleOk(Card) :-
+    secdeva_testCard(Id, Card),
+    secdeva_expect(Id, "-", _),
+    secdeva_roleCount(Card, 0).
+
+secdeva_roleOk(Card) :-
+    secdeva_testCard(Id, Card),
+    secdeva_expect(Id, Expected, _),
+    Expected != "-",
+    secdeva_actualRole(Card, Expected),
+    secdeva_roleCount(Card, 1).
+
+secdeva_failureOk(Card) :-
+    secdeva_testCard(Id, Card),
+    secdeva_expect(Id, _, "yes"),
+    secdeva_actualFailure(Card).
+
+secdeva_failureOk(Card) :-
+    secdeva_testCard(Id, Card),
+    secdeva_expect(Id, _, "no"),
+    not secdeva_actualFailure(Card).
+
+secdeva_pass(Card) :- secdeva_roleOk(Card), secdeva_failureOk(Card).
+
+%
+% Report output
+%
+
+selectAll.
+select(2, "tests", "policyChecks").
+select(2, "failures", "policyChecks").
+
+result(result).
+
+childResult(result, Card, "tests") :- secdeva_testCard(_, Card).
+
+field(Card, "expectedRole", R)    :- secdeva_testCard(Id, Card), secdeva_expect(Id, R, _).
+field(Card, "actualRole", R)      :- secdeva_actualRole(Card, R).
+field(Card, "actualRole", "-")    :- secdeva_testCard(_, Card), secdeva_roleCount(Card, 0).
+field(Card, "roleCount", N)       :- secdeva_roleCount(Card, N).
+field(Card, "expectedFailure", F) :- secdeva_testCard(Id, Card), secdeva_expect(Id, _, F).
+field(Card, "actualFailure", "yes") :- secdeva_actualFailure(Card).
+field(Card, "actualFailure", "no")  :- secdeva_testCard(_, Card), not secdeva_actualFailure(Card).
+field(Card, "state", S)           :- secdeva_testCard(_, Card), field(Card, "workflowState", S).
+field(Card, "verdict", "PASS")    :- secdeva_pass(Card).
+field(Card, "verdict", "FAIL")    :- secdeva_testCard(_, Card), not secdeva_pass(Card).
+
+% Every policy check failure raised on a test card, as its own row, because a card can
+% raise more than one and a single field would show only the first.
+
+childResult(result, (Card, Title), "failures") :-
+    secdeva_testCard(_, Card),
+    base_policyCheckFailure(Card, _, Title, _).
+field((Card, Title), "onCard", CardTitle) :-
+    secdeva_testCard(_, Card),
+    base_policyCheckFailure(Card, _, Title, _),
+    field(Card, "title", CardTitle).
+field((Card, Title), "checkTitle", Title) :-
+    secdeva_testCard(_, Card),
+    base_policyCheckFailure(Card, _, Title, _).
+
+field(result, "total",   N) :- N = #count { C : secdeva_testCard(_, C) }.
+field(result, "passed",  N) :- N = #count { C : secdeva_pass(C) }.
+field(result, "failed",  N) :- N = #count { C : secdeva_testCard(_, C), not secdeva_pass(C) }.
+field(result, "missing", N) :- N = #count { Id : secdeva_expect(Id,_,_), not secdeva_testCard(Id, _) }.
+
+orderBy("title", "ASC").

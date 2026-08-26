@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/riskMitigationTestCoverage",
+    "displayName": "Risk mitigation test coverage",
+    "description": "The status of testing the mitigations of cybersecurity risks of a project",
+    "category": "Security testing"
+}

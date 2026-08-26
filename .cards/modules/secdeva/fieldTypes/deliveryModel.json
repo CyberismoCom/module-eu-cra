@@ -1,0 +1,44 @@
+{
+    "name": "secdeva/fieldTypes/deliveryModel",
+    "displayName": "Delivery model",
+    "dataType": "enum",
+    "enumValues": [
+        {
+            "enumValue": "weDevelopAndDeliver",
+            "enumDisplayValue": "We develop it and place it on the market",
+            "enumDescription": "We develop this product ourselves and place it on the market under our own name, which makes us its manufacturer."
+        },
+        {
+            "enumValue": "weDeliver",
+            "enumDisplayValue": "We deliver it (already on the market)",
+            "enumDescription": "We include a product that is already available on the market"
+        },
+        {
+            "enumValue": "weImportAndDeliver",
+            "enumDisplayValue": "We import it into the market and deliver it",
+            "enumDescription": "We are the first to place this product on the market, from a manufacturer established outside the market."
+        },
+        {
+            "enumValue": "weRebrandAndDeliver",
+            "enumDisplayValue": "We deliver it under our own name, or substantially modified",
+            "enumDescription": "Placing a product on the market under your own name or trademark, or modifying it substantially, makes you its manufacturer."
+        },
+        {
+            "enumValue": "customerProvides",
+            "enumDisplayValue": "The customer provides it",
+            "enumDescription": "We depend on it but never ship it. Part of the environment rather than of the delivery."
+        },
+        {
+            "enumValue": "weOperateAsService",
+            "enumDisplayValue": "We use it to operate a service",
+            "enumDescription": "We run it ourselves, on infrastructure we are responsible for, rather than shipping it to anyone, so it is not placed on the market."
+        },
+        {
+            "enumValue": "weConsumeAsService",
+            "enumDisplayValue": "We consume it as a service",
+            "enumDescription": "A third party operates it and we use it over the network, such as a managed database, an identity provider or a payment API. We depend on it but never run or ship it, so it is not placed on the market."
+        }
+    ],
+    "description": "What we actually do with this product, including who is responsible for operating it. Determines the planned supply chain role.",
+    "category": "Solution structure"
+}

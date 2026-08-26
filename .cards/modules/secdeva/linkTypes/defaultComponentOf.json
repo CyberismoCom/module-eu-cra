@@ -1,0 +1,15 @@
+{
+    "name": "secdeva/linkTypes/defaultComponentOf",
+    "outboundDisplayName": "default component of",
+    "inboundDisplayName": "contains by default",
+    "sourceCardTypes": [
+        "secdeva/cardTypes/product"
+    ],
+    "destinationCardTypes": [
+        "secdeva/cardTypes/product"
+    ],
+    "enableLinkDescription": false,
+    "displayName": "Default component of",
+    "description": "The first product is a standard, default part or built-in component of the second product. Corresponds to the CSAF relationship category of the same name.",
+    "category": "Solution structure"
+}

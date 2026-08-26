@@ -21,7 +21,7 @@ Trust boundary:: A trust boundary is a boundary between different trust zone lev
     "template": "secdeva/templates/trustBoundary2"
 {{/createCards}}
 
-External entity:: An external entity is a source from which information flows into the system, or a recipients of information leaving the system
+External entity:: An external entity is a source from which information flows into the system, or a recipient of information leaving the system
 
 {{#createCards}}
   "buttonLabel": "Create an external entity",

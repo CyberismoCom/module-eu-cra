@@ -10,6 +10,7 @@
         },
         {
             "name": "base/fieldTypes/informationClassification",
+            "displayName": "Classification of this card",
             "isCalculated": false
         },
         {
@@ -18,7 +19,9 @@
         },
         {
             "name": "ismsa/fieldTypes/assetCriticalityForOperations",
-            "isCalculated": false
+            "displayName": "",
+            "isCalculated": true,
+            "enableOverride": true
         },
         {
             "name": "ismsa/fieldTypes/assetProvidedServices",
@@ -31,6 +34,33 @@
         {
             "name": "ismsa/fieldTypes/assetRiskEvaluationNeeded",
             "isCalculated": false
+        },
+        {
+            "name": "ismsa/fieldTypes/assetConfidentiality",
+            "isCalculated": false
+        },
+        {
+            "name": "ismsa/fieldTypes/assetIntegrity",
+            "isCalculated": false
+        },
+        {
+            "name": "ismsa/fieldTypes/assetAvailability",
+            "isCalculated": false
+        },
+        {
+            "name": "ismsa/fieldTypes/assetHse",
+            "isCalculated": false
+        },
+        {
+            "name": "ismsa/fieldTypes/dataCategories",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "ismsa/fieldTypes/assetCompliance",
+            "displayName": "",
+            "isCalculated": false,
+            "enableOverride": false
         }
     ],
     "alwaysVisibleFields": [
@@ -39,12 +69,18 @@
         "ismsa/fieldTypes/assetProvidedServices",
         "ismsa/fieldTypes/assetContactDetails",
         "ismsa/fieldTypes/assetCriticalityForOperations",
+        "ismsa/fieldTypes/assetConfidentiality",
+        "ismsa/fieldTypes/assetIntegrity",
+        "ismsa/fieldTypes/assetAvailability",
+        "ismsa/fieldTypes/assetHse",
+        "ismsa/fieldTypes/assetCompliance",
         "ismsa/fieldTypes/assetRiskEvaluationNeeded"
     ],
     "optionallyVisibleFields": [
-        "ismsa/fieldTypes/assetPersonalInformation",
         "ismsa/fieldTypes/assetLocation",
-        "ismsa/fieldTypes/assetBackups"
+        "ismsa/fieldTypes/assetBackups",
+        "ismsa/fieldTypes/dataCategories",
+        "ismsa/fieldTypes/assetPersonalInformation"
     ],
     "displayName": "Supplier asset",
     "description": "A supplier relationship that needs security management"

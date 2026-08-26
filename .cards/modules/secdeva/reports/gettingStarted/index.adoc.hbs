@@ -21,12 +21,12 @@ flowchart TB
 
 Each phase contains security controls and tasks relevant to that stage:
 
-* *{{#xref}}"cardKey": "{{this.foundationPhase}}"{{/xref}}* — Establish security governance, training, and tooling before development begins.
-* *{{#xref}}"cardKey": "{{this.designPhase}}"{{/xref}}* — Define security requirements, perform threat modeling, and create specifications.
-* *{{#xref}}"cardKey": "{{this.implementationPhase}}"{{/xref}}* — Apply secure coding practices and manage third-party dependencies.
+* *{{#xref}}"cardKey": "{{this.foundationPhase}}"{{/xref}}* — Assign security responsibilities and ensure that the team has the competence to act on them.
+* *{{#xref}}"cardKey": "{{this.designPhase}}"{{/xref}}* — Establish the security context, model threats and risks, and derive security requirements.
+* *{{#xref}}"cardKey": "{{this.implementationPhase}}"{{/xref}}* — Find security defects as code is written, and document what is being built.
 * *{{#xref}}"cardKey": "{{this.verificationPhase}}"{{/xref}}* — Conduct security testing and validate that requirements are met.
-* *{{#xref}}"cardKey": "{{this.releasesPhase}}"{{/xref}}* — Prepare secure release artifacts and documentation.
-* *{{#xref}}"cardKey": "{{this.operationsPhase}}"{{/xref}}* — Handle vulnerability disclosures, patches, and end-of-life planning.
+* *{{#xref}}"cardKey": "{{this.releasesPhase}}"{{/xref}}* — Pass the release security gate, protect release integrity, and document the release.
+* *{{#xref}}"cardKey": "{{this.operationsPhase}}"{{/xref}}* — Track third-party vulnerabilities and updates, and keep environments protected.
 
 === Adoption steps
 
@@ -50,11 +50,11 @@ flowchart LR
     subgraph D[Risk assessment]
       direction TB
       SC[Document product security context] --> TM[Manage threat models]
-      TM --> RI[Identify risks]
-      RI --> SR[Derive security requirements]
+      TM --> RI[Manage high-level risks]
+      RI --> SR[Write security requirements]
     end
     F --> D
-    D --> Next[Perform security controls scoping]
+    D --> Next[Scope secure development activities]
 ----
 
 * {{this.projectCheckbox}} Fill in the project scope and objectives on the card *{{#xref}}"cardKey": "{{this.project}}"{{/xref}}*, set the owner field, and then mark the page ready by using the "Activate" workflow transition.
@@ -62,9 +62,9 @@ flowchart LR
 * {{this.ensureCompetenceCheckbox}} *{{#xref}}"cardKey": "{{this.ensureCompetence}}"{{/xref}}* — Verify that assigned people have adequate cybersecurity knowledge, and arrange training where needed.
 * {{this.documentSecurityContextCheckbox}} *{{#xref}}"cardKey": "{{this.documentSecurityContext}}"{{/xref}}* — Describe the product's operating environment, trust boundaries, and key security assumptions. This context guides threat modeling and requirements work.
 * {{this.manageThreatModelsCheckbox}} *{{#xref}}"cardKey": "{{this.manageThreatModels}}"{{/xref}}* — Model your system's architecture and identify how it could be attacked. This reveals the risks and weaknesses that matter most.
-* {{this.manageRisksCheckbox}} *{{#xref}}"cardKey": "{{this.manageRisks}}"{{/xref}}* - Identify and document risks for the entire product or for a specific asset
+* {{this.manageRisksCheckbox}} *{{#xref}}"cardKey": "{{this.manageRisks}}"{{/xref}}* — Identify and document risks for the entire product or for a specific asset.
 * {{this.securityRequirementsCheckbox}} *{{#xref}}"cardKey": "{{this.securityRequirements}}"{{/xref}}* — Turn identified risks into concrete security requirements that guide implementation and testing.
-* {{this.processScopingCheckbox}} *{{#xref}}"cardKey": "{{this.processScoping}}"{{/xref}}* — Go through security controls to perform risk based security controls scoping
+* {{this.processScopingCheckbox}} *{{#xref}}"cardKey": "{{this.processScoping}}"{{/xref}}* — Go through the security controls to perform risk-based scoping of secure development activities.
 * As development progresses, address controls in each subsequent phase.
 * Use *{{#xref}}"cardKey": "{{this.statusNextSteps}}"{{/xref}}* to track overall progress and identify gaps.
 

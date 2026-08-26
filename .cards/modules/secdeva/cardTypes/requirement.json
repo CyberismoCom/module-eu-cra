@@ -14,10 +14,17 @@
             "displayName": "",
             "isCalculated": false,
             "enableOverride": false
+        },
+        {
+            "name": "secdeva/fieldTypes/testingToBypassMitigation",
+            "displayName": "",
+            "isCalculated": false,
+            "enableOverride": false
         }
     ],
     "alwaysVisibleFields": [
-        "base/fieldTypes/owner"
+        "base/fieldTypes/owner",
+        "secdeva/fieldTypes/testingToBypassMitigation"
     ],
     "optionallyVisibleFields": [
         "base/fieldTypes/identifier"

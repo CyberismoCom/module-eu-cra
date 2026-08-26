@@ -1,0 +1,13 @@
+{{#if layout}}
+attr(graph, toplevelGraph, rankdir, "{{layout}}").
+{{/if}}
+
+% The diagram is drawn around one product: the product itself, everything it is
+% transitively part of, and everything transitively part of it. Siblings and their
+% subtrees are left out, so the picture stays the chain this product sits in.
+
+focus({{cardKey}}).
+
+visible({{cardKey}}).
+visible(Whole) :- reaches(Whole, {{cardKey}}).
+visible(Part) :- reaches({{cardKey}}, Part).

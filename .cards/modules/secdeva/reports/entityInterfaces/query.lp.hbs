@@ -9,79 +9,79 @@ secdeva_ancestorOrSelf(Card, Card) :-
 result(result).
 
 % outbound external dataflow
-childResult(result, @concatenate(A, B, Title), "externalDataflows") :-
+childResult(result, (A, B, Title), "externalDataflows") :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_ancestorOrSelf(A, {{cardKey}}),
      not secdeva_ancestorOrSelf(B, {{cardKey}}).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/direction", "Outbound") :-
+field((A, B, Title), "secdeva/fieldTypes/direction", "Outbound") :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_ancestorOrSelf(A, {{cardKey}}),
      not secdeva_ancestorOrSelf(B, {{cardKey}}).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/title", Title) :-
+field((A, B, Title), "secdeva/fieldTypes/title", Title) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_ancestorOrSelf(A, {{cardKey}}),
      not secdeva_ancestorOrSelf(B, {{cardKey}}).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/externalTitle", External) :-
+field((A, B, Title), "secdeva/fieldTypes/externalTitle", External) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_ancestorOrSelf(A, {{cardKey}}),
      not secdeva_ancestorOrSelf(B, {{cardKey}}),
      field(B, "title", External).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/externalCardKey", B) :-
+field((A, B, Title), "secdeva/fieldTypes/externalCardKey", B) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_ancestorOrSelf(A, {{cardKey}}),
      not secdeva_ancestorOrSelf(B, {{cardKey}}).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/internalTitle", Internal) :-
+field((A, B, Title), "secdeva/fieldTypes/internalTitle", Internal) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_ancestorOrSelf(A, {{cardKey}}),
      not secdeva_ancestorOrSelf(B, {{cardKey}}),
      field(A, "title", Internal).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/internalCardKey", A) :-
+field((A, B, Title), "secdeva/fieldTypes/internalCardKey", A) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_ancestorOrSelf(A, {{cardKey}}),
      not secdeva_ancestorOrSelf(B, {{cardKey}}).
 
 % inbound external dataflow
 
-childResult(result, @concatenate(A, B, Title), "externalDataflows") :-
+childResult(result, (A, B, Title), "externalDataflows") :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      not secdeva_ancestorOrSelf(A, {{cardKey}}),
      secdeva_ancestorOrSelf(B, {{cardKey}}).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/direction", "Inbound") :-
+field((A, B, Title), "secdeva/fieldTypes/direction", "Inbound") :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      not secdeva_ancestorOrSelf(A, {{cardKey}}),
      secdeva_ancestorOrSelf(B, {{cardKey}}).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/title", Title) :-
+field((A, B, Title), "secdeva/fieldTypes/title", Title) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      not secdeva_ancestorOrSelf(A, {{cardKey}}),
      secdeva_ancestorOrSelf(B, {{cardKey}}).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/externalTitle", External) :-
+field((A, B, Title), "secdeva/fieldTypes/externalTitle", External) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      not secdeva_ancestorOrSelf(A, {{cardKey}}),
      secdeva_ancestorOrSelf(B, {{cardKey}}),
      field(A, "title", External).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/externalCardKey", A) :-
+field((A, B, Title), "secdeva/fieldTypes/externalCardKey", A) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      not secdeva_ancestorOrSelf(A, {{cardKey}}),
      secdeva_ancestorOrSelf(B, {{cardKey}}),
      field(B, "title", External).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/internalTitle", Internal) :-
+field((A, B, Title), "secdeva/fieldTypes/internalTitle", Internal) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      not secdeva_ancestorOrSelf(A, {{cardKey}}),
      secdeva_ancestorOrSelf(B, {{cardKey}}),
      field(B, "title", Internal).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/internalCardKey", B) :-
+field((A, B, Title), "secdeva/fieldTypes/internalCardKey", B) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      not secdeva_ancestorOrSelf(A, {{cardKey}}),
      secdeva_ancestorOrSelf(B, {{cardKey}}).

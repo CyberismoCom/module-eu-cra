@@ -1,0 +1,46 @@
+{{#each results}}
+
+Fixture: *{{this.total}}* test cases, *{{this.passed}}* passed, *{{this.failed}}* failed{{#if this.missing}}, *{{this.missing}}* expected test cards not found{{/if}}.
+
+{{#if this.tests}}
+
+.Solution structure test cases
+[cols="4,1,2,2,1,2,2,1"]
+|===
+| Test case | State | Expected role | Actual role | Roles | Failure expected | Failure raised | Verdict
+
+{{#each this.tests}}
+| xref:{{this.key}}.adoc[{{this.title}}]
+| {{this.state}}
+| {{this.expectedRole}}
+| {{this.actualRole}}
+| {{this.roleCount}}
+| {{this.expectedFailure}}
+| {{this.actualFailure}}
+| {{this.verdict}}
+{{/each}}
+
+|===
+
+{{else}}
+
+No test cards found. The fixture is identified by the `base/fieldTypes/identifier` values listed in the report query.
+
+{{/if}}
+
+{{#if this.failures}}
+
+.Policy check failures raised on test cards
+[cols="4,4"]
+|===
+| Test case | Policy check
+
+{{#each this.failures}}
+| {{this.onCard}}
+| {{this.checkTitle}}
+{{/each}}
+
+|===
+
+{{/if}}
+{{/each}}

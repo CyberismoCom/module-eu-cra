@@ -7,28 +7,28 @@
 {{/graph}}
 ====
 
-Digital products and solutions typically use many 3rd party technologies, which range from small libraries and packages to major dependencies such as toolkits, frameworks or applications. These technologies may introduce cybersecurity risks that must be managed and periodically reviewed, as the risks change over time.
+Digital products and solutions typically use many third-party technologies, which range from small libraries and packages to major dependencies such as toolkits, frameworks or applications. These technologies may introduce cybersecurity risks that must be managed and periodically reviewed, as the risks change over time.
 
 == How to decide if this control is required
 
-Managing the risks related to all 3rd party technologies is required. This control is required, if 3rd party technologies are in use.
+Managing the risks related to all third-party technologies is required. This control is required, if third-party technologies are in use.
 
-Reusing components from other internal projects may also introduce risks. Therefore, the risks related internal technologies shall be managed with the same process as the risks related to 3rd party technologies.
+Reusing components from other internal projects may also introduce risks. Therefore, the risks related internal technologies shall be managed with the same process as the risks related to third-party technologies.
 
 == How to implement
 
-1. For libraries and packages, the code reviewer shall consider the license, security and quality risks before approving a pull request that adds a new 3rd party dependency. Vulnerability management shall be in place. The development team should review the used 3rd party libraries and packages periodically, to remove unnecessary dependencies and to consider the risks that may have changed over time.
+1. For libraries and packages, the code reviewer shall consider the license, security and quality risks before approving a pull request that adds a new third-party dependency. Vulnerability management shall be in place. The development team should review the used third-party libraries and packages periodically, to remove unnecessary dependencies and to consider the risks that may have changed over time.
 
-2. For applications, frameworks, databases, toolkits and other significant 3rd party technologies, create a technology assessment document and follow the instructions from the template. The developent team should review the used significant 3rd party technologies periodically, to remove unnecessary dependencies and to consider the risks that may have changed over time. See {{#report}}"name": "secdeva/reports/xref", "identifier": "secdeva_register_technology-assessments"{{/report}} for how to create technology assessments.
+2. For applications, frameworks, databases, toolkits and other significant third-party technologies, create a technology assessment document and follow the instructions from the template. The developent team should review the used significant third-party technologies periodically, to remove unnecessary dependencies and to consider the risks that may have changed over time. See {{#report}}"name": "secdeva/reports/xref", "identifier": "secdeva_register_technology-assessments"{{/report}} for how to create technology assessments.
 
-3. In general, the development team must ensure that all 3rd party libraries, packages and significant dependencies are documented in a software bill of material (SBOM).
+3. In general, the development team must ensure that all third-party libraries, packages and significant dependencies are documented in a software bill of material (SBOM).
 
-4. Conduct a review of 3rd party technologies to ensure that 3rd party technologies have been identified and assessed. This review focuses on the identification and selection of the technolgies, vulnerability management is reviewed separately.
+4. Conduct a review of third-party technologies to ensure that third-party technologies have been identified and assessed. This review focuses on the identification and selection of the technolgies, vulnerability management is reviewed separately.
 
 {{#report}}
   "name": "secdeva/reports/createReview",
   "template": "secdeva/templates/reviewOf3rdPartyTechnologies",
-  "buttonLabel": "Create a review of 3rd party technologies management",
+  "buttonLabel": "Create a review of third-party technologies management",
   "phase": "secdeva_phase_design"
 {{/report}}
 

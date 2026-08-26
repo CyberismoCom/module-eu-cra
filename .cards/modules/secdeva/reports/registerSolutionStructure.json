@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/registerSolutionStructure",
+    "displayName": "Register - Solution structure",
+    "category": "Secure development",
+    "description": "Produces the contents for the solution structure register"
+}

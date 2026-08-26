@@ -1,0 +1,15 @@
+{
+    "name": "secdeva/linkTypes/optionalComponentOf",
+    "outboundDisplayName": "optional component of",
+    "inboundDisplayName": "contains optionally",
+    "sourceCardTypes": [
+        "secdeva/cardTypes/product"
+    ],
+    "destinationCardTypes": [
+        "secdeva/cardTypes/product"
+    ],
+    "enableLinkDescription": false,
+    "displayName": "Optional component of",
+    "description": "The first product is an optional feature, add-on, or plug-in that can be added to the second product. Corresponds to the CSAF relationship category of the same name.",
+    "category": "Solution structure"
+}

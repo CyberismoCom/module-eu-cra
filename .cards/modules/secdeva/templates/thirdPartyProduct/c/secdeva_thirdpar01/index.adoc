@@ -1,0 +1,5 @@
+#TODO: describe what this product is and what part it plays in the solution.#
+
+{{#report}}
+  "name": "secdeva/reports/product"
+{{/report}}

@@ -1,0 +1,29 @@
+{{#each results}}
+{{#if products}}
+
+[cols="3,2,3,2"]
+|===
+| Product | Origin | Planned supply chain role | Part of
+
+{{#each products}}
+| xref:{{this.key}}.adoc[{{this.title}}] [*{{this.workflowState}}*]
+| {{this.[secdeva/fieldTypes/productOrigin].displayValue}}
+| {{this.[secdeva/fieldTypes/supplyChainRole].displayValue}}
+{{#if this.partOf}}
+a|
+{{#each this.partOf}}
+* {{this.[secdeva/fieldTypes/relationshipLabel]}} xref:{{this.[secdeva/fieldTypes/relatedKey]}}.adoc[{{this.[secdeva/fieldTypes/relatedTitle]}}]
+{{/each}}
+{{else}}
+|
+{{/if}}
+{{/each}}
+
+|===
+
+{{else}}
+
+There are no products here yet.
+
+{{/if}}
+{{/each}}

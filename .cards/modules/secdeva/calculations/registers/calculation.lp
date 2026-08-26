@@ -34,6 +34,26 @@ secdeva_registerMember(Asset, Register) :-
   secdeva_closestProject(Asset, Project),
   base_projectCardType(Asset, "secdeva/cardTypes/interface").
 
+% members of the solution structure register
+
+secdeva_registerMember(Product, Register) :-
+  secdeva_closestProject(Register, Project),
+  field(Register, "base/fieldTypes/identifier", "secdeva_register_solution-structure"),
+  secdeva_closestProject(Product, Project),
+  base_projectCardType(Product, "secdeva/cardTypes/product").
+
+% members of the own and third-party product groups
+%
+% These are grouping cards inside the solution structure register. Membership follows
+% the origin of the product rather than the position of the card, so a product filed
+% under the wrong group still counts towards the right one.
+
+secdeva_registerMember(Product, Group) :-
+  secdeva_closestProject(Group, Project),
+  field(Group, "base/fieldTypes/identifier", GroupIdentifier),
+  secdeva_closestProject(Product, Project),
+  secdeva_productGroup(Product, GroupIdentifier).
+
 % members of the risk register
 
 secdeva_registerMember(Risk, Register) :-

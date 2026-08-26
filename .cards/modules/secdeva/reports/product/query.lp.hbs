@@ -1,0 +1,38 @@
+selectAll.
+
+result(result).
+
+% Components of this product, and the platforms it runs on.
+childResult(result, (Other, {{cardKey}}, Label), "components") :-
+    secdeva_csafRelationship(Other, {{cardKey}}, _, Label).
+childResult(result, ({{cardKey}}, Other, Label), "components") :-
+    secdeva_csafRelationship({{cardKey}}, Other, "installedOn", Label).
+
+% Products this one is a part of.
+childResult(result, ({{cardKey}}, Other, Label), "usedBy") :-
+    secdeva_csafRelationship({{cardKey}}, Other, Kind, Label),
+    Kind != "installedOn".
+
+field((A, B, Label), "secdeva/fieldTypes/relationshipLabel", Label) :-
+    secdeva_csafRelationship(A, B, _, Label),
+    A = {{cardKey}}.
+
+field((A, B, Label), "secdeva/fieldTypes/relationshipLabel", PartLabel) :-
+    secdeva_csafRelationship(A, B, Kind, Label),
+    B = {{cardKey}},
+    secdeva_csafPartLabel(Kind, PartLabel).
+field((A, B, Label), "secdeva/fieldTypes/relatedKey", A) :-
+    secdeva_csafRelationship(A, B, _, Label), B = {{cardKey}}.
+field((A, B, Label), "secdeva/fieldTypes/relatedKey", B) :-
+    secdeva_csafRelationship(A, B, _, Label), A = {{cardKey}}.
+field((A, B, Label), "secdeva/fieldTypes/relatedTitle", Title) :-
+    secdeva_csafRelationship(A, B, _, Label), B = {{cardKey}}, field(A, "title", Title).
+field((A, B, Label), "secdeva/fieldTypes/relatedTitle", Title) :-
+    secdeva_csafRelationship(A, B, _, Label), A = {{cardKey}}, field(B, "title", Title).
+
+childResult(result, Element, "implements") :-
+    link(Element, {{cardKey}}, "secdeva/linkTypes/implementedBy").
+
+order(2, "components", 1, "secdeva/fieldTypes/relationshipLabel", "ASC").
+order(2, "usedBy", 1, "secdeva/fieldTypes/relationshipLabel", "ASC").
+order(2, "implements", 1, "title", "ASC").

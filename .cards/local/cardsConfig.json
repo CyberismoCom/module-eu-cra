@@ -21,7 +21,7 @@
             "name": "secdeva",
             "location": "https://github.com/CyberismoCom/module-secure-development-essentials.git",
             "private": false,
-            "version": "^1.3.2"
+            "version": "^1.5.0"
         }
     ],
     "hubs": []

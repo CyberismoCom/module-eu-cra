@@ -1,0 +1,7 @@
+{
+    "name": "secdeva/fieldTypes/productVendor",
+    "displayName": "Vendor",
+    "dataType": "shortText",
+    "description": "The manufacturer or supplier of the product, used as the vendor branch in CSAF documents",
+    "category": "Solution structure"
+}

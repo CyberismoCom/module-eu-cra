@@ -4,14 +4,43 @@ This document is a review of security requirement testing in a development proje
 
 === Goal of testing
 
-The goal of security requirement testing is to test that
+The goal of security requirement testing is to test that security requirements have been correctly implemented.
 
-* Security requirements have been correctly implemented
-* When security requirements mitigate cyber risks, security requirement testing acts as mitigation testing. In this case, the testing should include, where practical, tests that attempt to defeat (thwart) the mitigation.
+When a security requirement mitigates a cyber risk, the testing must also attempt to defeat (thwart) the mitigation, whenever such testing is practical. That testing is reviewed in the review of risk mitigation testing.
+
+=== Scope of testing
+
+The scope of this review includes the security requirements of this development project. They are listed in the security requirement register {{#report}} "name": "secdeva/reports/xref", "identifier": "secdeva_register_security-requirements" {{/report}}.
+
+#TODO: Link the security requirements that you have tested to this card with 'tests' links#
 
 === Documentation and reporting
 
 #TODO: Add a link or an attachment to the detailed test plan and test results, for example to a test management system or to automated tests. If you're tracking manual testing in this tool, then describe the test plan and the test results here.#
+
+== Review checklist
+
+=== Test coverage
+
+All the security requirements that are in the scope of this review have been covered by testing:
+
+* [ ] OK
+* [ ] Not OK
+
+Review notes about test coverage:
+
+#TODO: Describe any notes and remarks about the review here#
+
+=== Test results
+
+Based on the test results, the security requirements have been correctly implemented. Any deviations have been recorded as security issues below:
+
+* [ ] OK
+* [ ] Not OK
+
+Review notes about the test results:
+
+#TODO: Describe any notes and remarks about the review here#
 
 == Identified security issues
 

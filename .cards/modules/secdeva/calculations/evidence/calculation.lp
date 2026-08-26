@@ -29,21 +29,25 @@ secdeva_evidence("secdeva_control_assign-people-to-project-roles", "secdeva_revi
 secdeva_evidence("secdeva_control_ensure-competence", "secdeva_review_competence", "Competence review").
 secdeva_legacyEvidence("secdeva_control_analyse-business-context", "secdeva_document_business-context-analysis", "Business context analysis").
 secdeva_evidence("secdeva_control_security-context", "secdeva_document_security-context", "Security context").
-secdeva_evidence("secdeva_control_interface-specifications", "secdeva_document_interface", "Interface description").
+% The interfaces control moved to the Secure Development Extended module (secdevb).
+% These facts remain only for the deprecated secdeva/templates/project (v1), which still
+% ships the "Write interface specifications" control card.
+secdeva_legacyEvidence("secdeva_control_interface-specifications", "secdeva_document_interface", "Interface description").
 secdeva_legacyEvidence("secdeva_control_interface-specifications", "secdeva_review_interfaces", "Review of interfaces").
 secdeva_evidence("secdeva_control_subprojects", "secdeva_review_project-structure", "Project structure review").
 secdeva_evidence("secdeva_control_static-code-analysis", "secdeva_review_static-code-analysis", "Review of \nstatic code analysis").
 secdeva_evidence("secdeva_control_manual-code-review", "secdeva_review_manual-code-review", "Review of \nmanual code review").
 secdeva_evidence("secdeva_control_threat-mitigation-testing", "secdeva_test_threat-mitigation", "Review of \nthreat mitigation testing").
+secdeva_evidence("secdeva_control_risk-mitigation-testing", "secdeva_review_risk-mitigation-testing", "Review of \nrisk mitigation testing").
 secdeva_legacyEvidence("secdeva_control_security-requirements", "secdeva_document_security-requirement-specification", "Security requirements specification").
 secdeva_evidence("secdeva_control_security-requirements", "secdeva_review_requirement-management", "Review of \nsecurity requirements management").
 secdeva_evidence("secdeva_control_security-requirements", "secdeva_register_security-requirements", "Security requirement register").
 secdeva_legacyEvidence("secdeva_control_security-requirement-testing", "secdeva_test_security-requirements", "Review of \nsecurity requirement testing").
 secdeva_evidence("secdeva_control_security-requirement-testing", "secdeva_review_security-requirement-testing", "Review of \nsecurity requirement testing").
 secdeva_evidence("secdeva_control_3rd-party-technologies", "secdeva_register_technology-assessments", "Technology assessments").
-secdeva_evidence("secdeva_control_3rd-party-technologies", "secdeva_review_3rd-party-technologies", "Review of 3rd party technologies").
-secdeva_evidence("secdeva_control_vulnerability-management", "secdeva_review_vulnerability-management", "Review of 3rd party \nvulnerability management").
-secdeva_evidence("secdeva_control_software-update-management", "secdeva_review_software-update-management", "Review of 3rd party \nsoftware update management").
+secdeva_evidence("secdeva_control_3rd-party-technologies", "secdeva_review_3rd-party-technologies", "Review of third-party technologies").
+secdeva_evidence("secdeva_control_vulnerability-management", "secdeva_review_vulnerability-management", "Review of third-party \nvulnerability management").
+secdeva_evidence("secdeva_control_software-update-management", "secdeva_review_software-update-management", "Review of third-party \nsoftware update management").
 secdeva_legacyEvidence("secdeva_control_use-of-cryptography", "secdeva_review_use-of-cryptography", "Review of \nthe use of cryptograpy").
 secdeva_evidence("secdeva_control_use-of-cryptography", "secdeva_document_use-of-cryptography", "Use of cryptograpy document").
 secdeva_evidence("secdeva_control_protect-environments", "secdeva_review_protect-environments", "Review of\nprotecting environments").

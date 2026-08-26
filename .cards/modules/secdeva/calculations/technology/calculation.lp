@@ -47,29 +47,29 @@ editingContentDenied(Document, "You cannot edit archived technology assessments"
     base_projectCardType(Document, "secdeva/cardTypes/technology"),
     field(Document, "workflowState", "Archived").
 
-policyCheckFailure(Document, "Threat model control", "Owner is a required field", "Fill in the owner field." ):-
+policyCheckFailure(Document, "Document control", "Owner is a required field", "Fill in the owner field." ):-
     base_projectCardType(Document, "secdeva/cardTypes/technology"),
     not field(Document, "workflowStateCategory", "initial"),
     not field(Document, "base/fieldTypes/owner", _).
 
-policyCheckFailure(Document, "Threat model control", "Approver is a required field", "Fill in the approver field." ):-
+policyCheckFailure(Document, "Document control", "Approver is a required field", "Fill in the approver field." ):-
     base_projectCardType(Document, "secdeva/cardTypes/technology"),
     not field(Document, "workflowStateCategory", "initial"),
     not field(Document, "base/fieldTypes/approver", _).
 
-policyCheckFailure(Document, "Threat model control", "Approval date is a mandatory field", "Fill in the approval date field." ):-
+policyCheckFailure(Document, "Document control", "Approval date is a mandatory field", "Fill in the approval date field." ):-
     base_projectCardType(Document, "secdeva/cardTypes/technology"),
     not field(Document, "workflowStateCategory", "initial"),
     not field(Document, "base/fieldTypes/approvalDate", _).
 
-policyCheckFailure(Document, "Threat model control", "The review subtasks of approved documents must be closed", "Complete review task(s)" ):-
+policyCheckFailure(Document, "Document control", "The review subtasks of approved documents must be closed", "Complete review task(s)" ):-
     base_projectCardType(Document, "secdeva/cardTypes/technology"),
     parent(ReviewTask, Document),
     base_projectCardType(ReviewTask, "base/cardTypes/reviewTask"),
     field(Document, "workflowState", "Approved"),
     not field(ReviewTask, "workflowState", "Closed as done").
 
-policyCheckFailure(Document, "Threat model control", "Reviewer cannot be the same as document owner", "The owner of a review task is also the owner of this threat model. Change the owner of the review task.") :-
+policyCheckFailure(Document, "Document control", "Reviewer cannot be the same as document owner", "The owner of a review task is also the owner of this document. Change the owner of the review task.") :-
     base_projectCardType(Document, "secdeva/cardTypes/technology"),
     parent(ReviewTask, Document),
     base_projectCardType(ReviewTask, "base/cardTypes/reviewTask"),
@@ -77,7 +77,7 @@ policyCheckFailure(Document, "Threat model control", "Reviewer cannot be the sam
     field(ReviewTask, "base/fieldTypes/owner", Reviewer),
     DocumentOwner = Reviewer.
 
-policyCheckFailure(ReviewTask, "Threat model control", "Reviewer cannot be the same as threat model owner", "The owner of a review task is also the owner of this threat model. Change the owner of the review task.") :-
+policyCheckFailure(ReviewTask, "Document control", "Reviewer cannot be the same as document owner", "The owner of a review task is also the owner of this document. Change the owner of the review task.") :-
     base_projectCardType(Document, "secdeva/cardTypes/technology"),
     parent(ReviewTask, Document),
     base_projectCardType(ReviewTask, "base/cardTypes/reviewTask"),

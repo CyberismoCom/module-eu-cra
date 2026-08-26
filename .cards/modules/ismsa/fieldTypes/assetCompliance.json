@@ -1,0 +1,28 @@
+{
+    "name": "ismsa/fieldTypes/assetCompliance",
+    "displayName": "Criticality for compliance",
+    "dataType": "enum",
+    "enumValues": [
+        {
+            "enumValue": "high",
+            "enumDisplayValue": "High",
+            "enumDescription": ""
+        },
+        {
+            "enumValue": "medium",
+            "enumDisplayValue": "Medium",
+            "enumDescription": ""
+        },
+        {
+            "enumValue": "low",
+            "enumDisplayValue": "Low",
+            "enumDescription": ""
+        },
+        {
+            "enumValue": "N/A",
+            "enumDisplayValue": "Not applicable",
+            "enumDescription": ""
+        }
+    ],
+    "description": "The impact on regulatory or standards compliance if this asset fails or is compromised. Set to Not Applicable if this asset has no compliance relevance."
+}

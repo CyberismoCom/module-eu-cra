@@ -1,0 +1,41 @@
+This register describes what the solution is made of: your own products, and the third-party products you integrate, bundle, install on, resell, or depend on as a service.
+
+[TIP]
+====
+The grouping into own and third-party products is for browsing only. The relationships between products are recorded as links, not as parent and child cards.
+====
+
+{{#each results}}
+{{#if ownGroup}}
+
+== Own products
+
+{{#createCards}}
+  "template": "secdeva/templates/ownProduct",
+  "buttonLabel": "Create an own product",
+  "cardKey": "{{ownGroup.key}}"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/productStructure",
+  "cardKey": "{{ownGroup.key}}"
+{{/report}}
+
+{{/if}}
+{{#if thirdPartyGroup}}
+
+== Third-party products
+
+{{#createCards}}
+  "template": "secdeva/templates/thirdPartyProduct",
+  "buttonLabel": "Create a third-party product",
+  "cardKey": "{{thirdPartyGroup.key}}"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/productStructure",
+  "cardKey": "{{thirdPartyGroup.key}}"
+{{/report}}
+
+{{/if}}
+{{/each}}

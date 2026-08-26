@@ -4,7 +4,7 @@ This document is a review of the management of security updates for #TODO: descr
 
 == 3^rd^ party software update management
 
-The goal of the 3rd party software update management of a technology is to identify, qualify and document security-related software updates to 3^rd^ party components that the product depends on.
+The goal of the third-party software update management of a technology is to identify, qualify and document security-related software updates to 3^rd^ party components that the product depends on.
 
 #TODO: document here, how the 3^rd^ party software update management for the scope is done:#
 
@@ -15,17 +15,17 @@ The goal of the 3rd party software update management of a technology is to ident
 
 == Review checklist
 
-Check that the 3rd party software update management covers all such technologies where 3rd party software update management is required.
+Check that the third-party software update management covers all such technologies where third-party software update management is required.
 
 * [ ] OK
 * [ ] Not OK
 
-Check that 3rd party software update management has been executed.
+Check that third-party software update management has been executed.
 
 * [ ] OK
 * [ ] Not OK
 
-Check that all 3rd party software updates and the information provided by the 3rd party suppliers have been processed.
+Check that all third-party software updates and the information provided by the third-party suppliers have been processed.
 
 * [ ] OK
 * [ ] Not OK

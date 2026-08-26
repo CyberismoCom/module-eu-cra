@@ -2,6 +2,94 @@ selectAll.
 
 result(result).
 
+secdeva_ancestorOrSelf(Ancestor, Card) :-
+     ancestor(Ancestor, Card).
+
+secdeva_ancestorOrSelf(Card, Card) :-
+     card(Card).
+
+% ----------------------------------------------------------------------------
+% Dataflows
+% ----------------------------------------------------------------------------
+
+% outbound external dataflow
+childResult(result, (A, B, Title), "externalDataflows") :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_ancestorOrSelf(A, {{cardKey}}),
+     not secdeva_ancestorOrSelf(B, {{cardKey}}).
+
+field((A, B, Title), "secdeva/fieldTypes/direction", "Outbound") :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_ancestorOrSelf(A, {{cardKey}}),
+     not secdeva_ancestorOrSelf(B, {{cardKey}}).
+
+field((A, B, Title), "secdeva/fieldTypes/title", Title) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_ancestorOrSelf(A, {{cardKey}}),
+     not secdeva_ancestorOrSelf(B, {{cardKey}}).
+
+field((A, B, Title), "secdeva/fieldTypes/externalTitle", External) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_ancestorOrSelf(A, {{cardKey}}),
+     not secdeva_ancestorOrSelf(B, {{cardKey}}),
+     field(B, "title", External).
+
+field((A, B, Title), "secdeva/fieldTypes/externalCardKey", B) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_ancestorOrSelf(A, {{cardKey}}),
+     not secdeva_ancestorOrSelf(B, {{cardKey}}).
+
+field((A, B, Title), "secdeva/fieldTypes/internalTitle", Internal) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_ancestorOrSelf(A, {{cardKey}}),
+     not secdeva_ancestorOrSelf(B, {{cardKey}}),
+     field(A, "title", Internal).
+
+field((A, B, Title), "secdeva/fieldTypes/internalCardKey", A) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     secdeva_ancestorOrSelf(A, {{cardKey}}),
+     not secdeva_ancestorOrSelf(B, {{cardKey}}).
+
+% inbound external dataflow
+
+childResult(result, (A, B, Title), "externalDataflows") :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     not secdeva_ancestorOrSelf(A, {{cardKey}}),
+     secdeva_ancestorOrSelf(B, {{cardKey}}).
+
+field((A, B, Title), "secdeva/fieldTypes/direction", "Inbound") :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     not secdeva_ancestorOrSelf(A, {{cardKey}}),
+     secdeva_ancestorOrSelf(B, {{cardKey}}).
+
+field((A, B, Title), "secdeva/fieldTypes/title", Title) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     not secdeva_ancestorOrSelf(A, {{cardKey}}),
+     secdeva_ancestorOrSelf(B, {{cardKey}}).
+
+field((A, B, Title), "secdeva/fieldTypes/externalTitle", External) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     not secdeva_ancestorOrSelf(A, {{cardKey}}),
+     secdeva_ancestorOrSelf(B, {{cardKey}}),
+     field(A, "title", External).
+
+field((A, B, Title), "secdeva/fieldTypes/externalCardKey", A) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     not secdeva_ancestorOrSelf(A, {{cardKey}}),
+     secdeva_ancestorOrSelf(B, {{cardKey}}),
+     field(B, "title", _).
+
+field((A, B, Title), "secdeva/fieldTypes/internalTitle", Internal) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     not secdeva_ancestorOrSelf(A, {{cardKey}}),
+     secdeva_ancestorOrSelf(B, {{cardKey}}),
+     field(B, "title", Internal).
+
+field((A, B, Title), "secdeva/fieldTypes/internalCardKey", B) :-
+     link(A, B, "secdeva/linkTypes/dataflow", Title),
+     not secdeva_ancestorOrSelf(A, {{cardKey}}),
+     secdeva_ancestorOrSelf(B, {{cardKey}}).
+
 % ----------------------------------------------------------------------------
 % Related risks
 % ----------------------------------------------------------------------------
@@ -31,6 +119,9 @@ childObject(result, Register, "securityIssueRegister") :-
 % ----------------------------------------------------------------------------
 % Ordering
 % ----------------------------------------------------------------------------
+
+order(2, "externalDataflows", 1, "secdeva/fieldTypes/direction", "ASC").
+order(2, "externalDataflows", 2, "secdeva/fieldTypes/internalTitle", "ASC").
 
 order(2, "risks", 1, "rank", "ASC").
 order(2, "issues", 1, "rank", "ASC").

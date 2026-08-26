@@ -15,10 +15,16 @@
             "displayName": "",
             "isCalculated": true,
             "enableOverride": true
+        },
+        {
+            "name": "secdeva/fieldTypes/trustBoundaryType",
+            "displayName": "",
+            "isCalculated": false
         }
     ],
     "alwaysVisibleFields": [
         "secdeva/fieldTypes/description",
+        "secdeva/fieldTypes/trustBoundaryType",
         "secdeva/fieldTypes/technology"
     ],
     "optionallyVisibleFields": [

@@ -10,6 +10,7 @@
         },
         {
             "name": "base/fieldTypes/informationClassification",
+            "displayName": "Classification of this card",
             "isCalculated": false
         },
         {
@@ -26,7 +27,9 @@
         },
         {
             "name": "ismsa/fieldTypes/assetCriticalityForOperations",
-            "isCalculated": false
+            "displayName": "",
+            "isCalculated": true,
+            "enableOverride": true
         },
         {
             "name": "ismsa/fieldTypes/assetIntegrity",
@@ -47,12 +50,36 @@
         {
             "name": "ismsa/fieldTypes/assetUpdates",
             "isCalculated": false
+        },
+        {
+            "name": "ismsa/fieldTypes/assetConfidentiality",
+            "isCalculated": false
+        },
+        {
+            "name": "ismsa/fieldTypes/assetHse",
+            "isCalculated": false
+        },
+        {
+            "name": "ismsa/fieldTypes/dataCategories",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "ismsa/fieldTypes/assetCompliance",
+            "displayName": "",
+            "isCalculated": false,
+            "enableOverride": false
         }
     ],
     "alwaysVisibleFields": [
         "base/fieldTypes/owner",
         "base/fieldTypes/informationClassification",
         "ismsa/fieldTypes/assetCriticalityForOperations",
+        "ismsa/fieldTypes/assetConfidentiality",
+        "ismsa/fieldTypes/assetIntegrity",
+        "ismsa/fieldTypes/assetAvailability",
+        "ismsa/fieldTypes/assetHse",
+        "ismsa/fieldTypes/assetCompliance",
         "ismsa/fieldTypes/assetRiskEvaluationNeeded",
         "ismsa/fieldTypes/assetAccessControl",
         "ismsa/fieldTypes/assetUpdates",
@@ -60,9 +87,8 @@
     ],
     "optionallyVisibleFields": [
         "ismsa/fieldTypes/assetLocation",
-        "ismsa/fieldTypes/assetPersonalInformation",
-        "ismsa/fieldTypes/assetIntegrity",
-        "ismsa/fieldTypes/assetAvailability"
+        "ismsa/fieldTypes/dataCategories",
+        "ismsa/fieldTypes/assetPersonalInformation"
     ],
     "displayName": "Device asset",
     "description": "A physical device or device collection that needs protection"

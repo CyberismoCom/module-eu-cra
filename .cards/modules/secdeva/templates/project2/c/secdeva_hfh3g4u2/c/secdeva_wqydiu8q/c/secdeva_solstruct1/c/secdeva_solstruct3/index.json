@@ -1,0 +1,8 @@
+{
+    "title": "Third-party products",
+    "cardType": "secdeva/cardTypes/register",
+    "workflowState": "",
+    "rank": "0|b",
+    "base/fieldTypes/identifier": "secdeva_group_third-party-products",
+    "links": []
+}

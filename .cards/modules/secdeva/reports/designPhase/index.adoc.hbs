@@ -1,53 +1,29 @@
 == Design
 
-The Design phase ensures that security is built into your product architecture from the start. These controls run throughout active development — revisit them whenever the design evolves or new components are introduced.
+The Design phase builds security into the product architecture. Its controls run throughout active development — revisit them whenever the design evolves or new components are introduced.
 
 .*What this phase covers*
 [%collapsible]
 ====
 [mermaid]
 ----
-flowchart LR
-    subgraph CR[Context and requirements]
-      direction LR
-      PSC[Document product security context] --> SR[Write security requirements]
-    end
-    subgraph AT[Architecture and threat analysis]
-      direction LR
-      TM[Manage threat models] --> HR[Manage high-level risks]
-      TM --> MI[Manage interfaces]
-    end
-    subgraph TC[Technology and configuration]
-      direction TB
-      TP[Manage 3rd party technologies]
-      CM[Configuration management plan]
-      CR2[Use cryptography properly]
-    end
-    CR --> AT
-    CR --> TC
-    AT --> SC[Ensure secure development in subprojects]
-    AT --> SR
+flowchart TB
+    S[Scoping] --> C[Security context]
+    C --> T[Threats and risks]
+    T --> R[Security requirements]
+    C --> D[Design reviews]
+    T --> D
+    C --> E[External technologies and suppliers]
 ----
-*Context and requirements*
 
-* *Document product security context* — Define intended use, misuse scenarios, essential functions, and environmental security assumptions.
-* *Write security requirements* — Capture and review the security requirements that your product must satisfy.
+* *Scoping* — decide which secure development activities apply to this project, based on its intended use and risk profile.
+* *Security context* — capture the intended use, misuse scenarios, essential functions and environmental assumptions, so that later work has a shared basis.
+* *Threats and risks* — model the architecture, identify design weaknesses, and track the cybersecurity risks that follow from them.
+* *Security requirements* — turn context, threats and risks into requirements that implementation and verification can be held to.
+* *Design reviews* — check the design against secure design practice and against privacy obligations.
+* *External technologies and suppliers* — assess third-party technologies, justify cryptographic choices, and ensure that suppliers and subprojects develop securely.
 
-*Architecture and threat analysis*
-
-* *Manage threat models* — Create and maintain threat models to identify design weaknesses and drive security improvements.
-* *Manage high-level risks* — Track broad cybersecurity risks tied to the project and product outcomes.
-* *Manage interfaces* — Document exposed interfaces as potential attack surfaces.
-
-*Technology and configuration*
-
-* *Manage 3rd party technologies* — Assess and periodically review external and internal dependencies.
-* *Make a configuration management plan* — Define how configuration items are stored, versioned, and protected.
-* *Use cryptography properly and effectively* — Justify algorithm and key management choices with a dedicated review.
-
-*Supply chain*
-
-* *Ensure secure development in subprojects* — Verify that suppliers and subprojects follow secure development practices.
+The controls listed below are the authoritative scope of this phase. Installed extension modules may add further controls here.
 ====
 
 === Why it matters

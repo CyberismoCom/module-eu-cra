@@ -36,6 +36,7 @@ secdeva_copyProgressMetric("secdeva_register_foundation-controls", "secdeva_phas
 secdeva_copyProgressMetric("secdeva_register_design-controls", "secdeva_phase_design").
 secdeva_copyProgressMetric("secdeva_register_implementation-controls", "secdeva_phase_implementation").
 secdeva_copyProgressMetric("secdeva_register_verification-controls", "secdeva_phase_verification").
+secdeva_copyProgressMetric("secdeva_register_releases-controls", "secdeva_phase_releases").
 secdeva_copyProgressMetric("secdeva_register_operations-controls", "secdeva_phase_operations").
 
 field(Phase, "base/fieldTypes/progress", Progress) :-

@@ -1,0 +1,13 @@
+selectAll.
+
+result(result).
+
+childObject(result, Group, "ownGroup") :-
+    field(Group, "base/fieldTypes/identifier", "secdeva_group_own-products"),
+    secdeva_closestProject(Group, Project),
+    secdeva_closestProject({{cardKey}}, Project).
+
+childObject(result, Group, "thirdPartyGroup") :-
+    field(Group, "base/fieldTypes/identifier", "secdeva_group_third-party-products"),
+    secdeva_closestProject(Group, Project),
+    secdeva_closestProject({{cardKey}}, Project).

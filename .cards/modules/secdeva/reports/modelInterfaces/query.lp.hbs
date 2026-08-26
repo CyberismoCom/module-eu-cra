@@ -16,112 +16,112 @@ result(result).
 % external dataflows
 
 % outbound external dataflow
-childResult(result, @concatenate(A, B, Title), "externalDataflows") :-
+childResult(result, (A, B, Title), "externalDataflows") :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
      secdeva_entityOutsideTrustBoundaries(B, {{cardKey}}).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/direction", "Outbound") :-
+field((A, B, Title), "secdeva/fieldTypes/direction", "Outbound") :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
      secdeva_entityOutsideTrustBoundaries(B, {{cardKey}}).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/title", Title) :-
+field((A, B, Title), "secdeva/fieldTypes/title", Title) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
      secdeva_entityOutsideTrustBoundaries(B, {{cardKey}}).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/externalTitle", External) :-
+field((A, B, Title), "secdeva/fieldTypes/externalTitle", External) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
      secdeva_entityOutsideTrustBoundaries(B, {{cardKey}}),
      field(B, "title", External).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/externalCardKey", B) :-
+field((A, B, Title), "secdeva/fieldTypes/externalCardKey", B) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
      secdeva_entityOutsideTrustBoundaries(B, {{cardKey}}).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/internalTitle", Internal) :-
+field((A, B, Title), "secdeva/fieldTypes/internalTitle", Internal) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
      secdeva_entityOutsideTrustBoundaries(B, {{cardKey}}),
      field(A, "title", Internal).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/internalCardKey", A) :-
+field((A, B, Title), "secdeva/fieldTypes/internalCardKey", A) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
      secdeva_entityOutsideTrustBoundaries(B, {{cardKey}}).
 
 % inbound external dataflow
-childResult(result, @concatenate(A, B, Title), "externalDataflows") :-
+childResult(result, (A, B, Title), "externalDataflows") :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_entityOutsideTrustBoundaries(A, {{cardKey}}),
      secdeva_entityWithinTrustBoundary(B, {{cardKey}}).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/direction", "Inbound") :-
+field((A, B, Title), "secdeva/fieldTypes/direction", "Inbound") :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_entityOutsideTrustBoundaries(A, {{cardKey}}),
      secdeva_entityWithinTrustBoundary(B, {{cardKey}}).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/title", Title) :-
+field((A, B, Title), "secdeva/fieldTypes/title", Title) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_entityOutsideTrustBoundaries(A, {{cardKey}}),
      secdeva_entityWithinTrustBoundary(B, {{cardKey}}).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/externalTitle", External) :-
+field((A, B, Title), "secdeva/fieldTypes/externalTitle", External) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_entityOutsideTrustBoundaries(A, {{cardKey}}),
      secdeva_entityWithinTrustBoundary(B, {{cardKey}}),
      field(A, "title", External).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/externalCardKey", A) :-
+field((A, B, Title), "secdeva/fieldTypes/externalCardKey", A) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_entityOutsideTrustBoundaries(A, {{cardKey}}),
      secdeva_entityWithinTrustBoundary(B, {{cardKey}}),
      field(B, "title", External).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/internalTitle", Internal) :-
+field((A, B, Title), "secdeva/fieldTypes/internalTitle", Internal) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_entityOutsideTrustBoundaries(A, {{cardKey}}),
      secdeva_entityWithinTrustBoundary(B, {{cardKey}}),
      field(B, "title", Internal).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/internalCardKey", B) :-
+field((A, B, Title), "secdeva/fieldTypes/internalCardKey", B) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_entityOutsideTrustBoundaries(A, {{cardKey}}),
      secdeva_entityWithinTrustBoundary(B, {{cardKey}}).
 
 % Internal dataflows
 
-childResult(result, @concatenate(A, B, Title), "internalDataflows") :-
+childResult(result, (A, B, Title), "internalDataflows") :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
      secdeva_entityWithinTrustBoundary(B, {{cardKey}}).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/title", Title) :-
+field((A, B, Title), "secdeva/fieldTypes/title", Title) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
      secdeva_entityWithinTrustBoundary(B, {{cardKey}}).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/source", Source) :-
+field((A, B, Title), "secdeva/fieldTypes/source", Source) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
      secdeva_entityWithinTrustBoundary(B, {{cardKey}}),
      field(A, "title", Source).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/destination", Destination) :-
+field((A, B, Title), "secdeva/fieldTypes/destination", Destination) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
      secdeva_entityWithinTrustBoundary(B, {{cardKey}}),
      field(B, "title", Destination).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/destinationCardKey", B) :-
+field((A, B, Title), "secdeva/fieldTypes/destinationCardKey", B) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
      secdeva_entityWithinTrustBoundary(B, {{cardKey}}).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/sourceCardKey", A) :-
+field((A, B, Title), "secdeva/fieldTypes/sourceCardKey", A) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_entityWithinTrustBoundary(A, {{cardKey}}),
      secdeva_entityWithinTrustBoundary(B, {{cardKey}}).

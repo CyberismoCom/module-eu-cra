@@ -1,28 +1,29 @@
 == Implementation
 
-The Implementation phase focuses on catching security issues as code is written. These controls ensure that defects are found early through automated and manual analysis, and that identified issues are tracked to resolution.
+The Implementation phase catches security problems while code is being written, and documents what is actually being built so that it can be verified later.
 
 .*What this phase covers*
 [%collapsible]
 ====
 [mermaid]
 ----
-flowchart LR
-    subgraph Detection
-      direction TB
-      SAST[Use static code analysis] --> D[Manage defects]
-      CR[Review code changes manually] --> D
-    end
+flowchart TB
+    A[Automated analysis] --> I[Security issue management]
+    M[Manual review] --> I
+    D[Documentation] --> V[Input to verification]
 ----
 
-* *Use static code analysis* — Run automated SAST tools to detect potential security issues directly from source code.
-* *Review code changes manually* — Peer review code to catch security-relevant programming and design errors that tooling may miss.
-* *Manage defects* — Track security issues to closure or documented risk acceptance, and communicate findings to stakeholders.
+* *Automated analysis* — detect security-relevant defects from source code at scale.
+* *Manual review* — have people examine changes for logic and design errors that tooling does not find.
+* *Security issue management* — track findings to closure or to documented risk acceptance, whatever their source.
+* *Documentation* — record what was built, including the attack surface and the guidance shipped to product users, so that verification and customers have something to work from.
+
+The controls listed below are the authoritative scope of this phase. Installed extension modules may add further controls here.
 ====
 
 === Why it matters
 
-The earlier a vulnerability is found, the cheaper it is to fix. Static analysis and code review form complementary detection layers — automated tools catch common patterns at scale, while human reviewers spot logic and design flaws. Defect management ensures nothing slips through unresolved.
+The earlier a vulnerability is found, the cheaper it is to fix. Automated analysis and manual review form complementary detection layers — tools catch common patterns at scale, while human reviewers spot logic and design flaws. Managing security issues ensures nothing slips through unresolved, and documenting what was built gives verification something concrete to test against.
 
 === Controls
 

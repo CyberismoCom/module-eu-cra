@@ -1,0 +1,10 @@
+{
+    "title": "Untitled third-party product",
+    "cardType": "secdeva/cardTypes/product",
+    "workflowState": "",
+    "rank": "0|a",
+    "links": [],
+    "secdeva/fieldTypes/productOrigin": "thirdPartyCommercial",
+    "lastUpdated": "2026-08-26T11:38:24.710Z",
+    "base/fieldTypes/informationClassification": "internal"
+}

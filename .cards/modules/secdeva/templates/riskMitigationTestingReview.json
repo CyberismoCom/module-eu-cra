@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/templates/riskMitigationTestingReview",
+    "displayName": "Review of risk mitigation testing",
+    "description": "A review of the testing of the mitigations of cybersecurity risks",
+    "category": "Secure development reviews"
+}

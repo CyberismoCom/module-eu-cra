@@ -15,11 +15,17 @@
             "displayName": "",
             "isCalculated": true,
             "enableOverride": true
+        },
+        {
+            "name": "ismsa/fieldTypes/dataCategories",
+            "displayName": "",
+            "isCalculated": false
         }
     ],
     "alwaysVisibleFields": [
         "secdeva/fieldTypes/description",
-        "secdeva/fieldTypes/technology"
+        "secdeva/fieldTypes/technology",
+        "ismsa/fieldTypes/dataCategories"
     ],
     "optionallyVisibleFields": [
         "base/fieldTypes/owner"

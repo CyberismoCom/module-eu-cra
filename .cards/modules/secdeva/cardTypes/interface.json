@@ -77,6 +77,11 @@
             "displayName": "",
             "isCalculated": false,
             "enableOverride": false
+        },
+        {
+            "name": "ismsa/fieldTypes/dataCategories",
+            "displayName": "",
+            "isCalculated": false
         }
     ],
     "alwaysVisibleFields": [
@@ -90,6 +95,7 @@
         "secdeva/fieldTypes/interfacePurpose"
     ],
     "optionallyVisibleFields": [
+        "ismsa/fieldTypes/dataCategories",
         "secdeva/fieldTypes/basicInputValidationTestingRequired",
         "secdeva/fieldTypes/basicStressTestingRequired",
         "secdeva/fieldTypes/networkTrafficLoadTestingRequired",

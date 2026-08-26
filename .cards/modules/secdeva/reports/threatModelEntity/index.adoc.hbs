@@ -6,23 +6,6 @@
 {{#unless (eq variant "external")}}
 == Composite elements
 
-[TIP]
-====
-To add a dataflow to or from this {{#if (eq variant "process")}}process{{/if}}{{#if (eq variant "dataStore")}}data store{{/if}}{{#if (eq variant "trustBoundary")}}trust boundary{{/if}}, click the link symbol in the top level tool bar.{{#unless (eq variant "trustBoundary")}} Optionally, if you want to model interfaces as well, you can create an interface and link any incoming dataflows to the interface.{{/unless}}
-====
-
-{{#unless (eq variant "trustBoundary")}}
-{{#createCards}}
-  "buttonLabel": "Create an interface",
-  "template": "secdeva/templates/interface2"
-{{/createCards}}
-
-{{#createCards}}
-  "buttonLabel": "Create a physical port or connection",
-  "template": "secdeva/templates/physicalConnection"
-{{/createCards}}
-
-{{/unless}}
 {{#createCards}}
   "buttonLabel": "Create a trust boundary",
   "template": "secdeva/templates/trustBoundary2"
@@ -51,15 +34,14 @@ To add a dataflow to or from this {{#if (eq variant "process")}}process{{/if}}{{
 {{/unless}}
 {{#each results}}
 
-== Interfaces and physical connections
+{{#unless (eq ../variant "trustBoundary")}}
+== Dataflows
 
-{{#if (eq ../variant "external")}}
 [TIP]
 ====
-To add a dataflow to or from this external entity, click the link symbol in the top level tool bar.
+To add a dataflow to or from this {{#if (eq ../variant "process")}}process{{/if}}{{#if (eq ../variant "dataStore")}}data store{{/if}}{{#if (eq ../variant "external")}}external entity{{/if}}, click the link symbol in the top level tool bar.{{#unless (eq ../variant "external")}} Optionally, if you want to model interfaces as well, you can create an interface and link any incoming dataflows to the interface.{{/unless}}
 ====
 
-{{/if}}
 {{#if externalDataflows}}
 
 .Dataflows to and from this entity
@@ -81,6 +63,9 @@ To add a dataflow to or from this external entity, click the link symbol in the 
 There are no dataflows to or from this entity.
 
 {{/if}}
+
+{{#unless (eq ../variant "external")}}
+== Interfaces and physical connections
 
 {{#if interfaces}}
 
@@ -127,6 +112,19 @@ There are no interfaces.
 There are no physical connections.
 
 {{/if}}
+
+{{#createCards}}
+  "buttonLabel": "Create an interface",
+  "template": "secdeva/templates/interface2"
+{{/createCards}}
+
+{{#createCards}}
+  "buttonLabel": "Create a physical port or connection",
+  "template": "secdeva/templates/physicalConnection"
+{{/createCards}}
+
+{{/unless}}
+{{/unless}}
 
 == Related risks
 
@@ -237,47 +235,62 @@ You have not yet created or linked any requirements.
       "cardKey": "{{../cardKey}}"
     }
 {{/createCards}}
+{{/unless}}
 
-== Related technology assessments
+== Related products
 
 [TIP]
 ====
-Create a technology assessment for significant 3rd party technologies such as databases, frameworks, or toolkits.
-You do not need to create assessments for smaller libraries and packages, as they are assessed as part of code review.
+Record what implements this element: your own products, commercial or open source third-party products, and services someone else operates. Link a product that is already in the solution structure register; create one only if it is not there yet, so the same component does not end up as two cards.
 ====
 
-{{#if technologies}}
+{{#if products}}
 
 [caption=]
-.Existing technology assessments
-[cols="5,2"]
+.Products that implement this element
+[cols="4,2"]
 |===
-| Technology | Workflow State
+| Product | Origin 
 
-{{#each technologies}}
+{{#each products}}
 |xref:{{this.key}}.adoc[{{this.title}}]
-|{{this.workflowState}}
+|{{this.[secdeva/fieldTypes/productOrigin].displayValue}}
 {{/each}}
 
 |===
 
-Create another technology assessment, if needed:
+Link or create another product, if needed:
 {{else}}
-You have not yet created or linked any technology assessments.
+You have not yet linked any products to this element.
 {{/if}}
 
+{{#if thirdPartyGroup}}
 {{#createCards}}
-    "template": "secdeva/templates/technology",
-    "buttonLabel": "Create a technology assessment",
-    "cardKey": "{{technologyAssessmentRegister.key}}",
+    "template": "secdeva/templates/thirdPartyProduct",
+    "buttonLabel": "Create a third-party product",
+    "cardKey": "{{thirdPartyGroup.key}}",
     "link": {
-      "linkType": "base/linkTypes/relatesTo",
+      "linkType": "secdeva/linkTypes/implementedBy",
       "direction": "outbound",
       "cardKey": "{{../cardKey}}"
     }
 {{/createCards}}
 
-{{/unless}}
+{{#createCards}}
+    "template": "secdeva/templates/ownProduct",
+    "buttonLabel": "Create an own product",
+    "cardKey": "{{ownGroup.key}}",
+    "link": {
+      "linkType": "secdeva/linkTypes/implementedBy",
+      "direction": "outbound",
+      "cardKey": "{{../cardKey}}"
+    }
+{{/createCards}}
+
+{{else}}
+NOTE: This project has no solution structure register yet, so there is nowhere to put a product. Add one to the project before recording which products implement this element.
+
+{{/if}}
 == Related decisions
 
 {{#if decisions}}

@@ -7,26 +7,26 @@
 {{/graph}}
 ====
 
-Digital products and solutions typically use many 3rd party technologies, which range from small libraries and packages to major dependencies such as toolkits, frameworks or applications. These technologies may introduce cybersecurity risks that must be managed and periodically reviewed, as the risks change over time.
+Digital products and solutions typically use many third-party technologies, which range from small libraries and packages to major dependencies such as toolkits, frameworks or applications. These technologies may introduce cybersecurity risks that must be managed and periodically reviewed, as the risks change over time.
 
 == How to decide if this secure development task is required
 
-Managing the risks related to all 3rd party technologies is required. This control is required, if 3rd party technologies are in use.
+Managing the risks related to all third-party technologies is required. This control is required, if third-party technologies are in use.
 
-Reusing components from other internal projects may also introduce risks. Therefore, the risks related internal technologies shall be managed with the same process as the risks related to 3rd party technologies.
+Reusing components from other internal projects may also introduce risks. Therefore, the risks related internal technologies shall be managed with the same process as the risks related to third-party technologies.
 
 == How to implement
 
-For libraries and packages, the code reviewer shall consider the license, security and quality risks before approving a pull request that adds a new 3rd party dependency. Vulnerability management shall be in place. The development team should review the used 3rd party libraries and packages periodically, to remove unnecessary dependencies and to consider the risks that may have changed over time.
+For libraries and packages, the code reviewer shall consider the license, security and quality risks before approving a pull request that adds a new third-party dependency. Vulnerability management shall be in place. The development team should review the used third-party libraries and packages periodically, to remove unnecessary dependencies and to consider the risks that may have changed over time.
 
-For applications, frameworks, databases, toolkits and other significant 3rd party technologies, create a technology selection document and follow the instructions from the template. The developent team should review the used significant 3rd party technologies periodically, to remove unnecessary dependencies and to consider the risks that may have changed over time.
+For applications, frameworks, databases, toolkits and other significant third-party technologies, create a technology selection document and follow the instructions from the template. The developent team should review the used significant third-party technologies periodically, to remove unnecessary dependencies and to consider the risks that may have changed over time.
 
 {{#createCards}}
   "template": "secdeva/templates/technology",
-  "buttonLabel": "Create a 3rd party technology document"
+  "buttonLabel": "Create a third-party technology document"
 {{/createCards}}
 
-In general, the development team must ensure that all 3rd party libraries, packages and significant dependencies are documented. Typically, libraries and packages are documented using a package manager or a package declaration as part of the source code. Other 3rd party technologies may be documented by creating a technology selection document for each technology.
+In general, the development team must ensure that all third-party libraries, packages and significant dependencies are documented. Typically, libraries and packages are documented using a package manager or a package declaration as part of the source code. Other third-party technologies may be documented by creating a technology selection document for each technology.
 
 {{#report}}
   "name": "secdeva/reports/projectTechnologies"
@@ -34,7 +34,7 @@ In general, the development team must ensure that all 3rd party libraries, packa
 
 == How to review this task
 
-For libraries and packages, check that the team's code review practice includes review of new 3rd party dependencies. Notice that there are separate secure development tasks for vulnerability management and open source license compliance.
+For libraries and packages, check that the team's code review practice includes review of new third-party dependencies. Notice that there are separate secure development tasks for vulnerability management and open source license compliance.
 
 Check that significant technology selections have been documented and the technology selection documents have been approved.
 

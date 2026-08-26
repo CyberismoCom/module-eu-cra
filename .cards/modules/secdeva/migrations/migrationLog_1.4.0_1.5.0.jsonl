@@ -1,0 +1,5 @@
+{"timestamp":"2026-08-24T18:35:19.613Z","operation":"resource_delete","target":"secdeva/fieldTypes/dataCategories","parameters":{"type":"fieldTypes"}}
+{"timestamp":"2026-08-25T03:58:40.508Z","operation":"resource_rename","target":"secdeva/reports/threatModelProduct","parameters":{"type":"reports","operation":{"name":"change","target":"secdeva/reports/threatModelProduct","to":"secdeva/reports/product"}}}
+{"timestamp":"2026-08-26T19:20:06.726Z","operation":"resource_delete","target":"secdeva/fieldTypes/supportPeriodEnd","parameters":{"type":"fieldTypes"}}
+{"timestamp":"2026-08-26T19:21:19.217Z","operation":"resource_delete","target":"secdeva/fieldTypes/productVersion","parameters":{"type":"fieldTypes"}}
+{"timestamp":"2026-08-26T21:09:50.411Z","operation":"resource_delete","target":"secdeva/fieldTypes/craProductCategory","parameters":{"type":"fieldTypes"}}

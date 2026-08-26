@@ -1,0 +1,68 @@
+{
+    "name": "ismsa/fieldTypes/dataCategories",
+    "displayName": "Data categories",
+    "dataType": "list",
+    "enumValues": [
+        {
+            "enumValue": "personalData",
+            "enumDisplayValue": "Personal data",
+            "enumDescription": "Everyday personal data: names, identifiers, contact details, location data, online identifiers. Use 'Sensitive personal data' as well for the special categories."
+        },
+        {
+            "enumValue": "sensitivePersonalData",
+            "enumDisplayValue": "Sensitive personal data",
+            "enumDescription": "Special categories of personal data under GDPR Article 9 — health, genetic and biometric data, racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, sex life and sexual orientation and criminal offence data under Article 10."
+        },
+        {
+            "enumValue": "credentials",
+            "enumDisplayValue": "Credentials",
+            "enumDescription": "Passwords, API keys and shared secrets."
+        },
+        {
+            "enumValue": "cryptographicKeyMaterial",
+            "enumDisplayValue": "Cryptographic key material",
+            "enumDescription": "Private keys, symmetric keys, certificates and seeds, including the keys used to sign releases."
+        },
+        {
+            "enumValue": "authenticationToken",
+            "enumDisplayValue": "Authentication token",
+            "enumDescription": "Session tokens, access tokens and refresh tokens."
+        },
+        {
+            "enumValue": "logData",
+            "enumDisplayValue": "Log data",
+            "enumDescription": "Audit trails, event journals, alarm and event history. The recorded past."
+        },
+        {
+            "enumValue": "configuration",
+            "enumDisplayValue": "Configuration",
+            "enumDescription": "How the asset is set up: parameters, policy and rules. Persistent, changed deliberately, usually by an administrator."
+        },
+        {
+            "enumValue": "controlData",
+            "enumDisplayValue": "Industrial control data",
+            "enumDescription": "Setpoints, commands, recipes and actuation requests. Data that determines what the asset, or the equipment it drives, actually does."
+        },
+        {
+            "enumValue": "operationalData",
+            "enumDisplayValue": "Operational data",
+            "enumDescription": "The data the asset exists to handle: process values, measurements, live alarm state, transactions, orders, documents and records."
+        },
+        {
+            "enumValue": "firmwareOrSoftwareImage",
+            "enumDisplayValue": "Firmware or software image",
+            "enumDescription": "Update payloads, signed artefacts, build outputs and control programs."
+        },
+        {
+            "enumValue": "telemetry",
+            "enumDisplayValue": "Telemetry",
+            "enumDescription": "Usage, diagnostic and crash data sent from an asset to whoever supplies or operates it. Not the data the asset handles on behalf of its users."
+        },
+        {
+            "enumValue": "safetyRelevantData",
+            "enumDisplayValue": "Safety relevant data",
+            "enumDescription": "Data whose corruption or loss has health, safety or environmental consequences."
+        }
+    ],
+    "description": "The categories of data that this asset stores, processes or transmits"
+}

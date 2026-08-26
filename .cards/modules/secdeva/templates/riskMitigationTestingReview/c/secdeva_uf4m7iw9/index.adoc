@@ -1,0 +1,67 @@
+== Introduction
+
+This document is a review of risk mitigation testing in a development project.
+
+=== Goal of testing
+
+The goal of risk mitigation testing is to test that the mitigations of cybersecurity risks work as planned and that they cannot easily be defeated (thwarted).
+
+Risks are mitigated by
+
+* security requirements that have been linked to a risk with a 'mitigates' link, and
+* fixes to security issues that have been linked to a risk with an 'increases risk' link.
+
+Security requirement testing verifies that a security requirement has been implemented as specified, and the verification of a security issue confirms that the fix works. In addition to that, the testing of each mitigation of a risk shall include testing that attempts to defeat (thwart) the mitigation, whenever such testing is practical.
+
+=== Scope of testing
+
+The scope of this review includes all the security requirements and security issues that have been linked to a risk in this development project. They are listed in the review checklist below.
+
+#TODO: Link the tests that you have executed to the security requirements and security issues that they test with 'tests' links#
+
+=== Documentation and reporting
+
+#TODO: Add a link or an attachment to the detailed test plan and test results, for example to a test management system or to automated tests. If you're tracking manual testing in this tool, then describe the test plan and the test results here.#
+
+== Review checklist
+
+{{#report}}
+  "name": "secdeva/reports/riskMitigationTestCoverage"
+{{/report}}
+
+=== Scoping of testing to defeat the mitigation
+
+Every security requirement that mitigates a risk and every security issue that increases a risk has the *Testing to defeat the mitigation* field set, and the recorded decision is correct:
+
+* *Required*, when it is practical to test whether the mitigation can be defeated, but the testing has not been executed yet
+* *Not applicable*, when such testing is not possible or not practical. The reasoning has been explained in the card.
+* *Done*, when the testing has been executed and the results have been recorded
+
+* [ ] OK
+* [ ] Not OK
+
+Review notes about the scoping of testing to defeat the mitigation:
+
+#TODO: Describe any notes and remarks about the review here#
+
+=== Execution of testing to defeat the mitigation
+
+The testing to defeat the mitigation has been executed for every mitigation where such testing is applicable, the test results have been recorded, and the mitigations could not be defeated:
+
+* [ ] OK
+* [ ] Not OK
+
+Review notes about the execution of testing to defeat the mitigation:
+
+#TODO: Describe any notes and remarks about the review here#
+
+== Identified security issues from this review
+
+{{#createCards}}
+  "template": "secdeva/templates/securityIssue",
+  "buttonLabel": "Create a new security issue"
+{{/createCards}}
+
+{{#report}}
+  "name": "secdeva/reports/securityIssueList"
+{{/report}}

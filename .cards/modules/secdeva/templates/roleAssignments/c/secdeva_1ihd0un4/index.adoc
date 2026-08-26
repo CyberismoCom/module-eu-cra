@@ -11,7 +11,7 @@ Assign people to the security-related roles by editing the child cards. Add new 
   "name": "base/reports/roleAssignments"
 {{/report}}
 
-== Role assigment review
+== Role assignment review
 
 * Check that all the required roles have been assigned
 * Ensure that the nominations are up to date.

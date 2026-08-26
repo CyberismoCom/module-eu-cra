@@ -13,79 +13,79 @@ secdeva_ancestorOrSelf(Card, Card) :-
 % ----------------------------------------------------------------------------
 
 % outbound external dataflow
-childResult(result, @concatenate(A, B, Title), "externalDataflows") :-
+childResult(result, (A, B, Title), "externalDataflows") :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_ancestorOrSelf(A, {{cardKey}}),
      not secdeva_ancestorOrSelf(B, {{cardKey}}).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/direction", "Outbound") :-
+field((A, B, Title), "secdeva/fieldTypes/direction", "Outbound") :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_ancestorOrSelf(A, {{cardKey}}),
      not secdeva_ancestorOrSelf(B, {{cardKey}}).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/title", Title) :-
+field((A, B, Title), "secdeva/fieldTypes/title", Title) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_ancestorOrSelf(A, {{cardKey}}),
      not secdeva_ancestorOrSelf(B, {{cardKey}}).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/externalTitle", External) :-
+field((A, B, Title), "secdeva/fieldTypes/externalTitle", External) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_ancestorOrSelf(A, {{cardKey}}),
      not secdeva_ancestorOrSelf(B, {{cardKey}}),
      field(B, "title", External).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/externalCardKey", B) :-
+field((A, B, Title), "secdeva/fieldTypes/externalCardKey", B) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_ancestorOrSelf(A, {{cardKey}}),
      not secdeva_ancestorOrSelf(B, {{cardKey}}).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/internalTitle", Internal) :-
+field((A, B, Title), "secdeva/fieldTypes/internalTitle", Internal) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_ancestorOrSelf(A, {{cardKey}}),
      not secdeva_ancestorOrSelf(B, {{cardKey}}),
      field(A, "title", Internal).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/internalCardKey", A) :-
+field((A, B, Title), "secdeva/fieldTypes/internalCardKey", A) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      secdeva_ancestorOrSelf(A, {{cardKey}}),
      not secdeva_ancestorOrSelf(B, {{cardKey}}).
 
 % inbound external dataflow
 
-childResult(result, @concatenate(A, B, Title), "externalDataflows") :-
+childResult(result, (A, B, Title), "externalDataflows") :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      not secdeva_ancestorOrSelf(A, {{cardKey}}),
      secdeva_ancestorOrSelf(B, {{cardKey}}).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/direction", "Inbound") :-
+field((A, B, Title), "secdeva/fieldTypes/direction", "Inbound") :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      not secdeva_ancestorOrSelf(A, {{cardKey}}),
      secdeva_ancestorOrSelf(B, {{cardKey}}).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/title", Title) :-
+field((A, B, Title), "secdeva/fieldTypes/title", Title) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      not secdeva_ancestorOrSelf(A, {{cardKey}}),
      secdeva_ancestorOrSelf(B, {{cardKey}}).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/externalTitle", External) :-
+field((A, B, Title), "secdeva/fieldTypes/externalTitle", External) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      not secdeva_ancestorOrSelf(A, {{cardKey}}),
      secdeva_ancestorOrSelf(B, {{cardKey}}),
      field(A, "title", External).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/externalCardKey", A) :-
+field((A, B, Title), "secdeva/fieldTypes/externalCardKey", A) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      not secdeva_ancestorOrSelf(A, {{cardKey}}),
      secdeva_ancestorOrSelf(B, {{cardKey}}),
      field(B, "title", _).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/internalTitle", Internal) :-
+field((A, B, Title), "secdeva/fieldTypes/internalTitle", Internal) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      not secdeva_ancestorOrSelf(A, {{cardKey}}),
      secdeva_ancestorOrSelf(B, {{cardKey}}),
      field(B, "title", Internal).
 
-field(@concatenate(A, B, Title), "secdeva/fieldTypes/internalCardKey", B) :-
+field((A, B, Title), "secdeva/fieldTypes/internalCardKey", B) :-
      link(A, B, "secdeva/linkTypes/dataflow", Title),
      not secdeva_ancestorOrSelf(A, {{cardKey}}),
      secdeva_ancestorOrSelf(B, {{cardKey}}).
@@ -162,21 +162,22 @@ childObject(result, Register, "securityRequirementRegister") :-
     secdeva_closestProject(Register, Project).
 
 % ----------------------------------------------------------------------------
-% Related technology assessments
+% Related products
 % ----------------------------------------------------------------------------
 
-childResult(result, Technology, "technologies") :-
-    link({{cardKey}}, Technology, "base/linkTypes/relatesTo"),
-    field(Technology, "cardType", "secdeva/cardTypes/technology").
+childResult(result, Product, "products") :-
+    link({{cardKey}}, Product, "secdeva/linkTypes/implementedBy"),
+    field(Product, "cardType", "secdeva/cardTypes/product").
 
-childResult(result, Technology, "technologies") :-
-    link(Technology, {{cardKey}}, "base/linkTypes/relatesTo"),
-    field(Technology, "cardType", "secdeva/cardTypes/technology").
-
-childObject(result, Register, "technologyAssessmentRegister") :-
+childObject(result, Group, "ownGroup") :-
     secdeva_closestProject({{cardKey}}, Project),
-    field(Register, "base/fieldTypes/identifier", "secdeva_register_technology-assessments"),
-    secdeva_closestProject(Register, Project).
+    field(Group, "base/fieldTypes/identifier", "secdeva_group_own-products"),
+    secdeva_closestProject(Group, Project).
+
+childObject(result, Group, "thirdPartyGroup") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    field(Group, "base/fieldTypes/identifier", "secdeva_group_third-party-products"),
+    secdeva_closestProject(Group, Project).
 
 % ----------------------------------------------------------------------------
 % Related decisions
@@ -228,6 +229,6 @@ order(2, "physicalConnections", 2, "title", "ASC").
 order(2, "risks", 1, "rank", "ASC").
 order(2, "issues", 1, "rank", "ASC").
 order(2, "requirements", 1, "rank", "ASC").
-order(2, "technologies", 1, "rank", "ASC").
+order(2, "products", 1, "title", "ASC").
 order(2, "decisions", 1, "rank", "ASC").
 order(2, "specifications", 1, "rank", "ASC").

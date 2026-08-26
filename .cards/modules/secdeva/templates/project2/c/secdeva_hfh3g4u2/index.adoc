@@ -18,7 +18,7 @@ End users: #TODO: Description of the user base#
 
 Internal stakeholders: #TODO: e.g., Legal, Compliance, CTO#
 
-NOTE: Set the owner field of this card to denote the person, who is responsible for cybersecurity of this development project. 
+NOTE: Set the owner field of this card to denote the person who is responsible for the cybersecurity of this development project. 
 
 == Success metrics (KPIs)
 How will we measure if the security integration was successful?

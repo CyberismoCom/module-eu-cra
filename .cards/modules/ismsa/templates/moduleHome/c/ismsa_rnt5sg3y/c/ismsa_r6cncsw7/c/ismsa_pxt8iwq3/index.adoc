@@ -56,19 +56,32 @@ Asset are recorded to Asset Register. If assets (with relevant details) for some
 
 Each asset category has their own classification/valuation scheme. All assets are classified at least from the following perspectives:
 
-* *Criticality for operations*: High, Medium, Low
+* *Overall asset criticality*: High, Medium, Low
+
+* *Criticality of confidentiality*: High (disclosure would have significant business impacts), Medium (disclosure would be undesirable but tolerable), Low (the asset is public, or disclosure would be harmless), Not Applicable
+
+* *Criticality of integrity*: High (unauthorised changes have significant business impacts), Medium (some changes are tolerable), Low (integrity not relevant for decisions/business), Not Applicable
+
+* *Criticality of availability*: High (days), Medium (weeks), Low (months), Not Applicable
+
+* *Criticality for health, safety and environment (HSE)*: High, Medium, Low, Not Applicable
 
 * *Risk evaluation needed*: Yes, No
 
-Risk evaluation is mandatory for assets that are critical for operations (Criticality for operations: High), but can also been conducted for non-critical assets, if justifiable (e.g. from brand-protection perspective).
+Overall asset criticality summarises the four criticality dimensions above, and it should usually be at least as high as the highest of them.
 
-Additionally, information/Data and Information systems are classified at least against the following aspects:
+Risk evaluation is mandatory for assets that are critical for operations (Overall asset criticality: High), but can also be conducted for non-critical assets, if justifiable (e.g. from brand-protection perspective).
 
-* *Confidentiality*: High (Confidential), Medium (Internal), Low (Public)
+[NOTE]
+====
+*Criticality of confidentiality is not the same thing as information classification.*
 
-* *Integrity*: High (unauthorised changes have significant business impacts), Medium (some changes are tolerable), Low (integrity not relevant for decisions/business)
+The *Classification of this card* field (public, internal, confidential) states how sensitive the asset *card* is, i.e. who is allowed to read this description of the asset. It says nothing about how sensitive the asset itself is.
 
-* *Availability*: High (days), Medium (weeks), Low (months)
+How sensitive the *asset* is, is recorded in *Criticality of confidentiality*.
+====
+
+Additionally, information/Data and Information systems are classified at least against the following aspect:
 
 * *Contains personal information*: Sensitive, Regular, None
 

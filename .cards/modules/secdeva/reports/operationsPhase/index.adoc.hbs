@@ -1,6 +1,6 @@
 == Operations
 
-The Operations phase covers ongoing security responsibilities that continue after a product is released. These controls apply throughout both the active development and support periods to keep your product and its infrastructure secure.
+The Operations phase covers the security responsibilities that continue after a product or service is released. Its controls apply throughout both the active development period and the support period.
 
 .*What this phase covers*
 [%collapsible]
@@ -8,19 +8,20 @@ The Operations phase covers ongoing security responsibilities that continue afte
 [mermaid]
 ----
 flowchart LR
-    3PV[Manage 3rd party vulnerabilities] --> 3PU[Manage 3rd party software updates]
-    3PU --> PE[Protect environments]
-    3PV --> PE
+    T[Third-party watch] --> U[Updates applied and distributed]
+    E[Environment protection]
 ----
 
-* *Manage 3rd party vulnerabilities* — Continuously identify, assess, and address vulnerabilities in third-party components using SBOM-based analysis, including during the support period.
-* *Manage 3rd party software updates* — Track supplier security updates for dependent components and operating systems, and ensure they are applied or distributed.
-* *Protect environments* — Maintain separation and security of development, test, staging, and production environments with access control, hardening, and safe handling of production data.
+* *Third-party watch* — continuously identify and assess vulnerabilities in third-party components, and track the security updates that suppliers publish for them.
+* *Updates applied and distributed* — ensure that the relevant updates are actually applied to your own systems and delivered onward to product users.
+* *Environment protection* — keep development, test, staging and production environments separated, hardened, access-controlled and monitored, and handle production data safely.
+
+The controls listed below are the authoritative scope of this phase. Installed extension modules may add further controls here.
 ====
 
 === Why it matters
 
-Security does not end at release. New vulnerabilities in third-party components emerge continuously, and unpatched environments become easy targets. These controls ensure your team stays on top of emerging threats and keeps infrastructure protected for as long as the product is in use.
+Security does not end at release. New vulnerabilities in third-party components emerge continuously, and unpatched environments become easy targets. These controls ensure that your team stays on top of emerging threats and keeps infrastructure protected for as long as the product is in use.
 
 === Controls
 

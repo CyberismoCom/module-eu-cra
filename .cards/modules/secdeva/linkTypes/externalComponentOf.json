@@ -1,0 +1,15 @@
+{
+    "name": "secdeva/linkTypes/externalComponentOf",
+    "outboundDisplayName": "external component of",
+    "inboundDisplayName": "uses an external component",
+    "sourceCardTypes": [
+        "secdeva/cardTypes/product"
+    ],
+    "destinationCardTypes": [
+        "secdeva/cardTypes/product"
+    ],
+    "enableLinkDescription": false,
+    "displayName": "External component of",
+    "description": "The first product functions as an external dependency or external library for the second product. Corresponds to the CSAF relationship category of the same name.",
+    "category": "Solution structure"
+}

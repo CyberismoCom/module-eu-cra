@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/controlTestRiskMitigations",
+    "displayName": "Control - Test risk mitigations",
+    "description": "The content of the internal control 'Test risk mitigations'",
+    "category": "Secure development"
+}

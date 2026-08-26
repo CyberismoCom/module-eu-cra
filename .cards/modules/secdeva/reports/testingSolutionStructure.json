@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/testingSolutionStructure",
+    "displayName": "Testing - solution structure",
+    "description": "Runs the solution structure test fixture under Test content and compares the derived supply chain roles and policy check failures against the expected results",
+    "category": "Test content"
+}

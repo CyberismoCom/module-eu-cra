@@ -1,4 +1,26 @@
 selectAll.
-result(Card) :-
-    ancestor(Card, {{cardKey}}),
-    field(Card, "cardType", "secdeva/cardTypes/technology").
+
+% The SBOM is generated from the solution structure. The root component of the document
+% is the own product that nothing else contains; every other product is a component.
+
+result(Product) :-
+    base_projectCardType(Product, "secdeva/cardTypes/product"),
+    secdeva_closestProject(Product, Project),
+    secdeva_closestProject({{cardKey}}, Project).
+
+field(Product, "secdeva/fieldTypes/isRootComponent", "yes") :-
+    result(Product),
+    field(Product, "secdeva/fieldTypes/productOrigin", "own"),
+    not secdeva_csafRelationship(Product, _, _, _).
+
+field(Product, "secdeva/fieldTypes/dependsOn", Other) :-
+    result(Product),
+    secdeva_csafRelationship(Other, Product, Kind, _),
+    secdeva_dependencyKind(Kind).
+
+secdeva_dependencyKind("defaultComponentOf").
+secdeva_dependencyKind("externalComponentOf").
+secdeva_dependencyKind("optionalComponentOf").
+secdeva_dependencyKind("installedWith").
+
+orderBy("title", "ASC").

@@ -10,6 +10,7 @@
         },
         {
             "name": "base/fieldTypes/informationClassification",
+            "displayName": "Classification of this card",
             "isCalculated": false
         },
         {
@@ -22,7 +23,9 @@
         },
         {
             "name": "ismsa/fieldTypes/assetCriticalityForOperations",
-            "isCalculated": false
+            "displayName": "",
+            "isCalculated": true,
+            "enableOverride": true
         },
         {
             "name": "ismsa/fieldTypes/assetIntegrity",
@@ -43,21 +46,44 @@
         {
             "name": "ismsa/fieldTypes/assetType",
             "isCalculated": false
+        },
+        {
+            "name": "ismsa/fieldTypes/assetConfidentiality",
+            "isCalculated": false
+        },
+        {
+            "name": "ismsa/fieldTypes/assetHse",
+            "isCalculated": false
+        },
+        {
+            "name": "ismsa/fieldTypes/dataCategories",
+            "displayName": "",
+            "isCalculated": false
+        },
+        {
+            "name": "ismsa/fieldTypes/assetCompliance",
+            "displayName": "",
+            "isCalculated": false,
+            "enableOverride": false
         }
     ],
     "alwaysVisibleFields": [
         "base/fieldTypes/owner",
         "base/fieldTypes/informationClassification",
         "ismsa/fieldTypes/assetCriticalityForOperations",
+        "ismsa/fieldTypes/assetConfidentiality",
+        "ismsa/fieldTypes/assetIntegrity",
+        "ismsa/fieldTypes/assetAvailability",
+        "ismsa/fieldTypes/assetHse",
+        "ismsa/fieldTypes/assetCompliance",
         "ismsa/fieldTypes/assetRiskEvaluationNeeded"
     ],
     "optionallyVisibleFields": [
+        "ismsa/fieldTypes/dataCategories",
         "ismsa/fieldTypes/assetType",
-        "ismsa/fieldTypes/assetPersonalInformation",
-        "ismsa/fieldTypes/assetIntegrity",
-        "ismsa/fieldTypes/assetAvailability",
         "ismsa/fieldTypes/assetLocation",
-        "ismsa/fieldTypes/assetBackups"
+        "ismsa/fieldTypes/assetBackups",
+        "ismsa/fieldTypes/assetPersonalInformation"
     ],
     "displayName": "Asset",
     "description": "A generic asset that needs protection"

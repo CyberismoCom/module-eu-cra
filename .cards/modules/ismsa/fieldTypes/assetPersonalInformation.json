@@ -1,6 +1,6 @@
 {
     "name": "ismsa/fieldTypes/assetPersonalInformation",
-    "displayName": "Contains personal information",
+    "displayName": "Contains personal information (deprecated)",
     "dataType": "enum",
     "enumValues": [
         {
@@ -20,5 +20,5 @@
             "enumDisplayValue": "None"
         }
     ],
-    "description": "Whether the asset contains personal information and its sensitivity"
+    "description": "Whether the asset contains personal information and its sensitivity. Deprecated, use 'Data categories' instead."
 }

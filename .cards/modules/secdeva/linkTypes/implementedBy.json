@@ -1,0 +1,18 @@
+{
+    "name": "secdeva/linkTypes/implementedBy",
+    "outboundDisplayName": "is implemented by",
+    "inboundDisplayName": "implements",
+    "sourceCardTypes": [
+        "secdeva/cardTypes/process",
+        "secdeva/cardTypes/dataStore",
+        "secdeva/cardTypes/trustBoundary",
+        "secdeva/cardTypes/interface"
+    ],
+    "destinationCardTypes": [
+        "secdeva/cardTypes/product"
+    ],
+    "enableLinkDescription": false,
+    "displayName": "Implemented by",
+    "description": "Links an element of a dataflow model to the product or component that implements it",
+    "category": "Solution structure"
+}

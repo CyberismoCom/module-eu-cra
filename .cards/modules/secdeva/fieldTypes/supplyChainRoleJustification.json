@@ -1,0 +1,7 @@
+{
+    "name": "secdeva/fieldTypes/supplyChainRoleJustification",
+    "displayName": "Supply chain role justification",
+    "dataType": "longText",
+    "description": "Why this supply chain role applies. Derived together with the role, and overridden whenever the role is set by hand.",
+    "category": "Solution structure"
+}

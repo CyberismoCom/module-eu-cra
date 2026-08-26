@@ -1,0 +1,8 @@
+{
+    "title": "Own products",
+    "cardType": "secdeva/cardTypes/register",
+    "workflowState": "",
+    "rank": "0|a",
+    "base/fieldTypes/identifier": "secdeva_group_own-products",
+    "links": []
+}

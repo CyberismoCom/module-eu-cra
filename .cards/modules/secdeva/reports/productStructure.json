@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/productStructure",
+    "displayName": "Product structure",
+    "category": "Solution structure",
+    "description": "Lists the products of a solution, with their origin, planned supply chain role and relationships"
+}

@@ -3,12 +3,36 @@
   "view": "secdeva/graphViews/entity"
 {{/graph}}
 
+{{#each results}}
+
+== Dataflows
+
 [TIP]
 ====
 To add a dataflow to or from this person, click the link symbol in the top level tool bar.
 ====
 
-{{#each results}}
+{{#if externalDataflows}}
+
+.Dataflows to and from this person
+[cols="2,2,2,4"]
+|===
+|Direction | Inside element | Outside element | Dataflow
+
+{{#each externalDataflows}}
+|{{this.[secdeva/fieldTypes/direction]}}
+|xref:{{this.[secdeva/fieldTypes/internalCardKey]}}.adoc[{{this.[secdeva/fieldTypes/internalTitle]}}]
+|xref:{{this.[secdeva/fieldTypes/externalCardKey]}}.adoc[{{this.[secdeva/fieldTypes/externalTitle]}}]
+|{{this.[secdeva/fieldTypes/title]}}
+{{/each}}
+
+|===
+
+{{else}}
+
+There are no dataflows to or from this person.
+
+{{/if}}
 
 == Related risks
 

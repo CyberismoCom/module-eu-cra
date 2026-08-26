@@ -1,0 +1,59 @@
+{
+    "name": "secdeva/fieldTypes/trustBoundaryType",
+    "displayName": "Trust boundary type",
+    "dataType": "enum",
+    "enumValues": [
+        {
+            "enumValue": "networkFiltered",
+            "enumDisplayValue": "Network segment, filtered",
+            "enumDescription": "A VLAN, subnet or security group where traffic to and from neighbouring segments is filtered by a firewall, an access control list, or a security group."
+        },
+        {
+            "enumValue": "networkUnfiltered",
+            "enumDisplayValue": "Network segment, unfiltered",
+            "enumDescription": "Segments separated by routing or addressing alone, with nothing filtering the traffic between them. Crossing this boundary requires no privilege."
+        },
+        {
+            "enumValue": "cloudTenant",
+            "enumDisplayValue": "Cloud account or tenant",
+            "enumDescription": "An administrative isolation boundary at a cloud provider, such as an account, a subscription, a project, or a Kubernetes namespace."
+        },
+        {
+            "enumValue": "host",
+            "enumDisplayValue": "Host or machine",
+            "enumDescription": "A physical or virtual machine. Crossing this boundary means leaving the machine."
+        },
+        {
+            "enumValue": "executionEnvironmentConfined",
+            "enumDisplayValue": "Execution environment, confined",
+            "enumDescription": "A container, sandbox, hypervisor guest or trusted execution environment that runs with restricted privileges."
+        },
+        {
+            "enumValue": "executionEnvironmentPrivileged",
+            "enumDisplayValue": "Execution environment, privileged",
+            "enumDescription": "An execution environment that runs privileged, or with host resources mounted, so that escaping it is a realistic step for an attacker."
+        },
+        {
+            "enumValue": "process",
+            "enumDisplayValue": "Operating system process or privilege level",
+            "enumDescription": "Operating system process isolation, or a change of privilege such as unprivileged to administrator, or user space to kernel."
+        },
+        {
+            "enumValue": "logical",
+            "enumDisplayValue": "Logical separation",
+            "enumDescription": "Separation that exists only within one running program, such as tenant separation in a multi-tenant application. Nothing in the infrastructure marks this boundary."
+        },
+        {
+            "enumValue": "physical",
+            "enumDisplayValue": "Physical site or enclosure",
+            "enumDescription": "A data centre, a room, a cabinet, or a tamper-resistant enclosure."
+        },
+        {
+            "enumValue": "organisational",
+            "enumDisplayValue": "Organisational boundary",
+            "enumDescription": "The edge of your organisation's control, such as the line between you and a supplier, a customer, or a contractor."
+        }
+    ],
+    "description": "What kind of separation this trust boundary represents",
+    "category": "Threat model"
+}

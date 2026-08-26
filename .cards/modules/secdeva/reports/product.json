@@ -1,0 +1,6 @@
+{
+    "name": "secdeva/reports/product",
+    "displayName": "Product",
+    "category": "Solution structure",
+    "description": "The content of a product card: its structure diagram, its components, where it is used, and the threat model elements it implements"
+}

@@ -13,26 +13,6 @@
             "isCalculated": false
         },
         {
-            "name": "secdeva/fieldTypes/sbomComponentType",
-            "isCalculated": false
-        },
-        {
-            "name": "secdeva/fieldTypes/sbomComponentGroup",
-            "isCalculated": false
-        },
-        {
-            "name": "secdeva/fieldTypes/sbomComponentName",
-            "isCalculated": false
-        },
-        {
-            "name": "secdeva/fieldTypes/sbomComponentCpe",
-            "isCalculated": false
-        },
-        {
-            "name": "secdeva/fieldTypes/sbomComponentPurl",
-            "isCalculated": false
-        },
-        {
             "name": "base/fieldTypes/identifier",
             "displayName": "",
             "isCalculated": false,
@@ -52,11 +32,6 @@
         }
     ],
     "optionallyVisibleFields": [
-        "secdeva/fieldTypes/sbomComponentType",
-        "secdeva/fieldTypes/sbomComponentGroup",
-        "secdeva/fieldTypes/sbomComponentName",
-        "secdeva/fieldTypes/sbomComponentCpe",
-        "secdeva/fieldTypes/sbomComponentPurl",
         "base/fieldTypes/identifier",
         "base/fieldTypes/informationClassification"
     ],

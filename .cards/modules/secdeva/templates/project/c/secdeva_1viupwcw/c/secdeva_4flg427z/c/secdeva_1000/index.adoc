@@ -13,7 +13,7 @@ Assigning persons to their security-related roles is done to ensure that the res
 
 This control is always required, because persons need to be assigned to roles to execute the secure development processes.
 
-== How to implement this task
+== How to implement
 
 Assign people to the security-related roles by editing the child cards. Add new role assignments, as needed.
 

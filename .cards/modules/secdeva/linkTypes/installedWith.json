@@ -1,0 +1,15 @@
+{
+    "name": "secdeva/linkTypes/installedWith",
+    "outboundDisplayName": "installed with",
+    "inboundDisplayName": "installed alongside",
+    "sourceCardTypes": [
+        "secdeva/cardTypes/product"
+    ],
+    "destinationCardTypes": [
+        "secdeva/cardTypes/product"
+    ],
+    "enableLinkDescription": false,
+    "displayName": "Installed with",
+    "description": "The first product is bundled and installed alongside the second product during setup. Corresponds to the CSAF relationship category of the same name.",
+    "category": "Solution structure"
+}

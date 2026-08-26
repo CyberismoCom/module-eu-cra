@@ -1,6 +1,6 @@
 == Introduction
 
-Threat modelling is a process to identify security threats based on the projected product architecture. This threat model covers the scope of development project.
+Threat modelling is a process to identify security threats based on the projected product architecture. This threat model covers the scope of the development project.
 
 {{#each results}}
 
@@ -107,7 +107,7 @@ a| {{#createCards}}
     "template": "secdeva/templates/trustBoundary2"
 {{/createCards}}
 
-| An *external entity* is a source from which information flows into the system, or a recipients of information leaving the system
+| An *external entity* is a source from which information flows into the system, or a recipient of information leaving the system
 a| {{#createCards}}
   "buttonLabel": "Create an external entity",
   "template": "secdeva/templates/external2"
@@ -183,7 +183,7 @@ There are no 3rd party technology assessments.
 
 TIP: Create dataflows, interfaces and physical connections in the underlying threat model.
 
-=== Exteral data flows 
+=== External data flows 
 
 {{#if externalDataflows}}
 
@@ -449,7 +449,7 @@ No security issues have been identified in this threat model.
 
 {{/if}}
 
-See the security issue register ({{#each securityIssueRegisterRefs}}{{#unless @first}}{{#unless @last}}, {{/unless}}{{/unless}}{{#if @last}}{{#unless @first}} and {{/unless}}{{/if}}{{#xref}}"cardKey": "{{this.key}}"{{/xref}}{{/each}}) for a complete list of risks in this project.
+See the security issue register ({{#each securityIssueRegisterRefs}}{{#unless @first}}{{#unless @last}}, {{/unless}}{{/unless}}{{#if @last}}{{#unless @first}} and {{/unless}}{{/if}}{{#xref}}"cardKey": "{{this.key}}"{{/xref}}{{/each}}) for a complete list of security issues in this project.
 
 {{#createCards}}
     "template": "secdeva/templates/securityIssue",

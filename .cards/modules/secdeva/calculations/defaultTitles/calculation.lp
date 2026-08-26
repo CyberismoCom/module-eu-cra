@@ -25,6 +25,7 @@ secdeva_defaultTitle("secdeva_document_security-context", "Security context - ")
 secdeva_defaultTitleWithDate("secdeva_review_requirement-management", "Review of security requirement management - ").
 secdeva_defaultTitleWithDate("secdeva_test_security-requirements", "Security requirement test - ").
 secdeva_defaultTitleWithDate("secdeva_review_security-requirement-testing", "Review of security requirement testing - ").
+secdeva_defaultTitleWithDate("secdeva_review_risk-mitigation-testing", "Review of risk mitigation testing - ").
 secdeva_defaultTitleWithDate("secdeva_review_vulnerability-management", "Review of vulnerability management - ").
 secdeva_defaultTitle("secdeva_test_threat-mitigation", "Threat mitigation test - ").
 secdeva_defaultTitle("secdeva_document_threat-model", "Threat model - ").
@@ -34,7 +35,7 @@ secdeva_defaultTitle("secdeva_review_project-role-assignments", "Role assignment
 secdeva_defaultTitleWithDate("secdeva_review_project-structure", "Review of project structure - ").
 secdeva_defaultTitleWithDate("secdeva_review_competence", "Competence review - ").
 secdeva_defaultTitleWithDate("secdeva_review_periodic", "Periodic review - ").
-secdeva_defaultTitleWithDate("secdeva_review_3rd-party-technologies", "Review of 3rd party technologies - ").
+secdeva_defaultTitleWithDate("secdeva_review_3rd-party-technologies", "Review of third-party technologies - ").
 secdeva_defaultTitleWithDate("secdeva_review_risk-management", "Review of risk management - ").
 secdeva_defaultTitleWithDate("secdeva_review_interfaces", "Review of interfaces - "). % Legacy
 secdeva_defaultTitleWithDate("secdeva_review_process-scoping", "Review of process scoping - ").

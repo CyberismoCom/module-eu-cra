@@ -1,0 +1,72 @@
+selectAll.
+
+result(result).
+
+% Security requirements that mitigate a risk
+
+childResult(result, Requirement, "requirements") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(Requirement, Project),
+    field(Requirement, "cardType", "secdeva/cardTypes/requirement"),
+    field(Risk, "cardType", "ismsa/cardTypes/risk"),
+    link(Requirement, Risk, "ismsa/linkTypes/mitigates").
+
+childResult(Requirement, Risk, "risks") :-
+    childResult(result, Requirement, "requirements"),
+    field(Risk, "cardType", "ismsa/cardTypes/risk"),
+    link(Requirement, Risk, "ismsa/linkTypes/mitigates").
+
+% Security issues that increase a risk
+
+childResult(result, Issue, "issues") :-
+    secdeva_closestProject({{cardKey}}, Project),
+    secdeva_closestProject(Issue, Project),
+    field(Issue, "cardType", "secdeva/cardTypes/securityIssue"),
+    field(Risk, "cardType", "ismsa/cardTypes/risk"),
+    link(Issue, Risk, "secdeva/linkTypes/increasesRisk").
+
+childResult(Issue, Risk, "risks") :-
+    childResult(result, Issue, "issues"),
+    field(Risk, "cardType", "ismsa/cardTypes/risk"),
+    link(Issue, Risk, "secdeva/linkTypes/increasesRisk").
+
+% Both security requirements and security issues that mitigate a risk are
+% mitigations, whose testing is in the scope of risk mitigation testing
+
+secdeva_mitigation(Requirement) :-
+    childResult(result, Requirement, "requirements").
+
+secdeva_mitigation(Issue) :-
+    childResult(result, Issue, "issues").
+
+childResult(Mitigation, Test, "tests") :-
+    secdeva_mitigation(Mitigation),
+    field(Test, "cardType", "base/cardTypes/review"),
+    link(Test, Mitigation, "secdeva/linkTypes/tests").
+
+field(result, "mitigations", "void") :-
+    secdeva_mitigation(_).
+
+% The decision about testing to defeat the mitigation must be recorded
+% for every mitigation
+
+field(Mitigation, "bypassTestingNotDecided", "void") :-
+    secdeva_mitigation(Mitigation),
+    not field(Mitigation, "secdeva/fieldTypes/testingToBypassMitigation", _).
+
+field(result, "bypassTestingDecided", "void") :-
+    field(Mitigation, "secdeva/fieldTypes/testingToBypassMitigation", _) :
+    secdeva_mitigation(Mitigation).
+
+% Testing to defeat the mitigation has been executed, when it is no longer
+% required for any of the mitigations
+
+field(Mitigation, "bypassTestingRequired", "void") :-
+    secdeva_mitigation(Mitigation),
+    field(Mitigation, "secdeva/fieldTypes/testingToBypassMitigation", "required").
+
+field(result, "bypassTestingExecuted", "void") :-
+    not field(Mitigation, "secdeva/fieldTypes/testingToBypassMitigation", "required") :
+    secdeva_mitigation(Mitigation).
+
+orderBy("title", "ASC").

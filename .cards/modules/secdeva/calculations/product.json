@@ -1,0 +1,7 @@
+{
+    "name": "secdeva/calculations/product",
+    "displayName": "Products",
+    "description": "Normalises the CSAF relationships between products and derives the planned supply chain role",
+    "calculation": "calculation.lp",
+    "category": "Solution structure"
+}

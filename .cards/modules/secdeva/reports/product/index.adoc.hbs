@@ -1,0 +1,94 @@
+.Product structure
+[%collapsible]
+====
+{{#graph}}
+  "model": "secdeva/graphModels/productStructure",
+  "view": "secdeva/graphViews/product"
+{{/graph}}
+====
+
+{{#each results}}
+== Relationships to other products
+
+[TIP]
+====
+Record how this product relates to the others in the solution by linking it with the link symbol in the top level tool bar. Link *from the part to the whole*: open the component and link it to the product it belongs to.
+
+Choose the link type that matches how this product relates to the other one:
+
+* *default component of* — it ships as a built-in part of the other product, not as a distinct product
+* *external component of* — the other product needs it as an external dependency or library
+* *installed on* — it runs on top of the other product, such as an operating system or hardware platform
+* *installed with* — it is bundled and installed alongside the other product during setup
+* *optional component of* — it is an add-on, plug-in or licensed extra for the other product
+
+====
+
+{{#if components}}
+
+.What this product is made of
+[cols="3,5"]
+|===
+| Relationship | Product
+
+{{#each components}}
+| {{this.[secdeva/fieldTypes/relationshipLabel]}}
+| xref:{{this.[secdeva/fieldTypes/relatedKey]}}.adoc[{{this.[secdeva/fieldTypes/relatedTitle]}}]
+{{/each}}
+
+|===
+
+{{else}}
+
+No other product is recorded as a component of this one.
+
+{{/if}}
+{{#if usedBy}}
+
+.Where this product is used
+[cols="3,5"]
+|===
+| Relationship | Product
+
+{{#each usedBy}}
+| {{this.[secdeva/fieldTypes/relationshipLabel]}}
+| xref:{{this.[secdeva/fieldTypes/relatedKey]}}.adoc[{{this.[secdeva/fieldTypes/relatedTitle]}}]
+{{/each}}
+
+|===
+
+{{else}}
+
+This product is not recorded as part of any other product.
+
+{{/if}}
+
+== Where this product appears in the threat model
+
+[TIP]
+====
+Link this product to the elements of the threat model that it implements: the processes, data stores and trust boundaries that it is the software or hardware behind.
+
+The easiest way is from the element itself, where the products that implement it are listed together with buttons for adding one. You can also do it from here, with the link symbol in the top level tool bar: choose *implements* and pick the element.
+====
+
+{{#if implements}}
+
+Threat model elements:
+
+{{#each implements}}
+* {{#xref}}"cardKey":"{{this.key}}"{{/xref}}
+{{/each}}
+
+{{else}}
+
+*This product is not linked to the threat model.* No element is recorded as implemented by it.
+
+{{/if}}
+{{/each}}
+
+== Technology assessment
+
+{{#report}}
+  "name": "secdeva/reports/createTechnologyAssessment"
+{{/report}}

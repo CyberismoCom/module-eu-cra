@@ -1,6 +1,6 @@
 {
     "displayName": "External entity (deprecated)",
-    "description": "A source from which information flows into the system, or a recipients of information leaving the system in a dataflow model. Included for backward compatibility.",
+    "description": "A source from which information flows into the system, or a recipient of information leaving the system in a dataflow model. Included for backward compatibility.",
     "category": "Deprecated",
     "name": "secdeva/templates/external"
 }

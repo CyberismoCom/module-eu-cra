@@ -1,0 +1,15 @@
+{
+    "name": "secdeva/linkTypes/installedOn",
+    "outboundDisplayName": "installed on",
+    "inboundDisplayName": "platform for",
+    "sourceCardTypes": [
+        "secdeva/cardTypes/product"
+    ],
+    "destinationCardTypes": [
+        "secdeva/cardTypes/product"
+    ],
+    "enableLinkDescription": false,
+    "displayName": "Installed on",
+    "description": "The first product is installed directly on top of the second product, such as software running on a specific operating system or hardware platform. Corresponds to the CSAF relationship category of the same name.",
+    "category": "Solution structure"
+}

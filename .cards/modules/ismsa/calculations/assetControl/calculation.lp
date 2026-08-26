@@ -17,7 +17,7 @@ ismsa_asset(Card, "Supplier") :-
 
 % Criticality and risk evaluation needed are mandatory for all assets
 % Risk evaluation needed can be a calculated field
-policyCheckFailure(Asset, "ISMS", "'Criticality for operations' is a required field", "'Criticality for operations' has not been defined for this asset. Set this field.", "ismsa/fieldTypes/assetCriticalityForOperations") :-
+policyCheckFailure(Asset, "ISMS", "'Overall asset criticality' is a required field", "'Overall asset criticality' has not been defined for this asset. Set this field.", "ismsa/fieldTypes/assetCriticalityForOperations") :-
     ismsa_asset(Asset),
     not ismsa_disableAssetControl(Asset),
     not field(Asset, "ismsa/fieldTypes/assetCriticalityForOperations", _).
@@ -51,12 +51,12 @@ policyCheckFailure(Asset, "ISMS", "'Logging and monitoring' is a required field"
     not field(Asset, "ismsa/fieldTypes/assetLoggingAndMonitoring", _).
 
 % Integrity, availability and personal data classification and location are mandatory for data assets
-policyCheckFailure(Asset, "ISMS", "'Integrity' is a required field", "'Integrity' has not been defined for this asset. Set this field.", "ismsa/fieldTypes/assetIntegrity") :-
+policyCheckFailure(Asset, "ISMS", "'Criticality of integrity' is a required field", "'Criticality of integrity' has not been defined for this asset. Set this field.", "ismsa/fieldTypes/assetIntegrity") :-
     not ismsa_disableAssetControl(Asset),
     base_projectCardType(Asset, "ismsa/cardTypes/assetData"),
     not field(Asset, "ismsa/fieldTypes/assetIntegrity", _).
 
-policyCheckFailure(Asset, "ISMS", "'Availability' is a required field", "'Availability' has not been defined for this asset. Set this field.", "ismsa/fieldTypes/assetAvailability") :-
+policyCheckFailure(Asset, "ISMS", "'Criticality of availability' is a required field", "'Criticality of availability' has not been defined for this asset. Set this field.", "ismsa/fieldTypes/assetAvailability") :-
     not ismsa_disableAssetControl(Asset),
     base_projectCardType(Asset, "ismsa/cardTypes/assetData"),
     not field(Asset, "ismsa/fieldTypes/assetAvailability", _).

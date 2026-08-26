@@ -3,7 +3,7 @@
     "cardKeyPrefix": "eucra",
     "name": "EU Cyber Resilience Act Essentials",
     "description": "Essentials templates and internal controls for the team-level work that is required for EU CRA compliance",
-    "version": "1.2.2",
+    "version": "1.3.0",
     "modules": [
         {
             "name": "base",

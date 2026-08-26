@@ -1,0 +1,7 @@
+{
+    "name": "eucra/calculations/economicOperatorObligations",
+    "displayName": "Economic operator obligations",
+    "description": "Policy checks for the EU CRA obligations that follow from the planned economic operator role of a product",
+    "calculation": "calculation.lp",
+    "category": "EU Cyber Resilience Act"
+}
